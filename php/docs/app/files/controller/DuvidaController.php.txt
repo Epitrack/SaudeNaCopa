@@ -1,0 +1,85 @@
+<?php
+
+/**
+ * Class DuvidaController
+ */
+/**
+ *  Classe DuvidaController responsável por controlar o envio de dúvidas.
+ *
+ * @author      Rodrigo Carneiro <teoria@gmail.com>
+ * @copyright   2014 Epitrack
+ * @link        http://www.epitrack.com.br/
+ * @version     2.4.2
+ * @package     controller
+ *
+ *
+ */
+
+Class DuvidaController extends Controller {
+
+
+    /**
+     * Método responsável em enviar a mensagem do usuário
+     * recebendo por POST  "idusuario" e 'msg'
+     *
+     * @throws InvalidArgumentException
+     */
+    public function enviaDuvida() {
+
+        $data = $this->request->post();
+        $fachada = Fachada::getInstance();
+
+        $id = (int)$fachada->decript($data["idusuario"]);
+
+        if( is_nan($id)){
+            throw new InvalidArgumentException;
+        }
+
+       // $id = $data['idusuario'];
+        $msg = $data['msg'];
+
+        $vo = new DuvidaVO();
+        $vo->setIdUsuario($id);
+        $vo->setMsg($msg);
+
+
+
+        $fachada->insereDuvida($vo);
+
+        $userVO = new UsuarioVO();
+        $userVO->setIdUsuario($id);
+        $userVO = $fachada->selectOneByID($userVO);
+
+
+        $enviado = $fachada->sendEmail('contato@saudenacopa.com',$userVO->getEmail() , 'Dúvida Saúde na Copa',$msg);
+
+        $retorno = $this->getResponse($enviado);
+        echo $retorno;
+    }
+
+
+    /**
+     * Método responsável por transformar o retorno em JSON
+     *
+     *
+     * @param $enviado
+     * @return string
+     */
+    private function getResponse($enviado) {
+
+        $retorno = array(
+
+            "status" => ($enviado != false),
+            "mensagem"=>""
+        );
+        return json_encode($retorno);
+    }
+
+
+
+
+
+
+}
+
+

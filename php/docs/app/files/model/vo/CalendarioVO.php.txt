@@ -1,0 +1,94 @@
+<?php
+
+/**
+ * Class CalendarioVO
+ */
+/**
+ * Value Object (VO)
+ *
+ * CalendarioVO: Classe básica referente ao calendário.
+ *
+ * @author      Rodrigo Carneiro <teoria@gmail.com>
+ * @copyright   2014 Epitrack
+ * @link        http://www.epitrack.com.br/
+ * @version     2.4.2
+ * @package     model/vo
+ *
+ *
+ */
+
+class CalendarioVO extends VO{
+
+    /**
+     * Data Cadastro
+     * @var
+     */
+    protected  $dataCadastro;
+    /**
+     * Quantidade
+     * @var
+     */
+    protected  $qtd;
+    /**
+     * Sentimento
+     * @var
+     */
+    protected  $sentimento;
+
+    /**
+     * Define data cadastro
+     * @param mixed $dataCadastro
+     */
+    public function setDataCadastro($dataCadastro) {
+
+        $this->dataCadastro = $dataCadastro;
+    }
+
+    /**
+     * Data Cadastro
+     * @return mixed
+     */
+    public function getDataCadastro() {
+
+        return $this->dataCadastro;
+    }
+
+    /**
+     * Define Quantidade
+     * @param mixed $qtd
+     */
+    public function setQtd($qtd) {
+
+        $this->qtd = $qtd;
+    }
+
+    /**
+     * Quantidade
+     * @return mixed
+     */
+    public function getQtd() {
+
+        return $this->qtd;
+    }
+
+    /**
+     * Define Sentimento
+     * @param mixed $sentimento
+     */
+    public function setSentimento($sentimento) {
+
+        $this->sentimento = $sentimento;
+    }
+
+    /**
+     * Sentimento
+     * @return mixed
+     */
+    public function getSentimento() {
+
+        return $this->sentimento;
+    }
+
+
+
+} 

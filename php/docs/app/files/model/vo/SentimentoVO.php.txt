@@ -1,0 +1,600 @@
+<?php
+
+/**
+ * Class SentimentoVO
+ */
+
+/**
+ * Value Object (VO)
+ *
+ * SentimentoVO: Classe básica referente a sentimentos do usuário.
+ *
+ * @author      Rodrigo Carneiro <teoria@gmail.com>
+ * @copyright   2014 Epitrack
+ * @link        http://www.epitrack.com.br/
+ * @version     2.4.2
+ * @package     model/vo
+ *
+ *
+ */
+
+class SentimentoVO extends VO {
+
+//INSERT INTO saudenacopa.usuario_sentimento (id; usuario_id;   jogo_ok; pontuacao; latitude; longitude; cidade_id; atualizado; ativo; campo1; campo2; campo3; campo4; campo5; campo6; campo7; campo8; campo9; campo10; campo11; campo12) VALUES (NULL; '9';  '1'; '12'; '1142435'; '1142435'; '1'; '1'; '1'; '1'; '0'; '1'; '1'; '1'; '1'; '1'; '0'; '0'; '1'; '1'; '0')
+
+    /**
+     * id
+     * @var
+     */
+    private $id;
+    /**
+     * id usuário
+     * @var
+     */
+    private $usuario_id;
+    /**
+     * jogo
+     * @var int
+     */
+    private $jogo_ok;
+    /**
+     * Pontuação
+     * @var int
+     */
+    private $pontuacao;
+    /**
+     * Latitude
+     * @var
+     */
+    private $latitude;
+    /**
+     * Longitude
+     * @var
+     */
+    private $longitude;
+    /**
+     * id da cidade
+     * @var int
+     */
+    private $cidade_id;
+    /**
+     * Atualizado
+     * @var int
+     */
+    private $atualizado;
+    /**
+     * Ativo
+     * @var int
+     */
+    private $ativo;
+    /**
+     * Sentimento
+     * @var
+     */
+    private $sentimento;
+    /**
+     * Data cadastro
+     * @var
+     */
+    private $data_cadastro;
+
+    /**
+     * Campo 1
+     * @var
+     */
+    private $campo1;
+    /**
+     * Campo 2
+     * @var
+     */
+    private $campo2;
+    /**
+     * Campo 3
+     * @var
+     */
+    private $campo3;
+    /**
+     * Campo 4
+     * @var
+     */
+    private $campo4;
+    /**
+     * Campo 5
+     * @var
+     */
+    private $campo5;
+    /**
+     * Campo 6
+     * @var
+     */
+    private $campo6;
+    /**
+     * Campo 7
+     * @var
+     */
+    private $campo7;
+    /**
+     * Campo 8
+     * @var
+     */
+    private $campo8;
+    /**
+     * Campo 9
+     * @var
+     */
+    private $campo9;
+    /**
+     * Campo 10
+     * @var
+     */
+    private $campo10;
+    /**
+     * Campo 11
+     * @var
+     */
+    private $campo11;
+    /**
+     * Campo 12
+     * @var
+     */
+    private $campo12;
+
+    /**
+     * Construtor
+     */
+    function __construct() {
+        $this->jogo_ok = 1;
+        $this->pontuacao = 1;
+        $this->ativo = 1;
+        $this->atualizado = 1;
+        $this->cidade_id = 1;
+
+
+    }
+
+    /**
+     * Definir data cadastro
+     * @param mixed $data_cadastro
+     */
+    public function setDataCadastro($data_cadastro) {
+
+        $this->data_cadastro = $data_cadastro;
+    }
+
+    /**
+     * data cadastro
+     * @return mixed
+     */
+    public function getDataCadastro() {
+
+        return $this->data_cadastro;
+    }
+
+
+
+
+
+    /**
+     * Define Sentimento
+     * @param mixed $sentimento
+     */
+    public function setSentimento($sentimento) {
+
+        $this->sentimento = $sentimento;
+    }
+
+    /**
+     * Sentimento
+     * @return mixed
+     */
+    public function getSentimento() {
+
+        return $this->sentimento;
+    }
+
+
+
+
+    /**
+     * Define variável ativo
+     * @param mixed $ativo
+     */
+    public function setAtivo($ativo) {
+
+        $this->ativo = $ativo;
+    }
+
+    /**
+     * Ativo
+     * @return mixed
+     */
+    public function getAtivo() {
+
+        return $this->ativo;
+    }
+
+    /**
+     * Define variável atualizado
+     * @param mixed $atualizado
+     */
+    public function setAtualizado($atualizado) {
+
+        $this->atualizado = $atualizado;
+    }
+
+    /**
+     * atualizado
+     * @return mixed
+     */
+    public function getAtualizado() {
+
+        return $this->atualizado;
+    }
+
+    /**
+     * Define Campo 1
+     * @param mixed $campo1
+     */
+    public function setCampo1($campo1) {
+
+        $this->campo1 = $campo1;
+    }
+
+    /**
+     * Campo 1
+     * @return mixed
+     */
+    public function getCampo1() {
+
+        return $this->campo1;
+    }
+
+    /**
+     * Define Campo 10
+     * @param mixed $campo10
+     */
+    public function setCampo10($campo10) {
+
+        $this->campo10 = $campo10;
+    }
+
+    /**
+     * Campo 10
+     * @return mixed
+     */
+    public function getCampo10() {
+
+        return $this->campo10;
+    }
+
+    /**
+     * Define Campo 11
+     * @param mixed $campo11
+     */
+    public function setCampo11($campo11) {
+
+        $this->campo11 = $campo11;
+    }
+
+    /**
+     * Campo 11
+     * @return mixed
+     */
+    public function getCampo11() {
+
+        return $this->campo11;
+    }
+
+    /**
+     * Define Campo 12
+     * @param mixed $campo12
+     */
+    public function setCampo12($campo12) {
+
+        $this->campo12 = $campo12;
+    }
+
+    /**
+     * Campo 12
+     * @return mixed
+     */
+    public function getCampo12() {
+
+        return $this->campo12;
+    }
+
+    /**
+     * Define Campo 2
+     * @param mixed $campo2
+     */
+    public function setCampo2($campo2) {
+
+        $this->campo2 = $campo2;
+    }
+
+    /**
+     * Campo 2
+     * @return mixed
+     */
+    public function getCampo2() {
+
+        return $this->campo2;
+    }
+
+    /**
+     * Define Campo 3
+     * @param mixed $campo3
+     */
+    public function setCampo3($campo3) {
+
+        $this->campo3 = $campo3;
+    }
+
+    /**
+     * Campo 3
+     * @return mixed
+     */
+    public function getCampo3() {
+
+        return $this->campo3;
+    }
+
+    /**
+     * Define Campo 4
+     * @param mixed $campo4
+     */
+    public function setCampo4($campo4) {
+
+        $this->campo4 = $campo4;
+    }
+
+    /**
+     * Campo 4
+     * @return mixed
+     */
+    public function getCampo4() {
+
+        return $this->campo4;
+    }
+
+    /**
+     * Define Campo 5
+     * @param mixed $campo5
+     */
+    public function setCampo5($campo5) {
+
+        $this->campo5 = $campo5;
+    }
+
+    /**
+     * Campo 5
+     * @return mixed
+     */
+    public function getCampo5() {
+
+        return $this->campo5;
+    }
+
+    /**
+     * Define Campo 6
+     * @param mixed $campo6
+     */
+    public function setCampo6($campo6) {
+
+        $this->campo6 = $campo6;
+    }
+
+    /**
+     * Campo 6
+     * @return mixed
+     */
+    public function getCampo6() {
+
+        return $this->campo6;
+    }
+
+    /**
+     * Define Campo 7
+     * @param mixed $campo7
+     */
+    public function setCampo7($campo7) {
+
+        $this->campo7 = $campo7;
+    }
+
+    /**
+     * Campo 7
+     * @return mixed
+     */
+    public function getCampo7() {
+
+        return $this->campo7;
+    }
+
+    /**
+     * Define Campo 8
+     * @param mixed $campo8
+     */
+    public function setCampo8($campo8) {
+
+        $this->campo8 = $campo8;
+    }
+
+    /**
+     * Campo 8
+     * @return mixed
+     */
+    public function getCampo8() {
+
+        return $this->campo8;
+    }
+
+    /**
+     * Define Campo 9
+     * @param mixed $campo9
+     */
+    public function setCampo9($campo9) {
+
+        $this->campo9 = $campo9;
+    }
+
+    /**
+     * Campo 9
+     * @return mixed
+     */
+    public function getCampo9() {
+
+        return $this->campo9;
+    }
+
+    /**
+     * Define id da cidade
+     * @param mixed $cidade_id
+     */
+    public function setCidadeId($cidade_id) {
+
+        $this->cidade_id = $cidade_id;
+    }
+
+    /**
+     * id cidade
+     * @return mixed
+     */
+    public function getCidadeId() {
+
+        return $this->cidade_id;
+    }
+
+    /**
+     * define id
+     * @param mixed $id
+     */
+    public function setId($id) {
+
+        $this->id = $id;
+    }
+
+    /**
+     * id
+     * @return mixed
+     */
+    public function getId() {
+
+        return $this->id;
+    }
+
+    /**
+     * Define Jogo
+     * @param mixed $jogo_ok
+     */
+    public function setJogoOk($jogo_ok) {
+
+        $this->jogo_ok = $jogo_ok;
+    }
+
+    /**
+     * jogo
+     * @return mixed
+     */
+    public function getJogoOk() {
+
+        return $this->jogo_ok;
+    }
+
+    /**
+     * Define Latitude
+     * @param mixed $latitude
+     */
+    public function setLatitude($latitude) {
+
+        $this->latitude = $latitude;
+    }
+
+    /**
+     * Latitude
+     * @return mixed
+     */
+    public function getLatitude() {
+
+        return $this->latitude;
+    }
+
+    /**
+     * Define Longitude
+     * @param mixed $longitude
+     */
+    public function setLongitude($longitude) {
+
+        $this->longitude = $longitude;
+    }
+
+    /**
+     * Longitude
+     * @return mixed
+     */
+    public function getLongitude() {
+
+        return $this->longitude;
+    }
+
+    /**
+     * Define Pontuação
+     * @param mixed $pontuacao
+     */
+    public function setPontuacao($pontuacao) {
+
+        $this->pontuacao = $pontuacao;
+    }
+
+    /**
+     * Pontuação
+     * @return mixed
+     */
+    public function getPontuacao() {
+
+        return $this->pontuacao;
+    }
+
+    /**
+     * Define id usuário
+     * @param mixed $usuario_id
+     */
+    public function setUsuarioId($usuario_id) {
+
+        $this->usuario_id = $usuario_id;
+    }
+
+    /**
+     * id usuário
+     * @return mixed
+     */
+    public function getUsuarioId() {
+
+        return $this->usuario_id;
+    }
+
+
+    /**
+     * Validação de campos
+     * @return bool
+     */
+    public function isBad(){
+
+        return (
+            $this->campo1 == 1 ||
+            $this->campo2 == 1 ||
+            $this->campo3 == 1 ||
+            $this->campo4 == 1 ||
+            $this->campo5 == 1 ||
+            $this->campo6 == 1 ||
+            $this->campo7 == 1 ||
+            $this->campo8 == 1 ||
+            $this->campo9 == 1 ||
+            $this->campo10 == 1 
+        );
+
+    }
+
+
+
+} 

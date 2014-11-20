@@ -1,0 +1,70 @@
+<?php
+
+/**
+ * Class Conex
+ */
+
+/**
+ * Conex: Classe de conexão de banco de dados.
+ *
+ * @author      Rodrigo Carneiro <teoria@gmail.com>
+ * @copyright   2014 Epitrack
+ * @link        http://www.epitrack.com.br/
+ * @version     2.4.2
+ * @package     slimMidias
+ *
+ */
+
+class Conex{
+
+    /**
+     * Instância da conexão.
+     * @var
+     */
+    private static $instance;
+    /**
+     * Instancia do PDO.
+     * @var PDO
+     */
+    private $pdo;
+
+    /**
+     * Construtor
+     */
+    private function __construct()
+    {
+
+       require("../settings_db.php");
+
+        try{
+            $this->pdo = new PDO($engine.':dbname='.$database.';host='.$host, $user, $pass)or print (mysql_error());
+        }catch(PDOException $e){
+            echo 'Error: '.$e->getMessage();
+        }
+        
+    }
+
+    /**
+     * Singleton para acesso a cenexão.
+     * @return mixed
+     */
+    public static function getInstance(){
+        if(!isset(self::$instance)){
+            $c = __CLASS__;
+            self::$instance = new $c;
+        }
+        return self::$instance;
+    }
+
+    /**
+     * Método de acesso ao PDO
+     * @link http://br2.php.net/manual/pt_BR/class.pdo.php
+     * @return PDO
+     */
+    public function getPDO(){
+        return $this->pdo;
+    }
+
+}
+
+?>

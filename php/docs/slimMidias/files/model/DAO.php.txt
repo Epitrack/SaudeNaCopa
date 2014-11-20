@@ -1,0 +1,34 @@
+<?php
+
+/**
+ * Class DAO
+ */
+
+/**
+ * DAO: Classe de acesso a dados.
+ *
+ * @author      Rodrigo Carneiro <teoria@gmail.com>
+ * @copyright   2014 Epitrack
+ * @link        http://www.epitrack.com.br/
+ * @version     2.4.2
+ * @package     slimMidias/model
+ *
+ */
+
+class DAO {
+
+    /**
+     * Conexão
+     * @var
+     */
+    protected  $conex;
+
+    /**
+     * Construtor
+     */
+    function __construct(){
+        $this->conex = Conex::getInstance()->getPDO();
+
+    }
+
+} 
