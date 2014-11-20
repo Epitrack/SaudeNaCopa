@@ -1,0 +1,1019 @@
+@import "compass/css3/background-size";
+@import "compass/css3/border-radius";
+@import "compass/css3/images";
+@import "compass/css3/transform";
+@import "compass/css3/opacity";
+@import "compass/css3/transition";
+@import "Variaveis.scss";
+
+#tela_torcedor {
+
+	&.transicaoArena {
+		#background_arena {
+			z-index: 20px;
+
+			.conteudo {
+				@include transition-delay(1s);
+				@include opacity(1);
+			}
+		}
+		#conteudo_torcedor {
+			@include transition-delay(0s);
+			@include opacity(0);
+		}
+	}
+
+	#background_arena .conteudo {
+		@include transition-delay(0s);
+		@include transition(all 1s);
+		@include opacity(0);
+		text-align: center;
+			color: #FFFFFF;
+
+		h1 {
+			font-size: 3em;
+			font-weight: normal;
+
+			margin: $barra_altura+15.52px 0 15.52px;
+
+			.isphone & {
+				margin: $barra_alturaIOS+15.52px 0 15.52px;
+			}
+		}
+
+		p {
+			font-size: 1.42em;
+			margin: 0;
+			&.nome {
+				font-size: 1.8em;
+			}
+		}
+	}
+
+	#conteudo_torcedor {
+		@include opacity(1);
+		@include transition(all 1s);
+		@include transition-delay(1s);
+		@include esticar($barra_altura,0,0,0);
+		.isphone & {
+			@include esticar($barra_alturaIOS,0,0,0);
+		}
+	}
+	.row.titulo {
+		h1 {
+			$taxa: $sentimento_torcedor_pergunta_fontSize;
+			display: table;
+			margin: 15.52px 0;
+			.isphone {
+
+			}
+			width: 100%;
+			height: 46.56px;
+			vertical-align: center;
+			color: white;
+			font-size: $sentimento_torcedor_pergunta_fontSize;
+		
+			.conteudo {
+				display: table-cell;
+				vertical-align: middle;
+				text-align: center;
+			}
+
+			// .pergunta.dica {
+			// 	font-size: 0.8em;
+			// 	display: block !important;
+			// }
+
+			.resposta {
+				display: none;
+			}
+		}
+	}
+	
+	#componente_avatar {
+		position: absolute;
+		width: 100%;
+		height: auto;
+		top: 0;
+		left: 0;
+		bottom: 0;
+	
+		//margin-top: $barra_altura+77.6px;
+		margin-top: 77.6px;
+		
+		.isphone & {
+			//margin-top: $barra_alturaIOS+77.6px;
+		}
+		margin-bottom: $barra_altura+130px;
+	}
+
+	.row.avatar {
+		.containerDinamico.avatar {
+			overflow:  visible;
+			// .setas {
+			// 	.seta {
+			// 		position: absolute;
+			// 		top: 25%;
+			// 		left: -27px;
+			// 		width: 27px;
+			// 		height: 21px;
+			// 		@include bg();
+			// 		background-image: url("../imagens/sentimento/torcedor/seta.png");
+			// 		&.desce {
+			// 			@include rotate(180deg);
+			// 			top: auto;
+			// 			bottom: 25%;
+			// 		}
+			// 	}
+			// }
+			
+
+			&::before {
+				background-image: url("../imagens/sentimento/torcedor/luzAvatar.png");
+				@include bg("100% auto");
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				padding: 100px;
+				@include scale(1.4);
+			}
+			
+
+			.botao.ok {
+				width: 80px;
+				height: 80px;
+				@include bg("35px 35px");
+				position: absolute;
+				top: 50%;
+				margin-top: -113px;
+				right: -58px;
+				background-position: 20px center;
+				background-image: url("../imagens/sentimento/torcedor/botao_ok.png")
+			}
+
+			.botao.farmacias, .botao.hospitais {
+				width: 60px;
+				height: 60px;
+				@include bg("28px 28px");
+				position: absolute;
+				margin-top: -16px;
+				right: -35px;
+				display: none;
+			}
+
+			.botao.farmacias {
+				top: 140px;
+				background-image: url("../imagens/sentimento/torcedor/icone_farmacias.png");
+			}
+
+			.botao.hospitais {
+				top: 80px;
+				background-image: url("../imagens/sentimento/torcedor/icone_hospitais.png");
+			}
+
+
+		}
+		.conteudoDinamico.avatar {
+			overflow:  hidden;
+
+		}
+	}
+
+
+	#background_arena {
+		//@include esticar($barra_altura, 0, $barra_altura, 0);
+		@include esticar(0,0,0,0);
+		@include background-size(cover);
+
+		@mixin background_arena($id) {
+			&[data-arena='#{$id}'] {
+				background-image: url("../imagens/sentimento/arenas/#{$id}.png");
+			}
+		}
+
+		@include background_arena(bh);
+		@include background_arena(brasilia);
+		@include background_arena(cuiaba);
+		@include background_arena(curitiba);
+		@include background_arena(fortaleza);
+		@include background_arena(manaus);
+		@include background_arena(natal);
+		@include background_arena(pernambuco);
+		@include background_arena(portoAlegre);
+		@include background_arena(rioDeJaneiro);
+		@include background_arena(salvador);
+		@include background_arena(saoPaulo);
+		
+	}
+	
+	#avatares {
+	
+
+		.avatar {
+			position: relative;
+			width: 100%;
+			height: 0;
+			padding-top: 100%;
+		}
+	}
+
+
+	footer {
+		position: absolute;
+		width: 100%;
+		left: 0;
+		bottom: $barra_altura+20px;
+	}
+
+	.categoria.pontos.engajamento {
+		height: 60px;
+		position: relative;
+		margin-bottom: 1em;
+	}
+
+	#componente_indicadorSentimento {
+		width: 26px;
+		height: 105px;
+		position: absolute;
+		top: 50%;
+		margin-top: -72px;
+		left: -40px;
+		padding: 5px 3px;
+
+		&::before {
+			content: "";
+			position: absolute;
+			background-color: #000000;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			@include opacity(0.5);
+			@include border-radius(13px);
+		}
+
+		.indicador {
+			overflow: hidden;
+			text-indent: -9999px;
+			height: 20%;
+			width: 100%;
+			position: relative;
+
+			&::before, &::after {
+				border: 1px solid #FFFFFF;
+				@include border-radius(50%);
+				content: "";
+				position: absolute;
+				left: 50%;
+				top: 50%;
+			}
+
+			@mixin centralizarIndicador($tamanho) {
+				width: $tamanho;
+				height: $tamanho;
+				margin-top: -$tamanho/2;
+				margin-left: -$tamanho/2;
+			}
+
+			&::before {
+				@include opacity(0.5);
+				@include centralizarIndicador(12px);
+			}
+			&::after {
+				@include centralizarIndicador(8px);
+			}
+
+			&.selecionado {
+				&::before {
+					@include centralizarIndicador(20px);
+				}
+				&::after {
+					@include centralizarIndicador(12px);
+				}
+			}
+			@mixin indicador($indice, $cor) {
+				&:nth-child(#{$indice}) {
+					$pct: $indice - 1;
+					$pctTotal: $pct*10%;
+					//top: $pctTotal;
+					//background-color: $cor;
+					
+					&::before, &::after {
+						background-color: $cor;
+					}
+				}
+			}
+			@include indicador(1, #f7ec42); 
+			@include indicador(2, #e6b549); 
+			@include indicador(3, #a3bd31); 
+			@include indicador(4, #cb6118); 
+			@include indicador(5, #bf0411); 
+		}
+	}
+	
+
+	#componente_trofeu {
+		height: 59px;
+		width: 68px;
+		position: absolute;
+		bottom: 35px;
+		left: 21px;
+		background-position: center;
+		@mixin bgTrofeu($categoria) {
+			background-image: url("../imagens/sentimento/torcedor/categorias/"+$categoria+"/trofeu.png");
+		}
+		&[data-categoria='denteDeLeite'] {
+			@include bgTrofeu("denteDeLeite");
+			@include bg("54px 54px");
+		}
+		&[data-categoria='mirim'] {
+			@include bgTrofeu("mirim");
+			@include bg("54px 54px");
+		}
+		&[data-categoria='infantil'] {
+			@include bgTrofeu("infantil");
+			@include bg("54px 55px");
+		}
+		&[data-categoria='juvenil'] {
+			@include bgTrofeu("juvenil");
+			@include bg("68px 59px");
+		}
+		&[data-categoria='junior'] {
+			@include bgTrofeu("junior");
+			@include bg("54px 54px");
+		}
+		&[data-categoria='profissional'] {
+			@include bgTrofeu("profissional");
+			@include bg("54px 52px");
+		}
+	}
+
+	
+	#componente_categoria {
+		h2, p {
+			display: none;
+		}
+		position: absolute;
+		bottom: 0;
+		left: 15px;
+		width: 132px;
+		height: 36px;
+		@include bg("auto 34px");
+		background-position: left center;
+		@mixin bgCategoria($idioma,$categoria) {
+			background-image: url("../imagens/sentimento/torcedor/categorias/"+$categoria+"/categoria_"+$idioma+".png");
+		}
+
+		@mixin categoriaAvatar($idioma) {
+			.#{$idioma} &[data-categoria='denteDeLeite'] {
+				@include bgCategoria($idioma,"denteDeLeite");
+			}
+			.#{$idioma} &[data-categoria='mirim'] {
+				@include bgCategoria($idioma,"mirim");
+			}
+			.#{$idioma} &[data-categoria='infantil'] {
+				@include bgCategoria($idioma,"infantil");
+			}
+			.#{$idioma} &[data-categoria='juvenil'] {
+				@include bgCategoria($idioma,"juvenil");
+			}
+			.#{$idioma} &[data-categoria='junior'] {
+				@include bgCategoria($idioma,"junior");
+			}
+			.#{$idioma} &[data-categoria='profissional'] {
+				@include bgCategoria($idioma,"profissional");
+			}
+		}
+
+		@include categoriaAvatar("pt");
+		@include categoriaAvatar("es");
+		@include categoriaAvatar("en");
+	}
+
+	#componente_pontos {
+		width: auto;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: auto;
+		margin: 1em 42px 0 150px;
+		position: absolute;
+		text-align: right;
+		color: white;
+		line-height: 1.8em;
+
+		
+		.texto {
+			font-size: 1.15em;
+			text-transform: uppercase;
+			bottom: 0;
+		}
+		.pontos {
+			font-size: 1.8em;
+			font-weight: bold;
+		}
+	}
+
+	#componente_engajamento {
+		height: 180px;
+		width: 14px;
+		position: absolute;
+		bottom: 0;
+		right: 14px;
+
+		.blocos {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			bottom: 0;
+			left: 0;
+			overflow: hidden;
+
+			@include transition(height 1s ease);
+
+			.bloco {
+				width: $engajamento_tamanho;
+				height: $engajamento_tamanho;
+				border: 1px solid $engajamento_border1_color;
+				background-color: $engajamento_bgc_off;
+				margin-bottom: 1px;
+				position: absolute;
+
+				@mixin posicaoBloco($child, $multiplicador: 1) {	
+					&:nth-child(#{$child}) {
+						bottom:15px * $multiplicador;
+					}					
+				}
+
+				@include posicaoBloco(1, 0);
+				@include posicaoBloco(2, 1);
+				@include posicaoBloco(3, 2);
+				@include posicaoBloco(4, 3);
+				@include posicaoBloco(5, 4);
+				@include posicaoBloco(6, 5);
+				@include posicaoBloco(7, 6);
+				@include posicaoBloco(8, 7);
+				@include posicaoBloco(9, 8);
+				@include posicaoBloco(10, 9);
+				@include posicaoBloco(11, 10);
+				@include posicaoBloco(12, 11);
+			}
+
+			&.ativos {
+				&.zerando {
+					@include transition(none 0s ease);
+				}
+				height: 0%;
+				
+				.bloco {
+					background-color: $engajamento_bgc_on;
+
+					&::after {
+						content: "";
+						display: block;
+						position: absolute;
+						width: $engajamento_brilho_width;
+						height: 100%;
+						left: $engajamento_brilho_marginLeft;
+						background-color: red;
+						@include background-image(linear-gradient(left, $engajamento_brilho_inicio, $engajamento_brilho_fim));
+					}
+				}
+			}
+		}
+	}
+
+
+
+	#componente_arenas {
+		// margin-top: 23px;
+		height: 40px;
+		position: relative;
+		width: 100%;
+		bottom: 0;
+
+		
+		@mixin quantidadeLargura($quantidade) {
+			$preLeft: -1+$quantidade;
+			$left:  100%*$preLeft;
+			$largura: $quantidade*100%;
+			
+			&[data-quantidade="#{$quantidade}"] {
+				.scroller ul.titulos {
+					width: #{$largura};
+				}
+
+				ul.titulos li.titulo:nth-child(-1n+#{$quantidade}) {
+					display: block;
+				}
+
+				ul.arenas li.arena:nth-child(-1n+#{$quantidade}) {
+					display: inline-block;
+				}
+			}
+		}
+
+
+
+		@include quantidadeLargura(1);
+		@include quantidadeLargura(2);
+		@include quantidadeLargura(3);
+		@include quantidadeLargura(4);
+		@include quantidadeLargura(5);
+		@include quantidadeLargura(6);
+		@include quantidadeLargura(7);
+		@include quantidadeLargura(8);
+		@include quantidadeLargura(9);
+		@include quantidadeLargura(10);
+		@include quantidadeLargura(11);
+		@include quantidadeLargura(12);
+
+	
+
+
+		.scroller {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 2;
+			overflow: hidden;
+			
+
+
+			ul.titulos {
+				width: 100%;
+				height: 100%;
+
+				li {
+					position: absolute;
+					top: 0;
+					left: 0;
+					bottom: 0;
+					right: 0;
+					width: auto;
+					height: auto;
+
+					text-align: center;
+					font-size: 2.105em;
+					margin: 0;
+					color: white;
+					font-weight: normal;
+					text-transform: uppercase;
+					display: none;
+				}
+
+				
+
+				 @mixin leftArena($posicao) {
+					$preLeft: -1+$posicao;
+					$left:  100%*$preLeft;
+					li:nth-child(#{$posicao}) {
+						@include translateX(#{$left});
+					}
+				}
+
+				@include leftArena(1);
+				@include leftArena(2);
+				@include leftArena(3);
+				@include leftArena(4);
+				@include leftArena(5);
+				@include leftArena(6);
+				@include leftArena(7);
+				@include leftArena(8);
+				@include leftArena(9);
+				@include leftArena(10);
+				@include leftArena(11);
+				@include leftArena(12);
+				
+			}
+		}
+		
+
+		ul.arenas {
+			z-index: 1;
+			display: block;
+			text-align: center;
+			padding: 0;
+			height: 6px;
+
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			line-height: 6px;
+
+			li {
+				margin: 0;
+				display: none;
+				width: 6px;
+				height: 6px;
+				@include border-radius(50%);
+				background-color: #a8c098;
+				overflow: hidden;
+
+				@include transition(background-color 500ms ease);
+
+				&.selecionada {
+					background-color: #FFFFFF;
+				}
+			}
+		}
+	}
+
+	#componente_persistenciaSintomas {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		display: none;
+		z-index: 3;
+		@include background-image(linear-gradient(#42a5cd, #4683b5));
+		display: none;
+
+		p {
+			font-size: 1.45em;
+			color: white;
+			font-weight: bold;
+			text-align: center;
+			display: table-cell;
+			vertical-align: middle;
+			padding: 2em;
+		}
+
+		.botao.ok {
+			position: absolute;
+			@include background-image(linear-gradient(#8db435, #73a93a));
+			width: 92px;
+			margin-left: -46px;
+			height: 28px;
+			margin-top: -14px;
+			left: 50%;
+			top: 75%;
+			line-height: 28px;
+			text-align: center;
+			font-size: 1.3em;
+			color: white;
+			@include border-radius(3px);
+		}
+		
+	}
+	
+	.componente_alertaDeTempo {
+
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		display: none;
+		z-index: 3;
+
+		&#pelicula_alertaDeTempo {
+			background-color: #000;
+			@include opacity(0.7);
+		}
+
+		&#componente_alertaDeTempo {
+			.container {
+				background-color: #fff;
+				@include border-radius(15px);
+				font-size: 1.66em;
+				text-align: center;
+				color: #727176;
+				padding: 15px;
+				width: 180px;
+				min-height: 90px;
+				position: absolute;
+				top: 50%;
+				margin-top: -45px;
+				left: 50%;
+				margin-left: -90px;
+			}
+
+
+			.tempo {
+				display: block;
+			}
+
+			.botao.ok {
+				min-width: 33px;
+				min-height: 27px;
+				position: absolute;
+				bottom: -39px;
+				left: 50%;
+				margin-left: -16px;
+				@include border-radius(4px);
+				line-height: 27px;
+				text-align: center;
+				color: white;
+				@include background-image(linear-gradient(#8db435, #73a93a));
+			}
+		}
+	}
+
+	.componente_confirmacao {
+
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		display: none;
+		z-index: 3;
+
+
+
+		&#pelicula_confirmacao {
+			background-color: #000;
+			@include opacity(0.7);
+		}
+
+		&#componente_confirmacao {
+			.container {
+				width: 100%;
+				position: absolute;
+				top: 50%;
+				height: 26px;
+				margin-top: -13px;
+				z-index: 4;
+			}
+
+			.botao.voltar {
+				position: absolute;
+				width: 80px;
+				height: 80px;
+				left: 27px;
+				top: 50%;
+				margin-top: -40px;
+				background-image: url("../imagens/sentimento/torcedor/confirmacao/botao_voltar.png");
+				@include bg("27px 26px");
+				background-position: left center;
+			}
+			.lembrete {
+				position: relative;
+				bottom: 5em;
+				color: white;
+				font-size: 1.42em;
+				font-weight: bold;
+				text-align: center;
+				width: 75%;
+				margin: 0 auto;
+			}
+			.texto {
+				position: absolute;
+				margin-left: 60px;
+				margin-right: 108px;
+				font-size: $confirmacao_fontSize;
+				line-height: 27px;
+				text-align: center;
+				height: auto;
+				width: auto;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-color: white;
+			}
+			
+			.botao.ok {
+				width: 85px;
+				height: 100%;
+				position: absolute;
+				top: 0px;
+				right: 27px;
+				@include border-radius(4px);
+				line-height: 27px;
+				text-align: center;
+				color: white;
+				@include background-image(linear-gradient(#8db435, #73a93a));
+			}
+		}
+	}
+}
+#tela_sintomas {
+	font-size: $sintomas_fontSize;
+	
+	li {
+		height: 40px;
+		display: table;
+		width: 100%;
+		border-bottom: 1px solid #aeaeb3;
+		text-align: right;
+		&:last-child {
+			border-bottom: none;
+		}
+	
+		&.selecionado label {
+		 	&::after {
+				display: block;
+			}
+		}
+		label {
+			display: table-cell;
+			vertical-align: middle;
+			padding-left: 30px;
+
+			position: relative;
+		
+			&::after, &::before {
+				display: block;
+				position: absolute;
+				content: "";
+				left: 0;
+				top: 50%;
+				width: 20px;
+				height: 20px;
+				margin-top: -10px;
+				background-position: center center;
+			}
+			&::before {
+				@include bg("20px 20px");
+				background-image: url("../imagens/sentimento/torcedor/confirmacao/icone_checkbox.png");
+			} 
+			&::after {
+				display: none;
+				@include bg("16px 15px");		
+				background-position: bottom left;
+				margin-top: -15px;
+				left: 8px;
+				background-image: url("../imagens/sentimento/torcedor/confirmacao/icone_marcacao.png");
+			} 
+		}
+	}
+	li input {
+		display: none;
+	}
+}
+
+#tela_calendario {
+	&.loading {
+		h1, #calendarios, .legendas {
+			display: none;
+		}
+	}
+
+	h1 {
+		text-align: center;
+		font-weight: normal;
+		font-size: 2.22em;
+		position: relative;
+		line-height: 50px;
+
+		.icone {
+			content: "";
+			position: absolute;
+			display: block;
+			width: 50px;
+			height: 50px;
+			background-image: url("../imagens/sentimento/calendario/icone_seta.png");
+			@include bg(13px 22px);
+			background-position: right center;
+			top: 0;
+			
+
+			&.anterior {
+				left: 0;
+				@include rotate(180deg);
+				display: none;
+			}
+			&.proximo {
+				right: 0;
+			}
+		}
+
+	}
+	.mes {
+		margin-bottom: 1em;
+		text-align: center;
+		width: 100%;
+		display: none;
+		&.ativo {
+			display: table;
+		}
+	}
+	.linha {
+		// display: table;
+		// width: 100%;
+	}
+	.preOffset, .dia, .posOffset {
+		height: 40px;
+		border: 2px solid transparent;
+		color: #FFFFFF;
+		font-size: 1.793em;
+		font-weight: normal;
+		position: relative;
+	}
+	.preOffset {
+		color: #6d6e70;	
+	}
+	.linha:first-child td {
+		height: auto !important;
+	}
+	.dia {
+		
+		vertical-align: bottom;
+		text-align: right;
+		padding-right: 3px;
+		position: relative;
+		overflow: hidden;
+		.bg {
+			position: absolute;
+			width: 150%;
+			height: 150%;
+			top: 0;
+			left: 0;
+			background-color: #d8d8d8;
+			//@include background-image(linear-gradient(#f0f0f0, #c1c1c1));
+			@include rotate(45deg);
+			z-index: 1;
+			margin-left: -5px;
+		}
+		.numero {
+			position: relative;
+			z-index: 2;
+		}
+	}
+	.legendas {
+		margin-top: 2em;
+		p {
+			color: #767579;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+		.cor {
+			display: inline-block;
+			width: 15px;
+			height: 15px;
+			@include border-radius(50%);
+			vertical-align: middle;
+			margin-right: 0.5em;
+		}
+		.sentimento {
+			line-height: 20px;
+			display: inline;
+			margin-right: 1em;
+		}
+
+		.sentimento.muitoBem .cor {
+			background-color: #e8cc28;
+		}
+		.sentimento.bem .cor {
+			background-color: #d78a30;
+		}
+		.sentimento.mal .cor {
+			background-color: #c21e37;
+		}
+		.sentimento.muitoMal .cor {
+			background-color: #8c1a20;
+		}
+	}
+}
+
+#tela_ajuda {
+	article {
+		margin-bottom: 2em;
+		&:first-child {
+			padding-top: 2em;
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	font-size: 1.244em;
+	text-align: center;
+
+	.icone {
+		@include bg();
+		margin: 0 auto 1em;
+
+		@mixin icone_ajuda($tipo, $w, $h) {
+			&.#{$tipo} {
+				width: #{$w/2}px;
+				height: #{$h/2}px;
+				background-image: url("../imagens/sentimento/informacoes/ajuda/icone_#{$tipo}.png");	
+			}
+		}
+
+		@include icone_ajuda(selecao,99,118);
+		@include icone_ajuda(ok,54,54);
+		@include icone_ajuda(categoria,132,29);
+		@include icone_ajuda(selecaoArena,132,12);
+		@include icone_ajuda(arena,101,23);
+	}
+}
+
+#sentimento {
+	.dado {
+		display: none;
+	}
+
+}
+#calendario {
+	display: none;
+}

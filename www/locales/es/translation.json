@@ -1,0 +1,1010 @@
+{
+  "offline" : {
+    "confirmar" : "OK",
+    "texto" : "El dispositivo no está conectado a una red. Los elementos que dependen de una conexión a Internet no estarán disponibles sin conexión."
+  },
+  "barra" : {
+    "menu" : {
+      "home" : "Home",
+      "saude" : "Salud",
+      "jogos" : "Juegos",
+      "turismo" : "Turismo",
+      "denunciarUmProblema" : "Errores en la aplicación Reportar",
+      "termosDeUso" : "Términos y políticas",
+      "sobre" : "Acerca de",
+      "sair" : "Salida",
+      "mais" : "Más"
+    }
+  },
+  "tela" : {
+    "idioma" : "Idioma",
+    "abertura" : "Apertura",
+    "apresentacao" : "Presentación",
+    "acesso" : "Acceso",
+    "cadastre-se" : "Registrar",
+    "entreComFacebook" : "Conéctate con Facebook",
+    "entrarComLoginESenha" : "Ingresar con nombre de usuario y contraseña",
+    "termosDeUso" : "Condiciones de uso y política de privacidad",
+    "denunciarUmProblema" : "Errores en la aplicación Reportar",
+    "sobre" : "Acerca de",
+    "torcedor" : "Jugador",
+    "sentimento" : "¿Cómo te sientes?",
+    "sintomas" : "Síntomas",
+    "calendario" : "Calendario",
+    "saude" : "Salud",
+    "lembretesDeSaude" : "Recordatorios de salud",
+    "hospitaisDeReferencia" : "Los hospitales de referencia",
+    "hospitais" : "Hospitales",
+    "telefonesUteis" : "Teléfonos de interés",
+    "farmacias" : "Farmacias",
+    "jogos" : "Juegos",
+    "calendarioDosJogos" : "Calendario de partidos",
+    "selecoes" : "Selecciones",
+    "selecao" : "Selección",
+    "resultados" : "Resultados",
+    "calendarioDeJogos" : "Calendario de partidos",
+    "maisNoticias" : "Ver más noticias",
+    "turismo" : "Turismo",
+    "fanFest" : "Fan Fest",
+    "pontosTuristicos" : "Puntos de interés",
+    "atividadesCulturais" : "Actividades Culturales",
+    "baresERestaurantes" : "Bares y restaurantes",
+    "esqueciASenha" : "Olvidé mi contraseña",
+    "ajuda" : "Ayudar",
+    "mapaSaude" : "Mapa",
+    "alterarSenha" : "Cambiar contraseña",
+    "protejaOGol" : "Proteja el gol",
+    "higieneECuidados" : "Higiene y cuidado",
+    "vacinas" : "Vacunas",
+    "mais" : "Más información",
+    "itensDoJogo" : "Reglas del Juego",
+    "arenas" : "Arenas",
+    "categorias" : "Categorías",
+    "linksUteis" : "Enlaces de interés",
+    "malaLegal" : "Equipaje Legal",
+    "consulados" : "Consulados",
+    "consulado" : "Consulado",
+    "cuidadosBasicos" : "Cuidados básicos",
+    "urgenciasEmergencias" : "Urgencias y emergencias",
+    "prevencaoDoencas" : "Prevención de enfermedades",
+    "prevencaoAcidentes" : "La prevención de accidentes",
+    "prevencaoViolencia" : "Prevención de la violencia"
+  },
+  "formulario" : {
+    "erro" : "Compruebe la información introducida."
+  },
+  "menu" : {
+    "sobre" : {
+      "titulo" : "Copa Saludable",
+      "voltaroAoTopo" : "Volver arriba",
+      "sobre" : {
+        "titulo" : "SOBRE PROYECTO “Copa Saludable”",
+        "texto" : [
+"La \"Copa Saludable\" es una aplicación web gratuita, diseñada para su uso en dispositivos móviles y navegadores web y es parte de un proyecto innovador para mejorar la vigilancia de la salud en el Sistema Único de Salud (SUS), llamada vigilancia participativa.",
+          "Es un proceso simple que se basa en la participación voluntaria de los visitantes o residentes en Brasil, informando sobre su estado de salud durante de la Copa del Mundo FIFA Brasil 2014<sup>TM</sup>. La \"Copa Saludable\" fue desarrollada en Portugués, Inglés y Español para ser un canal complementario de información y servicios de salud a los usuarios, lo que permite la participación de todos. Basta tener 13 años de edad o más  y aceptar los Términos de participación y utilización, informando periódicamente su estado de salud com las instrucciones disponibles en la aplicación.",
+          "Este proyecto es una iniciativa de la Secretaría de Vigilancia en Salud, en colaboración con los Departamentos de Salud de las sedes de los partidos y otras instituciones nacionales e internacionales.",
+          "Utilizada por primera vez en Brasil, la implementación de la estrategia de vigilancia participativa se producirá sin la inversión pública en el desarrollo de software. Para ello, a través de una asociación, la \" Copa Saludable \" está siendo desarrollada como software libre a través de la inversión de Skoll Global Threats Fund  y el apoyo operativo de la Training in Public Health Intervention Network (TEPHINET), ambas son organizaciones no gubernamentales  sin fines de lucro que actúan en la mejoría de la vigilancia de la salud en el mundo y las técnicas de Detección Digital de Enfermedades. El desarrollo tecnológico de la aplicación se realiza por medio de la startup Epitrack, con sede en Recife / Pernambuco.",
+          "Esta asociación también incluye el apoyo técnico y el intercambio de experiencias con otras iniciativas adoptadas a nivel mundial como FluNearYou (flunearyou.org) eSaludBoricua (saludboricua.org ) creado y administrado por la ONG HealthMap ( healthmap.org ) del Hospital Infantil de Boston en colaboración con la Asociación Americana de Salud Pública ( apha.org ) y por la Skoll Global Threats Fund (skollglobalthreats.org) . Estas estrategias visan la vigilancia del síndrome de la gripe en los Estados Unidos de América (EE.UU.) y Canadá, el dengue, la leptospirosis y el síndrome de la gripe en Puerto Rico.",
+          "La estrategia \"Copa Saludable \" es uno de los importantes legados para la salud pública que la Copa del Mundo FIFA Brasil 2014<sup>TM</sup> está incentivando. Esta estrategia se puede aplicar a otras iniciativas de interés público en el futuro. Una vez más el Sistema Único de Salud de Brasil demuestra su capacidad de innovación e inclusión social. Participa y comparte!"
+        ]
+      },
+      "saibaMais" : {
+        "titulo" : "SEPA MÁS SOBRE LA VIGILANCIA PARTICIPATIVA",
+        "texto" : [
+"La Copa del Mundo FIFA Brasil 2014<sup>TM</sup> es uno de los mayores eventos deportivos del planeta y se estima que aproximadamente 3,7 millones de turistas, brasileños y extranjeros, deberán circular por las 12 sedes. Por esta razón, el Sistema Único de Salud (SUS) requiere mecanismos ágiles para identificar rápidamente la aparición de enfermedades que puedan afectar a los visitantes y / o residentes en estas ciudades.",
+          "Si usted va a asistir a la Copa del Mundo FIFA Brasil 2014<sup>TM</sup>  como un aficionado o un trabajador residente o no en las sedes de la copa o en Brasil, usted es el participante ideal para contribuir con el SUS por medio de la \"Copa Saludable\". A partir del envío voluntario y  regular de información sobre su estado de salud, la vigilancia será capaz de describir el perfil de salud o de  enfermedades en las ciudades anfitrionas  de la copa durante todo el período del evento. Basta con instalar y registrarse para comenzar a participar en el reto divertido de cuidar de la salud de la ciudad, ganando puntos diariamente y desbloqueando etapas  en el juego.",
+          "Su participación es una buena contribución para mejorar de la vigilancia de la salud en Brasil. En el registro no habrá identificación nominal y estará garantizada la privacidad del correo electrónico. No habrá contacto con usted de parte del sistema de salud; como resultado de la participación y la comunicación de su estado de salud no significa que usted tendrá una consulta médica.",
+          "Es importante destacar que si usted dice que no se siente bien, se recomienda que consulte a su médico de cabecera o a los servicios de salud más cercanos a usted. Para ello, en la aplicación está disponible un acceso directo a la búsqueda pre-configurada de servicios de salud  y farmacias más cercanas a usted, basado en el servicio de geolocalización de su dispositivo móvil en Google Maps. Además, usted dispone de teléfonos útiles como el SAMU (Servicio de Atención Móvil de Urgencia ) cuya llamada es gratuita y funciona las 24 horas del día a las solicitudes de atención de urgencia para los casos de naturaleza traumática , clínica, pediátrica, quirúrgica , ginecológica - obstétrica y de salud mental, en los hogares, lugares de trabajo y vías públicas.",
+          "Esperamos que se divierta al animar a su selección con las informaciones especialmente seleccionadas desde la página oficial de la FIFA y aprovechar  para saber más sobre cuidados simples de salud que le ayudarán a celebrar la victoria con la Copa Saludable."
+        ]
+      },
+      "beneficios" : {
+        "titulo" : "VEA LOS BENEFICIOS DE SU PARTICIPACIÓN",
+        "texto" : [
+"Participar activamente de las acciones de vigilancia en salud que objetivan la prevención de enfermedades en la comunidad",
+          "Acceder a los contactos de los servicios de utilidad pública, sin tener que alterar la agenda de su teléfono",
+          "Acceder fácilmente a información útiles sobre el cuidado de la salud",
+          "Aprovechar de las facilidades, tales como la búsqueda pre-configurada por los hospitales y farmacias más cercanas (20 km) en Google Maps, sin necesidad de abrir otra aplicación",
+          "Conocer el perfil de salud de los participantes a través de la página web \"Copa Saludable\" (poner el enlace vinculado al texto Copa Saludable)",
+          "Seguir el calendario de los juegos y los lugares de sus partidos favoritos"
+        ]
+      },
+      "custos" : {
+        "titulo" : "COSTO",
+        "texto" : [
+"Descarga y participación: No hay ningún costo para obtener y participar en la \"Copa Saludable\".",
+          "Acceso a los servicios sin costo: a través de los puntos de acceso gratuitos en locales con internet wi-fi en la ciudad",
+          "Acceso a los servicios con costo: a través de su paquete de datos contratado",
+          "Llamada telefónica: Los servicios públicos de referencia descritos en los teléfonos útiles se ofrecen a través de llamada gratuita, según información de la entidad responsable."
+        ]
+      }
+    },
+    "menu" : {
+      "idiomas" : "Idiomas",
+      "denunciarUmProblema" : "Reportar errores en la aplicación",
+      "termosEPoliticas" : "Términos y políticas",
+      "alterarSenha" : "Cambiar contraseña",
+      "termosEPoliticas" : "Términos y políticas",
+      "versao" : "Versión",
+      "sobre" : "Acerca de Copa Saludable",
+      "sair" : "Salida"
+    },
+    "versao" : {
+      "versao" : {
+        "titulo" : "Versión",
+        "atualizacao" : "Actualización"
+      },
+      "parceria" : {
+        "titulo" : "Asociación"
+      },
+      "dev" : {
+        "titulo" : "Desarrollo y Soporte"
+      },
+      "melhorNavegador" : "La aplicación web se ve mejor en Google Chrome y Mozilla Firefox."
+    }
+  },
+  "apresentacao" : {
+    "idioma" : {
+      "titulo" : "Idioma / Language",
+      "portugues" : "Portugués",
+      "espanhol" : "Español",
+      "ingles" : "Inglés"
+    },
+    "abertura" : {
+      "titulo" : "Copa Saludable"
+    },
+    "apresentacao" : {
+      "titulo" : "Copa Saludable",
+      "texto" : "Gracias por participar en la Copa Saludable 2014. \nLa aplicación de la Copa Saludable es un proyecto de vigilancia participativa de la salud durante la Copa Mundial FIFA Brasil 2014 ™ para que todos puedan participar de forma voluntaria que la estrategia de Sistema Único de Salud (SUS). Lea más acerca de la aplicación en la pantalla Opciones."
+    }
+  },
+  "acesso" : {
+    "acesso" : {
+      "titulo" : "Acceso en portugués",
+      "rodape" : "Al continuar, usted acepta los términos de uso y política de privacidad.",
+      "cadastre-se" : "Registrar",
+      "entreComFacebook" : "Conéctate con Facebook",
+      "entrarComLoginESenha" : "Entrar",
+      "camposObrigatorios" : "* Campos obligatorios",
+      "esqueciASenha" : "Olvidé mi contraseña"
+    },
+    "cadastre-se" : {
+      "apelido" : "Apodo",
+      "idade" : "Edad",
+      "sexo" : "Género",
+      "feminino" : "Femenino",
+      "masculino" : "Masculino",
+      "email" : "Email",
+      "senha" : "Contraseña",
+      "confirmacaoDeSenha" : "Confirmación de la contraseña",
+      "revelarSenha" : "Revelar Contraseña",
+      "termos" : "He leído y acepto los términos de uso",
+      "termosDeUso" : "Términos de uso",
+      "cadastre-se" : "Registrar",
+      "confirmacaoCadastre-se" : "Inicia con éxito! Por favor, inicie sesión con la contraseña registrada en la siguiente pantalla."
+    },
+    "entreComFacebook" : {
+      "texto" : ""
+    },
+    "entrarComLoginESenha" : {
+      "email" : "Email",
+      "senha" : "Contraseña",
+      "entrar" : "Entrar",
+      "esqueciASenha" : "Olvidé mi contraseña"
+    },
+    "alterarSenha" : {
+      "senhaAtual" : "Current password",
+      "novaSenha" : "New Password",
+      "repetirNovaSenha" : "Repeat New Password",
+      "campoAlterarSenha" : "Change"
+    },
+    "esqueciASenha" : {
+      "texto" : "Introduzca la dirección de correo registrado para enviar tu contraseña",
+      "confirmacao" : "Las instrucciones para recuperar tu contraseña ha sido enviada a su correo electrónico.",
+      "email" : "Email",
+      "entrar" : "Enviar"
+    },
+    "termosDeUso" : {
+      "titulo" : "TÉRMINOS DE USO",
+      "voltarAoTopo" : "Volver arriba",
+      "voltarAoMenu" : "Regresar al menú",
+      "ultimaAtualizacao" : "Fecha de la revisión: abril 2014",
+      "introducao" : [
+        "Por favor, lea estos términos  de uso antes de utilizar la \"Copa Saludable\", hacer cualquier colaboración o acceder o descargar cualquier información de esta aplicación.",
+        "Al acceder o utilizar la \"Copa Saludable\", acepte y esté de acuerdo en cumplir los términos y condiciones establecidas en estos \"términos de uso\".",
+        "Estos términos son un acuerdo vinculado entre usted y la \"Copa Saludable\", que incluye todo su acceso y uso de esta aplicación lo que incluye el uso de todas las informaciones, datos, herramientas, productos, servicios y otros contenidos disponibles por medio de este.",
+        "Al utilizar esta aplicación, usted confirma que comprende y está de acuerdo con lo siguiente:"
+      ],
+      "secao1" : {
+        "titulo" : "Respeto a las Leyes:",
+        "texto" : [
+"El usuario deberá acceder a la \"Copa Saludable\" solamente para finalidades lícitas.",
+          "El usuario se compromete a utilizar la aplicación solamente para los debidos fines y en conformidad con el presente término y limitaciones legales, como cualquier política aplicada en Brasil.",
+          "Su acceso es prohíbido en territorios donde el contenido sea considerado ilegal. Aquellos que opten por acceder a este sitio web a partir de otras localidades lo harán por iniciativa propia y serán responsables por el cumplimiento de las leyes locales aplicables. Los materiales no deberán ser utilizados o exportados en incumplimiento de las leyes brasileñas. Cualquier pendencia en relación a los materiales será resuelta por las leyes brasileñas.",
+          "La alteración no autorizada del contenido de este sitio web está expresamente prohibida."
+        ]
+      },
+      "secao2" : {
+        "titulo" : "Límites de uso:",
+        "texto" : [
+"La utilización de la aplicación está indicada solamente para individuos de 13 años de edad o más."
+        ]
+      },
+      "secao3" : {
+        "titulo" : "Responsabilidad por el contenido:",
+        "texto" : [
+"La \"Copa Saludable\" no es responsable por el contenido de cualquier información eventualmente intercambiadas entre los usuarios entre sí, o con la \"Copa Saludable\" sean ellas lícitas o ilícitas.",
+          "El usuario se compromete que es el único responsable por su propia conducta y por la veracidad de las informaciones suministradas mientras utiliza el servicio y que es responsable por las consecuencias que resulten de la provisión intencional de datos incorrectos.",
+          "El usuario se compromete que al utilizar la \"Copa Saludable\" no irá a publicar, enviar, distribuir o divulgar contenido o información de carácter difamatorio, obsceno o ilítico, inclusive informaciones de propiedad exclusiva pertenecientes a otras personas o empresas, bien como marcas registradas o informaciones protegidas por derechos autorales, sin la expresa autorización del titular de estos derechos;",
+          "Nadie puede actuar a su nombre en el uso de la \"Copa Saludable\". Usted es responsable por el contenido que individuos no autorizados produzcan al utilizar esta aplicación utilizando con su permiso y su perfil cadastrado. Esta regla no se aplica a los casos de violación u otros problemas de seguridad de aplicación."
+        ]
+      },
+      "secao4" : {
+        "titulo" : "Accesibilidad al contenido:",
+        "texto" : [
+"El equipo de la \"Copa Saludable\" no garantiza que esta aplicación esté parcial o completamente funcional para la utilización fuera de las areas relacionadas a la COPA DEL MUNDO FIFA 2014<sup>TM</sup>, que incluye las ciudades anfitrionas y municipios próximos.",
+          "De la misma forma no garantiza que cualquier contenido esté apropiado o disponible para uso fuera del territorio nacional. Si usted opta por acceder el Webapp y la aplicación de otras localidades, usted lo hará por su propia iniciativa y a su propio riesgo. Usted es responsable por el cumplimiento de las leyes locales, y en la medida en que leyes locales sean aplicables. Usted se compromete específicamente en cumplir todas las leyes aplicables relativas a la transmisión de datos técnicos exportados a partir de este local."
+        ]
+      },
+      "secao5" : {
+        "titulo" : "Propiedad intelectual:",
+        "texto" : [
+"El equipo de la \"Copa Saludable\" y sus colaboradores, son titulares del derecho de autoría de los contenidos producidos y presentados en esta aplicación. Esta premisa no se aplica a las informaciones consideradas como de domino público o de utilidad pública.",
+          "Todas las demás marcas comerciales, marcas de servicio, nombres y logotipos que aparecen en esta aplicación son propiedad de sus respectivos propietarios.",
+          "La aplicación \"Copa Saludable\" es un software open source cuyo uso por terceros se somete a los términos de la licencia internacional GNU PublicLicense, versión 3 (GPL-3.0). Los derechos de uso del contenido y  de los informes generados por el Webapp y por la aplicación son cedidos por los desarrolladores, especialmente los que se derivan de las condiciones de la licencia CreativeCommons - Atribución-No Comercial 4.0 Internacional (haga clic aquí para ver el texto).",
+          "Sólo los informes de los servicios de salud de cada ciudad anfitriona deben considerarse oficiales para la divulgación pública de los datos relativos a este tema. Ninguna información derivada de la \"Copa Saludable\", a pesar del compromiso del personal para garantizar la calidad , la puntualidad y la autenticidad de la información, se considerará oficial para la divulgación pública. Los datos recogidos a través de la \"Copa Saludable\", provienen de un público objetivo específico que se puede ver afectado por la capacidad de acceso a dispositivos móviles o computadoras con especificaciones de tecnología mínima. Así, las informaciones generadas a partir de esta estrategia no necesariamente coincidirán con la expresión real del patrón epidemiológico de aquel periodo y lugar. Las informaciones de utilidad recreativa o pública podrán presentar cierta inexactitud o errores en la actualización, siendo recomendada su validación por parte de los usuarios en caso de urgencia y de emergencia o cualquier otra situación de riesgo para su salud o su integridad."
+        ]
+      },
+      "secao6" : {
+        "titulo" : "Leyes, reglamentos, derechos y deberes:",
+        "texto" : [
+"Es política del equipo \"Copa Saludable\" cumplir con todas las leyes y reglamentos aplicables, que pueden ser modificados de tiempos en tiempos. En el caso de que cualquier disposición de estos Términos de Uso esté en conflicto con cualquier ley o reglamento aplicable, la ley o reglamentación aplicable anula el contrario .",
+          "Estos Términos de uso y la utilización de la \"Copa Saludable\" son y serán regidos e interpretados de acuerdo con las leyes internas de Brasil , sin considerar sus reglas de conflicto de leyes. En caso de cualquier conflicto entre las leyes, normas y reglamentos extranjeros con las de Brasil, las leyes, normas y reglamentos de Brasil prevalecerán.",
+          "La \"Copa Saludable\" puede, pero no está obligada, a monitorear, revisar y restringir el acceso a cualquiera de sus áreas en las que los usuarios transmitan información, pudiendo retirar del aire o retirar el acceso a estas informaciones o comunicaciones.",
+          "Si usted tiene alguna duda con respecto a la\"Copa Saludable\", no dude en contactarnos: contato@saudenacopa.com."
+        ]
+      },
+      "secao7" : {
+        "titulo" : "El uso de las contribuciones:",
+        "texto" : [
+"Al enviar una contribución escrita o postar informaciones en la \"Copa Saludable\" usted otorga una licencia perpetua, exenta de royalties, licencia incondicional para esta aplicación y cualquier organización sucesora, a publicar su contribución en la \"Copa Saludable\", bien como divulgarlas de forma agregada (nunca individual) a otros medios de comunicación, y para discutir o hacer referencia a ella en cualquier publicación resultante de la \"Copa Saludable\".",
+          "También aceptará que la \"Copa Saludable\" tiene el derecho pero no la obligación, de editar o eliminar cualquier aportación, o incluirla en el texto junto con otras contribuciones a la discreción del personal de \"Copa Saludable\"."
+        ]
+      },
+      "secao8" : {
+        "titulo" : "Garantía de Confidencialidad y Anonimato:",
+        "texto" : [
+"Se garantizará la confidencialidad y el anonimato de todas las informaciones producidas por usted en la \"Copa Saludable\" excepto cuando sea requerido por la ley, o para hacer frente a los problemas de incumplimiento.",
+          "Nos reservamos el derecho a utilizar esta información internamente y, en ese ámbito, su contribución se vinculará con el username de su elección.",
+          "La \"Copa Saludable\", sus colaboradores y usuarios, incluidos los organismos gubernamentales y no gubernamentales, depeden de los usuarios para la exactitud de las contribuciones. El personal no es responsable por errores o inexactitudes en cualquier presentación. Tergiversación deliberada por un usuario puede ser una violación de la ley, y en el caso que sea seria, será comunicada a las autoridades gubernamentales correspondientes."
+        ]
+      },
+      "secao9" : {
+        "titulo" : "Actualización de la \"Copa Saludable\":",
+        "texto" : [
+"Pueden ocurrir modificaciones de esta aplicación y sus términos de uso. A menos que especifique lo contrario, el uso del Webapp y de la aplicación indica la plena aceptación de las términos de uso en la versión actual cada vez que usted utilize la \"Copa Saludable\". Manténgase atento a las actualizaciones y, en caso de duda, los presentes Términos de Uso estarán siempre disponibles para el acceso y la concordancia o no."
+        ]
+      },
+      "secao10" : {
+        "titulo" : "Responsabilidad por acciones con base en el contenido:",
+        "texto" : [
+"La\"Copa Saludable\" no asume ninguna responsabilidad por cualquier lesión y/o daño a personas o bienes, como consecuencia de cualquier uso de las ideas, contenidos, instrucciones, métodos, productos o procedimientos que figuran en esta aplicación.",
+          "En ningún caso los profesionales involucrados en el desarrollo o administración de esta aplicación serán responsabilizados por cualquier decisión o acción tomada por usted sobre la base de dicho contenido.",
+          "Frente a las amenazas o cualquier otro riesgo para su salud o su integridad buscar siempre orientaciones validadas y actualizadas por los servicios locales de salud pública relacionados con cada ciudad anfitriona."
+        ]
+      },
+      "secao11" : {
+        "titulo" : "Responsabilidad por problemas tecnológicos:",
+        "texto" : [
+"Eventualmente todo el contenido o cualquier parte de la\"Copa Saludable\" puede no estar disponible y puede no funcionar adecuadamente en cualquier momento. Hacemos todo lo posible para evitar problemas tecnológicos, pero puede ocurrir en esta aplicación problemas  tecnológicos de diferentes naturalezas, tales como virus, rutinas de programación perjudiciales o problemas relacionados al dispositivo .",
+          "El  Webapp y la aplicación son proporcionadas \"tal cual\" y \"según disponibilidad\". Sin limitar nuestro aviso general, no podemos garantizar la disponibilidad, integridad, puntualidad, la funcionalidad, la fiabilidad, la secuenciación y la rapidez de la entrega en esta aplicación, o de cualquier parte de los contenidos .",
+          "La \"Copa Saludable\" no se responsabiliza de ningún daño o perjuicio causado por el desempeño o fallo de desempeño de toda o cualquier parte de la aplicación. La \"Copa Saludable\" no se responsabiliza de los defectos, demoras o errores que resulten del uso de esta aplicación.",
+          "El uso de todas las funcionalidades de la \"Copa Saludable \" requiere la disponibilidad de acceso a internet por el usuario, por wifi o cable de datos de la red. La ausencia de este requisito puede limitar la utilización de la aplicación con todo su potencial de uso . El personal de la\"Copa Saludable\", teniendo en cuenta esta advertencia no asume responsabilidad alguna por tal limitación.",
+          "Esta renuncia de responsabilidad se aplica a todos y cualquier daño o lesiones, incluyendo los causados por cualquier falla de rendimiento, error, omisión, interrupción, eliminación, defecto, retraso en la operación o transmisión, virus de computadora, falla en la línea de comunicación, robo, destrucción o acceso no autorizado, alteración o uso de cualquier propiedad, ya sea por incumplimiento de contrato, comportamiento ilícito, negligencia o cualquier otra causa de acción."
+        ]
+      },
+      "secao12" : {
+        "titulo" : "Responsabilidad por informaciones de terceros:",
+        "texto" : [
+"La disponibilidad a través del Webapp y de la aplicación de enlaces y referencias para  otros sitios web, publicaciones o recursos de información no constituyen recomendación de esos sitios web o de sus recursos por parte de la \"Copa Saludable\", de sus agentes o representantes. El personal de la \"Copa Saludable\" no hace representaciones o afirmaciones en cuanto a la calidad, el contenido y precisión de las informaciones, servicios o productos que puedan ser proporcionados por los recursos, y específicamente se renuncia a cualquier garantía incluyendo pero no restricto a las garantías implícitas o expresas de comerciabilidad o adecuación para cualquier utilización particular, aplicación o finalidad."
+        ]
+      },
+      "secao13" : {
+        "titulo" : "Consideraciones finales:",
+        "texto" : [
+"El acceso al servicio representa la aceptación expresa y sin reservas de los Términos de uso mencionados. Al aceptar estos términos usted otorga una licencia perpetua, libre de royalties, licencia incondicional para la \"Copa Saludable\", Ministerio de Salud y todas las organizaciones sucesoras para publicar su contribución en conjunto,  en la propia  aplicación bien como divulgarlas a otros servicios relacionados con la vigilancia de la salud pública. Usted también acepta que \"Copa Saludable\" tiene el derecho pero no la obligación de editar o eliminar cualquier aportación a criterio exclusivo del personal de la \"Copa Saludable\"."
+        ]
+      }
+    },
+    "denunciarUmProblema" : {
+      "texto" : "Texto denunciar um problema",
+      "confirmacao" : "El problema ha sido reportado con éxito!",
+      "descricaoDoProblema" : "Descripción del problema",
+      "mensagem" : "Describa el problema en detalle",
+      "enviar": "Enviar"
+    },
+    "sobre" : {
+      "texto" : "Texto sobre"
+    },
+    "geolocalizacao" : {
+      "erro" : "No se pudo encontrar su ubicación. Tal vez los servicios de ubicación de su dispositivo no están disponibles. Pruebe, por ejemplo, activar el GPS del dispositivo o dejar de fumar y comenzar de nuevo la aplicación Copa Saludable."
+    }
+  },
+  "sentimento" : {
+    "voceEsta": "se siente",
+    "torcedor" : {
+      "confirmacao" : {
+        "confirmar" : "Confirmar",
+        "voceEsta" : "se siente",
+        "lembrete" : "Asegúrese de informar a diario sobre cómo esta su salud."
+      },
+      "alertaDeTempo" : {
+        "texto" : "Sólo puede ganar puntos en",
+        "confirmar" : "OK"
+      },
+      "categorias" : {
+        "denteDeLeite" : "Alevín",
+        "mirim" : "Infantil",
+        "infantil" : "Cadete",
+        "juvenil" : "Juvenil",
+        "junior" : "Mayor",
+        "profissional" : "Profesional"
+      },
+      "pergunta" : "¿Cómo esta su salud ahora?",
+      "pontos" : "Puntos",
+      "dica" : "Seleccionar un sentimiento de elegir un avatar",
+      "status" : {
+        "ola" : "¡Hola",
+        "voceEsta" : "Eres",
+        "voceEstaNaCategoria" : "Está en la categoría",
+        "continueParticipando" : "Continuar participando evolucionando"
+      },
+      "arena" : {
+        "arena1" : {
+          "id" : "cuiaba",
+          "nome" : "Arena Pantanal",
+          "cidade" : "Cuiabá",
+          "texto" : [
+"<li>Ubicación: Cuiabá - MT</li>",
+            "<li>Capacidad: 42968</li>",
+            "<li>Arena: La Arena Pantanal tiene 18mil gradas móviles y 166 lugares para personas obesas. El estadio tiene una buena infraestructura, con restaurantes, hoteles, aparcamientos, lagos, bosque y pista de caminada.</li>",
+            "<li>Curiosidad: La arena tiene un proyecto sostenible, con economia de 40% en el consumo de agua y reducción de 20% del consumo de energia.</li>",
+            "<li>Dirección: Avenida Agrícola Paes de Barros – Cidade Alta, Cuiabá, Mato Grosso.</li>"
+          ]
+        },
+        "arena2" : {
+          "id" : "curitiba",
+          "nome" : "Arena da Baixada",
+          "cidade" : "Curitiba",
+          "texto" : [
+"<li>Ubicación: Curitiba - PR</li>",
+            "<li>Capacidad: 41456</li>",
+            "<li>Arena: La arena fue construída en 1914, cerca del centro de la ciudad y pasó por muchas reformas para recibir la Copa del Mundo FIFA 2014, como la eliminación de nivel del concreto para igualar las gradas y la construcción de dos nuevas escaleras, que conectan la parte inferior de las gradas a la superior.</li>",
+            "<li>Curiosidad: Conocida por tener uno de los mayores índices de calidad de vida en Brasil, la ciudad de la Arena da Baixada, Curitiba, atrae a muchos turistas.</li>",
+            "<li>Dirección: Avenida Presidente Getúlio Vargas, 1895 – Água Verde, Curitiba, Paraná.</li>"
+          ]
+        },
+        "arena3" : {
+          "id" : "natal",
+          "nome" : "Estádio das Dunas",
+          "cidade" : "Natal",
+          "texto" : [
+"<li>Ubicación: Natal - RN</li>",
+            "<li>Capacidad: 42068</li>",
+            "<li>Estadio: El estadio tiene 10,6mil asientos desmontables, 21 puntos de acceso, 25 bares, 30 baños y 200 cámaras de seguridad.</li>",
+            "<li>Curiosidad: Estádio das Dunas fue proyectado para dar la idea del movimiento de las dunas de arenas, comunes en Natal, con fachada y techo integrados y compuestos de “20 pétalos”, más altos de un lado del estadio. El techo tiene un diseño que permite más ventilación e iluminación. </li>",
+            "<li>Dirección: Endereço: Avenida Prudente de Morais – Tirol, Natal, Rio Grande do Norte.</li>"
+          ]
+        },
+        "arena4" : {
+          "id" : "manaus",
+          "nome" : "Arena Amazônia",
+          "cidade" : "Manaus",
+          "texto" : [
+"<li>Ubicación: Manaus - AM</li>",
+            "<li>Capacidad: 42374</li>",
+            "<li>Arena: La arena tiene cuatro rampas de acceso, 98 baños, 420 reflectores y 85 cámaras de seguridad, además de más comodidad para todos, con 118 asientos para personas con movilidad reducida, 69 para obesos y 445 para acompañantes de personas con discapacidad. </li>",
+            "<li>Curiosidad: Con 83,5mil m² de area construida, la Arena Amazônia tuvo su arquitectura inspirada en un cesto de paja indígena cargado con frutas típicas de Brasil: melón, plátano, piña, naranja, mango, guayaba y papaya.</li>",
+            "<li>Dirección: Avenida Djalma Batista, 3637 – Flores, Manaus, Amazônia.</li>"
+          ]
+        },
+        "arena5" : {
+          "id" : "pernambuco",
+          "nome" : "Arena Pernambuco",
+          "cidade" : "São Lourenço da Mata (Grande Recife)",
+          "texto" : [
+"<li>Ubicación: São Lourenço da Mata - PE</li>",
+            "<li>Capacidad: 44248</li>",
+            "<li>Arena: La Arena Pernambuco está construida en São Lourenço da Mata, ciudad metropolitana, y tiene 4.700 lugares de aparcamiento, 4 rampas de acceso, 8 ascensores, cámaras de seguridad 360° y amplio espacio para circulación.</li>",
+            "<li>Curiosidad: Recife es la capital más antigua de Brasil, fundada en 1561. Cortada por rios, la ciudad también tiene una intensa producción cultural y artística y muchos proyectos en tecnologia. La arena es multifuncional  y podrá ser utilizada para otros grandes espectáculos después del mundial.</li>",
+            "<li>Dirección: Avenida Deus É Fiel, 01 Letra A – Jardim Penedo, São Lourenço da Mata, Pernambuco. </li>"
+          ]
+        },
+        "arena6" : {
+          "id" : "fortaleza",
+          "nome" : "Estádio Castelão",
+          "cidade" : "Fortaleza",
+          "texto" : [
+"<li>Ubicación: Fortaleza - CE</li>",
+            "<li>Capacidad: 64846</li>",
+            "<li>Estadio: El Estadio de Fortaleza fue el primero en estar listo para el Mundial 2014 y tiene dos características importantes: la accesibilidad y la tecnología. De los asientos, 255 son para personas con dispacacidad, 120 para obesos y 1.200 para personas con movilidad reducida.</li>",
+            "<li>Curiosidad: El estadio tiene piso táctil para discapacitados visuales. Hay 2,5% de espacio disponible para personas con discapacidad 1,5% más que lo establecido por la ley. La cubierta del techo es termoacústica translúcida, para asegurar una sensación térmica agradable y las sillas, de color verde claro, son resistentes al fuego y a los rayos UV.</li>",
+            "<li>Dirección: Avenida Alberto Craveiro, 2901 – Castelão, Fortaleza, Ceará.</li>"
+          ]
+        },
+        "arena7" : {
+          "id" : "portoAlegre",
+          "nome" : "Beira-Rio",
+          "cidade" : "Porto Alegre",
+          "texto" : [
+"<li>Ubicación: Porto Alegre - RS</li>",
+            "<li>Capacidad: 48849</li>",
+            "<li>Estadio: El estadio tiene 5 mil lugares de aparcamiento, 17 accesos, 130 ruletas de acceso, 81 baños y una iluminación con caracteristicas cercanas a de la luz del dia.</li>",
+            "<li>Curiosidad: El Estádio Beira-Rio queda em el margen del río Guaíba, en un lugar de fácil acceso a las personas. La arena tiene un techo proyectado en forma de hojas, con 65 módulos.</li>",
+            "<li>Dirección: Avenida Padre Cacique, 891 – Praia de Belas, Porto Alegre, Rio Grande do Sul.</li>"
+          ]
+        },
+        "arena8" : {
+          "id" : "salvador",
+          "nome" : "Arena Fonte Nova",
+          "cidade" : "Salvador",
+          "texto" : [
+"<li>Ubicación: Salvador - BA</li>",
+            "<li>Capacidad: 48747</li>",
+            "<li>Arena: Con 90mil m² de área construida, el edificio tiene 10 niveles y 3 niveles de gradas (inferior, intermedio y superior), 2.500 lugares de aparcamiento, 126 ruletas de acceso, 9 ascensores, 227 cámaras y 376 reflectores.</li>",
+            "<li>Curiosidad: La Arena Fonte Nova está ubicada en la ciudad de Salvador, primera capital de Brasil y ciudad más poblada del nordeste. En la parte sur de la arena, hay una abertura hacia el Tororo Dique, fuente natural de la ciudad.</li>",
+            "<li>Dirección: Ladeira da Fonte das Pedras – Nazaré, Salvador, Bahia.</li>"
+          ]
+        },
+        "arena9" : {
+          "id" : "brasilia",
+          "nome" : "Estádio Nacional",
+          "cidade" : "Brasília",
+          "texto" : [
+"<li>Ubicación: Brasília - DF</li>",
+            "<li>Capacidad: 68009</li>",
+            "<li>Estadio: El Estadio Nacional de Brasília es un monumento en arquitectura. Hay 288 pilares con más de 36m cada, construidos alrededor de la arena, que le dan un aspecto magnífico al sitio. El estadio tiene todos los asientos cubiertos y distancia inicial de 7,5m del campo, 465 reflectores, 158 ruletas de acceso, 54 bares y 20 ascensores.</li>",
+            "<li>Curiosidad: El Estadio Nacional se destaca por las acciones sostenibles. Las bases de los pisos se construyeron con el material hecho a partir de la demolición del concreto y el agua de la lluvia que cae en el techo se tratan y reciclan para su uso en los inodoros y el riego del campo.</li>",
+            "<li>Dirección: Asa Norte - Brasília, Distrito Federal.</li>"
+          ]
+        },
+        "arena10" : {
+          "id" : "bh",
+          "nome" : "Estádio Mineirão",
+          "cidade" : "Belo Horizonte",
+          "texto" : [
+"<li>Ubicación: Belo Horizonte – MG</li>",
+            "<li>Capacidad: 62254</li>",
+            "<li>Estadio: El estadio tiene aparcamiento con 2.925 lugares, 62.160 asientos cubiertos, 58 bares, 54 baños públicos y entrada controlada por 106 ruletas electrónicas. El estadio tiene también una buena accesibilidad para las personas con discapacidad: lugares de aparcamiento exclusivos y ocho ascensores.</li>",
+            "<li>Curiosidad: Declarada patrimonio histórico de Belo Horizonte, la fachada del Estádio Mineirão quedó con las mismas características del proyecto de 1965.</li>",
+            "<li>Dirección: Avenida Antônio Abrahão Caram, 1001 - Pampulha, Belo Horizonte, Minas Gerais.</li>"
+          ]
+        },
+        "arena11" : {
+          "id" : "saoPaulo",
+          "nome" : "Arena de São Paulo",
+          "cidade" : "São Paulo",
+          "texto" : [
+"<li>Ubicación: São Paulo - SP</li>",
+            "<li>Capacidad: 65807</li>",
+            "<li>Arena: La arena tiene 48 mil asientos convencionales y 21.160 asientos móviles y 3.500 lugares de aparcamiento.</li>",
+            "<li>Curiosidad: La Arena de São Paulo va a recibir la abertura del Mundial 2014, el juego entre Brasil y Croacia.</li>",
+            "<li>Dirección: Avenida Miguel Ignácio Curi, 111 – Vila Carmosina, São Paulo, São Paulo.</li>"
+          ]
+        },
+        "arena12" : {
+          "id" : "rioDeJaneiro",
+          "nome" : "Estádio do Maracanã",
+          "cidade" : "Rio de Janeiro",
+          "texto" : [
+"<li>Ubicación: Rio de Janeiro - RJ</li>",
+            "<li>Capacidad: 76804</li>",
+            "<li>Estadio: El estadio tiene 124 mil m² de area construida, 6 rampas, 17 ascensores, 292 baños, 60 bares y 396 reflectores. Su fachada es considerada Patrimonio Histórico y Artístico Nacional y sus asientos son de colores amarillo, azul y blanco.</li>",
+            "<li>Curiosidad: Estádio do Maracanã es un de los estadios más famosos de Brasil. Fue inaugurado en 1950 y asistió a grandes momentos del fútbol mundial, como el milésimo gol de Pelé, y va a recibir el juego de la final de la Copa del Mundo FIFA 2014.</li>",
+            "<li>Dirección: Rua Professor Eurico Rabelo – Maracanã, Rio de Janeiro, Rio de Janeiro.</li>"
+          ]
+        }
+      },
+      "persistenciaSintomas" : {
+        "texto" : "Gracias por denunciar. Asegúrese de encontrar el servicio de salud más cercano. <br><br>Por favor, continúe informando a diario cómo esta su salud.",
+        "confirmar" : "OK"
+      }
+    },
+    "sentimento" : {
+      "muitoBem" : "Muy bien",
+      "bem" : "Bien",
+      "normal" : "Normal",
+      "mal" : "Mal",
+      "muitoMal" : "Muy mal"
+    },
+    "sintomas" : {
+      "febre" : "Fiebre",
+      "tosse" : "Tos",
+      "dorDeGarganta" : "Dolor de garganta",
+      "faltaDeAr" : "Dificultad para respirar",
+      "nauseaEVomito" : "Náuseas y vómitos",
+      "diarreia" : "Diarrea",
+      "dorNasArticulacoes" : "Dolor en las articulaciones",
+      "dorDeCabeca" : "Dolor de cabeza",
+      "sangramento" : "Sangrado",
+      "manchasVermelhasNoCorpo" : "Manchas rojas en el cuerpo",
+      "contatoComAlguem" : "Tenido contacto o conoce a alguien con alguno de esos síntomas en los últimos 7 días.",
+      "procurouServicoDeSaude" : "Busqué a un servicio de salud.",
+      "erroMarcacao" : "Si te sientes mal, por favor, decirle cuáles son los síntomas. Se requiere al menos una antes de continuar."
+    },
+    "calendario" : {
+      "entendaAsLegendas" : "Referencia del color",
+      "diasDaSemana" : {
+        "domingo" : "Domingo",
+        "segunda" : "Lunes",
+        "terca" : "Martes",
+        "quarta" : "Miércoles",
+        "quinta" : "Jueves",
+        "sexta" : "Viernes",
+        "sabado" : "Sábado"
+      },
+      "meses" : {
+        "janeiro" : "Enero",
+        "fevereiro" : "Febrero",
+        "marco" : "Marzo",
+        "abril" : "Abril",
+        "maio" : "Mayo",
+        "junho" : "Junio",
+        "julho" : "Julio",
+        "agosto" : "Agosto",
+        "setembro" : "Septiembre",
+        "outubro" : "Octubre",
+        "novembro" : "Noviembre",
+        "dezembro" : "Diciembre"
+      }
+    },
+    "transicao" : {
+      "parabens" : "¡Enhorabuena!",
+      "agoraDisponivel" : "Ya está disponible"
+    }
+  },
+  "saude" : {
+    "urgenciasEmergencias" : {
+      "servico" : {
+        "titulo" : "Serviço de Atendimento Móvel de Urgência (SAMU 192)",
+        "texto" : "O SAMU funciona 24 horas, todos os dias da semana, e o acesso é feito por meio do número de telefone 192. A ligação é gratuita e pode ser realizada por qualquer telefone fixo ou móvel local. O SAMU realiza o atendimento de urgência e emergência, por intermédio de ambulâncias, em qualquer lugar: residências, locais de trabalho e vias públicas. A equipe reúne médicos, enfermeiros, auxiliares de enfermagem e socorristas, que atendem às urgências de natureza traumática, clínica, pediátrica, cirúrgica, gineco-obstétrica e de saúde mental da população."
+      },
+      "quando" : {
+        "titulo" : "Quando chamar o SAMU?",
+        "topico1" : "Na ocorrência de problemas cardio-respiratórios;",
+        "topico2" : "Em casos de Intoxicação exógena;",
+        "topico3" : "Em caso de queimaduras graves;",
+        "topico4" : "Na ocorrência de maus tratos;",
+        "topico5" : "Em trabalhos de parto onde haja risco de morte da mãe ou do feto;",
+        "topico6" : "Em casos de tentativas de suicídio;",
+        "topico7" : "Em crises hipertensivas;",
+        "topico8" : "Quando houver acidentes/traumas com vítimas;",
+        "topico9" : "Em casos de afogamentos;",
+        "topico10" : "Em casos de choque elétrico;",
+        "topico11" : "Em acidentes com produtos perigosos;",
+        "topico12" : "Na transferência inter-hospitalar de doentes com risco de morte."
+      },
+      "unidades" : {
+        "titulo" : "Unidades de Pronto-Atendimento (UPA 24h)",
+        "texto" : "Prestam atendimento aos pacientes acometidos por quadros agudos de natureza clínica e o primeiro atendimento aos casos de natureza cirúrgica ou de trauma. Estabilizam os pacientes e realizam a investigação diagnóstica inicial, definindo, em todos os casos, a necessidade ou não de encaminhamento a serviços hospitalares de maior complexidade. Confira lista com as UPAs 24h das cidades-sede da Copa do Mundo 2014."
+      }
+    },
+    "vacinas" : {
+      "titulo" : "Vacunas",
+      "topico1" : "La Organización Mundial de la Salud (OMS) informa que no hay calendario de vacunación internacional para todos los viajeros. Para cada viajero, se adoptarán recomendaciones personalizadas de acuerdo con los países que se visitarán, según el tipo, la duración y el tiempo disponible para la administración de la vacuna antes de la salida;",
+      "topico2" : "Brasil no requiere un Certificado Internacional de Vacunación o Profilaxis para la entrada en el país;",
+      "topico3" : "Asegúrese de que sus vacunas de rutina están al día, de acuerdo con las recomendaciones de su país de origen, ya que es una medida eficaz y segura para la prevención de diversas enfermedades;",
+      "topico4" : "Debido a la circulación del sarampión en Europa, África y Asia, se recomienda que las personas de países de origen o destino con tales enfermedades son vacunados previamente.",
+      "topico5" : "La preparación para el viaje es una buena oportunidad para comprobar el estado de vacunación de los infantes, niños, adolescentes, adultos y ancianos.",
+      "topico6" : "Cada residente o visitante de cualquier ciudad brasileña también tiene las vacunas disponibles para la gripe y la poliomielitis.  Essas son enfermedades que se relacionan con posibles emergencias de salud pública de importancia internacional por la Organización Mundial de la Salud.",
+      "prevencao" : {
+        "titulo" : "Prevención de la fiebre amarilla",
+        "topico1" : "Evite la fiebre amarilla tomando la vacuna 10 días antes de visitar las zonas boscosas o de practicar el turismo ecológico o rural. Vea la lista de los municipios con recomendaciones sobre la vacunación contra la fiebre amarilla (solo en portugués);",
+        "topico2" : "Consulte a su médico, ya que puede ayudarle a decidir si es necesaria la vacuna, basada en su plan de viaje."
+      }
+    },
+    "lembretes" : {
+      "cartao" : {
+        "titulo" : "Cartão de vacinação",
+        "texto1" : "Viaje com as vacinas em dia e previna-se contra febre amarela 10 dias antes de praticar turismo ecológico, rural, de aventura ou visitar áreas de mata.",
+        "texto2" : "Procure um serviço de saúde, preferencialmente 4 a 8 semanas antes da viagem, e peça orientações a respeito dos cuidados necessários.",
+        "texto3" : "Atualize seu cartão de vacinação."
+      },
+      "vacinas" : {
+        "titulo" : "Vacinas",
+        "febreAmarela" : "FEBRE AMARELA",
+        "sarampo" : "SARAMPO – RUBEOLA – INFLUENZA E PÓLIO",
+        "texto1" : "Em viagens internacionais, pode ser exigido o Certificado Internacional de Vacinação ou Profilaxia (CIVP), comprovando a vacinação contra a febre amarela. Veja no endereço eletrônico da saúde do viajante os países que fazem essa exigência. Essa vacina deve ser tomada pelo menos 10 dias antes da viagem.",
+        "texto2" : "Tome a vacina 10 dias antes de praticar pescaria em rios, turismo ecológico, rural ou de aventura ou de visitar áreas de mata.",
+        "texto3" : "Todo morador de qualquer cidade brasileira tem disponível e deve manter atualizado seu calendário vacinal de acordo com sua idade, com destaque para o Sarampo, Rubeola, Influenza e Pólio."
+      },
+      "lavarAsMaos" : {
+        "titulo" : "Lavar as mãos",
+        "texto1" : "Lave bem as mãos com água e sabão várias vezes ao dia.",
+        "texto2" : "Lave as mãos com água e sabão várias vezes ao dia, principalmente antes de comer. Ao tossir ou espirrar, cubra o nariz e a boca com lenço descartável."
+      },
+      "bebaAgua" : {
+        "titulo" : "Beba água",
+        "alimentosEBebidas" : "Alimentos e bebidas",
+        "texto1" : "Beba bastante água e evite consumir alimentos crus ou mal cozidos.",
+        "texto2" : "Principalmente no verão, é importante beber bastante líquido, preferencialmente água, água de coco ou sucos.",
+        "texto3" : "Lave bem as frutas e verduras.",
+        "texto4" : "Evite alimentos crus ou mal cozidos.",
+        "texto5" : "Fique atento! Alimentos embalados devem conter no rótulo a identificação do produtor, a data de validade e a embalagem deve estar íntegra.",
+        "texto6" : "Evite consumir alimentos em locais cujas condições higiênicas de preparo e acondicionamento são precárias.",
+        "texto7" : "Saboreie refeições variadas, ricas em alimentos regionais e saudáveis."
+      },
+      "vestuario" : {
+        "titulo" : "Vestuário",
+        "texto" : "Use calçados, roupas confortáveis e equipamentos de proteção (colete salva-vidas, capacete, ou outros) quando necessário."
+      },
+      "cuidadosComInsolacao" : {
+        "titulo" : "Cuidados com insolação e picadas de inseto",
+        "insolacao" : "Insolação",
+        "malaria" : "Malária",
+        "texto1" : "Proteja-se contra o sol e picada de insetos",
+        "texto2" : "Evite a exposição ao sol entre 10 horas da manhã e 4 horas da tarde, sempre que possível, cubra-se com roupas apropriadas, chapéu e óculos escuros e use protetor solar apropriado.",
+        "texto3" : "Se viajar para regiões onde há transmissão de malária, use roupas que cubram bem o corpo, evite contato com margens de rios e lagoas após o pôr do sol e use mosquiteiro."
+      },
+      "adoecimento" : {
+        "titulo" : "Adoecimento durante ou após a viagem",
+        "texto" : "Se ficar doente durante ou logo após retornar, procure o serviço de saúde e informe ao médico sobre sua viagem, pois esta atitude poderá ajudar no diagnóstico de algumas doenças."
+      }
+    },
+    "saude" : {
+      "lembretesDeSaude" : "Recomendaciones de Salud",
+      "hospitaisDeReferencia" : "Los hospitales de referencia",
+      "telefonesUteis" : "Teléfonos de interés",
+      "farmacias" : "Farmacias",
+      "linkDashboard" : "Pulse aquí para ver <br> Salud en la Copa de Brasil",
+      "higieneECuidados" : "Cuidados básicos",
+      "vacinas" : "Vacunas",
+      "cuidadosBasicos" : "Cuidados básicos",
+      "urgenciasEmergencias" : "Urgencias y emergencias",
+      "prevencaoDoencas" : "Prevención de enfermedades",
+      "prevencaoAcidentes" : "La prevención de accidentes",
+      "prevencaoViolencia" : "Prevención de la violencia"
+    },
+    "lembretesDeSaude" : {
+      "introducao" : "Introducción a las recomendaciones de salud",
+      "texto" : "Texto recordatorios de salud"
+    },
+    "telefonesUteis" : {
+      "samu" : "Samu - Servicio Móvil de Urgencia",
+      "policiaMilitar" : "Policía militar",
+      "disqueDenuncia" : "Dial de quejas - Los abusos contra los niños",
+      "ouvidoriaDeSaude" : "Defensor del Pueblo de la salud",
+      "bombeiros" : "El departamento de bomberos",
+      "defesaCivil" : "Defensa civil",
+      "disqueIntoxicacao" : "Marque la intoxicación - consultas y reclamaciones relacionadas con veneno",
+      "anvisa" : "Agencia Nacional de Vigilancia Sanitaria - ANVISA",
+      "anac" : "ANAC - Agencia Nacional de Aviación Civil",
+      "antt" : "ANTT - Agencia Nacional de Transporte",
+      "antaq" : "Agencia Nacional de Transporte Fluvial - ANTAQ",
+      "policiaCivil" : "Policía Civil",
+      "policiaFederal" : "Policía Federal",
+      "policiaRodoviaria" : "Policía Federal de Caminos",
+      "vigiagro" : "VIGIAGRO (Monitoreo Agrícola Internacional)",
+      "diquesSaude" : "Marque la salud",
+      "cievs" : "Centro de Información Estratégica para la Vigilancia de la Salud - CIEVS",
+      "cve" : "CVE - Centro para la Vigilancia Epidemiológica"
+    },
+    "farmacias" : {
+      "erro" : "No se puede encontrar farmacias o droguerías en 20 kilometros"
+    },
+    "mapa" : {
+      "referencia" : "Hospitales de referencia",
+      "outros" : "Encontrado por Google",
+      "encontrados" : "Hospitales encontrados por Google",
+      "encontradas" : "Farmacias encontrados por Google",
+      "tracarRota" : "Trace Route usando:",
+      "rotaGoogle" : "Google Maps",
+      "rotaApple" : "Mapas de Apple"
+    },
+    "cuidadosBasicos" : {
+      "topico1" : "Consulte a su médico, preferiblemente entre 4 y 8 semanas antes del viaje para informar su itinerario. Pida orientación sobre los cuidados para protegerse contra las enfermedades y lesiones;",
+      "topico2" : "Es posible que tengas dificultad o no pueda encontrar los medicamentos que suele tomar durante el viaje. Solicite orientaciones a su médico acerca de qué medicamentos y en qué cantidad debe llevar consigo durante el viaje, incluyendo equipaje de mano;",
+      "topico3" : "Lleve consigo sus documentos de identificación, de preferencia en Inglés y Portugués, con información de contacto personal, tipo de sangre, por si usted tiene alergias, diabetes u otras condiciones que puedan requerir una atención especial;",
+      "topico4" : "La mujer embarazada debe consultar a su médico antes de viajar, ya que será sometida a diversos riesgos y el viaje puede afectar a su seguridad y comodidad;",
+      "topico5" : "Antes de viajar, consulte las reglas específicas de la empresa de transporte para las mujeres embarazadas",
+      "topico6" : "Brasil es un país tropical. Se recomienda al viajero la ingestión constante de líquidos para evitar la deshidratación;",
+      "topico7" : "Use ropa y zapatos cómodos. Ellos le darán la seguridad y la protección contra los esguinces, las picaduras de insectos y accidentes con animales venenosos;",
+      "topico8" : "Para protegerse del sol, cúbrase con ropa apropiada, incluyendo sombrero o gorra y gafas de sol. Evite la exposición directa al sol de las 10 a.m. a las 4 p.m.;",
+      "topico9" : "Use protector solar con un factor de protección adecuado para el color de su piel, de acuerdo con las instrucciones del fabricante. Incluso en los lugares más fríos, su piel estará protegida de la luz solar;",
+      "topico10" : "Use repelentes cuando sea necesario;",
+      "topico11" : "Lávese las manos con agua y jabón varias veces al día, especialmente antes de comer, después de usar medios de transporte público o visitar los mercados o lugares con gran afluencia de personas",
+      "topico12" : "En Brasil, está prohibido por la ley conducir después de consumir alcohol, incluso en pequeñas cantidades."
+    },
+    "prevencao" : {
+      "acidentes" : {
+        "seguranca" : {
+          "titulo" : "Seguridad de los vehículos",
+          "topico1" : "Es obligatorio el uso del cinturón de seguridad en los vehículos;",
+          "topico2" : "Para los niños, también es obligatorio el uso de asientos de seguridad en el asiento trasero del coche;",
+          "topico3" : "Si quiere conducir motocicletas o bicicletas, siempre use un casco. En Brasil, se necesita de una licencia específica para conducir motocicletas."
+        },
+        "picadas" : {
+          "titulo" : "Protéjase contra picaduras de insectos",
+          "topico1" : "Infórmese sobre la ocurrencia de malaria, dengue, fiebre amarilla y otras enfermedades que pueden ser transmitidas por los mosquitos. El riesgo de infección de estas enfermedades puede reducirse si se evitan las picaduras. Tenga en cuenta las siguientes recomendaciones:",
+          "topico2" : "Permanezca en lugares que tengan mallas de protección en puertas y ventanas, sobre todo fuera de la capital y las principales ciudades, o tome consigo pantallas mosquiteras / cortinas;",
+          "topico3" : "En excursiones de ecoturismo, use ropa para protegerse el cuerpo contra las picaduras de insectos y garrapatas, tales como camisas de manga larga, pantalones y zapatos cerrados;",
+          "topico4" : "Aplique repelente a las áreas expuestas de la piel, siguiendo las instrucciones del fabricante. No se recomienda usar repelente en los niños menores de dos años sin consejo médico."
+        },
+        "mordeduras" : {
+          "titulo" : "Contra las mordeduras u otros tipos de accidentes con animales",
+          "topico1" : "En caso de contacto accidental, mordedura, lamido o arañazo por mamíferos (perro, gato, murciélago o cualquier otro animal salvaje), lave la zona afectada con agua y jabón y busque atención médica de inmediato;",
+          "topico2" : "Si usted tiene accidentes con animales venenosos (escorpiones, serpientes, arañas, abejas y orugas), no realice procedimientos de fabricación casera y busque los servicios de salud pública local inmediatamente. Durante el rescate, mueva lo menos posible. El miembro afectado deberá ser puesto en una posición más alta en relación con el cuerpo y el lugar de la picadura sólo se puede lavar con agua y jabón;",
+          "topico3" : "En los casos de accidentes con medusas y carabelas, se debe aplicar vinagre o una compresa helada del agua de mar (no utilice agua dulce) y evitar de frotar la zona afectada;",
+          "topico4" : "Evite el contacto directo con animales vivos o muertos, y, sobre todo, no manipule estos animales aunque puedan parecer inofensivos;",
+          "topico5" : "Evite caminar descalzo en áreas de bosques o plantaciones. Preferiblemente, use pantalones largos y botas o botas con polainas (que protejan hasta la rodilla);",
+          "topico6" : "En el caso específico de las arañas y los escorpiones, inspeccione ropa y zapatos antes de ponérselos o cubiertas y toallas antes de usarlas;",
+          "topico7" : "Durante la realización de senderos o paseos por la naturaleza, examine cuidadosamente los lugares donde se apoya (árboles, rocas);",
+          "topico8" : "Tenga cuidado con las abejas y las avispas. Ellas son atraídas por sonidos, olores y colores, tales como ruidos y equipos de jardinería y motores marinos;",
+          "topico9" : "No meta la mano en los agujeros y madrigueras."
+        }
+      },
+      "doencas" : {
+        "malaria" : {
+          "titulo" : "Prevención de la malaria",
+          "topico1" : "Antes de viajar, verifique las zonas que han reportado casos de malaria durante todo el año (solo en portugués);",
+          "topico2" : "En Brasil, la transmisión se concentra en la región amazónica, que comprende los estados de Acre, Amapá, Amazonas, Maranhão, Mato Grosso, Pará, Rondônia, Roraima y Tocantins;",
+          "topico3" : "En las zonas de transmisión de la malaria, es esencial que el viajero tenga conocimiento sobre el período de mayor actividad de los mosquitos vectores de la malaria, de la puesta del sol al amanecer;",
+          "topico4" : "Use ropa de colores claros y con manga larga durante las actividades de alta exposición;",
+          "topico5" : "Aplique repelente a las áreas expuestas de la piel, siguiendo las instrucciones del fabricante. No se recomienda usar repelente en los niños menores de dos años sin consejo médico;",
+          "topico6" : "En las zonas donde hay transmisión de la malaria, es imperativo que los viajeros estén atentos a la aparición de los síntomas, como fiebre, dolor de cuerpo y dolor de cabeza;",
+          "topico7" : "En caso de brote de los síntomas de la enfermedad, busque un centro de salud especialista más cercano. Lo ideal es que este servicio se lleve a cabo tan pronto como sea posible, dentro de las 48 horas tras los primeros síntomas;",
+          "topico8" : "Brasil tiene una red de salud pública estructurada para diagnosticar y tratar a los pacientes de manera oportuna y adecuada;",
+          "topico9" : "Si desea obtener más información acerca de la malaria antes de realizar su viaje, busque orientación en uno de los Centros de Referencia (solo en portugués);",
+          "topico10" : "Para obtener información sobre la incidencia de la malaria en el mundo, visite el sitio web de la Organización Mundial de la Salud;"
+        },
+        "respiratorias" : {
+          "titulo" : "Precauciones contra la transmisión de enfermedades respiratorias",
+          "topico1" : "Desinfecte las manos con agua y jabón antes de comer, tocarse los ojos, la boca y la nariz y después de toser, estornudar o usar el baño;",
+          "topico2" : "Cuando tosa o estornude, cúbrase la nariz y la boca con un pañuelo, preferentemente desechable. Si no es así, evite estornudar en las manos. Se recomienda hacerlo en el antebrazo, cerca del codo;",
+          "topico3" : "Las personas enfermas deberían descansar, consumar una dieta equilibrada, aumentar la ingesta de líquidos y evitar las multitudes y los ambientes cerrados;",
+          "topico4" : "Mantenga los ambientes ventilados;",
+          "topico5" : "Siempre sea atento a la aparición de síntomas respiratorios de mayor gravedad y busque asistencia médica inmediata."
+        },
+        "alimentos" : {
+          "titulo" : "Consume alimentos y bebidas saludablemente",
+          "topico1" : "Evite el consumo de alimentos cuyas condiciones higiénicas de preparación y embalaje sean precarias;",
+          "topico2" : "Prefiera alimentos con bajo contenido de azúcares, grasas y sal;",
+          "topico3" : "Beba mucho líquido, preferentemente agua o jugo. Evite los alimentos crudos o poco cocinados, especialmente los mariscos;",
+          "topico4" : "Los alimentos envasados deben estar etiquetados para identificar al productor, la fecha de vencimiento y el embalaje debe estar intacto;",
+          "topico5" : "Durante el turismo rural, prefiera los alimentos que puedan quedar sin refrigeración y no se estropean con el calor;",
+          "topico6" : "Si usted tiene diarrea y vómitos debido a la ingesta de alimentos y bebidas, necesita mucho cuidado con la deshidratación. Se recomienda la ingesta de sal de rehidratación oral, proporcionado gratuitamente por el Sistema Nacional de Salud u otras soluciones de ese tipo. Las bebidas deportivas no compensan adecuadamente las pérdidas y no deben ser utilizadas para el tratamiento de la enfermedad diarreica.",
+          "topico7" : "Para obtener más información sobre los cuidados nutricionales, consulte las recomendaciones de la Organización Mundial de la Salud."
+        },
+        "sexo" : {
+          "titulo" : "Tenga relaciones sexuales seguras",
+          "topico1" : "En Brasil, los condones se distribuyen gratuitamente por el gobierno y están disponibles en las clínicas de salud, unidades de emergencia, albergues, centros de servicios turísticos y otros puntos de distribución repartidos por las ciudades. Tome siempre condones para facilitar su uso y la prevención de enfermedades de transmisión sexual."
+        }
+      },
+      "violencias" : {
+        "titulo" : "Prevención a la violencia",
+        "topico1" : "En el caso de la violencia sexual, se debe buscar tan pronto una unidad de salud, para que se adopten la prevención y la atención en conformidad con la Norma Técnica del Ministerio de Salud;",
+        "topico2" : "Todas las formas de violencia contra los niños, adolescentes, mujeres y ancianos son de notificación obligatoria por los servicios de salud públicos y privados en Brasil;",
+        "topico3" : "En el caso de atención de urgencia debido a los accidentes, la violencia o las emergencias clínicas, el servicio de emergencia puede ser accionado por la marcación 192 - SAMU (Servicio de Atención Móvil de Urgencia);",
+        "topico4" : "Si usted sabe de un caso de explotación sexual de niños y adolescentes, haga la comunicación a través de la marcación 100 (Disque Derechos Humanos) o la marcación 190 (Policía Militar);",
+        "topico5" : "También puede activar la marcación 180 para reportar o denunciar los casos de violencia contra la mujer;",
+        "topico6" : "El consumo de alcohol en exceso es un factor de riesgo para la ocurrencia de la violencia, por lo que el viajero debe beber con moderación y respeto;",
+        "topico7" : "Recuerde: si bebes, no conduzcas. El consumo de bebidas alcohólicas asociadas con dirección implica un alto riesgo de accidentes de tráfico. Vamos a proteger a los peatones, pasajeros y conductores en el tráfico;",
+        "topico8" : "La venta de bebidas alcohólicas a personas menores de 18 años no está permitido en Brasil, según el Estatuto del Niño y del Adolescente."
+      }
+    }
+  },
+  "jogos" : {
+    "jogos" : {
+      "selecoes" : "Selecciones",
+      "resultados" : "Resultados",
+      "calendarioDosJogos" : {
+        "faseDeGrupos": "FASE DE GRUPOS",
+        "jogo": "PARTIDO",
+        "grupo": "GRUPO",
+        "rodada": "RONDA",
+        "oitavasDeFinal": "OCTAVOS DE FINAL",
+        "quartasDeFinal": "CUARTOS DE FINAL",
+        "vencQua": "GANADOR DE LA CUARTOS DE FINAL",
+        "semifinais": "SEMIFINALES",
+        "perdSemifinal": "PERDEDOR DE LA SEMIFINAL",
+        "vencSemifinal": "GANADOR DE LA SEMIFINAL",
+        "terceiroLugar": "PARTIDO POR EL TERCER PUESTO",
+        "final": "FINAL"
+      },
+      "maisNoticias" : "Ver más noticias"
+    }
+  },
+  "turismo" : {
+    "turismo" : {
+      "fanFest" : "Fan Fest",
+      "pontosTuristicos" : "Puntos de interés",
+      "atividadesCulturais" : "Actividades Culturales",
+      "baresERestaurantes" : "Bares y restaurantes"
+    }
+  },
+  "mais" : {
+    "mais" : {
+      "acesseOSite" : "Acceda al site",
+      "twitter" : {
+        "agora" : "Ahora",
+        "1minuto" : "1min",
+        "minutos" : "Min",
+        "1hora" : "1h",
+        "horas" : "Horas",
+        "ontem" : "Ayer",
+        "dias" : "Día",
+        "semanas" : "Semana"
+      }
+    },
+    "itensDoJogo" : {
+      "selecao" : "Di como te sientes. Toca y arrastra el dedo hacia arriba o hacia abajo.",
+      "ok" : "Toca en el botón OK para confirmar como te sientes.",
+      "categoria" : "Descubre en qué categoría te encuentras.",
+      "arena" : "Quédate informado de los principales datos de las Arenas.",
+      "selecaoArena" : "Descubre en cual arena estás.",
+      "pontos" : "Gane puntos indicando cómo esta su salud. El día del partido la participación vale 3 puntos y cuando no hay juego, sólo 1 punto. Puede marcar cada 2 horas. Pero atención, porque la obtención de puntos no es suficiente para convertirse en un jugador profesional. Participación diaria es la mejor forma de llegar a la etapa final del juego.",
+      "barraDeEngajamento" : "El medidor de actividad está directamente relacionada con tu puntuación. Cuanto más activo eres, más rápido avanzas de categoría y liberas arenas."
+    },
+    "categorias" : {
+      "pontos" : "%",
+      "introducao" : "Bienvenido al mundo del fútbol. Ahora comenzarás tu carrera como jugador. ¡Suerte!",
+      "texto" : {
+        "denteDeLeite" : "Bienvenido al mundo del fútbol. Ahora comenzarás tu carrera como jugador. ¡Suerte!",
+        "mirim" : "Ahora que ya estás familiarizado con el campo, es el momento para entrenar aún más duro. Sigue así.",
+        "infantil" : "Sigue todas las instrucciones de tu entrenador y ten  fuerza de voluntad para subir de categoría. Contamos contigo.",
+        "juvenil" : "¡Muy bien! Ya vemos que tienes habilidad con el balón en el campo. ¡Rumbo a la victoria!",
+        "junior" : "Ya estás casi en tu objetivo. El enfoque y el trabajo son lo que necesitas para ser un jugador profesional.",
+        "profissional" : "Finalmente, ya eres un jugador profesional. Sigue jugando y compite por los premios."
+      }
+    },
+    "linksUteis" : {
+      "governamentais": "Gubernamental",
+      "naoGovernamentais": "No gubernamental",
+      "outrosLinks": "Otros",
+      "gov" : {
+        "viajante" : "Salud viajero",
+        "svs" : "Secretaría de Vigilancia en Salud",
+        "formsus" : "Formulario de notificación de las enfermedades y dolencias",
+        "agricultura" : "Ministerio de Agricultura",
+        "m" : "Equipaje Legal",
+        "anvisa" : "ANVISA",
+        "copa2014" : "Portal de la Copa",
+        "aplicativos" : "Aplicaciones del Gobierno Federal",
+        "malaria" : "Las áreas con presencia de malaria en Brasil"
+      },
+      "nGov" : {
+        "healthmap" : "HealthMap",
+        "promedmail" : "ProMed",
+        "unaids" : "Proteja el gol",
+        "fifa" : "Fifa"
+      },
+      "outros" : {
+        "who" : "Organización Mundial de la Salud"
+      }
+    },
+    "malaLegal" : {
+      "titulo" : "Vigilancia Agropecuaria Internacional",
+      "li1" : "Brasil tiene reglas para controlar la entrada de animales, vegetales y sus productos en el país.",
+      "li2" : "Antes del viaje consulte la Embajada o Consulado de Brasil sobre requisitos para la importación de animales, vegetales y otros productos.",
+      "li3" : "No pueden ingresar a Brasil sin autorización previa y certificación sanitaria:",
+      "li4" : {
+        "li1" : "Frutas, verduras, leche, queso, mantequilla, yogur, dulce de leche, miel, cera, propóleos, animales de compañía, carnes “in natura” o industrializadas (jamón, chacinados, enlatados), pescados y frutos del mar, hortalizas frescas, comida servida en el avión;",
+        "li2" : "Animales de compañía, insectos, moluscos, bacterias y hongos, huevos, semen, embriones;",
+        "li3" : "Pesticidas y productos veterinarios (suero, vacunas, medicamentos, entre otros), alimentos balanceados para perros y gatos;",
+        "li4" : "Plántulas, semillas, madera y tierra."
+      }
+    },
+    "consulados" : {
+      "paises" : {
+        "SouthAfrica" : "Sudáfrica",
+        "Albania" : "Albania",
+        "Germany" : "Alemania",
+        "Angola" : "Angola",
+        "Algeria" : "Argelia",
+        "Argentina" : "Argentina",
+        "Armenia" : "Armenia",
+        "Australia" : "Australia",
+        "Austria" : "Austria",
+        "Bangladesh" : "Bangladesh",
+        "Belgium" : "Bélgica",
+        "Benin" : "Benin",
+        "Bolivia" : "Bolivia",
+        "Bosnia" : "Bosnia-Herzegovina",
+        "BurkinaFaso" : "Burkina Faso",
+        "Brazil" : "Brasil",
+        "CapeVerde" : "Cabo Verde",
+        "Cameroon" : "Camerún",
+        "Canada" : "Canadá",
+        "Chile" : "Chile",
+        "China" : "China",
+        "Cyprus" : "Chipre",
+        "Colombia" : "Colombia",
+        "SouthKorea" : "Corea del Sur",
+        "IvoryCoast" : "Costa de Marfil",
+        "CostaRica" : "Costa Rica",
+        "Croatia" : "Croacia",
+        "Cuba" : "Cuba",
+        "Denmark" : "Dinamarca",
+        "Ecuador" : "Ecuador",
+        "Slovakia" : "Eslovaquia",
+        "Spain" : "España",
+        "US" : "EE.UU.",
+        "Estonia" : "Estonia",
+        "England" : "Inglaterra",
+        "Philippines" : "Filipinas",
+        "Finland" : "Finlandia",
+        "France" : "Francia",
+        "Gabon" : "Gabón",
+        "Gambia" : "Gambia",
+        "Ghana" : "Ghana",
+        "Greece" : "Grecia",
+        "Guatemala" : "Guatemala",
+        "Guyana" : "Guayana",
+        "Guinea" : "Guinea",
+        "Guinea-Bissau" : "Guinea-Bissau",
+        "Haiti" : "Haití",
+        "Honduras" : "Honduras",
+        "Hungary" : "Hungría",
+        "India" : "India",
+        "Indonesia" : "Indonesia",
+        "Iraq" : "Irak",
+        "Iran" : "Irán",
+        "Ireland" : "Irlanda",
+        "Iceland" : "Islandia",
+        "Israel" : "Israel",
+        "Italy" : "Italia",
+        "Jamaica" : "Jamaica",
+        "Japan" : "Japón",
+        "Kuwait" : "Kuwait",
+        "Latvia" : "Letonia",
+        "Lebanon" : "Líbano",
+        "Liberia" : "Liberia",
+        "Libya" : "Libia",
+        "Lithuania" : "Lituania",
+        "Luxembourg" : "Luxemburgo",
+        "Malaysia" : "Malasia",
+        "Mali" : "Malí",
+        "Malta" : "Malta",
+        "Morocco" : "Marruecos",
+        "Mexico" : "México",
+        "Mozambique" : "Mozambique",
+        "Monaco" : "Mónaco",
+        "Mongolia" : "Mongolia",
+        "Nicaragua" : "Nicaragua",
+        "Nigeria" : "Nigeria",
+        "Norway" : "Noruega",
+        "newZealand" : "Nueva Zelandia",
+        "Netherlands" : "Países Bajos",
+        "Panama" : "Panamá",
+        "Pakistan" : "Pakistán",
+        "Paraguay" : "Paraguay",
+        "Peru" : "Perú",
+        "Poland" : "Polonia",
+        "Portugal" : "Portugal",
+        "UK" : "Reino Unido",
+        "DemocraticRepublicofCongo" : "República Democrática del Congo",
+        "DominicanRepublic" : "República Dominicana",
+        "CzechRepublic" : "República Checa",
+        "Russia" : "Rusia",
+        "Romania" : "Rumania",
+        "SanMarino" : "San Marino",
+        "SaoTomeandPrincipe" : "Santo Tomé y Príncipe",
+        "SaintVincentandGrenadines" : "San Vicente y Granadinas",
+        "Senegal" : "Senegal",
+        "Serbia" : "Serbia",
+        "Syria" : "Siria",
+        "SriLanka" : "Sri Lanka",
+        "Sweden" : "Suecia",
+        "Switzerland" : "Suiza",
+        "Suriname" : "Suriname",
+        "Thailand" : "Tailandia",
+        "Togo" : "Togo",
+        "Tunisia" : "Túnez",
+        "Turkey" : "Turquía",
+        "Ukraine" : "Ucrania",
+        "Uruguay" : "Uruguay",
+        "Venezuela" : "Venezuela"
+      }
+    }
+  }
+}
