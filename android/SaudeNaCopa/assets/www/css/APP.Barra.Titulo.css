@@ -1,0 +1,28 @@
+/* line 1, ../scss/APP.BarraDeTitulo.scss */
+#barraDeTitulo {
+  background-color: black;
+  color: white;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+  display: none;
+}
+/* line 13, ../scss/APP.BarraDeTitulo.scss */
+.barraDeTitulo#app #barraDeTitulo {
+  top: 0;
+}
+/* line 17, ../scss/APP.BarraDeTitulo.scss */
+#barraDeTitulo h1 {
+  font-size: 1em;
+}
+/* line 20, ../scss/APP.BarraDeTitulo.scss */
+#barraDeTitulo .voltar {
+  position: absolute;
+  left: 1em;
+  top: 50%;
+  margin-top: -11px;
+}

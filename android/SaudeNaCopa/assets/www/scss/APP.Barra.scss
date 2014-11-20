@@ -1,0 +1,9 @@
+.barra {
+	display: block !important;
+
+	.fullscreen & {
+		display: none !important;
+	}
+}
+@import "APP.Barra.Titulo.scss";
+@import "APP.Barra.Menu.scss";

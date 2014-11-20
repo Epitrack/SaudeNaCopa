@@ -1,0 +1,122 @@
+@import "compass/css3/border-radius";
+@import "compass/css3/transform";
+@import "compass/css3/background-size";
+
+
+#tela_abertura {
+	.marca.grande {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-left: -200px;
+		margin-top: -169px;
+	}
+	footer li {
+		position: absolute;
+		width: 33%;
+		bottom: 2em;
+		height: 100px;
+		@include background-size(80%, auto);
+		background-repeat: no-repeat;
+		background-position: center center;
+
+		&.sus {
+			left: 0;
+			background-image: url("../imagens/apresentacao/abertura/sus.png");
+		}
+		&.skoll {
+			left: 33%;			
+			background-image: url("../imagens/apresentacao/abertura/skoll.png");
+
+		}
+		&.tephinet {
+			left: 66%;
+			background-image: url("../imagens/apresentacao/abertura/tephinet.png");
+
+		}
+	}
+}
+#area_apresentacao {
+}
+
+#tela_idioma {
+	
+	$tamanhoIdioma: 80px;
+	$espacamento: $tamanhoIdioma*0.4;
+
+	h1 {
+		margin-top: 1em;
+		position: absolute;
+		top: 50%;
+		margin-top: ($espacamento+($tamanhoIdioma*2))*-1;
+		width: 100%;
+		left: 0;
+		font-size: 3.3em;
+		text-align: center;
+	}
+
+	
+	ul {
+		
+		
+		li {
+			display: block;
+			background-color: #efefef;
+			//padding: $tamanhoIdioma/2 $tamanhoIdioma/2 $tamanhoIdioma/2;
+			height: $tamanhoIdioma;
+			width: $tamanhoIdioma;
+   			box-sizing: border-box;
+			margin: 0 auto;
+			text-align: center;
+			line-height: $tamanhoIdioma;
+			@include border-radius(50%);
+			margin-bottom: 1em;
+			overflow: hidden;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-left: -$tamanhoIdioma/2;
+
+			a {
+				position: absolute;
+			    top: 0;
+			    left: 0;
+				display: block;
+				height: 100%;
+				width: 100%;
+				line-height: $tamanhoIdioma;
+				background-image: url("../imagens/apresentacao/idioma/bandeiras.png");
+				@include background-size(100%, auto);
+
+			}
+			&.pt{
+				margin-top: ($espacamento+$tamanhoIdioma+$tamanhoIdioma/2)*-1;
+
+				a  {
+					background-position: 0px  0;
+				}
+			}
+			&.es{
+				margin-top: -$tamanhoIdioma/2;
+
+				a  {
+					background-position: 0px center;
+				}
+			}
+			&.en{
+				margin-top: $espacamento+$tamanhoIdioma - $tamanhoIdioma/2;
+
+				a  {
+					background-position: 0px bottom;
+				}
+			}
+
+		}
+	}
+}
+#tela_abertura {
+	
+}
+#tela_apresentacao {
+	
+}

@@ -1,0 +1,29 @@
+/* line 3, ../scss/APP.Icones.scss */
+.icone.sentimento {
+  width: 100px;
+  height: 100px;
+  background-repeat: repeat;
+  background-position: top left;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+/* line 11, ../scss/APP.Icones.scss */
+.icone.sentimento[data-nivel='muitoBem'] {
+  background-image: url("../imagens/icones/sentimento_muitoBem.png");
+}
+/* line 14, ../scss/APP.Icones.scss */
+.icone.sentimento[data-nivel='bem'] {
+  background-image: url("../imagens/icones/sentimento_bem.png");
+}
+/* line 17, ../scss/APP.Icones.scss */
+.icone.sentimento[data-nivel='normal'] {
+  background-image: url("../imagens/icones/sentimento_normal.png");
+}
+/* line 20, ../scss/APP.Icones.scss */
+.icone.sentimento[data-nivel='mal'] {
+  background-image: url("../imagens/icones/sentimento_mal.png");
+}
+/* line 23, ../scss/APP.Icones.scss */
+.icone.sentimento[data-nivel='muitoMal'] {
+  background-image: url("../imagens/icones/sentimento_muitoMal.png");
+}
