@@ -1,0 +1,363 @@
+<?php
+
+/**
+ * Class UsuarioVO
+ */
+/**
+ * Value Object (VO)
+ *
+ * UsuarioVO: Classe básica referente aos dados do usuário.
+ *
+ * @author      Rodrigo Carneiro <teoria@gmail.com>
+ * @copyright   2014 Epitrack
+ * @link        http://www.epitrack.com.br/
+ * @version     2.4.2
+ * @package     model/vo
+ *
+ *
+ */
+
+class UsuarioVO extends VO{
+
+    /**
+     * id do usuário
+     * @var
+     */
+    protected  $id;
+    /**
+     * Nome
+     * @var
+     */
+    protected $nome;
+    /**
+     * Apelido
+     * @var
+     */
+    protected $apelido;
+    /**
+     * Idade
+     * @var
+     */
+    protected $idade;
+    /**
+     * Sexo
+     * @var
+     */
+    protected $sexo;
+    /**
+     * Email
+     * @var
+     */
+    protected $email;
+    /**
+     * Senha
+     * @var
+     */
+    protected $senha;
+    /**
+     * Senha
+     * @var
+     */
+    protected $confirmacaoDeSenha;
+    /**
+     * GCMid
+     * @var int
+     */
+    protected $gcmid;
+    /**
+     * Idioma
+     * @var int
+     */
+    protected $idioma;
+    /**
+     * Pontuação
+     * @var
+     */
+    protected $pontuacao;
+    /**
+     * Total de pontos possíveis
+     * @var
+     */
+    protected $totalPontosPossiveis;
+    /**
+     * Tipo de equipamento mobile
+     * @var
+     */
+    protected $device;
+    /**
+     * Arena
+     * @var
+     */
+    protected $arena;
+
+
+    /**
+     * Construtor
+     */
+    function __construct() {
+        $this->requires = array( 'email', 'senha' );
+        $this->gcmid = 0;
+        $this->idioma = 0;
+    }
+
+    /**
+     * Definir arena
+     * @param mixed $arena
+     */
+    public function setArena($arena) {
+
+        $this->arena = $arena;
+    }
+
+    /**
+     * Arena
+     * @return mixed
+     */
+    public function getArena() {
+
+        return $this->arena;
+    }
+
+
+
+    /**
+     * Definir Device
+     * @param mixed $device
+     */
+    public function setDevice($device) {
+
+        $this->device = $device;
+    }
+
+    /**
+     * Device
+     * @return mixed
+     */
+    public function getDevice() {
+
+        return $this->device;
+    }
+
+
+    /**
+     * Definir pontos possíveis
+     *
+     * @param mixed $totalPontosPossiveis
+     */
+    public function setTotalPontosPossiveis($totalPontosPossiveis) {
+
+        $this->totalPontosPossiveis = $totalPontosPossiveis;
+    }
+
+    /**
+     * Pontos possíveis
+     * @return mixed
+     */
+    public function getTotalPontosPossiveis() {
+
+        return $this->totalPontosPossiveis;
+    }
+
+
+    /**
+     * Definir pontuação
+     * @param mixed $pontuacao
+     */
+    public function setPontuacao($pontuacao) {
+
+        $this->pontuacao = $pontuacao;
+    }
+
+    /**
+     * Pontuação
+     * @return mixed
+     */
+    public function getPontuacao() {
+
+        return $this->pontuacao;
+    }
+
+
+    /**
+     * Definir id
+     * @param mixed $idUsuario
+     */
+    public function setIdUsuario($idUsuario) {
+
+        $this->id = $idUsuario;
+    }
+
+    /**
+     * IdUsuário
+     * @return mixed
+     */
+    public function getIdUsuario() {
+
+        return $this->id;
+    }
+
+
+    /**
+     * Definir apelido
+     * @param mixed $apelido
+     */
+    public function setApelido($apelido) {
+
+        $this->apelido = $apelido;
+    }
+
+    /**
+     * Apelido
+     * @return mixed
+     */
+    public function getApelido() {
+
+        return $this->apelido;
+    }
+
+    /**
+     * senha
+     * @param mixed $confirmacaoDeSenha
+     */
+    public function setConfirmacaoDeSenha($confirmacaoDeSenha) {
+
+        $this->confirmacaoDeSenha = $confirmacaoDeSenha;
+    }
+
+    /**
+     * senha
+     * @return mixed
+     */
+    public function getConfirmacaoDeSenha() {
+
+        return $this->confirmacaoDeSenha;
+    }
+
+    /**
+     * Definir email
+     * @param mixed $email
+     */
+    public function setEmail($email) {
+
+        $this->email = $email;
+    }
+
+    /**
+     * email
+     * @return mixed
+     */
+    public function getEmail() {
+
+        return $this->email;
+    }
+
+    /**
+     * definir idade
+     * @param mixed $idade
+     */
+    public function setIdade($idade) {
+
+        $this->idade = $idade;
+    }
+
+    /**
+     * idade
+     * @return mixed
+     */
+    public function getIdade() {
+
+        return $this->idade;
+    }
+
+    /**
+     * definir nome
+     * @param mixed $nome
+     */
+    public function setNome($nome) {
+
+        $this->nome = $nome;
+    }
+
+    /**
+     * nome
+     * @return mixed
+     */
+    public function getNome() {
+
+        return $this->nome;
+    }
+
+    /**
+     * definir senha
+     * @param mixed $senha
+     */
+    public function setSenha($senha) {
+
+        $this->senha = $senha;
+    }
+
+    /**
+     * senha
+     * @return mixed
+     */
+    public function getSenha() {
+
+        return $this->senha;
+    }
+
+    /**
+     * definir sexo
+     * @param mixed $sexo
+     */
+    public function setSexo($sexo) {
+
+        $this->sexo = $sexo;
+    }
+
+    /**
+     * sexo
+     * @return mixed
+     */
+    public function getSexo() {
+
+        return $this->sexo;
+    }
+
+    /**
+     * definir gcmid
+     * @param mixed $gcmid
+     */
+    public function setGcmid($gcmid) {
+
+        $this->gcmid = $gcmid;
+    }
+
+    /**
+     * gcmid
+     * @return mixed
+     */
+    public function getGcmid() {
+
+        return $this->gcmid;
+    }
+
+    /**
+     * definir idioma
+     * @param mixed $idioma
+     */
+    public function setIdioma($idioma) {
+
+        $this->idioma = $idioma;
+    }
+
+    /**
+     * idioma
+     * @return mixed
+     */
+    public function getIdioma() {
+
+        return $this->idioma;
+    }
+
+
+} 

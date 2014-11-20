@@ -1,0 +1,292 @@
+@import "compass/css3/background-size";
+@import "compass/css3/border-radius";
+@import "compass/css3/images";
+@import "compass/css3/transform";
+@import "compass/css3/opacity";
+@import "compass/css3/transition";
+@import "Variaveis.scss";
+
+#area_saude {
+	color: #6d6e70;
+
+	h1, h2 {
+		text-transform: uppercase;
+		color: #4cb6dd;
+		font-size: 1.422em;
+		margin-bottom: 1em;
+		margin-top: 1em;
+	}
+	h2 {
+		font-size: 1.2em;
+	}
+	p {
+		font-size: 1.422em;
+	}
+	ul.listaMenu {
+		margin-top: 1em;
+		font-size: 1.422em;
+		li {
+			color: #6d6e70;
+			line-height: 50px;
+			border-bottom: 1px solid #aeaeb3;
+
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+
+		&.multiLinha {
+			li {
+				display: table;
+				width: 100%;
+				line-height: normal;
+				min-height: 50px;
+			}
+			.celula {
+				display: table-cell;
+				vertical-align: middle;
+				padding: 1em 30px 1em 0;
+			}
+		}
+	}
+
+
+	ul.padrao {
+		font-size: 1.422em;
+		ul {
+			padding-left: 2em;
+			font-size: 1em;
+		}
+
+		li {
+			list-style-position: outside;
+			list-style-type: disc;
+			margin-bottom: 1em;
+			display: list-item;
+			
+			// &:last-child {
+			// 	list-style-type: none;
+			// }
+
+			// li, li:last-child  {
+			// 	list-style-type: circle;
+			// }
+		}
+	}
+	.baseDaTelaSaude {
+		position: absolute;
+		width: 100%;
+		bottom: $barra_altura;
+		left: 0;
+	}
+
+	.conteudoDeRolagem {
+		.container-fluid {
+			padding: 0;
+		}
+	}
+}
+
+#tela_saude {
+	#linkDashboard {
+		display: none;
+		height: 168px;
+		position: relative;
+		@include background-image(linear-gradient(#d2e1ec, #f1f6f9));
+		&::before {
+			content: "";
+			position: absolute;
+			width: 143px;
+			height: 150px;
+			left: 0;
+			top: 15px;
+			background-image: url("../imagens/saude/icone_brasil.png");
+			@include bg(143px 150px);
+		}
+		span {
+			@include esticar(61px, 0, 0, 156px);
+			font-size: 1.572em;
+			font-weight: bold;
+			color: #1e9fc4;
+		}
+		&::after {
+			content: "";
+			height: 5px;
+			position: absolute;
+			width: 100%;
+			bottom: -5px;
+			left: 0;
+			@include background-image(linear-gradient(#91c5e1, #5bafd9));
+		}
+	
+	}
+
+	.listaMenu {
+		color: #6e6c73 !important;
+		li {
+			padding-left: 40px;
+			position: relative;
+
+			@mixin iconeMenuSaude($classe, $left:0) {
+				&.#{$classe}::before {
+					position: absolute;
+					height: 100%;
+					width: 40px;
+					content: "";
+					top: 0;
+					left: 0;
+					background-image: url("../imagens/saude/icone_#{$classe}.png");
+					@include bg(auto 22px);
+				}
+			}
+
+			.offline &.hospitais,
+			.offline &.protejaOGol,
+			.offline &.farmacias  {
+				display: none;
+			}	
+
+			.offline &.telefone  {
+				border-bottom: none;
+			}		
+
+			@include iconeMenuSaude("cuidadosBasicos");
+			@include iconeMenuSaude("vacinas");
+			@include iconeMenuSaude("prevencaoDoencas");
+			@include iconeMenuSaude("prevencaoAcidentes");
+			@include iconeMenuSaude("prevencaoViolencia");
+			@include iconeMenuSaude("telefone", 13px);
+			@include iconeMenuSaude("hospitais");
+			@include iconeMenuSaude("farmacias");
+			@include iconeMenuSaude("urgenciasEmergencias");
+
+			&.urgenciasEmergencias::before {
+				@include bg(auto 15px);
+			}
+		}
+	}
+}
+#tela_lembretesDeSaude {
+	article {
+		margin: 25px 0;
+	}
+}
+#tela_mapaSaude {
+
+	&.farmacias  {
+		.legenda.hospitais.referencia {
+			display: none;
+		}
+		.encontrados {
+			display: none;
+		}
+	}
+	&.hospitaisDeReferencia {
+		.encontradas {
+			display: none;
+		}
+	}
+
+	.legendas {
+		
+		// height: 100px;
+		overflow: hidden;
+		z-index: 2;
+		position: absolute;
+		bottom: 30px;
+		padding: 10px 10px 10px 0;
+		background-color: rgba(255,255,255,0.9);
+		@include border-radius(0 5px 5px 0);
+		
+
+
+		.legenda {
+			// height: 40px;
+			font-size: 1.22em;
+			// display: table;
+			// width: 100%;
+			// @include bg(32px 37px);
+			&::before {
+				display: inline-block;
+				width: 16px;
+				height: 16px;
+				@include border-radius(50%);
+				content: "";
+				vertical-align: middle;
+				margin-left: 0.5em;
+			}
+			&.hospitais.referencia {
+				margin-bottom: 0.5em;
+			}
+			&.hospitais.referencia::before {
+				background-color: rgb(80,157,213);
+				//background-image: url("../imagens/saude/mapa/icone_hospitalReferencia.png");
+			}
+			&.hospitais.google::before {
+				background-color: rgb(231,49,53);
+				//background-image: url("../imagens/saude/mapa/icone_hospitalGoogle.png");
+			}
+			// background-position: 10px center;
+			span {
+				padding-left: 0.5em;
+				vertical-align: middle;
+			}
+		}
+
+		.icone.google {
+			margin-left: 0.5em;
+			vertical-align: middle;
+			width: 104px;
+			height: 16px;
+			display: inline-block;
+			background-image: url("../imagens/saude/mapa/icone_google.png");
+			@include bg(100% auto);
+		}
+	}
+	#googleMap {
+		@include esticar(0,0,0,0);
+		z-index: 1;
+	}
+
+	@include esticar($barra_altura,0,$barra_altura,0);
+	.isphone & {
+		margin-top: $barra_alturaIOS;
+	}
+	.infoHospital {
+		display: inline-block;
+		width: 200px;
+		background-color: white;
+		h2 {
+			font-size: 1em;
+		}
+		p {
+			margin-top: 1em;
+			font-size: 1em;
+		}
+		a {
+			display: inline-block;
+			padding:0.5em;
+		}
+	}
+
+
+}
+#tela_hospitaisDeReferencia {
+	
+}
+#tela_telefonesUteis {
+	.celula {
+		background-image: url("../imagens/saude/icone_telefone.png");
+		@include bg("14px 22.5px");
+		background-position: right center;
+	}
+
+	.numero {
+		color: #6d6e70;
+		margin-top: 1em;
+		display: block;
+	}
+}
+#tela_farmacias {
+	
+}

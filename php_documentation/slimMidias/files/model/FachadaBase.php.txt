@@ -1,0 +1,50 @@
+<?php
+
+/**
+ * Class FachadaBase
+ */
+
+/**
+ * FachadaBase: Classe abstrata de fachada.
+ *
+ * des
+ *
+ * @author      Rodrigo Carneiro <teoria@gmail.com>
+ * @copyright   2014 Epitrack
+ * @link        http://www.epitrack.com.br/
+ * @version     2.4.2
+ * @package     slimMidias/model
+ *
+ */
+
+Class FachadaBase{
+
+    /**
+     * Instância da Fachada
+     * @var
+     */
+    protected  static $instance;
+
+    /**
+     * Construtor
+     */
+    protected function __construct(){}
+
+
+    /**
+     * Singleton para acesso a fachada.
+     * @return mixed
+     */
+    final public static function getInstance() {
+        if (!isset(static::$instance)) {
+            static::$instance = new static();
+        }
+
+        return static::$instance;
+    }
+
+
+
+}
+
+?>

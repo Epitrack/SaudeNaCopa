@@ -1,0 +1,89 @@
+@import "compass/typography/links/unstyled-link";
+@import "compass/css3/background-size";
+
+body {
+	font-size: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-weight: normal;
+	color: rgb(0,137,175);
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 2.3em;
+}
+
+ul {
+  padding: 0;
+  li {
+    display: block;
+  }
+}
+
+form {
+	ol, ul {
+		padding: 0;
+		
+		li, li label {
+			display: block;
+		}
+	}
+}
+
+@mixin gradiente {
+	  
+	background: #d6eaf7;
+	background: -moz-radial-gradient(center, ellipse cover,  #d6eaf7 23%, #91cce6 96%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(23%,#d6eaf7), color-stop(96%,#91cce6));
+	background: -webkit-radial-gradient(center, ellipse cover,  #d6eaf7 23%,#91cce6 96%);
+	background: -o-radial-gradient(center, ellipse cover,  #d6eaf7 23%,#91cce6 96%);
+	background: -ms-radial-gradient(center, ellipse cover,  #d6eaf7 23%,#91cce6 96%);
+	background: radial-gradient(ellipse at center,  #d6eaf7 23%,#91cce6 96%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6eaf7', endColorstr='#91cce6',GradientType=1 );
+
+}
+
+.marca {
+	background-image: url("../imagens/marca.png");
+	width: 500px;
+	height: 423px;
+	margin: 0 auto;
+	@include background-size(100%, auto);
+}
+.marca.grande {
+	width: 400px;
+	height: 338px;
+}
+.marca.pequena {
+	width: 250px;
+	height: 212px;
+	margin-top: 80px;
+}
+
+.semTexto {
+	overflow: hidden;
+	text-indent: -9999px;	
+}
+
+
+#scroller {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+
+	@include gradiente;
+	
+
+}
+
+@import "APP.Icones.scss";
+@import "APP.Barra.scss";
+@import "APP.Area.scss";

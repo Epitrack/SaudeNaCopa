@@ -1,0 +1,104 @@
+<?php
+
+/**
+ * Class Controller
+ */
+
+/**
+ * Controller: Classe de controle.
+ *
+ * @author      Rodrigo Carneiro <teoria@gmail.com>
+ * @copyright   2014 Epitrack
+ * @link        http://www.epitrack.com.br/
+ * @version     2.4.2
+ * @package     slimMidias
+ * @subpackage controller
+ *
+ * @exemple http://www.slimframework.com/
+ *
+ */
+
+
+
+Class Controller extends \Slim\Slim
+{
+
+    /**
+     * Dados do controlador
+     * @var
+     */
+    protected $data;
+
+    /**
+     * Construtor
+     */
+    public function __construct()
+	{
+
+        $settings = array(
+            'view' => new \Slim\Views\Twig(),
+            'debug' => true,
+            'templates.path' => '../app/views'
+
+        );
+
+		parent::__construct($settings);
+	}
+
+
+    /**
+     * Método responsável por apresentar as telas ao usuário.
+     *
+     * @param string $name
+     * @param array $data
+     * @param null $status
+     */
+    public function render($name, $data = array(), $status = null) {
+
+        if (strpos($name, ".php") === false) {
+            $name = $name . ".php";
+        }
+
+        if ( isset( $_SESSION['slim.flash'] ) ) {
+            $data['flash'] = $_SESSION['slim.flash'];
+            $_SESSION['slim.flash'] = null;
+        }
+        $data['path'] = $_SESSION['path'];
+
+        parent::render($name, $data, $status);
+    }
+
+
+    /**
+     * Método responsável por redirecionamento de tela.
+     *
+     * @param string $target
+     */
+    public function redirect($target = '/') {
+
+        header("Location: $target");
+    }
+
+
+    /**
+     * Método responsável por persistência de variáveis na sessão do usuário.
+     *
+     * @param string $key
+     * @param mixed $value
+     */
+    public function flash($key, $value) {
+
+        if (! isset( $_SESSION['slim.flash'] ) ) {
+            $_SESSION['slim.flash'] = array();
+        }
+        $_SESSION['slim.flash'][$key] = $value;
+
+
+    }
+
+
+
+
+}
+
+

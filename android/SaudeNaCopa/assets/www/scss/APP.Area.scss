@@ -1,0 +1,23 @@
+.area {
+	//Padding referente as barras de titulo e menu
+	padding: 50px 0;
+
+	.fullscreen & {
+		padding: 0;
+	}
+}
+.area, .tela {
+	display: none;
+
+	&.ativa {
+		display: block;
+	}
+}
+
+
+@import "APP.Area.Apresentacao.scss";
+@import "APP.Area.Acesso.scss";
+@import "APP.Area.Sentimento.scss";
+@import "APP.Area.Saude.scss";
+@import "APP.Area.Jogos.scss";
+@import "APP.Area.Turismo.scss";

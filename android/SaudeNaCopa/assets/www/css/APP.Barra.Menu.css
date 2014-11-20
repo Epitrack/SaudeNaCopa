@@ -1,0 +1,91 @@
+/* line 1, ../scss/APP.BarraDeMenu.scss */
+#barraDeMenu {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  color: white;
+  height: 50px;
+  width: 100%;
+  z-index: 2;
+  display: none;
+  overflow: visible;
+}
+/* line 13, ../scss/APP.BarraDeMenu.scss */
+.barraDeMenu#app #barraDeMenu {
+  bottom: 0px;
+}
+/* line 17, ../scss/APP.BarraDeMenu.scss */
+#barraDeMenu ul {
+  padding: 0;
+}
+/* line 20, ../scss/APP.BarraDeMenu.scss */
+#barraDeMenu ul li {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 20%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 15px;
+  z-index: 2;
+}
+/* line 31, ../scss/APP.BarraDeMenu.scss */
+#barraDeMenu ul li:nth-child(1) {
+  left: 0;
+}
+/* line 34, ../scss/APP.BarraDeMenu.scss */
+#barraDeMenu ul li:nth-child(2) {
+  left: 20%;
+}
+/* line 37, ../scss/APP.BarraDeMenu.scss */
+#barraDeMenu ul li:nth-child(3) {
+  left: 40%;
+}
+/* line 40, ../scss/APP.BarraDeMenu.scss */
+#barraDeMenu ul li:nth-child(4) {
+  left: 60%;
+}
+/* line 43, ../scss/APP.BarraDeMenu.scss */
+#barraDeMenu ul li:nth-child(5) {
+  left: 80%;
+  background-color: black;
+}
+/* line 48, ../scss/APP.BarraDeMenu.scss */
+#barraDeMenu ul li a {
+  display: block;
+  height: 50px;
+  border-right: 1px solid black;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* line 58, ../scss/APP.BarraDeMenu.scss */
+#barraDeMenu ul ul {
+  display: none;
+  width: 200px;
+  height: auto;
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  background-color: inherit;
+}
+/* line 68, ../scss/APP.BarraDeMenu.scss */
+#barraDeMenu ul ul li {
+  display: block;
+  width: auto;
+  height: auto;
+  line-height: 1em;
+  position: static;
+  border-top: 1px solid white;
+  line-height: 50px;
+}
+/* line 77, ../scss/APP.BarraDeMenu.scss */
+#barraDeMenu ul ul li a {
+  width: auto;
+  height: auto;
+  display: block;
+  border: none;
+  font-weight: normal;
+}

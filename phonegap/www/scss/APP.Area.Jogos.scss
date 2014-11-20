@@ -1,0 +1,291 @@
+@import "compass/css3/background-size";
+@import "compass/css3/border-radius";
+@import "compass/css3/images";
+@import "compass/css3/transform";
+@import "compass/css3/opacity";
+@import "compass/css3/transition";
+@import "Variaveis.scss";
+
+#area_jogos {
+	color: #6d6e70;
+
+	h1, h2 {
+		text-transform: uppercase;
+		color: #70a83b;
+		font-size: 1.422em;
+		margin-bottom: 1em;
+		margin-top: 1em;
+	}
+	h2 {
+		font-size: 1.2em;
+	}
+	p {
+		font-size: 1.422em;
+	}
+	a {
+		color: #6d6e70;
+	}
+	ul.listaMenu {
+		margin-top: 1em;
+		font-size: 1.422em;
+		li {
+			color: #6d6e70;
+			line-height: 50px;
+			border-bottom: 1px solid #aeaeb3;
+
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+
+		&.multiLinha {
+			li {
+				display: table;
+				width: 100%;
+				line-height: normal;
+				min-height: 50px;
+			}
+			.celula {
+				display: table-cell;
+				vertical-align: middle;
+				padding: 1em 30px 1em 0;
+			}
+		}
+	}
+
+
+	ul.padrao {
+		font-size: 1.422em;
+		ul {
+			padding-left: 2em;
+			font-size: 1em;
+		}
+
+		li {
+			list-style-position: outside;
+			list-style-type: disc;
+			margin-bottom: 1em;
+			display: list-item;
+		}
+	}
+	.baseDaTelaJogos {
+		position: absolute;
+		width: 100%;
+		bottom: $barra_altura;
+		left: 0;
+	}
+
+	.conteudoDeRolagem {
+		.container-fluid {
+			padding: 0;
+		}
+	}
+}
+
+
+#tela_jogos {
+	padding-top: 27px;
+	.icone.bola {
+		@include alturaIgualLargura();
+		background-image: url("../imagens/jogos/icone_bola.png");
+		background-position: top left;
+		@include bg();
+	}
+	.listaMenu {
+		color: #6e6c73 !important;
+		li {
+			padding-left: 40px;
+			position: relative;
+
+			@mixin iconeJogos($classe, $left:0) {
+				&.#{$classe}::before {
+					position: absolute;
+					height: 100%;
+					width: 40px;
+					content: "";
+					top: 0;
+					left: 0;
+					background-image: url("../imagens/jogos/icone_#{$classe}.png");
+					@include bg(auto 22px);
+				}
+			}
+
+			@include iconeJogos("calendarioDosJogos");
+			@include iconeJogos("arena");
+
+			&.urgenciasEmergencias::before {
+				@include bg(auto 15px);
+			}
+		}
+	}
+}
+#tela_calendarioDosJogos {
+	.fase {
+		margin-bottom: 5em;
+		border-bottom: 5px solid rgb(205,225,175);
+	}
+	.fase.grupos {
+		h2 {
+			display: inline-block;
+			padding: 0.5em;
+			font-size: 1.244em;
+			color: #FFFFFF;
+			background-color: #70a83b;
+			@include border-radius(5px);
+		}
+		.jogo:first-child {
+			border-bottom: 1px solid rgb(205,205,205);
+		}
+
+		h3 {
+			color: #70a83b;
+			font-size: 1.6em;
+			border-bottom: 1px solid #70a83b;
+			padding-bottom: 0.5em;
+		}
+		.rodada {
+			margin: 0 0 22px;
+		}
+
+	}
+
+	.fase.quartas, .fase.semifinais {
+		
+
+		h2 {
+			margin-right: 1em;
+			position: absolute;
+			height: 100%;
+			top: 0;
+			left: 0;
+
+
+			span:nth-child(2) {
+				color: #FFFFFF;
+				background-color: #70a83b;
+				@include border-radius(50%);
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				text-align: center;
+				line-height: 20px;
+				vertical-align: middle;
+				position: relative;
+				top: -2px;
+				margin-left: 3px;
+			}
+		}
+		.jogo {
+			min-height: 60px;
+			position: relative;
+			padding-left: 80px;
+
+			.en & {
+				padding-left: 90px;
+			}
+			.es & {
+				padding-left: 100px;
+			}
+		}
+	}
+	.jogo {
+	
+		padding: 1em 0;
+		font-size: 1.22em;
+		border-bottom: 1px solid rgb(205,205,205);
+		&:first-child {
+			border-bottom: 1px solid rgb(205,205,205);
+		}
+
+		.times {
+			display: block;
+			font-size: 1.2em;
+		}
+	}
+}
+
+#tela_arenas {
+	.arena {
+		&:first-child {
+			h1 {
+				border-top: none;
+			}
+		}
+		padding: 0 0 20px;
+		h1 {
+			font-size: 1.6em;
+			color: #70a83b;
+			text-transform: uppercase;
+			margin: 0;
+			padding: 20px 10.41% 0;
+			border-top: 1px solid #bdbdc1;
+			background-repeat: no-repeat;
+			background-position: -100% -100%;
+		}
+	&[data-idarena="cuiaba"] h1 {
+		background-image: url("../imagens/jogos/arenas/arena_cuiaba.png");
+	}
+	&[data-idarena="curitiba"] h1 {
+		background-image: url("../imagens/jogos/arenas/arena_curitiba.png");
+	}
+	&[data-idarena="natal"] h1 {
+		background-image: url("../imagens/jogos/arenas/arena_natal.png");
+	}
+	&[data-idarena="manaus"] h1 {
+		background-image: url("../imagens/jogos/arenas/arena_manaus.png");
+	}
+	&[data-idarena="pernambuco"] h1 {
+		background-image: url("../imagens/jogos/arenas/arena_pernambuco.png");
+	}
+	&[data-idarena="fortaleza"] h1 {
+		background-image: url("../imagens/jogos/arenas/arena_fortaleza.png");
+	}
+	&[data-idarena="portoAlegre"] h1 {
+		background-image: url("../imagens/jogos/arenas/arena_portoAlegre.png");
+	}
+	&[data-idarena="salvador"] h1 {
+		background-image: url("../imagens/jogos/arenas/arena_salvador.png");
+	}
+	&[data-idarena="brasilia"] h1 {
+		background-image: url("../imagens/jogos/arenas/arena_brasilia.png");
+	}
+	&[data-idarena="bh"] h1 {
+		background-image: url("../imagens/jogos/arenas/arena_bh.png");
+	}
+	&[data-idarena="saoPaulo"] h1 {
+		background-image: url("../imagens/jogos/arenas/arena_saoPaulo.png");
+	}
+	&[data-idarena="rioDeJaneiro"] h1 {
+		background-image: url("../imagens/jogos/arenas/arena_rioDeJaneiro.png");
+	}
+
+		ul {
+
+			margin-top: 20px;
+			color: #717175;
+			display: none;
+			padding: 0 4.17% 0 12.5%;
+
+			br {
+				display: none;
+			}
+		}
+		&.ativa {
+			h1 {
+				font-size: 1.6em;
+				color: #70a83b;
+				text-transform: uppercase;
+				padding: 20px 10.41% 45%;
+				border-top: none;
+				@include bg(100% auto);
+				background-position: left bottom;
+			}
+
+			ul{
+				display: block;
+			}
+		}
+
+
+	}
+}

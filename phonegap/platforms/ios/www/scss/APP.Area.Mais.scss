@@ -1,0 +1,447 @@
+@import "compass/css3/background-size";
+@import "compass/css3/border-radius";
+@import "compass/css3/images";
+@import "compass/css3/transform";
+@import "compass/css3/opacity";
+@import "compass/css3/transition";
+@import "Variaveis.scss";
+
+#area_mais {
+	color: #6d6e70;
+	h1, h2 {
+		text-transform: uppercase;
+		color: #76aadb;
+		font-size: 1.422em;
+		margin-bottom: 1em;
+		margin-top: 1em;
+	}
+
+	ul.listaMenu {
+		margin-top: 1em;
+		font-size: 1.422em;
+		li {
+			color: #6d6e70;
+			line-height: 50px;
+			border-bottom: 1px solid #aeaeb3;
+
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+
+		&.multiLinha {
+			li {
+				display: table;
+				width: 100%;
+				line-height: normal;
+				min-height: 50px;
+			}
+			.celula {
+				display: table-cell;
+				vertical-align: middle;
+				padding: 1em 30px 1em 0;
+			}
+		}
+	}
+
+}
+#tela_mais {
+
+
+	#conteudo_mais {
+		@include background-image(linear-gradient(#e4eef4, #ffffff));
+
+		
+		@include esticar($barra_altura, 0, $barra_altura, 0);
+		.isphone & {
+			@include esticar($barra_alturaIOS, 0, $barra_altura, 0);
+		}
+	}
+
+	#twitter_minSaude {
+		.offline & {
+			display: none;
+		}
+		
+		@include esticar(15px, 20px, 215px, 20px);
+		border: 2px solid #15749e;
+		@include border-radius(25px);
+		.scroller {
+			// position: absolute;
+			// top: 0;
+			// left: 50%;
+			// height: 100%;
+			// width: 250px;
+			// margin-left: -125px;
+			@include esticar(30px, 0, 18px, 0);
+			overflow: hidden;
+			
+		}
+
+		legend {
+			position: relative;
+			margin: 0 auto;
+			width: 60px;
+			height: 30px;
+			background-image: url("../imagens/mais/mais/icone_twitter.png");
+			@include bg("auto 100%");
+		}
+
+		#twits {
+			color: #006f9b;
+			padding: 0 20px;
+		}
+
+		.twit {
+			padding: 0px 0 10px;
+			border-bottom: 1px solid #66a9c3;
+			&:first-child {
+				padding-top: 0;
+			}
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+		P {
+			margin: 0;
+			padding: 0;
+		}
+		h1 {
+			font-size: 1.244em;
+			color: #006f9b;
+			font-weight: bold;
+			span {
+				font-weight: normal;
+				font-size: 0.89em;
+			}
+		}
+	}
+
+	#componente_springboard {
+		height: 165px;
+		width: 250px;
+		position: absolute;
+		bottom: 30px;
+		left: 50%;
+		margin-left: -125px;
+		z-index: 2;
+		a {
+			width: 80px;
+			height: 80px;
+			display: block;
+			position: absolute;
+			color: #006f9b;
+			@include background-image(linear-gradient(#f2f7fa, #d6e5ef));
+			&::before {
+				position: absolute;
+				content: "";
+				width: 100%;
+				height: 100%;
+				left: 0;
+				top: 0;
+				background-position: top center !important;
+			}
+			
+			
+			&:nth-child(-1n+3) {
+				top: 0;
+			}
+
+			&:nth-child(3n+1) {
+				left: 0;
+			}
+			&:nth-child(3n) {
+				right: 0;
+			}
+			&:nth-child(n+4) {
+				bottom: 0;
+			}
+			&:nth-child(-3n+5) {
+				left: 50%;
+				margin-left: -40px;
+			}
+
+
+			@mixin bgItemSpringBoard($classe, $w, $h) {
+				&.#{$classe}::before {
+					@include bg($w/2 $h/2);
+					background-image: url("../imagens/mais/mais/icone_#{$classe}.png");
+				}
+			}
+
+			@include bgItemSpringBoard(itensDoJogo,116px,114px);
+			@include bgItemSpringBoard(acesseOSite,117px,116px);
+			@include bgItemSpringBoard(categorias,96px,116px);
+			@include bgItemSpringBoard(linksUteis,138px,116px);
+			@include bgItemSpringBoard(malaLegal,127px,111px);
+			@include bgItemSpringBoard(consulados,94px,114px);
+
+			span {
+				display: block;
+				position: absolute;
+				width: 100%;
+				bottom: 7px;
+				text-align: center;
+			}
+
+	
+		}
+	}
+}
+
+#tela_itensDoJogo {
+	font-size: 1.244em;
+	article {
+		position: relative;
+		padding: 20px 0  20px 80px;
+		min-height: 106px;
+		border-bottom: 1px solid #aeaeb3;
+		&:last-child{
+			border-bottom: none;
+		}
+	}
+	.icone {
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 20px;
+		background-position: top center !important;
+		@mixin icone_ajuda($tipo, $w:134, $h:153) {
+			&.#{$tipo} {
+				width: 67px;
+				height: 76px;
+				@include bg(#{$w/2}px #{$h/2}px);
+				background-image: url("../imagens/mais/itensDoJogo/icone_#{$tipo}.png");	
+			}
+		}
+
+		// @include icone_ajuda(selecao);
+		// @include icone_ajuda(ok);
+		// @include icone_ajuda(categoria);
+		// @include icone_ajuda(arena);
+		// @include icone_ajuda(barraDeEngajamento);
+		// @include icone_ajuda(pontos);
+
+		@include icone_ajuda(selecao,100,118);
+		@include icone_ajuda(ok,54,54);
+		@include icone_ajuda(categoria,109,24);
+		@include icone_ajuda(arena,134,50);
+		@include icone_ajuda(barraDeEngajamento,12,153);
+		@include icone_ajuda(pontos,77,74);
+	}
+}
+
+
+
+
+#tela_categorias {
+	@mixin bgTrofeu($categoria) {
+		background-image: url("../imagens/sentimento/torcedor/categorias/"+$categoria+"/trofeu.png");
+	}
+
+	#componente_categoriaDoUsuario {
+	padding-top: 20px;
+	height: 80px;
+
+	position: relative;
+	
+		@mixin bgCategoria($idioma, $categoria) {
+			background-image: url("../imagens/mais/categoriasMais/"+$idioma+"/"+$categoria+".png");
+		}
+	
+
+		.icone.categoria {
+			height: 0;
+			padding-top: 50%;
+			width: 100%;
+			position: absolute;
+			@include bg("80% auto");
+			background-position: left center;
+		}
+
+		@mixin categoriaIdioma($idioma){
+			.#{$idioma} &[data-categoria='denteDeLeite'] .icone.categoria {
+				@include bgCategoria($idioma,"denteDeLeite");
+			}
+			.#{$idioma} &[data-categoria='mirim'] .icone.categoria {
+				@include bgCategoria($idioma,"mirim");
+			}
+			.#{$idioma} &[data-categoria='infantil'] .icone.categoria {
+				@include bgCategoria($idioma,"infantil");
+			}
+			.#{$idioma} &[data-categoria='juvenil'] .icone.categoria {
+				@include bgCategoria($idioma,"juvenil");
+			}
+			.#{$idioma} &[data-categoria='junior'] .icone.categoria {
+				@include bgCategoria($idioma,"junior");
+			}
+			.#{$idioma} &[data-categoria='profissional'] .icone.categoria {
+				@include bgCategoria($idioma,"profissional");
+			}
+		}
+
+		@include categoriaIdioma("pt");
+		@include categoriaIdioma("es");
+		@include categoriaIdioma("en");
+		.icone.trofeu {
+			width: 68px;
+			height: 68px;
+			position: absolute;
+			top: 6px;
+			right: 0;
+		}
+
+		
+		&[data-categoria='denteDeLeite'] .icone.trofeu {
+			@include bgTrofeu("denteDeLeite");
+			@include bg("54px 54px");
+		}
+		&[data-categoria='mirim'] .icone.trofeu {
+			@include bgTrofeu("mirim");
+			@include bg("54px 54px");
+		}
+		&[data-categoria='infantil'] .icone.trofeu {
+			@include bgTrofeu("infantil");
+			@include bg("54px 55px");
+		}
+		&[data-categoria='juvenil'] .icone.trofeu {
+			@include bgTrofeu("juvenil");
+			@include bg("68px 59px");
+		}
+		&[data-categoria='junior'] .icone.trofeu {
+			@include bgTrofeu("junior");
+			@include bg("54px 54px");
+		}
+		&[data-categoria='profissional'] .icone.trofeu {
+			@include bgTrofeu("profissional");
+			@include bg("54px 52px");
+		}
+	}
+	color: #717175;
+	.introducao {
+		font-size: 1.244em;
+		margin-top: 2em;
+	}
+	article.categoria {
+		padding: 10px 0 10px 78px;
+		border-bottom: 1px solid #aeaeb3;
+		min-height: 68px;
+		position: relative;
+
+		&:nth-child(2) {
+			border-top: 1px solid #aeaeb3;
+		}
+
+		&:last-child {
+			border-bottom: none;
+		}
+
+		h1 {		
+			font-size: 1.067em;
+			color: #717175;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+		p {
+			margin: 0;
+			font-size: 1.067em;
+		}
+
+
+		&::before {
+			background-position: center;
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 10px;
+			width: 68px;
+			height: 68px;
+		}
+
+		&#categoria_denteDeLeite::before {
+			@include bgTrofeu("denteDeLeite");
+			@include bg("54px 54px");
+		}
+		&#categoria_mirim::before {
+			@include bgTrofeu("mirim");
+			@include bg("54px 54px");
+		}
+		&#categoria_infantil::before {
+			@include bgTrofeu("infantil");
+			@include bg("54px 55px");
+		}
+		&#categoria_juvenil::before {
+			@include bgTrofeu("juvenil");
+			@include bg("68px 59px");
+		}
+		&#categoria_junior::before {
+			@include bgTrofeu("junior");
+			@include bg("54px 54px");
+		}
+		&#categoria_profissional::before {
+			@include bgTrofeu("profissional");
+			@include bg("54px 52px");
+		}
+	}
+}
+#tela_linksUteis {
+	ul {
+		margin-bottom: 1em;
+	}
+
+	a {
+		color: #717175;
+	}
+}
+#tela_malaLegal {
+	font-size: 1.422em;
+
+	p {
+		font-size: 1.422em;
+		padding: 2em 0;
+	}
+	ul {
+		
+		ul {
+			padding-left: 2em;
+		}
+
+		li {
+			list-style-position: outside;
+			list-style-type: disc;
+			margin-bottom: 1em;
+			display: list-item;
+			
+			&:last-child {
+				list-style-type: none;
+			}
+
+			li, li:last-child  {
+				list-style-type: circle;
+			}
+		}
+	}
+}
+#tela_consulados {
+	color: #6d6e70;
+}
+#tela_consulado {
+	color: #6d6e70;
+
+	h1, h2 {
+		text-transform: uppercase;
+		color: #4cb6dd;
+		margin-bottom: 1em;
+		margin-top: 1em;
+	}
+	h1 {
+		font-size: 1.6em;
+		font-weight: bold;
+	}
+	h2 {
+		font-size: 1.2em;
+	}
+	p {
+		font-size: 1.422em;
+	}
+}

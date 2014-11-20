@@ -1,0 +1,111 @@
+<?php
+
+/**
+ * Class LogGameDAO
+ */
+/**
+ * Data Access Object (DAO)
+ *
+ * LogGameDAO: Classe responsável pela persistência de log dos usuários.
+ *
+ * @author      Rodrigo Carneiro <teoria@gmail.com>
+ * @copyright   2014 Epitrack
+ * @link        http://www.epitrack.com.br/
+ * @version     2.4.2
+ * @package     model/vo
+ *
+ *
+ */
+
+class LogGameDAO extends DAO{
+
+
+    /**
+     * Método que persiste objetos LogGameVO
+     *
+     * @param LogGameVO $vo
+     * @return mixed
+     * @throws Exception
+     */
+    public function insert(LogGameVO $vo) {
+
+
+        $sql = " INSERT INTO logGame ( `usuarios_id`, `acao`, `pontuacao`)
+                VALUES
+                (:usuario_id, :acao, :pontuacao);";
+
+
+
+        $arrParams = array(
+            ':usuario_id'=>$vo->getUsuariosId(),
+            ':acao'=>$vo->getAcao(),
+            ':pontuacao'=>$vo->getPontuacao()
+
+        );
+
+
+
+        try{
+            $stm = $this->conex->prepare($sql);
+            return $stm->execute($arrParams);
+        }catch (Exception $e){
+            throw new Exception("Não foi possível realizar o cadastro.");
+        }
+    }
+
+
+    /**
+     * Método retorna o último insert de um usuário
+     *
+     * @param UsuarioVO $vo
+     * @return LogGameVO
+     * @throws Exception
+     */
+    public function getUltimoInsertByUser(UsuarioVO $vo) {
+
+        $sql = "SELECT *  FROM `logGame` WHERE `usuarios_id` = :id order by`idLogGame` desc limit 0 , 1";
+
+        $id = $vo->getIdUsuario();
+
+        $stm = $this->conex->prepare($sql);
+        $stm->bindParam(':id', $id, PDO::PARAM_STR);
+
+        try{
+            $stm->execute();
+        }catch (Exception $e){
+            throw new Exception("Não foi possível selecionar o Usuário.");
+        }
+
+        $stm->setFetchMode(PDO::FETCH_CLASS, 'LogGameVO');
+        $vo = $stm->fetch(PDO::FETCH_CLASS);
+        return $vo;
+    }
+
+
+    /**
+     * Método que remove um registro de log.
+     *
+     * @param LogGameVO $vo
+     * @return mixed
+     * @throws Exception
+     */
+    public function remove(LogGameVO $vo) {
+
+        $sql = " DELETE FROM `logGame` WHERE `idLogGame` = :id";
+
+        $arrParams = array(
+            ':idLogGame'=>$vo->getIdLogGame()
+
+        );
+
+        try{
+            $stm = $this->conex->prepare($sql);
+            return $stm->execute($arrParams);
+        }catch (Exception $e){
+            throw new Exception("Não foi possível realizar a exclusão.");
+        }
+    }
+
+
+
+} 

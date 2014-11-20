@@ -1,0 +1,348 @@
+/**
+ *  Barras
+ */
+/**
+ *  Área Acesso e Apresentação
+ */
+/**
+ *  Área Acesso
+ */
+/**
+ *  Área Sentimento
+ */
+/* line 9, ../scss/APP.Area.Jogos.scss */
+#area_jogos {
+  color: #6d6e70;
+}
+/* line 12, ../scss/APP.Area.Jogos.scss */
+#area_jogos h1, #area_jogos h2 {
+  text-transform: uppercase;
+  color: #70a83b;
+  font-size: 1.422em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+/* line 19, ../scss/APP.Area.Jogos.scss */
+#area_jogos h2 {
+  font-size: 1.2em;
+}
+/* line 22, ../scss/APP.Area.Jogos.scss */
+#area_jogos p {
+  font-size: 1.422em;
+}
+/* line 25, ../scss/APP.Area.Jogos.scss */
+#area_jogos a {
+  color: #6d6e70;
+}
+/* line 28, ../scss/APP.Area.Jogos.scss */
+#area_jogos ul.listaMenu {
+  margin-top: 1em;
+  font-size: 1.422em;
+}
+/* line 31, ../scss/APP.Area.Jogos.scss */
+#area_jogos ul.listaMenu li {
+  color: #6d6e70;
+  line-height: 50px;
+  border-bottom: 1px solid #aeaeb3;
+}
+/* line 36, ../scss/APP.Area.Jogos.scss */
+#area_jogos ul.listaMenu li:last-child {
+  border-bottom: none;
+}
+/* line 42, ../scss/APP.Area.Jogos.scss */
+#area_jogos ul.listaMenu.multiLinha li {
+  display: table;
+  width: 100%;
+  line-height: normal;
+  min-height: 50px;
+}
+/* line 48, ../scss/APP.Area.Jogos.scss */
+#area_jogos ul.listaMenu.multiLinha .celula {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 1em 30px 1em 0;
+}
+/* line 57, ../scss/APP.Area.Jogos.scss */
+#area_jogos ul.padrao {
+  font-size: 1.422em;
+}
+/* line 59, ../scss/APP.Area.Jogos.scss */
+#area_jogos ul.padrao ul {
+  padding-left: 2em;
+  font-size: 1em;
+}
+/* line 64, ../scss/APP.Area.Jogos.scss */
+#area_jogos ul.padrao li {
+  list-style-position: outside;
+  list-style-type: disc;
+  margin-bottom: 1em;
+  display: list-item;
+}
+/* line 71, ../scss/APP.Area.Jogos.scss */
+#area_jogos .baseDaTelaJogos {
+  position: absolute;
+  width: 100%;
+  bottom: 40px;
+  left: 0;
+}
+/* line 79, ../scss/APP.Area.Jogos.scss */
+#area_jogos .conteudoDeRolagem .container-fluid {
+  padding: 0;
+}
+
+/* line 86, ../scss/APP.Area.Jogos.scss */
+#tela_jogos {
+  padding-top: 27px;
+}
+/* line 88, ../scss/APP.Area.Jogos.scss */
+#tela_jogos .icone.bola {
+  height: 0;
+  padding-top: 100%;
+  position: relative;
+  background-image: url("../imagens/jogos/icone_bola.png");
+  background-position: top left;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+}
+/* line 94, ../scss/APP.Area.Jogos.scss */
+#tela_jogos .listaMenu {
+  color: #6e6c73 !important;
+}
+/* line 96, ../scss/APP.Area.Jogos.scss */
+#tela_jogos .listaMenu li {
+  padding-left: 40px;
+  position: relative;
+}
+/* line 101, ../scss/APP.Area.Jogos.scss */
+#tela_jogos .listaMenu li.calendarioDosJogos::before {
+  position: absolute;
+  height: 100%;
+  width: 40px;
+  content: "";
+  top: 0;
+  left: 0;
+  background-image: url("../imagens/jogos/icone_calendarioDosJogos.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: auto 22px;
+  -moz-background-size: auto 22px;
+  -o-background-size: auto 22px;
+  background-size: auto 22px;
+}
+/* line 101, ../scss/APP.Area.Jogos.scss */
+#tela_jogos .listaMenu li.arena::before {
+  position: absolute;
+  height: 100%;
+  width: 40px;
+  content: "";
+  top: 0;
+  left: 0;
+  background-image: url("../imagens/jogos/icone_arena.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: auto 22px;
+  -moz-background-size: auto 22px;
+  -o-background-size: auto 22px;
+  background-size: auto 22px;
+}
+/* line 116, ../scss/APP.Area.Jogos.scss */
+#tela_jogos .listaMenu li.urgenciasEmergencias::before {
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: auto 15px;
+  -moz-background-size: auto 15px;
+  -o-background-size: auto 15px;
+  background-size: auto 15px;
+}
+
+/* line 123, ../scss/APP.Area.Jogos.scss */
+#tela_calendarioDosJogos .fase {
+  margin-bottom: 5em;
+  border-bottom: 5px solid #cde1af;
+}
+/* line 128, ../scss/APP.Area.Jogos.scss */
+#tela_calendarioDosJogos .fase.grupos h2 {
+  display: inline-block;
+  padding: 0.5em;
+  font-size: 1.244em;
+  color: #FFFFFF;
+  background-color: #70a83b;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 136, ../scss/APP.Area.Jogos.scss */
+#tela_calendarioDosJogos .fase.grupos .jogo:first-child {
+  border-bottom: 1px solid #cdcdcd;
+}
+/* line 140, ../scss/APP.Area.Jogos.scss */
+#tela_calendarioDosJogos .fase.grupos h3 {
+  color: #70a83b;
+  font-size: 1.6em;
+  border-bottom: 1px solid #70a83b;
+  padding-bottom: 0.5em;
+}
+/* line 146, ../scss/APP.Area.Jogos.scss */
+#tela_calendarioDosJogos .fase.grupos .rodada {
+  margin: 0 0 22px;
+}
+/* line 155, ../scss/APP.Area.Jogos.scss */
+#tela_calendarioDosJogos .fase.quartas h2, #tela_calendarioDosJogos .fase.semifinais h2 {
+  margin-right: 1em;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+/* line 163, ../scss/APP.Area.Jogos.scss */
+#tela_calendarioDosJogos .fase.quartas h2 span:nth-child(2), #tela_calendarioDosJogos .fase.semifinais h2 span:nth-child(2) {
+  color: #FFFFFF;
+  background-color: #70a83b;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+  margin-left: 3px;
+}
+/* line 178, ../scss/APP.Area.Jogos.scss */
+#tela_calendarioDosJogos .fase.quartas .jogo, #tela_calendarioDosJogos .fase.semifinais .jogo {
+  min-height: 60px;
+  position: relative;
+  padding-left: 80px;
+}
+/* line 183, ../scss/APP.Area.Jogos.scss */
+.en #tela_calendarioDosJogos .fase.quartas .jogo, .en #tela_calendarioDosJogos .fase.semifinais .jogo {
+  padding-left: 90px;
+}
+/* line 186, ../scss/APP.Area.Jogos.scss */
+.es #tela_calendarioDosJogos .fase.quartas .jogo, .es #tela_calendarioDosJogos .fase.semifinais .jogo {
+  padding-left: 100px;
+}
+/* line 191, ../scss/APP.Area.Jogos.scss */
+#tela_calendarioDosJogos .jogo {
+  padding: 1em 0;
+  font-size: 1.22em;
+  border-bottom: 1px solid #cdcdcd;
+}
+/* line 196, ../scss/APP.Area.Jogos.scss */
+#tela_calendarioDosJogos .jogo:first-child {
+  border-bottom: 1px solid #cdcdcd;
+}
+/* line 200, ../scss/APP.Area.Jogos.scss */
+#tela_calendarioDosJogos .jogo .times {
+  display: block;
+  font-size: 1.2em;
+}
+
+/* line 208, ../scss/APP.Area.Jogos.scss */
+#tela_arenas .arena {
+  padding: 0 0 20px;
+}
+/* line 210, ../scss/APP.Area.Jogos.scss */
+#tela_arenas .arena:first-child h1 {
+  border-top: none;
+}
+/* line 215, ../scss/APP.Area.Jogos.scss */
+#tela_arenas .arena h1 {
+  font-size: 1.6em;
+  color: #70a83b;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 20px 10.41% 0;
+  border-top: 1px solid #bdbdc1;
+  background-repeat: no-repeat;
+  background-position: -100% -100%;
+}
+/* line 225, ../scss/APP.Area.Jogos.scss */
+#tela_arenas .arena[data-idarena="cuiaba"] h1 {
+  background-image: url("../imagens/jogos/arenas/arena_cuiaba.png");
+}
+/* line 228, ../scss/APP.Area.Jogos.scss */
+#tela_arenas .arena[data-idarena="curitiba"] h1 {
+  background-image: url("../imagens/jogos/arenas/arena_curitiba.png");
+}
+/* line 231, ../scss/APP.Area.Jogos.scss */
+#tela_arenas .arena[data-idarena="natal"] h1 {
+  background-image: url("../imagens/jogos/arenas/arena_natal.png");
+}
+/* line 234, ../scss/APP.Area.Jogos.scss */
+#tela_arenas .arena[data-idarena="manaus"] h1 {
+  background-image: url("../imagens/jogos/arenas/arena_manaus.png");
+}
+/* line 237, ../scss/APP.Area.Jogos.scss */
+#tela_arenas .arena[data-idarena="pernambuco"] h1 {
+  background-image: url("../imagens/jogos/arenas/arena_pernambuco.png");
+}
+/* line 240, ../scss/APP.Area.Jogos.scss */
+#tela_arenas .arena[data-idarena="fortaleza"] h1 {
+  background-image: url("../imagens/jogos/arenas/arena_fortaleza.png");
+}
+/* line 243, ../scss/APP.Area.Jogos.scss */
+#tela_arenas .arena[data-idarena="portoAlegre"] h1 {
+  background-image: url("../imagens/jogos/arenas/arena_portoAlegre.png");
+}
+/* line 246, ../scss/APP.Area.Jogos.scss */
+#tela_arenas .arena[data-idarena="salvador"] h1 {
+  background-image: url("../imagens/jogos/arenas/arena_salvador.png");
+}
+/* line 249, ../scss/APP.Area.Jogos.scss */
+#tela_arenas .arena[data-idarena="brasilia"] h1 {
+  background-image: url("../imagens/jogos/arenas/arena_brasilia.png");
+}
+/* line 252, ../scss/APP.Area.Jogos.scss */
+#tela_arenas .arena[data-idarena="bh"] h1 {
+  background-image: url("../imagens/jogos/arenas/arena_bh.png");
+}
+/* line 255, ../scss/APP.Area.Jogos.scss */
+#tela_arenas .arena[data-idarena="saoPaulo"] h1 {
+  background-image: url("../imagens/jogos/arenas/arena_saoPaulo.png");
+}
+/* line 258, ../scss/APP.Area.Jogos.scss */
+#tela_arenas .arena[data-idarena="rioDeJaneiro"] h1 {
+  background-image: url("../imagens/jogos/arenas/arena_rioDeJaneiro.png");
+}
+/* line 262, ../scss/APP.Area.Jogos.scss */
+#tela_arenas .arena ul {
+  margin-top: 20px;
+  color: #717175;
+  display: none;
+  padding: 0 4.17% 0 12.5%;
+}
+/* line 269, ../scss/APP.Area.Jogos.scss */
+#tela_arenas .arena ul br {
+  display: none;
+}
+/* line 274, ../scss/APP.Area.Jogos.scss */
+#tela_arenas .arena.ativa h1 {
+  font-size: 1.6em;
+  color: #70a83b;
+  text-transform: uppercase;
+  padding: 20px 10.41% 45%;
+  border-top: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+  background-position: left bottom;
+}
+/* line 284, ../scss/APP.Area.Jogos.scss */
+#tela_arenas .arena.ativa ul {
+  display: block;
+}

@@ -1,0 +1,32 @@
+/* line 8, ../scss/APP.Area.Sentimento.scss */
+#tela_sintomas ol {
+  padding: 0;
+}
+/* line 10, ../scss/APP.Area.Sentimento.scss */
+#tela_sintomas ol li {
+  display: block;
+  padding: 1em 0;
+  border-bottom: 1px solid #000;
+}
+/* line 14, ../scss/APP.Area.Sentimento.scss */
+#tela_sintomas ol li li:last-child {
+  border-bottom: none;
+}
+/* line 18, ../scss/APP.Area.Sentimento.scss */
+#tela_sintomas ol li.selecionado {
+  background-color: #efefef;
+}
+/* line 22, ../scss/APP.Area.Sentimento.scss */
+#tela_sintomas ol li input {
+  display: none;
+}
+
+/* line 30, ../scss/APP.Area.Sentimento.scss */
+#sentimento .dado {
+  display: none;
+}
+
+/* line 35, ../scss/APP.Area.Sentimento.scss */
+#calendario {
+  display: none;
+}

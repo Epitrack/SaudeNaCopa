@@ -1,0 +1,1020 @@
+{
+  "offline" : {
+    "confirmar" : "OK",
+    "texto" : "O seu dispositivo não está conectado a uma rede. Conteúdos que dependem de uma conexão com a internet não estarão disponíveis enquanto offline."
+  },
+  "barra" : {
+    "menu" : {
+      "home" : "Home",
+      "saude" : "Saúde",
+      "jogos" : "Jogos",
+      "turismo" : "Turismo",
+      "denunciarUmProblema" : "Informar falha no aplicativo",
+      "termosDeUso" : "Termos e políticas",
+      "sobre" : "Sobre",
+      "sair" : "Sair",
+      "mais" : "Mais"
+    }
+  },
+  "tela" : {
+    "idioma" : "Idioma",
+    "abertura" : "Abertura",
+    "apresentacao" : "Apresentação",
+    "acesso" : "Acesso",
+    "cadastre-se" : "Cadastre-se",
+    "entreComFacebook" : "Entre com o Facebook",
+    "entrarComLoginESenha" : "Entre com login e senha",
+    "termosDeUso" : "Termos de uso e política de privacidade",
+    "denunciarUmProblema" : "Informar falha no aplicativo",
+    "sobre" : "Sobre",
+    "torcedor" : "Jogador",
+    "sentimento" : "Como está se sentindo?",
+    "sintomas" : "Sintomas",
+    "calendario" : "Calendário",
+    "saude" : "Saúde",
+    "lembretesDeSaude" : "Lembretes de saúde",
+    "hospitaisDeReferencia" : "Hospitais de referência",
+    "hospitais" : "Hospitais",
+    "telefonesUteis" : "Telefones úteis",
+    "farmacias" : "Farmácias",
+    "jogos" : "Jogos",
+    "calendarioDosJogos" : "Calendário dos jogos",
+    "selecoes" : "Seleções",
+    "selecao" : "Seleção",
+    "resultados" : "Resultados",
+    "calendarioDeJogos" : "Calendário dos jogos",
+    "maisNoticias" : "Mais notícias",
+    "turismo" : "Turismo",
+    "fanFest" : "Fan Fest",
+    "pontosTuristicos" : "Pontos Turísticos",
+    "atividadesCulturais" : "Atividades culturais",
+    "baresERestaurantes" : "Bares e restaurantes",
+    "esqueciASenha" : "Esqueci a senha",
+    "ajuda" : "Ajuda",
+    "mapaSaude" : "Mapa",
+    "alterarSenha" : "Alterar senha",
+    "protejaOGol" : "Proteja o gol",
+    "higieneECuidados" : "Higiene e cuidados",
+    "vacinas" : "Vacinas",
+    "mais" : "Saiba Mais",
+    "itensDoJogo" : "Ítens do jogo",
+    "arenas" : "Arenas",
+    "categorias" : "Categorias",
+    "linksUteis" : "Links úteis",
+    "malaLegal" : "Mala legal",
+    "consulados" : "Consulados",
+    "consulado" : "Consulado",
+    "cuidadosBasicos" : "Cuidados básicos",
+    "urgenciasEmergencias" : "Urgências e emergências",
+    "prevencaoDoencas" : "Prevenção contra doenças",
+    "prevencaoAcidentes" : "Prevenção contra acidentes",
+    "prevencaoViolencia" : "Prevenção contra violência"
+  },
+  "formulario" : {
+    "erro" : "Verifique as informações digitadas."
+  },
+  "menu" : {
+    "sobre" : {
+      "titulo" : "Saúde na copa",
+      "voltaroAoTopo" : "Voltar ao topo",
+      "sobre" : {
+        "titulo" : "Sobre projeto \"Saúde na Copa\"",
+        "texto" : [
+          "O “SAÚDE NA COPA” é uma aplicação Web gratuita, projetada para utilização em dispositivos móveis e navegadores de internet e faz parte do projeto inovador de aprimoramento da vigilância em saúde no Sistema Único de Saúde (SUS), denominado vigilância participativa. ",
+          "É um processo simples que conta com a participação voluntária de visitantes ou residentes no Brasil, informando sobre sua condição de saúde, durante a Copa do Mundo da FIFA Brasil 2014<sup>TM</sup>. O “SAÚDE NA COPA” foi desenvolvido em português, inglês e espanhol para ser um canal complementar de informação de saúde e de serviços aos usuários, permitindo a participação de todos. Para isso, basta ter 13 anos de idade ou mais e aceitar os termos de participação e uso, informando regularmente sua condição de saúde, conforme instruções disponíveis no aplicativo. ",
+          "Este projeto é uma iniciativa da Secretaria de Vigilância em Saúde do Ministério da Saúde em parceria com as Secretarias de Saúde das sedes dos jogos e outras instituições nacionais e internacionais.",
+          "Utilizada pela primeira vez no Brasil, a implementação da estratégia de vigilância participativa ocorrerá sem investimento público no desenvolvimento do software. Para isso, por meio de parceria, a aplicação Web “SAÚDE NA COPA” está sendo desenvolvida como software livre por meio de investimento da Skoll Global Threats Fund e apoio operacional da Training in Public Health Intervention Network (Tephinet), ambas são Organizações não-governamentais sem fins lucrativos que atuam no aprimoramento da vigilância em saúde no mundo e em técnicas de Detecção Digital de Doenças. O desenvolvimento tecnológico do aplicativo é realizado por meio da startup Epitrack, sediada em Recife/Pernambuco.",
+          "Esta parceria também contempla o apoio técnico e a troca de experiências com outras iniciativas adotadas no mundo, como Flu Near You (flunearyou.org) e Salud Boricua (saludboricua.org) criado e administrado pela ONG HealthMap (healthmap.org) do Hospital da Criança de Boston em colaboração com a Associação Americana de Saúde Pública (apha.org) e pela Skoll Global Threats Fund (skollglobalthreats.org). Estas estratégias visam o monitoramento de síndrome gripal nos Estados Unidos da América (EUA) e Canadá e a ocorrência de dengue, leptospirose e síndrome gripal em Porto Rico. ",
+          "A estratégia “SAÚDE NA COPA” é um dos importantes legados que a preparação da saúde pública para a Copa do Mundo da FIFA Brasil 2014<sup>TM</sup> está incentivando. Esta estratégia poderá ser aplicada em outras iniciativas de interesse público no futuro. Mais uma vez o Sistema Único de Saúde do Brasil demostra sua capacidade para inovação e inclusão social. Participe e divulgue!"
+        ]
+      },
+      "saibaMais" : {
+        "titulo" : "Saiba mais sobre a Vigilância Participativa",
+        "texto" : [
+          "A Copa do Mundo da FIFA Brasil 2014<sup>TM</sup> é um dos maiores eventos esportivos do planeta e estima-se que aproximadamente 3,7 milhões de turistas, brasileiros e estrangeiros, deverão circular pelas 12 sedes. Por esse motivo, o Sistema Único de Saúde (SUS) necessita de mecanismos ágeis para identificar rapidamente a ocorrência de doenças transmissíveis que podem afetar turistas e/ou residentes nessas cidades. ",
+          "Se você planeja participar da Copa do Mundo da FIFA Brasil 2014<sup>TM</sup> como torcedor ou trabalhador, residindo ou não nas sedes da copa ou no Brasil, você é o participante ideal para contribuir com o SUS por meio do “SAUDE NA COPA”. A partir do fornecimento voluntário e regular de sua condição de saúde, a vigilância terá capacidade de descrever o perfil de saúde ou de adoecimento nas sedes da copa, durante todo o período de realização do evento. Para isso, basta instalar e se cadastrar para começar a participar do divertido desafio de cuidar da saúde da cidade, ganhando pontos diariamente e destravando estágios no game.  ",
+          "Sua participação é uma gentil contribuição para o aprimoramento da vigilância em saúde no Brasil. No cadastro não há registro nominal e a privacidade do e-mail está garantida. Não haverá nenhum contato do sistema de saúde com você em decorrência da participação e a comunicação de sua condição de saúde não significa que estará realizando uma consulta médica. ",
+          "É importante destacar que caso você informe que não está se sentindo bem, é recomendável que consulte o médico de referência ou serviço de saúde mais próximo de você. Para isso, está disponível no aplicativo um atalho com pesquisa pré-configurada de serviços de saúde e farmácias mais próximos de você, com base no serviço de geolocalização do seu dispositivo móvel no Google Maps. Além disso, você dispõe dos telefones úteis incluindo o do SAMU (Serviço de Atendimento Móvel de Urgência) cuja a ligação é gratuita e funciona 24 horas por dia atendendo solicitações de atendimento de urgência para ocorrências de natureza traumática, clínica, pediátrica, cirúrgica, gineco-obstétrica e de saúde mental, em residências, locais de trabalho e vias públicas. ",
+          "Esperamos que você se divirta torcendo por sua seleção com as informações especialmente selecionadas do site oficial da FIFA e aproveite para saber mais sobre cuidados simples de saúde que vão lhe ajudar a comemorar a vitória com muita SAÚDE NA COPA. "
+        ]
+      },
+      "beneficios" : {
+        "titulo" : "Veja os benefícios de sua participação",
+        "texto" : [
+          "Participar ativamente das ações de vigilância em saúde que visam a prevenção de doenças na comunidade",
+          "Acessar os contatos de serviços públicos úteis sem precisar alterar sua agenda de telefones",
+          "Acessar facilmente informações úteis sobre cuidados de saúde",
+          "Usufruir de facilidades como a pesquisa pré-configurada por hospitais e farmácias próximos (20 km) no Google Maps, sem necessidade de abrir outro aplicativo",
+          "Acompanhar o perfil de saúde dos participantes por meio do website \"Saúde na Copa\"",
+          "Acompanhar o calendário dos jogos e locais de suas partidas preferidas"
+        ]
+      },
+      "custos" : {
+        "titulo" : "Custo",
+        "texto" : [
+          "Download e participação: não há nenhum custo para obter e participar do “SAÚDE NA COPA”. ",
+          "Acesso aos serviços sem custo: por meio de acesso gratuito em pontos wi-fi na cidade",
+          "Acesso aos serviços com custo: por meio de seu pacote de dados contratado",
+          "Chamada telefônica: Os serviços públicos de referência descritos nos telefones úteis são oferecidos por meio de chamada gratuita, conforme informação do órgão responsável. "
+        ]
+      }
+    },
+    "menu" : {
+      "idiomas" : "Idiomas",
+      "denunciarUmProblema" : "Informar falha no aplicativo",
+      "versao" : "Versão",
+      "termosEPoliticas" : "Termos e políticas",
+      "alterarSenha" : "Alterar senha",
+      "termosEPoliticas" : "Termos e políticas",
+      "sobre" : "Sobre",
+      "sair" : "Sair"
+    },
+    "versao" : {
+      "versao" : {
+        "titulo" : "Versão",
+        "atualizacao" : "Data de atualização"
+      },
+      "parceria" : {
+        "titulo" : "Parceria"
+      },
+      "dev" : {
+        "titulo" : "Desenvolvimento e suporte"
+      },
+      "melhorNavegador": "O webapp é melhor visualizado em navegadores Google Chrome e Mozila Firefox."
+    }
+  },
+  "apresentacao" : {
+    "idioma" : {
+      "titulo" : "Idioma/Language",
+      "portugues" : "Português",
+      "espanhol" : "Espanhol",
+      "ingles" : "Inglês"
+    },
+    "abertura" : {
+      "titulo" : "Saúde na copa"
+    },
+    "apresentacao" : {
+      "titulo" : "Saúde na copa",
+      "texto" : "Obrigado por participar do Saúde na Copa. \nO aplicativo Saúde na Copa é um projeto de vigilância participativa em saúde durante a Copa do Mundo Fifa Brasil 2014™ para que todos possam participar voluntariamente dessa estratégia do Sistema Único de Saúde (SUS). Leia mais sobre o aplicativo na tela Opções."
+    }
+  },
+  "acesso" : {
+    "acesso" : {
+      "titulo" : "Acesso em português",
+      "rodape" : "Prosseguindo você concorda com os termos de uso e política de privacidade.",
+      "cadastre-se" : "Cadastre-se",
+      "entreComFacebook" : "Entre com Facebook",
+      "entrarComLoginESenha" : "Entrar",
+      "camposObrigatorios" : "* campos obrigatórios",
+      "esqueciASenha" : "Esqueci a senha"
+    },
+    "cadastre-se" : {
+      "apelido" : "Apelido",
+      "idade" : "Idade",
+      "sexo" : "Sexo",
+      "feminino" : "Feminino",
+      "masculino" : "Masculino",
+      "email" : "E-mail",
+      "senha" : "Senha",
+      "confirmacaoDeSenha" : "Confirmação de senha",
+      "revelarSenha" : "Revelar senha",
+      "termos" : "Li e concordo com os termos de uso",
+      "termosDeUso" : "Termos de uso",
+      "cadastre-se" : "Cadastre-se",
+      "confirmacaoCadastre-se" : "Cadastro realizado com sucesso! Realize o login com a senha cadastrada na próxima tela."
+    },
+    "entreComFacebook" : {
+      "texto" : ""
+    },
+    "entrarComLoginESenha" : {
+      "email" : "E-mail",
+      "senha" : "Senha",
+      "entrar" : "Entrar",
+      "esqueciASenha" : "Esqueci a senha"
+    },
+    "alterarSenha" : {
+      "senhaAtual" : "Senha atual",
+      "novaSenha" : "Nova senha",
+      "repetirNovaSenha" : "Repetir nova senha",
+      "campoAlterarSenha" : "Alterar"
+    },
+    "esqueciASenha" : {
+      "texto" : "Insira o endereço de e-mail cadastrado para envio de sua senha",
+      "confirmacao" : "As intruções para a recuperação da sua senha foram enviadas para o seu e-mail.",
+      "email" : "E-mail",
+      "entrar" : "Enviar"
+    },
+    "termosDeUso" : {
+      "titulo" : "Termos de uso e políticas de privacidade",
+      "voltarAoTopo" : "Voltar ao topo",
+      "ultimaAtualizacao" : "Última atualização: Abril de 2014",
+      "introducao" : [
+        "Por favor, leia estes termos legais de uso antes de utilizar o “SAÚDE NA COPA”, fazer qualquer colaboração ou acessar ou baixar qualquer informação dessa aplicação. ",
+        "Ao acessar ou utilizar o “SAÚDE NA COPA”, você aceita e concorda em cumprir os termos e condições estabelecidos nesse “termos legais de uso”. ",
+        "Este termo é um acordo vinculativo entre você e o “SAÚDE NA COPA”, que  abrange todo o seu acesso e uso dessa aplicação o que inclui o uso de todas as informações, dados, ferramentas, produtos, serviços e outros conteúdos disponíveis por meio desse.",
+        "Ao utilizar esta aplicação, você confirma que compreende e concorda com o seguinte:"
+      ],
+      "secao1" : {
+        "titulo" : "Respeito as Leis",
+        "texto" : [
+          "O utilizador deverá acessar o “SAÚDE NA COPA” apenas para finalidades lícitas. ",
+          "O utilizador concorda em utilizar o aplicativo apenas para os devidos fins e em conformidade com o presente termo e limitações legais, bem como quaisquer políticas aplicáveis no Brasil.",
+          "Seu acesso é proibido em territórios onde o conteúdo seja considerado ilegal. Aqueles que optarem por acessar este site a partir de outras localidades o farão por iniciativa própria e serão responsáveis pelo cumprimento das leis locais aplicáveis. Os materiais não deverão ser usados ou exportados em descumprimento das leis brasileiras. Qualquer pendência com relação aos materiais será dirimida pelas leis brasileiras.",
+          "A alteração não autorizada do conteúdo deste site é expressamente proibida. "
+        ]
+      },
+      "secao2" : {
+        "titulo" : "Limites de uso",
+        "texto" : [
+          "A utilização do aplicativo está indicada somente para individuos de 13 (treze) anos de idade ou mais."
+        ]
+      },
+      "secao3" : {
+        "titulo" : "Responsabilidade pelo conteúdo",
+        "texto" : [
+          "O “SAÚDE NA COPA” não é responsável pelo conteúdo de quaisquer informações eventualmente trocadas pelos utilizadores entre si, ou para o “SAÚDE NA COPA” sejam elas lícitas ou ilícitas.",
+          "O utilizador concorda que é o único responsável pela sua própria conduta e pela veracidade das informações fornecidas enquanto utilizar o serviço e que é responsável pelas consequências que resultem do fornecimento intencional de dados incorretos.",
+          "O utilizador concorda que ao usar o “SAÚDE NA COPA” não irá publicar, enviar, distribuir ou divulgar conteúdo ou informação de caráter difamatório, obsceno ou ilícito, inclusive informações de propriedade exclusiva pertencentes a outras pessoas ou empresas, bem como marcas registradas ou informações protegidas por direitos autorais, sem a expressa autorização do detentor desses direitos;",
+          "Ninguém pode agir em seu nome no uso do “SAÚDE NA COPA”. Você é responsável pelo conteúdo que indivíduos não autorizados produzirem ao usar essa aplicação utilizando, com sua permissão, seu perfil cadastrado. Essa regra não se aplica aos casos de violação ou  outros problemas de segurança da aplicação."
+        ]
+      },
+      "secao4" : {
+        "titulo" : "Acessibilidade ao conteúdo",
+        "texto" : [
+          "A equipe do “SAÚDE NA COPA” não garante que esta aplicação esteja parcial ou completamente funcional para uso fora das áreas relacionadas a ocorrencia da COPA DO MUNDO FIFA 2014<sup>TM</sup>, que abragem as cidades-sede e municipios próximos.",
+          "Da mesma forma não garante que qualquer conteúdo esteja apropriado ou disponível para uso fora do território nacional. Se você optar por acessar o Webapp e a aplicação de outras localidades, você o fará por sua própria iniciativa e em seu próprio risco. Você é responsável pelo cumprimento das leis locais, e na medida em que leis locais sejam aplicáveis. Você concorda especificamente em cumprir todas as leis aplicáveis relativas à transmissão de dados técnicos exportados a partir desse local."
+        ]
+      },
+      "secao5" : {
+        "titulo" : "Propriedade intelectual",
+        "texto" : [
+          "A equipe do “SAÚDE NA COPA” e seus colaboradores, são detentores do direito de autoria dos conteúdos produzidos e apresentados nessa aplicação.  Essa premissa não se aplica as informações consideradas como de domínio publico ou de utilidade pública.",
+          "Todas as outras marcas comerciais, marcas de serviço, nomes e logotipos que aparecem nessa aplicação são de propriedade de seus respectivos proprietários.",
+          "O aplicativo “SAÚDE NA COPA” é um software open source cuja utilização por terceiros se submete aos termos da licença internacional GNU General Public License, version 3 (GPL-3.0). Os direitos de uso do conteúdo e dos relatórios gerados pelo Webapp e pela aplicação são cedidos pelos desenvolvedores, em especial aqueles que decorrem dos termos da licença Creative Commons - Atribuição-NãoComercial 4.0 Internacional (clique aqui para ver o texto).",
+          "Apenas informações divulgadas pelos serviços de saúde de cada cidade-sede devem ser consideradas oficiais, para divulgação pública no que tange aos dados relacionados a esse tema. Nenhuma informação proveniente do “SAÚDE NA COPA”, apesar do empenho da equipe em garantir a qualidade, atualidade e autenticidade das informações, deverá ser considerada considerada oficial, para divulgação pública. Os dados coletados por meio do “SAÚDE NA COPA”, são provenientes de um público alvo específico que pode sofrer influência pela sua capacidade de acesso à dispositivos móveis ou computadores com especificações tecnológicas mínimas. Assim, as informações geradas a partir dessa estratégia,  podem necessariamente não corresponder a expressão real do padrão epidemiológico daquele período e local. As informações lúdicas ou de utilidade pública poderão apresentar eventuais incorreções ou falhas de atualização, sendo recomendada sua validação pelo utilizadores em casos de urgência e emergência ou de qualquer outra situação de ameaça a vossa saúde ou integridade. "
+        ]
+      },
+      "secao6" : {
+        "titulo" : "Leis, regulamentos, direitos e deveres",
+        "texto" : [
+          "É política da equipe do “SAÚDE NA COPA” cumprir todas as leis e regulamentos aplicáveis, os quais podem ser modificados de tempos em tempos. No caso de qualquer disposição do presente Termo de Uso estar em conflito com qualquer lei ou regulamento aplicável, a lei ou regulamentação aplicável substituirá a disposição contrária.",
+          "Este Termos de Uso e o uso do “SAÚDE NA COPA” são e serão regidos e interpretados de acordo com as leis internas do Brasil, sem levar em conta as suas regras de conflitos de leis. Em caso de qualquer conflito entre as leis, regras e regulamentos estrangeiros e as do Brasil, as leis, regras e regulamentos do Brasil deverão prevalecer.",
+          "O “SAÚDE NA COPA” poderá, mas não é obrigado, a monitorar, revisar e restringir o acesso a qualquer de suas áreas onde os utilizadores transmitem informações, podendo retirar do ar ou retirar o acesso a qualquer destas informações ou comunicações.",
+          "Se você tiver alguma dúvida em relação ao “SAÚDE NA COPA”, não hesite em contactar-nos contato@saudenacopa.com."
+        ]
+      },
+      "secao7" : {
+        "titulo" : "Uso das contribuições",
+        "texto" : [
+          "Ao enviar uma contribuição escrita ou postar informações no “SAÚDE NA COPA”, você concede uma licença perpétua, isenta de royalties, licença incondicional para essa aplicação e qualquer organização sucessora, a publicar a sua contribuição no “SAÚDE NA COPA”, bem como divulgá-las, de forma agregada (nunca individual) à outros meios de comunicação, e para discutir ou referenciá-la em quaisquer publicações decorrentes do “SAÚDE NA COPA”. ",
+          "Você também concorda que o “SAÚDE NA COPA” tem o direito, mas não a obrigação, de editar ou remover qualquer contribuição, ou inclui-la no texto em conjunto com outras contribuições, a critério exclusivo da equipe relacionada a essa aplicação. "
+        ]
+      },
+      "secao8" : {
+        "titulo" : "Garantia de Sigilo e Anonimato",
+        "texto" : [
+          "Será garantido o sigilo e anonimato de todas as informações produzidas por você no “SAÚDE NA COPA”, exceto conforme exigido por lei, ou para tratar de questões de descumprimento.",
+          "Reservamo-nos o direito de usar esta informação internamente e, nesse ambito, sua contribuição estará vinculada ao apelido de sua escolha. ",
+          "O “SAÚDE NA COPA”, seus colaboradores e usuários, incluindo agências governamentais e não governamentais, dependem dos utilizadores para a precisão das contribuições. A equipe não se responsabiliza por erros ou imprecisões em qualquer submissão. Deturpação deliberada de informações por um usuário pode constituir uma violação da lei, e se for séria, será comunicada às autoridades governamentais apropriadas."
+        ]
+      },
+      "secao9" : {
+        "titulo" : "Atualização do “SAÚDE NA COPA”",
+        "texto" : [
+          "Modificações dessa aplicação e dos seus Termos de Uso poderão ocorrer. A menos que indique o contrário,  seu uso do Webapp e da aplicação indica a aceitação integral do Termos de Uso naquela versão vigente cada vez que você usar o “SAÚDE NA COPA”. Fique atento as atualizações e, em caso de duvida, os Termos de Uso estarão sempre disponiveis para acesso e concordancia ou não. "
+        ]
+      },
+      "secao10" : {
+        "titulo" : "Responsabilidade por ações com base no conteúdo",
+        "texto" : [
+          "O “SAÚDE NA COPA”  não assume responsabilidade por qualquer prejuízo e / ou danos a pessoas ou bens, em consequencia de qualquer utilização das idéias, conteúdos, instruções, métodos, produtos ou procedimentos contidos nessa aplicação. ",
+          "Em hipótese alguma os profissionais envolvidos com o desenvolvimento ou gestão dessa aplicação serão responsabilizados por qualquer decisão ou ação tomada por você em base a tal conteúdo. ",
+          "Diante de ameaças ou  qualquer outra situação de risco a vossa  saúde ou integridade procure sempre orientações validadas e atualizadas pelos serviços locais de saúde pública relacionados a cada Cidade-Sede. "
+        ]
+      },
+      "secao11" : {
+        "titulo" : "Responsabilidade por problemas tecnológicos",
+        "texto" : [
+          "Eventualmente todo o conteúdo ou qualquer parte do “SAÚDE NA COPA” pode não estar disponível e pode não funcionar corretamente em qualquer momento . Fazemos esforços razoáveis para evitar problemas tecnológicos, mas em qualquer momento podem ocorrer nessa aplicação problemas tecnológicos das mais diversas naturezas, tais como vírus, rotinas de programação prejudiciais ou problemas relacionados ao aparelho. ",
+          "O Webapp e a aplicação são fornecidas \"como está\" e \"conforme estiver disponível\". Sem limitar o nosso aviso geral, não garantimos a disponibilidade, integridade, pontualidade, funcionalidade, confiabilidade, seqüenciamento ou a velocidade de entrega nessa aplicação ou de qualquer parte do conteúdo.",
+          "O “SAÚDE NA COPA” não se responsabiliza por qualquer dano ou prejuízo causado pelo desempenho ou falha de desempenho de toda ou qualquer parte da aplicação. O “SAÚDE NA COPA” não se responsabiliza por quaisquer defeitos, atrasos ou erros resultantes da sua utilização dessa aplicação.",
+          "A utilização de todas as funcionalidades do “SAÚDE NA COPA” exige disponibilidade do acesso à internet pelo usuario, por wifi ou cabo de rede de dados. A ausencia desse pre-requisito pode limitar a utilização da aplicação com todo seu potencial de uso. A equipe do “SAÚDE NA COPA”, considerando esse aviso, não assume responsabilidade decorrente dessa limitação.",
+          "Esta isenção de responsabilidade aplica-se a todos e quaisquer danos ou prejuízos, incluindo aqueles causados por qualquer falha de desempenho, erro, omissão, interrupção, apagamento, defeito, atraso na operação ou transmissão, vírus de computador, falha de linha de comunicação, roubo, destruição ou acesso não autorizado, a alteração ou uso de qualquer bem, seja por violação de contrato, comportamento ilícito, negligência ou qualquer outra causa de ação."
+        ]
+      },
+      "secao12" : {
+        "titulo" : "Responsabilidade por informações de terceiros",
+        "texto" : [
+          "A disposição através do Webapp e da aplicação de links e referências para outros sites, publicações ou recursos de informação não constitui o endosso desses sites ou de seus recursos por parte do “SAÚDE NA COPA”, de seus agentes ou representantes. A equipe do “SAÚDE NA COPA” não faz representações ou asserções quanto à qualidade, conteúdo e precisão das informações, serviços ou produtos que podem ser fornecidas por esses recursos e especificamente se isenta de quaisquer garantias, incluindo, mas não limitado às garantias implícitas ou expressas de comerciabilidade ou adequação para qualquer utilização particular, aplicação ou finalidade."
+        ]
+      },
+      "secao13" : {
+        "titulo" : "Considerações Finais",
+        "texto" : [
+          "O acesso ao serviço representa a aceitação expressa e irrestrita dos Termos de Uso acima descritos. Ao concordar com esses termos você concede uma licença perpétua, isenta de royalties, licença incondicional para o “SAÚDE NA COPA”, Ministério da Saúde e todas as organizações sucessoras, para publicar a sua contribuição de forma agregada, na propria aplicação bem como divulgá-las aos outros serviços de vigilancia em saúde pública relacionados. Você também concorda que “SAÚDE NA COPA” tem o direito, mas não a obrigação, de editar ou remover qualquer contribuição a critério exclusivo da equipe do “SAÚDE NA COPA”."
+        ]
+      }
+    },
+    "denunciarUmProblema" : {
+      "texto" : "Texto denunciar um problema",
+      "confirmacao" : "A falha foi informada com sucesso!",
+      "descricaoDoProblema" : "Descrição do problema",
+      "mensagem" : "Descreva o problema detalhadamente",
+      "enviar": "Enviar"
+    },
+    "sobre" : {
+      "texto" : "Texto sobre"
+    },
+    "geolocalizacao" : {
+      "erro" : "Não foi possível encontrar a sua localização. Talvez os serviços de localização do seu dispostivo não estejam disponíveis. Tente, por exemplo, habilitar o GPS do seu dispostivo ou encerrar e iniciar novamente o aplicativo Saúde Na Copa."
+    }
+  },
+  "sentimento" : {
+    "voceEsta": "você está",
+    "torcedor" : {
+      "confirmacao" : {
+        "confirmar" : "Confirmar",
+        "voceEsta" : "Você está",
+        "lembrete": "Não deixe de informar diariamente <br>como está sua saúde."
+      },
+      "alertaDeTempo" : {
+        "texto" : "Você só poderá ganhar pontos em",
+        "confirmar" : "OK"
+      },
+      "categorias" : {
+        "denteDeLeite" : "Dente de leite",
+        "mirim" : "Mirim",
+        "infantil" : "Infantil",
+        "juvenil" : "Juvenil",
+        "junior" : "Júnior",
+        "profissional" : "Profissional"
+      },
+      "pergunta" : "Como está a sua saúde agora?",
+      "pontos" : "Pontos",
+      "dica" : "Selecione um sentimento escolhendo um avatar",
+      "status" : {
+        "ola" : "Olá",
+        "voceEsta" : "você está",
+        "voceEstaNaCategoria" : "Você está na categoria",
+        "continueParticipando" : "continue participando para evoluir"
+      },
+      "arena" : {
+        "arena1" : {
+          "id" : "cuiaba",
+          "nome" : "Arena Pantanal",
+          "cidade" : "Cuiabá",
+          "texto" : [
+            "<li>Localização: Cuiabá - MT </li>",
+            "<li>Capacidade: 42968</li>",
+            "<li>Arena: A Arena Pantanal tem 18mil arquibancadas móveis e 166 lugares para pessoas obesas. O estádio tem uma boa infraestrutura, com restaurantes, hotéis, estacionamentos, lagos, bosque e pista para caminhada.</li>",
+            "<li>Curiosidade: A arena tem um projeto sustentável, com economia de 40% no consumo de água e redução de 20% do consumo de energia.</li>",
+            "<li>Endereço: Avenida Agrícola Paes de Barros – Cidade Alta, Cuiabá, Mato Grosso.</li>"
+          ]
+        },
+        "arena2" : {
+          "id" : "curitiba",
+          "nome" : "Arena da Baixada",
+          "cidade" : "Curitiba",
+          "texto" : [
+            "<li>Localização: Curitiba - PR</li>",
+            "<li>Capacidade: 41456</li>",
+            "<li>Arena: O estádio foi construído em 1914, próximo ao centro da cidade e passou por muitas reformas para receber a Copa do Mundo da FIFA 2014, como a remoção de nível de concreto para uniformizar arquibancadas e a construção de duas novas escadas, que liga a arquibancada inferior à superior.</li>",
+            "<li>Curiosidade: Conhecida por ter um dos maiores índices de qualidade de vida do Brasil, a cidade da Arena da Baixada, Curitiba, atrai muitos turistas.</li>",
+            "<li>Endereço: Avenida Presidente Getúlio Vargas, 1895 – Água Verde, Curitiba, Paraná.</li>"
+          ]
+        },
+        "arena3" : {
+          "id" : "natal",
+          "nome" : "Estádio das Dunas",
+          "cidade" : "Natal",
+          "texto" : [
+            "<li>Localização: Natal - RN</li>",
+            "<li>Capacidade: 42068</li>",
+            "<li>Estádio: O estádio tem 10,6mil assentos removíveis, 21 pontos de acesso, 25 bares, 30 banheiros e 200 câmeras de segurança.</li>",
+            "<li>Curiosidade: O Estádio das Dunas foi projetado para dar a ideia do movimento das dunas de areias, comuns em Natal, com fachada e cobertura integradas e compostas por 20 “pétalas”, mais altas de um lado do estádio. O teto tem um design que permite maior ventilação e iluminação</li>",
+            "<li>Endereço: Avenida Prudente de Morais – Tirol, Natal, Rio Grande do Norte.</li>"
+          ]
+        },
+        "arena4" : {
+          "id" : "manaus",
+          "nome" : "Arena Amazônia",
+          "cidade" : "Manaus",
+          "texto" : [
+            "<li>Localização: Manaus - AM</li>",
+            "<li>Capacidade: 42374</li>",
+            "<li>Arena: A arena tem quatro rampas de acesso, 98 banheiros, 420 refletores e 85 câmeras de segurança, além de mais conforto para todos, com 118 assentos para pessoas com mobilidade reduzida, 69 para obesos e 445 para acompanhantes de pessoas com deficiência.</li>",
+            "<li>Curiosidade: Com 83,5mil m² de área construída, a Arena Amazônia teve sua arquitetura inspirada em um cesto de palha indígena carregado de frutas típicas do Brasil: melão, banana, abacaxi, laranja, manga, goiaba e mamão. </li>",
+            "<li>Endereço: Avenida Djalma Batista, 3637 – Flores, Manaus, Amazônia.</li>"
+          ]
+        },
+        "arena5" : {
+          "id" : "pernambuco",
+          "nome" : "Arena Pernambuco",
+          "cidade" : "São Lourenço da Mata (Grande Recife)",
+          "texto" : [
+            "<li>Localização: São Lourenço da Mata - PE</li>",
+            "<li>Capacidade: 44248</li>",
+            "<li>Arena: A Arena Pernambuco foi construída em São Lourenço da Mata, região metropolitana da cidade, e tem 4.700 vagas de estacionamento, 4 rampas de acesso, 8 elevadores, câmeras de segurança 360° e amplo espaço para circulação.</li>",
+            "<li>Curiosidade: Recife é a capital mais antiga do Brasil, fundada em 1561. Recortada por rios, a cidade também tem uma produção cultural e artística intensa e muitos projetos na área tecnológica. A arena tem formato multiuso, podendo ser utilizada para outros grandes espetáculos depois do mundial.</li>",
+            "<li>Endereço: Avenida Deus É Fiel, 01 Letra A – Jardim Penedo, São Lourenço da Mata, Pernambuco.</li>"
+          ]
+        },
+        "arena6" : {
+          "id" : "fortaleza",
+          "nome" : "Estádio Castelão",
+          "cidade" : "Fortaleza",
+          "texto" : [
+            "<li>Localização: Fortaleza - CE</li>",
+            "<li>Capacidade: 64846</li>",
+            "<li>Estádio: O Estádio de Fortaleza foi o primeiro a ficar pronto para o Mundial de 2014 e possui duas características importantes: acessibilidade e tecnologia. Dos assentos, 255 são destinados a cadeirantes, 120 a obesos e 1.200 a pessoas com mobilidade reduzida. </li>",
+            "<li>Curiosidade: O estádio conta com piso tátil para deficientes visuais. São 2,5% de espaço reservado a pessoas com deficiência, 1,5% a mais que o estabelecido por lei. O revestimento da cobertura é termoacústico translúcido, para garantir uma sensação térmica agradável e as cadeiras, de cor verde-claro, são resistentes ao fogo e aos raios UV. </li>",
+            "<li>Endereço: Avenida Alberto Craveiro, 2901 – Castelão, Fortaleza, Ceará.</li>"
+          ]
+        },
+        "arena7" : {
+          "id" : "portoAlegre",
+          "nome" : "Beira-Rio",
+          "cidade" : "Porto Alegre",
+          "texto" : [
+            "<li>Localização: Porto Alegre - RS</li>",
+            "<li>Capacidade: 48849</li>",
+            "<li>Estádio: O estádio tem 5mil vagas de estacionamento, 17 acessos, 130 catracas, 81 banheiros e uma iluminação com características próximas à da luz do dia.</li>",
+            "<li>Curiosidade: O Estádio Beira-Rio fica às margens do rio Guaíba, em um local de fácil acesso aos torcedores. O possui uma cobertura projetada em formato de folhas, com 65 módulos. </li>",
+            "<li>Endereço: Avenida Padre Cacique, 891 – Praia de Belas, Porto Alegre, Rio Grande do Sul.</li>"
+          ]
+        },
+        "arena8" : {
+          "id" : "salvador",
+          "nome" : "Arena Fonte Nova",
+          "cidade" : "Salvador",
+          "texto" : [
+            "<li>Localização: Salvador - BA</li>",
+            "<li>Capacidade: 48747</li>",
+            "<li>Arena: São 90mil m² de área construída, o edifício possui 10 níveis e 3 anéis de arquibancada (inferior, intermediário e superior), 2.500 vagas de estacionamento, 126 catracas, 9 elevadores, 227 câmeras e 376 refletores.</li>",
+            "<li>Curiosidade: A Arena Fonte Nova fica localizada na cidade de Salvador, primeira capital do Brasil e cidade mais populosa do nordeste. A parte sul da arena tem uma abertura voltada para o Dique Tororó, manancial natural da cidade.</li>",
+            "<li>Endereço: Ladeira da Fonte das Pedras – Nazaré, Salvador, Bahia.</li>"
+          ]
+        },
+        "arena9" : {
+          "id" : "brasilia",
+          "nome" : "Estádio Nacional",
+          "cidade" : "Brasília",
+          "texto" : [
+            "<li>Localização: Brasília - DF</li>",
+            "<li>Capacidade: 68009</li>",
+            "<li>Estádio: O Estádio Nacional de Brasília é um monumento em arquitetura. São 288 pilares com mais de 36m cada, construídos em volta da arena, que dão um aspecto grandioso ao local. O estádio tem todos os assentos cobertos e distância inicial de 7,5m do campo, 465 refletores, 158 catracas de acesso, 54 bares e lanchonetes e 20 elevadores. </li>",
+            "<li>Curiosidade: O Estádio Nacional se destaca pelas ações de sustentabilidade. As bases dos pisos foram construídas com o concreto de demolição moído e a água da chuva que cai sobre a cobertura é tratada e reaproveitada para utilização nos vasos sanitários e irrigação do campo.</li>",
+            "<li>Endereço: Asa Norte - Brasília, Distrito Federal.</li>"
+          ]
+        },
+        "arena10" : {
+          "id" : "bh",
+          "nome" : "Estádio Mineirão",
+          "cidade" : "Belo Horizonte",
+          "texto" : [
+            "<li>Localização: Belo Horizonte – MG</li>",
+            "<li>Capacidade: 62254</li>",
+            "<li>Estádio: O estádio tem estacionamento com 2.925 vagas, 62.160 assentos cobertos, 58 bares, 54 banheiros para o público e entrada controlada por 106 catracas eletrônicas. O estádio tem também boa acessibilidade para pessoas com deficiência: vagas de estacionamento exclusivas e oito elevadores.</li>",
+            "<li>Curiosidade: Tombada como patrimônio histórico de Belo Horizonte, a fachada do Estádio Mineirão permaneceu com as mesmas características do projeto de 1965. </li>",
+            "<li>Endereço: Avenida Antônio Abrahão Caram, 1001 - Pampulha, Belo Horizonte, Minas Gerais.</li>"
+          ]
+        },
+        "arena11" : {
+          "id" : "saoPaulo",
+          "nome" : "Arena de São Paulo",
+          "cidade" : "São Paulo",
+          "texto" : [
+            "<li>Localização: São Paulo - SP</li>",
+            "<li>Capacidade: 65807</li>",
+            "<li>Arena: A arena tem 48 mil assentos convencionais e 21.160 assentos móveis e 3.500 vagas de estacionamento.</li>",
+            "<li>Curiosidade: A Arena de São Paulo vai receber a abertura do Mundial 2014, no jogo entre Brasil e Croácia. </li>",
+            "<li>Endereço: Avenida Miguel Ignácio Curi, 111 – Vila Carmosina, São Paulo, São Paulo.</li>"
+          ]
+        },
+        "arena12" : {
+          "id" : "rioDeJaneiro",
+          "nome" : "Estádio do Maracanã",
+          "cidade" : "Rio de Janeiro",
+          "texto" : [
+            "<li>Localização: Rio de Janeiro - RJ</li>",
+            "<li>Capacidade: 76804</li>",
+            "<li>Estádio: O estádio tem 124mil m² de área construída, 6 rampas, 17 elevadores, 292 banheiros, 60 bares e 396 refletores. Sua fachada foi tombada pelo Instituto do Patrimônio Histórico e Artístico Nacional e seus assentos são nas cores amarelo, azul e branco.</li>",
+            "<li>Curiosidade: O Estádio do Maracanã é um dos estádios mais famosos do Brasil. Foi inaugurado em 1950 e assistiu a grandes momentos do futebol mundial, como o milésimo gol de Pelé e vai receber o jogo da final da Copa do Mundo de 2014. </li>",
+            "<li>Endereço: Rua Professor Eurico Rabelo – Maracanã, Rio de Janeiro, Rio de Janeiro.</li>"
+          ]
+        }
+      },
+      "persistenciaSintomas" : {
+        "texto" : "Obrigado pela informação. Não deixe de procurar o serviço de saúde mais póximo. <br><br>Continue informando diariamente como está sua saúde.",
+        "confirmar" : "OK"
+      }
+    },
+    "sentimento" : {
+      "muitoBem" : "Muito bem",
+      "bem" : "Bem",
+      "normal" : "Normal",
+      "mal" : "Mal",
+      "muitoMal" : "Muito mal"
+    },
+    "sintomas" : {
+      "febre" : "Febre",
+      "tosse" : "Tosse",
+      "dorDeGarganta" : "Dor de garganta",
+      "faltaDeAr" : "Falta de ar",
+      "nauseaEVomito" : "Náusea e vômitos",
+      "diarreia" : "Diarréia",
+      "dorNasArticulacoes" : "Dor nas articulações",
+      "dorDeCabeca" : "Dor de cabeça",
+      "sangramento" : "Sangramento",
+      "manchasVermelhasNoCorpo" : "Manchas vermelhas pelo corpo",
+      "contatoComAlguem" : "Tive contato ou conheço alguém com algum desses sintomas nos últimos 7 dias.",
+      "procurouServicoDeSaude" : "Procurei um serviço de saúde.",
+      "erroMarcacao" : "Se você está se sentindo mal, por favor, informe quais são os sintomas apresentados. É preciso informar pelo menos um, antes de continuar."
+    },
+    "calendario" : {
+      "entendaAsLegendas" : "Entenda as legendas",
+      "diasDaSemana" : {
+        "domingo" : "Domingo",
+        "segunda" : "Segunda-feira",
+        "terca" : "Terça-feira",
+        "quarta" : "Quarta-feira",
+        "quinta" : "Quinta-feira",
+        "sexta" : "Sexta-feira",
+        "sabado" : "Sábado"
+      },
+      "meses" : {
+        "janeiro" : "Janeiro",
+        "fevereiro" : "Fevereiro",
+        "marco" : "Março",
+        "abril" : "Abril",
+        "maio" : "Maio",
+        "junho" : "Junho",
+        "julho" : "Julho",
+        "agosto" : "Agosto",
+        "setembro" : "Setembro",
+        "outubro" : "Outubro",
+        "novembro" : "Novembro",
+        "dezembro" : "Dezembro"
+      }
+    },
+    "transicao" : {
+      "parabens" : "Parabéns!",
+      "agoraDisponivel" : "agora está disponível"
+    }
+  },
+  "saude" : {
+    "urgenciasEmergencias" : {
+      "servico" : {
+        "titulo" : "Serviço de Atendimento Móvel de Urgência (SAMU 192) ",
+        "texto" : "O SAMU funciona 24 horas, todos os dias da semana, e o acesso é feito por meio do número de telefone 192. A ligação é gratuita e pode ser realizada por qualquer telefone fixo ou móvel local. O SAMU realiza o atendimento de urgência e emergência, por intermédio de ambulâncias, em qualquer lugar: residências, locais de trabalho e vias públicas. A equipe reúne médicos, enfermeiros, auxiliares de enfermagem e socorristas, que atendem às urgências de natureza traumática, clínica, pediátrica, cirúrgica, gineco-obstétrica e de saúde mental da população."
+      },
+      "quando" : {
+        "titulo" : "Quando chamar o SAMU?",
+        "topico1" : "Na ocorrência de problemas cardio-respiratórios;",
+        "topico2" : "Em casos de Intoxicação exógena;",
+        "topico3" : "Em caso de queimaduras graves;",
+        "topico4" : "Na ocorrência de maus tratos;",
+        "topico5" : "Em trabalhos de parto onde haja risco de morte da mãe ou do feto;",
+        "topico6" : "Em casos de tentativas de suicídio;",
+        "topico7" : "Em crises hipertensivas;",
+        "topico8" : "Quando houver acidentes/traumas com vítimas;",
+        "topico9" : "Em casos de afogamentos;",
+        "topico10" : "Em casos de choque elétrico;",
+        "topico11" : "Em acidentes com produtos perigosos;",
+        "topico12" : "Na transferência inter-hospitalar de doentes com risco de morte."
+      },
+      "unidades" : {
+        "titulo" : "Unidades de Pronto-Atendimento (UPA 24h)",
+        "texto" : "Prestam atendimento aos pacientes acometidos por quadros agudos de natureza clínica e o primeiro atendimento aos casos de natureza cirúrgica ou de trauma. Estabilizam os pacientes e realizam a investigação diagnóstica inicial, definindo, em todos os casos, a necessidade ou não de encaminhamento a serviços hospitalares de maior complexidade. Confira a lista com as UPAs 24h das cidades-sede da Copa do Mundo 2014, no link <a href=\"#tela_linksUteis\" title=\"Link para a tela de links úteis\">Saúde do Viajante</a>."
+      }
+    },
+    "vacinas" : {
+      "titulo" : "Vacinas",
+      "topico1" : "A Organização Mundial da Saúde (OMS) informa que não há calendário internacional de vacinação para todos os viajantes. Para cada viajante, será adotada recomendação personalizada de acordo com os países a serem visitados, dependendo do tipo, duração e tempo disponível para aplicação da vacina antes da partida;",
+      "topico2" : "O Brasil não exige o Certificado Internacional de Vacinação ou Profilaxia para entrada no país;",
+      "topico3" : "Certifique-se de que suas vacinas de rotina estejam em dia, de acordo com as recomendações de seu país de origem, pois é uma medida eficaz e segura para a prevenção de várias doenças;",
+      "topico4" : "Devido a cirrculação do sarampo na Europa, África e Ásia recomenda-se que pessoas com origem ou destino a países com ocorrência dessa doença estejam vacinados previamente;",
+      "topico5" : "A preparação para a viagem é uma boa oportunidade para verificar o estado vacinal de bebês, crianças, adolescentes, adultos e idosos.",
+      "topico6" : "Todo morador ou visitante de qualquer cidade brasileira tem disponível tambem as vacinas para influenza e Pólio que são enfermidades relacionadas a possíveis emergências de saúde pública de importância internacional para a Organização Mundial de Saude. ",
+      "prevencao" : {
+        "titulo" : "Prevenção contra febre amarela",
+        "topico1" : "Previna-se contra febre amarela tomando a vacina 10 dias antes de visitar áreas de mata ou de praticar turismo ecológico ou rural. Confira lista de municípios brasileiros com recomendação sobre vacinação contra febre amarela no link <a href=\"#tela_linksUteis\" title=\"Link para a tela de links úteis\">saúde do viajante</a>;",
+        "topico2" : "Procure seu medico, pois ele poderá lhe ajudar a decidir se a vacina é necessária, com base em seu plano de viagem;"
+      }
+    },
+    "lembretes" : {
+      "cartao" : {
+        "titulo" : "Cartão de vacinação",
+        "texto1" : "Viaje com as vacinas em dia e previna-se contra febre amarela 10 dias antes de praticar turismo ecológico, rural, de aventura ou visitar áreas de mata.",
+        "texto2" : "Procure um serviço de saúde, preferencialmente 4 a 8 semanas antes da viagem, e peça orientações a respeito dos cuidados necessários.",
+        "texto3" : "Atualize seu cartão de vacinação."
+      },
+      "vacinas" : {
+        "titulo" : "Vacinas",
+        "febreAmarela" : "FEBRE AMARELA",
+        "sarampo" : "SARAMPO – RUBEOLA – INFLUENZA E PÓLIO",
+        "texto1" : "Em viagens internacionais, pode ser exigido o Certificado Internacional de Vacinação ou Profilaxia (CIVP), comprovando a vacinação contra a febre amarela. Veja no endereço eletrônico da saúde do viajante os países que fazem essa exigência. Essa vacina deve ser tomada pelo menos 10 dias antes da viagem.",
+        "texto2" : "Tome a vacina 10 dias antes de praticar pescaria em rios, turismo ecológico, rural ou de aventura ou de visitar áreas de mata.",
+        "texto3" : "Todo morador de qualquer cidade brasileira tem disponível e deve manter atualizado seu calendário vacinal de acordo com sua idade, com destaque para o Sarampo, Rubeola, Influenza e Pólio.\n\tCaso apresente febre, procure imediatamente atendimento médico."
+      },
+      "lavarAsMaos" : {
+        "titulo" : "Lavar as mãos",
+        "texto1" : "Lave bem as mãos com água e sabão várias vezes ao dia.",
+        "texto2" : "Lave as mãos com água e sabão várias vezes ao dia, principalmente antes de comer. Ao tossir ou espirrar, cubra o nariz e a boca com lenço descartável."
+      },
+      "bebaAgua" : {
+        "titulo" : "Beba água",
+        "alimentosEBebidas" : "Alimentos e bebidas",
+        "texto1" : "Beba bastante água e evite consumir alimentos crus ou mal cozidos.",
+        "texto2" : "Principalmente no verão, é importante beber bastante líquido, preferencialmente água, água de coco ou sucos.",
+        "texto3" : "Lave bem as frutas e verduras.",
+        "texto4" : "Evite alimentos crus ou mal cozidos.",
+        "texto5" : "Fique atento! Alimentos embalados devem conter no rótulo a identificação do produtor, a data de validade e a embalagem deve estar íntegra.",
+        "texto6" : "Evite consumir alimentos em locais cujas condições higiênicas de preparo e acondicionamento são precárias.",
+        "texto7" : "Saboreie refeições variadas, ricas em alimentos regionais e saudáveis."
+      },
+      "vestuario" : {
+        "titulo" : "Vestuário",
+        "texto" : "Use calçados, roupas confortáveis e equipamentos de proteção (colete salva-vidas, capacete, ou outros) quando necessário."
+      },
+      "cuidadosComInsolacao" : {
+        "titulo" : "Cuidados com insolação e picadas de inseto",
+        "insolacao" : "Insolação",
+        "malaria" : "Malária",
+        "texto1" : "Proteja-se contra o sol e picada de insetos",
+        "texto2" : "Evite a exposição ao sol entre 10 horas da manhã e 4 horas da tarde, sempre que possível, cubra-se com roupas apropriadas, chapéu e óculos escuros e use protetor solar apropriado.",
+        "texto3" : "Se viajar para regiões onde há transmissão de malária, use roupas que cubram bem o corpo, evite contato com margens de rios e lagoas após o pôr do sol e use mosquiteiro."
+      },
+      "adoecimento" : {
+        "titulo" : "Adoecimento durante ou após a viagem",
+        "texto" : "Se ficar doente durante ou logo após retornar, procure o serviço de saúde e informe ao médico sobre sua viagem, pois esta atitude poderá ajudar no diagnóstico de algumas doenças."
+      }
+    },
+    "saude" : {
+      "lembretesDeSaude" : "Lembretes de saúde",
+      "hospitaisDeReferencia" : "Hospitais de referência",
+      "telefonesUteis" : "Telefones úteis",
+      "farmacias" : "Farmácias",
+      "linkDashboard" : "Toque aqui <br>e veja a saúde <br>na copa do Brasil",
+      "higieneECuidados" : "Cuidados básicos",
+      "vacinas" : "Vacinas",
+      "cuidadosBasicos" : "Cuidados básicos",
+      "urgenciasEmergencias" : "Urgências e emergências",
+      "prevencaoDoencas" : "Prevenção contra doenças",
+      "prevencaoAcidentes" : "Prevenção contra acidentes",
+      "prevencaoViolencia" : "Prevenção contra violência"
+    },
+    "lembretesDeSaude" : {
+      "introducao" : "Introdução lembretes de saúde",
+      "texto" : "Texto lembretes de saúde"
+    },
+    "hospitaisDeReferencia" : {},
+    "telefonesUteis" : {
+      "samu" : "Samu - Serviço de Atendimento Móvel de Urgência",
+      "policiaMilitar" : "Polícia Militar",
+      "disqueDenuncia" : "Disque denúncia - Abusos contra crianças e adolescentes",
+      "ouvidoriaDeSaude" : "Ouvidoria de saúde",
+      "bombeiros" : "Bombeiros",
+      "defesaCivil" : "Defesa Civil",
+      "disqueIntoxicacao" : "Disque intoxicação - consultas e reclamações relacionadas ao veneno",
+      "anvisa" : "ANVISA - Agência Nacional de Vigilância Sanitária",
+      "anac" : "ANAC - Agência Nacional de Aviação Civil",
+      "antt" : "ANTT - Agência Nacional de Transportes Terrestres",
+      "antaq" : "ANTAQ - Agência Nacional de Transportes Aquaviários",
+      "policiaCivil" : "Polícia Civil",
+      "policiaFederal" : "Polícia Federal",
+      "policiaRodoviaria" : "Polícia Rodoviária Federal",
+      "vigiagro" : "VIGIAGRO (Vigilância Agropecuária Internacional)",
+      "diquesSaude" : "Disque saúde",
+      "cievs" : "CIEVS - Centro de Informações Estratégicas de Vigilância em Saúde",
+      "cve" : "CVE - Centro de Vigilância Epidemiológica"
+    },
+    "farmacias" : {
+      "erro" : "Não foi possível encontrar farmácias ou drogarias num raio de 20km"
+    },
+    "mapa" : {
+      "referencia" : "Hospitais referência",
+      "outros" : "Encontrados pelo Google",
+      "encontrados" : "Hospitais encontrados pelo Google",
+      "encontradas" : "Farmácias encontradas pelo Google",
+      "tracarRota" : "Traçar rota usando:",
+      "rotaGoogle" : "Google Maps",
+      "rotaApple" : "Apple Maps"
+    },
+    "cuidadosBasicos" : {
+      "topico1" : "Procure seu médico, preferencialmente, entre 4 e 8 semanas antes da viagem para informar seu roteiro. Peça orientações sobre cuidados para proteção contra doenças e lesões;",
+      "topico2" : "Você pode ter dificuldade ou não encontrar os medicamentos que utiliza habitualmente durante a viagem. Peça orientação ao seu médico sobre quais medicamentos e em que quantidade deve levar durante a viagem, incluindo a bagagem de mão;",
+      "topico3" : "Carregue com você os seus documentos de identificação, de preferência em inglês e português, com informações de contatos pessoais, tipo sanguíneo, se tem alergias, diabetes ou outras doenças que possam requerer particular atenção;",
+      "topico4" : "Toda gestante deve consultar seu médico antes da viagem, pois estará sujeita a vários riscos e a viagem pode afetar sua segurança e conforto;",
+      "topico5" : "Antes de viajar consulte a empresa de transporte sobre as regras específicas para gestantes;",
+      "topico6" : "O Brasil é um país de clima tropical. Recomenda-se ao viajante a ingestão constante de líquidos para evitar a desidratação;",
+      "topico7" : "Use roupas e calçados confortáveis. Eles lhe darão segurança e proteção contra torções, picadas de insetos e acidentes com animais peçonhentos;",
+      "topico8" : "Para se proteger do sol, cubra-se com roupas apropriadas, utilize chapéu ou boné e óculos escuros. Evite a exposição direta ao sol entre 10 horas da manhã e 4 horas da tarde;",
+      "topico9" : "Use protetor solar com fator de proteção adequado à cor de sua pele, de acordo com as orientações do fabricante. Mesmo em locais mais frios, sua pele ficará protegida dos raios solares;",
+      "topico10" : "Use repelentes quando houver necessidade;",
+      "topico11" : "Lave as mãos com água e sabão várias vezes ao dia, principalmente antes de ingerir alimentos, após utilizar conduções públicas, visitar mercados ou locais com grande fluxo de pessoas.",
+      "topico12" : "No Brasil, é proibido por lei dirigir após o consumo de bebida alcoólica, mesmo em pequenas quantidades"
+    },
+    "prevencao" : {
+      "acidentes" : {
+        "seguranca" : {
+          "titulo" : "Segurança em veículos",
+          "topico1" : "É obrigatório usar o cinto de segurança em veículos;",
+          "topico2" : "Para as crianças, também é obrigatório o uso de cadeirinhas, no banco de trás dos carros;",
+          "topico3" : "Se for dirigir motos ou bicicletas, sempre utilize capacete. No Brasil, há a necessidade de um certificado específico de habilitação para guiar motocicletas."
+        },
+        "picadas" : {
+          "titulo" : "Proteja-se contra picadas de insetos",
+          "topico1" : "Informe-se sobre a ocorrência de malária, dengue, febre amarela e outras doenças que podem ser transmitidas por mosquitos. O risco de infecção dessas doenças pode ser reduzido, se forem evitadas as picadas. Observe as seguintes recomendações:",
+          "topico2" : "Hospede-se em locais que disponham de telas de proteção nas portas e janelas, especialmente longe das capitais e das grandes cidades. Ou leve o mosquiteiro/cortinado;",
+          "topico3" : "Em passeios ecoturísticos, utilize roupas que protejam o corpo contra picadas de insetos e carrapatos, como camisas de mangas compridas, calças e sapatos fechados;",
+          "topico4" : "Aplique repelente nas áreas expostas da pele, seguindo a orientação do fabricante. Em crianças com idade inferior a dois anos, não é recomendado o uso de repelente sem orientação médica."
+        },
+        "mordeduras" : {
+          "titulo" : "Proteja-se contra mordeduras ou outros tipos de acidentes com animais",
+          "topico1" : "Em caso de contato acidental, mordedura, lambedura ou arranhadura por mamíferos (cão, gato, morcego, ou qualquer outro animal silvestre), lave o local atingido com água corrente e sabão, e procure imediatamente assistência médica;",
+          "topico2" : "Se tiver acidentes com animais peçonhentos (escorpiões, cobras, aranhas, abelhas e lagartas), não realize procedimentos caseiros e procure imediatamente o serviço de saúde público local. Durante o socorro, mova-se o mínimo possível. O membro atingido deve ser colocado numa posição mais elevada em relação ao corpo e o local da picada pode ser lavado apenas com água e sabão;",
+          "topico3" : "Em casos de acidentes com águas-vivas e caravelas, deve ser aplicada compressa de água gelada do mar (não utilizar água doce), e evite esfregar a área acometida, ou a aplicação de vinagre;",
+          "topico4" : "Evite contato direto com animais vivos ou mortos, e, acima de tudo, não manipule esses animais, por mais inofensivos que eles pareçam;",
+          "topico5" : "Evite caminhar descalço em áreas de selvas ou plantações. Preferencialmente, utilize calça e botas de cano longo ou bota com perneira (que protejam até o joelho);",
+          "topico6" : "No caso específico de aranhas e escorpiões, vistorie roupas e calçados antes de vesti-los e toalhas ou capas antes de utilizá-las;",
+          "topico7" : "Durante a realização de trilhas ou caminhadas ecológicas, examine cuidadosamente os locais onde for apoiar-se (árvores, rochas);",
+          "topico8" : "Tenha cuidado com abelhas e marimbondos. Eles são atraídos por sons, odores e cores, como barulhos de aparelhos de jardinagem e de motores de embarcação;",
+          "topico9" : "Não coloque a mão em buracos e tocas."
+        }
+      },
+      "doencas" : {
+        "malaria" : {
+          "titulo" : "Prevenção contra malária",
+          "topico1" : "Antes de viajar <a href=\"#tela_linksUteis\" title=\"Link para a tela de links úteis\">consulte as áreas que apresentam registros de casos de malária</a> durante todo o ano;",
+          "topico2" : "No Brasil, a transmissão concentra-se na Região Amazônica, composta pelos estados do Acre, Amapá, Amazonas, Maranhão, Mato Grosso, Pará, Rondônia, Roraima e Tocantins;",
+          "topico3" : "Em áreas de transmissão de malária, é fundamental que o viajante tenha conhecimento sobre o horário de maior atividade de mosquitos vetores de malária, do pôr-do-sol ao amanhecer; ",
+          "topico4" : "Use roupas claras e com manga longa, durante atividades de exposição elevada;",
+          "topico5" : "Aplique repelente nas áreas expostas da pele, seguindo a orientação do fabricante. Em crianças com idade inferior a dois anos, não é recomendado o uso de repelente sem orientação médica;",
+          "topico6" : "Em áreas de transmissão de malária é imprescindível que o viajante fique atento ao surgimento de sintomas da doença, como febre, dor no corpo e dor de cabeça;",
+          "topico7" : "Em caso de manifestação de algum sintoma da doença, procure uma unidade de saúde especializada mais próxima, o ideal é que este atendimento seja feito o quanto antes, em até 48 horas após os primeiros sintomas;",
+          "topico8" : "O Brasil conta com uma rede pública de saúde estruturada para diagnosticar e tratar os pacientes, de forma oportuna e adequada;",
+          "topico9" : "Caso você queira adquirir mais informações acerca da malária antes de realizar a sua viagem, busque orientações em um dos Centros de Referência;",
+          "topico10" : "Para obter informações sobre a incidência de malária no mundo acesse o <a href=\"#tela_linksUteis\" title=\"Link para a tela de links úteis\">site da Organização Mundial da Saúde</a>; "
+        },
+        "respiratorias" : {
+          "titulo" : "Previna-se contra doenças de transmissão respiratória",
+          "topico1" : "Lavar as mãos com água e sabonete antes das refeições, de tocar os olhos, a boca e o nariz e após tossir, espirrar ou usar o banheiro;",
+          "topico2" : "Ao tossir ou espirrar, cubra o nariz e a boca com lenço, preferencialmente descartável. Caso não tenha, evite espirrar nas mãos. Recomenda-se espirrar no antebraço, próximo ao cotovelo;",
+          "topico3" : "Indivíduos doentes devem ficar em repouso, consumir alimentação balanceada, aumentar a ingestão de líquidos e evitar aglomerações e ambientes fechados;",
+          "topico4" : "Mantenha os ambientes ventilados;",
+          "topico5" : "Esteja sempre atento ao apresentar sintomas respiratórios de maior gravidade e procure imediatamente assistência médica."
+        },
+        "alimentos" : {
+          "titulo" : "Consuma alimentos e bebidas de forma saudável",
+          "topico1" : "Evite consumir alimentos cujas condições higiênicas, de preparo e acondicionamento, são precárias;",
+          "topico2" : "Prefira alimentos que contenham baixo teor de açúcares, gorduras e sal;",
+          "topico3" : "Beba bastante líquido, preferencialmente água ou suco. Evite alimentos crus ou mal cozidos, principalmente os frutos do mar;",
+          "topico4" : "Alimentos embalados devem conter no rótulo a identificação do produtor, data de validade e a embalagem deve estar íntegra;",
+          "topico5" : "Durante o turismo rural, dê preferência aos alimentos que podem ficar sem refrigeração e não estraguem com o calor;",
+          "topico6" : "Caso tenha diarreia e vômitos por conta da ingestão de alimentos e bebidas, é preciso cuidado redobrado com a desidratação. Recomenda-se a ingestão de sal de reidratação oral, disponibilizado gratuitamente pelo Sistema Único de Saúde, ou outras soluções do tipo. As bebidas esportivas não compensam corretamente as perdas e não devem ser utilizadas para tratamento de doença diarreica.",
+          "topico7" : "Para mais informações sobre cuidados com a alimentação, consulte as recomendações no link da <a href=\"#tela_linksUteis\" title=\"Link para a tela de links úteis\">Organização Mundial da Saúde</a>."
+        },
+        "sexo" : {
+          "titulo" : "Pratique sexo de forma segura",
+          "topico1" : "No Brasil, a camisinha é distribuída gratuitamente pelo governo e está disponível em postos de saúde, unidades de pronto atendimento, albergues, Centros de Atendimento ao Turista e em outros pontos de distribuição espalhados pelas cidades. Leve sempre consigo os preservativos para facilitar a sua utilização e a prevenção de doenças sexualmente transmissíveis."
+        }
+      },
+      "violencias" : {
+        "titulo" : "Prevenção de Violências",
+        "topico1" : "Em caso de violência sexual, deve-se procurar o quanto antes uma unidade de saúde, a fim de que sejam adotadas medidas de prevenção e assistência de acordo com a Norma Técnica do Ministério da Saúde;",
+        "topico2" : "Todas as formas de violência contra crianças, adolescentes, mulheres e pessoas idosas são de notificação compulsória pelos serviços de saúde públicos e privados no Brasil;",
+        "topico3" : "Para o atendimento de urgência em decorrência de acidentes, violências ou urgências clínicas, poderá ser acionado o Disque 192 – SAMU (Serviço de Atenção Móvel de Urgência);",
+        "topico4" : "Caso tenha conhecimento de um caso de exploração sexual de crianças e adolescentes, faça a comunicação por meio do Disque 100 (Disque Direitos Humanos) ou pelo Disque 190 (Polícia Militar);",
+        "topico5" : "Você pode também acionar o Disque 180 para informar ou comunicar situações de violência contra a mulher;",
+        "topico6" : "O consumo de bebidas alcoólicas em excesso é um fator de risco importante para a ocorrência de violência, portanto o viajante deve beber com moderação e respeito;",
+        "topico7" : "Lembre-se: se beber, não dirija. O consumo de bebida alcóolica associado à direção implica em alto risco de acidentes de trânsito. Vamos proteger os pedestres, passageiros e condutores no trânsito;",
+        "topico8" : "Não é permitida a venda de bebida alcóolica para menores de 18 anos no Brasil, segundo o Estatuto da Criança e do Adolescente."
+      }
+    }
+  },
+  "jogos" : {
+    "jogos" : {
+      "selecoes" : "Seleções",
+      "resultados" : "Resultados",
+      "calendarioDeJogos" : "Calendário dos jogos",
+      "maisNoticias" : "Mais notícias"
+    },
+    "selecoes" : {},
+    "selecao" : {},
+    "resultados" : {},
+    "calendarioDosJogos" : {
+      "faseDeGrupos": "FASE DE GRUPOS",
+      "jogo": "JOGO",
+      "grupo": "GRUPO",
+      "rodada": "RODADA",
+      "oitavasDeFinal": "OITAVAS DE FINAL",
+      "quartasDeFinal": "QUARTAS DE FINAL",
+      "vencQua": "VENC. QUA.",
+      "semifinais": "SEMIFINAIS",
+      "perdSemifinal": "PERD. SEMIFINAL",
+      "vencSemifinal": "VENC. SEMIFINAL",
+      "terceiroLugar": "3° LUGAR",
+      "final": "FINAL"
+    },
+    "maisNoticias" : {}
+  },
+  "turismo" : {
+    "turismo" : {
+      "fanFest" : "Fan Fest",
+      "pontosTuristicos" : "Pontos Turísticos",
+      "atividadesCulturais" : "Atividades culturais",
+      "baresERestaurantes" : "Bares e restaurantes"
+    },
+    "fanFest" : {},
+    "pontosTuristicos" : {},
+    "atividadesCulturais" : {},
+    "baresERestaurantes" : {}
+  },
+  "mais" : {
+    "mais" : {
+      "acesseOSite" : "Acesse o site",
+      "twitter" : {
+        "agora" : "agora",
+        "1minuto" : "1min",
+        "minutos" : "min",
+        "1hora" : "1h",
+        "horas" : "horas",
+        "ontem" : "ontem",
+        "dias" : "dias",
+        "semanas" : "semanas"
+      }
+    },
+    "itensDoJogo" : {
+      "selecao" : "Diga como você está se sentindo. Toque e arraste o dedo para cima ou para baixo.",
+      "ok" : "Toque no botão OK para confirmar como você se sente.",
+      "categoria" : "Saiba em que categoria você está.",
+      "arena" : "Fique por dentro das principais informações sobre as Arenas.",
+      "selecaoArena" : "Saiba em que arena você está.",
+      "pontos" : "Ganhe pontos informando como está sua saúde. Em dias de jogos a participação vale 3 pontos e quando não houver jogo, apenas 1 ponto. Você pode pontuar a cada 2 horas. Mas preste atenção, pois ganhar pontos não é o suficiente para se tornar um jogador profissional. A participação diária é a melhor forma de chegar ao estágio final do jogo.",
+      "barraDeEngajamento" : "A barra de engajamento está diretamente relacionada à sua participação. Quanto mais engajado, mais rápido você avança de categoria e libera arenas."
+    },
+    "arenas" : {},
+    "categorias" : {
+      "pontos" : "%",
+      "introducao" : "Bem-vindo ao mundo do futebol. A partir de agora, você vai começar sua carreira de jogador. Boa sorte.",
+      "texto": {
+        "denteDeLeite": "Bem-vindo ao mundo do futebol. A partir de agora, você vai começar sua carreira de jogador. Boa sorte.",
+        "mirim": "Agora que você já está familiarizado com o campo, está na hora de treinar ainda mais. Continue assim.",
+        "infantil": "Siga todas as orientações do seu treinador e tenha força de vontade pra avançar de categoria. Contamos com você.",
+        "juvenil": "Muito bem. Já dá pra ver que você tem a maior habilidade com a bola no campo. Rumo à vitória.",
+        "junior": "Você está quase lá. Foco e trabalho é o que você precisa para ser um jogador profissional.",
+        "profissional": "Finalmente, você é um jogador profissional. Continue jogando e concorra a prêmios."
+      }
+    },
+    "linksUteis" : {
+      "governamentais": "Governamentais",
+      "naoGovernamentais": "Não-governamentais",
+      "outrosLinks": "Outros",   
+      "gov" : {
+        "viajante" : "Saúde do Viajante",
+        "svs" : "Secretaria de Vigilância em Saúde",
+        "formsus" : "Formulário de notificação de doenças e agravos",
+        "agricultura" : "Ministério da Agricultura",
+        "malaLegal" : "Mala legal",
+        "anvisa" : "Anvisa",
+        "copa2014" : "Portal da copa",
+        "aplicativos" : "Aplicativos do Governo Federal",
+        "malaria" : "Áreas com ocorrência de malária no Brasil"
+      },
+      "nGov" : {
+        "healthmap" : "HealthMap",
+        "promedmail" : "ProMed",
+        "unaids" : "Proteja o Gol",
+        "fifa" : "Fifa"
+      },
+      "outros" : {
+        "who" : "Organização Mundial da Saúde"
+      }
+    },
+    "malaLegal" : {
+      "titulo" : "Vigilância Agropecuária Internacional",
+      "li1" : "O Brasil tem regras para controlar a entrada de animais, vegetais e produtos no país.",
+      "li2" : "Antes de viajar consulte a Embaixada ou Consulado do Brasil sobre os requisitos para importação de animais vegetais e outros produtos.",
+      "li3" : "Precisam de autorização prévia e/ou certificação sanitária para ingressar no Brasil:",
+      "li4" : {
+        "li1" : "Frutas, verduras, leite, queijo, manteiga, iogurte, doce de leite, mel, cera, própolis, carnes “in natura” ou industrializadas (presunto, embutidos, enlatados, pescado), ovos, hortaliças frescas e comida servida a bordo;",
+        "li2" : "Animais de companhia, insetos, moluscos, bactérias e fungos, sêmen, embriões;",
+        "li3" : "Agrotóxicos e produtos veterinários (soro, vacinas, medicamentos, entre outros), comida para animais;",
+        "li4" : "Mudas, sementes, madeira e terra."
+      }
+    },
+    "consulados" : {
+      "paises" : {
+        "SouthAfrica" : "África do Sul",
+        "Albania" : "Albânia",
+        "Germany" : "Alemanha",
+        "Angola" : "Angola",
+        "Algeria" : "Argélia",
+        "Argentina" : "Argentina",
+        "Armenia" : "Armênia",
+        "Australia" : "Austrália",
+        "Austria" : "Áustria",
+        "Bangladesh" : "Bangladesh",
+        "Belgium" : "Bélgica",
+        "Benin" : "Benin",
+        "Bolivia" : "Bolívia",
+        "Bosnia" : "Bósnia e Herzegovina",
+        "BurkinaFaso" : "Burkina Faso",
+        "Brazil" : "Brasil",
+        "CapeVerde" : "Cabo Verde",
+        "Cameroon" : "Camarões",
+        "Canada" : "Canadá",
+        "Chile" : "Chile",
+        "China" : "China",
+        "Cyprus" : "Chipre",
+        "Colombia" : "Colômbia",
+        "SouthKorea" : "Coréia do Sul",
+        "IvoryCoast" : "Costa do Marfim",
+        "CostaRica" : "Costa Rica",
+        "Croatia" : "Croácia",
+        "Cuba" : "Cuba",
+        "Denmark" : "Dinamarca",
+        "Ecuador" : "Equador",
+        "Slovakia" : "Eslováquia",
+        "Spain" : "Espanha",
+        "US" : "Estados Unidos",
+        "Estonia" : "Estônia",
+        "England" : "Inglaterra",
+        "Philippines" : "Filipinas",
+        "Finland" : "Finlândia",
+        "France" : "França",
+        "Gabon" : "Gabão",
+        "Gambia" : "Gâmbia",
+        "Ghana" : "Gana",
+        "Greece" : "Grécia",
+        "Guatemala" : "Guatemala",
+        "Guyana" : "Guiana",
+        "Guinea" : "Guiné",
+        "Guinea-Bissau" : "Guiné-Bissau",
+        "Haiti" : "Haiti",
+        "Honduras" : "Honduras",
+        "Hungary" : "Hungria",
+        "India" : "Índia",
+        "Indonesia" : "Indonésia",
+        "Iraq" : "Iraque",
+        "Iran" : "Irã",
+        "Ireland" : "Irlanda",
+        "Iceland" : "Islândia",
+        "Israel" : "Israel",
+        "Italy" : "Itália",
+        "Jamaica" : "Jamaica",
+        "Japan" : "Japão",
+        "Kuwait" : "Kuaite",
+        "Latvia" : "Letônia",
+        "Lebanon" : "Líbano",
+        "Liberia" : "Libéria",
+        "Libya" : "Líbia",
+        "Lithuania" : "Lituânia",
+        "Luxembourg" : "Luxemburgo",
+        "Malaysia" : "Malásia",
+        "Mali" : "Mali",
+        "Malta" : "Malta",
+        "Morocco" : "Marrocos",
+        "Mexico" : "México",
+        "Mozambique" : "Moçambique",
+        "Monaco" : "Mônaco",
+        "Mongolia" : "Mongólia",
+        "Nicaragua" : "Nicarágua",
+        "Nigeria" : "Nigéria",
+        "Norway" : "Noruega",
+        "newZealand" : "Nova Zelândia",
+        "Netherlands" : "Países Baixos",
+        "Panama" : "Panamá",
+        "Pakistan" : "Paquistão",
+        "Paraguay" : "Paraguai",
+        "Peru" : "Peru",
+        "Poland" : "Polônia",
+        "Portugal" : "Portugal",
+        "UK" : "Reino Unido",
+        "DemocraticRepublicofCongo" : "República Democrática do Congo",
+        "DominicanRepublic" : "República Dominicana",
+        "CzechRepublic" : "República Tcheca",
+        "Russia" : "Rússia",
+        "Romania" : "Romênia",
+        "SanMarino" : "San Marino",
+        "SaoTomeandPrincipe" : "São Tomé e Príncipe",
+        "SaintVincentandGrenadines" : "São Vicente e Granadinas",
+        "Senegal" : "Senegal",
+        "Serbia" : "Sérvia",
+        "Syria" : "Síria",
+        "SriLanka" : "Sri Lanka",
+        "Sweden" : "Suécia",
+        "Switzerland" : "Suíça",
+        "Suriname" : "Suriname",
+        "Thailand" : "Tailândia",
+        "Togo" : "Togo",
+        "Tunisia" : "Tunísia",
+        "Turkey" : "Turquia",
+        "Ukraine" : "Ucrânia",
+        "Uruguay" : "Uruguai",
+        "Venezuela" : "Venezuela"
+      }
+    }
+  }
+}

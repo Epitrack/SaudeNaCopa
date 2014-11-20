@@ -1,4 +1,4 @@
 SaudeNaCopa
 ===========
 
-app da copa do mundo 2014
+Projeto Saúde Na Copa

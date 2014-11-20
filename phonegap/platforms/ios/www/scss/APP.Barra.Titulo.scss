@@ -1,0 +1,99 @@
+@import "compass/css3/background-size";
+@import "compass/css3/border-radius";
+@import "compass/css3/images";
+@import "compass/css3/transform";
+@import "compass/css3/opacity";
+@import "compass/css3/transition";
+@import "Variaveis.scss";
+
+#barraDeTitulo {
+	font-size: $barra_titulo_fontSize;
+	color: $barra_titulo_color;
+	top: 0;
+	display: none;
+	text-align: center;
+
+	.isphone & {
+		height: $barra_alturaIOS;
+	}
+
+	h1 {
+		font-size: inherit;
+		.isphone & {
+			padding-top: $altura_statusBarIOS;
+		}
+		line-height: $barra_altura;
+
+		text-transform: uppercase;
+		.botao {
+			display: block;
+			width: 80px;
+			height: 100%;
+			position: absolute;
+			bottom: 0;
+			
+
+			.isphone & {
+				height: $barra_altura;
+			}
+
+			&.voltar {
+				left: 0;
+				background-image: url("../imagens/barra/titulo/botao_voltar.png");
+				@include bg("11.5px 19.5px");
+				background-position: 20px center;
+			}
+
+			&.informacoes {
+				left: 0;
+				background-image: url("../imagens/barra/titulo/botao_informacoes.png");
+				@include bg("23.5px 23.5px");
+				background-position: 20px center;
+				display: none;
+			}
+			&.avancar {
+				left: auto;
+				right: 0;
+				.tela_torcedor & {
+					background-image: url("../imagens/barra/titulo/botao_calendario.png");
+					@include bg("21px 22px");
+					background-position: 38px center;
+				}
+				.tela_sintomas & {
+					background-image: url("../imagens/barra/titulo/botao_ok.png");
+					@include bg("19px 11px");
+					background-position: 41px center;
+				}
+				// .tela_mapaSaude & {
+				// 	background-image: url("../imagens/barra/titulo/botao_lista.png");
+				// 	@include bg("21px 20px");
+				// 	background-position: 41px center;
+				// }
+				// .tela_hospitaisDeReferencia &,
+				// .tela_farmacias & {
+				// 	background-image: url("../imagens/barra/titulo/botao_mapa.png");
+				// 	@include bg("20px 20px");
+				// 	background-position: 41px center;
+				// }
+			}
+		}
+	}
+
+
+	// .isphone & {
+	// 	padding-top: : $barra_altura+20px; 
+	// }
+
+	.area_sentimento & {
+		@include background-image(linear-gradient(#f1d046, #e6b548));
+	}
+	.area_saude & {
+		@include background-image(linear-gradient(#91c5e1, #5aafd9));
+	}
+	.area_jogos & {
+		@include background-image(linear-gradient(#a3bd31, #70a83b));
+	}
+	.area_mais & {
+		@include background-image(linear-gradient(#76aadb, #4972b1));
+	}
+}

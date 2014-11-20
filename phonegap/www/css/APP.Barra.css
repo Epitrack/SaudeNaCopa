@@ -1,0 +1,311 @@
+/**
+ *  Barras
+ */
+/**
+ *  Área Acesso e Apresentação
+ */
+/**
+ *  Área Acesso
+ */
+/**
+ *  Área Sentimento
+ */
+/* line 3, ../scss/APP.Barra.scss */
+.barra {
+  display: block !important;
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 2;
+}
+/* line 11, ../scss/APP.Barra.scss */
+.fullscreen .barra {
+  display: none !important;
+}
+
+/**
+ *  Barras
+ */
+/**
+ *  Área Acesso e Apresentação
+ */
+/**
+ *  Área Acesso
+ */
+/**
+ *  Área Sentimento
+ */
+/* line 9, ../scss/APP.Barra.Titulo.scss */
+#barraDeTitulo {
+  font-size: 1.3335em;
+  color: #f7f7f8;
+  top: 0;
+  display: none;
+  text-align: center;
+}
+/* line 16, ../scss/APP.Barra.Titulo.scss */
+.isphone #barraDeTitulo {
+  height: 60px;
+}
+/* line 20, ../scss/APP.Barra.Titulo.scss */
+#barraDeTitulo h1 {
+  font-size: inherit;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+/* line 22, ../scss/APP.Barra.Titulo.scss */
+.isphone #barraDeTitulo h1 {
+  padding-top: 20px;
+}
+/* line 28, ../scss/APP.Barra.Titulo.scss */
+#barraDeTitulo h1 .botao {
+  display: block;
+  width: 80px;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+}
+/* line 36, ../scss/APP.Barra.Titulo.scss */
+.isphone #barraDeTitulo h1 .botao {
+  height: 40px;
+}
+/* line 40, ../scss/APP.Barra.Titulo.scss */
+#barraDeTitulo h1 .botao.voltar {
+  left: 0;
+  background-image: url("../imagens/barra/titulo/botao_voltar.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 11.5px 19.5px;
+  -moz-background-size: 11.5px 19.5px;
+  -o-background-size: 11.5px 19.5px;
+  background-size: 11.5px 19.5px;
+  background-position: 20px center;
+}
+/* line 47, ../scss/APP.Barra.Titulo.scss */
+#barraDeTitulo h1 .botao.informacoes {
+  left: 0;
+  background-image: url("../imagens/barra/titulo/botao_informacoes.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 23.5px 23.5px;
+  -moz-background-size: 23.5px 23.5px;
+  -o-background-size: 23.5px 23.5px;
+  background-size: 23.5px 23.5px;
+  background-position: 20px center;
+  display: none;
+}
+/* line 54, ../scss/APP.Barra.Titulo.scss */
+#barraDeTitulo h1 .botao.avancar {
+  left: auto;
+  right: 0;
+}
+/* line 57, ../scss/APP.Barra.Titulo.scss */
+.tela_torcedor #barraDeTitulo h1 .botao.avancar {
+  background-image: url("../imagens/barra/titulo/botao_calendario.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 21px 22px;
+  -moz-background-size: 21px 22px;
+  -o-background-size: 21px 22px;
+  background-size: 21px 22px;
+  background-position: 38px center;
+}
+/* line 62, ../scss/APP.Barra.Titulo.scss */
+.tela_sintomas #barraDeTitulo h1 .botao.avancar {
+  background-image: url("../imagens/barra/titulo/botao_ok.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 19px 11px;
+  -moz-background-size: 19px 11px;
+  -o-background-size: 19px 11px;
+  background-size: 19px 11px;
+  background-position: 41px center;
+}
+/* line 87, ../scss/APP.Barra.Titulo.scss */
+.area_sentimento #barraDeTitulo {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f1d046), color-stop(100%, #e6b548));
+  background-image: -webkit-linear-gradient(#f1d046, #e6b548);
+  background-image: -moz-linear-gradient(#f1d046, #e6b548);
+  background-image: -o-linear-gradient(#f1d046, #e6b548);
+  background-image: linear-gradient(#f1d046, #e6b548);
+}
+/* line 90, ../scss/APP.Barra.Titulo.scss */
+.area_saude #barraDeTitulo {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #91c5e1), color-stop(100%, #5aafd9));
+  background-image: -webkit-linear-gradient(#91c5e1, #5aafd9);
+  background-image: -moz-linear-gradient(#91c5e1, #5aafd9);
+  background-image: -o-linear-gradient(#91c5e1, #5aafd9);
+  background-image: linear-gradient(#91c5e1, #5aafd9);
+}
+/* line 93, ../scss/APP.Barra.Titulo.scss */
+.area_jogos #barraDeTitulo {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #a3bd31), color-stop(100%, #70a83b));
+  background-image: -webkit-linear-gradient(#a3bd31, #70a83b);
+  background-image: -moz-linear-gradient(#a3bd31, #70a83b);
+  background-image: -o-linear-gradient(#a3bd31, #70a83b);
+  background-image: linear-gradient(#a3bd31, #70a83b);
+}
+/* line 96, ../scss/APP.Barra.Titulo.scss */
+.area_mais #barraDeTitulo {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #76aadb), color-stop(100%, #4972b1));
+  background-image: -webkit-linear-gradient(#76aadb, #4972b1);
+  background-image: -moz-linear-gradient(#76aadb, #4972b1);
+  background-image: -o-linear-gradient(#76aadb, #4972b1);
+  background-image: linear-gradient(#76aadb, #4972b1);
+}
+
+/**
+ *  Barras
+ */
+/**
+ *  Área Acesso e Apresentação
+ */
+/**
+ *  Área Acesso
+ */
+/**
+ *  Área Sentimento
+ */
+/* line 10, ../scss/APP.Barra.Menu.scss */
+#barraDeMenu {
+  bottom: 0;
+  display: none;
+  background-color: #eeeef0;
+}
+/* line 15, ../scss/APP.Barra.Menu.scss */
+#barraDeMenu ul {
+  padding: 0;
+}
+/* line 18, ../scss/APP.Barra.Menu.scss */
+#barraDeMenu ul li, #barraDeMenu ul li a {
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: auto 50%;
+  -moz-background-size: auto 50%;
+  -o-background-size: auto 50%;
+  background-size: auto 50%;
+}
+/* line 24, ../scss/APP.Barra.Menu.scss */
+#barraDeMenu ul li {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 20%;
+  height: 40px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 15px;
+  z-index: 2;
+}
+/* line 41, ../scss/APP.Barra.Menu.scss */
+#barraDeMenu ul li a {
+  display: block;
+  height: 40px;
+  width: 100%;
+  overflow: hidden;
+  text-indent: -9999px;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* line 52, ../scss/APP.Barra.Menu.scss */
+#barraDeMenu ul li:nth-child(1) {
+  left: 0;
+}
+/* line 55, ../scss/APP.Barra.Menu.scss */
+#barraDeMenu ul li:nth-child(1) a {
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 21.5px 21px;
+  -moz-background-size: 21.5px 21px;
+  -o-background-size: 21.5px 21px;
+  background-size: 21.5px 21px;
+  background-image: url("../imagens/barra/menu/icone_jogador_off.png");
+}
+/* line 60, ../scss/APP.Barra.Menu.scss */
+#barraDeMenu ul li:nth-child(2) {
+  left: 20%;
+}
+/* line 63, ../scss/APP.Barra.Menu.scss */
+#barraDeMenu ul li:nth-child(2) a {
+  background-image: url("../imagens/barra/menu/icone_saude_off.png");
+}
+/* line 67, ../scss/APP.Barra.Menu.scss */
+#barraDeMenu ul li:nth-child(3) {
+  left: 40%;
+}
+/* line 70, ../scss/APP.Barra.Menu.scss */
+#barraDeMenu ul li:nth-child(3) a {
+  background-image: url("../imagens/barra/menu/icone_jogos_cinza.png");
+}
+/* line 74, ../scss/APP.Barra.Menu.scss */
+#barraDeMenu ul li:nth-child(4) {
+  left: 60%;
+}
+/* line 77, ../scss/APP.Barra.Menu.scss */
+#barraDeMenu ul li:nth-child(4) a {
+  background-image: url("../imagens/barra/menu/icone_mais_off.png");
+}
+/* line 81, ../scss/APP.Barra.Menu.scss */
+#barraDeMenu ul li:nth-child(5) {
+  left: 80%;
+  color: black;
+  background-image: url("../imagens/barra/menu/icone_maisOpcoes.png");
+  -webkit-background-size: auto 30%;
+  -moz-background-size: auto 30%;
+  -o-background-size: auto 30%;
+  background-size: auto 30%;
+}
+/* line 91, ../scss/APP.Barra.Menu.scss */
+.area_sentimento #barraDeMenu ul li:nth-child(1) a {
+  background-image: url("../imagens/barra/menu/icone_jogador_on.png");
+}
+/* line 97, ../scss/APP.Barra.Menu.scss */
+.area_saude #barraDeMenu ul li:nth-child(2) a {
+  background-image: url("../imagens/barra/menu/icone_saude_on.png");
+}
+/* line 103, ../scss/APP.Barra.Menu.scss */
+.area_jogos #barraDeMenu ul li:nth-child(3) a {
+  background-image: url("../imagens/barra/menu/icone_jogos_on.png");
+}
+/* line 109, ../scss/APP.Barra.Menu.scss */
+.area_mais #barraDeMenu ul li:nth-child(4) a {
+  background-image: url("../imagens/barra/menu/icone_mais_on.png");
+}
+/* line 116, ../scss/APP.Barra.Menu.scss */
+#barraDeMenu ul ul {
+  display: none;
+  width: 180px;
+  height: auto;
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+  background-color: inherit;
+  -webkit-background-size: 100%, auto;
+  -moz-background-size: 100%, auto;
+  -o-background-size: 100%, auto;
+  background-size: 100%, auto;
+}
+/* line 127, ../scss/APP.Barra.Menu.scss */
+#barraDeMenu ul ul li {
+  display: block;
+  width: auto;
+  height: auto;
+  line-height: 1em;
+  position: static;
+  border-top: 1px solid white;
+  line-height: 50px;
+  background-image: none;
+}
+/* line 137, ../scss/APP.Barra.Menu.scss */
+#barraDeMenu ul ul li a {
+  width: auto;
+  height: auto;
+  display: block;
+  overflow: visible;
+  text-indent: 0;
+  border: none;
+  font-weight: normal;
+  background-image: none !important;
+}

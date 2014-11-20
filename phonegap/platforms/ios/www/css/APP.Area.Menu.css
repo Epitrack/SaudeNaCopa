@@ -1,0 +1,287 @@
+/**
+ *  Barras
+ */
+/**
+ *  Área Acesso e Apresentação
+ */
+/**
+ *  Área Acesso
+ */
+/**
+ *  Área Sentimento
+ */
+/* line 9, ../scss/APP.Area.Menu.scss */
+.area_menu #area_menu #botaoVoltarMenu {
+  display: block;
+}
+/* line 14, ../scss/APP.Area.Menu.scss */
+#area_menu a[href='#voltar'].botao.voltar {
+  display: block;
+}
+/* line 20, ../scss/APP.Area.Menu.scss */
+#area_menu .marca {
+  height: 125px;
+  background-image: url("../imagens/menu/marca.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+  position: absolute;
+  left: 50%;
+  width: 152px;
+  margin-left: -76px;
+  top: 36px;
+}
+/* line 26, ../scss/APP.Area.Menu.scss */
+.en #area_menu .marca {
+  background-image: url("../imagens/marca_en.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: auto 100%;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  background-size: auto 100%;
+}
+/* line 30, ../scss/APP.Area.Menu.scss */
+.es #area_menu .marca {
+  background-image: url("../imagens/marca_es.png");
+}
+/* line 35, ../scss/APP.Area.Menu.scss */
+#area_menu .baseDaTelaMenu {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+/* line 47, ../scss/APP.Area.Menu.scss */
+#tela_menu ul {
+  margin-bottom: 10px;
+}
+/* line 51, ../scss/APP.Area.Menu.scss */
+#tela_menu li a {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 40px;
+  border-bottom: 1px solid #aeaeb3;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 26px auto;
+  -moz-background-size: 26px auto;
+  -o-background-size: 26px auto;
+  background-size: 26px auto;
+  background-position: left center;
+  font-size: 1.422em;
+  color: #007baa;
+}
+/* line 62, ../scss/APP.Area.Menu.scss */
+#tela_menu li a:hover {
+  text-decoration: none;
+}
+/* line 68, ../scss/APP.Area.Menu.scss */
+#tela_menu li.sobre a {
+  background-image: url("../imagens/menu/menu/icone_sobre.png");
+}
+/* line 68, ../scss/APP.Area.Menu.scss */
+#tela_menu li.versao a {
+  background-image: url("../imagens/menu/menu/icone_versao.png");
+}
+/* line 68, ../scss/APP.Area.Menu.scss */
+#tela_menu li.termosDeUso a {
+  background-image: url("../imagens/menu/menu/icone_termosDeUso.png");
+}
+/* line 68, ../scss/APP.Area.Menu.scss */
+#tela_menu li.alterarSenha a {
+  background-image: url("../imagens/menu/menu/icone_alterarSenha.png");
+}
+/* line 68, ../scss/APP.Area.Menu.scss */
+#tela_menu li.idiomas a {
+  background-image: url("../imagens/menu/menu/icone_idiomas.png");
+}
+/* line 68, ../scss/APP.Area.Menu.scss */
+#tela_menu li.denunciarUmProblema a {
+  background-image: url("../imagens/menu/menu/icone_denunciarUmProblema.png");
+}
+/* line 68, ../scss/APP.Area.Menu.scss */
+#tela_menu li.sair a {
+  background-image: url("../imagens/menu/menu/icone_sair.png");
+}
+/* line 83, ../scss/APP.Area.Menu.scss */
+.offline #tela_menu li.denunciarUmProblema, .offline #tela_menu li.alterarSenha {
+  display: none;
+}
+/* line 87, ../scss/APP.Area.Menu.scss */
+#tela_menu li:last-child a {
+  border: none;
+}
+
+/* line 95, ../scss/APP.Area.Menu.scss */
+#tela_versao {
+  color: #006f9b;
+  font-size: 1.245em;
+  text-align: center;
+}
+/* line 99, ../scss/APP.Area.Menu.scss */
+#tela_versao h1 {
+  font-size: 1.422em;
+  font-weight: normal;
+}
+/* line 103, ../scss/APP.Area.Menu.scss */
+#tela_versao .icone {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 108, ../scss/APP.Area.Menu.scss */
+#tela_versao article.info {
+  margin-top: 170px;
+}
+/* line 110, ../scss/APP.Area.Menu.scss */
+#tela_versao article.info h1 {
+  display: none;
+}
+/* line 115, ../scss/APP.Area.Menu.scss */
+#tela_versao .isphone .melhorNavegador {
+  display: none;
+}
+/* line 119, ../scss/APP.Area.Menu.scss */
+#tela_versao article.parceria {
+  height: 120px;
+  border: 1px solid #aeaeb3;
+  border-left: none;
+  border-right: none;
+}
+/* line 125, ../scss/APP.Area.Menu.scss */
+#tela_versao article.parceria h1 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+/* line 130, ../scss/APP.Area.Menu.scss */
+#tela_versao article.parceria .icone.tephinet {
+  width: 108px;
+  height: 40px;
+  background-image: url("../imagens/menu/versao/icone_tephinet.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+}
+/* line 136, ../scss/APP.Area.Menu.scss */
+#tela_versao article.parceria .icone.skoll {
+  width: 119px;
+  height: 34px;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+  background-image: url("../imagens/menu/versao/icone_skoll.png");
+}
+/* line 146, ../scss/APP.Area.Menu.scss */
+#tela_versao article.dev h1 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+/* line 150, ../scss/APP.Area.Menu.scss */
+#tela_versao article.dev .icone.epitrack {
+  width: 183px;
+  height: 31px;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+  background-image: url("../imagens/menu/versao/icone_epitrack.png");
+}
+
+/* line 159, ../scss/APP.Area.Menu.scss */
+#tela_sobre {
+  font-size: 1.244em;
+}
+/* line 171, ../scss/APP.Area.Menu.scss */
+#tela_sobre ol {
+  margin-bottom: 2em;
+  display: table;
+}
+/* line 174, ../scss/APP.Area.Menu.scss */
+#tela_sobre ol li {
+  display: table-row;
+}
+/* line 177, ../scss/APP.Area.Menu.scss */
+#tela_sobre ol li:last-child span {
+  border-bottom: none;
+}
+/* line 180, ../scss/APP.Area.Menu.scss */
+#tela_sobre ol li span {
+  display: table-cell;
+  vertical-align: middle;
+  height: 50px;
+  border-bottom: 1px solid #aeaeb3;
+  color: #007baa;
+}
+/* line 190, ../scss/APP.Area.Menu.scss */
+#tela_sobre h1.titulo {
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  width: 120px;
+  margin-left: -60px;
+  font-size: 1.4225em;
+  margin-top: 75px;
+  text-align: center;
+}
+/* line 197, ../scss/APP.Area.Menu.scss */
+#tela_sobre article h1 {
+  font-size: 1.4em;
+  margin-bottom: 1em;
+}
+/* line 204, ../scss/APP.Area.Menu.scss */
+#tela_sobre .texto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 130px 35px 40px 35px;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+/* line 208, ../scss/APP.Area.Menu.scss */
+#tela_sobre .texto .table {
+  display: table;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+/* line 213, ../scss/APP.Area.Menu.scss */
+#tela_sobre .texto .table .cell {
+  display: table-cell;
+  overflow: hidden;
+  vertical-align: middle;
+  text-align: center;
+}
+/* line 221, ../scss/APP.Area.Menu.scss */
+#tela_sobre article {
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #007baa;
+}
+/* line 225, ../scss/APP.Area.Menu.scss */
+#tela_sobre article:last-child {
+  border: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+/* line 231, ../scss/APP.Area.Menu.scss */
+#tela_sobre a[href='#topo'] {
+  padding: 1em 0;
+  display: block;
+  text-align: right;
+}

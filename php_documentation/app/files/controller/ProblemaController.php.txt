@@ -1,0 +1,99 @@
+<?php
+
+/**
+ * Class ProblemaController
+ */
+/**
+ *  Classe ProblemaController responsável por controlar o envio de problemas do sistema.
+ *
+ * @author      Rodrigo Carneiro <teoria@gmail.com>
+ * @copyright   2014 Epitrack
+ * @link        http://www.epitrack.com.br/
+ * @version     2.4.2
+ * @package     controller
+ *
+ *
+ */
+
+Class ProblemaController extends Controller {
+
+/*
+    public function enviaDuvida() {
+
+        $retorno = array(
+
+            "status" => true,
+            "mensagem"=>""
+        );
+        echo json_encode($retorno);
+    }*/
+
+
+    /**
+     * Método responsável em enviar problemas ocorridos no sistema.
+     * Recebe por POST  "idusuario", 'msg'
+     *
+     *
+     * @throws InvalidArgumentException
+     */
+    public function enviaProblema() {
+
+        $data = $this->request->post();
+        $fachada = Fachada::getInstance();
+        //$id = $data['idusuario'];
+
+        $id = (int)$fachada->decript($data["idusuario"]);
+        if( is_nan($id)){
+            throw new InvalidArgumentException;
+        }
+
+
+        $msg = $data['msg'];
+
+        $vo = new ProblemaVO();
+        $vo->setIdUsuario($id);
+        $vo->setMsg($msg);
+
+
+
+        $fachada->insereProblema($vo);
+
+        $userVO = new UsuarioVO();
+        $userVO->setIdUsuario($id);
+        $userVO = $fachada->selectOneByID($userVO);
+
+
+        $enviado = $fachada->sendEmail('contato@saudenacopa.com',$userVO->getEmail() , '[PROBLEMA] Saúde na Copa',$msg);
+
+        $retorno = $this->getResponse($enviado);
+        echo $retorno;
+    }
+
+
+
+
+    /**
+     * Método responsável por transformar o retorno em JSON
+     *
+     *
+     * @param $enviado
+     * @return string
+     */
+    private function getResponse($enviado) {
+
+        $retorno = array(
+
+            "status" => ($enviado != false),
+            "mensagem"=>""
+        );
+        return json_encode($retorno);
+    }
+
+
+
+
+
+
+}
+
+

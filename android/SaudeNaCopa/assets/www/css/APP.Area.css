@@ -1,0 +1,160 @@
+/* line 1, ../scss/APP.Area.scss */
+.area {
+  padding: 50px 0;
+}
+/* line 5, ../scss/APP.Area.scss */
+.fullscreen .area {
+  padding: 0;
+}
+
+/* line 9, ../scss/APP.Area.scss */
+.area, .tela {
+  display: none;
+}
+/* line 12, ../scss/APP.Area.scss */
+.area.ativa, .tela.ativa {
+  display: block;
+}
+
+/* line 7, ../scss/APP.Area.Apresentacao.scss */
+#tela_abertura .marca.grande {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -200px;
+  margin-top: -169px;
+}
+/* line 14, ../scss/APP.Area.Apresentacao.scss */
+#tela_abertura footer li {
+  position: absolute;
+  width: 33%;
+  bottom: 2em;
+  height: 100px;
+  -webkit-background-size: 80%, auto;
+  -moz-background-size: 80%, auto;
+  -o-background-size: 80%, auto;
+  background-size: 80%, auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/* line 23, ../scss/APP.Area.Apresentacao.scss */
+#tela_abertura footer li.sus {
+  left: 0;
+  background-image: url("../imagens/apresentacao/abertura/sus.png");
+}
+/* line 27, ../scss/APP.Area.Apresentacao.scss */
+#tela_abertura footer li.skoll {
+  left: 33%;
+  background-image: url("../imagens/apresentacao/abertura/skoll.png");
+}
+/* line 32, ../scss/APP.Area.Apresentacao.scss */
+#tela_abertura footer li.tephinet {
+  left: 66%;
+  background-image: url("../imagens/apresentacao/abertura/tephinet.png");
+}
+
+/* line 47, ../scss/APP.Area.Apresentacao.scss */
+#tela_idioma h1 {
+  margin-top: 1em;
+  position: absolute;
+  top: 50%;
+  margin-top: -192px;
+  width: 100%;
+  left: 0;
+  font-size: 3.3em;
+  text-align: center;
+}
+/* line 62, ../scss/APP.Area.Apresentacao.scss */
+#tela_idioma ul li {
+  display: block;
+  background-color: #efefef;
+  height: 80px;
+  width: 80px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 80px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  margin-bottom: 1em;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -40px;
+}
+/* line 80, ../scss/APP.Area.Apresentacao.scss */
+#tela_idioma ul li a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 80px;
+  background-image: url("../imagens/apresentacao/idioma/bandeiras.png");
+  -webkit-background-size: 100%, auto;
+  -moz-background-size: 100%, auto;
+  -o-background-size: 100%, auto;
+  background-size: 100%, auto;
+}
+/* line 92, ../scss/APP.Area.Apresentacao.scss */
+#tela_idioma ul li.pt {
+  margin-top: -152px;
+}
+/* line 95, ../scss/APP.Area.Apresentacao.scss */
+#tela_idioma ul li.pt a {
+  background-position: 0px  0;
+}
+/* line 99, ../scss/APP.Area.Apresentacao.scss */
+#tela_idioma ul li.es {
+  margin-top: -40px;
+}
+/* line 102, ../scss/APP.Area.Apresentacao.scss */
+#tela_idioma ul li.es a {
+  background-position: 0px center;
+}
+/* line 106, ../scss/APP.Area.Apresentacao.scss */
+#tela_idioma ul li.en {
+  margin-top: 72px;
+}
+/* line 109, ../scss/APP.Area.Apresentacao.scss */
+#tela_idioma ul li.en a {
+  background-position: 0px bottom;
+}
+
+/* line 8, ../scss/APP.Area.Sentimento.scss */
+#tela_sintomas ol {
+  padding: 0;
+}
+/* line 10, ../scss/APP.Area.Sentimento.scss */
+#tela_sintomas ol li {
+  display: block;
+  padding: 1em 0;
+  border-bottom: 1px solid #000;
+}
+/* line 14, ../scss/APP.Area.Sentimento.scss */
+#tela_sintomas ol li li:last-child {
+  border-bottom: none;
+}
+/* line 18, ../scss/APP.Area.Sentimento.scss */
+#tela_sintomas ol li.selecionado {
+  background-color: #efefef;
+}
+/* line 22, ../scss/APP.Area.Sentimento.scss */
+#tela_sintomas ol li input {
+  display: none;
+}
+
+/* line 30, ../scss/APP.Area.Sentimento.scss */
+#sentimento .dado {
+  display: none;
+}
+
+/* line 35, ../scss/APP.Area.Sentimento.scss */
+#calendario {
+  display: none;
+}

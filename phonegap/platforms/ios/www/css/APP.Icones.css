@@ -1,0 +1,254 @@
+/* line 3, ../scss/APP.Icones.scss */
+.icone {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 9, ../scss/APP.Icones.scss */
+.icone.sentimento {
+  width: 100px;
+  height: 100px;
+  -webkit-background-size: 80%;
+  -moz-background-size: 80%;
+  -o-background-size: 80%;
+  background-size: 80%;
+}
+/* line 18, ../scss/APP.Icones.scss */
+[data-categoria='profissional'][data-genero='masculino'] .icone.sentimento[data-nivel='muitoBem'] {
+  background-image: url("../imagens/sentimento/avatar/masculino/profissional/muitoBem.png");
+}
+/* line 21, ../scss/APP.Icones.scss */
+[data-categoria='profissional'][data-genero='masculino'] .icone.sentimento[data-nivel='bem'] {
+  background-image: url("../imagens/sentimento/avatar/masculino/profissional/bem.png");
+}
+/* line 24, ../scss/APP.Icones.scss */
+[data-categoria='profissional'][data-genero='masculino'] .icone.sentimento[data-nivel='normal'] {
+  background-image: url("../imagens/sentimento/avatar/masculino/profissional/normal.png");
+}
+/* line 27, ../scss/APP.Icones.scss */
+[data-categoria='profissional'][data-genero='masculino'] .icone.sentimento[data-nivel='mal'] {
+  background-image: url("../imagens/sentimento/avatar/masculino/profissional/mal.png");
+}
+/* line 30, ../scss/APP.Icones.scss */
+[data-categoria='profissional'][data-genero='masculino'] .icone.sentimento[data-nivel='muitoMal'] {
+  background-image: url("../imagens/sentimento/avatar/masculino/profissional/muitoMal.png");
+}
+/* line 18, ../scss/APP.Icones.scss */
+[data-categoria='infantil'][data-genero='masculino'] .icone.sentimento[data-nivel='muitoBem'] {
+  background-image: url("../imagens/sentimento/avatar/masculino/infantil/muitoBem.png");
+}
+/* line 21, ../scss/APP.Icones.scss */
+[data-categoria='infantil'][data-genero='masculino'] .icone.sentimento[data-nivel='bem'] {
+  background-image: url("../imagens/sentimento/avatar/masculino/infantil/bem.png");
+}
+/* line 24, ../scss/APP.Icones.scss */
+[data-categoria='infantil'][data-genero='masculino'] .icone.sentimento[data-nivel='normal'] {
+  background-image: url("../imagens/sentimento/avatar/masculino/infantil/normal.png");
+}
+/* line 27, ../scss/APP.Icones.scss */
+[data-categoria='infantil'][data-genero='masculino'] .icone.sentimento[data-nivel='mal'] {
+  background-image: url("../imagens/sentimento/avatar/masculino/infantil/mal.png");
+}
+/* line 30, ../scss/APP.Icones.scss */
+[data-categoria='infantil'][data-genero='masculino'] .icone.sentimento[data-nivel='muitoMal'] {
+  background-image: url("../imagens/sentimento/avatar/masculino/infantil/muitoMal.png");
+}
+/* line 18, ../scss/APP.Icones.scss */
+[data-categoria='junior'][data-genero='masculino'] .icone.sentimento[data-nivel='muitoBem'] {
+  background-image: url("../imagens/sentimento/avatar/masculino/junior/muitoBem.png");
+}
+/* line 21, ../scss/APP.Icones.scss */
+[data-categoria='junior'][data-genero='masculino'] .icone.sentimento[data-nivel='bem'] {
+  background-image: url("../imagens/sentimento/avatar/masculino/junior/bem.png");
+}
+/* line 24, ../scss/APP.Icones.scss */
+[data-categoria='junior'][data-genero='masculino'] .icone.sentimento[data-nivel='normal'] {
+  background-image: url("../imagens/sentimento/avatar/masculino/junior/normal.png");
+}
+/* line 27, ../scss/APP.Icones.scss */
+[data-categoria='junior'][data-genero='masculino'] .icone.sentimento[data-nivel='mal'] {
+  background-image: url("../imagens/sentimento/avatar/masculino/junior/mal.png");
+}
+/* line 30, ../scss/APP.Icones.scss */
+[data-categoria='junior'][data-genero='masculino'] .icone.sentimento[data-nivel='muitoMal'] {
+  background-image: url("../imagens/sentimento/avatar/masculino/junior/muitoMal.png");
+}
+/* line 18, ../scss/APP.Icones.scss */
+[data-categoria='juvenil'][data-genero='masculino'] .icone.sentimento[data-nivel='muitoBem'] {
+  background-image: url("../imagens/sentimento/avatar/masculino/juvenil/muitoBem.png");
+}
+/* line 21, ../scss/APP.Icones.scss */
+[data-categoria='juvenil'][data-genero='masculino'] .icone.sentimento[data-nivel='bem'] {
+  background-image: url("../imagens/sentimento/avatar/masculino/juvenil/bem.png");
+}
+/* line 24, ../scss/APP.Icones.scss */
+[data-categoria='juvenil'][data-genero='masculino'] .icone.sentimento[data-nivel='normal'] {
+  background-image: url("../imagens/sentimento/avatar/masculino/juvenil/normal.png");
+}
+/* line 27, ../scss/APP.Icones.scss */
+[data-categoria='juvenil'][data-genero='masculino'] .icone.sentimento[data-nivel='mal'] {
+  background-image: url("../imagens/sentimento/avatar/masculino/juvenil/mal.png");
+}
+/* line 30, ../scss/APP.Icones.scss */
+[data-categoria='juvenil'][data-genero='masculino'] .icone.sentimento[data-nivel='muitoMal'] {
+  background-image: url("../imagens/sentimento/avatar/masculino/juvenil/muitoMal.png");
+}
+/* line 18, ../scss/APP.Icones.scss */
+[data-categoria='denteDeLeite'][data-genero='masculino'] .icone.sentimento[data-nivel='muitoBem'] {
+  background-image: url("../imagens/sentimento/avatar/masculino/denteDeLeite/muitoBem.png");
+}
+/* line 21, ../scss/APP.Icones.scss */
+[data-categoria='denteDeLeite'][data-genero='masculino'] .icone.sentimento[data-nivel='bem'] {
+  background-image: url("../imagens/sentimento/avatar/masculino/denteDeLeite/bem.png");
+}
+/* line 24, ../scss/APP.Icones.scss */
+[data-categoria='denteDeLeite'][data-genero='masculino'] .icone.sentimento[data-nivel='normal'] {
+  background-image: url("../imagens/sentimento/avatar/masculino/denteDeLeite/normal.png");
+}
+/* line 27, ../scss/APP.Icones.scss */
+[data-categoria='denteDeLeite'][data-genero='masculino'] .icone.sentimento[data-nivel='mal'] {
+  background-image: url("../imagens/sentimento/avatar/masculino/denteDeLeite/mal.png");
+}
+/* line 30, ../scss/APP.Icones.scss */
+[data-categoria='denteDeLeite'][data-genero='masculino'] .icone.sentimento[data-nivel='muitoMal'] {
+  background-image: url("../imagens/sentimento/avatar/masculino/denteDeLeite/muitoMal.png");
+}
+/* line 18, ../scss/APP.Icones.scss */
+[data-categoria='mirim'][data-genero='masculino'] .icone.sentimento[data-nivel='muitoBem'] {
+  background-image: url("../imagens/sentimento/avatar/masculino/mirim/muitoBem.png");
+}
+/* line 21, ../scss/APP.Icones.scss */
+[data-categoria='mirim'][data-genero='masculino'] .icone.sentimento[data-nivel='bem'] {
+  background-image: url("../imagens/sentimento/avatar/masculino/mirim/bem.png");
+}
+/* line 24, ../scss/APP.Icones.scss */
+[data-categoria='mirim'][data-genero='masculino'] .icone.sentimento[data-nivel='normal'] {
+  background-image: url("../imagens/sentimento/avatar/masculino/mirim/normal.png");
+}
+/* line 27, ../scss/APP.Icones.scss */
+[data-categoria='mirim'][data-genero='masculino'] .icone.sentimento[data-nivel='mal'] {
+  background-image: url("../imagens/sentimento/avatar/masculino/mirim/mal.png");
+}
+/* line 30, ../scss/APP.Icones.scss */
+[data-categoria='mirim'][data-genero='masculino'] .icone.sentimento[data-nivel='muitoMal'] {
+  background-image: url("../imagens/sentimento/avatar/masculino/mirim/muitoMal.png");
+}
+/* line 18, ../scss/APP.Icones.scss */
+[data-categoria='profissional'][data-genero='feminino'] .icone.sentimento[data-nivel='muitoBem'] {
+  background-image: url("../imagens/sentimento/avatar/feminino/profissional/muitoBem.png");
+}
+/* line 21, ../scss/APP.Icones.scss */
+[data-categoria='profissional'][data-genero='feminino'] .icone.sentimento[data-nivel='bem'] {
+  background-image: url("../imagens/sentimento/avatar/feminino/profissional/bem.png");
+}
+/* line 24, ../scss/APP.Icones.scss */
+[data-categoria='profissional'][data-genero='feminino'] .icone.sentimento[data-nivel='normal'] {
+  background-image: url("../imagens/sentimento/avatar/feminino/profissional/normal.png");
+}
+/* line 27, ../scss/APP.Icones.scss */
+[data-categoria='profissional'][data-genero='feminino'] .icone.sentimento[data-nivel='mal'] {
+  background-image: url("../imagens/sentimento/avatar/feminino/profissional/mal.png");
+}
+/* line 30, ../scss/APP.Icones.scss */
+[data-categoria='profissional'][data-genero='feminino'] .icone.sentimento[data-nivel='muitoMal'] {
+  background-image: url("../imagens/sentimento/avatar/feminino/profissional/muitoMal.png");
+}
+/* line 18, ../scss/APP.Icones.scss */
+[data-categoria='infantil'][data-genero='feminino'] .icone.sentimento[data-nivel='muitoBem'] {
+  background-image: url("../imagens/sentimento/avatar/feminino/infantil/muitoBem.png");
+}
+/* line 21, ../scss/APP.Icones.scss */
+[data-categoria='infantil'][data-genero='feminino'] .icone.sentimento[data-nivel='bem'] {
+  background-image: url("../imagens/sentimento/avatar/feminino/infantil/bem.png");
+}
+/* line 24, ../scss/APP.Icones.scss */
+[data-categoria='infantil'][data-genero='feminino'] .icone.sentimento[data-nivel='normal'] {
+  background-image: url("../imagens/sentimento/avatar/feminino/infantil/normal.png");
+}
+/* line 27, ../scss/APP.Icones.scss */
+[data-categoria='infantil'][data-genero='feminino'] .icone.sentimento[data-nivel='mal'] {
+  background-image: url("../imagens/sentimento/avatar/feminino/infantil/mal.png");
+}
+/* line 30, ../scss/APP.Icones.scss */
+[data-categoria='infantil'][data-genero='feminino'] .icone.sentimento[data-nivel='muitoMal'] {
+  background-image: url("../imagens/sentimento/avatar/feminino/infantil/muitoMal.png");
+}
+/* line 18, ../scss/APP.Icones.scss */
+[data-categoria='junior'][data-genero='feminino'] .icone.sentimento[data-nivel='muitoBem'] {
+  background-image: url("../imagens/sentimento/avatar/feminino/junior/muitoBem.png");
+}
+/* line 21, ../scss/APP.Icones.scss */
+[data-categoria='junior'][data-genero='feminino'] .icone.sentimento[data-nivel='bem'] {
+  background-image: url("../imagens/sentimento/avatar/feminino/junior/bem.png");
+}
+/* line 24, ../scss/APP.Icones.scss */
+[data-categoria='junior'][data-genero='feminino'] .icone.sentimento[data-nivel='normal'] {
+  background-image: url("../imagens/sentimento/avatar/feminino/junior/normal.png");
+}
+/* line 27, ../scss/APP.Icones.scss */
+[data-categoria='junior'][data-genero='feminino'] .icone.sentimento[data-nivel='mal'] {
+  background-image: url("../imagens/sentimento/avatar/feminino/junior/mal.png");
+}
+/* line 30, ../scss/APP.Icones.scss */
+[data-categoria='junior'][data-genero='feminino'] .icone.sentimento[data-nivel='muitoMal'] {
+  background-image: url("../imagens/sentimento/avatar/feminino/junior/muitoMal.png");
+}
+/* line 18, ../scss/APP.Icones.scss */
+[data-categoria='juvenil'][data-genero='feminino'] .icone.sentimento[data-nivel='muitoBem'] {
+  background-image: url("../imagens/sentimento/avatar/feminino/juvenil/muitoBem.png");
+}
+/* line 21, ../scss/APP.Icones.scss */
+[data-categoria='juvenil'][data-genero='feminino'] .icone.sentimento[data-nivel='bem'] {
+  background-image: url("../imagens/sentimento/avatar/feminino/juvenil/bem.png");
+}
+/* line 24, ../scss/APP.Icones.scss */
+[data-categoria='juvenil'][data-genero='feminino'] .icone.sentimento[data-nivel='normal'] {
+  background-image: url("../imagens/sentimento/avatar/feminino/juvenil/normal.png");
+}
+/* line 27, ../scss/APP.Icones.scss */
+[data-categoria='juvenil'][data-genero='feminino'] .icone.sentimento[data-nivel='mal'] {
+  background-image: url("../imagens/sentimento/avatar/feminino/juvenil/mal.png");
+}
+/* line 30, ../scss/APP.Icones.scss */
+[data-categoria='juvenil'][data-genero='feminino'] .icone.sentimento[data-nivel='muitoMal'] {
+  background-image: url("../imagens/sentimento/avatar/feminino/juvenil/muitoMal.png");
+}
+/* line 18, ../scss/APP.Icones.scss */
+[data-categoria='denteDeLeite'][data-genero='feminino'] .icone.sentimento[data-nivel='muitoBem'] {
+  background-image: url("../imagens/sentimento/avatar/feminino/denteDeLeite/muitoBem.png");
+}
+/* line 21, ../scss/APP.Icones.scss */
+[data-categoria='denteDeLeite'][data-genero='feminino'] .icone.sentimento[data-nivel='bem'] {
+  background-image: url("../imagens/sentimento/avatar/feminino/denteDeLeite/bem.png");
+}
+/* line 24, ../scss/APP.Icones.scss */
+[data-categoria='denteDeLeite'][data-genero='feminino'] .icone.sentimento[data-nivel='normal'] {
+  background-image: url("../imagens/sentimento/avatar/feminino/denteDeLeite/normal.png");
+}
+/* line 27, ../scss/APP.Icones.scss */
+[data-categoria='denteDeLeite'][data-genero='feminino'] .icone.sentimento[data-nivel='mal'] {
+  background-image: url("../imagens/sentimento/avatar/feminino/denteDeLeite/mal.png");
+}
+/* line 30, ../scss/APP.Icones.scss */
+[data-categoria='denteDeLeite'][data-genero='feminino'] .icone.sentimento[data-nivel='muitoMal'] {
+  background-image: url("../imagens/sentimento/avatar/feminino/denteDeLeite/muitoMal.png");
+}
+/* line 18, ../scss/APP.Icones.scss */
+[data-categoria='mirim'][data-genero='feminino'] .icone.sentimento[data-nivel='muitoBem'] {
+  background-image: url("../imagens/sentimento/avatar/feminino/mirim/muitoBem.png");
+}
+/* line 21, ../scss/APP.Icones.scss */
+[data-categoria='mirim'][data-genero='feminino'] .icone.sentimento[data-nivel='bem'] {
+  background-image: url("../imagens/sentimento/avatar/feminino/mirim/bem.png");
+}
+/* line 24, ../scss/APP.Icones.scss */
+[data-categoria='mirim'][data-genero='feminino'] .icone.sentimento[data-nivel='normal'] {
+  background-image: url("../imagens/sentimento/avatar/feminino/mirim/normal.png");
+}
+/* line 27, ../scss/APP.Icones.scss */
+[data-categoria='mirim'][data-genero='feminino'] .icone.sentimento[data-nivel='mal'] {
+  background-image: url("../imagens/sentimento/avatar/feminino/mirim/mal.png");
+}
+/* line 30, ../scss/APP.Icones.scss */
+[data-categoria='mirim'][data-genero='feminino'] .icone.sentimento[data-nivel='muitoMal'] {
+  background-image: url("../imagens/sentimento/avatar/feminino/mirim/muitoMal.png");
+}

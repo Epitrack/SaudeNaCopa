@@ -1,0 +1,141 @@
+<?php
+
+/**
+ * Class LogGameVO
+ */
+/**
+ * Value Object (VO)
+ *
+ * LogGameVO: Classe básica referente a log do usuário.
+ *
+ * @author      Rodrigo Carneiro <teoria@gmail.com>
+ * @copyright   2014 Epitrack
+ * @link        http://www.epitrack.com.br/
+ * @version     2.4.2
+ * @package     model/vo
+ *
+ *
+ */
+
+class LogGameVO extends VO {
+
+    /**
+     * ID
+     * @var
+     */
+    private $idLogGame;
+    /**
+     * id usuário
+     * @var
+     */
+    private $usuarios_id;
+    /**
+     * Ação feita
+     * @var
+     */
+    private $acao;
+    /**
+     * Pontuação
+     * @var
+     */
+    private $pontuacao;
+    /**
+     * Data e hora
+     * @var
+     */
+    private $dataHora;
+
+    /**
+     * Define Ação
+     * @param mixed $acao
+     */
+    public function setAcao($acao) {
+
+        $this->acao = $acao;
+    }
+
+    /**
+     * Ação
+     * @return mixed
+     */
+    public function getAcao() {
+
+        return $this->acao;
+    }
+
+    /**
+     * Define Data e Hora
+     * @param mixed $dataHora
+     */
+    public function setDataHora($dataHora) {
+
+        $this->dataHora = $dataHora;
+    }
+
+    /**
+     * Data e Hora
+     * @return mixed
+     */
+    public function getDataHora() {
+
+        return $this->dataHora;
+    }
+
+    /**
+     * Define Id do log
+     * @param mixed $idLogGame
+     */
+    public function setIdLogGame($idLogGame) {
+
+        $this->idLogGame = $idLogGame;
+    }
+
+    /**
+     * idLog
+     * @return mixed
+     */
+    public function getIdLogGame() {
+
+        return $this->idLogGame;
+    }
+
+    /**
+     * Define pontuação
+     * @param mixed $pontuacao
+     */
+    public function setPontuacao($pontuacao) {
+
+        $this->pontuacao = $pontuacao;
+    }
+
+    /**
+     * Pontuação
+     * @return mixed
+     */
+    public function getPontuacao() {
+
+        return $this->pontuacao;
+    }
+
+    /**
+     * Define Id usuário
+     * @param mixed $usuarios_id
+     */
+    public function setUsuariosId($usuarios_id) {
+
+        $this->usuarios_id = $usuarios_id;
+    }
+
+    /**
+     * id usuário
+     * @return mixed
+     */
+    public function getUsuariosId() {
+
+        return $this->usuarios_id;
+    }
+
+
+
+
+} 

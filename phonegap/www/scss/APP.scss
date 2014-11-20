@@ -1,0 +1,114 @@
+@import "animacoes.scss";
+@import "Variaveis.scss";
+@import "compass/typography/links/unstyled-link";
+@import "compass/css3/background-size";
+@import "compass/css3/border-radius";
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+	font-size: 10px;
+}
+ul, ol {
+	margin: 0;
+	padding: 0;
+}
+li {
+	display: block;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+a:hover {
+	text-decoration: none !important;
+}
+
+/*
+	Quando a altura precisa ser igual a largura, 
+	mas a largura não é definida
+ */
+.containerDinamico {
+	@include alturaIgualLargura();
+
+	.conteudoDinamico {
+		@include esticar();
+	}
+}
+
+.marca {
+	background-repeat: no-repeat;
+	background-position: center;
+	@include background-size(100% auto);
+}
+
+.semTexto {
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+
+/**
+ *  Área Acesso e Apresentação
+ */
+
+$apresentacaoAcesso_color: #007baa;
+$apresentacaoAcesso_gradiente_fim: #b1d0e6;
+$apresentacaoAcesso_gradiente_inicio: #e2ecf6;
+
+$apresentacao_idioma_titulo_fontSize: 2.613em;
+$apresentacao_apresentacao_fontSize: 1.244em;
+
+
+@mixin gradienteAA {
+	  
+	background: $apresentacaoAcesso_gradiente_inicio;
+	background: -moz-radial-gradient(center, ellipse cover,  $apresentacaoAcesso_gradiente_inicio 23%, $apresentacaoAcesso_gradiente_fim 96%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(23%,$apresentacaoAcesso_gradiente_inicio), color-stop(96%,$apresentacaoAcesso_gradiente_fim));
+	background: -webkit-radial-gradient(center, ellipse cover,  $apresentacaoAcesso_gradiente_inicio 23%,$apresentacaoAcesso_gradiente_fim 96%);
+	background: -o-radial-gradient(center, ellipse cover,  $apresentacaoAcesso_gradiente_inicio 23%,$apresentacaoAcesso_gradiente_fim 96%);
+	background: -ms-radial-gradient(center, ellipse cover,  $apresentacaoAcesso_gradiente_inicio 23%,$apresentacaoAcesso_gradiente_fim 96%);
+	background: radial-gradient(ellipse at center,  $apresentacaoAcesso_gradiente_inicio 23%,$apresentacaoAcesso_gradiente_fim 96%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$apresentacaoAcesso_gradiente_inicio', endColorstr='$apresentacaoAcesso_gradiente_fim',GradientType=1 );
+
+}
+
+
+#iframe {
+	position: absolute;
+	width: 320px;
+	height: 568px;
+	top: 50%;
+	left: 50%;
+	margin-left: -160px;
+	margin-top: -284px;
+}
+
+#scroller {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: #f7fafd;
+
+	#area_apresentacao, #area_acesso, #area_menu{
+		color: $apresentacaoAcesso_color;
+	}
+
+	.area_apresentacao &, .area_acesso &, .area_menu & {
+		@include gradienteAA;
+	}
+}
+
+
+
+@import "APP.Icones.scss";
+@import "APP.Barra.scss";
+@import "APP.Area.scss";

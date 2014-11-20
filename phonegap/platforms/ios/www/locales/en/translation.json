@@ -1,0 +1,1009 @@
+{
+  "offline" : {
+    "confirmar" : "OK",
+    "texto" : "Your device is not connected to a network. Items that depend on an internet connection will not be available while offline."
+  },
+  "barra" : {
+    "menu" : {
+      "home" : "Home",
+      "saude" : "Health",
+      "jogos" : "Games",
+      "turismo" : "Tourism",
+      "denunciarUmProblema" : "Report application failure",
+      "termosDeUso" : "Terms and policies",
+      "sobre" : "About",
+      "sair" : "Exit",
+      "mais" : "More"
+    }
+  },
+  "tela" : {
+    "idioma" : "Language",
+    "abertura" : "Opening",
+    "apresentacao" : "Presentation",
+    "acesso" : "Access",
+    "cadastre-se" : "Register",
+    "entreComFacebook" : "Sign in with Facebook",
+    "entrarComLoginESenha" : "Login with username and password",
+    "termosDeUso" : "Terms of use and privacy policy",
+    "denunciarUmProblema" : "Report application failure",
+    "sobre" : "About",
+    "torcedor" : "Player",
+    "sentimento" : "How are you feeling?",
+    "sintomas" : "Symptoms",
+    "calendario" : "Calendar",
+    "saude" : "Health",
+    "lembretesDeSaude" : "Reminders health",
+    "hospitaisDeReferencia" : "Referral hospitals",
+    "hospitais" : "Hospitals",
+    "telefonesUteis" : "Useful Numbers",
+    "farmacias" : "Pharmacies",
+    "jogos" : "Games",
+    "calendarioDosJogos" : "Calendar of matches",
+    "selecoes" : "Selections",
+    "selecao" : "Selection",
+    "resultados" : "Results",
+    "calendarioDeJogos" : "Calendar of matches",
+    "maisNoticias" : "More news",
+    "turismo" : "Tourism",
+    "fanFest" : "Fan Fest",
+    "pontosTuristicos" : "Landmarks",
+    "atividadesCulturais" : "Cultural Activities",
+    "baresERestaurantes" : "Bars and restaurants",
+    "esqueciASenha" : "Forgot Password",
+    "ajuda" : "Help",
+    "mapaSaude" : "Map",
+    "alterarSenha" : "Change Password",
+    "protejaOGol" : "Protect the goal",
+    "higieneECuidados" : "Hygiene and care",
+    "vacinas" : "Vaccines",
+    "mais" : "Learn More",
+    "itensDoJogo" : "Game Items",
+    "arenas" : "Arenas",
+    "categorias" : "Categories",
+    "linksUteis" : "Useful links",
+    "malaLegal" : "Legal Baggage",
+    "consulados" : "Consulates",
+    "consulado" : "Consulate",
+    "cuidadosBasicos" : "Basic care",
+    "urgenciasEmergencias" : "Urgencies and emergencies",
+    "prevencaoDoencas" : "Prevention of diseases",
+    "prevencaoAcidentes" : "Preventing accidents",
+    "prevencaoViolencia" : "Violence prevention"
+  },
+  "formulario" : {
+    "erro" : "Check the information entered."
+  },
+  "menu" : {
+    "sobre" : {
+      "titulo" : "Healthy Cup",
+      "voltaroAoTopo" : "Back to top",
+      "sobre" : {
+        "titulo" : "ABOUT",
+        "texto" : [
+          "Healthy Cup 2014 is a free web application, designed for use on mobile devices and web browsers and is part of an innovative project to improve health surveillance in the National Health System (SUS), called participatory surveillance.",
+          "It's a simple process that relies on voluntary participation by visitors or residents in Brazil, reporting on their health condition during the 2014 FIFA World Cup Brazil™. \"Healthy Cup 2014\" was developed in Portuguese, English and Spanish to be a complementary channel for health information and services to users, enabling the participation of all. To participate you simply need to be 13 years of age or older and accept the terms of use, regularly reporting your health status by following the instructions available in the application.",
+          "This project is an initiative of the Health Surveillance Secretariat of the Ministry of Health in partnership with the Departments of Health in the host cities of the games along with other national and international institutions.",
+          "For the first time in Brazil, the implementation of the participatory surveillance strategy will take place without public investment in software development. The web application \"Healthy Cup 2014\" is being developed as free software which is made possible through partnership with Skoll Global Threats Fund and through operational support of Training in Public Health Intervention Network (Tephinet). Both are non-governmental, nonprofit organizations working on improving health surveillance and also Digital Disease Detection techniques. The technological development of the application is performed by the startup, Epitrack, based in Recife, Pernambuco.",
+          "This partnership also includes technical support and the sharing of experiences with other worldwide adopted initiatives such as Flu Near You (flunearyou.org) and Salud Boricua (saludboricua.org) created and administered by the NGO HealthMap (healthmap.org) of the Children's Hospital in Boston in collaboration with the American Public Health Association (apha.org) and the Skoll Global Threats Fund (skollglobalthreats.org). These strategies are aimed at monitoring influenza-like illness in the United States of America (USA) and Canada, and the occurrence of dengue, leptospirosis and the influenza syndrome in Puerto Rico.",
+          "The \"Healthy Cup 2014\" strategy is one of the important legacies that the public health preparedness for the 2014 FIFA World Cup Brazil™ is encouraging. This strategy can be applied to other initiatives of public interest in the future. Once again, the National Health System of Brazil demonstrates its ability for innovation and social inclusion. Participate and share!"
+        ]
+      },
+      "saibaMais" : {
+        "titulo" : "LEARN MORE ABOUT PARTICIPATORY SURVEILLANCE",
+        "texto" : [
+          "The 2014 FIFA World Cup Brazil™ is one of the biggest sporting events on the planet and it is estimated that approximately 3.7 million tourists, Brazilian and foreigners, will be travelling among the 12 host cities. For this reason, the National Health System (SUS) requires agile instruments to quickly identify the occurrence of diseases that may affect visitors and / or residents in these cities.",
+          "If you plan to attend the 2014 FIFA World Cup Brazil™ as a fan or worker, residing or not in the host cities of the World Cup or anywhere else in Brazil, you are the ideal candidate to contribute to the SUS via \"Healthy Cup 2014\". From the voluntary and regular provision of your state of health, the monitoring system will be able to describe the profile of health and illness in the host cities of the World Cup throughout the duration of the event. Simply install and register to start participating in the fun challenge of caring for the health of the city, earning points daily and unlocking stages in the game.",
+          "Your participation is a kind contribution to the improvement of health surveillance in Brazil. Registration does not require your name and email privacy is assured. Your participation will not result in any kind of contact with you from the health system and communication of your health condition does not mean you will be performing a medical consultation.",
+          "Importantly, if you inform that you are not feeling well, it is recommended that you contact an attending physician or the health service nearest you. For this reason, the application has a shortcut to a pre-configured search for health services and nearby pharmacies, based on geolocation service from your mobile device on Google Maps. Additionally, some useful phone numbers are made available including the SAMU (ambulance service) whose call is free and operates 24 hours per day for urgent care requests in homes, workplaces and on public roads for events of traumatic, clinical, pediatric, surgical, gynecological and mental health nature.",
+          "We hope you have fun rooting for your team along with specially selected information from the official website of FIFA and take advantage of this opportunity to learn more about basic health care that will help you celebrate victory and have a great Healthy Cup 2014."
+        ]
+      },
+      "beneficios" : {
+        "titulo" : "SEE THE BENEFITS OF YOUR PARTICIPATION",
+        "texto" : [
+          "Actively participate in health surveillance actions aimed at disease prevention in the community",
+          "Access contacts of useful public services without having to change your cell phone's contacts",
+          "Easily access relevant information about health care",
+          "Enjoy features such as a pre-configured search for nearby (20 km / 12 miles) hospitals and pharmacies on Google Maps, with no need to open another application",
+          "Monitor the health profile of participants on the website \"Healthy Cup 2014\" (www.healthycup2014.com)",
+          "Track the game schedule and the locations of your favorite matches"
+        ]
+      },
+      "custos" : {
+        "titulo" : "COST",
+        "texto" : [
+          "Download and participation: There is no cost to obtain and participate in \"Healthy Cup 2014\".",
+          "Access to services free of charge: via free wi-fi access points in the city.",
+          "Access to services with cost: via your data plan.",
+          "Telephone call: The described public services are offered through a free call, as reported by the responsible agency."
+        ]
+      }
+    },
+    "menu" : {
+      "idiomas" : "Languages",
+      "denunciarUmProblema" : "Report application failure",
+      "versao" : "Version",
+      "alterarSenha" : "Change password",
+      "termosEPoliticas" : "Terms and policies",
+      "sobre" : "About",
+      "sair" : "Exit"
+    },
+    "versao" : {
+      "versao" : {
+        "titulo" : "Version",
+        "atualizacao" : "Update"
+      },
+      "parceria" : {
+        "titulo" : "Partnership"
+      },
+      "dev" : {
+        "titulo" : "Development and Support"
+      },
+      "melhorNavegador" : "The webapp is best viewed in Google Chrome and Mozilla Firefox browsers."
+    }
+  },
+  "apresentacao" : {
+    "idioma" : {
+      "titulo" : "Language / Language",
+      "portugues" : "Portuguese",
+      "espanhol" : "Spanish",
+      "ingles" : "English"
+    },
+    "abertura" : {
+      "titulo" : "Healthy Cup"
+    },
+    "apresentacao" : {
+      "titulo" : "Healthy Cup",
+      "texto" : "Thank you for participating in the Healthy Cup 2014. \nThe Healthy Cup app is a project of health participatory surveillance during the Fifa World Cup Brazil 2014 ™ so that everyone can participate voluntarily with the National Health System (SUS) strategy. Read more about the app on the Options screen."
+    }
+  },
+  "acesso" : {
+    "acesso" : {
+      "titulo" : "Access in Portuguese",
+      "rodape" : "By continuing you agree to the terms of use and privacy policy.",
+      "cadastre-se" : "Register",
+      "entreComFacebook" : "Sign in with Facebook",
+      "entrarComLoginESenha" : "Enter",
+      "camposObrigatorios" : "* Required fields",
+      "esqueciASenha" : "Forgot Password"
+    },
+    "cadastre-se" : {
+      "apelido" : "Nickname",
+      "idade" : "Age",
+      "sexo" : "Gender",
+      "feminino" : "Female",
+      "masculino" : "Male",
+      "email" : "Email",
+      "senha" : "Password",
+      "confirmacaoDeSenha" : "Password confirmation",
+      "revelarSenha" : "Reveal password",
+      "termos" : "I have read and agree to the terms of use",
+      "termosDeUso" : "Terms of use",
+      "cadastre-se" : "Register",
+      "confirmacaoCadastre-se" : "Sign successful! Please log in with the password registered on the next screen."
+    },
+    "entreComFacebook" : {
+      "texto" : ""
+    },
+    "entrarComLoginESenha" : {
+      "email" : "Email",
+      "senha" : "Password",
+      "entrar" : "Enter",
+      "esqueciASenha" : "Forgot Password"
+    },
+    "alterarSenha" : {
+      "senhaAtual" : "Current password",
+      "novaSenha" : "New Password",
+      "repetirNovaSenha" : "Repeat New Password",
+      "campoAlterarSenha" : "Change"
+    },
+    "esqueciASenha" : {
+      "texto" : "Enter the e-mail registered to send your password",
+      "confirmacao" : "The instructions to recover your password has been sent to your email.",
+      "email" : "Email",
+      "entrar" : "Send"
+    },
+    "termosDeUso" : {
+      "titulo" : "TERMS OF USE",
+      "voltarAoTopo" : "Back to top",
+      "voltarAoMenu" : "Back to menu",
+      "ultimaAtualizacao" : "Last revision date: April 2014",
+      "introducao" : [
+        "Please read these terms of use before using the \"Healthy Cup 2014\", doing any collaboration, accessing or downloading any information from this application.",
+        "By accessing or using \"Healthy Cup 2014\", you accept and agree to abide by the terms and conditions set forth in these terms of use.",
+        "This contractual term is a binding agreement between you and \"Healthy Cup 2014\", which covers your access and use of this application including the use of any information, data, tools, products, services and other content that is made available.",
+        "By using this application, you confirm that you understand and agree to the following:"
+      ],
+      "secao1" : {
+        "titulo" : "Respect the Laws:",
+        "texto" : [
+          "The user should access the \"Healthy Cup 2014\" only for lawful purposes.",
+          "The user agrees to use the application only for appropriate purposes and in accordance with this terms, legal limitations, and any applicable policies in Brazil.",
+          "Access is prohibited within territories where the content is illegal. Those who choose to access this site from other locations do so on their own initiative and are responsible for compliance with applicable local laws. The materials shall not be used or exported in violation of Brazilian law. Any pending cases relating to the materials shall be settled by Brazilian law.",
+          "The unauthorized alteration of the content of this website is expressly prohibited."
+        ]
+      },
+      "secao2" : {
+        "titulo" : "Limitations of Use:",
+        "texto" : [
+          "Use of the application is indicated only for individuals thirteen (13) years of age or older."
+        ]
+      },
+      "secao3" : {
+        "titulo" : "Responsibility for the Content:",
+        "texto" : [
+          "The \"Healthy Cup 2014\" is not responsible for the content of any information that may be exchanged by users among themselves, or with the \"Healthy Cup 2014\", whether legal or illegal.",
+          "The user assume sole responsibility for his/her own conduct and the accuracy of the information provided while using the service and is responsible for the consequences resulting from the intentional provision of incorrect data.",
+          "The user agrees that when using \"Healthy Cup 2014\" he/she will not post, upload, distribute or disseminate content or information of defamatory, obscene or illegal nature, including proprietary information belonging to other persons or companies, as well as trademarks or information protected by copyright without the express permission of the copyright holder.",
+          "No one can act on the user's behalf in the use of \"Healthy Cup 2014\". The user is responsible for the content that unauthorized individuals produce upon using this application with the user's permission on the user's registered profile. This rule does not apply to cases of violation or other security problems with the application."
+        ]
+      },
+      "secao4" : {
+        "titulo" : "Accessibility to Content:",
+        "texto" : [
+          "The staff of the \"Healthy Cup 2014\" does not guarantee that this application is partially or fully functional for use outside of the venues related to the FIFA World Cup 2014™, which include the host cities and nearby municipalities.",
+          "It is not guaranteed that any content is produced or available for use outside the Brazilian national territory. If the user chooses to access the web app and the application from other locations, the user does so at his/her own initiative and risk. The user is responsible for compliance with local laws, to the extent that local laws are applicable. The user specifically agrees to comply with all applicable laws regarding the transmission of technical data exported from that location."
+        ]
+      },
+      "secao5" : {
+        "titulo" : "Intellectual Property:",
+        "texto" : [
+          "The staff of the \"Healthy Cup 2014\" and its employees are copyright holders of the content generated and submitted in this application. This does not apply to information considered to be in the public domain.",
+          "All other trademarks, service brands, names and logos appearing in this application are the property of their respective owners.",
+          "The \"Healthy Cup 2014\" application is an open source software whose use by third parties must submit to the terms of the international license GNU General Public License, version 3 ( GPL -3.0 ). The rights to use the content and reports generated by the web app and the application are ceded by the developers, especially those rights that arise from the terms of the Creative Commons License - Attribution- NonCommercial 4.0 International.",
+          "Only reports by the health services authorities of each host city should be considered official for public disclosure regarding public health data. No information from the \"Healthy Cup 2014\", despite the commitment of the staff to ensure the quality, timeliness and authenticity of the information, shall be  deemed official for public disclosure. The data collected through the \"Healthy Cup 2014\", comes from a specific target audience that can be influenced by their ability to access mobile devices or computers with minimum technology specifications. Thus, the information generated from this strategy may not necessarily match the actual epidemiological patterns for that period and place. The recreational or public domain information may contain inaccuracies or update failures, thus validation is recommended by users during emergencies or any other situation where there is a threat to health or well being."
+        ]
+      },
+      "secao6" : {
+        "titulo" : "6.Laws, Regulations, Rights and Duties:",
+        "texto" : [
+          "It is the policy of the \"Healthy Cup 2014\" staff to comply with all applicable laws and regulations, which may be modified from time to time. In the event that any provision of this Terms of Use conflicts with any law or regulation, the applicable law or regulation overrides that which is in conflict.",
+          "This Terms of Use and the use of \"Healthy Cup 2014\" are and will be governed by and interpreted in accordance with the internal laws of Brazil, without regard to its conflict of laws rules. In case of any conflict between foreign laws, rules and regulations, Brazilian laws, rules and regulations shall prevail.",
+          "The \"Healthy Cup 2014\" may, but is not obligated to, monitor, review and restrict access to any of its areas where users transmit information and withdraw access to any such information or communications.",
+          "If you have any questions regarding \"Healthy Cup 2014\", do not hesitate to contact us at: contato@saudenacopa.com."
+        ]
+      },
+      "secao7" : {
+        "titulo" : "Use of Contributions.",
+        "texto" : [
+          "Upon submitting a written contribution or posting any information in \"Healthy Cup 2014\", you grant a perpetual, royalty-free, unconditional license to this application and any successor organization to publish the user's contribution on \"Healthy Cup 2014\" and share it, in aggregate form, (never individually) to other media, and discuss or refer to it in any publications resulting from \"Healthy Cup 2014\".",
+          "You also agree that the \"Healthy Cup 2014\" has the right, but not the obligation, to edit or delete any contribution, or include it in a text together with other contributions at the sole discretion of the staff of this application."
+        ]
+      },
+      "secao8" : {
+        "titulo" : "Assurance of Confidentiality and Anonymity:",
+        "texto" : [
+          "Confidentiality and anonymity of all information produced by the user will be ensured in \"Healthy Cup 2014\" except as required by law, or to address issues of non-compliance.",
+          "We reserve the right to use this information internally and in that scope, its contribution will be linked to the username of your choice.",
+          "The \"Healthy Cup 2014\", its employees and users, including governmental and non-governmental agencies, rely on users for the accuracy of the contributions. The staff is not responsible for errors or inaccuracies in any submission. Deliberate misrepresentation by a user may be a violation of the law, and if it is deemed serious, will be communicated to the appropriate governmental authorities."
+        ]
+      },
+      "secao9" : {
+        "titulo" : "Updated \"Healthy Cup 2014\":",
+        "texto" : [
+          "Modifications of this application and its Terms of Use may occur. Unless the user specifies otherwise, each and every use of the web app and application indicates full acceptance of the Terms of Use in its current version. Be alert for updates and, in case of doubt, these Terms of Use will always be available for reference."
+        ]
+      },
+      "secao10" : {
+        "titulo" : "Liability for Actions Based on the Content.:",
+        "texto" : [
+          "Healthy Cup 2014 does not assume liability for any injury and / or damage to persons or property, in consequence of any use of the ideas, content, instructions, methods, products or procedures contained in this application.",
+          "By no means will the professionals involved with the development or administration of this application be liable for any decision made, or action taken, by you on the basis of such content.",
+          "When faced with threats or any other risk to your health or well being always seek validated guidance by local public health services at each host city."
+        ]
+      },
+      "secao11" : {
+        "titulo" : "Liability for Technological Problems:",
+        "texto" : [
+          "At any time it is possible that all of the content or any portion of the \"Healthy Cup 2014\" will become unavailable and will not function properly. We make necessary efforts to avoid technological problems in this application but they can occur at any time and in many ways such as viruses, harmful programming routines or problems related to the user's device.",
+          "The web app and application is provided on an \"as is\" and \"as available\" basis. Without limiting our general disclaimer, we can not guarantee the availability, integrity, timeliness, functionality, reliability, sequencing nor speed of delivery of this application or any of the content.",
+          "Healthy Cup 2014 is not responsible for any damages or injury caused by the performance or lack of performance of all or any part of the application. \"Healthy Cup 2014\" is not liable for any defects, delays or errors resulting from the use of this application.",
+          "The use of all the features of \"Healthy Cup 2014\" requires the user to have  internet access, be it Wi-Fi or via a wired network. The absence of this prerequisite may limit the use of the application in all of its potential use. The staff of \"Healthy Cup 2014\", considering this warning, does not assume liability for this limitation.",
+          "This disclaimer of liability applies to any and all damages or injury, including those caused by any performance failure, error, omission, interruption, deletion, defect, delay in operation or transmission, computer virus, line failure communication, theft, destruction or unauthorized access, alteration or use of any property, whether by breach of contract, tort, negligence, or any other cause of action."
+        ]
+      },
+      "secao12" : {
+        "titulo" : "Liability for third party information:",
+        "texto" : [
+          "The provision by the web app and application of links and references to other websites, publications or information resources does not constitute endorsement of those websites or its resources by \"Healthy Cup 2014\", its agents or representatives. The staff of \"Healthy Cup 2014\" makes no representations or claims as to the quality, content and accuracy of the information, services or products which may be provided by such resources, and specifically disclaims any warranties, including, but not limited to the implied or expressed warranties of marketability or the adaptation for any particular usage, application or purpose."
+        ]
+      },
+      "secao13" : {
+        "titulo" : "Final Considerations",
+        "texto" : [
+          "Access to this service represents the express and unrestricted acceptance of the Terms of Use above. By agreeing to these terms you grant a perpetual, royalty-free, unconditional license to \"Healthy Cup 2014\", the Ministry of Health and all successor organizations to publish your contribution in aggregate form within the application as well as publicize them to other services related to public health surveillance. You also agree that \"Healthy Cup 2014\" has the right but not the obligation, to edit or delete any contribution at the sole discretion of the \"Healthy Cup 2014\" team."
+        ]
+      }
+    },
+    "denunciarUmProblema" : {
+      "texto" : "Texto denunciar um problema",
+      "confirmacao" : "The problem has been reported with success!",
+      "descricaoDoProblema" : "Problem description",
+      "mensagem" : "Please describe the problem in detail",
+      "enviar": "Send"
+    },
+    "sobre" : {
+      "texto" : "Texto sobre"
+    },
+    "geolocalizacao" : {
+      "erro" : "Could not find your location. Perhaps the services of your device's location are not available. Try, for example, enable your device's GPS or quit and start the application again Healty Cup."
+    }
+  },
+  "sentimento" : {
+    "voceEsta": "you are",
+    "torcedor" : {
+      "confirmacao" : {
+        "confirmar" : "Confirm",
+        "voceEsta" : "you are",
+        "lembrete" : "Be sure to report daily on how is your health."
+      },
+      "alertaDeTempo" : {
+        "texto" : "You can only earn points in",
+        "confirmar" : "OK"
+      },
+      "categorias" : {
+        "denteDeLeite" : "U-11",
+        "mirim" : "U-13",
+        "infantil" : "U-15",
+        "juvenil" : "U-18",
+        "junior" : "U-20",
+        "profissional" : "Professional"
+      },
+      "pergunta" : "How is your health now?",
+      "pontos" : "Points",
+      "dica" : "Select a feeling choosing an avatar",
+      "status" : {
+        "ola" : "Hello",
+        "voceEsta" : "You are",
+        "voceEstaNaCategoria" : "You are in category",
+        "continueParticipando" : "Continue to participate to evolve"
+      },
+      "arena" : {
+        "arena1" : {
+          "id" : "cuiaba",
+          "nome" : "Arena Pantanal",
+          "cidade" : "Cuiabá",
+          "texto" : [
+            "<li>Location: Cuiabá - MT</li>",
+            "<li>Capacity: 42968</li>",
+            "<li>Arena: The Arena Pantanal has 18 thousand mobile bleachers and 166 seats for overweight people. The stadium has a good infrastructure, with restaurants, hotels, parking, lakes, grove and hiking trail. </li>",
+            "<li>Curiosity: The arena has a sustainability project, with 40% less water consumption, and 20% less energy consumption.</li>",
+            "<li>Address: Avenida Agrícola Paes de Barros – Cidade Alta, Cuiabá, Mato Grosso.</li>"
+          ]
+        },
+        "arena2" : {
+          "id" : "curitiba",
+          "nome" : "Arena da Baixada",
+          "cidade" : "Curitiba",
+          "texto" : [
+            "<li>Location: Curitiba - PR</li>",
+            "<li>Capacity: 41456</li>",
+            "<li>Arena: The stadium was constructed in 1914, near downtown, and had many reforms to receive 2014 FIFA World Cup, with removal of the concrete level to standardize bleachers and construction of two new stairs, that connect the lower to the upper bleachers.</li>",
+            "<li>Curiosity: Curitiba, known for great quality of life index in Brazil, where Arena da Baixada is located, attracts many tourists.</li>",
+            "<li>Address: Avenida Presidente Getúlio Vargas, 1895 – Água Verde, Curitiba, Paraná.</li>"
+          ]
+        },
+        "arena3" : {
+          "id" : "natal",
+          "nome" : "Estádio das Dunas",
+          "cidade" : "Natal",
+          "texto" : [
+            "<li>Location: Natal - RN</li>",
+            "<li>Capacity: 42068</li>",
+            "<li>Stadium: The stadium has 10.600 removable seats, 21 access points, 25 bars, 30 restrooms and 200 security cameras.</li>",
+            "<li>Curiosity: The Estádio das Dunas was designed with the idea of showing the movement of sand dunes, typical of Natal, with a frontage and roof integrated and composed by 20 \"petals\", which are higher on one side of the stadium. The roof was designed to allow greater ventilation and lighting. </li>",
+            "<li>Address: Endereço: Avenida Prudente de Morais – Tirol, Natal, Rio Grande do Norte.</li>"
+          ]
+        },
+        "arena4" : {
+          "id" : "manaus",
+          "nome" : "Arena Amazônia",
+          "cidade" : "Manaus",
+          "texto" : [
+            "<li>Location: Manaus - AM</li>",
+            "<li>Capacity: 42374</li>",
+            "<li>Arena: The arena has four access ramps, 98 restrooms, 420 floodlights and 85 security cameras, in addition to more comfort for all the people: 118 seats for people with reduced mobility, 69 for overweight people and 445 for for people accompanying individuals with disabilities.</li>",
+            "<li>Curiosity: With 83.500 m² of constructed area, the Arena Amazônia had its architecture inspired in an indigenous straw basket, loaded with Brazilian typical fruits: melon, banana, pinneapple, orange, mango, guava and papaya.</li>",
+            "<li>Address: Avenida Djalma Batista, 3637 – Flores, Manaus, Amazônia.</li>"
+          ]
+        },
+        "arena5" : {
+          "id" : "pernambuco",
+          "nome" : "Arena Pernambuco",
+          "cidade" : "São Lourenço da Mata (Grande Recife)",
+          "texto" : [
+            "<li>Location: São Lourenço da Mata - PE</li>",
+            "<li>Capacity: 44248</li>",
+            "<li>Arena:  The Arena Pernambuco is constructed in São Lourenço da Mata, metropolitan city of Recife, and has 4.700 parking spots, 4 access ramps, 8 elevators, 360° security cameras and a great space to walk around.</li>",
+            "<li>Curiosity: Recife is the oldest capital of Brazil, founded in 1561. Cut by rivers, the city also has an intense cultural and artistic production and many projects in the technological area. The arena has a multipurpose format and can be used for other big entertainment events after the 2014 FIFA World Cup.</li>",
+            "<li>Address: Avenida Deus É Fiel, 01 Letra A – Jardim Penedo, São Lourenço da Mata, Pernambuco.</li>"
+          ]
+        },
+        "arena6" : {
+          "id" : "fortaleza",
+          "nome" : "Estádio Castelão",
+          "cidade" : "Fortaleza",
+          "texto" : [
+            "<li>Location: Fortaleza - CE</li>",
+            "<li>Capacity: 64846</li>",
+            "<li>Stadium: Fortaleza stadium was the first to get ready for the 2014 FIFA World Cup and has two important features: accessibility and technology. There are 255 seats for people with disabilities, 120 for overweight people and 1.200 for people with reduced mobility.</li>",
+            "<li>Curiosity: The arena has tactile floor for blind people. 2.5% of seats are reserved for persons with disabilities, 1.5% more than what’s established by law. The roof covering is translucent thermoacoustic, to ensure a nice thermal sensation and the bright-green chairs are fire and UV resistant. </li>",
+            "<li>Address: Avenida Alberto Craveiro, 2901 – Castelão, Fortaleza, Ceará.</li>"
+          ]
+        },
+        "arena7" : {
+          "id" : "portoAlegre",
+          "nome" : "Beira-Rio",
+          "cidade" : "Porto Alegre",
+          "texto" : [
+            "<li>Location: Porto Alegre - RS</li>",
+            "<li>Capacity: 48849</li>",
+            "<li>Stadium: The stadium has 5 thousand parking spots, 17 access, 130 turnstiles, 81 restrooms and lighting almost like the characteristics of daylight.</li>",
+            "<li>Curiosity: The Estádio Beira-Rio is on the Guaíba river Banks, a place with easy access for fans. The stadium has a cover designed in shape of leaves, with 65 parts.</li>",
+            "<li>Address: Avenida Padre Cacique, 891 – Praia de Belas, Porto Alegre, Rio Grande do Sul.</li>"
+          ]
+        },
+        "arena8" : {
+          "id" : "salvador",
+          "nome" : "Arena Fonte Nova",
+          "cidade" : "Salvador",
+          "texto" : [
+            "<li>Location: Salvador - BA</li>",
+            "<li>Capacity: 48747</li>",
+            "<li>Arena: With 90.000 m² of constructed area, the building has 10 levels and 3 bleacher rings (lower, intermediate and higher), 2.500 parking spots, 126 turnstiles, 9 elevators, 227 cameras and 376 floodlights.</li>",
+            "<li>Curiosity: The Arena Fonte Nova is situated in the city of Salvador, Brazil’s first capital and most populous northeastern city. In the south part of the arena, there is an opening facing to the Tororó Dyke, natural wellspring of the city.</li>",
+            "<li>Address: Ladeira da Fonte das Pedras – Nazaré, Salvador, Bahia.</li>"
+          ]
+        },
+        "arena9" : {
+          "id" : "brasilia",
+          "nome" : "Estádio Nacional",
+          "cidade" : "Brasília",
+          "texto" : [
+            "<li>Location: Brasília - DF</li>",
+            "<li>Capacity: 68009</li>",
+            "<li>Stadium: The Estádio Nacional in Brasília is an architecture monument. There are 288 pillars with more than 36m height each, built around the arena, which give a grand appearance to the place. The stadium has  all covered seats, separated by 7,5m inicial distance from the field, 465 floodlights, 158 access turnstiles, 54 bars and snackbars, and 20 elevators.</li>",
+            "<li>Curiosity: The Estádio Nacional stands out by its sustainability actions. The floor foundation was built with crushed demolition concrete, and the rain that falls on the roof is treated and reused in the toilets and field irrigation.</li>",
+            "<li>Address: Asa Norte - Brasília, Distrito Federal.</li>"
+          ]
+        },
+        "arena10" : {
+          "id" : "bh",
+          "nome" : "Estádio Mineirão",
+          "cidade" : "Belo Horizonte",
+          "texto" : [
+            "<li>Location: Belo Horizonte - MG </li>",
+            "<li>Capacity: 62254</li>",
+            "<li>Stadium: The stadium holds 2.925 parking spots, 62.160 covered seats, 58 bars, 54 toilets for the public and 106 eletronic turnstiles. The stadium has also a good accessibility for people with disabilities: exclusive parking spots and 8 elevators.</li>",
+            "<li>Curiosity: Declared Belo Horizonte historical heritage, the Estádio Minerão kept the same features of the 1965’s project.</li>",
+            "<li>Address: Avenida Antônio Abrahão Caram, 1001 - Pampulha, Belo Horizonte, Minas Gerais.</li>"
+          ]
+        },
+        "arena11" : {
+          "id" : "saoPaulo",
+          "nome" : "Arena de São Paulo",
+          "cidade" : "São Paulo",
+          "texto" : [
+            "<li>Location: São Paulo - SP</li>",
+            "<li>Capacity: 65807</li>",
+            "<li>Arena: The arena has 48.000 conventional seats and 21.160 mobile seats and 3.500 parking spots.</li>",
+            "<li>Curiosity: The Arena de São Paulo will receive the 2014 FIFA World Cup opening, the match between Brazil and Croatia. </li>",
+            "<li>Address: Avenida Miguel Ignácio Curi, 111 – Vila Carmosina, São Paulo, São Paulo.</li>"
+          ]
+        },
+        "arena12" : {
+          "id" : "rioDeJaneiro",
+          "nome" : "Estádio do Maracanã",
+          "cidade" : "Rio de Janeiro",
+          "texto" : [
+            "<li>Location: Rio de Janeiro - RJ</li>",
+            "<li>Capacity: 76804</li>",
+            "<li>Stadium: The stadium has 124.000 m² of constructed area, 6 ramps, 17 elevators, 292 restrooms, 60 bars and 396 floodlights. Its frontage is historical and artistic national heritage and its seats are yellow, blue and white.</li>",
+            "<li>Curiosity: Estádio do Maracanã is one of the most famous stadiums of Brazil. It was opened in 1950 and watched great moments of world soccer, like the Pelé’s thousandth goal and will receive the 2014 final World Cup game. </li>",
+            "<li>Address: Rua Professor Eurico Rabelo – Maracanã, Rio de Janeiro, Rio de Janeiro.</li>"
+          ]
+        }
+      },
+      "persistenciaSintomas" : {
+        "texto" : "Thanks for reporting. Be sure to find the nearest health service. <br><br>Please continue to report daily how is your health.",
+        "confirmar" : "OK"
+      }
+    },
+    "sentimento" : {
+      "muitoBem" : "Very good",
+      "bem" : "Good",
+      "normal" : "Fine",
+      "mal" : "ill",
+      "muitoMal" : "Very ill"
+    },
+    "sintomas" : {
+      "febre" : "Fever",
+      "tosse" : "Cough",
+      "dorDeGarganta" : "Sore throat",
+      "faltaDeAr" : "Shortness of breath",
+      "nauseaEVomito" : "Nausea and vomiting",
+      "diarreia" : "Diarrhea",
+      "dorNasArticulacoes" : "Joint pain",
+      "dorDeCabeca" : "Headache",
+      "sangramento" : "Bleeding",
+      "manchasVermelhasNoCorpo" : "Red spots on the body",
+      "contatoComAlguem" : "Had contact or know someone with any of those symptoms in the last 7 days.",
+      "procurouServicoDeSaude" : "I looked for a health service.",
+      "erroMarcacao" : "If you're feeling bad, please tell what are the symptoms. It required at least one before continuing."
+    },
+    "calendario" : {
+      "entendaAsLegendas" : "Color reference",
+      "diasDaSemana" : {
+        "domingo" : "Sunday",
+        "segunda" : "Monday",
+        "terca" : "Tuesday",
+        "quarta" : "Wednesday",
+        "quinta" : "Thursday",
+        "sexta" : "Friday",
+        "sabado" : "Saturday"
+      },
+      "meses" : {
+        "janeiro" : "January",
+        "fevereiro" : "February",
+        "marco" : "March",
+        "abril" : "April",
+        "maio" : "May",
+        "junho" : "June",
+        "julho" : "July",
+        "agosto" : "August",
+        "setembro" : "September",
+        "outubro" : "October",
+        "novembro" : "November",
+        "dezembro" : "December"
+      }
+    },
+    "transicao" : {
+      "parabens" : "Congratulations!",
+      "agoraDisponivel" : "Is now available."
+    }
+  },
+  "saude" : {
+    "urgenciasEmergencias" : {
+      "servico" : {
+        "titulo" : "Service Mobile Emergency (SAMU 192)",
+        "texto" : "SAMU works 24 hours every day of the week, and is reached through telephone number 192. The call is free and can be performed by any landline or mobile phone site. SAMU performs emergency care and emergency via ambulance, anywhere: homes, workplaces and public roads. The team brings together doctors, nurses, auxiliary nurses and first responders who meet the urgencies of traumatic nature, clinical, pediatric, surgical, gynecological and mental health."
+      },
+      "quando" : {
+        "titulo" : "When you call the SAMU?",
+        "topico1" : "On the occurrence of cardio-respiratory problems;",
+        "topico2" : "In the cases of exogenous intoxication;",
+        "topico3" : "In the case of severe burns;",
+        "topico4" : "On the occurrence of maltreatment;",
+        "topico5" : "In the labors where there is risk of death of the mother or fetus;",
+        "topico6" : "In the cases of suicide attempts;",
+        "topico7" : "In the hypertensive crisis;",
+        "topico8" : "When There accidents / injuries to victims;",
+        "topico9" : "In the cases of drowning;",
+        "topico10" : "In the cases of electric shock;",
+        "topico11" : "In the accidents involving dangerous goods;",
+        "topico12" : "In the inter-hospital transfer of patients at risk of death."
+      },
+      "unidades" : {
+        "titulo" : "Emergency care units (UPA 24h)",
+        "texto" : "They provide care for patients affected by acute episodes of clinical nature and the first care of patients with trauma or surgical nature. Stabilize patients and perform a diagnostic investigation, by defining all cases, the necessity of routing the hospital services of greater complexity. Check list of the 24 PSUs of the host cities of the 2014 FIFA World Cup."
+      }
+    },
+    "vacinas" : {
+      "titulo" : "Vaccinations",
+      "topico1" : "The World Health Organization (WHO) says that there is no international vaccination timetable for all travelers. Each traveler will have a customized recommendation according to the countries to be visited, depending on the type, duration and time available for the administration of the vaccine before departure;",
+      "topico2" : "Brazil does not require the International Certificate of Vaccination or Prophylaxis for entry into the country;",
+      "topico3" : "Make sure that your routine immunizations are up to date, according to the recommendations of your country of origin, since it is an effective and safe measure for the prevention of various diseases;",
+      "topico4" : "Because the circulation of measles in Europe, Africa and Asia it is recommended that people with origin or destination countries with such disease are previously vaccinated.",
+      "topico5" : "Preparation for the trip is a good opportunity to check the vaccination status of infants, children, adolescents, adults and the elderly.",
+      "topico6" : "Every resident or visitor of any Brazilian city also has available vaccines for influenza and poliomielitis. These diseases are related to potential public health emergencies of international concern for the World Health Organization.",
+      "prevencao" : {
+        "titulo" : "Prevention against yellow fever",
+        "topico1" : "Prevent yellow fever by getting a vaccine 10 days before visiting forest areas or practicing ecological or rural tourism. Check the list of municipalities with recommendations on vaccination against yellow fever (only in portuguese);",
+        "topico2" : "Seek your doctor to help you decide whether the vaccine is required based on your travel plan;"
+      }
+    },
+    "lembretes" : {
+      "cartao" : {
+        "titulo" : "Cartão de vacinação",
+        "texto1" : "Viaje com as vacinas em dia e previna-se contra febre amarela 10 dias antes de praticar turismo ecológico, rural, de aventura ou visitar áreas de mata.",
+        "texto2" : "Procure um serviço de saúde, preferencialmente 4 a 8 semanas antes da viagem, e peça orientações a respeito dos cuidados necessários.",
+        "texto3" : "Atualize seu cartão de vacinação."
+      },
+      "vacinas" : {
+        "titulo" : "Vacinas",
+        "febreAmarela" : "FEBRE AMARELA",
+        "sarampo" : "SARAMPO – RUBEOLA – INFLUENZA E PÓLIO",
+        "texto1" : "Em viagens internacionais, pode ser exigido o Certificado Internacional de Vacinação ou Profilaxia (CIVP), comprovando a vacinação contra a febre amarela. Veja no endereço eletrônico da saúde do viajante os países que fazem essa exigência. Essa vacina deve ser tomada pelo menos 10 dias antes da viagem.",
+        "texto2" : "Tome a vacina 10 dias antes de praticar pescaria em rios, turismo ecológico, rural ou de aventura ou de visitar áreas de mata.",
+        "texto3" : "Todo morador de qualquer cidade brasileira tem disponível e deve manter atualizado seu calendário vacinal de acordo com sua idade, com destaque para o Sarampo, Rubeola, Influenza e Pólio. \nCaso apresente febre, procure imediatamente atendimento médico."
+      },
+      "lavarAsMaos" : {
+        "titulo" : "Lavar as mãos",
+        "texto1" : "Lave bem as mãos com água e sabão várias vezes ao dia.",
+        "texto2" : "Lave as mãos com água e sabão várias vezes ao dia, principalmente antes de comer. Ao tossir ou espirrar, cubra o nariz e a boca com lenço descartável."
+      },
+      "bebaAgua" : {
+        "titulo" : "Beba água",
+        "alimentosEBebidas" : "Alimentos e bebidas",
+        "texto1" : "Beba bastante água e evite consumir alimentos crus ou mal cozidos.",
+        "texto2" : "Principalmente no verão, é importante beber bastante líquido, preferencialmente água, água de coco ou sucos.",
+        "texto3" : "Lave bem as frutas e verduras.",
+        "texto4" : "Evite alimentos crus ou mal cozidos.",
+        "texto5" : "Fique atento! Alimentos embalados devem conter no rótulo a identificação do produtor, a data de validade e a embalagem deve estar íntegra.",
+        "texto6" : "Evite consumir alimentos em locais cujas condições higiênicas de preparo e acondicionamento são precárias.",
+        "texto7" : "Saboreie refeições variadas, ricas em alimentos regionais e saudáveis."
+      },
+      "vestuario" : {
+        "titulo" : "Vestuário",
+        "texto" : "Use calçados, roupas confortáveis e equipamentos de proteção (colete salva-vidas, capacete, ou outros) quando necessário."
+      },
+      "cuidadosComInsolacao" : {
+        "titulo" : "Cuidados com insolação e picadas de inseto",
+        "insolacao" : "Insolação",
+        "malaria" : "Malária",
+        "texto1" : "Proteja-se contra o sol e picada de insetos",
+        "texto2" : "Evite a exposição ao sol entre 10 horas da manhã e 4 horas da tarde, sempre que possível, cubra-se com roupas apropriadas, chapéu e óculos escuros e use protetor solar apropriado.",
+        "texto3" : "Se viajar para regiões onde há transmissão de malária, use roupas que cubram bem o corpo, evite contato com margens de rios e lagoas após o pôr do sol e use mosquiteiro."
+      },
+      "adoecimento" : {
+        "titulo" : "Adoecimento durante ou após a viagem",
+        "texto" : "Se ficar doente durante ou logo após retornar, procure o serviço de saúde e informe ao médico sobre sua viagem, pois esta atitude poderá ajudar no diagnóstico de algumas doenças."
+      }
+    },
+    "saude" : {
+      "lembretesDeSaude" : "Health Recommendations",
+      "hospitaisDeReferencia" : "Referral hospitals",
+      "telefonesUteis" : "Useful Numbers",
+      "farmacias" : "Drugstores",
+      "linkDashboard" : "Tap here to view <br> health <br> in the Brazil Cup",
+      "higieneECuidados" : "Basic care",
+      "vacinas" : "Vaccines",
+      "cuidadosBasicos" : "Basic care",
+      "urgenciasEmergencias" : "Urgencies and emergencies",
+      "prevencaoDoencas" : "Prevention of diseases",
+      "prevencaoAcidentes" : "Preventing accidents",
+      "prevencaoViolencia" : "Violence prevention"
+    },
+    "lembretesDeSaude" : {
+      "introducao" : "Introduction to health recommendations",
+      "texto" : "Text reminders health"
+    },
+    "telefonesUteis" : {
+      "samu" : "Samu - Service Mobile Emergency",
+      "policiaMilitar" : "Military police",
+      "disqueDenuncia" : "Dial complaint - Abuses against children",
+      "ouvidoriaDeSaude" : "Ombudsman health",
+      "bombeiros" : "Fire department",
+      "defesaCivil" : "Civil defense",
+      "disqueIntoxicacao" : "Dial poisoning - inquiries and complaints related to poison",
+      "anvisa" : "ANVISA - National Agency for Sanitary Surveillance",
+      "anac" : "ANAC - National Civil Aviation Agency",
+      "antt" : "ANTT - National Transportation Agency",
+      "antaq" : "ANTAQ - National Agency for Waterway Transportation",
+      "policiaCivil" : "Civil police",
+      "policiaFederal" : "Federal police",
+      "policiaRodoviaria" : "Federal Highway Police",
+      "vigiagro" : "VIGIAGRO (International Agricultural Monitoring)",
+      "diquesSaude" : "Dial health",
+      "cievs" : "CIEVS - Strategic Information Centre for Health Surveillance",
+      "cve" : "CVE - Centre for the Epidemiological Surveillance"
+    },
+    "farmacias" : {
+      "erro" : "Unable to find pharmacies or drugstores within 20km"
+    },
+    "mapa" : {
+      "referencia" : "Reference hospitals",
+      "outros" : "Found by Google",
+      "encontrados" : "Hospitals found by Google",
+      "encontradas" : "Pharmacies found by Google",
+      "tracarRota" : "Trace Route using:",
+      "rotaGoogle" : "Google Maps",
+      "rotaApple" : "Apple Maps"
+    },
+    "cuidadosBasicos" : {
+      "topico1" : "See your doctor, preferably between 4 and 8 weeks before the trip to inform your travel plan. Ask for guidance on precautions to protect against diseases and injuries;",
+      "topico2" : "You may or may not have difficulty to find the medications you usually use during the trip. Seek your doctor's guidance as to which medications and in what quantity you should take during the trip, including hand baggage;",
+      "topico3" : "Carry with you your identification documents, preferably in English and Portuguese, with personal contact information, blood type, whether you have allergies, diabetes or other conditions that may require special care;",
+      "topico4" : "Every pregnant woman should consult her doctor before traveling, as she will be subject to various risks and travel can affect her safety and comfort;",
+      "topico5" : "Consult the transportation company specific rules for pregnant women before traveling",
+      "topico6" : "Brazil is a tropical country. The constant intake of fluids is recommended to travelers in order to avoid dehydration;",
+      "topico7" : "Use comfortable clothes and footwear. They will provide you with security and protection against sprains, insect bites and accidents with venomous animals;",
+      "topico8" : "Cover up with appropriate clothing and use a hat or cap and sunglasses to protect yourself from the sun. Avoid direct exposure to the sun between 10 a.m. and 4 p.m.;",
+      "topico9" : "Use sunscreen with a protection factor suitable for the color of your skin, according to the manufacturer's guidelines. Even in colder places, your skin will be protected from sunlight;",
+      "topico10" : "Use repellents whenever necessary;",
+      "topico11" : "Wash your hands with soap and water several times a day, especially before eating, after using public conveyances, visiting crowded markets or places",
+      "topico12" : "In Brazil, it is forbidden by law to drive after consuming alcohol, even in small quantities."
+    },
+    "prevencao" : {
+      "acidentes" : {
+        "seguranca" : {
+          "titulo" : "Vehicles safety",
+          "topico1" : "It is mandatory to wear seat belts in vehicles;",
+          "topico2" : "For children, it is also mandatory to use car seats in the back seat of the car;",
+          "topico3" : "If driving motorcycles or bicycles, always wear a helmet. In Brazil, a specific driving license is required for motorcycles. Protect yourselfe."
+        },
+        "picadas" : {
+          "titulo" : "Against insect bites",
+          "topico1" : "Enquire about the occurrence of malaria, dengue, yellow fever and other diseases that can be transmitted by mosquitoes. The risk of infection of these diseases may be reduced if bites are avoided. Please note the following recommendations:",
+          "topico2" : "Stay in places that have protective screens on doors and windows, especially away from the capital and major cities, or take the mosquito netting / curtains with you;",
+          "topico3" : "In ecotourism tours, use clothing to protect the body against insects bites and ticks, such as long-sleeved shirts, pants and closed shoes;",
+          "topico4" : "Apply repellent to exposed areas of your skin according to the manufacturer's instructions. It is not recommended to use repellent on children aged less than two years without medical advice;"
+        },
+        "mordeduras" : {
+          "titulo" : "Against bites or other types of accidents with animals",
+          "topico1" : "In case of accidental contact, bite, lick or scratch by mammals (dog, cat, bat, or any wild animal), wash the affected area with soap and water and seek medical attention immediately;",
+          "topico2" : "If you have accidents with venomous animals (scorpions, snakes, spiders, bees and caterpillars), do not perform homemade procedures and seek immediate local public health service. During the rescue, move as little as possible. The affected limb must be placed in a higher position in relation to the body and the bite area can only be washed with soap and water;",
+          "topico3" : "In cases of accidents with jellyfish and caravels, a cold sea water compress (do not use fresh water) or vinegar should be applied. Avoid rubbing the affected area;",
+          "topico4" : "Avoid direct contact with live or dead animals, and, above all, do not handle these animals, however harmless they may seem;",
+          "topico5" : "Avoid walking barefoot in forests or plantations areas. Preferably, use pants and long boots or boots with leggings (knee-high protection);",
+          "topico6" : "In the specific case of spiders and scorpions, inspect clothing and shoes before wearing them, or covers and towels before using them;",
+          "topico7" : "While conducting trails or nature walks, carefully examine the places you lean on (trees, rocks);",
+          "topico8" : "Beware of bees and wasps. They are attracted by sounds, smells and colors, such as noises and garden equipment and boat engines;",
+          "topico9" : "Do not reach into holes and burrows."
+        }
+      },
+      "doencas" : {
+        "malaria" : {
+          "titulo" : "Prevention against malaria",
+          "topico1" : "Before traveling, check the areas that have reported cases of malaria throughout the year (only in portuguese);",
+          "topico2" : "In Brazil, transmission is concentrated in the Amazon region, comprising the States of Acre, Amapá, Amazonas, Maranhão, Mato Grosso, Pará, Rondônia, Roraima and Tocantins;",
+          "topico3" : "In malaria transmission areas, it is essential that the traveler knows the period of greatest activity of malaria mosquito vectors, from sunset to dawn;",
+          "topico4" : "Use light-colored clothes with long sleeves during high exposure activities;",
+          "topico5" : "Apply repellent to exposed areas of your skin according to the manufacturer's instructions. It is not recommended to use repellent on children aged less than two years without medical advice;",
+          "topico6" : "In malaria transmission areas, it is imperative that travelers stay tuned to the emergence of symptoms, such as fever, aching body and headache;",
+          "topico7" : "In the event of the outbreak of any disease symptoms, seek the nearest specialized health facility. Ideally, this treatment must be provided as soon as possible, within 48 hours after the first symptoms;",
+          "topico8" : "Brazil has a structured public health to diagnose and treat patients in timely and appropriate fashion;",
+          "topico9" : "For more information about malaria prior to your trip, seek guidance at one of the Reference Centers (only in portuguese);",
+          "topico10" : "For information on the incidence of malaria in the world visit the World Health Organization website;"
+        },
+        "respiratorias" : {
+          "titulo" : "Prevent yourself against respiratory-transmitted diseases",
+          "topico1" : "Wash your hands with soap and water before meals, touching your eyes, mouth and nose, and after coughing, sneezing or using the toilet;",
+          "topico2" : "When coughing or sneezing, cover your nose and mouth with, preferably, single-use tissue. If not, avoid sneezing in your hands. It is recommended to sneeze on the forearm near the elbow;",
+          "topico3" : "Sick individuals should rest, eat a balanced diet, increase fluid intake and avoid crowds and indoors;",
+          "topico4" : "Keep your environments ventilated;",
+          "topico5" : "Always be aware of more severe respiratory symptoms and seek immediate medical care."
+        },
+        "alimentos" : {
+          "titulo" : "Consume healthy food and drinks",
+          "topico1" : "Avoid consuming food with poor hygienic, preparation and packaging conditions;",
+          "topico2" : "Prefer foods that are low in sugars, fats and salt;",
+          "topico3" : "Drink plenty of fluids, preferably water or juice. Avoid raw or undercooked food, especially seafood;",
+          "topico4" : "Packaged foods should be labeled to identify the producer, the expiration date and the packaging must be intact;",
+          "topico5" : "During rural tourism, prefer foods that can be unrefrigerated and not spoil in the heat;",
+          "topico6" : "Extra care is required with dehydration if you have diarrhea and vomiting due to the intake of food and drinks. An intake of oral rehydration salts is recommended, which is provided free of charge by the Unified Health System, or other solutions of this kind. Sports drinks do not properly compensate the losses and should not be used for the treatment of diarrheal disease.",
+          "topico7" : "For more information on nutritional care, see recommendations of the World Health Organization."
+        },
+        "sexo" : {
+          "titulo" : "Practice safe sex",
+          "topico1" : "In Brazil, condoms are distributed free by the government and are available in health clinics, emergency care units, hostels, Tourist Service Centers and other distribution points scattered around the cities. Always carry condoms with you to facilitate their use and prevent sexually transmitted diseases."
+        }
+      },
+      "violencias" : {
+        "titulo" : "Violence prevention",
+        "topico1" : "In the case of sexual violence, a health unit should be sought as soon as possible, so that prevention and care are adopted in accordance with the Technical Standard of the Ministry of Health;",
+        "topico2" : "All forms of violence against children, adolescents, women and elderly are of compulsory notification by public and private health services in Brazil;",
+        "topico3" : "For urgent care due to accidents, violence or clinical emergencies, the emergency service can be activated by the Dial 192 - SAMU (Service Mobile Emergency Care);",
+        "topico4" : "If you know of a case of sexual exploitation of children and adolescents, communicate it through the Dial 100 (Dial Human Rights) or Dial 190 (Military Police);",
+        "topico5" : "You can also activate the Dial 180 to inform or report situations of violence against women;",
+        "topico6" : "The consumption of alcohol in excess is a major risk factor for the occurrence of violence, so the traveler should drink moderately and respectfully;",
+        "topico7" : "Remember: if you drink, do not drive. The consumption of alcoholic beverages associated with direction implies high risk of traffic accidents. Let's protect pedestrians, passengers and drivers in traffic;",
+        "topico8" : "The sale of alcoholic beverages to persons under 18 years old is not allowed in Brazil, according to the Statute of Children and Adolescents."
+      }
+    }
+  },
+  "jogos" : {
+    "jogos" : {
+      "selecoes" : "Selections",
+      "resultados" : "Results",
+      "calendarioDosJogos" : {
+        "faseDeGrupos": "GROUP STAGE",
+        "jogo": "MATCH",
+        "grupo": "GROUP",
+        "rodada": "ROUND",
+        "oitavasDeFinal": "EIGHT-FINA",
+        "quartasDeFinal": "QUARTER-FINAL",
+        "vencQua": "WINNER OF QUARTER-FINAL",
+        "semifinais": "SEMI-FINALS",
+        "perdSemifinal": "LOSER OF SEMI-FINALS",
+        "vencSemifinal": "WINNER OF SEMI-FINALS",
+        "terceiroLugar": "PLAY-OFF FOR THIRD PLACE",
+        "final": "FINAL"
+      },
+      "maisNoticias" : "More news"
+    }
+  },
+  "turismo" : {
+    "turismo" : {
+      "fanFest" : "Fan Fest",
+      "pontosTuristicos" : "Landmarks",
+      "atividadesCulturais" : "Cultural Activities",
+      "baresERestaurantes" : "Bars and restaurants"
+    }
+  },
+  "mais" : {
+    "mais" : {
+      "acesseOSite" : "Visit the site",
+      "twitter" : {
+        "agora" : "Now",
+        "1minuto" : "1min",
+        "minutos" : "Min",
+        "1hora" : "1h",
+        "horas" : "Hours",
+        "ontem" : "Yesterday",
+        "dias" : "Days",
+        "semanas" : "Weeks"
+      }
+    },
+    "itensDoJogo" : {
+      "selecao" : "Tell us how you are feeling. Touch and drag your finger up or down.",
+      "ok" : "Tap the OK button to confirm how you are feeling.",
+      "categoria" : "Find out in which category you are.",
+      "arena" : "Check out the main information about the Arenas.",
+      "selecaoArena" : "Find out in which Arena you are.",
+      "pontos" : "Earn points stating how is your health. On game day participation is worth 3 points and when there is no game, only 1 point. You can score every 2 hours. But pay attention, because earning points is not enough to become a professional player. Daily participation is the best way to get to the final stage of the game.",
+      "barraDeEngajamento" : "The engagement bar is directly related to your score. The more engaged you are, faster you advance in category and gets new arenas."
+    },
+    "categorias" : {
+      "pontos" : "%",
+      "introducao" : "Welcome to the soccer world. From now on, you will start your playing career. Good luck.",
+      "texto" : {
+        "denteDeLeite" : "Welcome to the soccer world. From now on, you will start your playing career. Good luck.",
+        "mirim" : "Now that you are already familiar with the field, it is time to train even harder. Keep it up.",
+        "infantil" : "Follow all your coach’s instructions and keep going to advance your level. We count on you.",
+        "juvenil" : "Well done. We can see that you have a great abitily with the ball. To victory!",
+        "junior" : "You’re almost there. Focus and work is what you need to be a professional player.",
+        "profissional" : "Finally, you are a professional player. Keep playing and compete for prizes."
+      }
+    },
+    "linksUteis" : {
+      "governamentais": "Governmental",
+      "naoGovernamentais": "Non-governmental",
+      "outrosLinks": "Other",   
+      "gov" : {
+        "viajante" : "Traveler Health",
+        "svs" : "Secretariat of Health Surveillance",
+        "formsus" : "Form for notification of diseases and ailments",
+        "agricultura" : "Ministry of Agriculture ",
+        "malaLegal" : "Legal Baggage",
+        "anvisa" : "ANVISA",
+        "copa2014" : "Cup Portal",
+        "aplicativos" : "Applications of the Federal Government",
+        "malaria" : "Areas with occurrence of malaria in Brazil"
+      },
+      "nGov" : {
+        "healthmap" : "HealthMap",
+        "promedmail" : "ProMed",
+        "unaids" : "Protect the Goal",
+        "fifa" : "Fifa"
+      },
+      "outros" : {
+        "who" : "World Health Organization"
+      }
+    },
+    "malaLegal" : {
+      "titulo" : "International Agricultural Surveillance",
+      "li1" : "Brazil has rules to control the entry of animals, plants and products in the country;",
+      "li2" : "Before traveling, consult the Brazilian Embassy or Consulate about the requirements for the imports of animals, pants and other products;",
+      "li3" : "Products which may not enter into Brazil without previous authorization and/or sanitary certification:",
+      "li4" : {
+        "li1" : "Fruits, vegetables, milk, cheese, butter, yogurt, dulce de leche, honey, wax, propolis, fresh or industrialized meats (ham, canned products, fish), fresh vegetables, food served on board;",
+        "li2" : "Pets, insects, mollusks, bacteria and fungi, pet food, eggs, semen, embryos;",
+        "li3" : "Pesticides and veterinary products (serum, vaccines, medications, among others), seedlings, seeds;",
+        "li4" : "Wood and soil."
+      }
+    },
+    "consulados" : {
+      "paises" : {
+        "SouthAfrica" : "South Africa",
+        "Albania" : "Albania",
+        "Germany" : "Germany",
+        "Angola" : "Angola",
+        "Algeria" : "Algeria",
+        "Argentina" : "Argentina",
+        "Armenia" : "Armenia",
+        "Australia" : "Australia",
+        "Austria" : "Austria",
+        "Bangladesh" : "Bangladesh",
+        "Belgium" : "Belgium",
+        "Benin" : "Benin",
+        "Bolivia" : "Bolivia",
+        "Bosnia" : "Bosnia and Herzegovina",
+        "BurkinaFaso" : "Burkina Faso",
+        "Brazil" : "Brazil",
+        "CapeVerde" : "Cape Verde",
+        "Cameroon" : "Cameroon",
+        "Canada" : "Canada",
+        "Chile" : "Chile",
+        "China" : "China",
+        "Cyprus" : "Cyprus",
+        "Colombia" : "Colombia",
+        "SouthKorea" : "South Korea",
+        "IvoryCoast" : "Ivory Coast",
+        "CostaRica" : "Costa Rica",
+        "Croatia" : "Croatia",
+        "Cuba" : "Cuba",
+        "Denmark" : "Denmark",
+        "Ecuador" : "Ecuador",
+        "Slovakia" : "Slovakia",
+        "Spain" : "Spain",
+        "US" : "U.S.",
+        "Estonia" : "Estonia",
+        "England" : "England",
+        "Philippines" : "Philippines",
+        "Finland" : "Finland",
+        "France" : "France",
+        "Gabon" : "Gabon",
+        "Gambia" : "Gambia",
+        "Ghana" : "Ghana",
+        "Greece" : "Greece",
+        "Guatemala" : "Guatemala",
+        "Guyana" : "Guyana",
+        "Guinea" : "Guinea",
+        "Guinea-Bissau" : "Guinea-Bissau",
+        "Haiti" : "Haiti",
+        "Honduras" : "Honduras",
+        "Hungary" : "Hungary",
+        "India" : "India",
+        "Indonesia" : "Indonesia",
+        "Iraq" : "Iraq",
+        "Iran" : "Iran",
+        "Ireland" : "Ireland",
+        "Iceland" : "Iceland",
+        "Israel" : "Israel",
+        "Italy" : "Italy",
+        "Jamaica" : "Jamaica",
+        "Japan" : "Japan",
+        "Kuwait" : "Kuwait",
+        "Latvia" : "Latvia",
+        "Lebanon" : "Lebanon",
+        "Liberia" : "Liberia",
+        "Libya" : "Libya",
+        "Lithuania" : "Lithuania",
+        "Luxembourg" : "Luxembourg",
+        "Malaysia" : "Malaysia",
+        "Mali" : "Mali",
+        "Malta" : "Malta",
+        "Morocco" : "Morocco",
+        "Mexico" : "Mexico",
+        "Mozambique" : "Mozambique",
+        "Monaco" : "Monaco",
+        "Mongolia" : "Mongolia",
+        "Nicaragua" : "Nicaragua",
+        "Nigeria" : "Nigeria",
+        "Norway" : "Norway",
+        "newZealand" : "New Zealand",
+        "Netherlands" : "Netherlands",
+        "Panama" : "Panama",
+        "Pakistan" : "Pakistan",
+        "Paraguay" : "Paraguay",
+        "Peru" : "Peru",
+        "Poland" : "Poland",
+        "Portugal" : "Portugal",
+        "UK" : "UK",
+        "DemocraticRepublicofCongo" : "Democratic Republic of Congo",
+        "DominicanRepublic" : "Dominican Republic",
+        "CzechRepublic" : "Czech Republic",
+        "Russia" : "Russia",
+        "Romania" : "Romania",
+        "SanMarino" : "San Marino",
+        "SaoTomeandPrincipe" : "Sao Tome and Principe",
+        "SaintVincentandGrenadines" : "Saint Vincent and Grenadines",
+        "Senegal" : "Senegal",
+        "Serbia" : "Serbia",
+        "Syria" : "Syria",
+        "SriLanka" : "Sri Lanka",
+        "Sweden" : "Sweden",
+        "Switzerland" : "Switzerland",
+        "Suriname" : "Suriname",
+        "Thailand" : "Thailand",
+        "Togo" : "Togo",
+        "Tunisia" : "Tunisia",
+        "Turkey" : "Turkey",
+        "Ukraine" : "Ukraine",
+        "Uruguay" : "Uruguay",
+        "Venezuela" : "Venezuela"
+      }
+    }
+  }
+}

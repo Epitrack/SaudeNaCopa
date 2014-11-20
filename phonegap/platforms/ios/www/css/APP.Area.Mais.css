@@ -1,0 +1,714 @@
+/**
+ *  Barras
+ */
+/**
+ *  Área Acesso e Apresentação
+ */
+/**
+ *  Área Acesso
+ */
+/**
+ *  Área Sentimento
+ */
+/* line 9, ../scss/APP.Area.Mais.scss */
+#area_mais {
+  color: #6d6e70;
+}
+/* line 11, ../scss/APP.Area.Mais.scss */
+#area_mais h1, #area_mais h2 {
+  text-transform: uppercase;
+  color: #76aadb;
+  font-size: 1.422em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+/* line 19, ../scss/APP.Area.Mais.scss */
+#area_mais ul.listaMenu {
+  margin-top: 1em;
+  font-size: 1.422em;
+}
+/* line 22, ../scss/APP.Area.Mais.scss */
+#area_mais ul.listaMenu li {
+  color: #6d6e70;
+  line-height: 50px;
+  border-bottom: 1px solid #aeaeb3;
+}
+/* line 27, ../scss/APP.Area.Mais.scss */
+#area_mais ul.listaMenu li:last-child {
+  border-bottom: none;
+}
+/* line 33, ../scss/APP.Area.Mais.scss */
+#area_mais ul.listaMenu.multiLinha li {
+  display: table;
+  width: 100%;
+  line-height: normal;
+  min-height: 50px;
+}
+/* line 39, ../scss/APP.Area.Mais.scss */
+#area_mais ul.listaMenu.multiLinha .celula {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 1em 30px 1em 0;
+}
+
+/* line 51, ../scss/APP.Area.Mais.scss */
+#tela_mais #conteudo_mais {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e4eef4), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(#e4eef4, #ffffff);
+  background-image: -moz-linear-gradient(#e4eef4, #ffffff);
+  background-image: -o-linear-gradient(#e4eef4, #ffffff);
+  background-image: linear-gradient(#e4eef4, #ffffff);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 40px 0 40px 0;
+  width: auto;
+  height: auto;
+}
+/* line 56, ../scss/APP.Area.Mais.scss */
+.isphone #tela_mais #conteudo_mais {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 60px 0 40px 0;
+  width: auto;
+  height: auto;
+}
+/* line 61, ../scss/APP.Area.Mais.scss */
+#tela_mais #twitter_minSaude {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 15px 20px 215px 20px;
+  width: auto;
+  height: auto;
+  border: 2px solid #15749e;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  border-radius: 25px;
+}
+/* line 62, ../scss/APP.Area.Mais.scss */
+.offline #tela_mais #twitter_minSaude {
+  display: none;
+}
+/* line 69, ../scss/APP.Area.Mais.scss */
+#tela_mais #twitter_minSaude .scroller {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 30px 0 18px 0;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+/* line 81, ../scss/APP.Area.Mais.scss */
+#tela_mais #twitter_minSaude legend {
+  position: relative;
+  margin: 0 auto;
+  width: 60px;
+  height: 30px;
+  background-image: url("../imagens/mais/mais/icone_twitter.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: auto 100%;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  background-size: auto 100%;
+}
+/* line 90, ../scss/APP.Area.Mais.scss */
+#tela_mais #twitter_minSaude #twits {
+  color: #006f9b;
+  padding: 0 20px;
+}
+/* line 95, ../scss/APP.Area.Mais.scss */
+#tela_mais #twitter_minSaude .twit {
+  padding: 0px 0 10px;
+  border-bottom: 1px solid #66a9c3;
+}
+/* line 98, ../scss/APP.Area.Mais.scss */
+#tela_mais #twitter_minSaude .twit:first-child {
+  padding-top: 0;
+}
+/* line 101, ../scss/APP.Area.Mais.scss */
+#tela_mais #twitter_minSaude .twit:last-child {
+  border-bottom: none;
+}
+/* line 105, ../scss/APP.Area.Mais.scss */
+#tela_mais #twitter_minSaude P {
+  margin: 0;
+  padding: 0;
+}
+/* line 109, ../scss/APP.Area.Mais.scss */
+#tela_mais #twitter_minSaude h1 {
+  font-size: 1.244em;
+  color: #006f9b;
+  font-weight: bold;
+}
+/* line 113, ../scss/APP.Area.Mais.scss */
+#tela_mais #twitter_minSaude h1 span {
+  font-weight: normal;
+  font-size: 0.89em;
+}
+/* line 120, ../scss/APP.Area.Mais.scss */
+#tela_mais #componente_springboard {
+  height: 165px;
+  width: 250px;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -125px;
+  z-index: 2;
+}
+/* line 128, ../scss/APP.Area.Mais.scss */
+#tela_mais #componente_springboard a {
+  width: 80px;
+  height: 80px;
+  display: block;
+  position: absolute;
+  color: #006f9b;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f2f7fa), color-stop(100%, #d6e5ef));
+  background-image: -webkit-linear-gradient(#f2f7fa, #d6e5ef);
+  background-image: -moz-linear-gradient(#f2f7fa, #d6e5ef);
+  background-image: -o-linear-gradient(#f2f7fa, #d6e5ef);
+  background-image: linear-gradient(#f2f7fa, #d6e5ef);
+}
+/* line 135, ../scss/APP.Area.Mais.scss */
+#tela_mais #componente_springboard a::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-position: top center !important;
+}
+/* line 146, ../scss/APP.Area.Mais.scss */
+#tela_mais #componente_springboard a:nth-child(-1n+3) {
+  top: 0;
+}
+/* line 150, ../scss/APP.Area.Mais.scss */
+#tela_mais #componente_springboard a:nth-child(3n+1) {
+  left: 0;
+}
+/* line 153, ../scss/APP.Area.Mais.scss */
+#tela_mais #componente_springboard a:nth-child(3n) {
+  right: 0;
+}
+/* line 156, ../scss/APP.Area.Mais.scss */
+#tela_mais #componente_springboard a:nth-child(n+4) {
+  bottom: 0;
+}
+/* line 159, ../scss/APP.Area.Mais.scss */
+#tela_mais #componente_springboard a:nth-child(-3n+5) {
+  left: 50%;
+  margin-left: -40px;
+}
+/* line 166, ../scss/APP.Area.Mais.scss */
+#tela_mais #componente_springboard a.itensDoJogo::before {
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 58px 57px;
+  -moz-background-size: 58px 57px;
+  -o-background-size: 58px 57px;
+  background-size: 58px 57px;
+  background-image: url("../imagens/mais/mais/icone_itensDoJogo.png");
+}
+/* line 166, ../scss/APP.Area.Mais.scss */
+#tela_mais #componente_springboard a.acesseOSite::before {
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 58.5px 58px;
+  -moz-background-size: 58.5px 58px;
+  -o-background-size: 58.5px 58px;
+  background-size: 58.5px 58px;
+  background-image: url("../imagens/mais/mais/icone_acesseOSite.png");
+}
+/* line 166, ../scss/APP.Area.Mais.scss */
+#tela_mais #componente_springboard a.categorias::before {
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 48px 58px;
+  -moz-background-size: 48px 58px;
+  -o-background-size: 48px 58px;
+  background-size: 48px 58px;
+  background-image: url("../imagens/mais/mais/icone_categorias.png");
+}
+/* line 166, ../scss/APP.Area.Mais.scss */
+#tela_mais #componente_springboard a.linksUteis::before {
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 69px 58px;
+  -moz-background-size: 69px 58px;
+  -o-background-size: 69px 58px;
+  background-size: 69px 58px;
+  background-image: url("../imagens/mais/mais/icone_linksUteis.png");
+}
+/* line 166, ../scss/APP.Area.Mais.scss */
+#tela_mais #componente_springboard a.malaLegal::before {
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 63.5px 55.5px;
+  -moz-background-size: 63.5px 55.5px;
+  -o-background-size: 63.5px 55.5px;
+  background-size: 63.5px 55.5px;
+  background-image: url("../imagens/mais/mais/icone_malaLegal.png");
+}
+/* line 166, ../scss/APP.Area.Mais.scss */
+#tela_mais #componente_springboard a.consulados::before {
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 47px 57px;
+  -moz-background-size: 47px 57px;
+  -o-background-size: 47px 57px;
+  background-size: 47px 57px;
+  background-image: url("../imagens/mais/mais/icone_consulados.png");
+}
+/* line 179, ../scss/APP.Area.Mais.scss */
+#tela_mais #componente_springboard a span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: 7px;
+  text-align: center;
+}
+
+/* line 192, ../scss/APP.Area.Mais.scss */
+#tela_itensDoJogo {
+  font-size: 1.244em;
+}
+/* line 194, ../scss/APP.Area.Mais.scss */
+#tela_itensDoJogo article {
+  position: relative;
+  padding: 20px 0  20px 80px;
+  min-height: 106px;
+  border-bottom: 1px solid #aeaeb3;
+}
+/* line 199, ../scss/APP.Area.Mais.scss */
+#tela_itensDoJogo article:last-child {
+  border-bottom: none;
+}
+/* line 203, ../scss/APP.Area.Mais.scss */
+#tela_itensDoJogo .icone {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 20px;
+  background-position: top center !important;
+}
+/* line 210, ../scss/APP.Area.Mais.scss */
+#tela_itensDoJogo .icone.selecao {
+  width: 67px;
+  height: 76px;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 50px 59px;
+  -moz-background-size: 50px 59px;
+  -o-background-size: 50px 59px;
+  background-size: 50px 59px;
+  background-image: url("../imagens/mais/itensDoJogo/icone_selecao.png");
+}
+/* line 210, ../scss/APP.Area.Mais.scss */
+#tela_itensDoJogo .icone.ok {
+  width: 67px;
+  height: 76px;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 27px 27px;
+  -moz-background-size: 27px 27px;
+  -o-background-size: 27px 27px;
+  background-size: 27px 27px;
+  background-image: url("../imagens/mais/itensDoJogo/icone_ok.png");
+}
+/* line 210, ../scss/APP.Area.Mais.scss */
+#tela_itensDoJogo .icone.categoria {
+  width: 67px;
+  height: 76px;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 54.5px 12px;
+  -moz-background-size: 54.5px 12px;
+  -o-background-size: 54.5px 12px;
+  background-size: 54.5px 12px;
+  background-image: url("../imagens/mais/itensDoJogo/icone_categoria.png");
+}
+/* line 210, ../scss/APP.Area.Mais.scss */
+#tela_itensDoJogo .icone.arena {
+  width: 67px;
+  height: 76px;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 67px 25px;
+  -moz-background-size: 67px 25px;
+  -o-background-size: 67px 25px;
+  background-size: 67px 25px;
+  background-image: url("../imagens/mais/itensDoJogo/icone_arena.png");
+}
+/* line 210, ../scss/APP.Area.Mais.scss */
+#tela_itensDoJogo .icone.barraDeEngajamento {
+  width: 67px;
+  height: 76px;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 6px 76.5px;
+  -moz-background-size: 6px 76.5px;
+  -o-background-size: 6px 76.5px;
+  background-size: 6px 76.5px;
+  background-image: url("../imagens/mais/itensDoJogo/icone_barraDeEngajamento.png");
+}
+/* line 210, ../scss/APP.Area.Mais.scss */
+#tela_itensDoJogo .icone.pontos {
+  width: 67px;
+  height: 76px;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 38.5px 37px;
+  -moz-background-size: 38.5px 37px;
+  -o-background-size: 38.5px 37px;
+  background-size: 38.5px 37px;
+  background-image: url("../imagens/mais/itensDoJogo/icone_pontos.png");
+}
+
+/* line 237, ../scss/APP.Area.Mais.scss */
+#tela_categorias {
+  color: #717175;
+}
+/* line 242, ../scss/APP.Area.Mais.scss */
+#tela_categorias #componente_categoriaDoUsuario {
+  padding-top: 20px;
+  height: 80px;
+  position: relative;
+}
+/* line 253, ../scss/APP.Area.Mais.scss */
+#tela_categorias #componente_categoriaDoUsuario .icone.categoria {
+  height: 0;
+  padding-top: 50%;
+  width: 100%;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 80% auto;
+  -moz-background-size: 80% auto;
+  -o-background-size: 80% auto;
+  background-size: 80% auto;
+  background-position: left center;
+}
+/* line 263, ../scss/APP.Area.Mais.scss */
+.pt #tela_categorias #componente_categoriaDoUsuario[data-categoria='denteDeLeite'] .icone.categoria {
+  background-image: url("../imagens/mais/categoriasMais/pt/denteDeLeite.png");
+}
+/* line 266, ../scss/APP.Area.Mais.scss */
+.pt #tela_categorias #componente_categoriaDoUsuario[data-categoria='mirim'] .icone.categoria {
+  background-image: url("../imagens/mais/categoriasMais/pt/mirim.png");
+}
+/* line 269, ../scss/APP.Area.Mais.scss */
+.pt #tela_categorias #componente_categoriaDoUsuario[data-categoria='infantil'] .icone.categoria {
+  background-image: url("../imagens/mais/categoriasMais/pt/infantil.png");
+}
+/* line 272, ../scss/APP.Area.Mais.scss */
+.pt #tela_categorias #componente_categoriaDoUsuario[data-categoria='juvenil'] .icone.categoria {
+  background-image: url("../imagens/mais/categoriasMais/pt/juvenil.png");
+}
+/* line 275, ../scss/APP.Area.Mais.scss */
+.pt #tela_categorias #componente_categoriaDoUsuario[data-categoria='junior'] .icone.categoria {
+  background-image: url("../imagens/mais/categoriasMais/pt/junior.png");
+}
+/* line 278, ../scss/APP.Area.Mais.scss */
+.pt #tela_categorias #componente_categoriaDoUsuario[data-categoria='profissional'] .icone.categoria {
+  background-image: url("../imagens/mais/categoriasMais/pt/profissional.png");
+}
+/* line 263, ../scss/APP.Area.Mais.scss */
+.es #tela_categorias #componente_categoriaDoUsuario[data-categoria='denteDeLeite'] .icone.categoria {
+  background-image: url("../imagens/mais/categoriasMais/es/denteDeLeite.png");
+}
+/* line 266, ../scss/APP.Area.Mais.scss */
+.es #tela_categorias #componente_categoriaDoUsuario[data-categoria='mirim'] .icone.categoria {
+  background-image: url("../imagens/mais/categoriasMais/es/mirim.png");
+}
+/* line 269, ../scss/APP.Area.Mais.scss */
+.es #tela_categorias #componente_categoriaDoUsuario[data-categoria='infantil'] .icone.categoria {
+  background-image: url("../imagens/mais/categoriasMais/es/infantil.png");
+}
+/* line 272, ../scss/APP.Area.Mais.scss */
+.es #tela_categorias #componente_categoriaDoUsuario[data-categoria='juvenil'] .icone.categoria {
+  background-image: url("../imagens/mais/categoriasMais/es/juvenil.png");
+}
+/* line 275, ../scss/APP.Area.Mais.scss */
+.es #tela_categorias #componente_categoriaDoUsuario[data-categoria='junior'] .icone.categoria {
+  background-image: url("../imagens/mais/categoriasMais/es/junior.png");
+}
+/* line 278, ../scss/APP.Area.Mais.scss */
+.es #tela_categorias #componente_categoriaDoUsuario[data-categoria='profissional'] .icone.categoria {
+  background-image: url("../imagens/mais/categoriasMais/es/profissional.png");
+}
+/* line 263, ../scss/APP.Area.Mais.scss */
+.en #tela_categorias #componente_categoriaDoUsuario[data-categoria='denteDeLeite'] .icone.categoria {
+  background-image: url("../imagens/mais/categoriasMais/en/denteDeLeite.png");
+}
+/* line 266, ../scss/APP.Area.Mais.scss */
+.en #tela_categorias #componente_categoriaDoUsuario[data-categoria='mirim'] .icone.categoria {
+  background-image: url("../imagens/mais/categoriasMais/en/mirim.png");
+}
+/* line 269, ../scss/APP.Area.Mais.scss */
+.en #tela_categorias #componente_categoriaDoUsuario[data-categoria='infantil'] .icone.categoria {
+  background-image: url("../imagens/mais/categoriasMais/en/infantil.png");
+}
+/* line 272, ../scss/APP.Area.Mais.scss */
+.en #tela_categorias #componente_categoriaDoUsuario[data-categoria='juvenil'] .icone.categoria {
+  background-image: url("../imagens/mais/categoriasMais/en/juvenil.png");
+}
+/* line 275, ../scss/APP.Area.Mais.scss */
+.en #tela_categorias #componente_categoriaDoUsuario[data-categoria='junior'] .icone.categoria {
+  background-image: url("../imagens/mais/categoriasMais/en/junior.png");
+}
+/* line 278, ../scss/APP.Area.Mais.scss */
+.en #tela_categorias #componente_categoriaDoUsuario[data-categoria='profissional'] .icone.categoria {
+  background-image: url("../imagens/mais/categoriasMais/en/profissional.png");
+}
+/* line 286, ../scss/APP.Area.Mais.scss */
+#tela_categorias #componente_categoriaDoUsuario .icone.trofeu {
+  width: 68px;
+  height: 68px;
+  position: absolute;
+  top: 6px;
+  right: 0;
+}
+/* line 295, ../scss/APP.Area.Mais.scss */
+#tela_categorias #componente_categoriaDoUsuario[data-categoria='denteDeLeite'] .icone.trofeu {
+  background-image: url("../imagens/sentimento/torcedor/categorias/denteDeLeite/trofeu.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 54px 54px;
+  -moz-background-size: 54px 54px;
+  -o-background-size: 54px 54px;
+  background-size: 54px 54px;
+}
+/* line 299, ../scss/APP.Area.Mais.scss */
+#tela_categorias #componente_categoriaDoUsuario[data-categoria='mirim'] .icone.trofeu {
+  background-image: url("../imagens/sentimento/torcedor/categorias/mirim/trofeu.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 54px 54px;
+  -moz-background-size: 54px 54px;
+  -o-background-size: 54px 54px;
+  background-size: 54px 54px;
+}
+/* line 303, ../scss/APP.Area.Mais.scss */
+#tela_categorias #componente_categoriaDoUsuario[data-categoria='infantil'] .icone.trofeu {
+  background-image: url("../imagens/sentimento/torcedor/categorias/infantil/trofeu.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 54px 55px;
+  -moz-background-size: 54px 55px;
+  -o-background-size: 54px 55px;
+  background-size: 54px 55px;
+}
+/* line 307, ../scss/APP.Area.Mais.scss */
+#tela_categorias #componente_categoriaDoUsuario[data-categoria='juvenil'] .icone.trofeu {
+  background-image: url("../imagens/sentimento/torcedor/categorias/juvenil/trofeu.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 68px 59px;
+  -moz-background-size: 68px 59px;
+  -o-background-size: 68px 59px;
+  background-size: 68px 59px;
+}
+/* line 311, ../scss/APP.Area.Mais.scss */
+#tela_categorias #componente_categoriaDoUsuario[data-categoria='junior'] .icone.trofeu {
+  background-image: url("../imagens/sentimento/torcedor/categorias/junior/trofeu.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 54px 54px;
+  -moz-background-size: 54px 54px;
+  -o-background-size: 54px 54px;
+  background-size: 54px 54px;
+}
+/* line 315, ../scss/APP.Area.Mais.scss */
+#tela_categorias #componente_categoriaDoUsuario[data-categoria='profissional'] .icone.trofeu {
+  background-image: url("../imagens/sentimento/torcedor/categorias/profissional/trofeu.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 54px 52px;
+  -moz-background-size: 54px 52px;
+  -o-background-size: 54px 52px;
+  background-size: 54px 52px;
+}
+/* line 321, ../scss/APP.Area.Mais.scss */
+#tela_categorias .introducao {
+  font-size: 1.244em;
+  margin-top: 2em;
+}
+/* line 325, ../scss/APP.Area.Mais.scss */
+#tela_categorias article.categoria {
+  padding: 10px 0 10px 78px;
+  border-bottom: 1px solid #aeaeb3;
+  min-height: 68px;
+  position: relative;
+}
+/* line 331, ../scss/APP.Area.Mais.scss */
+#tela_categorias article.categoria:nth-child(2) {
+  border-top: 1px solid #aeaeb3;
+}
+/* line 335, ../scss/APP.Area.Mais.scss */
+#tela_categorias article.categoria:last-child {
+  border-bottom: none;
+}
+/* line 339, ../scss/APP.Area.Mais.scss */
+#tela_categorias article.categoria h1 {
+  font-size: 1.067em;
+  color: #717175;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 345, ../scss/APP.Area.Mais.scss */
+#tela_categorias article.categoria p {
+  margin: 0;
+  font-size: 1.067em;
+}
+/* line 351, ../scss/APP.Area.Mais.scss */
+#tela_categorias article.categoria::before {
+  background-position: center;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 68px;
+  height: 68px;
+}
+/* line 361, ../scss/APP.Area.Mais.scss */
+#tela_categorias article.categoria#categoria_denteDeLeite::before {
+  background-image: url("../imagens/sentimento/torcedor/categorias/denteDeLeite/trofeu.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 54px 54px;
+  -moz-background-size: 54px 54px;
+  -o-background-size: 54px 54px;
+  background-size: 54px 54px;
+}
+/* line 365, ../scss/APP.Area.Mais.scss */
+#tela_categorias article.categoria#categoria_mirim::before {
+  background-image: url("../imagens/sentimento/torcedor/categorias/mirim/trofeu.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 54px 54px;
+  -moz-background-size: 54px 54px;
+  -o-background-size: 54px 54px;
+  background-size: 54px 54px;
+}
+/* line 369, ../scss/APP.Area.Mais.scss */
+#tela_categorias article.categoria#categoria_infantil::before {
+  background-image: url("../imagens/sentimento/torcedor/categorias/infantil/trofeu.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 54px 55px;
+  -moz-background-size: 54px 55px;
+  -o-background-size: 54px 55px;
+  background-size: 54px 55px;
+}
+/* line 373, ../scss/APP.Area.Mais.scss */
+#tela_categorias article.categoria#categoria_juvenil::before {
+  background-image: url("../imagens/sentimento/torcedor/categorias/juvenil/trofeu.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 68px 59px;
+  -moz-background-size: 68px 59px;
+  -o-background-size: 68px 59px;
+  background-size: 68px 59px;
+}
+/* line 377, ../scss/APP.Area.Mais.scss */
+#tela_categorias article.categoria#categoria_junior::before {
+  background-image: url("../imagens/sentimento/torcedor/categorias/junior/trofeu.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 54px 54px;
+  -moz-background-size: 54px 54px;
+  -o-background-size: 54px 54px;
+  background-size: 54px 54px;
+}
+/* line 381, ../scss/APP.Area.Mais.scss */
+#tela_categorias article.categoria#categoria_profissional::before {
+  background-image: url("../imagens/sentimento/torcedor/categorias/profissional/trofeu.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 54px 52px;
+  -moz-background-size: 54px 52px;
+  -o-background-size: 54px 52px;
+  background-size: 54px 52px;
+}
+
+/* line 388, ../scss/APP.Area.Mais.scss */
+#tela_linksUteis ul {
+  margin-bottom: 1em;
+}
+/* line 392, ../scss/APP.Area.Mais.scss */
+#tela_linksUteis a {
+  color: #717175;
+}
+
+/* line 396, ../scss/APP.Area.Mais.scss */
+#tela_malaLegal {
+  font-size: 1.422em;
+}
+/* line 399, ../scss/APP.Area.Mais.scss */
+#tela_malaLegal p {
+  font-size: 1.422em;
+  padding: 2em 0;
+}
+/* line 405, ../scss/APP.Area.Mais.scss */
+#tela_malaLegal ul ul {
+  padding-left: 2em;
+}
+/* line 409, ../scss/APP.Area.Mais.scss */
+#tela_malaLegal ul li {
+  list-style-position: outside;
+  list-style-type: disc;
+  margin-bottom: 1em;
+  display: list-item;
+}
+/* line 415, ../scss/APP.Area.Mais.scss */
+#tela_malaLegal ul li:last-child {
+  list-style-type: none;
+}
+/* line 419, ../scss/APP.Area.Mais.scss */
+#tela_malaLegal ul li li, #tela_malaLegal ul li li:last-child {
+  list-style-type: circle;
+}
+
+/* line 425, ../scss/APP.Area.Mais.scss */
+#tela_consulados {
+  color: #6d6e70;
+}
+
+/* line 428, ../scss/APP.Area.Mais.scss */
+#tela_consulado {
+  color: #6d6e70;
+}
+/* line 431, ../scss/APP.Area.Mais.scss */
+#tela_consulado h1, #tela_consulado h2 {
+  text-transform: uppercase;
+  color: #4cb6dd;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+/* line 437, ../scss/APP.Area.Mais.scss */
+#tela_consulado h1 {
+  font-size: 1.6em;
+  font-weight: bold;
+}
+/* line 441, ../scss/APP.Area.Mais.scss */
+#tela_consulado h2 {
+  font-size: 1.2em;
+}
+/* line 444, ../scss/APP.Area.Mais.scss */
+#tela_consulado p {
+  font-size: 1.422em;
+}
