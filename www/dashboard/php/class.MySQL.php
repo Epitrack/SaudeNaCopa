@@ -29,35 +29,10 @@ class MySQL {
 	var $aArrayedResult;			// Holds a single 'arrayed' result
 	var $aArrayedResults;			// Holds multiple 'arrayed' results (usually with a set key)
 	
-	//var $sHostname = 'db.venice.denniscalazans.com';	// MySQL Hostname
-	//var $sUsername = 'dbvenicepe';	// MySQL Username
-	//var $sPassword = 'Venice@PE123';	// MySQL Password
-	//var $sDatabase = 'db_venicepe';	// MySQL Database
-	//var $sDBLink;			// Database Connection Link
-	
-	//novo
-//$db['host'] = "mysql.epitrack.com.br";
-//$db['user'] = "epitrackcombr";
-//$db['pass'] = "r7xD-Yin";
-//$db['name'] = "_venice";
-	
-	//var $sHostname = 'mysql.saudenacopa.epitrack.com.br';	// MySQL Hostname
-	//var $sUsername = 'saudebacopadb';	// MySQL Username
-	//var $sPassword = 'appcopa2014';	// MySQL Password
-
-	//var $sDatabase = 'saudenacopa';	// MySQL Database
-	
-	var $sHostname = 'mysql.saudenacopa.com';	// MySQL Hostname
-	var $sUsername = 'bd_saudecopa';	// MySQL Username
-	var $sPassword = 'appcopa2014';	// MySQL Password
-
-	var $sDatabase = 'saude_na_copa';	// MySQL Database
-	
-	//var $sHostname = 'localhost';	// MySQL Hostname
-	//var $sUsername = 'root';	// MySQL Username
-	//var $sPassword = 'root';	// MySQL Password
-
-	//var $sDatabase = 'saudanacopa_db';	// MySQL Database
+	var $sHostname = 'localhost';	// MySQL Hostname
+	var $sUsername = 'root';	// MySQL Username
+	var $sPassword = 'root';	// MySQL Password
+	var $sDatabase = 'saudanacopa_db';	// MySQL Database
 	
 	var $sDBLink;			// Database Connection Link
 	
