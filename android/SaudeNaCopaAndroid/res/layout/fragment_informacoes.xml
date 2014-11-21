@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.epitrack.healthycup.InformacoesActivity$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/bandeira_amarelo"
+        android:gravity="center"
+        android:text="@string/informacoes"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/transparent"
+        android:onClick="sair"
+        android:src="@drawable/botao_voltar" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTwitterNomeApresentacao"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:alpha="0.4"
+        android:src="@drawable/imagem_informacoes" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/linha" />
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/linha" />
+
+    <ImageView
+        android:id="@+id/ImageView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ImageView01"
+        android:layout_below="@+id/ImageView01"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/linha" />
+
+    <ImageView
+        android:id="@+id/ImageView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ImageView02"
+        android:layout_below="@+id/ImageView02"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/linha" />
+
+    <ImageView
+        android:id="@+id/ImageView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ImageView03"
+        android:layout_below="@+id/ImageView03"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/linha" />
+
+    <Button
+        android:id="@+id/btnItensJogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ImageView01"
+        android:layout_alignRight="@+id/ImageView01"
+        android:layout_below="@+id/imageView2"
+        android:background="@color/transparent"
+        android:drawableLeft="@drawable/icone_itensjogo"
+        android:drawablePadding="20dp"
+        android:gravity="left|center_vertical"
+        android:onClick="abreFragment"
+        android:text="@string/itens_jogo"
+        android:textColor="@color/cinza_texbox" />
+
+    <Button
+        android:id="@+id/btnCategorias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ImageView02"
+        android:layout_alignRight="@+id/ImageView02"
+        android:layout_alignTop="@+id/ImageView02"
+        android:background="@color/transparent"
+        android:drawableLeft="@drawable/icone_categorias"
+        android:drawablePadding="20dp"
+        android:gravity="left|center_vertical"
+        android:onClick="abreFragment"
+        android:text="@string/categorias"
+        android:textColor="@color/cinza_texbox" />
+
+    <Button
+        android:id="@+id/btnSair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ImageView04"
+        android:layout_alignRight="@+id/ImageView04"
+        android:layout_below="@+id/ImageView03"
+        android:background="@color/transparent"
+        android:drawableLeft="@drawable/icone_sair"
+        android:drawablePadding="20dp"
+        android:gravity="left|center_vertical"
+        android:onClick="sair"
+        android:text="@string/sair"
+        android:textColor="@color/cinza_texbox" />
+
+    <Button
+        android:id="@+id/btnArenas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnCategorias"
+        android:layout_alignLeft="@+id/ImageView01"
+        android:layout_alignRight="@+id/ImageView01"
+        android:background="@color/transparent"
+        android:drawableLeft="@drawable/icone_arenas"
+        android:drawablePadding="8dp"
+        android:gravity="left|center_vertical"
+        android:onClick="abreFragment"
+        android:text="@string/arenas"
+        android:textColor="@color/cinza_texbox" />
+
+</RelativeLayout>

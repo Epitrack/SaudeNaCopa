@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="br.com.epitrack.healthycup.SentimentoActivity"
+    tools:ignore="MergeRootFrame" >
+
+<RelativeLayout
+    android:id="@+id/llTopo"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="@color/azul_saude"
+    android:gravity="center" >
+
+        <TextView
+            android:id="@+id/barra_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/saude"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/imgInfo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:onClick="abreItensJogo"
+            android:src="@drawable/informacoes"
+            android:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btnCalendario"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:onClick="abreCalendario"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ico_calendario" />
+
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/menuBottom"
+		android:layout_below="@+id/llTopo">
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/menuBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/cinzafundo"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/menu_item_jogador"
+            style="@style/imagensMenu"
+            android:layout_weight="1"
+            android:onClick="abreFragment"
+            android:src="@drawable/icone_jogador_on" />
+
+        <ImageView
+            android:id="@+id/menu_item_saude"
+            style="@style/imagensMenu"
+            android:layout_weight="1"
+            android:onClick="abreFragment"
+            android:src="@drawable/icone_saude_off" />
+
+        <ImageView
+            android:id="@+id/menu_item_jogos"
+            style="@style/imagensMenu"
+            android:layout_weight="1"
+            android:onClick="abreFragment"
+            android:src="@drawable/icone_jogos_cinza" />
+
+        <ImageView
+            android:id="@+id/menu_item_turismo"
+            style="@style/imagensMenu"
+            android:layout_weight="1"
+            android:onClick="abreFragment"
+            android:src="@drawable/ico_mais_off" />
+
+        <ImageView
+            android:id="@+id/menu_outrasopcoes"
+            style="@style/imagensMenu"
+            android:layout_weight="1"
+            android:onClick="abreFragment"
+            android:src="@drawable/ico_opcoes" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_outrasopcoes"
+        android:layout_width="260dp"
+        android:layout_height="180dp"
+        android:layout_above="@+id/menuBottom"
+        android:layout_alignParentRight="true"
+        android:background="@color/cinzafundo"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <Button
+            android:id="@+id/menu_item_denunciar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/cinzafundo"
+            android:gravity="left"
+            android:onClick="abreFragment"
+            android:text="@string/denunciar_problema" />
+
+        <Button
+            android:id="@+id/menu_item_termos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/cinzafundo"
+            android:gravity="left"
+            android:onClick="abreFragment"
+            android:text="@string/termos_politicas" />
+
+        <Button
+            android:id="@+id/menu_item_sobre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/cinzafundo"
+            android:gravity="left"
+            android:onClick="abreFragment"
+            android:text="@string/sobre" />
+
+        <Button
+            android:id="@+id/menu_item_sair"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/cinzafundo"
+            android:gravity="left"
+            android:onClick="abreFragment"
+            android:text="@string/sair" />
+
+    </LinearLayout>
+
+</RelativeLayout>

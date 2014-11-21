@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical" >
+
+    <ScrollView
+        android:id="@+id/rlLembretes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/botoesIniciais"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnCuidadosBasico"
+                style="@style/btnTelaSaude"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="30dp"
+                android:drawableLeft="@drawable/ico_saude"
+                android:drawablePadding="10dp"
+                android:onClick="abreTextos"
+                android:text="@string/higiene" />
+
+            <ImageView
+                android:id="@+id/ImageView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:src="@drawable/linha" />
+
+            <Button
+                android:id="@+id/btnVacinas"
+                style="@style/btnTelaSaude"
+                android:drawableLeft="@drawable/ico_vacinas"
+                android:drawablePadding="5dp"
+                android:onClick="abreTextos"
+                android:text="@string/vacinas" />
+
+            <ImageView
+                android:id="@+id/ImageView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:src="@drawable/linha" />
+
+            <Button
+                android:id="@+id/btnPrevencaoDoencas"
+                style="@style/btnTelaSaude"
+                android:layout_marginRight="5dp"
+                android:drawableLeft="@drawable/ico_prev_doencas"
+                android:drawablePadding="10dp"
+                android:onClick="abreTextos"
+                android:text="@string/prevencao_doecas" />
+
+            <ImageView
+                android:id="@+id/ImageView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:src="@drawable/linha" />
+
+            <Button
+                android:id="@+id/btnPrevencaoAcidentes"
+                style="@style/btnTelaSaude"
+                android:layout_marginRight="5dp"
+                android:drawableLeft="@drawable/ico_prev_acidentes"
+                android:drawablePadding="15dp"
+                android:onClick="abreTextos"
+                android:text="@string/prevencao_acidentes"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/ImageView08"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:src="@drawable/linha" />
+
+            <Button
+                android:id="@+id/btnPrevencaoViolencia"
+                style="@style/btnTelaSaude"
+                android:layout_marginRight="5dp"
+                android:drawableLeft="@drawable/ico_prev_violencia"
+                android:drawablePadding="10dp"
+                android:onClick="abreTextos"
+                android:text="@string/prevencao_violencia"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/ImageView04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:src="@drawable/linha" />
+
+            <Button
+                android:id="@+id/btnUrgencia"
+                style="@style/btnTelaSaude"
+                android:drawableLeft="@drawable/ico_samu"
+                android:drawablePadding="5dp"
+                android:onClick="abreTextos"
+                android:text="@string/urgencia_emergencias" />
+
+            <ImageView
+                android:id="@+id/ImageView07"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:src="@drawable/linha" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/btnTelaSaude"
+                android:drawableLeft="@drawable/ico_tel"
+                android:drawablePadding="15dp"
+                android:onClick="abreTelefones"
+                android:text="@string/telefones_uteis" />
+
+            <ImageView
+                android:id="@+id/ImageView09"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:src="@drawable/linha" />
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/btnTelaSaude"
+                android:drawableLeft="@drawable/ico_hospitais"
+                android:drawablePadding="6dp"
+                android:onClick="abreHospitais"
+                android:text="@string/hospitais_ref" />
+
+            <ImageView
+                android:id="@+id/ImageView05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:src="@drawable/linha" />
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/btnTelaSaude"
+                android:drawableLeft="@drawable/ico_farmacia"
+                android:drawablePadding="5dp"
+                android:onClick="abreFarmacias"
+                android:text="@string/farmacias" />
+
+            <ImageView
+                android:id="@+id/ImageView06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:src="@drawable/linha" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

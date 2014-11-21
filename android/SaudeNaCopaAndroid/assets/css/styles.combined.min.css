@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+
+.titulo{
+	color: #6cb6d9;
+	font-size: 20px;
+	padding-left: 20px;
+}
+.texto{
+	color: #717175;
+	font-size: 18px;
+	padding-top: 10px;
+}
+
