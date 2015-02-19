@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ico_jogos_bola" />
+
+    <LinearLayout
+        android:id="@+id/botoesIniciais"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="35dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnVacinas"
+            style="@style/btnTelaSaude"
+            android:drawableLeft="@drawable/ico_calendario_jogos"
+            android:drawablePadding="5dp"
+            android:onClick="abreCalendarioJogos"
+            android:text="@string/calendario_jogos" />
+
+        <ImageView
+            android:id="@+id/ImageView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+            android:src="@drawable/linha" />
+
+        <Button
+            android:id="@+id/btnArenas"
+            style="@style/btnTelaSaude"
+            android:drawableLeft="@drawable/ico_jogos_arena"
+            android:drawablePadding="5dp"
+            android:onClick="abreArenas"
+            android:text="@string/arenas" />
+
+        <ImageView
+            android:id="@+id/ImageView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+            android:src="@drawable/linha" />
+    </LinearLayout>
+
+</RelativeLayout>

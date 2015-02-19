@@ -1,0 +1,2100 @@
+<!doctype html>
+<!-- <html lang="pt" manifest="manifest.php"> -->
+<html lang="pt">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="apple-touch-icon" href="imagens/webapp/icon-60.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="imagens/webapp/icon-76.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="imagens/webapp/icon-60@2x.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="imagens/webapp/icon-76@2x.png">
+	<!-- iPhone 5 -->
+	<link href="imagens/webapp/Default-568h@2x_iphone.png"
+	      media="(device-width: 320px) and (device-height: 568px)
+	         and (-webkit-device-pixel-ratio: 2)"
+	      rel="apple-touch-startup-image">
+	<!-- iPhone, retina -->
+	<link href="imagens/webapp/Default@2x_iphone.png"
+	      media="(device-width: 320px) and (device-height: 480px)
+	         and (-webkit-device-pixel-ratio: 2)"
+	      rel="apple-touch-startup-image">
+	<!-- iPhone -->
+	<link href="imagens/webapp/Default_iphone.png"
+	      media="(device-width: 320px) and (device-height: 480px)
+	         and (-webkit-device-pixel-ratio: 1)"
+	      rel="apple-touch-startup-image">
+
+
+	<title>Saúde na copa</title>
+	<link rel="stylesheet" href="bibliotecas/bootstrap/css/bootstrap.css">
+<!-- 	<link rel="stylesheet" href="bibliotecas/jquery-mobile/jquery.mobile.custom.structure.min.css">
+	<link rel="stylesheet" href="bibliotecas/jquery-mobile/jquery.mobile.custom.theme.min.css"> -->
+	<link rel="stylesheet" href="css/APP.css">
+	<script>
+		/**
+		 * CONTROLE DE CACHE
+		 */
+		window.addEventListener('load', function(e) {
+			// Checa se um novo cache está disponível para o WebApp
+			window.applicationCache.addEventListener('updateready', function(e) {
+				if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
+
+					//Faz o download do novo cache e remove o antigo
+					window.applicationCache.swapCache();
+					window.location.reload();
+				}
+			}, false)
+			
+		}, false);
+
+		window.gaWebApp = false;
+		window.isphone = false;
+		if (document.URL.indexOf(":3000") !== -1 || document.URL.indexOf("http://") === -1 && document.URL.indexOf("https://") === -1) {
+			window.isphone = true;
+		}
+
+		
+		if (window.isphone === true) {
+			var head = document.getElementsByTagName('head')[0];
+			var scriptCordova = document.createElement("script");
+			scriptCordova.src = "cordova.js";
+
+			var scriptPushNotification = document.createElement("script");
+			scriptPushNotification.src = "js/PushNotification.js";
+
+			head.appendChild(scriptCordova);
+			head.appendChild(scriptPushNotification);
+
+			window.alert = function(mensagem) {
+				var titulo = "Saúde Na Copa";
+				var idTelaAtual = APP.GerenciadorDeTelas._idTelaAtual.replace("_", ".");
+				if (idTelaAtual) {
+					titulo = i18n.t(idTelaAtual);
+				}
+
+				navigator.notification.alert(mensagem, function() {}, titulo, "OK");
+			}
+		} else {
+			  if(navigator.onLine === true) {
+				  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+				  ga('create', 'UA-50378086-2', 'auto');
+				  ga('send', 'pageview');
+
+				  window.gaWebApp = true;
+			}
+		}
+	</script>
+	<script src="bibliotecas/js/head.min.js" data-headjs-load="js/init.js"></script>
+	<!-- 
+	<script src="http://192.168.0.15:8080/target/target-script-min.js#anonymous"></script> -->
+</head>
+
+<body style="display: none;">
+	<header id="barraDeTitulo" class="barra">
+		<h1>
+			<a class="botao voltar semTexto" href="#voltar">Voltar</a>
+			<a class="botao informacoes semTexto" href="#tela_itensDoJogo">Informações</a>
+			<span class="titulo">Como está se sentindo?</span>
+			<a class="botao avancar semTexto" href="#avancar">Avançar</a>
+		</h1>
+	</header>
+	<footer id="barraDeMenu" class="barra">
+		<nav>
+			<ul>
+				<li>
+					<a data-i18n="barra.menu.home" href="#tela_torcedor">Home</a>
+				</li>
+				<li>
+					<a data-i18n="barra.menu.saude" href="#tela_saude">Saúde</a>
+				</li>
+				<li>
+					<a data-i18n="barra.menu.jogos" href="#tela_jogos">Jogos</a>
+				</li>
+				<li>
+					<a data-i18n="barra.menu.mais" href="#tela_mais">Mais</a>
+				</li>
+				<li>
+					<a data-i18n="barra.menu.maisOpcoes" href="#tela_menu">Menu</a>
+				</li>
+				<!-- 	<li>
+				<ul>
+					<li><a data-i18n="barra.menu.denunciarUmProblema" href="#tela_denunciarUmProblema">Denunciar um problema</a></li>
+					<li><a data-i18n="barra.menu.termosDeUso" href="#tela_termosDeUso">Termos e políticas</a></li>
+					<li><a data-i18n="barra.menu.sobre" href="#tela_sobre">Sobre</a></li>
+					<li><a data-i18n="barra.menu.sair" href="#sair">Sair</a></li>
+				</ul>
+			</li> -->
+			</ul>
+		</nav>
+	</footer>
+	<div id="scroller">
+		<div id="app" class="container-fluid">
+
+			<!-- AREA -->
+			<section class="area" id="area_apresentacao">
+
+				<!-- TELA -->
+
+				<div class="tela" id="tela_idioma" data-titulo="Idioma">
+					<h1 data-i18n="apresentacao.idioma.titulo">Idioma/Apresentação</h1>
+
+					<ul>
+						<li class="pt">
+							<a data-i18n="apresentacao.idioma.portugues" href="#idioma_pt" class="semTexto">Português</a>
+						</li>
+						<li class="es">
+							<a data-i18n="apresentacao.idioma.espanhol" href="#idioma_es" class="semTexto">Espanhol</a>
+						</li>
+						<li class="en">
+							<a data-i18n="apresentacao.idioma.ingles" href="#idioma_en" class="semTexto">Inglês</a>
+						</li>
+					</ul>
+
+				</div>
+
+				<!-- TELA -->
+				<!-- 
+			<div class="tela" id="tela_abertura" data-titulo="Abertura" data-posCarregamento="APP.Area.Apresentacao.Abertura.posCarregamento">
+
+
+				<h1 class="marca grande semTexto" data-i18n="apresentacao.abertura.titulo">Saúde na copa</h1>
+				
+				<footer>
+					<ul>
+						<li class="semTexto sus">SUS</li>
+						<li class="semTexto skoll">SKOLL</li>
+						<li class="semTexto tephinet">TEPHINET</li>
+					</ul>
+				</footer>
+			</div> -->
+
+				<!-- TELA -->
+
+				<div class="tela" id="tela_apresentacao" data-titulo="Apresentação" data-posCarregamento="APP.Area.Apresentacao.Apresentacao.posCarregamento">
+					<h1 class="marca pequena semTexto" data-i18n="apresentacao.apresentacao.container">Saúde na copa</h1>
+					<div class="texto scroller">
+						<div class="table">
+							<div class="cell" data-i18n="[html]apresentacao.apresentacao.texto">Texto de apresentação</div>
+						</div>
+					</div>
+					<a class="botao avancar semTexto" href="#tela_acesso">Seguir</a>
+				</div>
+
+
+			</section>
+
+			<!-- AREA -->
+			<section class="area" id="area_acesso">
+				<h1 class="marca semTexto" data-i18n="apresentacao.abertura.titulo">Saúde na copa</h1>
+
+				<div id="botaoVoltarAcesso" class="botaoVoltarArea">
+					<div class="row">
+						<div class="col-xs-2 col-xs-offset-1">
+						<!-- 	<a href="#tela_acesso" class="botao voltar semTexto">Voltar</a>
+							<a href="#tela_entrarComLoginESenha" class="botao voltar semTexto">Voltar</a>
+							<a href="#tela_cadastre-se" class="botao voltar semTexto">Voltar</a> -->
+							<a href="#voltar" class="botao voltar padrao semTexto">Voltar</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- TELA -->
+				<div class="tela" id="tela_acesso" data-titulo="Acesso">
+					<div class="baseDaTela">
+						<div class="row">
+							<div class="col-xs-10 col-xs-offset-1">
+								<ul class="lista">
+									<li class="item icone cadastro">
+										<span class="icone entrar cadastro"></span>
+										<a class="texto" data-i18n="acesso.acesso.entrarComLoginESenha" href="#tela_entrarComLoginESenha">Entrar</a>
+									</li>
+									<li class="item icone cadastreSe">
+										<span class="icone acesso cadastreSe"></span>
+										<a class="texto" data-i18n="acesso.acesso.cadastre-se" href="#tela_cadastre-se">Cadastre-se</a>
+									</li>
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- 	<footer>
+					<p data-i18n="acesso.acesso.rodape">Prosseguindo você concorda com os termos de uso e política de privacidade.</p>
+				</footer> -->
+				</div>
+
+				<!-- TELA -->
+				<div class="tela" id="tela_cadastre-se" data-titulo="Cadastre-se">
+					<form id="formularioCadastro" class="baseDaTela" action="http://www.saudenacopa.com/api/rest/cadastraUsuario" method="post">
+						<div class="row">
+							<div class="col-xs-10 col-xs-offset-1">
+								<ol>
+									<li>
+										<label data-i18n="acesso.cadastre-se.apelido" for="campoCadastro_apelido">Apelido</label>
+										<input type="text" placeholder="Apelido" data-i18n="[placeholder]acesso.cadastre-se.apelido" name="apelido" id="campoCadastro_apelido" class="required">
+									</li>
+								</ol>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-5 col-xs-offset-1">
+								<ol>
+									<li>
+										<label data-i18n="acesso.cadastre-se.idade" for="campoCadastro_idade">Idade</label>
+										<input type="number" placeholder="Idade" data-i18n="[placeholder]acesso.cadastre-se.idade" name="idade" id="campoCadastro_idade">
+									</li>
+								</ol>
+							</div>
+							<div class="col-xs-5">
+								<ol>
+									<li>
+										<label data-i18n="[placeholder]acesso.cadastre-se.sexo" for="campoCadastro_sexo"><span data-i18n="acesso.cadastre-se.sexo">Sexo</span></label>
+										<!-- 									<input type="text" placeholder="Sexo" name="sexo" id="campoCadastro_sexo">
+ -->
+										<select name="sexo" id="campoCadastro_sexo" placeholder="Sexo">
+											<option data-i18n="acesso.cadastre-se.sexo" value="" selected disabled>Sexo</option>
+											<option data-i18n="acesso.cadastre-se.feminino" value="feminino">Feminino</option>
+											<option data-i18n="acesso.cadastre-se.masculino" value="masculino">Masculino</option>
+										</select>
+									</li>
+								</ol>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-10 col-xs-offset-1">
+								<ol>
+									<li>
+										<label data-i18n="acesso.cadastre-se.email" for="campoCadastro_email">E-mail</label>
+										<input data-i18n="[placeholder]acesso.cadastre-se.email" type="email" placeholder="E-mail" name="email" id="campoCadastro_email">
+									</li>
+									<li>
+										<label data-i18n="acesso.cadastre-se.senha" for="campoCadastro_senha">Senha</label>
+										<input data-i18n="[placeholder]acesso.cadastre-se.senha" type="password" placeholder="Senha" name="senha" id="campoCadastro_senha">
+
+									</li>
+									<li class="camposObrigatorios">
+										<span data-i18n="acesso.acesso.camposObrigatorios">* campos obrigatórios</span>
+									</li>
+
+								</ol>
+							</div>
+						</div>
+						<div class="row extra">
+							<div class="col-xs-1 col-xs-offset-1">
+								<input data-i18n="[placeholder]acesso.cadastre-se.termos" type="checkbox" name="termo" placeholder="Termos" id="campoCadastro_termos">
+							</div>
+							<div class="col-xs-9">
+								<label class="labelTermos" for="campoCadastro_termos" data-i18n="acesso.cadastre-se.termos">Li e concordo com os termos de uso</label>
+
+								<!-- <input type="checkbox" name="revelarSenha" id="campoCadastro_revelarSenha">
+							<label for="campoCadastro_termos" data-i18n="acesso.cadastre-se.revelarSenha">Revelar senha</label>-->
+							</div>
+						</div>
+						<div class="row extra">
+							<div class="col-xs-6 col-xs-offset-1">
+								<a data-i18n="acesso.cadastre-se.termosDeUso" class="termosDeUso" href="#tela_termosDeUso">Termos de uso</a>
+							</div>
+							<div class="col-xs-4">
+								<input data-i18n="[value]acesso.cadastre-se.cadastre-se" class="botao formulario positivo" type="submit" name="acao" value="Cadastre-se">
+							</div>
+						</div>
+						<!-- <div class="row extra">
+						<div class="col-xs-10 col-xs-offset-1">
+							<input type="checkbox" name="termo" placeholder="Termos" id="campoCadastro_termos"> 
+							<label for="campoCadastro_termos" data-i18n="acesso.cadastre-se.termos" >Li e concordo com os termos de uso</label>
+						</div>
+					</div> -->
+					</form>
+				</div>
+
+				<!-- 
+			<div class="tela" id="tela_entreComFacebook" data-titulo="Entre com o Facebook">
+				<header class="voltar">	
+					<h1><a class="voltar btn btn-primary btn-xs" href="#voltar">Voltar</a> Saúde na copa</h1>
+				</header>
+				<p data-i18n="acesso.entreComFacebook.texto">Entrar com cadastro do Facebook</p>
+				
+			<fb:login-button data-auto-logout-link="true" show-faces="true" width="200" max-rows="1"></fb:login-button>
+			</div> -->
+
+				<!-- TELA -->
+				<div class="tela" id="tela_entrarComLoginESenha" data-titulo="Entre com login e senha">
+					<form id="formularioLogin" class="baseDaTela" action="http://www.saudenacopa.com/api/rest/login">
+						<div class="row">
+							<div class="col-xs-10 col-xs-offset-1">
+								<ol>
+									<li>
+										<label data-i18n="acesso.entrarComLoginESenha.email" for="campoLogin_email">E-mail</label>
+										<input data-i18n="[placeholder]acesso.entrarComLoginESenha.email" type="email" placeholder="E-mail" name="login" id="campoLogin_email">
+									</li>
+									<li>
+										<label data-i18n="acesso.entrarComLoginESenha.senha" for="campoLogin_senha">Senha</label>
+										<input data-i18n="[placeholder]acesso.entrarComLoginESenha.senha" type="password" placeholder="Senha" name="senha" id="campoLogin_senha">
+									</li>
+								</ol>
+							</div>
+						</div>
+						<div class="row extra">
+							<div class="col-xs-5 col-xs-offset-1">
+								<a href="#tela_esqueciASenha" data-i18n="acesso.entrarComLoginESenha.esqueciASenha">Esqueci a senha</a>
+							</div>
+							<div class="col-xs-4 col-xs-offset-1">
+								<input type="submit" class="botao formulario positivo" data-i18n="[value]acesso.entrarComLoginESenha.entrar" name="acao" value="Entrar">
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<!-- TELA -->
+				<div class="tela" id="tela_esqueciASenha" data-titulo="Esqueci a senha">
+
+					<form id="formularioEsqueciASenha" class="baseDaTela" action="http://www.saudenacopa.com/api/rest/esqueciSenha">
+						<div class="row">
+							<div class="col-xs-10 col-xs-offset-1">
+								<p data-i18n="acesso.esqueciASenha.texto">Insira o endereço de e-mail cadastrado para envio de sua senha</p>
+								<ol>
+									<li>
+										<label data-i18n="acesso.esqueciASenha.email" for="campoEsqueciASenha_email">E-mail</label>
+										<input data-i18n="[placeholder]acesso.esqueciASenha.email" type="email" placeholder="E-mail" name="email" id="campoEsqueciASenha_email">
+									</li>
+								</ol>
+							</div>
+						</div>
+
+						<div class="row extra">
+							<div class="col-xs-4 col-xs-offset-7">
+								<input data-i18n="[value]acesso.esqueciASenha.entrar" class="botao formulario positivo" type="submit" data-i18n="acesso.esqueciASenha.entrar" name="acao" value="Enviar">
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<!-- TELA -->
+				<div class="tela" id="tela_alterarSenha" data-titulo="Alterar a senha">
+
+					<form id="formularioAlterarSenha" class="baseDaTela" action="http://www.saudenacopa.com/api/rest/alterarSenha">
+						<div class="row">
+							<div class="col-xs-10 col-xs-offset-1">
+								<ol>
+									<li>
+										<label data-i18n="acesso.alterarSenha.senhaAtual" for="campoAlterarSenha_senhaAtual">Senha atual</label>
+										<input data-i18n="[placeholder]acesso.alterarSenha.senhaAtual" type="password" placeholder="Senha atual" name="senhaAtual" id="campoAlterarSenha_senhaAtual">
+									</li>
+									<li>
+										<label data-i18n="acesso.alterarSenha.novaSenha" for="campoAlterarSenha_novaSenha">Nova senha</label>
+										<input data-i18n="[placeholder]acesso.alterarSenha.novaSenha" type="password" placeholder="Nova senha" name="novaSenha" id="campoAlterarSenha_novaSenha">
+									</li>
+									<li>
+										<label data-i18n="acesso.alterarSenha.repetirNovaSenha" for="campoAlterarSenha_repetirNovaSenha">Repetir nova senha</label>
+										<input data-i18n="[placeholder]acesso.alterarSenha.repetirNovaSenha" type="password" placeholder="Repetir nova senha" name="repetirNovaSenha" id="campoAlterarSenha_repetirNovaSenha">
+									</li>
+								</ol>
+							</div>
+						</div>
+
+						<div class="row extra">
+							<div class="col-xs-4 col-xs-offset-7">
+								<input value="Alterar" data-i18n="[value]acesso.alterarSenha.campoAlterarSenha" class="botao formulario positivo" type="submit" name="acao">
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<!-- TELA -->
+				<div class="tela" id="tela_termosDeUso" data-titulo="Termos de uso e política de privacidade" data-posCarregamento="APP.Area.Acesso.TermosDeUso.posCarregamento">
+					<h1 class="titulo" data-i18n="acesso.termosDeUso.titulo">Termos de uso e política de privacidade</h1>
+					<div class="texto scroller">
+						<div>
+							<p data-i18n="[html]acesso.termosDeUso.introducao"></p>
+							<div class="aDireita"><a class="ancoraMenu" href="#topo" data-i18n="acesso.termosDeUso.voltarAoTopo">Voltar ao topo</a></div>
+							<ol class="menu">
+								<li data-ref="secao1">
+									<span data-i18n="acesso.termosDeUso.secao1.titulo">Título Seção 1</span>
+								</li>
+								<li data-ref="secao2">
+									<span data-i18n="acesso.termosDeUso.secao2.titulo">Título Seção 1</span>
+								</li>
+								<li data-ref="secao3">
+									<span data-i18n="acesso.termosDeUso.secao3.titulo">Título Seção 1</span>
+								</li>
+								<li data-ref="secao4">
+									<span data-i18n="acesso.termosDeUso.secao4.titulo">Título Seção 1</span>
+								</li>
+								<li data-ref="secao5">
+									<span data-i18n="acesso.termosDeUso.secao5.titulo">Título Seção 1</span>
+								</li>
+								<li data-ref="secao6">
+									<span data-i18n="acesso.termosDeUso.secao6.titulo">Título Seção 1</span>
+								</li>
+								<li data-ref="secao7">
+									<span data-i18n="acesso.termosDeUso.secao7.titulo">Título Seção 1</span>
+								</li>
+								<li data-ref="secao8">
+									<span data-i18n="acesso.termosDeUso.secao8.titulo">Título Seção 1</span>
+								</li>
+								<li data-ref="secao9">
+									<span data-i18n="acesso.termosDeUso.secao9.titulo">Título Seção 1</span>
+								</li>
+								<li data-ref="secao10">
+									<span data-i18n="acesso.termosDeUso.secao10.titulo">Título Seção 1</span>
+								</li>
+								<li data-ref="secao11">
+									<span data-i18n="acesso.termosDeUso.secao11.titulo">Título Seção 1</span>
+								</li>
+								<li data-ref="secao12">
+									<span data-i18n="acesso.termosDeUso.secao12.titulo">Título Seção 1</span>
+								</li>
+								<li data-ref="secao13">
+									<span data-i18n="acesso.termosDeUso.secao13.titulo">Título Seção 1</span>
+								</li>
+							</ol>
+							<div class="aDireita"><a href="#topo" data-i18n="acesso.termosDeUso.voltarAoTopo">Voltar ao topo</a></div>
+							<article data-ref="secao1">
+								<h1 data-i18n="acesso.termosDeUso.secao1.titulo"></h1>
+								<div class="aDireita"><a href="#menu" data-i18n="acesso.termosDeUso.voltarAoMenu">Voltar ao menu</a></div>
+								<p data-i18n="[html]acesso.termosDeUso.secao1.texto">Texto Seção 1</p>
+								<div class="aDireita"><a href="#menu" data-i18n="acesso.termosDeUso.voltarAoMenu">Voltar ao menu</a></div>
+							</article>
+							<article data-ref="secao2">
+								<h1 data-i18n="acesso.termosDeUso.secao2.titulo"></h1>
+								<div class="aDireita"><a href="#menu" data-i18n="acesso.termosDeUso.voltarAoMenu">Voltar ao menu</a></div>
+								<p data-i18n="[html]acesso.termosDeUso.secao2.texto">Texto Seção 2</p>
+								<div class="aDireita"><a href="#menu" data-i18n="acesso.termosDeUso.voltarAoMenu">Voltar ao menu</a></div>
+							</article>
+							<article data-ref="secao3">
+								<h1 data-i18n="acesso.termosDeUso.secao3.titulo"></h1>
+								<div class="aDireita"><a href="#menu" data-i18n="acesso.termosDeUso.voltarAoMenu">Voltar ao menu</a></div>
+								<p data-i18n="[html]acesso.termosDeUso.secao3.texto">Texto Seção 3</p>
+								<div class="aDireita"><a href="#menu" data-i18n="acesso.termosDeUso.voltarAoMenu">Voltar ao menu</a></div>
+							</article>
+							<article data-ref="secao4">
+								<h1 data-i18n="acesso.termosDeUso.secao4.titulo"></h1>
+								<div class="aDireita"><a href="#menu" data-i18n="acesso.termosDeUso.voltarAoMenu">Voltar ao menu</a></div>
+								<p data-i18n="[html]acesso.termosDeUso.secao4.texto">Texto Seção 4</p>
+								<div class="aDireita"><a href="#menu" data-i18n="acesso.termosDeUso.voltarAoMenu">Voltar ao menu</a></div>
+							</article>
+							<article data-ref="secao5">
+								<h1 data-i18n="acesso.termosDeUso.secao5.titulo"></h1>
+								<div class="aDireita"><a href="#menu" data-i18n="acesso.termosDeUso.voltarAoMenu">Voltar ao menu</a></div>
+								<p data-i18n="[html]acesso.termosDeUso.secao5.texto">Texto Seção 5</p>
+								<div class="aDireita"><a href="#menu" data-i18n="acesso.termosDeUso.voltarAoMenu">Voltar ao menu</a></div>
+							</article>
+							<article data-ref="secao6">
+								<h1 data-i18n="acesso.termosDeUso.secao6.titulo"></h1>
+								<div class="aDireita"><a href="#menu" data-i18n="acesso.termosDeUso.voltarAoMenu">Voltar ao menu</a></div>
+								<p data-i18n="[html]acesso.termosDeUso.secao6.texto">Texto Seção 6</p>
+								<div class="aDireita"><a href="#menu" data-i18n="acesso.termosDeUso.voltarAoMenu">Voltar ao menu</a></div>
+							</article>
+							<article data-ref="secao7">
+								<h1 data-i18n="acesso.termosDeUso.secao7.titulo"></h1>
+								<div class="aDireita"><a href="#menu" data-i18n="acesso.termosDeUso.voltarAoMenu">Voltar ao menu</a></div>
+								<p data-i18n="[html]acesso.termosDeUso.secao7.texto">Texto Seção 7</p>
+								<div class="aDireita"><a href="#menu" data-i18n="acesso.termosDeUso.voltarAoMenu">Voltar ao menu</a></div>
+							</article>
+							<article data-ref="secao8">
+								<h1 data-i18n="acesso.termosDeUso.secao8.titulo"></h1>
+								<div class="aDireita"><a href="#menu" data-i18n="acesso.termosDeUso.voltarAoMenu">Voltar ao menu</a></div>
+								<p data-i18n="[html]acesso.termosDeUso.secao8.texto">Texto Seção 8</p>
+								<div class="aDireita"><a href="#menu" data-i18n="acesso.termosDeUso.voltarAoMenu">Voltar ao menu</a></div>
+							</article>
+							<article data-ref="secao9">
+								<h1 data-i18n="acesso.termosDeUso.secao9.titulo"></h1>
+								<div class="aDireita"><a href="#menu" data-i18n="acesso.termosDeUso.voltarAoMenu">Voltar ao menu</a></div>
+								<p data-i18n="[html]acesso.termosDeUso.secao9.texto">Texto Seção 9</p>
+								<div class="aDireita"><a href="#menu" data-i18n="acesso.termosDeUso.voltarAoMenu">Voltar ao menu</a></div>
+							</article>
+							<article data-ref="secao10">
+								<h1 data-i18n="acesso.termosDeUso.secao10.titulo"></h1>
+								<div class="aDireita"><a href="#menu" data-i18n="acesso.termosDeUso.voltarAoMenu">Voltar ao menu</a></div>
+								<p data-i18n="[html]acesso.termosDeUso.secao10.texto">Texto Seção 10</p>
+								<div class="aDireita"><a href="#menu" data-i18n="acesso.termosDeUso.voltarAoMenu">Voltar ao menu</a></div>
+							</article>
+							<article data-ref="secao11">
+								<h1 data-i18n="acesso.termosDeUso.secao11.titulo"></h1>
+								<div class="aDireita"><a href="#menu" data-i18n="acesso.termosDeUso.voltarAoMenu">Voltar ao menu</a></div>
+								<p data-i18n="[html]acesso.termosDeUso.secao11.texto">Texto Seção 11</p>
+								<div class="aDireita"><a href="#menu" data-i18n="acesso.termosDeUso.voltarAoMenu">Voltar ao menu</a></div>
+							</article>
+							<article data-ref="secao12">
+								<h1 data-i18n="acesso.termosDeUso.secao12.titulo"></h1>
+								<div class="aDireita"><a href="#menu" data-i18n="acesso.termosDeUso.voltarAoMenu">Voltar ao menu</a></div>
+								<p data-i18n="[html]acesso.termosDeUso.secao12.texto">Texto Seção 12</p>
+								<div class="aDireita"><a href="#menu" data-i18n="acesso.termosDeUso.voltarAoMenu">Voltar ao menu</a></div>
+							</article>
+							<article data-ref="secao13">
+								<h1 data-i18n="acesso.termosDeUso.secao13.titulo"></h1>
+								<div class="aDireita"><a href="#menu" data-i18n="acesso.termosDeUso.voltarAoMenu">Voltar ao menu</a></div>
+								<p data-i18n="[html]acesso.termosDeUso.secao13.texto">Texto Seção 13</p>
+								<div class="aDireita"><a href="#menu" data-i18n="acesso.termosDeUso.voltarAoMenu">Voltar ao menu</a></div>
+							</article>
+						</div>
+					</div>
+				</div>
+
+				<!-- TELA -->
+				<div class="tela" id="tela_denunciarUmProblema" data-titulo="Denunciar um problema">
+
+					<form id="formularioDenunciarUmProblema" class="baseDaTela" action="http://www.saudenacopa.com/api/rest/problema">
+						<div class="row mensagem">
+							<div class="col-xs-10 col-xs-offset-1">
+								<ol>
+									<li>
+										<label data-i18n="acesso.denunciarUmProblema.mensagem" for="denunciarProblema_mensagem">Mensagem</label>
+										<textarea data-i18n="[placeholder]acesso.denunciarUmProblema.descricaoDoProblema"name="mensagem" placeholder="Descrição do problema"  id="denunciarProblema_mensagem"></textarea>
+									</li>
+								</ol>
+							</div>
+						</div>
+
+						<div class="row extra">
+							<div class="col-xs-4 col-xs-offset-7">
+								<input class="botao formulario positivo" type="submit" data-i18n="[value]acesso.denunciarUmProblema.enviar" name="acao" value="Enviar">
+							</div>
+						</div>
+					</form>
+
+				</div>
+
+
+			</section>
+
+			<!-- AREA -->
+			<section class="area" id="area_sentimento">
+
+
+
+				<!-- TELA -->
+				<div class="tela" id="tela_torcedor" data-titulo="Torcedor" data-posCarregamento="APP.Area.Sentimento.Torcedor.posCarregamento">
+
+					<div id="background_arena" data-arena="pernambuco">
+						<div class="row conteudo">
+							<div class="col-xs-10 col-xs-offset-1">
+								<h1 data-i18n="sentimento.transicao.parabens">Parabéns!</h1>
+								<p class="nome"></p>
+								<p data-i18n="sentimento.transicao.agoraDisponivel">agora está disponível</p>
+							</div>
+						</div>
+					</div>
+
+					<div id="conteudo_torcedor">
+						<div class="row titulo">
+							<div class="col-xs-10 col-xs-offset-1">
+								<h1>
+									<span class="conteudo">
+
+										<span class="pergunta" data-i18n="sentimento.torcedor.pergunta">Como você
+											<br>está se sentindo agora?</span>
+
+										<!-- <span class="pergunta dica" data-i18n="sentimento.torcedor.dica">Selecione um sentimento escolhendo um avatar</span>
+								 -->
+
+
+										<span class="resposta">
+											<span class="dado nome">Fulano</span>,
+											<span data-i18n="sentimento.voceEsta">você está</span>
+											<span data-i18n="sentimento.sentimento.muitoBem" class="dado sentimento">muito bem</span>!</span>
+									</span>
+								</h1>
+							</div>
+						</div>
+
+						<div id="componente_avatar">
+							<div class="row avatar">
+								<div class="col-xs-8 col-xs-offset-2">
+									<div class="containerDinamico avatar">
+										<!-- 	<div class="setas">
+										<div class="seta sobe semTexto">Sobe</div>
+										<div class="seta desce semTexto">Desce</div>
+									</div> -->
+
+
+										<div id="componente_indicadorSentimento">
+											<div class="indicador muitoBem">muitoBem</div>
+											<div class="indicador bem">bem</div>
+											<div class="indicador normal">normal</div>
+											<div class="indicador mal">mal</div>
+											<div class="indicador muitoMal">muitoMal</div>
+										</div>
+
+
+
+										<div class="conteudoDinamico avatar scroller">
+											<div id="avatares" data-categoria="" data-genero="">
+												<div class="avatar icone sentimento semTexto" data-nivel="muitoBem" id="avatar_muitoBem"></div>
+												<div class="avatar icone sentimento semTexto" data-nivel="bem" id="avatar_bem"></div>
+												<div class="avatar icone sentimento semTexto" data-nivel="normal" id="avatar_normal"></div>
+												<div class="avatar icone sentimento semTexto" data-nivel="mal" id="avatar_mal"></div>
+												<div class="avatar icone sentimento semTexto" data-nivel="muitoMal" id="avatar_muitoMal"></div>
+											</div>
+
+
+										</div>
+
+
+										<div class="botao ok semTexto">OK</div>
+										<!-- <div class="botao farmacias semTexto">Farmácias</div> -->
+										<div class="botao hospitais semTexto">Hospitais</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<footer>
+							<div class="categoria pontos engajamento">
+								<div id="componente_trofeu" class="trofeu" data-categoria="denteDeLeite"></div>
+
+								<div id="componente_categoria" data-categoria="denteDeLeite">
+									<h2>Categoria</h2>
+									<p data-i18n="sentimento.torcedor.categorias.denteDeLeite"></p>
+								</div>
+
+								<div id="componente_pontos">
+									<span class="pontos">01</span>
+									<span class="texto" data-i18n="sentimento.torcedor.pontos">Pontos</span>
+								</div>
+								<div id="componente_engajamento">
+									<div class="blocos inativos">
+										<div class="bloco"></div>
+										<div class="bloco"></div>
+										<div class="bloco"></div>
+										<div class="bloco"></div>
+										<div class="bloco"></div>
+										<div class="bloco"></div>
+										<div class="bloco"></div>
+										<div class="bloco"></div>
+										<div class="bloco"></div>
+										<div class="bloco"></div>
+										<div class="bloco"></div>
+										<div class="bloco"></div>
+									</div>
+									<div class="blocos ativos">
+										<div class="bloco"></div>
+										<div class="bloco"></div>
+										<div class="bloco"></div>
+										<div class="bloco"></div>
+										<div class="bloco"></div>
+										<div class="bloco"></div>
+										<div class="bloco"></div>
+										<div class="bloco"></div>
+										<div class="bloco"></div>
+										<div class="bloco"></div>
+										<div class="bloco"></div>
+										<div class="bloco"></div>
+									</div>
+								</div>
+							</div>
+							<div class="row arenas">
+								<div class="col-xs-12">
+									<div id="componente_arenas" data-quantidade="1" data-selecionada="1">
+										<div class="scroller">
+											<ul class="titulos">
+												<li class="titulo" data-i18n="sentimento.torcedor.arena.arena1.nome" data-arena="1">Arena1</li>
+												<li class="titulo" data-i18n="sentimento.torcedor.arena.arena2.nome" data-arena="2">Arena2</li>
+												<li class="titulo" data-i18n="sentimento.torcedor.arena.arena3.nome" data-arena="3">Arena3</li>
+												<li class="titulo" data-i18n="sentimento.torcedor.arena.arena4.nome" data-arena="4">Arena4</li>
+												<li class="titulo" data-i18n="sentimento.torcedor.arena.arena5.nome" data-arena="5">Arena5</li>
+												<li class="titulo" data-i18n="sentimento.torcedor.arena.arena6.nome" data-arena="6">Arena6</li>
+												<li class="titulo" data-i18n="sentimento.torcedor.arena.arena7.nome" data-arena="7">Arena7</li>
+												<li class="titulo" data-i18n="sentimento.torcedor.arena.arena8.nome" data-arena="8">Arena8</li>
+												<li class="titulo" data-i18n="sentimento.torcedor.arena.arena9.nome" data-arena="9">Arena9</li>
+												<li class="titulo" data-i18n="sentimento.torcedor.arena.arena10.nome" data-arena="10">Arena10</li>
+												<li class="titulo" data-i18n="sentimento.torcedor.arena.arena11.nome" data-arena="11">Arena11</li>
+												<li class="titulo" data-i18n="sentimento.torcedor.arena.arena12.nome" data-arena="12">Arena12</li>
+											</ul>
+										</div>
+										<ul class="arenas">
+											<li class="arena semTexto" id="arena1">Arena1</li>
+											<li class="arena semTexto" id="arena2">Arena2</li>
+											<li class="arena semTexto" id="arena3">Arena3</li>
+											<li class="arena semTexto" id="arena4">Arena4</li>
+											<li class="arena semTexto" id="arena5">Arena5</li>
+											<li class="arena semTexto" id="arena6">Arena6</li>
+											<li class="arena semTexto" id="arena7">Arena7</li>
+											<li class="arena semTexto" id="arena8">Arena8</li>
+											<li class="arena semTexto" id="arena9">Arena9</li>
+											<li class="arena semTexto" id="arena10">Arena10</li>
+											<li class="arena semTexto" id="arena11">Arena11</li>
+											<li class="arena semTexto" id="arena12">Arena12</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</footer>
+
+
+						<!-- Camanda de confirmação -->
+						<div id="pelicula_alertaDeTempo" class="componente_alertaDeTempo lightbox pelicula"></div>
+						<div id="componente_alertaDeTempo" class="componente_alertaDeTempo lightbox conteudo">
+							<div class="container">
+								<p>
+									<span class="texto" data-i18n="sentimento.torcedor.alertaDeTempo.texto">Você só poderar ganhar pontos em</span>
+									<span class="tempo"></span>
+								</p>
+
+
+								<div class="botao ok" data-i18n="sentimento.torcedor.alertaDeTempo.confirmar">OK</div>
+							</div>
+						</div>
+
+						<!-- Camanda de confirmação -->
+						<div id="pelicula_confirmacao" class="componente_confirmacao"></div>
+						<div id="componente_confirmacao" class="componente_confirmacao">
+							<div class="container">
+
+								<div class="lembrete" data-i18n="[html]sentimento.torcedor.confirmacao.lembrete">Não deixe de informar diariamente como está sua saúde.</div>
+								<div class="botao voltar semTexto">Voltar</div>
+								<div class="texto">
+									<span data-i18n="sentimento.torcedor.confirmacao.voceEsta">Você está</span>
+									<span class="sentimento">bem</span>?</div>
+								<div class="botao ok" data-i18n="sentimento.torcedor.confirmacao.confirmar">Confirmar</div>
+							</div>
+						</div>
+
+						<div id="componente_persistenciaSintomas">
+							<p data-i18n="[html]sentimento.torcedor.persistenciaSintomas.texto">Obrigado pela informação. Não deixe de procurar o serviço de saúde mais póximo. <br><br>Continue informando diariamente como está sua saúde.</p>
+							<div class="botao ok" data-i18n="sentimento.torcedor.persistenciaSintomas.confirmar">OK</div>
+						</div>
+						<!-- Camanda de confirmação -->
+					</div>
+				</div>
+
+
+
+				<!-- TELA -->
+				<div class="tela comRolagem" id="tela_sintomas" data-titulo="Sintomas" data-posCarregamento="APP.Area.Sentimento.Torcedor.Sintomas.posCarregamento">
+					<div class="conteudoDeRolagem">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-xs-12">
+									<form id="formularioSintomas" method="post" action="http://www.saudenacopa.com/api/rest/sentimento">
+										<input type="hidden" name="sentimento" id="campoSentimentoHidden">
+										<ol>
+											<li>
+												<label data-i18n="sentimento.sintomas.febre" data-sintoma="1">Febre</label>
+											</li>
+											<li>
+												<label data-i18n="sentimento.sintomas.tosse" data-sintoma="2">Tosse</label>
+											</li>
+											<li>
+												<label data-i18n="sentimento.sintomas.dorDeGarganta" data-sintoma="3">Dor de Garganta</label>
+											</li>
+											<li>
+												<label data-i18n="sentimento.sintomas.faltaDeAr" data-sintoma="4">Falta de ar</label>
+											</li>
+											<li>
+												<label data-i18n="sentimento.sintomas.nauseaEVomito" data-sintoma="5">Náusea e vômitos</label>
+											</li>
+											<li>
+												<label data-i18n="sentimento.sintomas.diarreia" data-sintoma="6">Diarréia</label>
+											</li>
+											<li>
+												<label data-i18n="sentimento.sintomas.dorNasArticulacoes" data-sintoma="7">Dor nas articulações</label>
+											</li>
+											<li>
+												<label data-i18n="sentimento.sintomas.dorDeCabeca" data-sintoma="8">Dor de cabeça</label>
+											</li>
+											<li>
+												<label data-i18n="sentimento.sintomas.sangramento" data-sintoma="9">Sangramento</label>
+											</li>
+											<li>
+												<label data-i18n="sentimento.sintomas.manchasVermelhasNoCorpo" data-sintoma="10">Manchas vermelhas no corpo</label>
+											</li>
+											<li>
+												<label data-i18n="sentimento.sintomas.contatoComAlguem" data-sintoma="11">Teve contato ou conhece alguém com algum desses sintomas nos ultimos 7 dias?</label>
+											</li>
+											<li>
+												<label data-i18n="sentimento.sintomas.procurouServicoDeSaude" data-sintoma="12">Você procurou o serviço de saúde?</label>
+											</li>
+										</ol>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="tela comRolagem" id="tela_calendario" data-titulo="Calendário" data-posCarregamento="APP.Area.Sentimento.Torcedor.Calendario.posCarregamento">
+					<div class="conteudoDeRolagem">
+						<div class="row">
+							<div class="col-xs-10 col-xs-offset-1">
+								<h1><span class="semTexto icone anterior">Voltar</span><span class="nome">Mês</span><span class="semTexto icone proximo">Voltar</span></h1>
+								<div id="calendarios">
+						
+								</div>
+
+								<div class="legendas">
+									<p data-i18n="sentimento.calendario.entendaAsLegendas">Entenda as legendas</p>
+									<div class="sentimento muitoBem"><span class="cor semTexto"></span><span data-i18n="sentimento.sentimento.muitoBem" class="nome">Muito bem</span></div>
+									<div class="sentimento bem"><span class="cor semTexto"></span><span data-i18n="sentimento.sentimento.bem" class="nome">Bem</span></div>
+									<div class="sentimento mal"><span class="cor semTexto"></span><span data-i18n="sentimento.sentimento.mal" class="nome">Mal</span></div>
+									<div class="sentimento muitoMal"><span class="cor semTexto"></span><span data-i18n="sentimento.sentimento.muitoMal" class="nome">Muito mal</span></div>
+								</div> 
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- AREA -->
+			<section class="area" id="area_saude">
+
+				<!-- TELA -->
+				<div class="tela comRolagem" id="tela_saude" data-titulo="Saúde">
+					<div class="conteudoDeRolagem">
+						<div id="linkDashboard">
+							<span data-i18n="[html]saude.saude.linkDashboard">Toque aqui e veja a saúde na copa do Brasil</span>
+						</div>
+
+
+
+						<div class="row">
+							<div class="col-xs-10 col-xs-offset-1">
+								<ul class="listaMenu">
+									<li class="cuidadosBasicos">
+										<a data-i18n="[html]saude.saude.cuidadosBasicos" href="#tela_cuidadosBasicos">Cuidados básicos</a>
+									</li>
+									<li class="vacinas">
+										<a data-i18n="[html]saude.saude.vacinas" href="#tela_vacinas">Vacinas</a>
+									</li>
+									<li class="prevencaoDoencas">
+										<a data-i18n="[html]saude.saude.prevencaoDoencas" href="#tela_prevencaoDoencas">Prevenção contra doenças</a>
+									</li>
+									<li class="prevencaoAcidentes">
+										<a data-i18n="[html]saude.saude.prevencaoAcidentes" href="#tela_prevencaoAcidentes">Prevenção contra acidentes</a>
+									</li>
+									<li class="prevencaoViolencia">
+										<a data-i18n="[html]saude.saude.prevencaoViolencia" href="#tela_prevencaoViolencia">Prevenção contra violência</a>
+									</li>
+									<li class="urgenciasEmergencias">
+										<a data-i18n="[html]saude.saude.urgenciasEmergencias" href="#tela_urgenciasEmergencias">Urgências e emergências</a>
+									</li>
+									<li class="telefone">
+										<a data-i18n="[html]saude.saude.telefonesUteis" href="#tela_telefonesUteis">Telefones úteis</a>
+									</li>
+									<li class="hospitais">
+										<a data-i18n="[html]saude.saude.hospitaisDeReferencia" href="#mapa_hospitaisDeReferencia">Hospitais</a>
+									</li>
+									<!-- <li class="hospitais">
+										<a data-i18n="[html]saude.saude.hospitaisDeReferencia" href="#tela_hospitaisDeReferencia">Hospitais de referência</a>
+									</li> -->
+									<li class="farmacias">
+										<a data-i18n="[html]saude.saude.farmacias" href="#mapa_farmacias">Farmácias</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="tela comRolagem" id="tela_cuidadosBasicos" data-titulo="Cuidados básicos">
+					<div class="conteudoDeRolagem">
+						<div class="row">
+							<div class="col-xs-10 col-xs-offset-1">
+								<h1 data-i18n="[html]saude.saude.cuidadosBasicos">Cuidados Básicos</h1>
+								<ul class="padrao">
+									<li data-i18n="[html]saude.cuidadosBasicos.topico1">Tópico 1</li>
+									<li data-i18n="[html]saude.cuidadosBasicos.topico2">Tópico 2</li>
+									<li data-i18n="[html]saude.cuidadosBasicos.topico3">Tópico 3</li>
+									<li data-i18n="[html]saude.cuidadosBasicos.topico4">Tópico 4</li>
+									<li data-i18n="[html]saude.cuidadosBasicos.topico5">Tópico 5</li>
+									<li data-i18n="[html]saude.cuidadosBasicos.topico6">Tópico 6</li>
+									<li data-i18n="[html]saude.cuidadosBasicos.topico7">Tópico 7</li>
+									<li data-i18n="[html]saude.cuidadosBasicos.topico8">Tópico 8</li>
+									<li data-i18n="[html]saude.cuidadosBasicos.topico9">Tópico 9</li>
+									<li data-i18n="[html]saude.cuidadosBasicos.topico10">Tópico 10</li>
+									<li data-i18n="[html]saude.cuidadosBasicos.topico11">Tópico 11</li>
+									<li data-i18n="[html]saude.cuidadosBasicos.topico12">Tópico 12</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="tela comRolagem" id="tela_prevencaoDoencas" data-titulo="Prevenção contra doenças">
+					<div class="conteudoDeRolagem">
+						<div class="row">
+							<div class="col-xs-10 col-xs-offset-1">
+								<article>
+									<h1 data-i18n="[html]saude.prevencao.doencas.malaria.titulo">Título</h1>
+									<ul class="padrao">
+										<li data-i18n="[html]saude.prevencao.doencas.malaria.topico1">Tópico 1</li>
+										<li data-i18n="[html]saude.prevencao.doencas.malaria.topico2">Tópico 2</li>
+										<li data-i18n="[html]saude.prevencao.doencas.malaria.topico3">Tópico 3</li>
+										<li data-i18n="[html]saude.prevencao.doencas.malaria.topico4">Tópico 4</li>
+										<li data-i18n="[html]saude.prevencao.doencas.malaria.topico5">Tópico 5</li>
+										<li data-i18n="[html]saude.prevencao.doencas.malaria.topico6">Tópico 6</li>
+										<li data-i18n="[html]saude.prevencao.doencas.malaria.topico7">Tópico 7</li>
+										<li data-i18n="[html]saude.prevencao.doencas.malaria.topico8">Tópico 8</li>
+										<li data-i18n="[html]saude.prevencao.doencas.malaria.topico9">Tópico 9</li>
+										<li data-i18n="[html]saude.prevencao.doencas.malaria.topico10">Tópico 10</li>
+									</ul>
+								</article>
+								<article>
+									<h1 data-i18n="[html]saude.prevencao.doencas.respiratorias.titulo">Título</h1>
+									<ul class="padrao">
+										<li data-i18n="[html]saude.prevencao.doencas.respiratorias.topico1">Tópico 1</li>
+										<li data-i18n="[html]saude.prevencao.doencas.respiratorias.topico2">Tópico 2</li>
+										<li data-i18n="[html]saude.prevencao.doencas.respiratorias.topico3">Tópico 3</li>
+										<li data-i18n="[html]saude.prevencao.doencas.respiratorias.topico4">Tópico 4</li>
+										<li data-i18n="[html]saude.prevencao.doencas.respiratorias.topico5">Tópico 5</li>
+									</ul>
+								</article>
+								<article>
+									<h1 data-i18n="[html]saude.prevencao.doencas.alimentos.titulo">Título</h1>
+									<ul class="padrao">
+										<li data-i18n="[html]saude.prevencao.doencas.alimentos.topico1">Tópico 1</li>
+										<li data-i18n="[html]saude.prevencao.doencas.alimentos.topico2">Tópico 2</li>
+										<li data-i18n="[html]saude.prevencao.doencas.alimentos.topico3">Tópico 3</li>
+										<li data-i18n="[html]saude.prevencao.doencas.alimentos.topico4">Tópico 4</li>
+										<li data-i18n="[html]saude.prevencao.doencas.alimentos.topico5">Tópico 5</li>
+										<li data-i18n="[html]saude.prevencao.doencas.alimentos.topico6">Tópico 6</li>
+										<li data-i18n="[html]saude.prevencao.doencas.alimentos.topico7">Tópico 7</li>
+									</ul>
+								</article>
+								<article>
+									<h1 data-i18n="[html]saude.prevencao.doencas.sexo.titulo">Título</h1>
+									<ul class="padrao">
+										<li data-i18n="[html]saude.prevencao.doencas.sexo.topico1">Tópico 1</li>
+									</ul>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="tela comRolagem" id="tela_prevencaoAcidentes" data-titulo="Prevenção contra acidentes">
+					<div class="conteudoDeRolagem">
+						<div class="row">
+							<div class="col-xs-10 col-xs-offset-1">
+								<article>
+									<h1 data-i18n="[html]saude.prevencao.acidentes.seguranca.titulo">Título</h1>
+									<ul class="padrao">
+										<li data-i18n="[html]saude.prevencao.acidentes.seguranca.topico1">Tópico 1</li>
+										<li data-i18n="[html]saude.prevencao.acidentes.seguranca.topico2">Tópico 2</li>
+										<li data-i18n="[html]saude.prevencao.acidentes.seguranca.topico3">Tópico 3</li>
+									</ul>
+								</article>
+								<article>
+									<h1 data-i18n="[html]saude.prevencao.acidentes.picadas.titulo">Título</h1>
+									<ul class="padrao">
+										<li data-i18n="[html]saude.prevencao.acidentes.picadas.topico1">Tópico 1</li>
+										<li data-i18n="[html]saude.prevencao.acidentes.picadas.topico2">Tópico 2</li>
+										<li data-i18n="[html]saude.prevencao.acidentes.picadas.topico3">Tópico 3</li>
+										<li data-i18n="[html]saude.prevencao.acidentes.picadas.topico4">Tópico 4</li>
+									</ul>
+								</article>
+								<article>
+									<h1 data-i18n="[html]saude.prevencao.acidentes.mordeduras.titulo">Título</h1>
+									<ul class="padrao">
+										<li data-i18n="[html]saude.prevencao.acidentes.mordeduras.topico1">Tópico 1</li>
+										<li data-i18n="[html]saude.prevencao.acidentes.mordeduras.topico2">Tópico 2</li>
+										<li data-i18n="[html]saude.prevencao.acidentes.mordeduras.topico3">Tópico 3</li>
+										<li data-i18n="[html]saude.prevencao.acidentes.mordeduras.topico4">Tópico 4</li>
+										<li data-i18n="[html]saude.prevencao.acidentes.mordeduras.topico5">Tópico 5</li>
+										<li data-i18n="[html]saude.prevencao.acidentes.mordeduras.topico6">Tópico 6</li>
+										<li data-i18n="[html]saude.prevencao.acidentes.mordeduras.topico7">Tópico 7</li>
+										<li data-i18n="[html]saude.prevencao.acidentes.mordeduras.topico8">Tópico 8</li>
+										<li data-i18n="[html]saude.prevencao.acidentes.mordeduras.topico9">Tópico 9</li>
+									</ul>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="tela comRolagem" id="tela_prevencaoViolencia" data-titulo="Prevenção contra violência">
+					<div class="conteudoDeRolagem">
+						<div class="row">
+							<div class="col-xs-10 col-xs-offset-1">
+								<article>
+									<!-- <h1 data-i18n="[html]saude.prevencao.violencias.titulo">Título</h1> -->
+									<ul class="padrao">
+										<li data-i18n="[html]saude.prevencao.violencias.topico1">Tópico 1</li>
+										<li data-i18n="[html]saude.prevencao.violencias.topico2">Tópico 2</li>
+										<li data-i18n="[html]saude.prevencao.violencias.topico3">Tópico 3</li>
+										<li data-i18n="[html]saude.prevencao.violencias.topico4">Tópico 4</li>
+										<li data-i18n="[html]saude.prevencao.violencias.topico5">Tópico 5</li>
+										<li data-i18n="[html]saude.prevencao.violencias.topico6">Tópico 6</li>
+										<li data-i18n="[html]saude.prevencao.violencias.topico7">Tópico 7</li>
+										<li data-i18n="[html]saude.prevencao.violencias.topico8">Tópico 8</li>
+									</ul>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="tela comRolagem" id="tela_urgenciasEmergencias" data-titulo="Urgências e emergências">
+					<div class="conteudoDeRolagem">
+						<div class="row">
+							<div class="col-xs-10 col-xs-offset-1">
+								<article>
+									<h1 data-i18n="[html]saude.urgenciasEmergencias.servico.titulo">Título</h1>
+									<ul class="padrao">
+										<li data-i18n="[html]saude.urgenciasEmergencias.servico.texto">Tópico 1</li>
+									</ul>
+								</article>
+								<article>
+									<h1 data-i18n="[html]saude.urgenciasEmergencias.quando.titulo">Título</h1>
+									<ul class="padrao">
+										<li data-i18n="[html]saude.urgenciasEmergencias.quando.topico1">Tópico 1</li>
+										<li data-i18n="[html]saude.urgenciasEmergencias.quando.topico2">Tópico 2</li>
+										<li data-i18n="[html]saude.urgenciasEmergencias.quando.topico3">Tópico 3</li>
+										<li data-i18n="[html]saude.urgenciasEmergencias.quando.topico4">Tópico 4</li>
+										<li data-i18n="[html]saude.urgenciasEmergencias.quando.topico5">Tópico 5</li>
+										<li data-i18n="[html]saude.urgenciasEmergencias.quando.topico6">Tópico 6</li>
+										<li data-i18n="[html]saude.urgenciasEmergencias.quando.topico7">Tópico 7</li>
+										<li data-i18n="[html]saude.urgenciasEmergencias.quando.topico8">Tópico 8</li>
+										<li data-i18n="[html]saude.urgenciasEmergencias.quando.topico9">Tópico 9</li>
+										<li data-i18n="[html]saude.urgenciasEmergencias.quando.topico10">Tópico 10</li>
+										<li data-i18n="[html]saude.urgenciasEmergencias.quando.topico11">Tópico 11</li>
+										<li data-i18n="[html]saude.urgenciasEmergencias.quando.topico12">Tópico 12</li>
+									</ul>
+								</article>
+								<article>
+									<h1 data-i18n="[html]saude.urgenciasEmergencias.unidades.titulo">Título</h1>
+									<ul class="padrao">
+										<li data-i18n="[html]saude.urgenciasEmergencias.unidades.texto">Tópico 1</li>
+									</ul>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="tela comRolagem" id="tela_vacinas" data-titulo="Vacinas">
+					<div class="conteudoDeRolagem">
+						<div class="row">
+							<div class="col-xs-10 col-xs-offset-1">
+								<article>
+									<h1 data-i18n="[html]saude.vacinas.titulo">Vacinas</h1>
+									<ul class="padrao">
+										<li data-i18n="[html]saude.vacinas.topico1">Tópico 1</li>
+										<li data-i18n="[html]saude.vacinas.topico2">Tópico 2</li>
+										<li data-i18n="[html]saude.vacinas.topico3">Tópico 3</li>
+										<li data-i18n="[html]saude.vacinas.topico4">Tópico 4</li>
+										<li data-i18n="[html]saude.vacinas.topico5">Tópico 5</li>
+										<li data-i18n="[html]saude.vacinas.topico6">Tópico 6</li>
+									</ul>
+								</article>
+
+								<article>
+									<h1 data-i18n="[html]saude.vacinas.prevencao.titulo">Vacinas</h1>
+									<ul class="padrao">
+										<li data-i18n="[html]saude.vacinas.prevencao.topico1">Tópico 1</li>
+										<li data-i18n="[html]saude.vacinas.prevencao.topico2">Tópico 2</li>
+									</ul>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="tela comRolagem" id="tela_higieneECuidados" data-titulo="Cuidados básicos">
+				<div class="conteudoDeRolagem">
+					<div class="row">
+						<div class="row col-xs-10 col-xs-offset-1">
+							<article>
+								<h1 data-i18n="[html]saude.lembretes.lavarAsMaos.titulo">Lavar as mãos</h1>
+
+								<p data-i18n="[html]saude.lembretes.lavarAsMaos.texto1">Lave bem as mãos com água e sabão várias vezes ao dia. </p>
+
+								<p data-i18n="[html]saude.lembretes.lavarAsMaos.texto2">Lave as mãos com água e sabão várias vezes ao dia, principalmente antes de comer. Ao tossir ou espirrar, cubra o nariz e a boca com lenço descartável.</p>
+							</article>
+
+							<article>
+								<h1 data-i18n="[html]saude.lembretes.bebaAgua.titulo">Beba água</h1>
+
+								<p data-i18n="[html]saude.lembretes.bebaAgua.texto1">Beba bastante água e evite consumir alimentos crus ou mal cozidos.</p>
+
+								<h2 data-i18n="[html]saude.lembretes.bebaAgua.alimentosEBebidas">Alimentos e bebidas</h2>
+
+								<p data-i18n="[html]saude.lembretes.bebaAgua.texto2">Principalmente no verão, é importante beber bastante líquido, preferencialmente água, água de coco ou sucos.</p>
+
+								<p data-i18n="[html]saude.lembretes.bebaAgua.texto3">Lave bem as frutas e verduras.</p>
+
+								<p data-i18n="[html]saude.lembretes.bebaAgua.texto4">Evite alimentos crus ou mal cozidos.</p>
+
+								<p data-i18n="[html]saude.lembretes.bebaAgua.texto5">Fique atento! Alimentos embalados devem conter no rótulo a identificação do produtor, a data de validade e a embalagem deve estar íntegra.</p>
+
+								<p data-i18n="[html]saude.lembretes.bebaAgua.texto6">Evite consumir alimentos em locais cujas condições higiênicas de preparo e acondicionamento são precárias.</p>
+
+								<p data-i18n="[html]saude.lembretes.bebaAgua.texto7">Saboreie refeições variadas, ricas em alimentos regionais e saudáveis.</p>
+							</article>
+
+							<article>
+								<h1 data-i18n="[html]saude.lembretes.vestuario.titulo">Vestuário</h1>
+
+								<p data-i18n="[html]saude.lembretes.vestuario.texto">Use calçados, roupas confortáveis e equipamentos de proteção (colete salva-vidas, capacete, ou outros) quando necessário.</p>
+							</article>
+
+							<article>
+								<h1 data-i18n="[html]saude.lembretes.cuidadosComInsolacao.titulo">Cuidados com insolação e picadas de inseto</h1>
+
+								<p data-i18n="[html]saude.lembretes.cuidadosComInsolacao.texto1">Proteja-se contra o sol e picada de insetos </p>
+
+								<h2 data-i18n="[html]saude.lembretes.cuidadosComInsolacao.insolacao">Insolação</h2>
+
+								<p data-i18n="[html]saude.lembretes.cuidadosComInsolacao.texto2">Evite a exposição ao sol entre 10 horas da manhã e 4 horas da tarde, sempre que possível, cubra-se com roupas apropriadas, chapéu e óculos escuros e use protetor solar apropriado.</p>
+
+								<h2 data-i18n="[html]saude.lembretes.cuidadosComInsolacao.malaria">Malária</h2>
+
+								<p data-i18n="[html]saude.lembretes.cuidadosComInsolacao.texto3">Se viajar para regiões onde há transmissão de malária, use roupas que cubram bem o corpo, evite contato com margens de rios e lagoas após o pôr do sol e use mosquiteiro.</p>
+							</article>
+
+							<article>
+								<h1 data-i18n="[html]saude.lembretes.adoecimento.titulo">Adoecimento durante ou após a viagem</h1>
+
+								<p data-i18n="[html]saude.lembretes.adoecimento.texto">Se ficar doente durante ou logo após retornar, procure o serviço de saúde e informe ao médico sobre sua viagem, pois esta atitude poderá ajudar no diagnóstico de algumas doenças.</p>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div> -->
+
+
+				<div id="tela_mapaSaude" class="tela" data-titulo="Mapa" data-posCarregamento="APP.Area.Saude.Mapa.posCarregamento">
+					<div id="googleMap"></div>
+					<div class="legendas">
+						<div class="legenda hospitais referencia"><span data-i18n="saude.mapa.referencia">Referência</span></div>
+						<div class="legenda hospitais google"><span class="encontrados" data-i18n="saude.mapa.encontrados">Encontrados pelo google</span><span class="encontradas" data-i18n="saude.mapa.encontradas">Encontradas pelo google</span></div>	
+						
+					</div>
+					 
+				</div>
+
+
+				<div id="tela_hospitais" class="tela" data-titulo="Hospitais" data-posCarregamento="APP.Area.Saude.Hospitais.posCarregamento">
+
+				</div>
+
+
+
+
+				<!-- TELA -->
+				<div class="tela comRolagem" id="tela_hospitaisDeReferencia" data-titulo="Hospitais de referência" data-posCarregamento="APP.Area.Saude.HospitaisDeReferencia.posCarregamento">
+					<div class="conteudoDeRolagem">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-xs-10 col-xs-offset-1">
+
+									<ul class="listaMenu multiLinha" id="lista_hospitaisDeReferencia">
+
+									</ul>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- TELA -->
+				<div class="tela comRolagem" id="tela_telefonesUteis" data-titulo="Telefones úteis">
+					<div class="conteudoDeRolagem">
+						<div class="row">
+							<div class="col-xs-10 col-xs-offset-1">
+								<ul class="listaMenu multiLinha" id="cidades_hospitais" data-dados="cidades">
+									<li>
+										<a class="celula" href="tel:192">
+											<span data-i18n="saude.telefonesUteis.samu">SAMU</span>
+											<span class="numero">192</span>
+										</a>
+									</li>
+									<li>
+										<a class="celula" href="tel:193">
+											<span data-i18n="saude.telefonesUteis.bombeiros">Bombeiros</span>
+											<span class="numero">193</span>
+										</a>
+									</li>
+									<li>
+										<a class="celula" href="tel:08006440199">
+											<span data-i18n="saude.telefonesUteis.defesaCivil">Defesa civil</span>
+											<span class="numero">0-800 644-0199</span>
+										</a>
+									</li>
+									<li>
+										<a class="celula" href="tel:190">
+											<span data-i18n="saude.telefonesUteis.policiaMilitar">Polícia Militar</span>
+											<span class="numero">190</span>
+										</a>
+									</li>
+									<li>
+										<a class="celula" href="tel:197">
+											<span data-i18n="saude.telefonesUteis.policiaCivil">Polícia Civil</span>
+											<span class="numero">197</span>
+										</a>
+									</li>
+									<li>
+										<a class="celula" href="tel:191">
+											<span data-i18n="saude.telefonesUteis.policiaRodoviaria">Polícia Rodoviária Federal</span>
+											<span class="numero">191</span>
+										</a>
+									</li>
+									<li>
+										<a class="celula" href="tel:194">
+											<span data-i18n="saude.telefonesUteis.policiaFederal">Polícia Federal</span>
+											<span class="numero">194</span>
+										</a>
+									</li>
+									<li>
+										<a class="celula" href="tel:08007226001">
+											<span data-i18n="saude.telefonesUteis.disqueIntoxicacao">Disque-Intoxicação</span>
+											<span class="numero">0-800 722-6001</span>
+										</a>
+									</li>
+									<li>
+										<a class="celula" href="tel:100">
+											<span data-i18n="saude.telefonesUteis.disqueDenuncia">Disque denúncia - Sbusos contra crianças e adolescentes</span>
+											<span class="numero">100</span>
+										</a>
+									</li>
+
+									<li>
+										<a class="celula" href="tel:136">
+											<span data-i18n="saude.telefonesUteis.diquesSaude">Disque Saúde</span>
+											<span class="numero">136</span>
+										</a>
+									</li>
+									<li>
+										<a class="celula" href="tel:08007041995">
+											<span data-i18n="saude.telefonesUteis.vigiagro">VIGIAGRO (Vigilância Agropecuária Internacional)</span>
+											<span class="numero">0-800 704-1995</span>
+										</a>
+									</li>
+									<li>
+										<a class="celula" href="tel:08007254445">
+											<span data-i18n="saude.telefonesUteis.anac">ANAC - Agência Nacional de Aviação Civil</span>
+											<span class="numero">0-800 725-4445</span>
+										</a>
+									</li>
+									<li>
+										<a class="celula" href="tel:166">
+											<span data-i18n="saude.telefonesUteis.antt">ANTT - Agência Nacional de Transportes Terrestres</span>
+											<span class="numero">166</span>
+										</a>
+									</li>
+									<li>
+										<a class="celula" href="tel:0800644500">
+											<span data-i18n="saude.telefonesUteis.antaq">ANTAQ - Agência Nacional de Transportes Aquaviários</span>
+											<span class="numero">0-800 644-500</span>
+										</a>
+									</li>
+
+<!-- 
+									<li>
+										<a class="celula" href="tel:444">
+											<span data-i18n="saude.telefonesUteis.ouvidoriaDeSaude">Ouvidoria da saúde</span>
+											<span class="numero">444</span>
+										</a>
+									</li>
+
+ -->
+									<li>
+										<a class="celula" href="tel:08006429782">
+											<span data-i18n="saude.telefonesUteis.anvisa">ANVISA - Agência Nacional de Vigilância Sanitária</span>
+											<span class="numero">0-800 642-9782</span>
+										</a>
+									</li>
+									<li>
+										<a class="celula" href="tel:08006446645">
+											<span data-i18n="saude.telefonesUteis.cievs">CIEVS - Centro de Informações Estratégicas de Vigilância em Saúde</span>
+											<span class="numero">0-800 644-6645</span>
+										</a>
+									</li>
+
+									<li>
+										<a class="celula" href="tel:0800555466">
+											<span data-i18n="saude.telefonesUteis.cve">CVE - Centro de Vigilância Epidemiológica</span>
+											<span class="numero">0-800 555-466</span>
+										</a>
+									</li>
+
+
+								</ul>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- TELA -->
+				<div class="tela comRolagem" id="tela_farmacias" data-titulo="Farmácias" data-posCarregamento="APP.Area.Saude.Farmacias.posCarregamento">
+					<div class="conteudoDeRolagem">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-xs-10 col-xs-offset-1">
+
+									<ul class="listaMenu multiLinha" id="lista_farmacias">
+
+									</ul>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- AREA -->
+			<section class="area" id="area_jogos">
+
+				<!-- TELA -->
+
+				<div class="tela" id="tela_jogos" data-titulo="Jogos">
+					<div class="row rowBola">
+						<div class="col-xs-8 col-xs-offset-2">
+							<div class="icone bola"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-10 col-xs-offset-1">
+							<ul class="listaMenu">
+								<li class="calendarioDosJogos">
+									<a data-i18n="tela.calendarioDosJogos" href="#tela_calendarioDosJogos">Calendário dos jogos</a>
+								</li>
+								<li class="arena">
+									<a data-i18n="tela.arenas" href="#tela_arenas">Arenas</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+	
+
+				<div class="tela comRolagem" id="tela_calendarioDosJogos" data-titulo="Calendário dos Jogos">
+					<div class="conteudoDeRolagem">
+						<div class="row">
+							<div class="col-xs-10 col-xs-offset-1">
+								<div class="fases">
+									<div class="fase grupos">
+										<h1 data-i18n="jogos.jogos.calendarioDosJogos.faseDeGrupos">FASE DE GRUPOS</h1>
+										<div class="grupo">
+											<h2><span data-i18n="jogos.jogos.calendarioDosJogos.grupo">GRUPO</span> A</h2>
+											<div class="rodada">
+												<h3><span data-i18n="jogos.jogos.calendarioDosJogos.rodada">RODADA</span> 1</h3>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Brazil">BRASIL</span> X <span data-i18n="mais.consulados.paises.Croatia">CROÁCIA</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.quinta">Quinta</span> 12/06/2014 – 17:00 – Arena de São Paulo</div>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Mexico">MÉXICO</span> X <span data-i18n="mais.consulados.paises.Cameroon">CAMARÕES</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.sexta">Sexta</span> 13/06/2014 – 13:00 – Estádio das Dunas</div>
+											</div>
+											<div class="rodada">
+												<h3><span data-i18n="jogos.jogos.calendarioDosJogos.rodada">RODADA</span> 2</h3>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Brazil">BRASIL</span> X <span data-i18n="mais.consulados.paises.Mexico">MÉXICO</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.terca">Terça</span> 17/06/2014 – 16:00 – Estádio Castelão</div>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Cameroon">CAMARÕES</span> X <span data-i18n="mais.consulados.paises.Croatia">CROÁCIA</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.quarta">Quarta</span> 18/06/2014 – 18:00 – Arena Amazônia</div>
+											</div>
+											<div class="rodada">
+												<h3><span data-i18n="jogos.jogos.calendarioDosJogos.rodada">RODADA</span> 3</h3>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Cameroon">CAMARÕES</span> X <span data-i18n="mais.consulados.paises.Brazil">BRASIL</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.segunda">Segunda</span> 23/06/2014 – 17:00 - Estádio Nacional</div>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Croatia">CROÁCIA</span> X <span data-i18n="mais.consulados.paises.Mexico">MÉXICO</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.segunda">Segunda</span> 23/06/2014 – 17:00 - Arena Pernambuco</div>
+											</div>
+											<h2><span data-i18n="jogos.jogos.calendarioDosJogos.grupo">GRUPO</span> B</h2>
+											<div class="rodada">
+												<h3><span data-i18n="jogos.jogos.calendarioDosJogos.rodada">RODADA</span> 1</h3>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Spain">ESPANHA</span> X <span data-i18n="mais.consulados.paises.Netherlands">HOLANDA</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.sexta">Sexta</span> 13/06/2014 – 16:00 - Arena Fonte Nova</div>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Chile">CHILE</span> X <span data-i18n="mais.consulados.paises.Australia">AUSTRÁLIA</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.sexta">Sexta</span> 13/06/2014 – 18:00 - Arena Pantanal</div>
+											</div>
+											<div class="rodada">
+												<h3><span data-i18n="jogos.jogos.calendarioDosJogos.rodada">RODADA</span> 2</h3>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Australia">AUSTRÁLIA</span> X <span data-i18n="mais.consulados.paises.Netherlands">HOLANDA</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.quarta">Quarta</span> 18/06/2014 – 13:00 - Estádio Beira-Rio</div>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Spain">ESPANHA</span> X <span data-i18n="mais.consulados.paises.Chile">CHILE</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.quarta">Quarta</span> 18/06/2014 – 16:00 – Estádio Maracanã</div>
+											</div>
+											<div class="rodada">
+												<h3><span data-i18n="jogos.jogos.calendarioDosJogos.rodada">RODADA</span> 3</h3>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Netherlands">HOLANDA</span> X <span data-i18n="mais.consulados.paises.Chile">CHILE</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.segunda">Segunda</span> 23/06/2014 – 13:00 – Arena São Paulo</div>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Australia">AUSTRÁLIA</span> X <span data-i18n="mais.consulados.paises.Spain">ESPANHA</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.segunda">Segunda</span> 23/06/2014 – 13:00 – Arena da Baixada</div>
+											</div>
+										</div>
+										<div class="grupo">
+											<h2><span data-i18n="jogos.jogos.calendarioDosJogos.grupo">GRUPO</span> C</h2>
+											<div class="rodada">
+												<h3><span data-i18n="jogos.jogos.calendarioDosJogos.rodada">RODADA</span> 1</h3>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Colombia">COLÔMBIA</span> X <span data-i18n="mais.consulados.paises.Greece">GRÉCIA</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.sabado">Sábado</span> 14/06/2014 – 13:00 – Estádio Mineirão</div>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.IvoryCoast">COSTA DO MARFIM</span> X <span data-i18n="mais.consulados.paises.Japan">JAPÃO</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.sabado">Sábado</span> 14/06/2014 – 22:00 – Arena Pernambuco</div>
+											</div>
+											<div class="rodada">
+												<h3><span data-i18n="jogos.jogos.calendarioDosJogos.rodada">RODADA</span> 2</h3>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Colombia">COLÔMBIA</span> X <span data-i18n="mais.consulados.paises.IvoryCoast">COSTA DO MARFIM</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.quinta">Quinta</span> 19/06/2014 – 13:00 – Estádio Nacional</div>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Japan">JAPÃO</span> X <span data-i18n="mais.consulados.paises.Greece">GRÉCIA</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.quinta">Quinta</span> 19/06/2014 – 19:00 – Estádio das Dunas</div>
+											</div>
+											<div class="rodada">
+												<h3><span data-i18n="jogos.jogos.calendarioDosJogos.rodada">RODADA</span> 3</h3>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Japan">JAPÃO</span> X <span data-i18n="mais.consulados.paises.Colombia">COLÔMBIA</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.terca">Terça</span> 24/06/2014 – 16:00 – Arena Pantanal</div>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Greece">GRÉCIA</span> X <span data-i18n="mais.consulados.paises.IvoryCoast">COSTA DO MARFIM</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.terca">Terça</span> 24/06/2014 – 17:00 – Estádio Castelão</div>
+											</div>
+										</div>
+										<div class="grupo">
+											<h2><span data-i18n="jogos.jogos.calendarioDosJogos.grupo">GRUPO</span> D</h2>
+											<div class="rodada">
+												<h3><span data-i18n="jogos.jogos.calendarioDosJogos.rodada">RODADA</span> 1</h3>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Uruguay">URUGUAI</span> X <span data-i18n="mais.consulados.paises.CostaRica">COSTA RICA</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.sabado">Sábado</span> 14/06/2014 – 16:00 – Estádio Castelão</div>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.England">INGLATERRA</span> X <span data-i18n="mais.consulados.paises.Italy">ITÁLIA</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.sabado">Sábado</span> 14/06/2014 – 18:00 – Arena Amazônia</div>
+											</div>
+											<div class="rodada">
+												<h3><span data-i18n="jogos.jogos.calendarioDosJogos.rodada">RODADA</span> 2</h3>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Uruguay">URUGUAI</span> X <span data-i18n="mais.consulados.paises.England">INGLATERRA</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.quinta">Quinta</span> 19/06/2014 – 16:00 – Arena de São Paulo</div>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Italy">ITÁLIA</span> X <span data-i18n="mais.consulados.paises.CostaRica">COSTA RICA</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.sexta">Sexta</span> 20/06/2014 – 13:00 – Arena Pernambuco</div>
+											</div>
+											<div class="rodada">
+												<h3><span data-i18n="jogos.jogos.calendarioDosJogos.rodada">RODADA</span> 3</h3>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Italy">ITÁLIA</span> X <span data-i18n="mais.consulados.paises.Uruguay">URUGUAI</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.terca">Terça</span> 24/06/2014 – 13:00 – Estádio das Dunas</div>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.CostaRica">COSTA RICA</span> X <span data-i18n="mais.consulados.paises.England">INGLATERRA</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.terca">Terça</span> 24/06/2014 – 13:00 – Estádio Mineirão</div>
+											</div>
+										</div>
+										<div class="grupo">
+											<h2><span data-i18n="jogos.jogos.calendarioDosJogos.grupo">GRUPO</span> E</h2>
+											<div class="rodada">
+												<h3><span data-i18n="jogos.jogos.calendarioDosJogos.rodada">RODADA</span> 1</h3>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Switzerland">SUIÇA</span> X <span data-i18n="mais.consulados.paises.Ecuador">EQUADOR</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.domingo">Domingo</span> 15/06/2014 – 13:00 – Estádio Nacional</div>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.France">FRANÇA</span> X <span data-i18n="mais.consulados.paises.Honduras">HONDURAS</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.domingo">Domingo</span> 15/06/2014 – 16:00 – Estádio Beira-Rio</div>
+											</div>
+											<div class="rodada">
+												<h3><span data-i18n="jogos.jogos.calendarioDosJogos.rodada">RODADA</span> 2</h3>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Switzerland">SUIÇA</span> X <span data-i18n="mais.consulados.paises.France">FRANÇA</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.sexta">Sexta</span> 20/06/2014 – 16:00 – Arena Fonte Nova</div>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Honduras">HONDURAS</span> X <span data-i18n="mais.consulados.paises.Ecuador">EQUADOR</span></span></span> <span data-i18n="sentimento.calendario.diasDaSemana.sexta">Sexta</span> 20/06/2014 – 19:00 – Arena da Baixada</div>
+											</div>
+											<div class="rodada">
+												<h3><span data-i18n="jogos.jogos.calendarioDosJogos.rodada">RODADA</span> 3</h3>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Honduras">HONDURAS</span> X <span data-i18n="mais.consulados.paises.Switzerland">SUIÇA</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.quarta">Quarta</span> 25/06/2014 – 16:00 – Arena Fonte Nova</div>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Ecuador">EQUADOR</span> X <span data-i18n="mais.consulados.paises.France">FRANÇA</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.quarta">Quarta</span> 25/06/2014 – 17:00 – Estádio do Maracanã</div>
+											</div>
+										</div>
+										<div class="grupo">
+											<h2><span data-i18n="jogos.jogos.calendarioDosJogos.grupo">GRUPO</span> F</h2>
+											<div class="rodada">
+												<h3><span data-i18n="jogos.jogos.calendarioDosJogos.rodada">RODADA</span> 1</h3>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Argentina">ARGENTINA</span> X <span data-i18n="mais.consulados.paises.Bosnia">BÓSNIA E HERZEGOVINA</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.domingo">Domingo</span> 15/06/2014 – 19:00 – Estádio do Maracanã</div>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Iran">IRÃ</span> X <span data-i18n="mais.consulados.paises.Nigeria">NIGÉRIA</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.segunda">Segunda</span> 16/06/2014 – 16:00 – Arena da Baixada</div>
+											</div>
+											<div class="rodada">
+												<h3><span data-i18n="jogos.jogos.calendarioDosJogos.rodada">RODADA</span> 2</h3>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Argentina">ARGENTINA</span> X <span data-i18n="mais.consulados.paises.Iran">IRÃ</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.sabado">Sábado</span> 21/06/2014 – 13:00 – Estádio Mineirão</div>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Nigeria">NIGÉRIA</span> X <span data-i18n="mais.consulados.paises.Bosnia">BÓSNIA E HERZEGOVINA</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.sabado">Sábado</span> 21/06/2014 – 18:00 – Arena Pantanal</div>
+											</div>
+											<div class="rodada">
+												<h3><span data-i18n="jogos.jogos.calendarioDosJogos.rodada">RODADA</span> 3</h3>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Nigeria">NIGÉRIA</span> X <span data-i18n="mais.consulados.paises.Argentina">ARGENTINA</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.quarta">Quarta</span> 25/06/2014 – 13:00 – Estádio Beira-Rio</div>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Bosnia">BÓSNIA E HERZEGOVINA</span> X <span data-i18n="mais.consulados.paises.Iran">IRÃ</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.quarta">Quarta</span> 25/06/2014 – 13:00 – Arena Fonte Nova</div>
+											</div>
+										</div>
+										<div class="grupo">
+											<h2><span data-i18n="jogos.jogos.calendarioDosJogos.grupo">GRUPO</span> G</h2>
+											<div class="rodada">
+												<h3><span data-i18n="jogos.jogos.calendarioDosJogos.rodada">RODADA</span> 1</h3>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Germany">ALEMANHA</span> X <span data-i18n="mais.consulados.paises.Portugal">PORTUGAL</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.segunda">Segunda</span> 16/06/2014 – 13:00 – Arena Fonte Nova</div>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Ghana">GANA</span> X <span data-i18n="mais.consulados.paises.US">EUA</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.segunda">Segunda</span> 16/06/2014 – 19:00 – Estádio das Dunas</div>
+											</div>
+											<div class="rodada">
+												<h3><span data-i18n="jogos.jogos.calendarioDosJogos.rodada">RODADA</span> 2</h3>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Germany">ALEMANHA</span> X <span data-i18n="mais.consulados.paises.Ghana">GANA</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.sabado">Sábado</span> 21/06/2014 – 16:00 – Estádio Castelão</div>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.US">EUA</span> X <span data-i18n="mais.consulados.paises.Portugal">PORTUGAL</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.domingo">Domingo</span> 22/06/2014 – 18:00 – Arena Amazônia</div>
+											</div>
+											<div class="rodada">
+												<h3><span data-i18n="jogos.jogos.calendarioDosJogos.rodada">RODADA</span> 3</h3>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Portugal">PORTUGAL</span> X <span data-i18n="mais.consulados.paises.Ghana">GANA</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.quinta">Quinta</span> 26/06/2014 – 13:00 – Estádio Nacional</div>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.US">EUA</span> X <span data-i18n="mais.consulados.paises.Germany">ALEMANHA</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.quinta">Quinta</span> 26/06/2014 – 13:00 – Arena Pernambuco</div>
+											</div>
+										</div>
+										<div class="grupo">
+											<h2><span data-i18n="jogos.jogos.calendarioDosJogos.grupo">GRUPO</span> H</h2>
+											<div class="rodada">
+												<h3><span data-i18n="jogos.jogos.calendarioDosJogos.rodada">RODADA</span> 1</h3>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Belgiun">BÉLGICA</span> X <span data-i18n="mais.consulados.paises.Algeria">ARGÉLIA</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.terca">Terça</span> 17/06/2014 – 13:00 – Estádio Mineirão</div>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Russia">RÚSSIA</span> X <span data-i18n="mais.consulados.paises.SouthKorea">COREIA DO SUL</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.terca">Terça</span> 17/06/2014 – 18:00 – Arena Pantanal</div>
+											</div>
+											<div class="rodada">
+												<h3><span data-i18n="jogos.jogos.calendarioDosJogos.rodada">RODADA</span> 2</h3>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Belgiun">BÉLGICA</span> X <span data-i18n="mais.consulados.paises.Russia">RÚSSIA</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.domingo">Domingo</span> 22/06/2014 – 13:00 – Estádio do Maracanã</div>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.SouthKorea">COREIA DO SUL</span> X <span data-i18n="mais.consulados.paises.Algeria">ARGÉLIA</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.domingo">Domingo</span> 22/06/2014 – 16:00 – Estádio Beira-Rio</div>
+											</div>
+											<div class="rodada">
+												<h3><span data-i18n="jogos.jogos.calendarioDosJogos.rodada">RODADA</span> 3</h3>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.SouthKorea">COREIA DO SUL</span> X <span data-i18n="mais.consulados.paises.Belgiun">BÉLGICA</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.quinta">Quinta</span> 26/06/2014 – 17:00 – Arena São Paulo</div>
+												<div class="jogo"><span class="times"><span data-i18n="mais.consulados.paises.Algeria">ARGÉLIA</span> X <span data-i18n="mais.consulados.paises.Russia">RÚSSIA</span></span> <span data-i18n="sentimento.calendario.diasDaSemana.quinta">Quinta</span> 26/06/2014 – 17:00 – Arena da Baixada</div>
+											</div>
+										</div>
+									</div>
+									<div class="fase oitava">
+										<h1 data-i18n="jogos.jogos.calendarioDosJogos.oitavasDeFinal">OITAVAS DE FINAL</h1>
+										<div class="jogo"><span class="times">1°A X 2°B</span> <span data-i18n="sentimento.calendario.diasDaSemana.sabado">Sábado</span> 28/06/2014 – 13:00 – Estádio Mineirão</div>
+										<div class="jogo"><span class="times">1°C X 2°D</span> <span data-i18n="sentimento.calendario.diasDaSemana.sabado">Sábado</span> 28/06/2014 – 17:00 – Estádio do Maracanã</div>
+										<div class="jogo"><span class="times">1°B X 2°A</span> <span data-i18n="sentimento.calendario.diasDaSemana.domingo">Domingo</span> 29/06/2014 – 13:00 – Estádio Castelão</div>
+										<div class="jogo"><span class="times">1°D X 2°C</span> <span data-i18n="sentimento.calendario.diasDaSemana.domingo">Domingo</span> 29/06/2014 – 17:00 – Arena Pernambuco</div>
+										<div class="jogo"><span class="times">1°E X 2°F</span> <span data-i18n="sentimento.calendario.diasDaSemana.segunda">Segunda</span> 30/06/2014 – 13:00 – Estádio Nacional</div>
+										<div class="jogo"><span class="times">1°G X 2°H</span> <span data-i18n="sentimento.calendario.diasDaSemana.segunda">Segunda</span> 30/06/2014 – 17:00 – Estádio Beira-Rio</div>
+										<div class="jogo"><span class="times">1°F X 2°E</span> <span data-i18n="sentimento.calendario.diasDaSemana.terca">Terça</span> 01/07/2014 – 13:00 – Arena de São Paulo</div>
+										<div class="jogo"><span class="times">1°H X 2°G</span> <span data-i18n="sentimento.calendario.diasDaSemana.terca">Terça</span> 01/07/2014 – 17:00 – Arena Fonte Nova</div>
+									</div>
+									<div class="fase quartas">
+										<h1 data-i18n="jogos.jogos.calendarioDosJogos.quartasDeFinal">QUARTAS DE FINAL</h1>
+										<div class="jogo"><h2><span data-i18n="jogos.jogos.calendarioDosJogos.jogo">JOGO</span> <span>1</span></h2> <span class="times">1°A ou 2°B X 1°C ou 2°D</span> <span data-i18n="sentimento.calendario.diasDaSemana.sexta">Sexta</span> 04/07/2014 – 17:00 – Estádio Castelão</div>
+										<div class="jogo"><h2><span data-i18n="jogos.jogos.calendarioDosJogos.jogo">JOGO</span> <span>2</span></h2> <span class="times">1°E ou 2°F x 1°G ou 2°H</span> <span data-i18n="sentimento.calendario.diasDaSemana.sexta">Sexta</span> 04/07/2014 – 13:00 – Estádio do Maracanã</div>
+										<div class="jogo"><h2><span data-i18n="jogos.jogos.calendarioDosJogos.jogo">JOGO</span> <span>3</span></h2> <span class="times">1°B ou 2°A X 1°D ou 2°C</span> <span data-i18n="sentimento.calendario.diasDaSemana.sabado">Sábado</span> 05/07/2014 – 17:00 – Arena Fonte Nova</div>
+										<div class="jogo"><h2><span data-i18n="jogos.jogos.calendarioDosJogos.jogo">JOGO</span> <span>4</span></h2> <span class="times">1°F ou 2°E X 1°H ou 2°G</span> <span data-i18n="sentimento.calendario.diasDaSemana.sabado">Sábado</span> 05/07/2014 – 13:00 – Estádio Nacional</div>
+									</div>
+									<div class="fase semifinais">
+										<h1 data-i18n="jogos.jogos.calendarioDosJogos.semifinais">SEMIFINAIS</h1>
+										<div class="jogo"><h2><span data-i18n="jogos.jogos.calendarioDosJogos.jogo">JOGO</span> <span>1</span></h2> <span data-i18n="jogos.jogos.calendarioDosJogos.vencQua">VENC. QUA.</span> 1 X <span data-i18n="jogos.jogos.calendarioDosJogos.vencQua">VENC. QUA.</span> 2 <span data-i18n="sentimento.calendario.diasDaSemana.terca">Terça</span> 08/07/2014 – 17:00 – Estádio Mineirão</div>
+										<div class="jogo"><h2><span data-i18n="jogos.jogos.calendarioDosJogos.jogo">JOGO</span> <span>2</span></h2> <span data-i18n="jogos.jogos.calendarioDosJogos.vencQua">VENC. QUA.</span> 3 X <span data-i18n="jogos.jogos.calendarioDosJogos.vencQua">VENC. QUA.</span> 4 <span data-i18n="sentimento.calendario.diasDaSemana.quarta">Quarta</span> 09/07/2014 – 17:00 – Arena São Paulo</div>
+									</div>
+									<div class="fase terceiro">
+										<h1 data-i18n="jogos.jogos.calendarioDosJogos.terceiroLugar">3° LUGAR</h1>
+										<div class="jogo"><span class="times"><span data-i18n="jogos.jogos.calendarioDosJogos.perdSemifinal">PERD. SEMIFINAL</span> 1 X <span data-i18n="jogos.jogos.calendarioDosJogos.perdSemifinal">PERD. SEMIFINAL</span> 2</span> <span data-i18n="sentimento.calendario.diasDaSemana.sabado">Sábado</span> 12/07/2014 – 15:00 – Estádio Nacional</div>
+									</div>
+									<div class="fase final">
+										<h1 data-i18n="jogos.jogos.calendarioDosJogos.vencSemifinal">FINAL</h1>
+										<div class="jogo"><span class="times"><span data-i18n="jogos.jogos.calendarioDosJogos.vencSemifinal">VENC. SEMIFINAL</span> 1 X <span data-i18n="jogos.calendarioDosJogos.vencSemifinal">VENC. SEMIFINAL</span> 2</span> <span data-i18n="sentimento.calendario.diasDaSemana.domingo">Domingo</span> 13/07/2014 – 14:00 – Estádio do Maracanã</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- TELA -->
+				<div class="tela comRolagem" id="tela_arenas" data-titulo="Arenas" data-posCarregamento="APP.Area.Jogos.Arenas.posCarregamento">
+					<div class="conteudoDeRolagem">
+				<!-- 		<div class="row">
+							<div class="col-xs-10 col-xs-offset-1"> -->
+								<article data-idarena="" data-i18n="[data-idarena]sentimento.torcedor.arena.arena1.id" class="arena" id="descricaoArena1">
+									<h1 data-i18n="sentimento.torcedor.arena.arena1.nome">Arena 1</h1>
+									<ul class="padrao" data-i18n="[html]sentimento.torcedor.arena.arena1.texto">Texto Arena 1</ul>
+								</article>
+								<article data-idarena="" data-i18n="[data-idarena]sentimento.torcedor.arena.arena2.id" class="arena" id="descricaoArena2">
+									<h1 data-i18n="sentimento.torcedor.arena.arena2.nome">Arena 2</h1>
+									<ul class="padrao" data-i18n="[html]sentimento.torcedor.arena.arena2.texto">Texto Arena 2</ul>
+								</article>
+								<article data-idarena="" data-i18n="[data-idarena]sentimento.torcedor.arena.arena3.id" class="arena" id="descricaoArena3">
+									<h1 data-i18n="sentimento.torcedor.arena.arena3.nome">Arena 3</h1>
+									<ul class="padrao" data-i18n="[html]sentimento.torcedor.arena.arena3.texto">Texto Arena 3</ul>
+								</article>
+								<article data-idarena="" data-i18n="[data-idarena]sentimento.torcedor.arena.arena4.id" class="arena" id="descricaoArena4">
+									<h1 data-i18n="sentimento.torcedor.arena.arena4.nome">Arena 4</h1>
+									<ul class="padrao" data-i18n="[html]sentimento.torcedor.arena.arena4.texto">Texto Arena 4</ul>
+								</article>
+								<article data-idarena="" data-i18n="[data-idarena]sentimento.torcedor.arena.arena5.id" class="arena" id="descricaoArena5">
+									<h1 data-i18n="sentimento.torcedor.arena.arena5.nome">Arena 5</h1>
+									<ul class="padrao" data-i18n="[html]sentimento.torcedor.arena.arena5.texto">Texto Arena 5</ul>
+								</article>
+								<article data-idarena="" data-i18n="[data-idarena]sentimento.torcedor.arena.arena6.id" class="arena" id="descricaoArena6">
+									<h1 data-i18n="sentimento.torcedor.arena.arena6.nome">Arena 6</h1>
+									<ul class="padrao" data-i18n="[html]sentimento.torcedor.arena.arena6.texto">Texto Arena 6</ul>
+								</article>
+								<article data-idarena="" data-i18n="[data-idarena]sentimento.torcedor.arena.arena7.id" class="arena" id="descricaoArena7">
+									<h1 data-i18n="sentimento.torcedor.arena.arena7.nome">Arena 7</h1>
+									<ul class="padrao" data-i18n="[html]sentimento.torcedor.arena.arena7.texto">Texto Arena 7</ul>
+								</article>
+								<article data-idarena="" data-i18n="[data-idarena]sentimento.torcedor.arena.arena8.id" class="arena" id="descricaoArena8">
+									<h1 data-i18n="sentimento.torcedor.arena.arena8.nome">Arena 8</h1>
+									<ul class="padrao" data-i18n="[html]sentimento.torcedor.arena.arena8.texto">Texto Arena 8</ul>
+								</article>
+								<article data-idarena="" data-i18n="[data-idarena]sentimento.torcedor.arena.arena9.id" class="arena" id="descricaoArena9">
+									<h1 data-i18n="sentimento.torcedor.arena.arena9.nome">Arena 9</h1>
+									<ul class="padrao" data-i18n="[html]sentimento.torcedor.arena.arena9.texto">Texto Arena 9</ul>
+								</article>
+								<article data-idarena="" data-i18n="[data-idarena]sentimento.torcedor.arena.arena10.id" class="arena" id="descricaoArena10">
+									<h1 data-i18n="sentimento.torcedor.arena.arena10.nome">Arena 10</h1>
+									<ul class="padrao" data-i18n="[html]sentimento.torcedor.arena.arena10.texto">Texto Arena 10</ul>
+								</article>
+								<article data-idarena="" data-i18n="[data-idarena]sentimento.torcedor.arena.arena11.id" class="arena" id="descricaoArena11">
+									<h1 data-i18n="sentimento.torcedor.arena.arena11.nome">Arena 11</h1>
+									<ul class="padrao" data-i18n="[html]sentimento.torcedor.arena.arena11.texto">Texto Arena 11</ul>
+								</article>
+								<article data-idarena="" data-i18n="[data-idarena]sentimento.torcedor.arena.arena12.id" class="arena" id="descricaoArena12">
+									<h1 data-i18n="sentimento.torcedor.arena.arena12.nome">Arena 12</h1>
+									<ul class="padrao" data-i18n="[html]sentimento.torcedor.arena.arena12.texto">Texto Arena 12</ul>
+								</article>
+<!-- 							</div>
+						</div> -->
+					</div>
+				</div>
+				<!-- TELA -->
+		
+			</section>
+
+			<!-- AREA -->
+
+
+			<!-- AREA -->
+			<section class="area" id="area_mais">
+
+
+
+				<!-- TELA -->
+				<div class="tela" id="tela_mais" data-titulo="Mais" data-posCarregamento="APP.Area.Mais.Mais.posCarregamento">
+
+					<div id="conteudo_mais">
+						<fieldset id="twitter_minSaude">
+							<legend class="semTexto">Twitter</legend>
+							<div class="scroller">
+								<div id="twits"></div>
+							</div>
+						</fieldset>
+						<div id="componente_springboard">
+							<a class="itensDoJogo" href="#tela_itensDoJogo">
+								<span data-i18n="tela.itensDoJogo">Ítens do jogo</span>
+							</a>
+							<a class="categorias" href="#tela_categorias">
+								<span data-i18n="tela.categorias">Categorias</span>
+							</a>
+							<a class="acesseOSite" href="http://www.saudenacopa.com">
+								<span data-i18n="mais.mais.acesseOSite">Acesse o site</span>
+							</a>
+							<a class="linksUteis" href="#tela_linksUteis">
+								<span data-i18n="tela.linksUteis">Links úteis</span>
+							</a>
+							<a class="malaLegal" href="#tela_malaLegal">
+								<span data-i18n="tela.malaLegal">Mala legal</span>
+							</a>
+							<a class="consulados" href="#tela_consulados">
+								<span data-i18n="tela.consulados">Consulados</span>
+							</a>
+						</div>
+					</div>
+
+				</div>
+				<!-- TELA -->
+
+
+				<!-- TELA -->
+				<div class="tela comRolagem" id="tela_itensDoJogo" data-titulo="Ítens do jogo">
+					<div class="conteudoDeRolagem">
+						<div class="row">
+							<div class="col-xs-10 col-xs-offset-1">
+								<article>
+									<div class="icone selecao"></div>
+									<p data-i18n="mais.itensDoJogo.selecao"></p>
+								</article>
+								<article>
+									<div class="icone ok"></div>
+									<p data-i18n="mais.itensDoJogo.ok">
+								</article>
+								<article>
+									<div class="icone categoria"></div>
+									<p data-i18n="mais.itensDoJogo.categoria"></p>
+								</article>
+								<article>
+									<div class="icone arena"></div>
+									<p data-i18n="mais.itensDoJogo.arena"></p>
+								</article>
+								<article>
+									<div class="icone pontos"></div>
+									<p data-i18n="mais.itensDoJogo.pontos"></p>
+								</article>
+								<article>
+									<div class="icone barraDeEngajamento"></div>
+									<p data-i18n="mais.itensDoJogo.barraDeEngajamento"></p>
+								</article>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- TELA -->
+
+
+				
+
+
+				<!-- TELA -->
+				<div class="tela comRolagem" id="tela_categorias" data-titulo="Categorias" data-posCarregamento="APP.Area.Mais.Categorias.posCarregamento">
+					<div class="conteudoDeRolagem">
+						<div class="row">
+							<div class="col-xs-10 col-xs-offset-1">
+								<div class="row" id="componente_categoriaDoUsuario" data-categoria="profissional">
+									<div class="col-xs-8">
+										<div class="icone semTexto categoria">Categoria</div>
+									</div>
+									<div class="col-xs-4">
+										<div class="icone semTexto trofeu">Trofeu</div>
+									</div>
+								</div>
+
+								<article class="introducao">
+									<p data-i18n="mais.categorias.introducao"></p>
+								</article>
+								<article class="categoria" id="categoria_denteDeLeite">
+									<h1 data-i18n="sentimento.torcedor.categorias.denteDeLeite"></h1>
+									<p class="pontuacao">1 - 13
+										<span data-i18n="mais.categorias.pontos" class="pontos">pontos</span>:
+										<span data-i18n="sentimento.torcedor.arena.arena1.nome" class="nome">Nome Arena</span>
+									</p>
+									<p class="pontuacao">14 - 19
+										<span data-i18n="mais.categorias.pontos" class="pontos">pontos</span>:
+										<span data-i18n="sentimento.torcedor.arena.arena2.nome" class="nome">Nome Arena</span>
+									</p>
+								</article>
+								<article class="categoria" id="categoria_mirim">
+									<h1 data-i18n="sentimento.torcedor.categorias.mirim"></h1>
+									<p class="pontuacao">20 - 26
+										<span data-i18n="mais.categorias.pontos" class="pontos">pontos</span>:
+										<span data-i18n="sentimento.torcedor.arena.arena3.nome" class="nome">Nome Arena</span>
+									</p>
+									<p class="pontuacao">27 - 33
+										<span data-i18n="mais.categorias.pontos" class="pontos">pontos</span>:
+										<span data-i18n="sentimento.torcedor.arena.arena4.nome" class="nome">Nome Arena</span>
+									</p>
+								</article>
+								<article class="categoria" id="categoria_infantil">
+									<h1 data-i18n="sentimento.torcedor.categorias.infantil"></h1>
+									<p class="pontuacao">34 - 39
+										<span data-i18n="mais.categorias.pontos" class="pontos">pontos</span>:
+										<span data-i18n="sentimento.torcedor.arena.arena5.nome" class="nome">Nome Arena</span>
+									</p>
+									<p class="pontuacao">40 - 46
+										<span data-i18n="mais.categorias.pontos" class="pontos">pontos</span>:
+										<span data-i18n="sentimento.torcedor.arena.arena6.nome" class="nome">Nome Arena</span>
+									</p>
+								</article>
+								<article class="categoria" id="categoria_juvenil">
+									<h1 data-i18n="sentimento.torcedor.categorias.juvenil"></h1>
+									<p class="pontuacao">47 - 53
+										<span data-i18n="mais.categorias.pontos" class="pontos">pontos</span>:
+										<span data-i18n="sentimento.torcedor.arena.arena7.nome" class="nome">Nome Arena</span>
+									</p>
+									<p class="pontuacao">54 - 59
+										<span data-i18n="mais.categorias.pontos" class="pontos">pontos</span>:
+										<span data-i18n="sentimento.torcedor.arena.arena8.nome" class="nome">Nome Arena</span>
+									</p>
+								</article>
+								<article class="categoria" id="categoria_junior">
+									<h1 data-i18n="sentimento.torcedor.categorias.junior"></h1>
+									<p class="pontuacao">60 - 66
+										<span data-i18n="mais.categorias.pontos" class="pontos">pontos</span>:
+										<span data-i18n="sentimento.torcedor.arena.arena9.nome" class="nome">Nome Arena</span>
+									</p>
+									<p class="pontuacao">67 - 73
+										<span data-i18n="mais.categorias.pontos" class="pontos">pontos</span>:
+										<span data-i18n="sentimento.torcedor.arena.arena10.nome" class="nome">Nome Arena</span>
+									</p>
+								</article>
+								<article class="categoria" id="categoria_profissional">
+									<h1 data-i18n="sentimento.torcedor.categorias.profissional"></h1>
+									<p class="pontuacao">74 - 79
+										<span data-i18n="mais.categorias.pontos" class="pontos">pontos</span>:
+										<span data-i18n="sentimento.torcedor.arena.arena11.nome" class="nome">Nome Arena</span>
+									</p>
+									<p class="pontuacao">&nbsp;&nbsp;&nbsp;&nbsp;&gt;  80
+										<span data-i18n="mais.categorias.pontos" class="pontos">pontos</span>:
+										<span data-i18n="sentimento.torcedor.arena.arena12.nome" class="nome">Nome Arena</span>
+									</p>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- TELA -->
+
+
+				<!-- TELA -->
+				<div class="tela comRolagem" id="tela_linksUteis" data-titulo="Links úteis">
+					<div class="conteudoDeRolagem">
+						<div class="row">
+							<div class="col-xs-10 col-xs-offset-1">
+								<h1 data-i18n="mais.linksUteis.governamentais">Governamentais</h1>
+								<ul class="listaMenu multiLinha">
+									<li>
+										<a target="_blank" class="celula" data-i18n="mais.linksUteis.gov.viajante" href="http://www.saude.gov.br/viajante">Saúde do Viajantes</a>
+									</li>
+									<li>
+										<a target="_blank" class="celula" data-i18n="mais.linksUteis.gov.svs" href="http://www.saude.gov.br/svs">Secretaria de Vigilância em Saúde</a>
+									</li>
+									<li>
+										<a target="_blank" class="celula" data-i18n="mais.linksUteis.gov.formsus" href="http://formsus.datasus.gov.br/site/formulario.php?id_aplicacao=432">Formulário de notificação de doenças e agravos</a>
+									</li>
+									<li>
+										<a target="_blank" class="celula" data-i18n="mais.linksUteis.gov.agricultura" href="http://www.agricultura.gov.br/">Ministério da Agricultura</a>
+									</li>
+									<li>
+										<a target="_blank" class="celula" data-i18n="mais.linksUteis.gov.anvisa" href="http://www.anvisa.gov.br">Anvisa</a>
+									</li>
+									<li>
+										<a target="_blank" class="celula" data-i18n="mais.linksUteis.gov.malaLegal" href="http://www.agricultura.gov.br/servicos-e-sistemas/servicos/viagens-mala-legal">Mala legal</a>
+									</li>
+									<li>
+										<a target="_blank" class="celula" data-i18n="mais.linksUteis.gov.copa2014" href="http://www.copa2014.gov.br/">Portal da copa</a>
+									</li>
+									<li>
+										<a target="_blank" class="celula" data-i18n="mais.linksUteis.gov.aplicativos" href="http://www.aplicativos.gov.br/">Aplicativos do Governo Federal</a>
+									</li>
+									<li>
+										<a target="_blank" class="celula" data-i18n="mais.linksUteis.gov.malaria" href="http://portalsaude.saude.gov.br/images/pdf/2014/fevereiro/19/Mapa-de-areas-de-risco-para-malaria.pdf">Áreas com ocorrência de malária no Brasil</a>
+									</li>
+								</ul>
+
+								<h1 data-i18n="mais.linksUteis.naoGovernamentais">Não-governamentais</h1>
+								<ul class="listaMenu multiLinha">
+									<li>
+										<a target="_blank" class="celula" data-i18n="mais.linksUteis.nGov.healthmap" href="http://healthmap.org/pt/">HealthMap</a>
+									</li>
+									<li>
+										<a target="_blank" class="celula" data-i18n="mais.linksUteis.nGov.promedmail" href="http://www.promedmail.org/pt">ProMed</a>
+									</li>
+									<li>
+										<a target="_blank" class="celula" data-i18n="mais.linksUteis.nGov.unaids" href="http://unaids.org.br/protejaogol/proteja-o-gol/">Proteja o Gol</a>
+									</li>
+									<li>
+										<a target="_blank" class="celula" data-i18n="mais.linksUteis.nGov.fifa" href="http://pt.fifa.com">Fifa</a>
+									</li>
+								</ul>
+
+								<h1 data-i18n="mais.linksUteis.outrosLinks">Outros</h1>
+								<ul class="listaMenu multiLinha">
+									<li>
+										<a target="_blank" class="celula" data-i18n="mais.linksUteis.outros.who" href="http://www.who.int">Organização Mundial da Saúde</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- TELA -->
+
+
+				<!-- TELA -->
+				<div class="tela comRolagem" id="tela_malaLegal" data-titulo="Mala legal">
+					<div class="conteudoDeRolagem">
+						<div class="row">
+							<div class="col-xs-10 col-xs-offset-1">
+								<h1 data-i18n="[html]mais.malaLegal.titulo">Vigilância Agropecuária Internacional</h1>
+								<ul>
+									<li data-i18n="mais.malaLegal.li1"></li>
+									<li data-i18n="mais.malaLegal.li2"></li>
+									<li data-i18n="mais.malaLegal.li3"></li>
+									<li>
+										<ul>
+											<li data-i18n="mais.malaLegal.li4.li1"></li>
+											<li data-i18n="mais.malaLegal.li4.li2"></li>
+											<li data-i18n="mais.malaLegal.li4.li3"></li>
+											<li data-i18n="mais.malaLegal.li4.li4"></li>
+										</ul>
+									</li>
+								</ul>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- TELA -->
+
+
+				<!-- TELA -->
+				<div class="tela comRolagem" id="tela_consulados" data-titulo="Consulados" data-posCarregamento="APP.Area.Mais.Consulados.posCarregamento">
+					<div class="conteudoDeRolagem">
+						<div class="row">
+							<div class="col-xs-10 col-xs-offset-1">
+								<ul class="listaMenu multiLinha" id="lista_paises">
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- TELA -->
+
+				<!-- TELA -->
+				<div class="tela comRolagem" id="tela_consulado" data-titulo="Consulado">
+					<div class="conteudoDeRolagem">
+						<div class="row">
+							<div class="col-xs-10 col-xs-offset-1">
+
+								<div id="conteudo_consulado"></div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- TELA -->
+			</section>
+			<!-- AREA -->
+
+
+
+
+
+			<!-- AREA -->
+			<section class="area" id="area_menu">
+				<div id="botaoVoltarMenu" class="botaoVoltarArea">
+					<div class="row">
+						<div class="col-xs-2 col-xs-offset-1">
+
+							<a href="#voltar" class="botao voltar padrao semTexto">Voltar</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- TELA -->
+				<div class="tela" id="tela_menu" data-titulo="Menu" data-posCarregamento="APP.Area.Menu.Menu.posCarregamento">
+					<h1 class="marca pequena semTexto">Saúde na copa</h1>
+
+					<div class="baseDaTelaMenu">
+						<div class="row">
+							<div class="col-xs-10 col-xs-offset-1">
+								<ul>
+									<!-- 				<li><a href="#tela_tela" data-i18n="menu.menu.centralDeAjuda">Central de Ajuda</a></li> -->
+									<li class="sobre">
+										<a href="#tela_sobre" data-i18n="menu.menu.sobre">Sobre</a>
+									</li>
+									<li class="termosDeUso">
+										<a href="#tela_termosDeUso" data-i18n="menu.menu.termosEPoliticas">Termos e políticas</a>
+									</li>
+									<li class="versao">
+										<a href="#tela_versao" data-i18n="menu.menu.versao">Versão</a>
+									</li>
+									<li class="alterarSenha">
+										<a href="#tela_alterarSenha" data-i18n="menu.menu.alterarSenha">Alterar senha</a>
+									</li>
+									<li class="idiomas">
+										<a href="#tela_idioma" data-i18n="menu.menu.idiomas">Idiomas</a>
+									</li>
+									<li class="denunciarUmProblema">
+										<a href="#tela_denunciarUmProblema" data-i18n="menu.menu.denunciarUmProblema">Denunciar um problema</a>
+									</li>
+									<li class="sair">
+										<a href="#sair" data-i18n="menu.menu.sair">Sair</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="tela" id="tela_versao" data-titulo="versao" data-posCarregamento="APP.Area.Menu.Versao.posCarregamento">
+					<h1 class="marca pequena semTexto">Saúde na copa</h1>
+					<article class="info">
+						<h1 data-i18n="menu.versao.versao.titulo">Versão</h1>
+						<p class="versao">
+							<span data-i18n="menu.versao.versao.titulo">Versão</span>
+							<span class="numero">1.3</span>
+						</p>
+						<p class="atualizacao">
+							<span data-i18n="menu.versao.versao.atualizacao">Data de atualização</span>
+							<span class="dataAtualizacao">07/06/2014</span>
+						</p>
+						<p class="melhorNavegador">
+							<span data-i18n="menu.versao.melhorNavegador">O webapp é melhor visualizado em navegadores Google Chrome e Mozila Firefox.</span>
+						</p>
+					</article>
+					<article class="parceria">
+						<h1 data-i18n="menu.versao.parceria.titulo">Parceria</h1>
+						
+						<div class="row">
+							<div class="col-xs-5 col-xs-offset-1"><div class="icone skoll semTexto">Skoll</div></div>
+							<div class="col-xs-5"><div class="icone tephinet semTexto">Tephinet</div></div>
+						</div>
+						
+						
+
+					</article>
+					<article class="dev">
+						<h1 data-i18n="menu.versao.dev.titulo">Desenvolvimento e suporte</h1>
+						<div class="icone epitrack semTexto">Epitrack</div>
+
+					</article>
+				</div>
+				<div class="tela" id="tela_sobre" data-titulo="Sobre" data-posCarregamento="APP.Area.Menu.Sobre.posCarregamento">
+					<h1 data-i18n="tela.sobre" class="titulo">Sobre</h1>
+					<div class="texto scroller">
+						<div>
+							<ol class="menu">
+								<li data-ref="sobre">
+									<span data-i18n="menu.sobre.sobre.titulo">Título Seção 1</span>
+								</li>
+								<li data-ref="saibaMais">
+									<span data-i18n="menu.sobre.saibaMais.titulo">Título Seção 2</span>
+								</li>
+								<li data-ref="beneficios">
+									<span data-i18n="menu.sobre.beneficios.titulo">Título Seção 3</span>
+								</li>
+								<li data-ref="custos">
+									<span data-i18n="menu.sobre.custos.titulo">Título Seção 4</span>
+								</li>
+							</ol>
+							<article data-ref="sobre">
+								<h1 data-i18n="menu.sobre.sobre.titulo">Título Seção 1</h1>
+								<a href="#topo" data-i18n="menu.sobre.voltarAoTopo">Voltar ao topo</a>
+								<p data-i18n="[html]menu.sobre.sobre.texto">Texto seção 1</p>
+								<a href="#topo" data-i18n="menu.sobre.voltarAoTopo">Voltar ao topo</a>
+							</article>
+							<article data-ref="saibaMais">
+								<h1 data-i18n="menu.sobre.saibaMais.titulo">Título Seção 2</h1>
+								<a href="#topo" data-i18n="menu.sobre.voltarAoTopo">Voltar ao topo</a>
+								<p data-i18n="[html]menu.sobre.saibaMais.texto">Texto seção 2</p>
+								<a href="#topo" data-i18n="menu.sobre.voltarAoTopo">Voltar ao topo</a>
+							</article>
+							<article data-ref="beneficios">
+								<h1 data-i18n="menu.sobre.beneficios.titulo">Título Seção 3</h1>
+								<a href="#topo" data-i18n="menu.sobre.voltarAoTopo">Voltar ao topo</a>
+								<p data-i18n="[html]menu.sobre.beneficios.texto">Texto seção 3</p>
+								<a href="#topo" data-i18n="menu.sobre.voltarAoTopo">Voltar ao topo</a>
+							</article>
+							<article data-ref="custos">
+								<h1 data-i18n="menu.sobre.custos.titulo">Título Seção 4</h1>
+								<a href="#topo" data-i18n="menu.sobre.voltarAoTopo">Voltar ao topo</a>
+								<p data-i18n="[html]menu.sobre.custos.texto">Texto seção 4</p>
+								<a href="#topo" data-i18n="menu.sobre.voltarAoTopo">Voltar ao topo</a>
+							</article>
+						</div>
+					</div>
+				</div>
+
+
+			</section>
+
+
+		</div>
+	</div>
+	<div id="pelicula_offline" class="componente_offline lightbox pelicula"></div>
+	<div id="componente_offline" class="componente_offline lightbox conteudo">
+		<div class="container">
+			<p>
+				<span class="texto" data-i18n="offline.texto">O seu dispositivo não está conectado a uma rede. Conteúdos que dependem de uma conexão com a internet não estarão disponíveis enquanto offline.</span>
+			</p>
+			<!-- 	<div class="botao ok" data-i18n="offline.confirmar">OK</div> -->
+		</div>
+	</div>
+	<script>
+		if (window.isphone) {
+			document.body.classList.add('isphone');
+		}
+
+
+		head.ready(function() {
+
+			function onDeviceReady() {
+				APP.iniciar();
+				APP.GerenciadorDeTelas.exibirTelaInicial();
+
+				window.addEventListener('online', function() {
+					APP.Offline.forcarOnline();
+				}, true);
+				window.addEventListener('offline', function() {
+					APP.Offline.forcarOffline();
+				}, true);
+
+				if(window.isphone && window.analytics) {
+					analytics.startTrackerWithId('UA-50378086-1');
+				}
+	
+			}
+
+			$(document).ready(function() {
+				if (window.isphone) {
+					document.addEventListener("deviceready", function() {
+						onDeviceReady();
+					}, false);
+				} else {
+					onDeviceReady();
+				}
+			});
+		});
+	</script>
+</body>
+
+</html>

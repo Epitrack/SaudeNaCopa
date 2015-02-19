@@ -1,0 +1,769 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+
+     <!-- Data Atualização -->
+    <string name="dt_atualizacao">Actualizado 25/05/2014</string>
+    
+    
+    <string name="info_farmacias">La información sobre las farmacias son de google</string>
+    <string name="texto_browser">La aplicación web se ve mejor en Google Chrome y Mozilla Firefox.</string>
+    <!-- para traduzir -->
+    <string name="calendario">Calendario</string>
+    <string name="erro_preenchimento_caract_especial">Introduzca un apodo sin caracteres especiales</string>
+    <string name="areas_febre_amarela">Las áreas con recomendación para la vacunación contra la fiebre amarilla</string>
+    <string name="cve">CVE - Centro de Vigilancia Epidemiológica</string>
+    <string name="defesa_civil">Defesa Civil Nacional</string>
+    <string name="disquesaude">Dique Saúde</string>
+    <string name="vigiagro">VIGIAGRO - Vigilância Agropecuária Internacional</string>
+    <string name="malalegal">Equipaje Legal</string>
+    <string name="senha_trocada_sucesso">Contraseña cambiada con éxito</string>
+    <string name="senha_trocada_erro">Error al cambiar la contraseña</string>
+    <string name="erro_senha_nao_confere">La contraseña no coincide</string>
+    <string name="erro_senhas_nao_confere">La nueva contraseña no coincide con la confirmación</string>
+    <string name="parceria">Asociación</string>
+    <string name="desenvolvimento_suporte">Desarrollo y Soporte</string>
+
+
+    <!-- JOGOS - calendario Jogos -->
+
+    <string name="fase_grupos">Fase de grupos</string>
+    <string name="fase_oitava">Octavos de final</string>
+    <string name="fase_quarta">Cuartos de final</string>
+    <string name="fase_semi">Semi-final</string>
+    <string name="fase_final">Final</string>
+    <string name="fase_3lugar">3º Lugar</string>
+     <!-- calendario de jogos -->
+    <string name="grupo">Grupo</string>
+    <string name="rodada">Ronda</string>
+    <string name="vencedor_quartas">GANADOR DE LA CUARTOS DE FINAL</string>
+    <string name="perdedor_semi">PERDEDOR DE LA SEMIFINAL</string>
+    <string name="vencedor_semi">GANADOR DE LA SEMIFINAL</string>
+    <!-- times -->
+    <string name="brasil">Brasil</string>
+    <string name="croacia">Croacia</string>
+    <string name="mexico">México</string>
+    <string name="camarao">Camerún</string>
+    <string name="espanha">ESPAÑA</string>
+    <string name="holanda">Países Bajos</string>
+    <string name="chile">Chile</string>
+    <string name="australia">Australia</string>
+    <string name="colombia">Colombia</string>
+    <string name="grecia">Grecia</string>
+    <string name="costamarfin">Costa de Marfil</string>
+    <string name="japao">Japón</string>
+    <string name="uruguai">Uruguay</string>
+    <string name="costarica">Costa Rica</string>
+    <string name="inglaterra">Inglaterra</string>
+    <string name="italia">Italia</string>
+    <string name="suica">Suiza</string>
+    <string name="equador">Ecuador</string>
+    <string name="franca">Francia</string>
+    <string name="honduras">Honduras</string>
+    <string name="argentina">Argentina</string>
+    <string name="bosnia">Bosnia Y Herzegovina</string>
+    <string name="iran">Irán</string>
+    <string name="nigeria">Nigeria</string>
+    <string name="alemanha">Alemania</string>
+    <string name="portugal">Portugal</string>
+    <string name="gana">Ghana</string>
+    <string name="usa">EEUU</string>
+    <string name="belgica">Bélgica</string>
+    <string name="argelia">Argelia</string>
+    <string name="russia">Rusia</string>
+    <string name="korea">República de Corea</string>
+
+    <!-- SAIMA BAIS - LINKS -->
+    <string name="saude_viajente">Salud viajero</string>
+    <string name="svs">Secretaria de Vigilancia en Salud</string>
+    <string name="form_notificacao">Formulario de notificación de las enfermedades y dolencias</string>
+    <string name="min_agricultura">Ministério da Agricultura </string>
+    <string name="portal_copa">Portal de la copa </string>
+    <string name="app_gov">Aplicaciones del Gobierno Federal</string>
+    
+    <!-- para traduzir -->
+    <string name="selecione_um_sentimento">Seleccione al menos un síntoma.</string>
+    <string name="informacoes">Información</string>
+    <string name="itens_jogo">Reglas del Juego</string>
+    <string name="arenas">Arenas</string>
+    <string name="categorias">Categorías</string>
+    <string name="relate_problema">Describa su problema detalladamente</string>
+    <string name="duvida">Duda</string>
+    <string name="envio_duvida_sucesso">subido duda con éxito!</string>
+    <string name="envio_duvida_erro">Error al enviar duda. Por favor, inténtelo de nuevo más tarde .</string>
+    <string name="central_ajuda">Ayuda</string>
+    <string name="como_ajudalo">¿Cómo podemos ayudarle?</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="title_activity_mudanca_nivel">Nueva Categoría</string>
+    <string name="parabens_categoria">Felicidades! Tú te levantaste de la categoría</string>
+    <string name="parabens_novo_estadio">Felicidades! Nuevo estadio disponible</string>
+    <string name="parabens_novo_estadio_arena">Felicidades! Trepaste categoría y un nuevo estadio está disponible</string>
+    <string name="selecione_sentimento">Seleccione una sensación de tocar tu avatar</string>
+    <string name="erro_maior_99_anos">Recomendar a un edad correcta </string>
+    <string name="envio_sentimento_erro">Usted puede decir lo que sientes en </string>
+    <string name="lembretes_saude">Lembretes de Saúde</string>
+    <string name="erro_sem_internet">Esta funcionalidad requiere acceso a Internet </string>
+    <string name="se_persisitir_sintoma">Gracias por la informacion. Asegurese de buscar el centro médico más cercano.\n\nContinúen informando diariamente cómo es su salud.</string>
+    <string name="proteja_gol">Proteja la meta</string>
+    <string name="saibamais">Más información</string>
+    <string name="abrir">Abrir</string>
+    <string name="consulados">Consulados</string>
+    <string name="alterar_senha">Cambiar contraseña</string>
+    <string name="descreva_problema">Describa su problema detalladamente</string>
+    <string name="senha_atual">Contraseña actual</string>
+    <string name="nova_senha">Nueva contraseña</string>
+    <string name="digite_nova_senha">Vuelva a escribir la nueva contraseña</string>
+    <string name="acesse_site">Acceda al site</string>
+    <string name="calendario_jogos">Calendario de Juegos</string>
+    <string name="versao">Versión</string>
+
+    <!-- saude - menus -->
+    <string name="higiene">Cuidados básicos</string>
+    <string name="vacinas">Vacunas</string>
+    <string name="prevencao_doecas">Prevención de enfermedades</string>
+    <string name="prevencao_acidentes">Prevención de accidentes</string>
+    <string name="prevencao_violencia">Prevención a la violencia</string>
+    <string name="urgencia_emergencias">Atención de emergencia</string>
+    <string name="hospitais_ref">Hospitales</string>
+    <string name="farmacias">Farmacias</string>
+    <string name="telefones_uteis">Teléfonos de utilidad</string>
+
+    <!-- saude telefone uteis -->
+    <string name="governamentais">Gubernamental</string>
+    <string name="naogovernamentais">No gubernamental</string>
+    <string name="outros">Otro</string>
+
+    <!-- mais itens jogo -->
+    <string name="infor_selecao_sentimento">Diga cómo se siente . \n Toque y arrastre el dedo hacia arriba o hacia abajo.</string>
+    <string name="itens_categoria">Descubre en qué categoría te encuentras.</string>
+    <string name="itens_pontos">Gane puntos indicando cómo esta su salud. El día del partido la participación vale 3 puntos y cuando no hay juego, sólo 1 punto. Puede marcar cada 2 horas. Pero atención, porque la obtención de puntos no es suficiente para convertirse en un jugador profesional. Participación diaria es la mejor forma de llegar a la etapa final del juego.</string>
+    <string name="itens_barra">El medidor de actividad está directamente relacionada con tu participación. Cuanto más activo eres, más rápido avanzas de categoría y liberas arenas.</string>
+    <string name="itens_arena">Descubre en cual arena estás.</string>
+    <string name="informacao_botao">Toca en el botón OK para confirmar como te sientes. </string>
+
+    <!-- MAIS - categorias -->
+    <string name="categoria_txt1">Bienvenido al mundo del fútbol. Ahora comenzarás tu carrera como jugador. ¡Suerte!</string>
+    <string name="dente_leite">Alevín</string>
+    <string name="cat_desc_dente_leite" formatted="false">1 &#8211; 13 %: Arena Pantanal \n14 &#8211; 19 %: Arena da Baixada</string>
+    <string name="mirim">Infantil</string>
+    <string name="cat_desc_mirim" formatted="false">20 &#8211; 26 %: Estádio das Dunas \n27 &#8211; 33 %: Arena Amazônia</string>
+    <string name="infantil">Cadete</string>
+    <string name="cat_desc_infantil" formatted="false">34 &#8211; 39 %: Arena Pernambuco \n40 &#8211; 46 %: Estádio Castelão</string>
+    <string name="juvenil">Juvenil</string>
+    <string name="cat_desc_juvenil" formatted="false">47 &#8211; 53 %: Estádio Beira-rio \n54 &#8211; 59 %: Arena Fonte Nova</string>
+    <string name="junior">Senior</string>
+    <string name="cat_desc_junior" formatted="false">60 &#8211; 66 %: Estádio Nacional \n67 &#8211; 73 %: Estádio Minerão</string>
+    <string name="profissional">Profisional</string>
+    <string name="cat_desc_profissional" formatted="false">74 &#8211; 79 %: Arena São Paulo \n80+ %: Estádio Maracanã</string>
+
+    <!-- telefones -->
+    <string name="txtapresentacao">Gracias por participar en la Copa Saludable 2014. \n\nLa aplicación de la Copa Saludable es un proyecto de vigilancia participativa de la salud durante la Copa Mundial FIFA Brasil 2014 ™ para que todos puedan participar de forma voluntaria que la estrategia de Sistema Único de Salud (SUS). Lea más acerca de la aplicación en la pantalla Opciones.</string>
+    <string name="samu">SAMU - Servicio de Atención Móvil de Emergencia</string>
+    <string name="disque_intox">DISQUE-INTOXICAÇÃO - Consultas y quejas relacionadas con intoxicaciones</string>
+    <string name="anvisa">ANVISA - Agencia Nacional de Vigilancia Sanitaria</string>
+    <string name="anac">ANAC - Agencia Nacional de Aviación Civil</string>
+    <string name="antt">ANTT - Agencia Nacional de Transporte Terrestre</string>
+    <string name="antaq">ANTAQ - Agencia Nacional de Transporte Fluvial</string>
+    <string name="pc">Policía Civil</string>
+    <string name="pf">Policía Federal</string>
+    <string name="pm">Policía Militar</string>
+    <string name="prf">Policía Federal de Carreteras</string>
+    <string name="bombeiros">Estación de Bomberos</string>
+    <string name="abuso_infantil">Línea directa para reportar el abuso contra los niños y adolescentes</string>
+    <string name="titulo_sobre">Gracias por participar en la Copa Saludable 2014</string>
+    <string name="texto_sobre">La aplicación de la Copa Saludable es un proyecto de vigilancia participativa de la salud durante la Copa Mundial FIFA Brasil 2014 ™ para que todos puedan participar de forma voluntaria que la estrategia de Sistema Único de Salud (SUS). Lea más acerca de la aplicación en la pantalla Opciones.
+</string>
+    <string name="app_name">Copa de la Salud</string>
+    <string name="cadastrese">Únete</string>
+    <string name="entrar_com_facebook">Únete atraves de Facebook</string>
+    <string name="entrar">Entrar</string>
+    <string name="prosseguindo_termos">Al continuar, usted acepta los términos de uso y la política de privacidad</string>
+    <string name="fem">Femenino</string>
+    <string name="masc">Masculino</string>
+    <string name="apelido">Apodo</string>
+    <string name="idade">Edad</string>
+    <string name="email_cadastro">Registro de correo electrónico</string>
+    <string name="email_confirm">Confirmación de correo electrónico</string>
+    <string name="senha">Contraseña</string>
+    <string name="senha_confirm">Confirmación de contraseña</string>
+    <string name="apelido_email">Correo electrónico</string>
+    <string name="termos_uso">Condiciones de uso</string>
+    <string name="denunciar_problema">Reportar um problema</string>
+    <string name="termos_politicas">Términos y políticas</string>
+    <string name="sobre">Sobre</string>
+    <string name="sair">Salir</string>
+    <string name="pontos">Puntos</string>
+    <string name="esqueceu_senha">¿Olvidaste tu contraseña?</string>
+    <string name="email">Correo electrónico</string>
+    <string name="texto_esqueci_senha">Introduzca su correo electrónico registrado para enviar tu contraseña</string>
+    <string name="enviar">Enviar</string>
+    <string name="li_e_concordo">"He leído y acepto los términos de uso"</string>
+    <string name="jogador">Jugador</string>
+    <string name="saude">Salud</string>
+    <string name="jogos">Juegos</string>
+    <string name="turismo">Turismo</string>
+    <string name="arena_pernambuco">ARENA PERNAMBUCO</string>
+    <string name="estadio_castelao">ESTADIO CASTELÃO</string>
+    <string name="estadio_dunas">ESTADIO DE DUNAS</string>
+    <string name="arena_fonte_nova">ARENA FONTE NOVA</string>
+    <string name="arena_amazonia">ARENA AMAZÔNIA</string>
+    <string name="arena_pantanal">ARENA PANTANAL</string>
+    <string name="estadio_nacional">ESTADIO NACIONAL</string>
+    <string name="estadio_mineirao">ESTÁDIO MINEIRÃO</string>
+    <string name="arena_sao_paulo">ARENA SÃO PAULO</string>
+    <string name="estadio_maracana">ESTADIO MARACANA</string>
+    <string name="arena_baixada">ARENA DA BAIXADA</string>
+    <string name="estadio_beira_rio">ESTÁDIO BEIRA-RIO</string>
+    <string name="erro_preenchimento">Rellene todos los campos</string>
+    <string name="aguarde">Esperar...</string>
+    <string name="erro_login">No se puede acceder. Revise su correo electrónico y contraseña.</string>
+
+    <!-- PERGUNTAS -->
+    <string name="pergunta_sentimento1">Di como te sientes.</string>
+    <string name="pergunta_sentimento_bem">te sientes bien!</string>
+    <string name="pergunta_sentimento_muito_bem">te sientes muy bien!</string>
+    <string name="pergunta_sentimento4_mal">te sientes mal!</string>
+    <string name="pergunta_sentimento5_muito_mal">te sientes muy mal!</string>
+    <string name="erro_envio_email">Correo electrónico no encontrado</string>
+    <string name="envio_email_sucesso">Un correo electrónico fue enviado a recuperar la contraseña.</string>
+    <string name="msg_cadastro_sucesso">Regístrate realizado con éxito. Por favor, iniciar sesión.</string>
+    <string name="aceite_termo">Usted debe aceptar los términos de uso.</string>
+    <string name="erro_menor12">La aplicación no es recomendable para los más de 12 años.</string>
+    <string name="sintomas">Síntomas</string>
+    <string name="febre">Fiebre</string>
+    <string name="tosse">Tos</string>
+    <string name="dor_garganta">Dolor de garganta</string>
+    <string name="falta_ar">Dificultad para respirar</string>
+    <string name="nauseas">Náuseas y vómitos</string>
+    <string name="diarreia">Diarrea</string>
+    <string name="dor_articu">Dolor en las articulaciones</string>
+    <string name="dor_cabeca">Dolor de cabeza</string>
+    <string name="sagramento">Sangrado</string>
+    <string name="manchas">Manchas rojas en el cuerpo</string>
+    <string name="contato_alguem">Yo tenía contacto o conozco a alguien con alguno de esos síntomas en los últimos 7 días</string>
+    <string name="procurou_servico">Miré por el servicio de salud</string>
+    <string name="erro_cadastro">No se puede firmar para arriba.</string>
+    <string name="envio_sentimento_sucesso">Datos enviados correctamente! Continúen informando diariamente cómo es su salud!</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="confirmacao">Confirmación</string>
+    <string name="atencao">¡Atención!</string>
+    <string name="selecione_opcao">Desliza tu avatar para informar cómo estás.</string>
+    <string name="sem_localizacao">Por favor, active los servicios de ubicación para enviar información.</string>
+    <string name="desc_arena_amazonia">&#8226; Ubicación: Manaus - AM
+&#60;br&#62;&#60;br&#62;&#8226; Capacidad: 42.374
+&#60;br&#62;&#60;br&#62;&#8226; Arena: La arena tiene cuatro rampas de acceso, 98 baños, 420 reflectores y 85 cámaras de seguridad, además de más comodidad para todos, con 118 asientos para personas con movilidad reducida, 69 para obesos y 445 para acompañantes de personas con discapacidad. 
+&#60;br&#62;&#60;br&#62;&#8226; Curiosidad: Con 83,5mil m² de area construida, la Arena Amazônia tuvo su arquitectura inspirada en un cesto de paja indígena cargado con frutas típicas de Brasil: melón, plátano, piña, naranja, mango, guayaba y papaya.
+&#60;br&#62;&#60;br&#62;&#8226; Dirección: Avenida Djalma Batista, 3637 – Flores, Manaus, Amazônia.
+&#60;br&#62;&#60;br&#62;&#8226; Sítio: http://arenadaamazonia.com.br/</string>
+    <string name="desc_arena_minerao">&#8226; Ubicación: Belo Horizonte – MG
+&#60;br&#62;&#60;br&#62;&#8226; Capacidad: 62.254
+&#60;br&#62;&#60;br&#62;&#8226; Estadio: El estadio tiene aparcamiento con 2.925 lugares, 62.160 asientos cubiertos, 58 bares, 54 baños públicos y entrada controlada por 106 ruletas electrónicas. El estadio tiene también una buena accesibilidad para las personas con discapacidad: lugares de aparcamiento exclusivos y ocho ascensores.
+&#60;br&#62;&#60;br&#62;&#8226; Curiosidad: Declarada patrimonio histórico de Belo Horizonte, la fachada del Estádio Mineirão quedó con las mismas características del proyecto de 1965.
+&#60;br&#62;&#60;br&#62;&#8226; Dirección: Avenida Antônio Abrahão Caram, 1001 - Pampulha, Belo Horizonte, Minas Gerais.
+&#60;br&#62;&#60;br&#62;&#8226; Sítio: http://www.minasarena.com.br/</string>
+    <string name="desc_arena_nacional">&#8226; Ubicación: Brasília - DF
+&#60;br&#62;&#60;br&#62;&#8226; Capacidad: 68.009
+&#60;br&#62;&#60;br&#62;&#8226; Estadio: El Estadio Nacional de Brasília es un monumento en arquitectura. Hay 288 pilares con más de 36m cada, construidos alrededor de la arena, que le dan un aspecto magnífico al sitio. El estadio tiene todos los asientos cubiertos y distancia inicial de 7,5m del campo, 465 reflectores, 158 ruletas de acceso, 54 bares y 20 ascensores.
+&#60;br&#62;&#60;br&#62;&#8226; Curiosidad: El Estadio Nacional se destaca por las acciones sostenibles. Las bases de los pisos se construyeron con el material hecho a partir de la demolición del concreto y el agua de la lluvia que cae en el techo se tratan y reciclan para su uso en los inodoros y el riego del campo.
+&#60;br&#62;&#60;br&#62;&#8226; Dirección: Asa Norte - Brasília, Distrito Federal.
+&#60;br&#62;&#60;br&#62;&#8226; Sítio: http://www.estadionacionaldebrasilia.com.br/</string>
+    <string name="desc_arena_pantanal" formatted="false">&#8226; Ubicación: Cuiabá - MT
+&#60;br&#62;&#60;br&#62;&#8226; Capacidad: 42.968
+&#60;br&#62;&#60;br&#62;&#8226; Arena: La Arena Pantanal tiene 18mil gradas móviles y 166 lugares para personas obesas. El estadio tiene una buena infraestructura, con restaurantes, hoteles, aparcamientos, lagos, bosque y pista de caminada.
+&#60;br&#62;&#60;br&#62;&#8226; Curiosidad: La arena tiene un proyecto sostenible, con economia de 40% en el consumo de agua y reducción de 20% del consumo de energia.
+&#60;br&#62;&#60;br&#62;&#8226; Dirección: Avenida Agrícola Paes de Barros – Cidade Alta, Cuiabá, Mato Grosso.
+&#60;br&#62;&#60;br&#62;&#8226; Sítio: http://www.cuiaba2014.mt.gov.br/</string>
+    <string name="desc_arena_baixada">&#8226; Ubicación: Curitiba - PR
+&#60;br&#62;&#60;br&#62;&#8226; Capacidad: 41.456
+&#60;br&#62;&#60;br&#62;&#8226; Arena: La arena fue construída en 1914, cerca del centro de la ciudad y pasó por muchas reformas para recibir la Copa del Mundo FIFA 2014, como la eliminación de nivel del concreto para igualar las gradas y la construcción de dos nuevas escaleras, que conectan la parte inferior de las gradas a la superior.
+&#60;br&#62;&#60;br&#62;&#8226; Curiosidad: Conocida por tener uno de los mayores índices de calidad de vida en Brasil, la ciudad de la Arena da Baixada, Curitiba, atrae a muchos turistas.
+&#60;br&#62;&#60;br&#62;&#8226; Dirección: Avenida Presidente Getúlio Vargas, 1895 – Água Verde, Curitiba, Paraná.
+&#60;br&#62;&#60;br&#62;&#8226; Sítio: http://www.arenacap.com.br/</string>
+    <string name="desc_arena_castelao">&#8226; Ubicación: Fortaleza - CE
+&#60;br&#62;&#60;br&#62;&#8226; Capacidad: 64.846
+&#60;br&#62;&#60;br&#62;&#8226; Estadio: El Estadio de Fortaleza fue el primero en estar listo para el Mundial 2014 y tiene dos características importantes: la accesibilidad y la tecnología. De los asientos, 255 son para personas con dispacacidad, 120 para obesos y 1.200 para personas con movilidad reducida.
+&#60;br&#62;&#60;br&#62;&#8226; Curiosidad: El estadio tiene piso táctil para discapacitados visuales. Hay 2,5% de espacio disponible para personas con discapacidad 1,5% más que lo establecido por la ley. La cubierta del techo es termoacústica translúcida, para asegurar una sensación térmica agradable y las sillas, de color verde claro, son resistentes al fuego y a los rayos UV.
+&#60;br&#62;&#60;br&#62;&#8226; Dirección: Avenida Alberto Craveiro, 2901 – Castelão, Fortaleza, Ceará.
+&#60;br&#62;&#60;br&#62;&#8226; Sítio: http://arenacastelao.com/</string>
+    <string name="desc_arena_dunas">&#8226; Ubicación: Natal - RN
+&#60;br&#62;&#60;br&#62;&#8226; Capacidad: 42.068
+&#60;br&#62;&#60;br&#62;&#8226; Estadio: El estadio tiene 10,6mil asientos desmontables, 21 puntos de acceso, 25 bares, 30 baños y 200 cámaras de seguridad.
+&#60;br&#62;&#60;br&#62;&#8226; Curiosidad: Estádio das Dunas fue proyectado para dar la idea del movimiento de las dunas de arenas, comunes en Natal, con fachada y techo integrados y compuestos de “20 pétalos”, más altos de un lado del estadio. El techo tiene un diseño que permite más ventilación e iluminación. 
+&#60;br&#62;&#60;br&#62;&#8226; Dirección: Endereço: Avenida Prudente de Morais – Tirol, Natal, Rio Grande do Norte.
+&#60;br&#62;&#60;br&#62;&#8226; Sítio: http://www.arenadunas.com.br/</string>
+    <string name="desc_arena_beira_rio">&#8226; Ubicación: Porto Alegre - RS
+&#60;br&#62;&#60;br&#62;&#8226; Capacidad: 48.849
+&#60;br&#62;&#60;br&#62;&#8226; Estadio: El estadio tiene 5 mil lugares de aparcamiento, 17 accesos, 130 ruletas de acceso, 81 baños y una iluminación con caracteristicas cercanas a de la luz del dia.
+&#60;br&#62;&#60;br&#62;&#8226; Curiosidad: El Estádio Beira-Rio queda em el margen del río Guaíba, en un lugar de fácil acceso a las personas. La arena tiene un techo proyectado en forma de hojas, con 65 módulos.
+&#60;br&#62;&#60;br&#62;&#8226; Dirección: Avenida Padre Cacique, 891 – Praia de Belas, Porto Alegre, Rio Grande do Sul.
+&#60;br&#62;&#60;br&#62;&#8226; Sítio: http://www.internacional.com.br/</string>
+    <string name="desc_arena_pernambuco">&#8226; Ubicación: São Lourenço da Mata - PE
+&#60;br&#62;&#60;br&#62;&#8226; Capacidad: 44.248
+&#60;br&#62;&#60;br&#62;&#8226; Arena: La Arena Pernambuco está construida en São Lourenço da Mata, ciudad metropolitana, y tiene 4.700 lugares de aparcamiento, 4 rampas de acceso, 8 ascensores, cámaras de seguridad 360° y amplio espacio para circulación.
+&#60;br&#62;&#60;br&#62;&#8226; Curiosidad: Recife es la capital más antigua de Brasil, fundada en 1561. Cortada por rios, la ciudad también tiene una intensa producción cultural y artística y muchos proyectos en tecnologia. La arena es multifuncional  y podrá ser utilizada para otros grandes espectáculos después del mundial.
+&#60;br&#62;&#60;br&#62;&#8226; Dirección: Avenida Deus É Fiel, 01 Letra A – Jardim Penedo, São Lourenço da Mata, Pernambuco.
+&#60;br&#62;&#60;br&#62;&#8226; Sítio: http://www.itaipavaarenapernambuco.com.br/
+ </string>
+    <string name="desc_arena_maracana">&#8226; Ubicación: Rio de Janeiro - RJ
+&#60;br&#62;&#60;br&#62;&#8226; Capacidad: 76.804
+&#60;br&#62;&#60;br&#62;&#8226; Estadio: El estadio tiene 124 mil m² de area construida, 6 rampas, 17 ascensores, 292 baños, 60 bares y 396 reflectores. Su fachada es considerada Patrimonio Histórico y Artístico Nacional y sus asientos son de colores amarillo, azul y blanco.
+&#60;br&#62;&#60;br&#62;&#8226; Curiosidad: Estádio do Maracanã es un de los estadios más famosos de Brasil. Fue inaugurado en 1950 y asistió a grandes momentos del fútbol mundial, como el milésimo gol de Pelé, y va a recibir el juego de la final de la Copa del Mundo FIFA 2014.
+&#60;br&#62;&#60;br&#62;&#8226; Dirección: Rua Professor Eurico Rabelo – Maracanã, Rio de Janeiro, Rio de Janeiro.
+&#60;br&#62;&#60;br&#62;&#8226; Sítio: http://www.maracana.com/</string>
+    <string name="desc_arena_fonte_nova">&#8226; Ubicación: Salvador - BA
+&#60;br&#62;&#60;br&#62;&#8226; Capacidad: 48.747
+&#60;br&#62;&#60;br&#62;&#8226; Arena: Con 90mil m² de área construida, el edificio tiene 10 niveles y 3 niveles de gradas (inferior, intermedio y superior), 2.500 lugares de aparcamiento, 126 ruletas de acceso, 9 ascensores, 227 cámaras y 376 reflectores.
+&#60;br&#62;&#60;br&#62;&#8226; Curiosidad: La Arena Fonte Nova está ubicada en la ciudad de Salvador, primera capital de Brasil y ciudad más poblada del nordeste. En la parte sur de la arena, hay una abertura hacia el Tororo Dique, fuente natural de la ciudad.
+&#60;br&#62;&#60;br&#62;&#8226; Dirección: Ladeira da Fonte das Pedras – Nazaré, Salvador, Bahia.
+&#60;br&#62;&#60;br&#62;&#8226; Sítio: http://www.itaipavaarenafontenova.com.br/</string>
+    <string name="desc_arena_saopaulo">&#8226; Ubicación: São Paulo - SP
+&#60;br&#62;&#60;br&#62;&#8226; Capacidad: 65.807
+&#60;br&#62;&#60;br&#62;&#8226; Arena: La arena tiene 48 mil asientos convencionales y 21.160 asientos móviles y 3.500 lugares de aparcamiento.Curiosidad: La Arena de São Paulo va a recibir la abertura del Mundial 2014, el juego entre Brasil y Croacia.
+&#60;br&#62;&#60;br&#62;&#8226; Dirección: Avenida Miguel Ignácio Curi, 111 – Vila Carmosina, São Paulo, São Paulo.
+&#60;br&#62;&#60;br&#62;&#8226; Sítio: http://www.corinthians.com.br/arena/</string>
+
+    <!-- SOBRE -->
+    <string name="sobre_1">La \"COPA SALUDABLE\" es una aplicación web gratuita, diseñada
+			para su uso en dispositivos móviles y navegadores web y es parte de
+			un proyecto innovador para mejorar la vigilancia de la salud en el
+			Sistema Único de Salud (SUS), llamada vigilancia participativa.
+		
+
+		\n\nEs un proceso simple que se basa en la participación voluntaria
+			de los visitantes o residentes en Brasil, informando sobre su estado
+			de salud durante de la Copa del Mundo FIFA Brasil 2014&#8482;. La \"COPA
+			SALUDABLE\" fue desarrollada en Portugués, Inglés y Español para ser
+			un canal complementario de información y servicios de salud a los
+			usuarios, lo que permite la participación de todos. Basta tener 13
+			años de edad o más y aceptar los Términos de participación y
+			utilización, informando periódicamente su estado de salud com las
+			instrucciones disponibles en la aplicación
+		\n\n
+
+		Este proyecto es una iniciativa de la Secretaría de Vigilancia
+			en Salud, en colaboración con los Departamentos de Salud de las sedes
+			de los partidos y otras instituciones nacionales e internacionales.\n\n
+
+		Utilizada por primera vez en Brasil, la implementación de la
+			estrategia de vigilancia participativa se producirá sin la inversión
+			pública en el desarrollo de software. Para ello, a través de una
+			asociación, la \" COPA SALUDABLE \" está siendo desarrollada como
+			software libre a través de la inversión de Skoll Global Threats Fund
+			y el apoyo operativo de la Training in Public Health Intervention
+			Network (TEPHINET), ambas son organizaciones no gubernamentales sin
+			fines de lucro que actúan en la mejoría de la vigilancia de la salud
+			en el mundo y las técnicas de Detección Digital de Enfermedades. El
+			desarrollo tecnológico de la aplicación se realiza por medio de la
+			startup Epitrack, con sede en Recife / Pernambuco.\n\n
+		Esta asociación también incluye el apoyo técnico y el
+			intercambio de experiencias con otras iniciativas adoptadas a nivel
+			mundial como FluNearYou (flunearyou.org) eSaludBoricua
+			(saludboricua.org ) creado y administrado por la ONG HealthMap (
+			healthmap.org ) del Hospital Infantil de Boston en colaboración con
+			la Asociación Americana de Salud Pública ( apha.org ) y por la Skoll
+			Global Threats Fund (skollglobalthreats.org) . Estas estrategias
+			visan la vigilancia del síndrome de la gripe en los Estados Unidos de
+			América (EE.UU.) y Canadá, el dengue, la leptospirosis y el síndrome
+			de la gripe en Puerto Rico.\n\n
+
+		La estrategia \"COPA SALUDABLE\" es uno de los importantes
+			legados para la salud pública que la Copa del Mundo FIFA Brasil
+			2014&#8482; está incentivando. Esta estrategia se puede aplicar a otras
+			iniciativas de interés público en el futuro. Una vez más el Sistema
+			Único de Salud de Brasil demuestra su capacidad de innovación e
+			inclusión social. Participa y comparte!</string>
+    <string name="sobre_2_titulo">SEPA MÁS SOBRE LA VIGILANCIA PARTICIPATIVA</string>
+    <string name="sobre_2">La Copa del Mundo FIFA Brasil 2014&#8482; es uno de los mayores
+						eventos deportivos del planeta y se estima que aproximadamente 3,7
+						millones de turistas, brasileños y extranjeros, deberán circular
+						por las 12 sedes. Por esta razón, el Sistema Único de Salud (SUS)
+						requiere mecanismos ágiles para identificar rápidamente la
+						aparición de enfermedades que puedan afectar a los visitantes y /
+						o residentes en estas ciudades.\n\n
+						Si usted va a asistir a la Copa del Mundo FIFA Brasil 2014&#8482;
+						como un aficionado o un trabajador residente o no en las sedes de
+						la copa o en Brasil, usted es el participante ideal para
+						contribuir con el SUS por medio de la "COPA SALUDABLE". A partir
+						del envío voluntario y regular de información sobre su estado de
+						salud, la vigilancia será capaz de describir el perfil de salud o
+						de enfermedades en las ciudades anfitrionas de la copa durante
+						todo el período del evento. Basta con instalar y registrarse para
+						comenzar a participar en el reto divertido de cuidar de la salud
+						de la ciudad, ganando puntos diariamente y desbloqueando etapas en
+						el juego.
+						
+						\n\nSu participación es una buena contribución para mejorar de
+						la vigilancia de la salud en Brasil. En el registro no habrá
+						identificación nominal y estará garantizada la privacidad del
+						correo electrónico. No habrá contacto con usted de parte del
+						sistema de salud; como resultado de la participación y la
+						comunicación de su estado de salud no significa que usted tendrá
+						una consulta médica.
+						
+						\n\nEs importante destacar que si usted dice que no se siente
+						bien, se recomienda que consulte a su médico de cabecera o a los
+						servicios de salud más cercanos a usted. Para ello, en la
+						aplicación está disponible un acceso directo a la búsqueda
+						pre-configurada de servicios de salud y farmacias más cercanas a
+						usted, basado en el servicio de geolocalización de su dispositivo
+						móvil en Google Maps. Además, usted dispone de teléfonos útiles
+						como el SAMU (Servicio de Atención Móvil de Urgencia ) cuya
+						llamada es gratuita y funciona las 24 horas del día a las
+						solicitudes de atención de urgencia para los casos de naturaleza
+						traumática, clínica, pediátrica, quirúrgica, ginecológica -
+						obstétrica y de salud mental, en los hogares, lugares de trabajo y
+						vías públicas.\n\n
+						Esperamos que se divierta al animar a su selección con las
+						informaciones especialmente seleccionadas desde la página oficial
+						de la FIFA y aprovechar para saber más sobre cuidados simples de
+						salud que le ayudarán a celebrar la victoria con la COPA
+						SALUDABLE.</string>
+    <string name="sobre_3_titulo">VEA LOS BENEFICIOS DE SU PARTICIPACIÓN</string>
+    <string name="sobre_3">Participar activamente de las acciones de vigilancia en
+						salud que objetivan la prevención de enfermedades en la comunidad
+					\n\n
+					Acceder a los contactos de los servicios de utilidad
+						pública, sin tener que alterar la agenda de su teléfono\n\n
+						
+						Acceder fácilmente a información útiles sobre el cuidado de
+						la salud\n\n
+						Aprovechar de las facilidades, tales como la búsqueda
+						pre-configurada por los hospitales y farmacias más cercanas (20
+						km) en Google Maps, sin necesidad de abrir otra aplicación\n\n
+						
+						Conocer el perfil de salud de los participantes a través de la
+						página web \"Copa Saludable\".
+					\n\n
+					Seguir el calendario de los juegos y los lugares de sus
+						partidos favoritos</string>
+    <string name="sobre_4_titulo">COSTO</string>
+    <string name="sobre_4">Descarga y participación: \n No hay ningún costo para
+						obtener y participar en la "COPA SALUDABLE".
+					\n\n
+						Acceso a los servicios: \n - sin costo: a través de los
+						puntos de acceso gratuitos en locales con internet wi-fi en la
+						ciudad. \n - costo: a través de su paquete de datos
+						contratado
+					\n\n
+						Llamada telefónica: \n Los servicios públicos de referencia
+						descritos en los teléfonos útiles se ofrecen a través de llamada
+						gratuita, según información de la entidad responsable.</string>
+    <string name="sobre_5_titulo">POLÍTICA DE PRIVACIDAD</string>
+    <string name="sobre_5">        La \"COPA SALUDABLE\" se compromete a garantizar la privacidad
+						de los participantes, com la preservación de la intimidad, de la
+						vida privada, del honor y el imagen de las personas que participan
+						en la iniciativa, así como con las libertades y garantías
+						individuales.\n\n
+						La política de privacidad de la " COPA SALUDABLE ", explica: \n\n
+						
+						Qué información recogemos y por qué la recogemos. \n
+						Cómo utilizar esta información.
+					\n\n
+					Información que recogemos
+					\n\n
+
+					La información proporcionada por usted:\n\n
+					Registro: las informaciones recogidas no permiten
+					identificar personalmente a los participantes, no se pide el
+					nombre, la dirección o cualquier documento. Las únicas
+					informaciones que se solicitan en el registro son la dirección de
+					correo electrónico válida que se necesita para la recuperación de
+					contraseña, apellido, sexo y edad. Se le garantiza la privacidad
+					del correo electrónico y el mismo no será utilizado para los
+					mensajes que buscan el contacto con el participante. Ninguna de
+					estas informaciones serán compartidas con terceros, excepto cuando
+					sea requerido por la ley o en cumplimiento de una orden judicial. \n\n
+					 Durante el uso de la aplicación web: la información
+					acerca de su estado de salud será proporcionada por usted durante
+					todo el período de realización de la Copa del Mundo FIFA Brasil
+					2014&#8482;. \n\n
+
+					Informaciones que solicitamos a partir el uso que usted
+						hace de la aplicación web:
+					\n\n Podemos recopilar información acerca de la
+					ubicación de tu móvil a través de geolocalización, con el objetivo
+					de ofrecerle búsqueda de los hospitales y farmacias cercanas e
+					identificar la aparición de síntomas similares en grupos de
+					personas en un área geográfica determinada. \n\n
+
+					Cómo utilizamos estas informaciones
+					\n Las informaciones proporcionadas por los usuarios sobre
+					su estado de salud en su momento se utilizan para el análisis
+					estadístico y para detectar, a tiempo el cambio del patrón
+					epidemiológico local basado en los signos y síntomas notificados
+					por los usuarios. Estos datos serán analizados y validados con base
+					a otras fuentes de información como el Sistema de Información de
+					Enfermedades de Notificación Obligatoria (SINAN ) o investigación
+					local en la red de servicios de salud. \n\n Estos
+					datos agregados pueden indicar la tendencia de la ocurrencia de las
+					enfermedades en las ciudades sedes de la Copa del Mundo,
+					permitiendo mayor agilidad en la adopción de medidas de control por
+					las autoridades sanitarias. Estos datos no representan la magnitud
+					real de casos de enfermedades específicas en una localidad y sólo
+					son útiles como alerta temprana (early warning ), una vez que la
+					mayor limitación de la vigilancia participativa es la validez de la
+					información. \n\n Si una región, estado o país tiene
+					un número muy limitado de participantes, sus informaciones no
+					tendrán aplicación práctica en el proceso de vigilancia y no serán
+					consideradas útiles para la salud pública. Por esta razón, se
+					utilizarán solamente los datos donde sea observada concentración de
+					información consolidada en el espacio (localidad, barrio o ciudad)
+					y en el tiempo (hora, día o semana).</string>
+
+    <!-- TERMOS -->
+    <string name="termos1_titulo">Términos de uso</string>
+    <string name="termos1">        Por favor, lea estos términos de uso antes de utilizar la “COPA
+			SALUDABLE”, hacer cualquier colaboración o acceder o descargar
+			cualquier información de esta aplicación. \n\n Al
+			acceder o utilizar la “COPA SALUDABLE”, acepte y esté de acuerdo en
+			cumplir los términos y condiciones establecidas en estos “términos de
+			uso”. \n\n Estos términos son un acuerdo vinculado
+			entre usted y la “COPA SALUDABLE”, que incluye todo su acceso y uso
+			de esta aplicación lo que incluye el uso de todas las informaciones,
+			datos, herramientas, productos, servicios y otros contenidos
+			disponibles por medio de este. \n\n Al utilizar esta
+			aplicación, usted confirma que comprende y está de acuerdo con lo
+			siguiente:</string>
+    <string name="termos_2_titulo">Respeto a las Leyes</string>
+    <string name="termos_2">        El usuario deberá acceder a la “COPA SALUDABLE” solamente
+							para finalidades lícitas.\n\n
+							
+							El usuario se compromete a utilizar la aplicación solamente
+							para los debidos fines y en conformidad con el presente término y
+							limitaciones legales, como cualquier política aplicada en Brasil.\n\n
+							
+							Su acceso es prohíbido en territorios donde el contenido
+							sea considerado ilegal. Aquellos que opten por acceder a este
+							sitio web a partir de otras localidades lo harán por iniciativa
+							propia y serán responsables por el cumplimiento de las leyes
+							locales aplicables. Los materiales no deberán ser utilizados o
+							exportados en incumplimiento de las leyes brasileñas. Cualquier
+							pendencia en relación a los materiales será resuelta por las
+							leyes brasileñas.\n\n
+							
+							La alteración no autorizada del contenido de este sitio web
+							está expresamente prohibida.</string>
+    <string name="termos_3_titulo">Límites de uso</string>
+    <string name="termos_3">        La utilización de la aplicación está indicada solamente
+							para individuos de 13 años de edad o más.</string>
+    <string name="termos_4_titulo">Responsabilidad por el contenido</string>
+    <string name="termos_4">        La “COPA SALUDABLE” no es responsable por el contenido de
+							cualquier información eventualmente intercambiadas entre los
+							usuarios entre sí, o con la “COPA SALUDABLE” sean ellas lícitas o
+							ilícitas.\n\n
+							El usuario se compromete que es el único responsable por su
+							propia conducta y por la veracidad de las informaciones
+							suministradas mientras utiliza el servicio y que es responsable
+							por las consecuencias que resulten de la provisión intencional de
+							datos incorrectos.\n\n
+							
+							El usuario se compromete que al utilizar la “COPA
+							SALUDABLE” no irá a publicar, enviar, distribuir o divulgar
+							contenido o información de carácter difamatorio, obsceno o
+							ilítico, inclusive informaciones de propiedad exclusiva
+							pertenecientes a otras personas o empresas, bien como marcas
+							registradas o informaciones protegidas por derechos autorales,
+							sin la expresa autorización del titular de estos derechos;\n\n
+							
+							Nadie puede actuar a su nombre en el uso de la “COPA
+							SALUDABLE”. Usted es responsable por el contenido que individuos
+							no autorizados produzcan al utilizar esta aplicación utilizando
+							con su permiso y su perfil cadastrado. Esta regla no se aplica a
+							los casos de violación u otros problemas de seguridad de
+							aplicación.</string>
+    <string name="termos_5_titulo">Accesibilidad al contenido</string>
+    <string name="termos_5">        El equipo de la “COPA SALUDABLE” no garantiza que esta
+							aplicación esté parcial o completamente funcional para la
+							utilización fuera de las areas relacionadas a la COPA DEL MUNDO
+							FIFA 2014&#8482;, que incluye las ciudades anfitrionas y municipios
+							próximos.\n\n
+							
+							De la misma forma no garantiza que cualquier contenido esté
+							apropiado o disponible para uso fuera del territorio nacional. Si
+							usted opta por acceder el Webapp y la aplicación de otras
+							localidades, usted lo hará por su propia iniciativa y a su propio
+							riesgo. Usted es responsable por el cumplimiento de las leyes
+							locales, y en la medida en que leyes locales sean aplicables.
+							Usted se compromete específicamente en cumplir todas las leyes
+							aplicables relativas a la transmisión de datos técnicos
+							exportados a partir de este local.</string>
+    <string name="termos_6_titulo">Propiedad intelectual</string>
+    <string name="termos_6">        El equipo de la “COPA SALUDABLE” y sus colaboradores, son
+							titulares del derecho de autoría de los contenidos producidos y
+							presentados en esta aplicación. Esta premisa no se aplica a las
+							informaciones consideradas como de domino público o de utilidad
+							pública. Todas las demás marcas comerciales, marcas de servicio,
+							nombres y logotipos que aparecen en esta aplicación son propiedad
+							de sus respectivos propietarios.\n\n
+							
+							
+							La aplicación \"COPA SALUDABLE\" es un software open source cuyo
+							uso por terceros se somete a los términos de la licencia
+							internacional  GNU
+								General Public License, version 3 (GPL-3.0). Los derechos de uso
+							del contenido y de los informes generados por el Webapp y por la
+							aplicación son cedidos por los desarrolladores, especialmente los
+							que se derivan de las condiciones de la licencia 
+								CreativeCommons - Atribución-No Comercial 4.0 Internacional 
+								\n\n
+
+						Sólo los informes de los servicios de salud de cada ciudad
+							anfitriona deben considerarse oficiales para la divulgación
+							pública de los datos relativos a este tema. Ninguna información
+							derivada de la \"COPA SALUDABLE\", a pesar del compromiso del
+							personal para garantizar la calidad, la puntualidad y la
+							autenticidad de la información, se considerará oficial para la
+							divulgación pública. Los datos recogidos a través de la "COPA
+							SALUDABLE", provienen de un público objetivo específico que se
+							puede ver afectado por la capacidad de acceso a dispositivos
+							móviles o computadoras con especificaciones de tecnología mínima.
+							Así, las informaciones generadas a partir de esta estrategia no
+							necesariamente coincidirán con la expresión real del patrón
+							epidemiológico de aquel periodo y lugar. Las informaciones de
+							utilidad recreativa o pública podrán presentar cierta inexactitud
+							o errores en la actualización, siendo recomendada su validación
+							por parte de los usuarios en caso de urgencia y de emergencia o
+							cualquier otra situación de riesgo para su salud o su integridad.</string>
+    <string name="termos_7_titulo">Leyes, reglamentos, derechos y deberes</string>
+    <string name="termos_7">        Es política del equipo \"COPA SALUDABLE\" cumplir con todas
+							las leyes y reglamentos aplicables, que pueden ser modificados de
+							tiempos en tiempos. En el caso de que cualquier disposición de
+							estos Términos de Uso esté en conflicto con cualquier ley o
+							reglamento aplicable, la ley o reglamentación aplicable anula el
+							contrario .\n\n
+							
+							Estos Términos de uso y la utilización de la "COPA
+							SALUDABLE" son y serán regidos e interpretados de acuerdo con las
+							leyes internas de Brasil, sin considerar sus reglas de conflicto
+							de leyes. En caso de cualquier conflicto entre las leyes, normas
+							y reglamentos extranjeros con las de Brasil, las leyes, normas y
+							reglamentos de Brasil prevalecerán.\n\n
+							
+							La \"COPA SALUDABLE\" puede, pero no está obligada, a
+							monitorear, revisar y restringir el acceso a cualquiera de sus
+							áreas en las que los usuarios transmitan información, pudiendo
+							retirar del aire o retirar el acceso a estas informaciones o
+							comunicaciones.\n\n
+							
+							Si usted tiene alguna duda con respecto a la\"COPA SALUDABLE\", no
+							dude en contactarnos contato@saudenacopa.com</string>
+    <string name="termos_8_titulo">El uso de las contribuciones</string>
+    <string name="termos_8">        Al enviar una contribución escrita o postar informaciones
+							en la \"COPA SALUDABLE\" usted otorga una licencia perpetua, exenta
+							de royalties, licencia incondicional para esta aplicación y
+							cualquier organización sucesora, a publicar su contribución en la
+							\"COPA SALUDABLE\", bien como divulgarlas de forma agregada (nunca
+							individual) a otros medios de comunicación, y para discutir o
+							hacer referencia a ella en cualquier publicación resultante de la
+							\"COPA SALUDABLE\".\n\n
+							
+							También aceptará que la \"COPA SALUDABLE\" tiene el derecho
+							pero no la obligación, de editar o eliminar cualquier aportación,
+							o incluirla en el texto junto con otras contribuciones a la
+							discreción del personal de “COPA SALUDABLE”.</string>
+    <string name="termos_9_titulo">Garantía de Confidencialidad y Anonimato</string>
+    <string name="termos_9">        Se garantizará la confidencialidad y el anonimato de todas
+							las informaciones producidas por usted en la \"COPA SALUDABLE\"
+							excepto cuando sea requerido por la ley, o para hacer frente a
+							los problemas de incumplimiento. Nos reservamos el derecho a
+							utilizar esta información internamente y, en ese ámbito, su
+							contribución se vinculará con el username de su elección.\n\n
+							
+							La \"COPA SALUDABLE\", sus colaboradores y usuarios,
+							incluidos los organismos gubernamentales y no gubernamentales,
+							depeden de los usuarios para la exactitud de las contribuciones.
+							El personal no es responsable por errores o inexactitudes en
+							cualquier presentación. Tergiversación deliberada por un usuario
+							puede ser una violación de la ley, y en el caso que sea seria,
+							será comunicada a las autoridades gubernamentales
+							correspondientes.</string>
+    <string name="termos_10_titulo">Actualización de la “COPA SALUDABLE”:</string>
+    <string name="termos_10">        Pueden ocurrir modificaciones de esta aplicación y sus
+							términos de uso. A menos que especifique lo contrario, el uso del
+							Webapp y de la aplicación indica la plena aceptación de las
+							términos de uso en la versión actual cada vez que usted utilize
+							la \"COPA SALUDABLE\". Manténgase atento a las actualizaciones y,
+							en caso de duda, los presentes Términos de Uso estarán siempre
+							disponibles para el acceso y la concordancia o no.</string>
+    <string name="termos_11_titulo">Responsabilidad por acciones con base
+						en el contenido</string>
+    <string name="termos_11">        La\"COPA SALUDABLE\" no asume ninguna responsabilidad por
+							cualquier lesión y/o daño a personas o bienes, como consecuencia
+							de cualquier uso de las ideas, contenidos, instrucciones,
+							métodos, productos o procedimientos que figuran en esta
+							aplicación.\n\n
+							
+							En ningún caso los profesionales involucrados en el
+							desarrollo o administración de esta aplicación serán
+							responsabilizados por cualquier decisión o acción tomada por
+							usted sobre la base de dicho contenido.\n\n
+							
+							Frente a las amenazas o cualquier otro riesgo para su salud
+							o su integridad buscar siempre orientaciones validadas y
+							actualizadas por los servicios locales de salud pública
+							relacionados con cada ciudad anfitriona.</string>
+    <string name="termos_12_titulo">Responsabilidad por problemas
+						tecnológicos</string>
+    <string name="termos_12">        Eventualmente todo el contenido o cualquier parte de
+							la\"COPA SALUDABLE\" puede no estar disponible y puede no funcionar
+							adecuadamente en cualquier momento. Hacemos todo lo posible para
+							evitar problemas tecnológicos, pero puede ocurrir en esta
+							aplicación problemas tecnológicos de diferentes naturalezas,
+							tales como virus, rutinas de programación perjudiciales o
+							problemas relacionados al dispositivo .\n\n
+							
+							El Webapp y la aplicación son proporcionadas “tal cual" y
+							"según disponibilidad". Sin limitar nuestro aviso general, no
+							podemos garantizar la disponibilidad, integridad, puntualidad, la
+							funcionalidad, la fiabilidad, la secuenciación y la rapidez de la
+							entrega en esta aplicación, o de cualquier parte de los
+							contenidos.\n\n
+							
+							La “COPA SALUDABLE" no se responsabiliza de ningún daño o
+							perjuicio causado por el desempeño o fallo de desempeño de toda o
+							cualquier parte de la aplicación. La “COPA SALUDABLE" no se
+							responsabiliza de los defectos, demoras o errores que resulten
+							del uso de esta aplicación.\n\n
+							
+							El uso de todas las funcionalidades de la "COPA SALUDABLE "
+							requiere la disponibilidad de acceso a internet por el usuario,
+							por wifi o cable de datos de la red. La ausencia de este
+							requisito puede limitar la utilización de la aplicación con todo
+							su potencial de uso . El personal de la\"COPA SALUDABLE\", teniendo
+							en cuenta esta advertencia no asume responsabilidad alguna por
+							tal limitación.\n\n
+							
+							Esta renuncia de responsabilidad se aplica a todos y
+							cualquier daño o lesiones, incluyendo los causados por cualquier
+							falla de rendimiento, error, omisión, interrupción, eliminación,
+							defecto, retraso en la operación o transmisión, virus de
+							computadora, falla en la línea de comunicación, robo, destrucción
+							o acceso no autorizado, alteración o uso de cualquier propiedad,
+							ya sea por incumplimiento de contrato, comportamiento ilícito,
+							negligencia o cualquier otra causa de acción.</string>
+    <string name="termos_13_titulo">Responsabilidad por informaciones de
+						terceros</string>
+    <string name="termos_13">        La disponibilidad a través del Webapp y de la aplicación de
+							enlaces y referencias para otros sitios web, publicaciones o
+							recursos de información no constituyen recomendación de esos
+							sitios web o de sus recursos por parte de la “COPA SALUDABLE", de
+							sus agentes o representantes. El personal de la \"COPA SALUDABLE\"
+							no hace representaciones o afirmaciones en cuanto a la calidad,
+							el contenido y precisión de las informaciones, servicios o
+							productos que puedan ser proporcionados por los recursos, y
+							específicamente se renuncia a cualquier garantía incluyendo pero
+							no restricto a las garantías implícitas o expresas de
+							comerciabilidad o adecuación para cualquier utilización
+							particular, aplicación o finalidad.</string>
+    <string name="termos_14_titulo">Consideraciones finales</string>
+    <string name="termos_14">        El acceso al servicio representa la aceptación expresa y
+							sin reservas de los Términos de uso mencionados. Al aceptar estos
+							términos usted otorga una licencia perpetua, libre de royalties,
+							licencia incondicional para la "COPA SALUDABLE”, Ministerio de
+							Salud y todas las organizaciones sucesoras para publicar su
+							contribución en conjunto, en la propia aplicación bien como
+							divulgarlas a otros servicios relacionados con la vigilancia de
+							la salud pública. Usted también acepta que \"COPA SALUDABLE\" tiene
+							el derecho pero no la obligación de editar o eliminar cualquier
+							aportación a criterio exclusivo del personal de la \"COPA SALUDABLE\".</string>
+
+</resources>

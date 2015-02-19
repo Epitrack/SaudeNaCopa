@@ -1,0 +1,182 @@
+{
+  "barra" : {
+    "menu" : {
+      "home" : "Home",
+      "saude" : "Saúde",
+      "jogos" : "Jogos",
+      "turismo" : "Turismo",
+      "denunciarUmProblema" : "Denunciar um problema",
+      "termosDeUso" : "Termos e políticas",
+      "sobre" : "Sobre",
+      "sair" : "Sair"
+    }
+  },
+  "tela" : {
+    "idioma" : "Idioma",
+    "abertura" : "Abertura",
+    "apresentacao" : "Apresentação",
+    "acesso" : "Acesso",
+    "cadastre-se" : "Cadastre-se",
+    "entreComFacebook" : "Entre com o Facebook",
+    "entrarComLoginESenha" : "Entre com login e senha",
+    "termosDeUso" : "Termos de uso e política de privacidade",
+    "denunciarUmProblema" : "Denunciar um problema",
+    "sobre" : "Sobre",
+    "torcedor" : "Torcedor",
+    "sentimento" : "Como está se sentindo?",
+    "sintomas" : "Sintomas",
+    "saude" : "Saúde",
+    "lembretesDeSaude" : "Lembretes de saúde",
+    "hospitaisDeReferencia" : "Hospitais de referência",
+    "telefonesUteis" : "Telefones úteis",
+    "farmacias" : "Farmácias",
+    "jogos" : "Jogos",
+    "selecoes" : "Seleções",
+    "selecao" : "Seleção",
+    "resultados" : "Resultados",
+    "calendarioDeJogos" : "Calendário dos jogos",
+    "maisNoticias" : "Mais notícias",
+    "turismo" : "Turismo",
+    "fanFest" : "Fan Fest",
+    "pontosTuristicos" : "Pontos Turísticos",
+    "atividadesCulturais" : "Atividades culturais",
+    "baresERestaurantes" : "Bares e restaurantes",
+    "esqueciASenha" : "Esqueci a senha"
+  },
+  "apresentacao" : {
+    "idioma" : {
+      "titulo" : "App em espanhol",
+      "portugues" : "Português",
+      "espanhol" : "Espanhol",
+      "ingles" : "Inglês"
+    },
+    "abertura" : {
+      "titulo" : "Saúde na copa"
+    },
+    "apresentacao" : {
+      "titulo" : "Saúde na copa - Espanhol",
+      "texto" : "Texto em espanhol"
+    }
+  },
+  "acesso" : {
+    "acesso" : {
+      "titulo" : "Acesso em espanhol",
+      "rodape" : "Prosseguindo você concorda com os termos de uso e política de privacidade.",
+      "cadastre-se" : "Cadastre-se",
+      "entreComFacebook" : "Entre com Facebook",
+      "entrarComLoginESenha" : "Entre com cadastro",
+      "esqueciASenha" : "Esqueci a senha"
+    },
+    "cadastre-se" : {
+      "apelido" : "Apelido",
+      "idade" : "Idade",
+      "sexo" : "Sexo",
+      "email" : "E-mail",
+      "senha" : "Senha",
+      "confirmacaoDeSenha" : "Confirmação de senha",
+      "cadastre-se" : "Cadastre-se"
+    },
+    "entreComFacebook" : {
+      "texto" : ""
+    },
+    "entrarComLoginESenha" : {
+      "email" : "E-mail",
+      "senha" : "Senha",
+      "entrar" : "Entrar",
+      "esqueciASenha" : "Esqueci a senha"
+    },
+    "esqueciASenha" : {
+      "email" : "E-mail",
+      "entrar" : "Entrar"
+    },
+    "termosDeUso" : {
+      "texto" : "Texto termos de uso em português"
+    },
+    "denunciarUmProblema" : {
+      "texto" : "Texto denunciar um problema",
+      "email" : "E-mail",
+      "mensagem" : "Mensagem"
+    },
+    "sobre" : {
+      "texto" : "Texto sobre"
+    }
+  },
+  "sentimento" : {
+    "torcedor" : {
+      "status" : {
+        "ola" : "Olá",
+        "voceEsta" : "você está",
+        "voceEstaNaCategoria" : "Você está na categoria",
+        "continueParticipando" : "continue participando para evoluir"
+      }
+    },
+    "sentimento" : {
+      "muitoBem" : "Muito bem",
+      "bem" : "Bem",
+      "normal" : "Normal",
+      "mal" : "Mal",
+      "muitoMal" : "Muito mal"
+    },
+    "sintomas" : {
+      "febre" : "Febre",
+      "tosse" : "Tosse",
+      "dorDeGarganta" : "Dor de garganta",
+      "faltaDeAr" : "Falta de ar",
+      "nauseaEVomito" : "Náusea e vômitos",
+      "diarreia" : "Diarréia",
+      "dorNasArticulacoes" : "Dor nas articulações",
+      "dorDeCabeca" : "Dor de cabeça",
+      "sangramento" : "Sangramento",
+      "manchasVermelhasNoCorpo" : "Manchas vermelhas pelo corpo",
+      "contatoComAlguem" : "Teve contato ou conhece alguém com algum desses sintomas nos últimos 7 dias?",
+      "procurouServicoDeSaude" : "Você procurou o serviço de saúde?"
+    }
+  },
+  "saude" : {
+    "saude" : {
+      "lembretesDeSaude" : "Lembretes de saúde",
+      "hospitaisDeReferencia" : "Hospitais de referência",
+      "telefonesUteis" : "Telefones úteis",
+      "farmacias" : "Farmácias"
+    },
+    "lembretesDeSaude" : {
+      "introducao" : "Introdução lembretes de saúde",
+      "texto" : "Texto lembretes de saúde"
+    },
+    "hospitaisDeReferencia" : {},
+    "telefonesUteis" : {
+      "samu" : "Samu",
+      "policia" : "Polícia",
+      "disqueDenuncia" : "Disque denúncia",
+      "ouvidoriaDeSaude" : "Ouvidoria de saúde",
+      "bombeiros" : "Bombeiros",
+      "defesaCivil" : "Defesa civil"
+    },
+    "farmacias" : {}
+  },
+  "jogos" : {
+    "jogos" : {
+      "selecoes" : "Seleções",
+      "resultados" : "Resultados",
+      "calendarioDeJogos" : "Calendário dos jogos",
+      "maisNoticias" : "Mais notícias"
+    },
+    "selecoes" : {},
+    "selecao" : {},
+    "resultados" : {},
+    "calendarioDeJogos" : {},
+    "maisNoticias" : {}
+  },
+  "turismo" : {
+    "turismo" : {
+      "fanFest" : "Fan Fest",
+      "pontosTuristicos" : "Pontos Turísticos",
+      "atividadesCulturais" : "Atividades culturais",
+      "baresERestaurantes" : "Bares e restaurantes"
+    },
+    "fanFest" : {},
+    "pontosTuristicos" : {},
+    "atividadesCulturais" : {},
+    "baresERestaurantes" : {}
+  }
+}

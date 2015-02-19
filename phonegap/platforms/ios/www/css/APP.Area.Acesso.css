@@ -1,0 +1,404 @@
+/**
+ *  Barras
+ */
+/**
+ *  Área Acesso e Apresentação
+ */
+/**
+ *  Área Acesso
+ */
+/**
+ *  Área Sentimento
+ */
+/* line 9, ../scss/APP.Area.Acesso.scss */
+form.baseDaTela li {
+  background-color: transparent;
+}
+
+/* line 13, ../scss/APP.Area.Acesso.scss */
+.baseDaTela {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+/* line 19, ../scss/APP.Area.Acesso.scss */
+.baseDaTela li, .baseDaTela .row.extra {
+  color: #6d6e70;
+  height: 34px;
+  line-height: 30px;
+  margin-bottom: 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 25, ../scss/APP.Area.Acesso.scss */
+.baseDaTela li label, .baseDaTela .row.extra label {
+  color: #007baa;
+  font-weight: normal;
+  font-size: 1.067em;
+  line-height: normal;
+}
+/* line 31, ../scss/APP.Area.Acesso.scss */
+.baseDaTela li label.error, .baseDaTela .row.extra label.error {
+  display: none !important;
+}
+/* line 37, ../scss/APP.Area.Acesso.scss */
+.baseDaTela li input.error, .baseDaTela .row.extra input.error {
+  background-color: #FFdddd;
+  color: black;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: shake;
+  animation-name: shake;
+}
+/* line 42, ../scss/APP.Area.Acesso.scss */
+.baseDaTela li input[type='checkbox'], .baseDaTela .row.extra input[type='checkbox'] {
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scale(1.5, 1.5);
+  -moz-transform: scale(1.5, 1.5);
+  -ms-transform: scale(1.5, 1.5);
+  -o-transform: scale(1.5, 1.5);
+  transform: scale(1.5, 1.5);
+  vertical-align: top;
+  border: none;
+  outline: none;
+}
+/* line 52, ../scss/APP.Area.Acesso.scss */
+.baseDaTela li {
+  font-size: 1.4225em;
+  background-color: #FFF;
+  position: relative;
+}
+/* line 57, ../scss/APP.Area.Acesso.scss */
+.baseDaTela li.icone {
+  padding-left: 52.5px;
+}
+/* line 60, ../scss/APP.Area.Acesso.scss */
+.baseDaTela li a, .baseDaTela li a:hover {
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0 0 0 0;
+  width: auto;
+  height: auto;
+}
+/* line 64, ../scss/APP.Area.Acesso.scss */
+.baseDaTela li a, .baseDaTela li input, .baseDaTela li select {
+  background-color: white;
+  font-size: inherit;
+  color: inherit;
+  display: block;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 72, ../scss/APP.Area.Acesso.scss */
+.baseDaTela li.icone a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0 0 0 52.5px;
+  width: auto;
+  height: auto;
+}
+/* line 76, ../scss/APP.Area.Acesso.scss */
+.baseDaTela li input, .baseDaTela li select {
+  padding: 0 12px;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+}
+/* line 85, ../scss/APP.Area.Acesso.scss */
+.baseDaTela li input.error, .baseDaTela li select.error {
+  background-color: #FFdddd;
+  color: black;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: shake;
+  animation-name: shake;
+}
+/* line 91, ../scss/APP.Area.Acesso.scss */
+.baseDaTela li input[name='email'], .baseDaTela li input[name='login'], .baseDaTela li input[name='senha'], .baseDaTela li input[name='senhaAtual'], .baseDaTela li input[name='novaSenha'], .baseDaTela li input[name='repetirNovaSenha'], .baseDaTela li select[name='email'], .baseDaTela li select[name='login'], .baseDaTela li select[name='senha'], .baseDaTela li select[name='senhaAtual'], .baseDaTela li select[name='novaSenha'], .baseDaTela li select[name='repetirNovaSenha'] {
+  padding-left: 52.5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: auto 17px;
+  -moz-background-size: auto 17px;
+  -o-background-size: auto 17px;
+  background-size: auto 17px;
+}
+/* line 95, ../scss/APP.Area.Acesso.scss */
+.baseDaTela li input[name='email'], .baseDaTela li input[name='login'], .baseDaTela li select[name='email'], .baseDaTela li select[name='login'] {
+  background-position: 16px center;
+  background-image: url("../imagens/acesso/icone_cadastreSe.png");
+}
+/* line 99, ../scss/APP.Area.Acesso.scss */
+.baseDaTela li input[name='senha'], .baseDaTela li input[name='senhaAtual'], .baseDaTela li input[name='novaSenha'], .baseDaTela li input[name='repetirNovaSenha'], .baseDaTela li select[name='senha'], .baseDaTela li select[name='senhaAtual'], .baseDaTela li select[name='novaSenha'], .baseDaTela li select[name='repetirNovaSenha'] {
+  background-position: 27px center;
+  background-image: url("../imagens/acesso/icone_cadeado.png");
+}
+/* line 105, ../scss/APP.Area.Acesso.scss */
+.baseDaTela li label {
+  display: none !important;
+}
+/* line 111, ../scss/APP.Area.Acesso.scss */
+.baseDaTela li .icone {
+  height: 100%;
+  width: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: auto 17px;
+  -moz-background-size: auto 17px;
+  -o-background-size: auto 17px;
+  background-size: auto 17px;
+  background-position: center right;
+}
+/* line 119, ../scss/APP.Area.Acesso.scss */
+.baseDaTela li .icone.cadastreSe {
+  background-image: url("../imagens/acesso/icone_cadastreSe.png");
+}
+/* line 122, ../scss/APP.Area.Acesso.scss */
+.baseDaTela li .icone.facebook {
+  background-image: url("../imagens/acesso/icone_facebook.png");
+}
+/* line 125, ../scss/APP.Area.Acesso.scss */
+.baseDaTela li .icone.entrar {
+  background-image: url("../imagens/acesso/icone_entrar.png");
+}
+/* line 128, ../scss/APP.Area.Acesso.scss */
+.baseDaTela li .icone.senha {
+  background-image: url("../imagens/acesso/icone_cadeado.png");
+}
+/* line 134, ../scss/APP.Area.Acesso.scss */
+.baseDaTela .botao.formulario.positivo {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 27px;
+  font-size: 1.2445em;
+  color: #fff;
+  line-height: 1em;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #8db435), color-stop(100%, #73a93a));
+  background: -webkit-linear-gradient(#8db435, #73a93a);
+  background: -moz-linear-gradient(#8db435, #73a93a);
+  background: -o-linear-gradient(#8db435, #73a93a);
+  background: linear-gradient(#8db435, #73a93a);
+}
+
+/* line 148, ../scss/APP.Area.Acesso.scss */
+#area_acesso .marca {
+  background-image: url("../imagens/acesso/marca.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+  position: absolute;
+  left: 50%;
+  width: 223px;
+  margin-left: -111.5px;
+  height: 183.5px;
+  top: 35px;
+}
+/* line 154, ../scss/APP.Area.Acesso.scss */
+.en #area_acesso .marca {
+  background-image: url("../imagens/marca_en.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: auto 100%;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  background-size: auto 100%;
+}
+/* line 158, ../scss/APP.Area.Acesso.scss */
+.es #area_acesso .marca {
+  background-image: url("../imagens/marca_es.png");
+}
+/* line 164, ../scss/APP.Area.Acesso.scss */
+#area_acesso .botaoVoltarArea#botaoVoltarAcesso, .area_acesso #area_acesso .botao.voltar {
+  display: block;
+}
+/* line 167, ../scss/APP.Area.Acesso.scss */
+.area_acesso.tela_acesso #area_acesso .botao.voltar {
+  display: none;
+}
+/* line 173, ../scss/APP.Area.Acesso.scss */
+.tela_termosDeUso #area_acesso .marca {
+  display: none !important;
+}
+
+/* line 185, ../scss/APP.Area.Acesso.scss */
+#tela_cadastre-se .termosDeUso,
+#tela_cadastre-se .labelTermos {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 34px;
+}
+/* line 191, ../scss/APP.Area.Acesso.scss */
+#tela_cadastre-se .termosDeUso {
+  text-align: left;
+  font-size: 1.2445em;
+}
+/* line 195, ../scss/APP.Area.Acesso.scss */
+#tela_cadastre-se .camposObrigatorios {
+  height: auto;
+  line-height: 1em;
+  font-size: 1em;
+}
+
+/* line 207, ../scss/APP.Area.Acesso.scss */
+#tela_termosDeUso {
+  font-size: 1.244em;
+  counter-reset: termos;
+}
+/* line 208, ../scss/APP.Area.Acesso.scss */
+#tela_termosDeUso h1.titulo {
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  width: 180px;
+  margin-left: -90px;
+  font-size: 1.4225em;
+  margin-top: 50px;
+  text-align: center;
+}
+/* line 219, ../scss/APP.Area.Acesso.scss */
+#tela_termosDeUso ol {
+  margin-bottom: 2em;
+  display: table;
+  counter-reset: menuTermos;
+}
+/* line 223, ../scss/APP.Area.Acesso.scss */
+#tela_termosDeUso ol li {
+  display: table-row;
+  counter-increment: menuTermos;
+}
+/* line 227, ../scss/APP.Area.Acesso.scss */
+#tela_termosDeUso ol li:last-child span {
+  border-bottom: none;
+}
+/* line 230, ../scss/APP.Area.Acesso.scss */
+#tela_termosDeUso ol li span {
+  display: table-cell;
+  vertical-align: middle;
+  height: 50px;
+  border-bottom: 1px solid #aeaeb3;
+  color: #007baa;
+}
+/* line 231, ../scss/APP.Area.Acesso.scss */
+#tela_termosDeUso ol li span::before {
+  content: counter(menuTermos) ". ";
+}
+/* line 242, ../scss/APP.Area.Acesso.scss */
+#tela_termosDeUso article {
+  counter-increment: termos;
+}
+/* line 246, ../scss/APP.Area.Acesso.scss */
+#tela_termosDeUso article h1 {
+  font-size: 1.4em;
+  margin-bottom: 1em;
+}
+/* line 247, ../scss/APP.Area.Acesso.scss */
+#tela_termosDeUso article h1::before {
+  content: counter(termos) ". ";
+}
+/* line 256, ../scss/APP.Area.Acesso.scss */
+#tela_termosDeUso .texto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 130px 35px 40px 35px;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+/* line 260, ../scss/APP.Area.Acesso.scss */
+#tela_termosDeUso .texto .table {
+  display: table;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+/* line 265, ../scss/APP.Area.Acesso.scss */
+#tela_termosDeUso .texto .table .cell {
+  display: table-cell;
+  overflow: hidden;
+  vertical-align: middle;
+  text-align: center;
+}
+/* line 273, ../scss/APP.Area.Acesso.scss */
+#tela_termosDeUso article {
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #007baa;
+}
+/* line 277, ../scss/APP.Area.Acesso.scss */
+#tela_termosDeUso article p {
+  padding: 0;
+}
+/* line 280, ../scss/APP.Area.Acesso.scss */
+#tela_termosDeUso article:last-child {
+  border: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+/* line 287, ../scss/APP.Area.Acesso.scss */
+#tela_termosDeUso .aDireita {
+  text-align: right;
+  padding: 1em 0;
+}
+
+/* line 300, ../scss/APP.Area.Acesso.scss */
+#tela_denunciarUmProblema form .row.mensagem li {
+  height: auto;
+  margin-bottom: 0;
+}
+/* line 305, ../scss/APP.Area.Acesso.scss */
+#tela_denunciarUmProblema form label {
+  display: block !important;
+  font-size: 12px;
+  color: #007baa;
+}
+/* line 311, ../scss/APP.Area.Acesso.scss */
+#tela_denunciarUmProblema form textarea {
+  width: 100%;
+  height: 180px;
+  border: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  outline: none;
+}

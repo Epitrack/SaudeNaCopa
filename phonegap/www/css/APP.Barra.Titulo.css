@@ -1,0 +1,130 @@
+/**
+ *  Barras
+ */
+/**
+ *  Área Acesso e Apresentação
+ */
+/**
+ *  Área Acesso
+ */
+/**
+ *  Área Sentimento
+ */
+/* line 9, ../scss/APP.Barra.Titulo.scss */
+#barraDeTitulo {
+  font-size: 1.3335em;
+  color: #f7f7f8;
+  top: 0;
+  display: none;
+  text-align: center;
+}
+/* line 16, ../scss/APP.Barra.Titulo.scss */
+.isphone #barraDeTitulo {
+  height: 60px;
+}
+/* line 20, ../scss/APP.Barra.Titulo.scss */
+#barraDeTitulo h1 {
+  font-size: inherit;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+/* line 22, ../scss/APP.Barra.Titulo.scss */
+.isphone #barraDeTitulo h1 {
+  padding-top: 20px;
+}
+/* line 28, ../scss/APP.Barra.Titulo.scss */
+#barraDeTitulo h1 .botao {
+  display: block;
+  width: 80px;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+}
+/* line 36, ../scss/APP.Barra.Titulo.scss */
+.isphone #barraDeTitulo h1 .botao {
+  height: 40px;
+}
+/* line 40, ../scss/APP.Barra.Titulo.scss */
+#barraDeTitulo h1 .botao.voltar {
+  left: 0;
+  background-image: url("../imagens/barra/titulo/botao_voltar.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 11.5px 19.5px;
+  -moz-background-size: 11.5px 19.5px;
+  -o-background-size: 11.5px 19.5px;
+  background-size: 11.5px 19.5px;
+  background-position: 20px center;
+}
+/* line 47, ../scss/APP.Barra.Titulo.scss */
+#barraDeTitulo h1 .botao.informacoes {
+  left: 0;
+  background-image: url("../imagens/barra/titulo/botao_informacoes.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 23.5px 23.5px;
+  -moz-background-size: 23.5px 23.5px;
+  -o-background-size: 23.5px 23.5px;
+  background-size: 23.5px 23.5px;
+  background-position: 20px center;
+  display: none;
+}
+/* line 54, ../scss/APP.Barra.Titulo.scss */
+#barraDeTitulo h1 .botao.avancar {
+  left: auto;
+  right: 0;
+}
+/* line 57, ../scss/APP.Barra.Titulo.scss */
+.tela_torcedor #barraDeTitulo h1 .botao.avancar {
+  background-image: url("../imagens/barra/titulo/botao_calendario.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 21px 22px;
+  -moz-background-size: 21px 22px;
+  -o-background-size: 21px 22px;
+  background-size: 21px 22px;
+  background-position: 38px center;
+}
+/* line 62, ../scss/APP.Barra.Titulo.scss */
+.tela_sintomas #barraDeTitulo h1 .botao.avancar {
+  background-image: url("../imagens/barra/titulo/botao_ok.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 19px 11px;
+  -moz-background-size: 19px 11px;
+  -o-background-size: 19px 11px;
+  background-size: 19px 11px;
+  background-position: 41px center;
+}
+/* line 87, ../scss/APP.Barra.Titulo.scss */
+.area_sentimento #barraDeTitulo {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f1d046), color-stop(100%, #e6b548));
+  background-image: -webkit-linear-gradient(#f1d046, #e6b548);
+  background-image: -moz-linear-gradient(#f1d046, #e6b548);
+  background-image: -o-linear-gradient(#f1d046, #e6b548);
+  background-image: linear-gradient(#f1d046, #e6b548);
+}
+/* line 90, ../scss/APP.Barra.Titulo.scss */
+.area_saude #barraDeTitulo {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #91c5e1), color-stop(100%, #5aafd9));
+  background-image: -webkit-linear-gradient(#91c5e1, #5aafd9);
+  background-image: -moz-linear-gradient(#91c5e1, #5aafd9);
+  background-image: -o-linear-gradient(#91c5e1, #5aafd9);
+  background-image: linear-gradient(#91c5e1, #5aafd9);
+}
+/* line 93, ../scss/APP.Barra.Titulo.scss */
+.area_jogos #barraDeTitulo {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #a3bd31), color-stop(100%, #70a83b));
+  background-image: -webkit-linear-gradient(#a3bd31, #70a83b);
+  background-image: -moz-linear-gradient(#a3bd31, #70a83b);
+  background-image: -o-linear-gradient(#a3bd31, #70a83b);
+  background-image: linear-gradient(#a3bd31, #70a83b);
+}
+/* line 96, ../scss/APP.Barra.Titulo.scss */
+.area_mais #barraDeTitulo {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #76aadb), color-stop(100%, #4972b1));
+  background-image: -webkit-linear-gradient(#76aadb, #4972b1);
+  background-image: -moz-linear-gradient(#76aadb, #4972b1);
+  background-image: -o-linear-gradient(#76aadb, #4972b1);
+  background-image: linear-gradient(#76aadb, #4972b1);
+}

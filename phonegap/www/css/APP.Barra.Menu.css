@@ -1,0 +1,154 @@
+/**
+ *  Barras
+ */
+/**
+ *  Área Acesso e Apresentação
+ */
+/**
+ *  Área Acesso
+ */
+/**
+ *  Área Sentimento
+ */
+/* line 10, ../scss/APP.Barra.Menu.scss */
+#barraDeMenu {
+  bottom: 0;
+  display: none;
+  background-color: #eeeef0;
+}
+/* line 15, ../scss/APP.Barra.Menu.scss */
+#barraDeMenu ul {
+  padding: 0;
+}
+/* line 18, ../scss/APP.Barra.Menu.scss */
+#barraDeMenu ul li, #barraDeMenu ul li a {
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: auto 50%;
+  -moz-background-size: auto 50%;
+  -o-background-size: auto 50%;
+  background-size: auto 50%;
+}
+/* line 24, ../scss/APP.Barra.Menu.scss */
+#barraDeMenu ul li {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 20%;
+  height: 40px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 15px;
+  z-index: 2;
+}
+/* line 41, ../scss/APP.Barra.Menu.scss */
+#barraDeMenu ul li a {
+  display: block;
+  height: 40px;
+  width: 100%;
+  overflow: hidden;
+  text-indent: -9999px;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* line 52, ../scss/APP.Barra.Menu.scss */
+#barraDeMenu ul li:nth-child(1) {
+  left: 0;
+}
+/* line 55, ../scss/APP.Barra.Menu.scss */
+#barraDeMenu ul li:nth-child(1) a {
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 21.5px 21px;
+  -moz-background-size: 21.5px 21px;
+  -o-background-size: 21.5px 21px;
+  background-size: 21.5px 21px;
+  background-image: url("../imagens/barra/menu/icone_jogador_off.png");
+}
+/* line 60, ../scss/APP.Barra.Menu.scss */
+#barraDeMenu ul li:nth-child(2) {
+  left: 20%;
+}
+/* line 63, ../scss/APP.Barra.Menu.scss */
+#barraDeMenu ul li:nth-child(2) a {
+  background-image: url("../imagens/barra/menu/icone_saude_off.png");
+}
+/* line 67, ../scss/APP.Barra.Menu.scss */
+#barraDeMenu ul li:nth-child(3) {
+  left: 40%;
+}
+/* line 70, ../scss/APP.Barra.Menu.scss */
+#barraDeMenu ul li:nth-child(3) a {
+  background-image: url("../imagens/barra/menu/icone_jogos_cinza.png");
+}
+/* line 74, ../scss/APP.Barra.Menu.scss */
+#barraDeMenu ul li:nth-child(4) {
+  left: 60%;
+}
+/* line 77, ../scss/APP.Barra.Menu.scss */
+#barraDeMenu ul li:nth-child(4) a {
+  background-image: url("../imagens/barra/menu/icone_mais_off.png");
+}
+/* line 81, ../scss/APP.Barra.Menu.scss */
+#barraDeMenu ul li:nth-child(5) {
+  left: 80%;
+  color: black;
+  background-image: url("../imagens/barra/menu/icone_maisOpcoes.png");
+  -webkit-background-size: auto 30%;
+  -moz-background-size: auto 30%;
+  -o-background-size: auto 30%;
+  background-size: auto 30%;
+}
+/* line 91, ../scss/APP.Barra.Menu.scss */
+.area_sentimento #barraDeMenu ul li:nth-child(1) a {
+  background-image: url("../imagens/barra/menu/icone_jogador_on.png");
+}
+/* line 97, ../scss/APP.Barra.Menu.scss */
+.area_saude #barraDeMenu ul li:nth-child(2) a {
+  background-image: url("../imagens/barra/menu/icone_saude_on.png");
+}
+/* line 103, ../scss/APP.Barra.Menu.scss */
+.area_jogos #barraDeMenu ul li:nth-child(3) a {
+  background-image: url("../imagens/barra/menu/icone_jogos_on.png");
+}
+/* line 109, ../scss/APP.Barra.Menu.scss */
+.area_mais #barraDeMenu ul li:nth-child(4) a {
+  background-image: url("../imagens/barra/menu/icone_mais_on.png");
+}
+/* line 116, ../scss/APP.Barra.Menu.scss */
+#barraDeMenu ul ul {
+  display: none;
+  width: 180px;
+  height: auto;
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+  background-color: inherit;
+  -webkit-background-size: 100%, auto;
+  -moz-background-size: 100%, auto;
+  -o-background-size: 100%, auto;
+  background-size: 100%, auto;
+}
+/* line 127, ../scss/APP.Barra.Menu.scss */
+#barraDeMenu ul ul li {
+  display: block;
+  width: auto;
+  height: auto;
+  line-height: 1em;
+  position: static;
+  border-top: 1px solid white;
+  line-height: 50px;
+  background-image: none;
+}
+/* line 137, ../scss/APP.Barra.Menu.scss */
+#barraDeMenu ul ul li a {
+  width: auto;
+  height: auto;
+  display: block;
+  overflow: visible;
+  text-indent: 0;
+  border: none;
+  font-weight: normal;
+  background-image: none !important;
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="sintomas">
+        <item>@string/febre</item>
+        <item>@string/tosse</item>
+        <item>@string/dor_garganta</item>        
+        <item>@string/falta_ar</item>        
+        <item>@string/nauseas</item>        
+        <item>@string/diarreia</item>        
+        <item>@string/dor_articu</item>        
+        <item>@string/dor_cabeca</item>        
+        <item>@string/sagramento</item>        
+        <item>@string/manchas</item>        
+        <item>@string/contato_alguem</item>        
+        <item>@string/procurou_servico</item>
+    </array>
+    
+    <array name="txt_sentimentos">
+        <item>@string/pergunta_sentimento_muito_bem</item>
+        <item>@string/pergunta_sentimento_bem</item>
+        <item>@string/pergunta_sentimento4_mal</item>
+        <item>@string/pergunta_sentimento5_muito_mal</item>
+    </array>
+    
+    
+   
+</resources>

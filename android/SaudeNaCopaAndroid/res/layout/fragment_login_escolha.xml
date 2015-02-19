@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" >
+
+    <Button
+        android:id="@+id/btnEntrar"
+        style="@style/btnTelaInicial"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:drawableLeft="@drawable/icone_entrar"
+        android:layout_above="@+id/btnEntrarFacebook"
+        android:onClick="showEntrar"
+        android:text="@string/entrar" />
+
+    <Button
+        android:id="@+id/btnEntrarFacebook"
+        style="@style/btnTelaInicial"
+        android:layout_above="@+id/btnCadastre"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:drawableLeft="@drawable/icone_facebook"
+        android:text="@string/entrar_com_facebook"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnCadastre"
+        style="@style/btnTelaInicial"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="26dp"
+        android:drawableLeft="@drawable/icone_cadastrese"
+        android:onClick="showCadastre"
+        android:text="@string/cadastrese" />
+
+</RelativeLayout>

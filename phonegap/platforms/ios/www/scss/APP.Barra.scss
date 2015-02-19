@@ -1,0 +1,16 @@
+@import "Variaveis.scss";
+
+.barra {
+	display: block !important;
+	height: $barra_altura;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	z-index: 2;
+
+	.fullscreen & {
+		display: none !important;
+	}
+}
+@import "APP.Barra.Titulo.scss";
+@import "APP.Barra.Menu.scss";

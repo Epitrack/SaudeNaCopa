@@ -1,0 +1,16 @@
+/* line 5, ../scss/teste.scss */
+body {
+  background-color: blue;
+}
+
+/* line 9, ../scss/teste.scss */
+#tela_sintomas {
+  -webkit-border-radius: 50px 50px;
+  -moz-border-radius: 50px / 50px;
+  border-radius: 50px / 50px;
+}
+/* line 13, ../scss/teste.scss */
+#tela_sintomas ul li label {
+  color: magenta;
+  text-align: center;
+}

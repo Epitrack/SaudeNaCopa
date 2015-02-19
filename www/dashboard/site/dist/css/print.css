@@ -1,0 +1,211 @@
+@media print {
+  /* line 6, ../../sass/partials/print.scss */
+  * {
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+
+  /* line 12, ../../sass/partials/print.scss */
+  body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.4em;
+    background-color: #ffffff !important;
+  }
+
+  /* line 20, ../../sass/partials/print.scss */
+  nav, video, audio, object, embed,
+  #charts, .form-login,
+  .btn-webapp, .box-languages {
+    display: none;
+  }
+
+  /* line 23, ../../sass/partials/print.scss */
+  img {
+    max-width: 100%;
+  }
+
+  /* line 26, ../../sass/partials/print.scss */
+  p {
+    widows: 3;
+    orphans: 3;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 34, ../../sass/partials/print.scss */
+  .logo-primary {
+    width: 245px !important;
+    height: 70px !important;
+    float: right !important;
+  }
+
+  /* line 40, ../../sass/partials/print.scss */
+  #btn-webapp {
+    display: none !important;
+  }
+
+  /* line 43, ../../sass/partials/print.scss */
+  #main {
+    width: 100% !important;
+    height: 640px !important;
+  }
+
+  /* line 47, ../../sass/partials/print.scss */
+  header {
+    display: block !important;
+    background: #ffffff !important;
+    border-bottom: 2px solid #42a3cb !important;
+    width: 100% !important;
+    float: none !important;
+  }
+
+  /* line 54, ../../sass/partials/print.scss */
+  footer {
+    display: block !important;
+    height: 180px !important;
+    width: 100% !important;
+    background: #ffffff !important;
+    float: none !important;
+    z-index: 10 !important;
+    border-top: none !important;
+  }
+
+  /* line 63, ../../sass/partials/print.scss */
+  .tabs {
+    width: 225px !important;
+    height: 640px !important;
+    left: 0 !important;
+    display: block !important;
+    background-color: #6081a1 !important;
+  }
+
+  /* line 71, ../../sass/partials/print.scss */
+  .content-tab-sintomas h2.subtitle-content {
+    color: #ffffff !important;
+    font-size: 2em !important;
+    color: #6081a1 !important;
+  }
+  /* line 75, ../../sass/partials/print.scss */
+  .content-tab-sintomas h2.subtitle-content::after {
+    content: 'Sintomas Escolhidos';
+    color: #ffffff !important;
+    display: inline-block !important;
+    position: relative !important;
+    width: 190px !important;
+    line-height: 1.2em !important;
+    margin-top: -20px !important;
+  }
+
+  /* line 87, ../../sass/partials/print.scss */
+  .content-tab li {
+    color: #6081a1 !important;
+    width: 210px !important;
+    font-size: 1.3em !important;
+    display: inline-block !important;
+  }
+  /* line 92, ../../sass/partials/print.scss */
+  .content-tab li input {
+    display: none !important;
+  }
+
+  /* line 101, ../../sass/partials/print.scss */
+  .list-sintomas label::after {
+    display: none !important;
+  }
+
+  /* line 106, ../../sass/partials/print.scss */
+  .legend-sintomas {
+    background-color: #ffffff !important;
+    width: 320px !important;
+    position: absolute !important;
+    left: 820px !important;
+    bottom: -100px !important;
+  }
+  /* line 112, ../../sass/partials/print.scss */
+  .legend-sintomas li {
+    display: inline-block !important;
+  }
+  /* line 114, ../../sass/partials/print.scss */
+  .legend-sintomas li.legend-you {
+    display: none !important;
+  }
+  /* line 118, ../../sass/partials/print.scss */
+  .legend-sintomas .subtitle {
+    color: rgba(0, 60, 113, 0.7) !important;
+  }
+
+  /* line 122, ../../sass/partials/print.scss */
+  .tab-cidades {
+    bottom: -177px !important;
+    left: 0 !important;
+    z-index: 1000 !important;
+    width: 780px !important;
+    height: 176px !important;
+    background: url("../../dist/images/bg-cidades-print.png") !important;
+  }
+  /* line 129, ../../sass/partials/print.scss */
+  .tab-cidades .content-tab {
+    width: 780px !important;
+    height: 176px !important;
+    background: transparent !important;
+    top: 0 !important;
+    display: block !important;
+  }
+  /* line 135, ../../sass/partials/print.scss */
+  .tab-cidades .content-tab li {
+    display: inline-block !important;
+    color: transparent !important;
+    max-height: 20px !important;
+    width: 160px !important;
+  }
+  /* line 141, ../../sass/partials/print.scss */
+  .tab-cidades .content-tab h2 {
+    font-size: 2em !important;
+    color: transparent !important;
+  }
+  /* line 144, ../../sass/partials/print.scss */
+  .tab-cidades .content-tab h2::after {
+    content: 'Cidades | Sede';
+    color: #ffffff !important;
+    display: block !important;
+    position: relative !important;
+    line-height: 1.2em !important;
+    margin-top: -40px !important;
+    margin-left: 10px !important;
+  }
+
+  /* line 157, ../../sass/partials/print.scss */
+  #content-cidades input:checked ~ label,
+  #content-cidades input:checked ~ .state {
+    color: #000000 !important;
+  }
+
+  /* line 160, ../../sass/partials/print.scss */
+  #btn-cidades, .sprite-bg-cidades {
+    display: none !important;
+  }
+
+  /* line 163, ../../sass/partials/print.scss */
+  .parceiros {
+    right: 0px !important;
+  }
+
+  /* line 166, ../../sass/partials/print.scss */
+  .range {
+    display: none !important;
+  }
+
+  /* line 169, ../../sass/partials/print.scss */
+  .nav-secondary {
+    display: none !important;
+  }
+
+  /* line 174, ../../sass/partials/print.scss */
+  .gmnoscreen {
+    display: none !important;
+  }
+}

@@ -1,0 +1,27 @@
+#barraDeTitulo {
+	background-color: black;
+	color: white;
+	height: 50px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	z-index: 2;
+	display: none;
+
+	.barraDeTitulo#app & {
+		top: 0;
+	}
+
+	h1 {
+		font-size: 1em;
+	}
+	.voltar {
+		position: absolute;
+		left: 1em;
+		top: 50%;
+		margin-top: -11px;
+	}
+
+}

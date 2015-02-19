@@ -1,0 +1,460 @@
+/**
+ *  Barras
+ */
+/**
+ *  Área Acesso e Apresentação
+ */
+/**
+ *  Área Acesso
+ */
+/**
+ *  Área Sentimento
+ */
+/* line 9, ../scss/APP.Area.Saude.scss */
+#area_saude {
+  color: #6d6e70;
+}
+/* line 12, ../scss/APP.Area.Saude.scss */
+#area_saude h1, #area_saude h2 {
+  text-transform: uppercase;
+  color: #4cb6dd;
+  font-size: 1.422em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+/* line 19, ../scss/APP.Area.Saude.scss */
+#area_saude h2 {
+  font-size: 1.2em;
+}
+/* line 22, ../scss/APP.Area.Saude.scss */
+#area_saude p {
+  font-size: 1.422em;
+}
+/* line 25, ../scss/APP.Area.Saude.scss */
+#area_saude ul.listaMenu {
+  margin-top: 1em;
+  font-size: 1.422em;
+}
+/* line 28, ../scss/APP.Area.Saude.scss */
+#area_saude ul.listaMenu li {
+  color: #6d6e70;
+  line-height: 50px;
+  border-bottom: 1px solid #aeaeb3;
+}
+/* line 33, ../scss/APP.Area.Saude.scss */
+#area_saude ul.listaMenu li:last-child {
+  border-bottom: none;
+}
+/* line 39, ../scss/APP.Area.Saude.scss */
+#area_saude ul.listaMenu.multiLinha li {
+  display: table;
+  width: 100%;
+  line-height: normal;
+  min-height: 50px;
+}
+/* line 45, ../scss/APP.Area.Saude.scss */
+#area_saude ul.listaMenu.multiLinha .celula {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 1em 30px 1em 0;
+}
+/* line 54, ../scss/APP.Area.Saude.scss */
+#area_saude ul.padrao {
+  font-size: 1.422em;
+}
+/* line 56, ../scss/APP.Area.Saude.scss */
+#area_saude ul.padrao ul {
+  padding-left: 2em;
+  font-size: 1em;
+}
+/* line 61, ../scss/APP.Area.Saude.scss */
+#area_saude ul.padrao li {
+  list-style-position: outside;
+  list-style-type: disc;
+  margin-bottom: 1em;
+  display: list-item;
+}
+/* line 76, ../scss/APP.Area.Saude.scss */
+#area_saude .baseDaTelaSaude {
+  position: absolute;
+  width: 100%;
+  bottom: 40px;
+  left: 0;
+}
+/* line 84, ../scss/APP.Area.Saude.scss */
+#area_saude .conteudoDeRolagem .container-fluid {
+  padding: 0;
+}
+
+/* line 91, ../scss/APP.Area.Saude.scss */
+#tela_saude #linkDashboard {
+  display: none;
+  height: 168px;
+  position: relative;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d2e1ec), color-stop(100%, #f1f6f9));
+  background-image: -webkit-linear-gradient(#d2e1ec, #f1f6f9);
+  background-image: -moz-linear-gradient(#d2e1ec, #f1f6f9);
+  background-image: -o-linear-gradient(#d2e1ec, #f1f6f9);
+  background-image: linear-gradient(#d2e1ec, #f1f6f9);
+}
+/* line 96, ../scss/APP.Area.Saude.scss */
+#tela_saude #linkDashboard::before {
+  content: "";
+  position: absolute;
+  width: 143px;
+  height: 150px;
+  left: 0;
+  top: 15px;
+  background-image: url("../imagens/saude/icone_brasil.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 143px 150px;
+  -moz-background-size: 143px 150px;
+  -o-background-size: 143px 150px;
+  background-size: 143px 150px;
+}
+/* line 106, ../scss/APP.Area.Saude.scss */
+#tela_saude #linkDashboard span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 61px 0 0 156px;
+  width: auto;
+  height: auto;
+  font-size: 1.572em;
+  font-weight: bold;
+  color: #1e9fc4;
+}
+/* line 112, ../scss/APP.Area.Saude.scss */
+#tela_saude #linkDashboard::after {
+  content: "";
+  height: 5px;
+  position: absolute;
+  width: 100%;
+  bottom: -5px;
+  left: 0;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #91c5e1), color-stop(100%, #5bafd9));
+  background-image: -webkit-linear-gradient(#91c5e1, #5bafd9);
+  background-image: -moz-linear-gradient(#91c5e1, #5bafd9);
+  background-image: -o-linear-gradient(#91c5e1, #5bafd9);
+  background-image: linear-gradient(#91c5e1, #5bafd9);
+}
+/* line 124, ../scss/APP.Area.Saude.scss */
+#tela_saude .listaMenu {
+  color: #6e6c73 !important;
+}
+/* line 126, ../scss/APP.Area.Saude.scss */
+#tela_saude .listaMenu li {
+  padding-left: 40px;
+  position: relative;
+}
+/* line 145, ../scss/APP.Area.Saude.scss */
+.offline #tela_saude .listaMenu li.hospitais, .offline #tela_saude .listaMenu li.protejaOGol, .offline #tela_saude .listaMenu li.farmacias {
+  display: none;
+}
+/* line 149, ../scss/APP.Area.Saude.scss */
+.offline #tela_saude .listaMenu li.telefone {
+  border-bottom: none;
+}
+/* line 131, ../scss/APP.Area.Saude.scss */
+#tela_saude .listaMenu li.cuidadosBasicos::before {
+  position: absolute;
+  height: 100%;
+  width: 40px;
+  content: "";
+  top: 0;
+  left: 0;
+  background-image: url("../imagens/saude/icone_cuidadosBasicos.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: auto 22px;
+  -moz-background-size: auto 22px;
+  -o-background-size: auto 22px;
+  background-size: auto 22px;
+}
+/* line 131, ../scss/APP.Area.Saude.scss */
+#tela_saude .listaMenu li.vacinas::before {
+  position: absolute;
+  height: 100%;
+  width: 40px;
+  content: "";
+  top: 0;
+  left: 0;
+  background-image: url("../imagens/saude/icone_vacinas.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: auto 22px;
+  -moz-background-size: auto 22px;
+  -o-background-size: auto 22px;
+  background-size: auto 22px;
+}
+/* line 131, ../scss/APP.Area.Saude.scss */
+#tela_saude .listaMenu li.prevencaoDoencas::before {
+  position: absolute;
+  height: 100%;
+  width: 40px;
+  content: "";
+  top: 0;
+  left: 0;
+  background-image: url("../imagens/saude/icone_prevencaoDoencas.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: auto 22px;
+  -moz-background-size: auto 22px;
+  -o-background-size: auto 22px;
+  background-size: auto 22px;
+}
+/* line 131, ../scss/APP.Area.Saude.scss */
+#tela_saude .listaMenu li.prevencaoAcidentes::before {
+  position: absolute;
+  height: 100%;
+  width: 40px;
+  content: "";
+  top: 0;
+  left: 0;
+  background-image: url("../imagens/saude/icone_prevencaoAcidentes.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: auto 22px;
+  -moz-background-size: auto 22px;
+  -o-background-size: auto 22px;
+  background-size: auto 22px;
+}
+/* line 131, ../scss/APP.Area.Saude.scss */
+#tela_saude .listaMenu li.prevencaoViolencia::before {
+  position: absolute;
+  height: 100%;
+  width: 40px;
+  content: "";
+  top: 0;
+  left: 0;
+  background-image: url("../imagens/saude/icone_prevencaoViolencia.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: auto 22px;
+  -moz-background-size: auto 22px;
+  -o-background-size: auto 22px;
+  background-size: auto 22px;
+}
+/* line 131, ../scss/APP.Area.Saude.scss */
+#tela_saude .listaMenu li.telefone::before {
+  position: absolute;
+  height: 100%;
+  width: 40px;
+  content: "";
+  top: 0;
+  left: 0;
+  background-image: url("../imagens/saude/icone_telefone.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: auto 22px;
+  -moz-background-size: auto 22px;
+  -o-background-size: auto 22px;
+  background-size: auto 22px;
+}
+/* line 131, ../scss/APP.Area.Saude.scss */
+#tela_saude .listaMenu li.hospitais::before {
+  position: absolute;
+  height: 100%;
+  width: 40px;
+  content: "";
+  top: 0;
+  left: 0;
+  background-image: url("../imagens/saude/icone_hospitais.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: auto 22px;
+  -moz-background-size: auto 22px;
+  -o-background-size: auto 22px;
+  background-size: auto 22px;
+}
+/* line 131, ../scss/APP.Area.Saude.scss */
+#tela_saude .listaMenu li.farmacias::before {
+  position: absolute;
+  height: 100%;
+  width: 40px;
+  content: "";
+  top: 0;
+  left: 0;
+  background-image: url("../imagens/saude/icone_farmacias.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: auto 22px;
+  -moz-background-size: auto 22px;
+  -o-background-size: auto 22px;
+  background-size: auto 22px;
+}
+/* line 131, ../scss/APP.Area.Saude.scss */
+#tela_saude .listaMenu li.urgenciasEmergencias::before {
+  position: absolute;
+  height: 100%;
+  width: 40px;
+  content: "";
+  top: 0;
+  left: 0;
+  background-image: url("../imagens/saude/icone_urgenciasEmergencias.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: auto 22px;
+  -moz-background-size: auto 22px;
+  -o-background-size: auto 22px;
+  background-size: auto 22px;
+}
+/* line 163, ../scss/APP.Area.Saude.scss */
+#tela_saude .listaMenu li.urgenciasEmergencias::before {
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: auto 15px;
+  -moz-background-size: auto 15px;
+  -o-background-size: auto 15px;
+  background-size: auto 15px;
+}
+
+/* line 170, ../scss/APP.Area.Saude.scss */
+#tela_lembretesDeSaude article {
+  margin: 25px 0;
+}
+
+/* line 174, ../scss/APP.Area.Saude.scss */
+#tela_mapaSaude {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 40px 0 40px 0;
+  width: auto;
+  height: auto;
+}
+/* line 177, ../scss/APP.Area.Saude.scss */
+#tela_mapaSaude.farmacias .legenda.hospitais.referencia {
+  display: none;
+}
+/* line 180, ../scss/APP.Area.Saude.scss */
+#tela_mapaSaude.farmacias .encontrados {
+  display: none;
+}
+/* line 185, ../scss/APP.Area.Saude.scss */
+#tela_mapaSaude.hospitaisDeReferencia .encontradas {
+  display: none;
+}
+/* line 190, ../scss/APP.Area.Saude.scss */
+#tela_mapaSaude .legendas {
+  overflow: hidden;
+  z-index: 2;
+  position: absolute;
+  bottom: 30px;
+  padding: 10px 10px 10px 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-border-radius: 0 5px 5px 0;
+  -moz-border-radius: 0 5px 5px 0;
+  -ms-border-radius: 0 5px 5px 0;
+  -o-border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0;
+}
+/* line 203, ../scss/APP.Area.Saude.scss */
+#tela_mapaSaude .legendas .legenda {
+  font-size: 1.22em;
+}
+/* line 209, ../scss/APP.Area.Saude.scss */
+#tela_mapaSaude .legendas .legenda::before {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  content: "";
+  vertical-align: middle;
+  margin-left: 0.5em;
+}
+/* line 218, ../scss/APP.Area.Saude.scss */
+#tela_mapaSaude .legendas .legenda.hospitais.referencia {
+  margin-bottom: 0.5em;
+}
+/* line 221, ../scss/APP.Area.Saude.scss */
+#tela_mapaSaude .legendas .legenda.hospitais.referencia::before {
+  background-color: #509dd5;
+}
+/* line 225, ../scss/APP.Area.Saude.scss */
+#tela_mapaSaude .legendas .legenda.hospitais.google::before {
+  background-color: #e73135;
+}
+/* line 230, ../scss/APP.Area.Saude.scss */
+#tela_mapaSaude .legendas .legenda span {
+  padding-left: 0.5em;
+  vertical-align: middle;
+}
+/* line 236, ../scss/APP.Area.Saude.scss */
+#tela_mapaSaude .legendas .icone.google {
+  margin-left: 0.5em;
+  vertical-align: middle;
+  width: 104px;
+  height: 16px;
+  display: inline-block;
+  background-image: url("../imagens/saude/mapa/icone_google.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+}
+/* line 246, ../scss/APP.Area.Saude.scss */
+#tela_mapaSaude #googleMap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0 0 0 0;
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
+/* line 252, ../scss/APP.Area.Saude.scss */
+.isphone #tela_mapaSaude {
+  margin-top: 60px;
+}
+/* line 255, ../scss/APP.Area.Saude.scss */
+#tela_mapaSaude .infoHospital {
+  display: inline-block;
+  width: 200px;
+  background-color: white;
+}
+/* line 259, ../scss/APP.Area.Saude.scss */
+#tela_mapaSaude .infoHospital h2 {
+  font-size: 1em;
+}
+/* line 262, ../scss/APP.Area.Saude.scss */
+#tela_mapaSaude .infoHospital p {
+  margin-top: 1em;
+  font-size: 1em;
+}
+/* line 266, ../scss/APP.Area.Saude.scss */
+#tela_mapaSaude .infoHospital a {
+  display: inline-block;
+  padding: 0.5em;
+}
+
+/* line 278, ../scss/APP.Area.Saude.scss */
+#tela_telefonesUteis .celula {
+  background-image: url("../imagens/saude/icone_telefone.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 14px 22.5px;
+  -moz-background-size: 14px 22.5px;
+  -o-background-size: 14px 22.5px;
+  background-size: 14px 22.5px;
+  background-position: right center;
+}
+/* line 284, ../scss/APP.Area.Saude.scss */
+#tela_telefonesUteis .numero {
+  color: #6d6e70;
+  margin-top: 1em;
+  display: block;
+}

@@ -1,0 +1,27 @@
+.icone {
+
+	&.sentimento {
+		width: 100px;
+		height: 100px;
+		background-repeat: repeat;
+		background-position: top left;
+		-webkit-background-size: 100%;
+		background-size: 100%;
+
+		&[data-nivel='muitoBem'] {
+			background-image: url("../imagens/icones/sentimento_muitoBem.png");
+		}
+		&[data-nivel='bem'] {
+			background-image: url("../imagens/icones/sentimento_bem.png");
+		}
+		&[data-nivel='normal'] {
+			background-image: url("../imagens/icones/sentimento_normal.png");
+		}
+		&[data-nivel='mal'] {
+			background-image: url("../imagens/icones/sentimento_mal.png");
+		}
+		&[data-nivel='muitoMal'] {
+			background-image: url("../imagens/icones/sentimento_muitoMal.png");
+		}
+	}
+}

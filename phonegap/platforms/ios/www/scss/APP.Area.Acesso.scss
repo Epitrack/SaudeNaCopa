@@ -1,0 +1,322 @@
+@import "Variaveis.scss";
+@import "compass/css3/images";
+@import "compass/css3/border-radius";
+@import "compass/css3/background-size";
+@import "compass/css3/transform";
+
+
+form.baseDaTela {
+	li {
+		background-color: transparent;
+	}
+}
+.baseDaTela {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	
+	li, .row.extra {
+		color: $acesso_componente_color;
+		height: 34px;
+		line-height: 30px;
+		margin-bottom: 10px;
+		@include border-radius(4px);
+		label {
+			color: $apresentacaoAcesso_color;
+			font-weight: normal;
+			font-size: (2.134em)/2;
+			line-height: normal;
+
+			&.error {
+				display: none !important;
+			}
+		}
+
+		input {
+			&.error {
+				background-color: #FFdddd;
+				color: black;
+				@include animated(shake);
+			}
+			&[type='checkbox'] {
+				@include transform-origin(0,0);
+				@include scale(1.5);
+				vertical-align: top;
+				border: none;
+				outline: none;
+			}
+		}
+	}
+	
+	li {
+		font-size: $acesso_componente_fontSize;
+		background-color: #FFF;
+		
+		position: relative;
+		&.icone {
+			padding-left: $acesso_componente_texto_paddingLeft;
+		}
+		a, a:hover {
+			text-decoration: none;
+			@include esticar(0,0,0,0);
+		}
+		a, input, select {
+			background-color: white;
+			font-size: inherit;
+			color: inherit;
+			display: block;
+			@include border-radius(4px);
+		}
+		&.icone {
+			a {
+				@include esticar(0,0,0,40px+$acesso_componente_icone_marginRight);
+			}
+		}
+		input, select {
+			padding: 0 12px;
+			border: none;
+			outline: none;
+			width: 100%;
+			height: 100%;
+
+			
+
+			&.error {
+				background-color: #FFdddd;
+				color: black;
+				@include animated(shake);
+			}
+
+			&[name='email'], &[name='login'], &[name='senha'], &[name='senhaAtual'], &[name='novaSenha'], &[name='repetirNovaSenha'] {
+				padding-left: $acesso_componente_texto_paddingLeft;
+				@include bg("auto 17px");
+			} 
+			&[name='email'], &[name='login'] {
+				background-position: 16px center;
+				background-image: url("../imagens/acesso/icone_cadastreSe.png");
+			}
+			&[name='senha'], &[name='senhaAtual'], &[name='novaSenha'], &[name='repetirNovaSenha'] {
+				background-position: 27px center;
+				background-image: url("../imagens/acesso/icone_cadeado.png");
+			}
+		}
+
+		label {
+			display: none !important;
+		}
+
+
+
+		.icone {
+			height: 100%;
+			width: 40px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			@include bg("auto 17px");
+			background-position: center right;
+			&.cadastreSe {
+				background-image: url("../imagens/acesso/icone_cadastreSe.png");
+			}
+			&.facebook {
+				background-image: url("../imagens/acesso/icone_facebook.png");
+			}
+			&.entrar {
+				background-image: url("../imagens/acesso/icone_entrar.png");
+			}
+			&.senha {
+				background-image: url("../imagens/acesso/icone_cadeado.png");
+			}
+		}
+	}
+
+	.botao.formulario.positivo {
+		@include border-radius(4px);
+		width: 100%;
+		border: none;
+		outline: none;
+		height: 27px;
+		font-size: $acesso_texto_fontSize;
+		color: #fff;
+		line-height: 1em;
+		@include background(linear-gradient($acesso_botaoPositivo_gradiente_inicio, $acesso_botaoPositivo_gradiente_fim));
+	}
+}
+
+#area_acesso {
+	.marca {
+		background-image: url("../imagens/acesso/marca.png");
+		@include bg();
+		@include centroX(446px/2);
+		height: (367px)/2;
+		top: (70px/2);
+		.en & {
+			background-image: url("../imagens/marca_en.png");
+			@include bg(auto 100%);
+		}
+		.es & {
+			background-image: url("../imagens/marca_es.png");
+		}
+	}
+
+	.botaoVoltarArea#botaoVoltarAcesso, 
+	.area_acesso & .botao.voltar {
+		display: block;
+	}
+	.area_acesso.tela_acesso & .botao.voltar {
+		display: none;
+	}
+
+
+	.tela_termosDeUso & {
+		.marca {
+			display: none !important;
+		}
+	}
+
+
+}
+#tela_acesso {
+	
+}
+#tela_cadastre-se {
+	.termosDeUso,
+	.labelTermos {
+		display: block;
+		width: 100%;
+		height: 100%;
+		line-height: 34px;
+	}
+	.termosDeUso {
+		text-align: left;
+		font-size: $acesso_texto_fontSize;
+	}
+	.camposObrigatorios {
+		height: auto;
+		line-height: 1em;
+		font-size: 1em;
+	}
+}
+#tela_entrarComLoginESenha {
+
+}
+#tela_esqueciASenha {
+	
+}
+#tela_termosDeUso {
+	h1.titulo {
+		text-transform: uppercase;
+		@include centroX(180px);
+		font-size: (2.845em)/2;
+		margin-top: 50px;
+		text-align: center;
+	}
+
+	font-size: $apresentacao_apresentacao_fontSize;
+
+	counter-reset: termos;
+	ol {
+		margin-bottom: 2em;
+		display: table;
+		counter-reset: menuTermos;
+		li {		
+			display: table-row;
+			counter-increment: menuTermos;
+
+			&:last-child span {
+				border-bottom:none;
+			}
+			span {
+				&::before {
+					content: counter(menuTermos) ". ";
+				}
+				display: table-cell;
+				vertical-align: middle;
+				height: 50px;
+				border-bottom: 1px solid #aeaeb3;
+				color: #007baa;
+			}
+		}
+	}
+	article {
+		counter-increment: termos;
+	}
+
+	article h1 {
+		&::before {
+			content: counter(termos) ". ";
+		}
+		font-size: 1.4em;
+		margin-bottom: 1em;
+	}
+
+	
+	
+	.texto {
+		//@include esticar(($alturaMarca+$espacoMarca+$espacoTexto1), 35px, 40px, 35px);
+		@include esticar(130px, 35px, 40px, 35px);
+		overflow: hidden;
+		.table {
+			display:table;
+			width: 100%;
+			height: 100%;
+			margin:0;
+			.cell {
+				display: table-cell;
+				overflow: hidden;
+				vertical-align: middle;
+				text-align: center;
+			}
+		}
+	}
+	article {
+		margin-bottom: 2em;
+		padding-bottom: 2em;
+		border-bottom: 1px solid rgb(0, 123, 170);
+		p {
+			padding: 0;
+		}
+		&:last-child {
+			border: none;
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+	}
+
+	.aDireita {
+		text-align: right;
+		padding: 1em 0;
+	}
+	a[href='#topo'], a[href='#menu'] {
+		
+	}
+
+}
+#tela_denunciarUmProblema {
+	
+	form  {
+
+		.row.mensagem li {
+			height: auto;
+			margin-bottom: 0;
+		}
+
+		label {
+			display: block !important;
+			font-size: 12px;
+			color: #007baa;
+		}
+	
+		textarea {
+			width: 100%;
+			height: 180px;
+			border: none;
+			@include border-radius(4px);
+			outline: none;
+		}
+	}
+}
+#tela_sobre {
+	
+}

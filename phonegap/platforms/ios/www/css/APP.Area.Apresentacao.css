@@ -1,0 +1,202 @@
+/**
+ *  Barras
+ */
+/**
+ *  Área Acesso e Apresentação
+ */
+/**
+ *  Área Acesso
+ */
+/**
+ *  Área Sentimento
+ */
+/* line 13, ../scss/APP.Area.Apresentacao.scss */
+#tela_idioma h1 {
+  font-size: 1.3065em;
+  color: #007baa;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 53px;
+  line-height: 53px;
+  top: 50%;
+  margin-top: -188.5px;
+  left: 0;
+  z-index: 2;
+}
+/* line 27, ../scss/APP.Area.Apresentacao.scss */
+#tela_idioma li {
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 53px;
+  height: 53px;
+  margin-left: -26.5px;
+  margin-top: -26.5px;
+}
+/* line 30, ../scss/APP.Area.Apresentacao.scss */
+#tela_idioma li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+/* line 36, ../scss/APP.Area.Apresentacao.scss */
+#tela_idioma li:nth-child(1) {
+  margin-top: -107.5px;
+  background-image: url("../imagens/apresentacao/idioma/pt.png");
+}
+/* line 40, ../scss/APP.Area.Apresentacao.scss */
+#tela_idioma li:nth-child(2) {
+  background-image: url("../imagens/apresentacao/idioma/es.png");
+}
+/* line 43, ../scss/APP.Area.Apresentacao.scss */
+#tela_idioma li:nth-child(3) {
+  margin-top: 54.5px;
+  background-image: url("../imagens/apresentacao/idioma/en.png");
+}
+
+/* line 52, ../scss/APP.Area.Apresentacao.scss */
+#tela_abertura .marca {
+  background-image: url("../imagens/apresentacao/abertura/marca.png");
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 196px;
+  height: 191px;
+  margin-left: -98px;
+  margin-top: -95.5px;
+  -webkit-transform: translateY(-63px);
+  -moz-transform: translateY(-63px);
+  -ms-transform: translateY(-63px);
+  -o-transform: translateY(-63px);
+  transform: translateY(-63px);
+}
+/* line 57, ../scss/APP.Area.Apresentacao.scss */
+.en #tela_abertura .marca {
+  background-image: url("../imagens/marca_en.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: auto 100%;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  background-size: auto 100%;
+}
+/* line 61, ../scss/APP.Area.Apresentacao.scss */
+.es #tela_abertura .marca {
+  background-image: url("../imagens/marca_es.png");
+}
+/* line 67, ../scss/APP.Area.Apresentacao.scss */
+#tela_abertura footer li {
+  position: absolute;
+  width: 33%;
+  bottom: 40px;
+  height: 23px;
+  left: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: auto 100%;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  background-size: auto 100%;
+}
+/* line 75, ../scss/APP.Area.Apresentacao.scss */
+#tela_abertura footer li.sus {
+  left: 0;
+  background-image: url("../imagens/apresentacao/abertura/sus.png");
+}
+/* line 79, ../scss/APP.Area.Apresentacao.scss */
+#tela_abertura footer li.skoll {
+  left: 33%;
+  background-image: url("../imagens/apresentacao/abertura/skoll.png");
+}
+/* line 84, ../scss/APP.Area.Apresentacao.scss */
+#tela_abertura footer li.tephinet {
+  left: auto;
+  right: 0;
+  background-image: url("../imagens/apresentacao/abertura/tephinet.png");
+}
+
+/* line 92, ../scss/APP.Area.Apresentacao.scss */
+#tela_apresentacao {
+  font-size: 1.244em;
+}
+/* line 105, ../scss/APP.Area.Apresentacao.scss */
+#tela_apresentacao .marca {
+  background-image: url("../imagens/apresentacao/apresentacao/marca.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+  position: absolute;
+  left: 50%;
+  width: 142px;
+  margin-left: -71px;
+  height: 120px;
+  top: 52.5px;
+}
+/* line 112, ../scss/APP.Area.Apresentacao.scss */
+.en #tela_apresentacao .marca {
+  background-image: url("../imagens/marca_en.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: auto 100%;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  background-size: auto 100%;
+}
+/* line 116, ../scss/APP.Area.Apresentacao.scss */
+.es #tela_apresentacao .marca {
+  background-image: url("../imagens/marca_es.png");
+}
+/* line 121, ../scss/APP.Area.Apresentacao.scss */
+#tela_apresentacao .texto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 195.5px 35px 69px 35px;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+/* line 124, ../scss/APP.Area.Apresentacao.scss */
+#tela_apresentacao .texto .table {
+  display: table;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+/* line 129, ../scss/APP.Area.Apresentacao.scss */
+#tela_apresentacao .texto .table .cell {
+  display: table-cell;
+  overflow: hidden;
+  vertical-align: middle;
+  text-align: center;
+}
+/* line 138, ../scss/APP.Area.Apresentacao.scss */
+#tela_apresentacao .botao.avancar {
+  background-image: url("../imagens/apresentacao/apresentacao/botao_avancar.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 12px 23px;
+  -moz-background-size: 12px 23px;
+  -o-background-size: 12px 23px;
+  background-size: 12px 23px;
+  position: absolute;
+  left: 50%;
+  width: 80px;
+  margin-left: -40px;
+  width: 80px;
+  height: 23px;
+  bottom: 23px;
+}

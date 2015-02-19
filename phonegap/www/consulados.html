@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+var paises = "África do Sul,Albânia,Alemanha,Angola,Argentina,Armênia,Austrália,Áustria,Bangladesh,Bélgica,Benin,Bolívia,Burkina Faso,Cabo Verde,Canadá,Chile,China,Chipre,Colômbia,Coréia do Sul,Costa do Marfim,Costa Rica,Croácia,Cuba,Dinamarca,Equador,Eslováquia,Espanha,Estados Unidos,Estônia,Filipinas,Finlândia,França,Gabão,Gâmbia,Gana,Grécia,Guatemala,Guiana,Guiné,Guiné-Bissau,Haiti,Holanda,Honduras,Hungria,Índia,Indonésia,Iraque,Irã ,Irlanda,Islândia,Israel,Itália,Jamaica,Japão,Kuaite,Letônia,Líbano,Libéria,Líbia,Lituânia,Luxemburgo,Malásia,Mali,Malta,Marrocos,México,Moçambique,Mônaco,Mongólia,Nicarágua,Nigéria,Noruega,Nova Zelândia,Países Baixos,Panamá,Paquistão,Paraguai,Peru,Polônia,Portugal,Reino Unido,República Democrática do Congo,República Dominicana,República Tcheca,Rússia,Romênia,San Marino,São Tomé e Príncipe,São Vicente e Granadinas,Senegal,Sérvia,Síria,Sri Lanka,Suécia,Suíça,Suriname,Tailândia,Togo,Tunísia,Turquia,Ucrânia,Uruguai,Venezuela".split(",");
+
+var cidades = "São Paulo,Rio de Janeiro,Belo Horizonte,Porto Alegre,Brasília,Cuiabá,Curitiba,Fortaleza,Manaus,Natal,Recife,Salvador".split(",");
+</script>
+<style>
+body {
+	font-family: Verdana;
+}
+
+textarea {
+	width: 250px;
+	height: 200px;
+}
+
+
+.cidade {
+	display: table-cell;
+	text-align: right;
+	padding-right: 1em;
+}
+h1 {
+	background-color: #efefef;
+	cursor: pointer;
+	padding: 0.5em;
+}
+
+.pais h1:hover {
+	background-color: #cfcfcf;
+}
+.pais h1::before {
+	content: " + "; 
+	display: inline-block;
+	width: 1em;
+}
+.pais.ativo h1::before {
+	content: " - "; 
+}
+.pais.ativo h1 {
+	background-color: #cfcfcf; 
+}
+.pais .cidades {
+	display: none;
+}
+.pais.ativo .cidades {
+	display: table;
+}
+h1, h2 {
+	text-align: left;
+}
+#stringResultado {
+	width: 800px;
+	padding: 3em;
+}
+</style>
+</head>
+<body>
+
+<div id="paises">
+	
+</div>
+
+<h1>Resultado</h1>
+<textarea id="stringResultado" cols="30" rows="10"></textarea>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+var fragmento = document.createDocumentFragment();
+var dados = JSON.parse(localStorage.getItem('consulados')) || {};
+
+$(paises).each(function(iPais,nomePais) {
+	var pais = $("<div>")
+					.addClass('pais')
+					.attr('data-pais', nomePais);
+
+	$("<h1>")
+		.text(nomePais)
+		.appendTo(pais)
+		.on('click', function(event){
+			$(".pais").removeClass('ativo');
+			$(pais).addClass('ativo');
+		})
+
+	var eCidades0 = $("<div>").addClass('cidades').appendTo(pais)
+	var eCidades1 = $("<div>").addClass('cidades').appendTo(pais)
+	var eCidades2 = $("<div>").addClass('cidades').appendTo(pais)
+	
+
+	$(cidades).each(function(iCidade, nomeCidade){
+		var cidade = $("<div>")
+						.addClass('cidade')
+						.attr('data-cidade', nomeCidade)
+						.attr('data-pais', nomePais);
+
+		$("<h2>")
+			.text(nomeCidade)
+			.appendTo(cidade);
+
+		var valor = "";
+		if(dados[nomePais] && dados[nomePais][nomeCidade]) {
+			valor = dados[nomePais][nomeCidade];
+		} 
+		$("<textarea>")
+			.attr('data-cidade', nomeCidade)
+			.attr('data-pais', nomePais)
+			.val(valor)
+			.appendTo(cidade);
+
+		$("<br>").appendTo(cidade);
+		
+		$("<button>")
+			.text("Gravar")
+			.appendTo(cidade);
+
+		if(iCidade % 2 == 0) {
+			cidade.appendTo(eCidades0);
+		}
+		if(iCidade % 2 == 1) {
+			cidade.appendTo(eCidades1);
+		}
+		if(iCidade % 3 == 2) {
+			cidade.appendTo(eCidades2);
+		}
+	});
+
+	fragmento.appendChild(pais.get(0));
+});
+
+$("#paises").get(0).appendChild(fragmento);
+
+
+function salvar(elemento) {
+	var cidade = $(elemento).parents('.cidade');
+	var pais = cidade.parents('.pais');
+
+	var nomeCidade = cidade.attr('data-cidade');
+	var nomePais = cidade.attr('data-pais');
+	var valor = cidade.find('textarea').val().replace(/\"/g,"");
+
+	dados[nomePais] = dados[nomePais] || {};
+	dados[nomePais][nomeCidade] = valor;
+	localStorage.setItem('consulados', JSON.stringify(dados));
+	$("#stringResultado").val(JSON.stringify(dados));
+}
+$("#stringResultado").on('focus', function(event){
+	$(this).val(localStorage.getItem('consulados'));
+	setTimeout(function(){
+		$(event.currentTarget).val(localStorage.getItem('consulados')).select()
+	}, 50);
+});
+
+$("#paises button").on("click", function(event) {
+	salvar(event.currentTarget);
+});
+$("#paises textarea").on("blur", function(event) {
+	salvar(event.currentTarget);
+});
+</script>
+</body>
+</html>

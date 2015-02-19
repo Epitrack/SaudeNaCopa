@@ -1,0 +1,148 @@
+@import "compass/css3/background-size";
+@import "compass/css3/border-radius";
+@import "compass/css3/images";
+@import "compass/css3/transform";
+@import "compass/css3/opacity";
+@import "compass/css3/transition";
+@import "Variaveis.scss";
+$corBarraMenu: #eeeff1;
+
+#barraDeMenu {
+	bottom: 0;
+	display: none;
+	background-color: $barra_menu_bgc;
+
+	ul {
+		padding: 0;
+	
+		%fundoMenu {
+			background-repeat: no-repeat;
+			background-position: center;
+			@include background-size(auto 50%);
+		}
+
+		li {
+			display: block;
+			position: absolute;
+			top: 0;
+			width: 20%;
+			height: $barra_altura;
+			text-align: center;
+			line-height: 80px;
+			font-size: 15px;
+			z-index: 2;
+			
+			&, & a {
+				@extend %fundoMenu;
+			}
+
+			
+			
+			a  {
+				display: block;
+			height: $barra_altura;
+				width: 100%;
+				overflow: hidden;
+				text-indent: -9999px;
+				color: black;
+				font-weight: bold;
+				text-decoration: none;
+			}
+
+			&:nth-child(1) {
+				left: 0;
+
+				a {
+					@include bg("21.5px 21px");
+					background-image: url("../imagens/barra/menu/icone_jogador_off.png");
+				}
+			}
+			&:nth-child(2) {
+				left: 20%;
+
+				a {
+					background-image: url("../imagens/barra/menu/icone_saude_off.png");
+				}
+			}
+			&:nth-child(3) {
+				left: 40%;
+
+				a {
+					background-image: url("../imagens/barra/menu/icone_jogos_cinza.png");
+				}
+			}
+			&:nth-child(4) {
+				left: 60%;
+
+				a {
+					background-image: url("../imagens/barra/menu/icone_mais_off.png");
+				}
+			}
+			&:nth-child(5) {
+				left: 80%;
+				color: black;
+
+				background-image: url("../imagens/barra/menu/icone_maisOpcoes.png");
+				@include background-size(auto 30%);
+			}
+
+
+			.area_sentimento &:nth-child(1) {
+				a {
+					background-image: url("../imagens/barra/menu/icone_jogador_on.png");
+				}
+			}
+
+			.area_saude &:nth-child(2) {
+				a {
+					background-image: url("../imagens/barra/menu/icone_saude_on.png");
+				}
+			}
+
+			.area_jogos &:nth-child(3) {
+				a {
+					background-image: url("../imagens/barra/menu/icone_jogos_on.png");
+				}
+			}
+
+			.area_mais &:nth-child(4) {
+				a {
+					background-image: url("../imagens/barra/menu/icone_mais_on.png");
+				}
+			}
+
+		}
+
+		ul {
+			display: none;
+			width: 180px;
+			height: auto;
+			position: absolute;
+			bottom: 80px;
+			right: 0;
+			background-color: inherit;
+			@include background-size(100%, auto);
+		}
+
+		ul li {
+			display: block;
+			width: auto;
+			height: auto;
+			line-height: 1em;
+			position: static;
+			border-top: 1px solid white;
+			line-height: 50px;
+			background-image: none;
+		}
+		ul li a {
+			width: auto;
+			height: auto;
+			display: block;
+			overflow: visible;
+			text-indent: 0;
+			border: none;
+			font-weight: normal;
+			background-image: none !important;
+		}
+	}
+}

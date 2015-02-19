@@ -1,0 +1,142 @@
+@import "compass/css3/background-size";
+@import "compass/css3/border-radius";
+@import "compass/css3/images";
+@import "compass/css3/transform";
+@import "compass/css3/opacity";
+@import "compass/css3/transition";
+@import "Variaveis.scss";
+
+.area {
+	//Padding referente as barras de titulo e menu
+	padding: $barra_altura 0;
+
+	.isphone & {
+		padding-top: $barra_alturaIOS;
+	}
+
+	.fullscreen & {
+		padding: 0;
+	}
+}
+.area, .tela {
+	display: none;
+
+	&.ativa {
+		display: block;
+	}
+}
+
+.tela.loading, .loading {
+	background-image: url("../imagens/loader.gif");
+	@include bg(50px 50px);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.tela.comRolagem {
+	@include esticar($barra_altura, 0, $barra_altura, 0);
+	.isphone & {
+		@include esticar($barra_alturaIOS, 0, $barra_altura, 0);
+	}
+	overflow: hidden;
+}
+
+
+
+
+.botaoVoltarArea {
+	position: absolute;
+	width: 100%;
+	top: 75px;
+	display: none;
+
+	.botao.voltar {
+		width: 80px;
+		height: 80px;
+		display: none;
+		background-image: url("../imagens/acesso/botao_voltar.png");
+		@include bg("12px 23px");
+		position: relative;
+		left: -34px;
+		top: -28.5px;
+	}
+}
+
+.lightbox {
+
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: none;
+	z-index: 3;
+
+	&.pelicula {
+		background-color: #000;
+		@include opacity(0.7);
+	}
+
+	&.conteudo {
+		.container {
+			background-color: #fff;
+			@include border-radius(15px);
+			font-size: 1.66em;
+			text-align: center;
+			color: #727176;
+			padding: 15px;
+			width: 180px;
+			min-height: 90px;
+			position: absolute;
+			top: 50%;
+			margin-top: -45px;
+			left: 50%;
+			margin-left: -90px;
+		}
+
+		.botao.ok {
+			min-width: 33px;
+			min-height: 27px;
+			position: absolute;
+			bottom: -39px;
+			left: 50%;
+			margin-left: -16px;
+			@include border-radius(4px);
+			line-height: 27px;
+			text-align: center;
+			color: white;
+			@include background-image(linear-gradient(#8db435, #73a93a));
+		}
+	}
+}
+
+
+.componente_offline {
+	z-index: 10 !important;
+
+	@include esticar(0,0,$barra_altura,0);
+	.fullscreen & {
+		@include esticar(0,0,0,0);
+	}
+	
+	.container {
+		width: 250px !important;
+		margin-left: -125px !important;
+		margin-top: -90px !important;
+	}
+	.botao.ok {
+		.area_sentimento &{ 
+			display: none;
+		}
+	}
+}
+
+
+@import "APP.Area.Apresentacao.scss";
+@import "APP.Area.Acesso.scss";
+@import "APP.Area.Sentimento.scss";
+@import "APP.Area.Saude.scss";
+@import "APP.Area.Jogos.scss";
+@import "APP.Area.Turismo.scss";
+@import "APP.Area.Mais.scss";
+@import "APP.Area.Menu.scss";

@@ -1,0 +1,321 @@
+<?php
+
+/**
+ * Class UsuarioDAO
+ */
+
+/**
+ * Data Access Object (DAO)
+ *
+ * UsuarioDAO: Classe responsável pela persistência dos usuários.
+ *
+ * @author      Rodrigo Carneiro <teoria@gmail.com>
+ * @copyright   2014 Epitrack
+ * @link        http://www.epitrack.com.br/
+ * @version     2.4.2
+ * @package     model/dao
+ *
+ *
+ */
+
+class UsuarioDAO extends DAO{
+
+
+    /**
+     * Método que persiste objetos UsuarioVO
+     *
+     * @param UsuarioVO $vo
+     * @throws Exception
+     */
+    public function insert( UsuarioVO $vo ){
+
+
+        $sql = "INSERT INTO usuarios (email,senha,idade,apelido,sexo,gcmid,idioma,totalPontosPossiveis,device)
+              VALUES (:email,:senha,:idade,:apelido,:sexo,:gcmid,:idioma,:totalPontosPossiveis,:device)";
+
+
+
+        $arrParams = array(
+            ':apelido'=>$vo->getApelido(),
+            ':email'=>$vo->getEmail(),
+            ':senha'=>$vo->getSenha(),
+            ':idade'=>$vo->getIdade(),
+            ':sexo'=>$vo->getSexo(),
+            ':gcmid'=>$vo->getGcmid(),
+            ':idioma'=>$vo->getIdioma(),
+            ':totalPontosPossiveis'=>$vo->getTotalPontosPossiveis(),
+            ':device'=>$vo->getDevice()
+        );
+
+
+
+        try{
+            $stm = $this->conex->prepare($sql);
+            $stm->execute($arrParams);
+        }catch (Exception $e){
+            throw new Exception("Não foi possível realizar o cadastro.");
+        }
+
+    }
+
+    /**
+     * Método que persiste objetos UsuarioVO usando facebook
+     *
+     * @param UsuarioVO $vo
+     * @throws Exception
+     */
+    public function insertFB( UsuarioVO $vo ){
+
+
+        $sql = "INSERT INTO usuarios (email,apelido,sexo)
+              VALUES (:idFB,:apelido, :sexo )";
+
+
+        $arrParams = array(
+            ':idFB'=>$vo->getEmail(),
+            ':apelido'=>$vo->getApelido(),
+            ':sexo'=> $vo->getSexo()
+        );
+
+
+
+        try{
+            $stm = $this->conex->prepare($sql);
+            $stm->execute($arrParams);
+        }catch (Exception $e){
+            throw new Exception("Não foi possível realizar o cadastro.");
+        }
+
+    }
+
+    /**
+     * Método retorna a quantidade de usuários cadastrados.
+     * @return mixed
+     */
+    public function countAll(){
+
+        $sql = 'SELECT count(*) as num FROM usuarios';
+
+        $qtd = $this->conex->query($sql);
+        $qtd = $qtd->fetch(PDO::FETCH_OBJ);
+
+        return $qtd->num;
+
+    }
+
+
+    /**
+     * Método retorna o objeto completo dos UsuarioVO
+     * passando login e senha
+     *
+     * @param UsuarioVO $vo
+     * @return UsuarioVO
+     * @throws Exception
+     */
+    public function selectOne( UsuarioVO $vo ){
+
+        $sql = "SELECT * FROM usuarios WHERE email = :login and senha = :senha";
+
+        $login = $vo->getEmail();
+        $senha = $vo->getSenha();
+
+        $stm = $this->conex->prepare($sql);
+        $stm->bindParam(':login', $login, PDO::PARAM_STR);
+        $stm->bindParam(':senha', $senha, PDO::PARAM_STR);
+
+        try{
+            $stm->execute();
+        }catch (Exception $e){
+            throw new Exception("Não foi possível selecionar o Usuário.");
+        }
+
+        $stm->setFetchMode(PDO::FETCH_CLASS, 'UsuarioVO');
+        $vo = $stm->fetch(PDO::FETCH_CLASS);
+        return $vo;
+
+    }
+
+    /**
+     * Método retorna o objeto completo dos UsuarioVO
+     * usando facebook
+     *
+     * @param UsuarioVO $vo
+     * @return UsuarioVO
+     * @throws Exception
+     */
+    public function selectOneFB( UsuarioVO $vo ){
+
+        $sql = "SELECT * FROM usuarios WHERE email = :login";
+
+        $login = $vo->getEmail();
+
+        $stm = $this->conex->prepare($sql);
+        $stm->bindParam(':login', $login, PDO::PARAM_STR);
+
+        try{
+            $stm->execute();
+        }catch (Exception $e){
+            throw new Exception("Não foi possível selecionar o Usuário.");
+        }
+
+        $stm->setFetchMode(PDO::FETCH_CLASS, 'UsuarioVO');
+        $vo = $stm->fetch(PDO::FETCH_CLASS);
+        return $vo;
+
+    }
+
+    /**
+     * Método retorna o objeto completo dos UsuarioVO
+     * passando ID
+     *
+     * @param UsuarioVO $vo
+     * @return UsuarioVO
+     * @throws Exception
+     */
+    public function selectOneByID( UsuarioVO $vo ){
+
+        $sql = "SELECT * FROM usuarios WHERE id = :id";
+
+        $id = $vo->getIdUsuario();
+
+        $stm = $this->conex->prepare($sql);
+        $stm->bindParam(':id', $id, PDO::PARAM_STR);
+
+        try{
+            $stm->execute();
+        }catch (Exception $e){
+            throw new Exception("Não foi possível selecionar o Usuário.");
+        }
+
+        $stm->setFetchMode(PDO::FETCH_CLASS, 'UsuarioVO');
+        $vo = $stm->fetch(PDO::FETCH_CLASS);
+        return $vo;
+
+    }
+
+
+    /**
+     * Método retorna o objeto completo dos UsuarioVO
+     * passando email
+     *
+     * @param UsuarioVO $vo
+     * @return UsuarioVO
+     * @throws Exception
+     */
+    public function  selectOneByEmail( UsuarioVO $vo ){
+
+        $sql = "SELECT * FROM usuarios WHERE email = :email";
+
+        $email = $vo->getEmail();
+
+        $stm = $this->conex->prepare($sql);
+        $stm->bindParam(':email', $email, PDO::PARAM_STR);
+
+        try{
+            $stm->execute();
+        }catch (Exception $e){
+            throw new Exception("Não foi possível selecionar o Usuário.");
+        }
+
+        $stm->setFetchMode(PDO::FETCH_CLASS, 'UsuarioVO');
+        $vo = $stm->fetch(PDO::FETCH_CLASS);
+        return $vo;
+
+    }
+
+
+    /**
+     * Método remove usuário
+     *
+     * @param UsuarioVO $vo
+     * @throws Exception
+     */
+    public function remove( UsuarioVO $vo ){
+
+        $id = $vo->getIdUsuario();
+
+        try{
+            $this->conex->exec("DELETE FROM usuarios WHERE id = '$id'");
+        }catch( Exception $e ){
+            throw new Exception("Não foi possível excluir o usuário.");
+        }
+
+    }
+
+    /**
+     * Método arualiza o objeto do UsuarioVO
+     * @param UsuarioVO $vo
+     * @throws Exception
+     */
+    public function update( UsuarioVO $vo ){
+
+        $sql = "UPDATE usuarios
+                SET
+                    senha = :senha,
+                    apelido =  :apelido,
+                    idade =  :idade,
+                    sexo =  :sexo,
+                    gcmid = :gcmid,
+                    idioma= :idioma,
+                    pontuacao = :pontuacao,
+                    arena = :arena
+                WHERE id=:id";
+
+
+
+//PARAMS
+        $arrParams = array(
+            ':id'=>$vo->getIdUsuario(),
+            ':senha'=>$vo->getSenha(),
+            ":apelido"=>$vo->getApelido(),
+            ":idade"=>$vo->getIdade(),
+            ":sexo"=>$vo->getSexo(),
+            ':gcmid'=>$vo->getGcmid(),
+            ':idioma'=>$vo->getIdioma(),
+            ':arena'=>$vo->getArena(),
+            ':pontuacao'=>$vo->getPontuacao()
+        );
+
+
+        try{
+            $stm = $this->conex->prepare($sql);
+            $stm->execute($arrParams);
+        }catch (Exception $e){
+            throw new Exception("Não foi possível atualizar o usuário.");
+        }
+
+    }
+
+
+    /**
+     * Método atualiza pontuação do usuário
+     *
+     * @param $idUser
+     * @param $pontuacao
+     * @throws Exception
+     */
+    public function updatePontuacao($idUser, $pontuacao){
+
+        $sql = "UPDATE usuarios
+                SET
+                    pontuacao = pontuacao + :pontuacao
+                WHERE id=:id";
+
+
+
+
+//PARAMS
+        $arrParams = array(
+            ':id'=>$idUser,
+            ':pontuacao'=>$pontuacao
+        );
+
+        try{
+            $stm = $this->conex->prepare($sql);
+            $stm->execute($arrParams);
+        }catch (Exception $e){
+            throw new Exception("Não foi possível atualizar o usuário.");
+        }
+    }
+
+} 

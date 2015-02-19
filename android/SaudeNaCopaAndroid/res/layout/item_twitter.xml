@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="20dp"
+    android:layout_marginTop="20dp" >
+
+    <TextView
+        android:id="@+id/txtTwitterNomeApresentacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/azul_saiba_mais"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtTwitterMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtTwitterNomeApresentacao"
+        android:layout_below="@+id/txtTwitterNomeApresentacao"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/azul_saude"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtTwitterNick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtTwitterNomeApresentacao"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/txtTwitterNomeApresentacao"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/azul_saude"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/txtTwitterTempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtTwitterMsg"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/txtTwitterNick"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/azul_saude"
+        android:textSize="13sp" />
+    
+    
+
+</RelativeLayout>

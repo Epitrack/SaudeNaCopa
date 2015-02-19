@@ -1,0 +1,56 @@
+10
+
+dir
+0
+https://denniscalazans@github.com/Epitrack/SaudeNaCopa/branches/phonegap/plugins
+https://denniscalazans@github.com/Epitrack/SaudeNaCopa
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7b215fdf-d518-78b5-2e63-ce57b7db7bff
+
+org.apache.cordova.vibration
+dir
+
+
+
+add
+
+ios.json
+file
+
+
+
+add
+
+org.apache.cordova.dialogs
+dir
+
+
+
+add
+
+org.apache.cordova.geolocation
+dir
+
+
+
+add
+

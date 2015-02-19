@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>Saúde na copa</title>
+	<link rel="stylesheet" href="bibliotecas/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="css/APP.css">
+	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+</head>
+<body>
+ <div id="fb-root"></div>
+<script>
+/*
+	window.fbAsyncInit = function() {
+		FB.init({
+			appId      : '143528089166832',
+			status     : true, // check login status
+			cookie     : true, // enable cookies to allow the server to access the session
+			xfbml      : true  // parse XFBML
+		});
+
+
+		FB.Event.subscribe('auth.authResponseChange', function(response) {
+
+			if (response.status === 'connected') {
+
+			  	localStorage.setItem('SNC_Acesso_Facebook_authResponse', JSON.stringify(response.authResponse));
+
+				FB.api('/me', function(meResponse) {
+
+					localStorage.setItem('SNC_Acesso_Facebook_meResponse', JSON.stringify(meResponse));
+					console.log('Good to see you, ' + meResponse.name + '.');
+
+					//APP.GerenciadorDeTelas.exibir("#tela_torcedor");
+
+				});
+
+			} else if (response.status === 'not_authorized') {
+				localStorage.removeItem('autoResponse');
+				localStorage.removeItem('meResponse');
+
+			} else {
+
+				localStorage.removeItem('autoResponse');
+				localStorage.removeItem('meResponse');
+			}
+		});
+  };
+
+  // Load the SDK asynchronously
+  (function(d){
+   var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+   if (d.getElementById(id)) {return;}
+   js = d.createElement('script'); js.id = id; js.async = true;
+   js.src = "//connect.facebook.net/en_US/all.js";
+   ref.parentNode.insertBefore(js, ref);
+  }(document));
+
+// 
+*/
+</script>
+<header id="barraDeTitulo" class="barra">
+	<h1><a class="voltar btn btn-primary btn-xs" href="#voltar">Voltar</a><span class="titulo">Como está se sentindo?</span></h1>
+</header>
+<footer id="barraDeMenu" class="barra">
+	<nav>
+		<ul>
+			<li><a data-i18n="barra.menu.home" href="#tela_torcedor">Home</a></li>
+			<li><a data-i18n="barra.menu.saude" href="#tela_saude">Saúde</a></li>
+			<li><a data-i18n="barra.menu.jogos" href="#tela_jogos">Jogos</a></li>
+			<li><a data-i18n="barra.menu.turismo" href="#tela_turismo">Turismo</a></li>
+			<li id="menuDoAplicativo">---
+				<ul>
+					<li><a data-i18n="barra.menu.denunciarUmProblema" href="#tela_denunciarUmProblema">Denunciar um problema</a></li>
+					<li><a data-i18n="barra.menu.termosDeUso" href="#tela_termosDeUso">Termos e políticas</a></li>
+					<li><a data-i18n="barra.menu.sobre" href="#tela_sobre">Sobre</a></li>
+					<li><a data-i18n="barra.menu.sair" href="#sair">Sair</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+</footer>
+<div id="scroller">
+	<div id="app" class="container-fluid">
+
+		<!-- AREA -->
+		<section class="area" id="area_apresentacao">
+
+			<!-- TELA -->
+
+			<div class="tela" id="tela_idioma" data-titulo="Idioma">
+				<h1 data-i18n="apresentacao.idioma.titulo">Idioma/Apresentação</h1>
+				
+				<ul>
+					<li class="pt"><a data-i18n="apresentacao.idioma.portugues" href="#idioma_pt" class="semTexto">Português</a></li>
+					<li class="es"><a data-i18n="apresentacao.idioma.espanhol" href="#idioma_es" class="semTexto">Espanhol</a></li>
+					<li class="en"><a data-i18n="apresentacao.idioma.ingles" href="#idioma_en" class="semTexto">Inglês</a></li>
+				</ul>
+
+			</div>
+			
+			<!-- TELA -->
+
+			<div class="tela" id="tela_abertura" data-titulo="Abertura">
+				<h1 class="marca grande semTexto" data-i18n="apresentacao.abertura.titulo">Saúde na copa</h1>
+				
+				<footer>
+					<ul>
+						<li class="semTexto sus">SUS</li>
+						<li class="semTexto skoll">SKOLL</li>
+						<li class="semTexto tephinet">TEPHINET</li>
+					</ul>
+				</footer>
+			</div>
+
+			<!-- TELA -->
+
+			<div class="tela" id="tela_apresentacao" data-titulo="Apresentação">
+				<h1 class="marca pequena semTexto" data-i18n="apresentacao.apresentacao.titulo">Saúde na copa</h1>
+				<p data-i18n="apresentacao.apresentacao.texto">Texto de apresentação</p>
+				<a class="btn btn-primary" href="#tela_acesso">Seguir</a>
+			</div>
+		</section>
+
+		<!-- AREA -->
+		<section class="area" id="area_acesso">
+
+			<!-- TELA -->
+			<div class="tela" id="tela_acesso" data-titulo="Acesso">
+				<h1 data-i18n="acesso.acesso.titulo">Saúde na copa</h1>
+				<nav>
+					<ul>
+						<li><a data-i18n="acesso.acesso.cadastre-se" href="#tela_cadastre-se">Cadastre-se</a></li>
+						<li><a data-i18n="acesso.acesso.entreComFacebook" href="#tela_entreComFacebook">Entre com Facebook</a></li>
+						<li><a data-i18n="acesso.acesso.entrarComLoginESenha" href="#tela_entrarComLoginESenha">Entre com cadastro</a></li>
+						<li><a data-i18n="acesso.acesso.esqueciASenha" href="#tela_esqueciASenha">Esqueci a senha</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<p data-i18n="acesso.acesso.rodape">Prosseguindo você concorda com os termos de uso e política de privacidade.</p>
+				</footer>
+			</div>
+
+			<!-- TELA -->
+			<div class="tela" id="tela_cadastre-se" data-titulo="Cadastre-se">
+				<header class="voltar">	
+					<h1><a class="voltar btn btn-primary btn-xs" href="#voltar">Voltar</a> Saúde na copa</h1>
+				</header>
+				<form id="formularioCadastro" action="testeFormulario.php">
+					<ol>
+						<li><label data-i18n="acesso.cadastre-se.apelido" for="campoCadastro_apelido">Apelido</label><input type="text" name="apelido" id="campoCadastro_apelido" class="required"></li>
+						<li><label data-i18n="acesso.cadastre-se.idade" for="campoCadastro_idade">Idade</label><input type="text" name="idade" id="campoCadastro_idade"></li>
+						<li><label data-i18n="acesso.cadastre-se.sexo" for="campoCadastro_sexo">Sexo</label><input type="text" name="sexo" id="campoCadastro_sexo"></li>
+						<li><label data-i18n="acesso.cadastre-se.email" for="campoCadastro_email">E-mail</label><input type="text" name="email" id="campoCadastro_email"></li>
+						<li><label data-i18n="acesso.cadastre-se.senha" for="campoCadastro_senha">Senha</label><input type="text" name="senha" id="campoCadastro_senha"></li>
+						<li><label data-i18n="acesso.cadastre-se.confirmacaoDeSenha" for="campoCadastro_confirmacaoDeSenha">Confirmação de senha</label><input type="text" name="confirmacaoDeSenha" id="campoCadastro_confirmacaoDeSenha"></li>
+					</ol>
+					<button class="btn btn-primary">Cadastre-se</button>
+				</form>
+			</div>
+
+			<!-- TELA -->
+			<div class="tela" id="tela_entreComFacebook" data-titulo="Entre com o Facebook">
+				<header class="voltar">	
+					<h1><a class="voltar btn btn-primary btn-xs" href="#voltar">Voltar</a> Saúde na copa</h1>
+				</header>
+				<p data-i18n="acesso.entreComFacebook.texto">Entrar com cadastro do Facebook</p>
+				<!--
+			  Below we include the Login Button social plugin. This button uses the JavaScript SDK to
+			  present a graphical Login button that triggers the FB.login() function when clicked. -->
+
+			<fb:login-button data-auto-logout-link="true" show-faces="true" width="200" max-rows="1"></fb:login-button>
+			</div>
+
+			<!-- TELA -->
+			<div class="tela" id="tela_entrarComLoginESenha" data-titulo="Entre com login e senha">
+				<header class="voltar">	
+					<h1><a class="voltar btn btn-primary btn-xs" href="#voltar">Voltar</a> Saúde na copa</h1>
+				</header>
+				<form id="formularioLogin" action="testeFormulario.php">
+					<ol>
+						<li><label data-i18n="acesso.entrarComLoginESenha.email" for="campoLogin_email">E-mail</label><input type="text" name="email" id="campoLogin_email"></li>
+						<li><label data-i18n="acesso.entrarComLoginESenha.senha" for="campoLogin_senha">Senha</label><input type="password" name="senha" id="campoLogin_senha"></li>
+						
+					</ol>
+					<button data-i18n="acesso.entrarComLoginESenha.entrar" class="btn btn-primary">Entrar</button>
+				</form>
+			</div>
+
+			<!-- TELA -->
+			<div class="tela" id="tela_esqueciASenha" data-titulo="Esqueci a senha">
+				<header class="voltar">	
+					<h1><a class="voltar btn btn-primary btn-xs" href="#voltar">Voltar</a> Saúde na copa</h1>
+				</header>
+				<form id="formularioEsqueciASenha" action="testeFormulario.php">
+					<ol>
+						<li><label data-i18n="acesso.esqueciASenha.email" for="campoEsqueciASenha_email">E-mail</label><input type="text" name="email" id="campoEsqueciASenha_email"></li>
+						
+					</ol>
+					<button data-i18n="acesso.esqueciASenha.entrar" class="btn btn-primary">Entrar</button>
+				</form>
+			</div>
+
+			<!-- TELA -->
+			<div class="tela" id="tela_termosDeUso" data-titulo="Termos de uso e política de privacidade">
+				<h1>Termos de uso e política de privacidade <a class="voltar btn btn-primary btn-xs" href="#voltar">Voltar</a></h1>
+				<p data-i18n="acesso.termosDeUso.texto">Texto termos de uso</p>
+			</div>
+
+			<!-- TELA -->
+			<div class="tela" id="tela_denunciarUmProblema" data-titulo="Denunciar um problema">
+				<h1>Denunciar um problema <a class="voltar btn btn-primary btn-xs" href="#voltar">Voltar</a></h1>
+				<p data-i18n="acesso.denunciarUmProblema.texto">Texto denunciar um problema</p>
+				<form action="">
+					<ol>
+						<li><label data-i18n="acesso.enunciarUmProblema.email" for="denunciarProblema_email">E-mail</label><input type="text" name="email" id="denunciarProblema_email"></li>
+
+						<li><label data-i18n="acesso.entrarComLoginESenha.mensagem" for="denunciarProblema_mensagem">Mensagem</label><textarea name="mensagem" id="denunciarProblema_mensagem"></textarea></li>
+					</ol>
+					<button class="btn btn-primary">Enviar</button>
+				</form>
+			</div>
+
+			<!-- TELA -->
+			<div class="tela" id="tela_sobre" data-titulo="Sobre">
+				<h1>Sobre <a class="voltar btn btn-primary btn-xs" href="#voltar">Voltar</a></h1>
+				<p data-i18n="acesso.sobre.mensagem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, quibusdam, ex, quaerat modi itaque est beatae libero ullam aut excepturi aspernatur reiciendis? Animi, consequuntur praesentium perferendis modi blanditiis magni suscipit.</p>
+			</div>
+		</section>
+
+		<!-- AREA -->
+		<section class="area" id="area_sentimento">
+
+			<!-- TELA -->
+			<div class="tela" id="tela_torcedor" data-titulo="Torcedor" data-atualizar="APP.Area.Sentimento.Torcedor.atualizar">
+
+				<div id="status">
+					<h1><span data-i18n="sentimento.torcedor.status.ola">Olá</span>, <span class="dado nome apelido"></span>, <span data-i18n="sentimento.torcedor.status.voceEsta">você está</span> <span class="dado sentimento">bem</span>!</h1>
+					<div id="sentimento" class="icone sentimento" data-nivel="bem"><span class="dado sentimento">bem</span></div>
+					<div id="pontos"><span class="dado total pontos">30</span> PONTO<span class="plural">S</span></div>
+					<div id="categoria"><span data-i18n="sentimento.torcedor.status.voceEstaNaCategoria">Você está na categoria</span> <span class="dado categoria">Infantil</span></div>
+					<p data-i18n="sentimento.torcedor.status.continueParticipando">continue participando para evoluir</p>
+				</div>
+
+				<div id="calendario">
+					<div id="semana">
+						<div class="dia">
+							<div class="trofeu"></div>
+							<div class="sentimento">
+								<div class="icone sentimento" data-nivel="mal">Mal</div>
+							</div>
+							<div class="numero">4</div>
+							<div class="nome">seg</div>
+						</div>
+						<div class="dia">
+							<div class="trofeu">
+								<div class="icone trofeu bola">Bola</div>
+							</div>
+							<div class="sentimento">
+								<div class="icone sentimento" data-nivel="muitoBem">Muito bem</div>
+							</div>
+							<div class="numero">5</div>
+							<div class="nome">ter</div>
+						</div>
+						<div class="dia">
+							<div class="trofeu"></div>
+							<div class="sentimento"></div>
+							<div class="numero">6</div>
+							<div class="nome">qua</div>
+						</div>
+						<div class="dia">
+							<div class="trofeu"></div>
+							<div class="sentimento"></div>
+							<div class="numero">7</div>
+							<div class="nome">qui</div>
+						</div>
+						<div class="dia">
+							<div class="trofeu"></div>
+							<div class="sentimento"></div>
+							<div class="numero">8</div>
+							<div class="nome">sex</div>
+						</div>
+						<div class="dia">
+							<div class="trofeu"></div>
+							<div class="sentimento"></div>
+							<div class="numero">9</div>
+							<div class="nome">sab</div>
+						</div>
+						<div class="dia">
+							<div class="trofeu"></div>
+							<div class="sentimento"></div>
+							<div class="numero">10</div>
+							<div class="nome">dom</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+
+			<!-- TELA -->
+			<div class="tela" id="tela_sentimento" data-titulo="Como está se sentindo?">
+				<div id="listaDeSentimentos">
+					<div data-i18n="sentimento.sentimento.muitoBem" class="icone sentimento" data-nivel="muitoBem" data-valor="2">Muito bem</div>
+					<div data-i18n="sentimento.sentimento.bem" class="icone sentimento" data-nivel="bem" data-valor="1">Bem</div>
+					<div data-i18n="sentimento.sentimento.normal" class="icone sentimento" data-nivel="normal" data-valor="0">Normal</div>
+					<div data-i18n="sentimento.sentimento.mal" class="icone sentimento" data-nivel="mal" data-valor="-1">Mal</div>
+					<div data-i18n="sentimento.sentimento.muitoMal" class="icone sentimento" data-nivel="muitoMal" data-valor="-2">Muito mal</div>
+				</div>
+			</div>
+
+
+			<!-- TELA -->
+			<div class="tela" id="tela_sintomas" data-titulo="Sintomas"></header>
+				<form id="formularioSintomas" action="testeFormulario.php">
+					<ol>
+						<li><label data-i18n="sentimento.sentimento.febre" for="campoSintoma_sintoma_1">Febre</label><input type="checkbox" name="sintoma[]" value="1" id="campoSintoma_sintoma_1"></li>
+						<li><label data-i18n="sentimento.sentimento.tosse" for="campoSintoma_sintoma_2">Tosse</label><input type="checkbox" name="sintoma[]" value="2" id="campoSintoma_sintoma_2"></li>
+						<li><label data-i18n="sentimento.sentimento.dorDeGarganta" for="campoSintoma_sintoma_3">Dor de Garganta</label><input type="checkbox" name="sintoma[]" value="3" id="campoSintoma_sintoma_3"></li>
+						<li><label data-i18n="sentimento.sentimento.faltaDeAr" for="campoSintoma_sintoma_4">Falta de ar</label><input type="checkbox" name="sintoma[]" value="4" id="campoSintoma_sintoma_4"></li>
+						<li><label data-i18n="sentimento.sentimento.nauseaEVomito" for="campoSintoma_sintoma_5">Náusea e vômitos</label><input type="checkbox" name="sintoma[]" value="5" id="campoSintoma_sintoma_5"></li>
+						<li><label data-i18n="sentimento.sentimento.diarreia" for="campoSintoma_sintoma_6">Diarréia</label><input type="checkbox" name="sintoma[]" value="6" id="campoSintoma_sintoma_6"></li>
+						<li><label data-i18n="sentimento.sentimento.dorNasArticulacoes" for="campoSintoma_sintoma_7">Dor nas articulações</label><input type="checkbox" name="sintoma[]" value="7" id="campoSintoma_sintoma_7"></li>
+						<li><label data-i18n="sentimento.sentimento.dorDeCabeca" for="campoSintoma_sintoma_8">Dor de cabeça</label><input type="checkbox" name="sintoma[]" value="8" id="campoSintoma_sintoma_8"></li>
+						<li><label data-i18n="sentimento.sentimento.sangramento" for="campoSintoma_sintoma_9">Sangramento</label><input type="checkbox" name="sintoma[]" value="9" id="campoSintoma_sintoma_9"></li>
+						<li><label data-i18n="sentimento.sentimento.manchasVermelhasNoCorpo" for="campoSintoma_sintoma_10">Manchas vermelhas no corpo</label><input type="checkbox" name="sintoma[]" value="10" id="campoSintoma_sintoma_10"></li>
+						<li><label data-i18n="sentimento.sentimento.contatoComAlguem" for="campoSintoma_sintoma_11">Teve contato ou conhece alguém com algum desses sintomas nos ultimos 7 dias?</label><input type="checkbox" name="sintoma[]" value="11" id="campoSintoma_sintoma_11"></li>
+						<li><label data-i18n="sentimento.sentimento.procurouServicoDeSaude" for="campoSintoma_sintoma_12">Você procurou o serviço de saúde?</label><input type="checkbox" name="sintoma[]" value="12" id="campoSintoma_sintoma_12"></li>
+					</ol>
+					<button class="btn btn-primary" type="submit">Enviar</button>
+				</form>
+			</div>
+		</section>
+
+		<!-- AREA -->
+		<section class="area" id="area_saude">
+
+			<!-- TELA -->
+			<div class="tela" id="tela_saude" data-titulo="Saúde">
+				<div id="twits_saude">
+					<div class="twit">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, ea, tempore praesentium iste cupiditate dolor repellendus doloribus laborum veniam sit hic magni magnam nisi accusantium itaque incidunt soluta architecto deleniti.</p>
+						<div class="span autor">Ministério da Saúde</div>
+						<div class="tempo">segunda 22:00</div>
+					</div>
+					<div class="twit">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, ea, tempore praesentium iste cupiditate dolor repellendus doloribus laborum veniam sit hic magni magnam nisi accusantium itaque incidunt soluta architecto deleniti.</p>
+						<div class="span autor">Ministério da Saúde</div>
+						<div class="tempo">segunda 22:00</div>
+					</div>
+				</div>
+				<nav>
+					<ul>
+						<li><a data-i18n="saude.saude.lembretesDeSaude" href="#tela_lembretesDeSaude">Lembretes de saúde</a></li>
+						<li><a data-i18n="saude.saude.hospitaisDeReferencia" href="#tela_hospitaisDeReferencia">Hospitais de referência</a></li>
+						<li><a data-i18n="saude.saude.telefonesUteis" href="#tela_telefonesUteis">Telefones úteis</a></li>
+						<li><a data-i18n="saude.saude.farmacias" href="#tela_farmacias">Farmácias</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<!-- TELA -->
+			<div class="tela" id="tela_lembretesDeSaude" data-titulo="Lembretes de saúde">
+				<div class="introducao" data-i18n="saude.lembretesDeSaude.introducao">Introdução lembretes de saúde</div>
+				<article data-i18n="saude.lembretesDeSaude.texto">
+				Texto lembretes de saúde
+				</article>
+			</div>
+
+			<!-- TELA -->
+			<div class="tela" id="tela_hospitaisDeReferencia" data-titulo="Hospitais de referência">
+				<div id="mapa_hospitais"></div>
+			</div>
+
+			<!-- TELA -->
+			<div class="tela" id="tela_telefonesUteis" data-titulo="Telefones úteis">
+				<ul>
+					<li><a data-i18n="saude.telefonesUteis.samu" href="tel:192">SAMU</a></li>
+					<li><a data-i18n="saude.telefonesUteis.policia" href="tel:190">Polícia</a></li>
+					<li><a data-i18n="saude.telefonesUteis.disqueDenuncia" href="tel:100">Disque denúncia</a></li>
+					<li><a data-i18n="saude.telefonesUteis.ouvidoriaDeSaude" href="tel:444">Ouvidoria da saúde</a></li>
+					<li><a data-i18n="saude.telefonesUteis.bombeiros" href="tel:193">Bombeiros</a></li>
+					<li><a data-i18n="saude.telefonesUteis.defesaCivil" href="tel:666">Defesa civil</a></li>
+				</ul>
+			</div>
+
+			<!-- TELA -->
+			<div class="tela" id="tela_farmacias" data-titulo="Farmácias">
+				<div id="mapa_farmacias"></div>
+			</div>
+		</section>
+		
+		<!-- AREA -->
+		<section class="area" id="area_jogos">
+
+			<!-- TELA -->
+			<div class="tela" id="tela_jogos" data-titulo="Jogos">
+				<div id="twits_jogos">
+					<div class="twit">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, ea, tempore praesentium iste cupiditate dolor repellendus doloribus laborum veniam sit hic magni magnam nisi accusantium itaque incidunt soluta architecto deleniti.</p>
+						<div class="span autor">FIFA</div>
+						<div class="tempo">segunda 22:00</div>
+					</div>
+					<div class="twit">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, ea, tempore praesentium iste cupiditate dolor repellendus doloribus laborum veniam sit hic magni magnam nisi accusantium itaque incidunt soluta architecto deleniti.</p>
+						<div class="span autor">FIFA</div>
+						<div class="tempo">segunda 22:00</div>
+					</div>
+				</div>
+				<nav>
+					<ul>
+						<li><a data-i18n="jogos.jogos.selecoes" href="#tela_selecoes">Seleções</a></li>
+						<li><a data-i18n="jogos.jogos.resultados" href="#tela_resultados">Resultados</a></li>
+						<li><a data-i18n="jogos.jogos.calendarioDeJogos" href="#tela_calendarioDeJogos">Calendário dos jogos</a></li>
+						<li><a data-i18n="jogos.jogos.maisNoticias" href="#tela_maisNoticias">Mais notícias</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<!-- TELA -->
+			<div class="tela" id="tela_selecoes" data-titulo="Seleções">
+				<ul>
+					<li><a href="#tela_selecao">Nome de seleção 1</a></li>
+					<li><a href="#tela_selecao">Nome de seleção 2</a></li>
+					<li><a href="#tela_selecao">Nome de seleção 3</a></li>
+					<li><a href="#tela_selecao">Nome de seleção 4</a></li>
+					<li><a href="#tela_selecao">Nome de seleção 5</a></li>
+					<li><a href="#tela_selecao">Nome de seleção 6</a></li>
+					<li><a href="#tela_selecao">Nome de seleção 7</a></li>
+					<li><a href="#tela_selecao">Nome de seleção 8</a></li>
+					<li><a href="#tela_selecao">Nome de seleção 9</a></li>
+					<li><a href="#tela_selecao">Nome de seleção 10</a></li>
+					<li><a href="#tela_selecao">Nome de seleção 11</a></li>
+					<li><a href="#tela_selecao">Nome de seleção 12</a></li>
+					<li><a href="#tela_selecao">Nome de seleção 13</a></li>
+					<li><a href="#tela_selecao">Nome de seleção 14</a></li>
+					<li><a href="#tela_selecao">Nome de seleção 15</a></li>
+					<li><a href="#tela_selecao">Nome de seleção 16</a></li>
+					<li><a href="#tela_selecao">Nome de seleção 17</a></li>
+					<li><a href="#tela_selecao">Nome de seleção 18</a></li>
+					<li><a href="#tela_selecao">Nome de seleção 19</a></li>
+					<li><a href="#tela_selecao">Nome de seleção 20</a></li>
+				</ul>
+			</div>
+
+			<!-- TELA -->
+			<div class="tela" id="tela_selecao" data-titulo="Seleção">
+				<div id="iframe_selecaoFIFA"></div>
+			</div>
+
+			<!-- TELA -->
+			<div class="tela" id="tela_resultados" data-titulo="Resultados">
+				<div id="iframe_resultadosFIFA"></div>
+			</div>
+
+			<!-- TELA -->
+			<div class="tela" id="tela_calendarioDeJogos" data-titulo="Calendário dos jogos">
+				<div id="iframe_selecaoFIFA"></div>
+			</div>
+
+			<!-- TELA -->
+			<div class="tela" id="tela_maisNoticias" data-titulo="Mais notícias">
+				<div id="iframe_selecaoFIFA"></div>
+			</div>
+		</section>
+		
+		<!-- AREA -->
+		<section class="area" id="area_turismo">
+
+			<!-- TELA -->
+			<div class="tela" id="tela_turismo" data-titulo="Turismo">
+				<div id="twits_turismo">
+					<div class="twit">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, ea, tempore praesentium iste cupiditate dolor repellendus doloribus laborum veniam sit hic magni magnam nisi accusantium itaque incidunt soluta architecto deleniti.</p>
+						<div class="span autor">Ministério do Turismo</div>
+						<div class="tempo">segunda 22:00</div>
+					</div>
+					<div class="twit">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, ea, tempore praesentium iste cupiditate dolor repellendus doloribus laborum veniam sit hic magni magnam nisi accusantium itaque incidunt soluta architecto deleniti.</p>
+						<div class="span autor">Ministério do Turismo</div>
+						<div class="tempo">segunda 22:00</div>
+					</div>
+				</div>
+				<nav>
+					<ul>
+						<li><a data-i18n="turismo.turismo.fanFest" href="#tela_fanFest">Fan Fest</a></li>
+						<li><a data-i18n="turismo.turismo.pontosTuristicos" href="#tela_pontosTuristicos">Pontos Turísticos</a></li>
+						<li><a data-i18n="turismo.turismo.atividadesCulturais" href="#tela_atividadesCulturais">Atividades culturais</a></li>
+						<li><a data-i18n="turismo.turismo.baresERestaurantes" href="#tela_baresERestaurantes">Bares e restaurantes</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<!-- TELA -->
+			<div class="tela" id="tela_fanFest" data-titulo="Fan Fest">
+				<div id="iframe_fanFest"></div>
+			</div>
+
+			<!-- TELA -->
+			<div class="tela" id="tela_pontosTuristicos" data-titulo="Pontos Turísticos">
+				<div id="iframe_pontosTuristicos"></div>
+			</div>
+
+			<!-- TELA -->
+			<div class="tela" id="tela_atividadesCulturais" data-titulo="Atividades culturais">
+				<div id="iframe_atividadesCulturais"></div>
+			</div>
+
+			<!-- TELA -->
+			<div class="tela" id="tela_baresERestaurantes" data-titulo="Bares e restaurantes">
+				<div id="iframe_baresERestaurantes"></div>
+			</div>
+		</section>
+
+
+		</div>
+</div>
+
+<script src="bibliotecas/iscroll-master/build/iscroll.js"></script>
+<script src="bibliotecas/js/jquery-2.1.0.js"></script>
+<script src="bibliotecas/js/jquery.mobile.vmouse.js"></script>
+<script src="bibliotecas/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="bibliotecas/jquery-validation/localization/messages_pt_BR.js"></script>
+<script src="bibliotecas/i18next-1.7.2/i18next-1.7.2.js"></script>
+<script src="bibliotecas/APP/APP.js"></script>
+<script src="bibliotecas/APP/APP.GerenciadorDeTelas.js"></script>
+<script src="js/APP.js"></script>
+<script src="js/APP.GerenciadorDeTelas.js"></script>
+<script src="js/APP.Barra.js"></script>
+<script src="js/APP.Barra.Titulo.js"></script>
+<script src="js/APP.Barra.Menu.js"></script>
+<script src="js/APP.Area.js"></script>
+<script src="js/APP.Area.Acesso.js"></script>
+<script src="js/APP.Area.Apresentacao.js"></script>
+<script src="js/APP.Area.Sentimento.js"></script>
+<script src="plugins/PushNotification.js"></script>
+<script src="js/APP.Android.js"></script>
+<script>APP.iniciar();</script>
+</body>
+</html>

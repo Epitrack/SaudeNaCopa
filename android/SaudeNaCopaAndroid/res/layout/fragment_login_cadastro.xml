@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <Button
+        android:id="@+id/btnCadastrar"
+        style="@style/btnGeral"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/button_acao"
+        android:onClick="cadastrar"
+        android:text="@string/cadastrese" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnCadastrar"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="14dp" >
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/li_e_concordo"
+            android:textColor="@color/azul_texto"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/txtTwitterNomeApresentacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="abreDialog"
+            android:text="@string/termos_uso"
+            android:textColor="@color/azul_texto"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtPass"
+        style="@style/textBox"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_alignParentLeft="true"
+        android:drawableLeft="@drawable/icone_cadeado"
+        android:drawablePadding="20dp"
+        android:ems="10"
+        android:hint="@string/senha"
+        android:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edtEmail"
+        style="@style/textBox"
+        android:layout_above="@+id/edtPass"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="14dp"
+        android:drawableLeft="@drawable/icone_cadastrese"
+        android:drawablePadding="5dp"        
+        android:ems="10"
+        android:hint="@string/email_cadastro"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/edtIdade"
+        style="@style/textBoxIdade"
+        android:layout_above="@+id/radioSex"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="false"
+        android:layout_marginBottom="10dp"
+        android:drawableLeft="@drawable/icone_idade"
+        android:ems="10"
+        android:hint="@string/idade"
+        android:inputType="number" />
+
+    <RadioGroup
+        android:id="@+id/radioSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edtEmail"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rbtMasculino"
+            style="@style/RadioButtonAppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/masc"
+            android:textColor="@color/cinza_texbox" />
+
+        <RadioButton
+            android:id="@+id/rbtFeminino"
+            style="@style/RadioButtonAppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fem"
+            android:textColor="@color/cinza_texbox" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edtApelido"
+        style="@style/textBox"
+        android:layout_above="@+id/edtIdade"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="false"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="@string/apelido"
+        android:inputType="textPersonName" />
+
+</RelativeLayout>

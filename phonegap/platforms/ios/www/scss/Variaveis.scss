@@ -1,0 +1,168 @@
+@import "compass/css3/background-size";
+/**
+ *  Barras
+ */
+$divisao: 2;
+
+$barra_altura: 40px;
+$altura_statusBarIOS: 20px;
+$barra_alturaIOS: $barra_altura + $altura_statusBarIOS;
+
+
+//titulo
+$barra_titulo_fontSize: 2.667em/$divisao;
+$barra_titulo_color: #f7f7f8;
+
+$barra_titulo_bgc_torcedor_inicio: #f1d046; 
+$barra_titulo_bgc_torcedor_inicio: #e6b548;
+$barra_titulo_bgc_saude_inicio: #91c5e1;
+$barra_titulo_bgc_saude_inicio: #5aafd9;
+$barra_titulo_bgc_jogos_inicio: #a3bd31;
+$barra_titulo_bgc_jogos_inicio: #70a83b;
+$barra_titulo_bgc_turismo_inicio: #76aadb;
+$barra_titulo_bgc_turismo_inicio: #4972b1;
+
+
+//menu
+$barra_menu_bgc: #eeeef0;
+/**
+ *  Área Acesso e Apresentação
+ */
+
+$apresentacaoAcesso_color: #007baa;
+$apresentacaoAcesso_gradiente_inicio: #b1d0e6;
+$apresentacaoAcesso_gradiente_fim: #e2ecf6;
+
+//Apresentacao Idioma
+$apresentacao_idioma_titulo_fontSize: 2.613em/$divisao;
+
+//Apresentacao Apresentacao
+$apresentacao_apresentacao_fontSize: 1.244em;
+
+
+@mixin gradienteAA {
+	  
+	background: $apresentacaoAcesso_gradiente_inicio;
+	background: -moz-radial-gradient(center, ellipse cover,  $apresentacaoAcesso_gradiente_inicio 23%, $apresentacaoAcesso_gradiente_fim 96%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(23%,$apresentacaoAcesso_gradiente_inicio), color-stop(96%,$apresentacaoAcesso_gradiente_fim));
+	background: -webkit-radial-gradient(center, ellipse cover,  $apresentacaoAcesso_gradiente_inicio 23%,$apresentacaoAcesso_gradiente_fim 96%);
+	background: -o-radial-gradient(center, ellipse cover,  $apresentacaoAcesso_gradiente_inicio 23%,$apresentacaoAcesso_gradiente_fim 96%);
+	background: -ms-radial-gradient(center, ellipse cover,  $apresentacaoAcesso_gradiente_inicio 23%,$apresentacaoAcesso_gradiente_fim 96%);
+	background: radial-gradient(ellipse at center,  $apresentacaoAcesso_gradiente_inicio 23%,$apresentacaoAcesso_gradiente_fim 96%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$apresentacaoAcesso_gradiente_inicio', endColorstr='$apresentacaoAcesso_gradiente_fim',GradientType=1 );
+
+}
+/**
+ *  Área Acesso
+ */
+
+$acesso_componente_borderRadius: 8px/$divisao;
+$acesso_componente_texto_paddingLeft: 105px/$divisao;
+$acesso_componente_icone_marginRight: 25px/$divisao;
+$acesso_componente_fontSize: 2.845em/$divisao;
+$acesso_componente_color: #6d6e70;
+
+$acesso_label_fontSize: 2.134em/$divisao;
+$acesso_texto_fontSize: 2.489em/$divisao;
+
+$acesso_botaoPositivo_gradiente_inicio: #8db435;
+$acesso_botaoPositivo_gradiente_fim: #73a93a;
+
+
+/**
+ *  Área Sentimento
+ */
+
+//Torcedor
+
+
+$sentimento_torcedor_pergunta_color: white;
+$sentimento_torcedor_pergunta_fontSize: 3.104em/$divisao;
+$sentimento_torcedor_titulo_fontSize: 3.104em/$divisao;
+
+$engajamento_tamanho: 14px;
+$engajamento_border1_color: #5a9a9b;
+$engajamento_border2_color: #43777f;
+$engajamento_bgc_off: #ffffff;
+$engajamento_bgc_on: #7fd7c7;
+$engajamento_brilho_inicio: #95e3d7;
+$engajamento_brilho_fim: #c9f0e9;
+$engajamento_brilho_width: 4px;
+$engajamento_brilho_marginLeft: 2px;
+
+$pontos_ponto_fontSize: 9.14em/$divisao;
+$pontos_fontSize: 2.704em/$divisao;
+
+$area_fontSize: 4.211em/$divisao;
+$area_pontos: 12px;
+$area_espacamento: 16px;
+
+
+$confirmacao_fontSize: 2.489em/$divisao;
+$confirmacao_height: 52px;
+
+$sintomas_fontSize: 2.489em/$divisao;
+$sintomas_color: #727176;
+$sintomas_altura: 80px;
+//$sintomas_largura: 10 colunas;
+
+$saude_titulo_color: #4cb6dd;		
+$saude_titulo_fontSize: 2.845em/$divisao;		
+$saude_texto_fontSize: 2.489em/$divisao; 		
+
+@mixin bg($bgsz:"100% auto") {
+	background-position: center;
+	background-repeat: no-repeat;
+	@include background-size($bgsz);
+}
+
+@mixin alturaIgualLargura() {
+	height: 0;
+	padding-top: 100%;
+	position: relative;
+}
+@mixin esticar($t:"",$r:"",$b:"",$l:"") {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: #{$t} #{$r} #{$b} #{$l};
+	width: auto;
+	height: auto;
+}
+
+@mixin centro($w, $h:$w, $ml:"", $mt:"") {
+	$height: $h;	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: $w;
+	height: $height;
+	margin-left: -$w/2;
+	margin-top: -$height/2;
+}
+
+@mixin centroY($h:"") {
+	position: absolute;
+	top: 50%;
+	height: $h;
+	margin-top: -$h/2;
+}
+
+@mixin centroX($w) {
+	position: absolute;
+	left: 50%;
+	width: $w;
+	margin-left: -$w/2;
+}
+
+
+@mixin animated($name) {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: $name;
+  animation-name: $name;
+}

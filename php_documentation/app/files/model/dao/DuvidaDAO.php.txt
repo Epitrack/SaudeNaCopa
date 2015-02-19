@@ -1,0 +1,59 @@
+<?php
+
+/**
+ * Class DuvidaDAO
+ */
+
+/**
+ * Data Access Object (DAO)
+ *
+ * DuvidaDAO: Classe responsável pela persistência de dúvidas dos usuários.
+ *
+ * @author      Rodrigo Carneiro <teoria@gmail.com>
+ * @copyright   2014 Epitrack
+ * @link        http://www.epitrack.com.br/
+ * @version     2.4.2
+ * @package     model/dao
+ *
+ *
+ */
+
+class DuvidaDAO extends DAO{
+
+
+    /**
+     * Método que persiste objetos DuvidaVO
+     *
+     * @param DuvidaVO $vo
+     * @throws Exception
+     */
+    public function insert( DuvidaVO $vo ){
+
+
+        $sql = "INSERT INTO  duvidas ( `usuarios_id`, `msg`) VALUES ( :idusuario, :texto)";
+
+
+        $arrParams = array(
+            ':idusuario'=>$vo->getIdUsuario(),
+            ':texto'=>$vo->getMsg()
+        );
+
+
+
+        try{
+            $stm = $this->conex->prepare($sql);
+            $stm->execute($arrParams);
+        }catch (Exception $e){
+            throw new Exception("Não foi possível realizar o cadastro.");
+        }
+
+    }
+
+
+
+
+
+
+
+
+} 

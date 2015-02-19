@@ -1,0 +1,146 @@
+@import "Variaveis.scss";
+
+@import "compass/css3/border-radius";
+@import "compass/css3/transform";
+@import "compass/css3/background-size";
+$baseImagens: "../imagens/apresentacao/";
+
+#tela_idioma {
+	$img: $baseImagens + "idioma";
+
+	$tamanho: 106px/2;
+	$espaco: 56px/2;
+	h1 {
+		font-size: $apresentacao_idioma_titulo_fontSize;
+		color: #007baa;
+		position: absolute;
+		text-align: center;
+		width: 100%;
+		height: $tamanho;
+		line-height: $tamanho;
+		top: 50%;
+		margin-top: -$tamanho/2-($tamanho*2+$espaco*2);
+		left: 0;
+		z-index: 2;
+	}
+
+	li {
+		@include bg();
+		@include centro($tamanho);
+		a {
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+		}
+		&:nth-child(1) {
+			margin-top: -($tamanho/2) - ($tamanho+$espaco);
+			background-image: url("#{$img}/pt.png");
+		}
+		&:nth-child(2) {
+			background-image: url("#{$img}/es.png");
+		}
+		&:nth-child(3) {
+			margin-top: -($tamanho/2) + ($tamanho+$espaco);
+			background-image: url("#{$img}/en.png");
+		}
+	}
+}
+
+#tela_abertura {
+	$img: $baseImagens + "abertura";
+	.marca {
+		background-image: url("#{$img}/marca.png");
+		@include centro(392px/2, 382px/2);
+		@include translateY(-63px);
+	
+		.en & {
+			background-image: url("../imagens/marca_en.png");
+			@include bg(auto 100%);
+		}
+		.es & {
+			background-image: url("../imagens/marca_es.png");
+		}
+	}
+
+
+	footer li {
+		position: absolute;
+		width: 33%;
+		bottom: 40px;
+		height: 23px;
+		left: 0;
+		@include bg("auto 100%"); 
+
+		&.sus {
+			left: 0;
+			background-image: url("#{$img}/sus.png");
+		}
+		&.skoll {
+			left: 33%;			
+			background-image: url("#{$img}/skoll.png");
+
+		}
+		&.tephinet {
+			left: auto;
+			right: 0;
+			background-image: url("#{$img}/tephinet.png");
+		}
+	}
+}
+
+#tela_apresentacao {
+	font-size: $apresentacao_apresentacao_fontSize;
+	$img: $baseImagens + "apresentacao";
+
+	$espacoMarca: 105px/2;
+	$larguraMarca: 284px/2; 
+	$alturaMarca: 240px/2;
+	$espacoTexto1: 23px;
+	$espacoTexto2: 23px;
+	$larguraAvancar: 80px;
+	$alturaAvancar: (46px/2);
+	$espacoAvancar: 23px;
+
+	.marca {
+		background-image: url("#{$img}/marca.png");
+		@include bg();
+		$largura: 284px/2; 
+		@include centroX($larguraMarca);
+		height: $alturaMarca;
+		top: $espacoMarca;
+		.en & {
+			background-image: url("../imagens/marca_en.png");
+			@include bg(auto 100%);
+		}
+		.es & {
+			background-image: url("../imagens/marca_es.png");
+		}
+	}
+
+	.texto {
+		@include esticar(($alturaMarca+$espacoMarca+$espacoTexto1), 35px, ($espacoTexto2+$alturaAvancar+$espacoAvancar), 35px);
+		overflow: hidden;
+		.table {
+			display:table;
+			width: 100%;
+			height: 100%;
+			margin:0;
+			.cell {
+				display: table-cell;
+				overflow: hidden;
+				vertical-align: middle;
+				text-align: center;
+			}
+		}
+	}
+
+	.botao.avancar {
+		background-image: url("#{$img}/botao_avancar.png");
+		@include bg(12px 23px);
+		@include centroX($larguraAvancar);
+		width: $larguraAvancar;
+		height: $alturaAvancar;
+		bottom: $espacoAvancar;
+	}
+}

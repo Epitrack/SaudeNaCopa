@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo"
+    android:gravity="center_vertical" >
+
+    <RelativeLayout
+        android:id="@+id/botoesIniciais"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/llTopo" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/marca" />
+ 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="0dp"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/btnTelaMenu"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:drawableLeft="@drawable/sobre"
+                android:drawablePadding="15dp"
+                android:onClick="abreSobre"
+                android:text="@string/sobre" />
+
+            <ImageView
+                android:id="@+id/ImageView05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/linha" />
+<Button
+                android:id="@+id/Button03"
+                style="@style/btnTelaMenu"
+                android:layout_marginRight="0dp"
+                android:drawableLeft="@drawable/termos"
+                android:drawablePadding="15dp"
+                android:onClick="abreTermosPoliticas"
+                android:text="@string/termos_politicas" />
+            
+
+            <ImageView
+                android:id="@+id/ImageView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/linha" />
+
+            <Button
+                android:id="@+id/Button01"
+                style="@style/btnTelaMenu"
+                android:layout_marginRight="0dp"
+                android:drawableLeft="@drawable/ico_versao"
+                android:drawablePadding="15dp"
+                android:onClick="abreVersao"
+                android:text="@string/versao" />
+
+            <ImageView
+                android:id="@+id/ImageView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/linha" />
+
+            <Button
+                android:id="@+id/Button02"
+                style="@style/btnTelaMenu"
+                android:drawableLeft="@drawable/alterar_senha"
+                android:drawablePadding="15dp"
+                android:onClick="abreAlterarSenha"
+                android:text="@string/alterar_senha" />
+
+            <ImageView
+                android:id="@+id/ImageView04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/linha" />
+
+            <Button
+                android:id="@+id/button5"
+                style="@style/btnTelaMenu"
+                android:layout_width="fill_parent"
+                android:layout_marginRight="0dp"
+                android:drawableLeft="@drawable/report_problem"
+                android:onClick="abreDenunciarProblema"
+                android:text="@string/denunciar_problema" />
+
+            <ImageView
+                android:id="@+id/ImageView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/linha" />
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/btnTelaMenu"
+                android:layout_marginBottom="30dp"
+                android:drawableLeft="@drawable/ico_sair"
+                android:onClick="sair"
+                android:text="@string/sair" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

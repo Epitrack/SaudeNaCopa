@@ -1,0 +1,52 @@
+<?php
+
+/**
+ * Class MainController
+ */
+/**
+ *  Classe MainController responsável por controlar as telas do sistema.
+ *
+ * @author      Rodrigo Carneiro <teoria@gmail.com>
+ * @copyright   2014 Epitrack
+ * @link        http://www.epitrack.com.br/
+ * @version     2.4.2
+ * @package     controller
+ *
+ *
+ */
+
+Class MainController extends Controller {
+
+
+    /**
+     * Método responsável em exibir a página inicial da API
+     */
+    public function index() {
+
+        $this->render(
+            "index.php",
+            array("title" => "Rest API", "texto" => "API rest desenvolvida para o aplicativo Saúde na Copa.")
+        );
+
+    }
+
+ /*
+    public function flashLink() {
+
+        $this->render(
+            "test",
+            array("title" => "redi API", "name" => "Home")
+        );
+    }
+*/
+
+    /**
+     * Método que exibe a mensagem de página não encontrada.
+     */
+    public function notFound() {
+
+        $this->render("error.php", array(), 404);
+    }
+}
+
+

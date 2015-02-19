@@ -1,0 +1,89 @@
+@import "compass/css3/background-size";
+
+.icone {
+
+	background-repeat: no-repeat;
+	background-position: center;
+
+	
+	&.sentimento {
+		width: 100px;
+		height: 100px;
+		@include background-size(80%);
+
+		$baseAvatar: "../imagens/sentimento/avatar/";
+
+		@mixin categoria($categoria,$genero) {
+
+			&[data-nivel='muitoBem'] {
+				background-image: url($baseAvatar+$genero+$categoria+"muitoBem.png");
+			}
+			&[data-nivel='bem'] {
+				background-image: url($baseAvatar+$genero+$categoria+"bem.png");
+			}
+			&[data-nivel='normal'] {
+				background-image: url($baseAvatar+$genero+$categoria+"normal.png");
+			}
+			&[data-nivel='mal'] {
+				background-image: url($baseAvatar+$genero+$categoria+"mal.png");
+			}
+			&[data-nivel='muitoMal'] {
+				background-image: url($baseAvatar+$genero+$categoria+"muitoMal.png");
+			}
+		}
+
+		[data-categoria='profissional'][data-genero='masculino'] & {
+			@include categoria("profissional/","masculino/");
+		}
+		[data-categoria='infantil'][data-genero='masculino'] & {
+			@include categoria("infantil/","masculino/");
+		}
+		[data-categoria='junior'][data-genero='masculino'] & {
+			@include categoria("junior/","masculino/");
+		}
+		[data-categoria='juvenil'][data-genero='masculino'] & {
+			@include categoria("juvenil/","masculino/");
+		}
+		[data-categoria='denteDeLeite'][data-genero='masculino'] & {
+			@include categoria("denteDeLeite/","masculino/");
+		}
+		[data-categoria='mirim'][data-genero='masculino'] & {
+			@include categoria("mirim/","masculino/");
+		}
+
+		[data-categoria='profissional'][data-genero='feminino'] & {
+			@include categoria("profissional/","feminino/");
+		}
+		[data-categoria='infantil'][data-genero='feminino'] & {
+			@include categoria("infantil/","feminino/");
+		}
+		[data-categoria='junior'][data-genero='feminino'] & {
+			@include categoria("junior/","feminino/");
+		}
+		[data-categoria='juvenil'][data-genero='feminino'] & {
+			@include categoria("juvenil/","feminino/");
+		}
+		[data-categoria='denteDeLeite'][data-genero='feminino'] & {
+			@include categoria("denteDeLeite/","feminino/");
+		}
+		[data-categoria='mirim'][data-genero='feminino'] & {
+			@include categoria("mirim/","feminino/");
+		}
+
+		// &[data-nivel='muitoBem'] {
+		// 	background-image: url("../imagens/icones/sentimento_muitoBem.png");
+		// }
+		// &[data-nivel='bem'] {
+		// 	background-image: url("../imagens/icones/sentimento_bem.png");
+		// }
+		// &[data-nivel='normal'] {
+		// 	background-image: url("../imagens/icones/sentimento_normal.png");
+		// }
+		// &[data-nivel='mal'] {
+		// 	background-image: url("../imagens/icones/sentimento_mal.png");
+		// }
+		// &[data-nivel='muitoMal'] {
+		// 	background-image: url("../imagens/icones/sentimento_muitoMal.png");
+		// }
+	}
+}

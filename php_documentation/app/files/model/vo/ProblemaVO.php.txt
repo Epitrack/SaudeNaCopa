@@ -1,0 +1,70 @@
+<?php
+
+/**
+ * Class ProblemaVO
+ */
+/**
+ * Value Object (VO)
+ *
+ * ProblemaVO: Classe básica referente a problemas do usuário.
+ *
+ * @author      Rodrigo Carneiro <teoria@gmail.com>
+ * @copyright   2014 Epitrack
+ * @link        http://www.epitrack.com.br/
+ * @version     2.4.2
+ * @package     model/vo
+ *
+ *
+ */
+
+class ProblemaVO extends VO{
+
+    /**
+     * id usuário
+     * @var
+     */
+    private $idUsuario;
+    /**
+     * mensagem
+     * @var
+     */
+    private $msg;
+
+    /**
+     * Define id usuário
+     * @param mixed $idUsuario
+     */
+    public function setIdUsuario($idUsuario) {
+
+        $this->idUsuario = $idUsuario;
+    }
+
+    /**
+     * id usuário
+     * @return mixed
+     */
+    public function getIdUsuario() {
+
+        return $this->idUsuario;
+    }
+
+    /**
+     * Define mensagem
+     * @param mixed $msg
+     */
+    public function setMsg($msg) {
+
+        $this->msg = $msg;
+    }
+
+    /**
+     * mensagem
+     * @return mixed
+     */
+    public function getMsg() {
+
+        return $this->msg;
+    }
+
+
+} 

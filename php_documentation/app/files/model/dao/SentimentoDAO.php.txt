@@ -1,0 +1,262 @@
+<?php
+
+/**
+ * Class SentimentoDAO
+ */
+/**
+ * Data Access Object (DAO)
+ *
+ * SentimentoDAO: Classe responsável pela persistência de problemas enviados pelos usuários.
+ *
+ * @author      Rodrigo Carneiro <teoria@gmail.com>
+ * @copyright   2014 Epitrack
+ * @link        http://www.epitrack.com.br/
+ * @version     2.4.2
+ * @package     model/dao
+ *
+ *
+ */
+
+class SentimentoDAO extends DAO{
+
+
+    /**
+     * Método que persiste objetos SentimentoVO
+     *
+     * @param SentimentoVO $vo
+     * @return mixed
+     * @throws Exception
+     */
+    public function insert( SentimentoVO $vo ){
+
+
+
+        $url = "http://maps.google.com/maps/api/geocode/json?latlng=".$vo->getLatitude().",".$vo->getLongitude()."&sensor=false";
+        $data = json_decode(file_get_contents($url));
+
+        $cidade = "";
+        for($j=0;$j<count($data->results[0]->address_components);$j++){
+            if( $data->results[0]->address_components[$j]->types[0] == "administrative_area_level_2" ){
+                $cidade = $data->results[0]->address_components[$j]->long_name;
+                break;
+            }
+        }
+
+       // $cidade = $url;
+
+
+        $cidadeSede = $this->getRegiaoMetropolitana($cidade);
+
+
+
+       // $upSQL =  "update usuario_sentimento 	set atualizado = 1, cidade_id = '$listaCidade', cidade_regiao_metro = '$cidadeSede' 	where id = $row[id]";
+
+
+
+        $sql = "INSERT INTO usuario_sentimento
+        ( usuario_id,
+         latitude, longitude, sentimento,cidade_id,cidade_regiao_metro,atualizado,
+
+        campo1, campo2, campo3, 
+        campo4, campo5, campo6, 
+        campo7, campo8, campo9, 
+        campo10, campo11, campo12) 
+        VALUES (
+         :usuario_id,
+         :latitude, :longitude, :sentimento,:cidade_id,:cidade_regiao_metro,:atualizado,
+
+        :campo1, :campo2, :campo3,
+        :campo4, :campo5, :campo6,
+        :campo7, :campo8, :campo9,
+        :campo10, :campo11, :campo12
+         )"; 
+
+
+
+        $arrParams = array(
+            ':usuario_id'=>$vo->getUsuarioId(),
+
+            ':latitude'=>$vo->getLatitude(),
+            ':longitude'=>$vo->getLongitude(),
+            ':sentimento'=>$vo->getSentimento(),
+
+            ':cidade_id'=>$cidade,
+            ':cidade_regiao_metro'=>$cidadeSede,
+            ':atualizado'=>1,
+
+            ':campo1'=>$vo->getCampo1(),
+            ':campo2'=>$vo->getCampo2(),
+            ':campo3'=>$vo->getCampo3(),
+            ':campo4'=>$vo->getCampo4(),
+            ':campo5'=>$vo->getCampo5(),
+            ':campo6'=>$vo->getCampo6(),
+            ':campo7'=>$vo->getCampo7(),
+            ':campo8'=>$vo->getCampo8(),
+            ':campo9'=>$vo->getCampo9(),
+            ':campo10'=>$vo->getCampo10(),
+            ':campo11'=>$vo->getCampo11(),
+            ':campo12'=>$vo->getCampo12()
+
+        );
+
+
+
+        try{
+            $stm = $this->conex->prepare($sql);
+            return $stm->execute($arrParams);
+        }catch (Exception $e){
+            throw new Exception("Não foi possível realizar o cadastro.");
+        }
+
+    }
+
+
+    /**
+     * Método retorna o último sentimentoVo cadastrado do usuário.
+     *
+     * @param UsuarioVO $vo
+     * @return SentimentoVO
+     * @throws Exception
+     */
+    public function getUltimoNivelByUser(UsuarioVO $vo) {
+//SELECT * ,`sentimento` FROM `usuario_sentimento` WHERE `usuario_id` = 33 order by`id` desc limit 0 , 1
+        $sql = "SELECT *  FROM `usuario_sentimento` WHERE `usuario_id` = :id order by`id` desc limit 0 , 1";
+
+        $id = $vo->getIdUsuario();
+
+        $stm = $this->conex->prepare($sql);
+        $stm->bindParam(':id', $id, PDO::PARAM_STR);
+
+        try{
+            $stm->execute();
+        }catch (Exception $e){
+            throw new Exception("Não foi possível selecionar o Usuário.");
+        }
+
+        $stm->setFetchMode(PDO::FETCH_CLASS, 'SentimentoVO');
+        $vo = $stm->fetch(PDO::FETCH_CLASS);
+        return $vo;
+    }
+
+
+    /**
+     * Método retorna uma lista de CalendarioVO com os dias de participação do usuário.
+     *
+     * @param UsuarioVO $vo
+     * @return array
+     * @throws Exception
+     */
+    public function getCalendario(UsuarioVO $vo) {
+
+        $sql = "SELECT DATE(data_cadastro) AS dataCadastro,
+                COUNT(*) AS qtd,
+                AVG(sentimento) as sentimento
+                 FROM   usuario_sentimento
+                 where usuario_id = :id
+                 GROUP BY DATE(data_cadastro)
+                 ORDER BY dataCadastro";
+
+        $id = $vo->getIdUsuario();
+
+        $stm = $this->conex->prepare($sql);
+        $stm->bindParam(':id', $id, PDO::PARAM_STR);
+
+        try{
+            $stm->execute();
+        }catch (Exception $e){
+            throw new Exception("Não foi possível selecionar o Usuário.");
+        }
+
+        $stm->setFetchMode(PDO::FETCH_CLASS, 'CalendarioVO');
+        $voArray = array();
+        while($vo = $stm->fetch(PDO::FETCH_CLASS) ) {
+            $voArray[] = $vo;
+        };
+
+
+        return $voArray;
+    }
+
+
+    /**
+     * Método identifica a região metropolitana correspondente a cidade passada como parâmetro.
+     *
+     * @param $cidade
+     * @return string
+     */
+    function getRegiaoMetropolitana($cidade){
+
+
+        $cidadesSedeSemAcento = array("Fernando de Noronha" => "Recife",
+            "Aracoiaba" => "Recife", "Igarassu" => "Recife", "Itamaraca" => "Recife", "Itapissuma" => "Recife",
+            "Abreu e Lima" => "Recife", "Camaragibe" => "Recife", "Jaboatao dos Guararapes" => "Recife", "Moreno" => "Recife",
+            "Olinda" => "Recife", "Paulista" => "Recife", "Recife" => "Recife", "Sao Lourenco da Mata" => "Recife",
+            "Cabo de Santo Agostinho" => "Recife", "Ipojuca" => "Recife", "Autazes" => "Manaus", "Careiro" => "Manaus",
+            "Careiro da Varzea" => "Manaus", "Iranduba" => "Manaus", "Manacapuru" => "Manaus", "Manaquiri" => "Manaus",
+            "Manaus" => "Manaus", "Aquiraz" => "Fortaleza", "Caucaia" => "Fortaleza", "Eusebio" => "Fortaleza",
+            "Fortaleza" => "Fortaleza", " Guaiuba" => "Fortaleza", "Itaitinga" => "Fortaleza", "Maracanau" => "Fortaleza",
+            "Maranguape" => "Fortaleza", "Pacatuba" => "Fortaleza", "Horizonte" => "Fortaleza", "Pacajus" => "Fortaleza",
+            "Natal" => "Natal", "Ceara-Mirim" => "Natal", "Extremoz" => "Natal", "Macaiba" => "Natal", "Monte Alegre" => "Natal",
+            "Nisia Floresta" => "Natal", "Parnamirim" => "Natal", "Sao Goncalo do Amarante" => "Natal",
+            "Sao Jose de Mipibu" => "Natal", "Vera Cruz" => "Natal", "Vera Cruz" => "Salvador",
+            "Sao Sebastiao do Passe" => "Salvador", "Sao Francisco do Conde" => "Salvador", "Simoes Filho" => "Salvador",
+            "Salvador" => "Salvador", "Pojuca" => "Salvador", "Mata de Sao Joao" => "Salvador", "Madre de Deus" => "Salvador",
+            "Lauro de Freitas" => "Salvador", "Itaparica" => "Salvador", "Dias d Ávila" => "Salvador", "Candeias" => "Salvador",
+            "Camacari" => "Salvador", "Distrito Federal" => "Brasilia","Brasilia" => "Brasilia", "Abadiania" => "Brasilia", "Água Fria de Goias" => "Brasilia",
+            "Águas Lindas de Goias" => "Brasilia", "Alexania" => "Brasilia", "Cabeceiras" => "Brasilia", "Cidade Ocidental" => "Brasilia", "Cocalzinho de Goias" => "Brasilia",
+            "Corumba de Goias" => "Brasilia", "Cristalina" => "Brasilia", "Formosa" => "Brasilia", "Luziania" => "Brasilia", "Mimoso de Goias" => "Brasilia", "Novo Gama" => "Brasilia",
+            "Padre Bernardo" => "Brasilia", "Pirenopolis" => "Brasilia", "Planaltina" => "Brasilia", "Santo Antonio do Descoberto" => "Brasilia", "Valparaiso de Goias" => "Brasilia",
+            "Vila Boa" => "Brasilia", "Buritis" => "Brasilia", "Cabeceira Grande" => "Brasilia", "Unai" => "Brasilia", "Cuiaba" => "Cuiaba", "Varzea Grande" => "Cuiaba",
+            "Santo Antonio do Leverger" => "Cuiaba", "Nossa Senhora do Livramento " => "Cuiaba", "Acorizal" => "Cuiaba", "Barao de Melgaco" => "Cuiaba",
+            "Chapada dos Guimaraes" => "Cuiaba", "Jangada" => "Cuiaba", "Nobres" => "Cuiaba", "Nova Brasilandia" => "Cuiaba", "Planalto da Serra" => "Cuiaba",
+            "Pocone" => "Cuiaba", "Rosario Oeste" => "Cuiaba", "Baldim" => "Belo Horizonte", "Belo Horizonte" => "Belo Horizonte", "Betim" => "Belo Horizonte",
+            "Brumadinho" => "Belo Horizonte", "Caete" => "Belo Horizonte", "Capim Branco" => "Belo Horizonte", "Confins" => "Belo Horizonte", "Contagem" => "Belo Horizonte",
+            "Esmeraldas" => "Belo Horizonte", "Florestal" => "Belo Horizonte", "Ibirite" => "Belo Horizonte", "Igarape" => "Belo Horizonte", "Itaguara" => "Belo Horizonte",
+            "Itatiaiucu" => "Belo Horizonte", "Jaboticatubas" => "Belo Horizonte", "Nova Uniao" => "Belo Horizonte", "Juatuba" => "Belo Horizonte", "Lagoa Santa" => "Belo Horizonte",
+            "Mario Campos" => "Belo Horizonte", "Mateus Leme" => "Belo Horizonte", "Matozinhos" => "Belo Horizonte", "Nova Lima" => "Belo Horizonte",
+            "Pedro Leopoldo" => "Belo Horizonte", "Raposos" => "Belo Horizonte", "Ribeirao das Neves" => "Belo Horizonte", "Rio Acima" => "Belo Horizonte",
+            "Rio Manso" => "Belo Horizonte", "Sabara" => "Belo Horizonte", "Santa Luzia" => "Belo Horizonte", "Sao Joaquim de Bicas" => "Belo Horizonte",
+            "Sao Jose da Lapa" => "Belo Horizonte", "Sarzedo" => "Belo Horizonte", "Taquaracu de Minas" => "Belo Horizonte", "Vespasiano" => "Belo Horizonte",
+            "Aruja" => "Sao Paulo", "Barueri" => "Sao Paulo", "Biritiba Mirim" => "Sao Paulo", "Caieiras" => "Sao Paulo", "Cajamar" => "Sao Paulo",
+            "Carapicuiba" => "Sao Paulo", "Cotia" => "Sao Paulo", "Diadema" => "Sao Paulo", "Embu das Artes" => "Sao Paulo", "Embu-Guacu" => "Sao Paulo",
+            "Ferraz de Vasconcelos" => "Sao Paulo", "Francisco Morato" => "Sao Paulo", "Franco da Rocha" => "Sao Paulo", "Guararema" => "Sao Paulo",
+            "Guarulhos" => "Sao Paulo", "Itapevi" => "Sao Paulo", "Itapecerica da Serra" => "Sao Paulo", "Itaquaquecetuba" => "Sao Paulo", "Jandira" => "Sao Paulo",
+            "Juquitiba" => "Sao Paulo", "Mairipora" => "Sao Paulo", "Maua" => "Sao Paulo", "Mogi das Cruzes" => "Sao Paulo", "Osasco" => "Sao Paulo",
+            "Pirapora do Bom Jesus" => "Sao Paulo", "Poa" => "Sao Paulo", "Ribeirao Pires" => "Sao Paulo", "Rio Grande da Serra" => "Sao Paulo",
+            "Salesopolis" => "Sao Paulo", "Santa Isabel" => "Sao Paulo", "Santana de Parnaiba" => "Sao Paulo", "Santo Andre" => "Sao Paulo",
+            "Sao Bernardo do Campo" => "Sao Paulo", "Sao Caetano do Sul" => "Sao Paulo", "Sao Lourenco da Serra" => "Sao Paulo", "Sao Paulo" => "Sao Paulo",
+            "Suzano" => "Sao Paulo", "Taboao da Serra" => "Sao Paulo", "Vargem Grande Paulista" => "Sao Paulo", "Belford Roxo" => "Rio de Janeiro",
+            "Cachoeiras de Macacu" => "Rio de Janeiro", "Duque de Caxias" => "Rio de Janeiro", "Guapimirim" => "Rio de Janeiro", "Itaborai" => "Rio de Janeiro",
+            "Itaguai" => "Rio de Janeiro", "Japeri" => "Rio de Janeiro", "Mage" => "Rio de Janeiro", "Marica" => "Rio de Janeiro", "Mesquita" => "Rio de Janeiro",
+            "Nilopolis" => "Rio de Janeiro", "Niteroi" => "Rio de Janeiro", "Nova Iguacu" => "Rio de Janeiro", "Paracambi" => "Rio de Janeiro",
+            "Queimados" => "Rio de Janeiro", "Rio Bonito" => "Rio de Janeiro", "Rio de Janeiro" => "Rio de Janeiro", "Sao Goncalo" => "Rio de Janeiro",
+            "Sao Joao de Meriti" => "Rio de Janeiro", "Seropedica" => "Rio de Janeiro", "Tangua" => "Rio de Janeiro", "Adrianopolis" => "Curitiba",
+            "Agudos do Sul" => "Curitiba", "Almirante Tamandare" => "Curitiba", "Araucaria" => "Curitiba", " Balsa Nova" => "Curitiba", "Bocaiuva do Sul" => "Curitiba", " Campina Grande do Sul" => "Curitiba", " Campo do Tenente" => "Curitiba", " Campo Largo" => "Curitiba", " Campo Magro" => "Curitiba", "Cerro Azul" => "Curitiba", "Colombo" => "Curitiba", "Contenda" => "Curitiba", "Curitiba" => "Curitiba", " Doutor Ulysses" => "Curitiba", "Fazenda Rio Grande" => "Curitiba", "Itaperucu" => "Curitiba", "Lapa" => "Curitiba", "Mandirituba" => "Curitiba", " Pien" => "Curitiba", " Pinhais" => "Curitiba", "Piraquara" => "Curitiba", " Quatro Barras" => "Curitiba", " Quitandinha" => "Curitiba", "Rio Branco do Sul" => "Curitiba", "Rio Negro" => "Curitiba", "Sao Jose dos Pinhais" => "Curitiba", "Parana" =>"Curitiba",  "Tijucas do Sul" => "Curitiba", "Tunas do Parana" => "Curitiba", " Alvorada" => "Porto Alegre", "Cachoeirinha" => "Porto Alegre", "Campo Bom" => "Porto Alegre", "Canoas" => "Porto Alegre", "Estancia Velha" => "Porto Alegre", "Esteio" => "Porto Alegre", "Gravatai" => "Porto Alegre", "Guaiba" => "Porto Alegre", "Novo Hamburgo" => "Porto Alegre", "Porto Alegre" => "Porto Alegre", "Sao Leopoldo" => "Porto Alegre", "Sapiranga" => "Porto Alegre", "Sapucaia do Sul" => "Porto Alegre", "Viamao" => "Porto Alegre", "Dois Irmaos" => "Porto Alegre", "Eldorado do Sul" => "Porto Alegre", "Glorinha" => "Porto Alegre", "Ivoti" => "Porto Alegre", "Nova Hartz" => "Porto Alegre", "Parobe" => "Porto Alegre", "Portao" => "Porto Alegre", "Triunfo" => "Porto Alegre", "Charqueadas" => "Porto Alegre", "Ararica" => "Porto Alegre", " Nova Santa Rita" => "Porto Alegre", " Montenegro" => "Porto Alegre", "Taquara" => "Porto Alegre", "Sao Jeronimo" => "Porto Alegre", "Arroio dos Ratos" => "Porto Alegre", "Santo Antonio da Patrulha" => "Porto Alegre", "Capela de Santana" => "Porto Alegre", "Rolante" => "Porto Alegre", "Igrejinha" => "Porto Alegre");
+
+        $cidadesSede = array("Fernando de Noronha" => "Recife",
+            "Araçoiaba" => "Recife", "Igarassu" => "Recife", "Itamaracá" => "Recife", "Itapissuma" => "Recife",
+            "Abreu e Lima" => "Recife", "Camaragibe" => "Recife", "Jaboatão dos Guararapes" => "Recife", "Moreno" => "Recife",
+            "Olinda" => "Recife", "Paulista" => "Recife", "Recife" => "Recife", "São Lourenço da Mata" => "Recife",
+            "Cabo de Santo Agostinho" => "Recife", "Ipojuca" => "Recife", "Autazes" => "Manaus", "Careiro" => "Manaus",
+            "Careiro da Várzea" => "Manaus", "Iranduba" => "Manaus", "Manacapuru" => "Manaus", "Manaquiri" => "Manaus",
+            "Manaus" => "Manaus", "Aquiraz" => "Fortaleza", "Caucaia" => "Fortaleza", "Eusébio" => "Fortaleza",
+            "Fortaleza" => "Fortaleza", " Guaiúba" => "Fortaleza", "Itaitinga" => "Fortaleza", "Maracanaú" => "Fortaleza",
+            "Maranguape" => "Fortaleza", "Pacatuba" => "Fortaleza", "Horizonte" => "Fortaleza", "Pacajús" => "Fortaleza",
+            "Natal" => "Natal", "Ceará-Mirim" => "Natal", "Extremoz" => "Natal", "Macaíba" => "Natal", "Monte Alegre" => "Natal",
+            "Nísia Floresta" => "Natal", "Parnamirim" => "Natal", "São Gonçalo do Amarante" => "Natal",
+            "São José de Mipibu" => "Natal", "Vera Cruz" => "Natal", "Vera Cruz" => "Salvador",
+            "São Sebastião do Passé" => "Salvador", "São Francisco do Conde" => "Salvador", "Simões Filho" => "Salvador",
+            "Salvador" => "Salvador", "Pojuca" => "Salvador", "Mata de São João" => "Salvador", "Madre de Deus" => "Salvador",
+            "Lauro de Freitas" => "Salvador", "Itaparica" => "Salvador", "Dias d Ávila" => "Salvador", "Candeias" => "Salvador",
+            "Camaçari" => "Salvador", "Distrito Federal" => "Brasília","Brasilia" => "Brasília", "Abadiânia" => "Brasília", "Água Fria de Goiás" => "Brasília",
+            "Águas Lindas de Goiás" => "Brasília", "Alexânia" => "Brasília", "Cabeceiras" => "Brasília", "Cidade Ocidental" => "Brasília", "Cocalzinho de Goiás" => "Brasília", "Corumbá de Goiás" => "Brasília", "Cristalina" => "Brasília", "Formosa" => "Brasília", "Luziânia" => "Brasília", "Mimoso de Goiás" => "Brasília", "Novo Gama" => "Brasília", "Padre Bernardo" => "Brasília", "Pirenópolis" => "Brasília", "Planaltina" => "Brasília", "Santo Antônio do Descoberto" => "Brasília", "Valparaíso de Goiás" => "Brasília", "Vila Boa" => "Brasília", "Buritis" => "Brasília", "Cabeceira Grande" => "Brasília", "Unaí" => "Brasília", "Cuiabá" => "Cuiabá", "Várzea Grande" => "Cuiabá", "Santo Antônio do Leverger" => "Cuiabá", "Nossa Senhora do Livramento " => "Cuiabá", "Acorizal" => "Cuiabá", "Barão de Melgaço" => "Cuiabá", "Chapada dos Guimarães" => "Cuiabá", "Jangada" => "Cuiabá", "Nobres" => "Cuiabá", "Nova Brasilândia" => "Cuiabá", "Planalto da Serra" => "Cuiabá", "Poconé" => "Cuiabá", "Rosário Oeste" => "Cuiabá", "Baldim" => "Belo Horizonte", "Belo Horizonte" => "Belo Horizonte", "Betim" => "Belo Horizonte", "Brumadinho" => "Belo Horizonte", "Caeté" => "Belo Horizonte", "Capim Branco" => "Belo Horizonte", "Confins" => "Belo Horizonte", "Contagem" => "Belo Horizonte", "Esmeraldas" => "Belo Horizonte", "Florestal" => "Belo Horizonte", "Ibirité" => "Belo Horizonte", "Igarapé" => "Belo Horizonte", "Itaguara" => "Belo Horizonte", "Itatiaiuçu" => "Belo Horizonte", "Jaboticatubas" => "Belo Horizonte", "Nova União" => "Belo Horizonte", "Juatuba" => "Belo Horizonte", "Lagoa Santa" => "Belo Horizonte", "Mário Campos" => "Belo Horizonte", "Mateus Leme" => "Belo Horizonte", "Matozinhos" => "Belo Horizonte", "Nova Lima" => "Belo Horizonte", "Pedro Leopoldo" => "Belo Horizonte", "Raposos" => "Belo Horizonte", "Ribeirão das Neves" => "Belo Horizonte", "Rio Acima" => "Belo Horizonte", "Rio Manso" => "Belo Horizonte", "Sabará" => "Belo Horizonte", "Santa Luzia" => "Belo Horizonte", "São Joaquim de Bicas" => "Belo Horizonte", "São José da Lapa" => "Belo Horizonte", "Sarzedo" => "Belo Horizonte", "Taquaraçu de Minas" => "Belo Horizonte", "Vespasiano" => "Belo Horizonte", "Arujá" => "São Paulo", "Barueri" => "São Paulo", "Biritiba Mirim" => "São Paulo", "Caieiras" => "São Paulo", "Cajamar" => "São Paulo", "Carapicuíba" => "São Paulo", "Cotia" => "São Paulo", "Diadema" => "São Paulo", "Embu das Artes" => "São Paulo", "Embu-Guaçu" => "São Paulo", "Ferraz de Vasconcelos" => "São Paulo", "Francisco Morato" => "São Paulo", "Franco da Rocha" => "São Paulo", "Guararema" => "São Paulo", "Guarulhos" => "São Paulo", "Itapevi" => "São Paulo", "Itapecerica da Serra" => "São Paulo", "Itaquaquecetuba" => "São Paulo", "Jandira" => "São Paulo", "Juquitiba" => "São Paulo", "Mairiporã" => "São Paulo", "Mauá" => "São Paulo", "Mogi das Cruzes" => "São Paulo", "Osasco" => "São Paulo", "Pirapora do Bom Jesus" => "São Paulo", "Poá" => "São Paulo", "Ribeirão Pires" => "São Paulo", "Rio Grande da Serra" => "São Paulo", "Salesópolis" => "São Paulo", "Santa Isabel" => "São Paulo", "Santana de Parnaíba" => "São Paulo", "Santo André" => "São Paulo", "São Bernardo do Campo" => "São Paulo", "São Caetano do Sul" => "São Paulo", "São Lourenço da Serra" => "São Paulo", "São Paulo" => "São Paulo", "Suzano" => "São Paulo", "Taboão da Serra" => "São Paulo", "Vargem Grande Paulista" => "São Paulo", "Belford Roxo" => "Rio de Janeiro", "Cachoeiras de Macacu" => "Rio de Janeiro", "Duque de Caxias" => "Rio de Janeiro", "Guapimirim" => "Rio de Janeiro", "Itaboraí" => "Rio de Janeiro", "Itaguaí" => "Rio de Janeiro", "Japeri" => "Rio de Janeiro", "Magé" => "Rio de Janeiro", "Maricá" => "Rio de Janeiro", "Mesquita" => "Rio de Janeiro", "Nilópolis" => "Rio de Janeiro", "Niterói" => "Rio de Janeiro", "Nova Iguaçu" => "Rio de Janeiro", "Paracambi" => "Rio de Janeiro", "Queimados" => "Rio de Janeiro", "Rio Bonito" => "Rio de Janeiro", "Rio de Janeiro" => "Rio de Janeiro", "São Gonçalo" => "Rio de Janeiro", "São João de Meriti" => "Rio de Janeiro", "Seropédica" => "Rio de Janeiro", "Tanguá" => "Rio de Janeiro", "Adrianópolis" => "Curitiba", "Agudos do Sul" => "Curitiba", "Almirante Tamandaré" => "Curitiba", "Araucária" => "Curitiba", " Balsa Nova" => "Curitiba", "Bocaiúva do Sul" => "Curitiba", " Campina Grande do Sul" => "Curitiba", " Campo do Tenente" => "Curitiba", " Campo Largo" => "Curitiba", " Campo Magro" => "Curitiba", "Cerro Azul" => "Curitiba", "Colombo" => "Curitiba", "Contenda" => "Curitiba", "Curitiba" => "Curitiba", " Doutor Ulysses" => "Curitiba", "Fazenda Rio Grande" => "Curitiba", "Itaperuçu" => "Curitiba", "Lapa" => "Curitiba", "Mandirituba" => "Curitiba", " Piên" => "Curitiba", " Pinhais" => "Curitiba", "Piraquara" => "Curitiba", " Quatro Barras" => "Curitiba", " Quitandinha" => "Curitiba", "Rio Branco do Sul" => "Curitiba", "Rio Negro" => "Curitiba", "São José dos Pinhais" => "Curitiba", "Parana" =>"Curitiba",  "Tijucas do Sul" => "Curitiba", "Tunas do Paraná" => "Curitiba", " Alvorada" => "Porto Alegre", "Cachoeirinha" => "Porto Alegre", "Campo Bom" => "Porto Alegre", "Canoas" => "Porto Alegre", "Estância Velha" => "Porto Alegre", "Esteio" => "Porto Alegre", "Gravataí" => "Porto Alegre", "Guaíba" => "Porto Alegre", "Novo Hamburgo" => "Porto Alegre", "Porto Alegre" => "Porto Alegre", "São Leopoldo" => "Porto Alegre", "Sapiranga" => "Porto Alegre", "Sapucaia do Sul" => "Porto Alegre", "Viamão" => "Porto Alegre", "Dois Irmãos" => "Porto Alegre", "Eldorado do Sul" => "Porto Alegre", "Glorinha" => "Porto Alegre", "Ivoti" => "Porto Alegre", "Nova Hartz" => "Porto Alegre", "Parobé" => "Porto Alegre", "Portão" => "Porto Alegre", "Triunfo" => "Porto Alegre", "Charqueadas" => "Porto Alegre", "Araricá" => "Porto Alegre", " Nova Santa Rita" => "Porto Alegre", " Montenegro" => "Porto Alegre", "Taquara" => "Porto Alegre", "São Jerônimo" => "Porto Alegre", "Arroio dos Ratos" => "Porto Alegre", "Santo Antônio da Patrulha" => "Porto Alegre", "Capela de Santana" => "Porto Alegre", "Rolante" => "Porto Alegre", "Igrejinha" => "Porto Alegre");
+
+
+        $cidadesSede  = $cidadesSede + $cidadesSedeSemAcento;
+
+        $reg = ($cidadesSede[$cidade]) ? $cidadesSede[$cidade]: "";
+        return $reg;
+    }
+
+
+} 

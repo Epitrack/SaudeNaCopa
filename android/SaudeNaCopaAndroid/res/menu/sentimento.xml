@@ -1,0 +1,52 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:SaudeNaCopaAndroid="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.com.epitrack.healthycup.SentimentoActivity" >
+
+   
+    <item
+        android:id="@+id/menu_item_denunciar"
+        android:title="@string/denunciar_problema">
+    </item>
+    <item
+        android:id="@+id/menu_item_termos"
+        android:title="@string/termos_politicas">
+    </item>
+    <item
+        android:id="@+id/menu_item_sobre"
+        android:title="@string/sobre"/>
+    <item
+        android:id="@+id/menu_item_sair"
+        android:showAsAction="never"
+        android:title="@string/sair">
+    </item>
+    <item
+        android:id="@+id/menu_item_jogador"
+        android:enabled="true"
+        android:icon="@drawable/icone_jogador_on"        
+        SaudeNaCopaAndroid:showAsAction="always"
+        android:visible="true">
+    </item>
+    <item
+        android:id="@+id/menu_item_saude"
+        android:enabled="true"
+        android:icon="@drawable/icone_saude_on"        
+        SaudeNaCopaAndroid:showAsAction="always"
+        android:visible="true">
+    </item>
+    <item
+        android:id="@+id/menu_item_jogos"
+        android:enabled="true"
+        android:icon="@drawable/icone_jogos_on"        
+        SaudeNaCopaAndroid:showAsAction="always"
+        android:visible="true">
+    </item>
+    <item
+        android:id="@+id/menu_item_turismo"
+        android:enabled="true"
+        android:icon="@drawable/icone_turismo_on"        
+        SaudeNaCopaAndroid:showAsAction="always"
+        android:visible="true">
+    </item>
+
+</menu>

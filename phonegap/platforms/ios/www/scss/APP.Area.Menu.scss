@@ -1,0 +1,238 @@
+@import "Variaveis.scss";
+
+@import "compass/css3/border-radius";
+@import "compass/css3/transform";
+@import "compass/css3/background-size";
+$baseImagens: "../imagens/menu/";
+
+#area_menu {
+	.area_menu & #botaoVoltarMenu {
+		display: block;
+	}
+
+	
+	a[href='#voltar'].botao.voltar {
+		display: block;
+	}
+	
+
+
+	.marca {
+		height:  125px;
+		background-image: url("#{$baseImagens}marca.png");
+		@include bg(100% auto);
+		@include centroX(304px/2);
+		top: 36px;
+		.en & {
+			background-image: url("../imagens/marca_en.png");
+			@include bg(auto 100%);
+		}
+		.es & {
+			background-image: url("../imagens/marca_es.png");
+		}
+	}
+
+	.baseDaTelaMenu {
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		left: 0;
+	}
+}
+
+
+
+#tela_menu {
+		$img: $baseImagens + "menu";
+	ul {
+		margin-bottom: 10px;
+	}
+	li { 
+		a {
+			display: block;
+			height: 50px;
+			line-height: 50px;
+			padding-left: 40px;
+			border-bottom: 1px solid #aeaeb3;
+			@include bg(26px auto);
+			background-position: left center;
+			font-size: 1.422em;
+			color: #007baa;
+			
+			&:hover {
+				text-decoration: none;
+			} 
+		}
+
+		@mixin iconeMenu($nome) {	
+			&.#{$nome} a {
+				background-image: url("#{$img}/icone_#{$nome}.png");
+			}	
+		}
+
+		// @include iconeMenu(1,ajuda);
+		@include iconeMenu(sobre);
+		@include iconeMenu(versao);
+		@include iconeMenu(termosDeUso);
+		@include iconeMenu(alterarSenha);
+		@include iconeMenu(idiomas);
+		@include iconeMenu(denunciarUmProblema);
+		@include iconeMenu(sair);
+
+		.offline &.denunciarUmProblema,
+		.offline &.alterarSenha {
+			display: none;
+		}
+
+		&:last-child a {
+			border: none;
+		}
+		
+	}
+}
+
+
+#tela_versao  {
+	color: #006f9b;
+	font-size: 1.245em;
+	text-align: center;
+	h1 {
+		font-size: 1.422em;
+		font-weight: normal;
+	}
+	.icone{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	article.info {
+		margin-top: 170px;
+		h1 {
+			display: none;
+		}
+	}
+
+	.isphone .melhorNavegador {
+		display: none;
+	}
+
+	article.parceria {
+		height: 120px;
+		border: 1px solid #aeaeb3;
+		border-left: none;
+		border-right: none;
+
+		h1 {
+			margin-top: 25px;
+			margin-bottom: 25px;
+		}
+
+		.icone.tephinet {
+			width: 108px;
+			height: 40px;
+			background-image: url("../imagens/menu/versao/icone_tephinet.png");
+			@include bg(100% auto); 
+		}
+		.icone.skoll {
+			width: 119px;
+			height: 34px;
+			@include bg(100% auto); 
+			background-image: url("../imagens/menu/versao/icone_skoll.png");
+		}
+
+	}
+
+	article.dev {
+		h1 {
+			margin-top: 25px;
+			margin-bottom: 25px;
+		}
+		.icone.epitrack {
+			width: 183px;
+			height: 31px;
+			@include bg(100% auto); 
+			background-image: url("../imagens/menu/versao/icone_epitrack.png");
+		}
+	}
+}
+
+#tela_sobre {
+	$img: $baseImagens + "sobre";
+
+
+	$espacoMarca: 35px;
+	$larguraMarca: 304px/2; 
+	$alturaMarca: 125px;
+	$espacoTexto1: 40px;
+	$espacoTexto2: 23px;
+	
+	font-size: $apresentacao_apresentacao_fontSize;
+
+	ol {
+		margin-bottom: 2em;
+		display: table;
+		li {		
+			display: table-row;
+
+			&:last-child span {
+				border-bottom:none;
+			}
+			span {
+				display: table-cell;
+				vertical-align: middle;
+				height: 50px;
+				border-bottom: 1px solid #aeaeb3;
+				color: #007baa;
+			}
+		}
+	}
+
+	h1.titulo {
+		text-transform: uppercase;
+		@include centroX(120px);
+		font-size: (2.845em)/2;
+		margin-top: 75px;
+		text-align: center;
+	}
+	article h1 {
+		font-size: 1.4em;
+		margin-bottom: 1em;
+	}
+
+	
+	
+	.texto {
+		//@include esticar(($alturaMarca+$espacoMarca+$espacoTexto1), 35px, 40px, 35px);
+		@include esticar(130px, 35px, 40px, 35px);
+		overflow: hidden;
+		.table {
+			display:table;
+			width: 100%;
+			height: 100%;
+			margin:0;
+			.cell {
+				display: table-cell;
+				overflow: hidden;
+				vertical-align: middle;
+				text-align: center;
+			}
+		}
+	}
+	article {
+		margin-bottom: 2em;
+		padding-bottom: 2em;
+		border-bottom: 1px solid rgb(0, 123, 170);
+		&:last-child {
+			border: none;
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+	}
+	a[href='#topo'] {
+		padding: 1em 0;
+		display: block;
+		text-align: right;
+	}
+
+
+}

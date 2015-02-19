@@ -1,0 +1,85 @@
+#barraDeMenu {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: black;
+	color: white;
+	height: 50px;
+	width: 100%;
+	z-index: 2;
+	display: none;
+	overflow: visible;
+
+	.barraDeMenu#app &  {
+		bottom: 0px;
+	}
+
+	ul {
+		padding: 0;
+	
+		li {
+			display: block;
+			position: absolute;
+			top: 0;
+			width: 20%;
+			height: 50px;
+			text-align: center;
+			line-height: 50px;
+			font-size: 15px;
+			z-index: 2;
+		
+			&:nth-child(1) {
+				left: 0;
+			}
+			&:nth-child(2) {
+				left: 20%;
+			}
+			&:nth-child(3) {
+				left: 40%;
+			}
+			&:nth-child(4) {
+				left: 60%;
+			}
+			&:nth-child(5) {
+				left: 80%;
+				background-color: black;
+			}
+
+			a  {
+				display: block;
+				height: 50px;
+				border-right: 1px solid black;
+				color: white;
+				font-weight: bold;
+				text-decoration: none;
+			}
+		}
+
+		ul {
+			display: none;
+			width: 200px;
+			height: auto;
+			position: absolute;
+			bottom: 50px;
+			right: 0;
+			background-color: inherit;
+		}
+
+		ul li {
+			display: block;
+			width: auto;
+			height: auto;
+			line-height: 1em;
+			position: static;
+			border-top: 1px solid white;
+			line-height: 50px;
+		}
+		ul li a {
+			width: auto;
+			height: auto;
+			display: block;
+			border: none;
+			font-weight: normal;
+		}
+	}
+}

@@ -1,0 +1,6 @@
+.pagina {
+  display: none;
+}
+.pagina.ativa {
+  display: block;
+}

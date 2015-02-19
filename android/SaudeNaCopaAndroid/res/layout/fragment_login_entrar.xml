@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/btnLoginEntrar"
+        style="@style/btnGeral"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/txtLoginEmail"
+        android:layout_marginBottom="20dp"
+        android:onClick="entrar"
+        android:text="@string/entrar"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/txtLoginSenha"
+        style="@style/textBox"
+        android:layout_above="@+id/btnLoginEntrar"
+        android:layout_alignRight="@+id/btnLoginEntrar"
+        android:layout_marginBottom="20dp"
+        android:drawableLeft="@drawable/icone_cadeado"
+        android:ems="10"
+        android:height="35dp"
+        android:hint="@string/senha"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/txtLoginEmail"
+        style="@style/textBox"
+        android:layout_above="@+id/txtLoginSenha"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:drawableLeft="@drawable/icone_entrar"
+        android:ems="10"
+        android:hint="@string/apelido_email"
+        android:inputType="textEmailAddress" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/txtTwitterNomeApresentacao"
+        style="@style/texto_azul"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_alignBottom="@+id/btnLoginEntrar"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+        android:background="@drawable/underline"
+        android:clickable="true"
+        android:onClick="esqueceuSenha"
+        android:text="@string/esqueceu_senha" />
+
+</RelativeLayout>
