@@ -49,7 +49,7 @@ APP.Area.Mais = {
         enviar: function (form) {
             var that = this;
             $.ajax({
-                url: "http://www.saudenacopa.com/proxyTwitter/index.php",
+                url: "http://www.saudenacopa.epitrack.com.br/proxyTwitter/index.php",
                 dataType: "JSON",
 
                 beforeSend: function () {
