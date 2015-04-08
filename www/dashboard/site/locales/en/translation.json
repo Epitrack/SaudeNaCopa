@@ -1,180 +1,180 @@
 {
-	"app": {
-		"name" : "i18next"
-	},
-	"topo" : {
-		"principal" : "Healthy Cup 2014",
-		"webapp" : "Go To WebApp"
-	},
-	"login" : {
-		"login" : "Login",
-		"senha" : "Password"
-	},
-	"nav" : {
-		"termos" : "Terms",
-		"sobre" : "About",
-		"problema" : "Report Problems",
-		"contato" : "Contact"
-	},
-	"internal" : {
-		"title-internal" : "Welcome",
-		"botaoSair" : "Exit",
-		"content-sobre": "The Healthy Cup app is a project of participatory health surveillance during the FIFA World Cup 2014™. This app is designed for all who want to voluntarily contribute to the Brazilian National Health System (SUS) to inform their health condition. Participatory Surveillance is based on updates information you provide about your health condition. With the the use of app, besides contributing to the health of all, you will receive useful information and still compete for prizes at the end of the project.",
-		"title-termos" : "Terms of use and privacy policy",
-		"content-termos" : "The Health App Cup is a project of participatory health surveillance during FIFA 2014 World Cup™. This app is designed for everyone who wants voluntarily contribute to the Unified Health System (SUS) can inform their health condition. Participatory Monitoring function based on information you provide the update from their health condition. With the use application, besides contributing to the health of all, you will receive useful information and still compete for prizes at the end of the project.",
-		"title-reportar-problema": "Describe your problem in detail.",
-		"send-success" : "",
-		"title-contato" : "contact us through this form"
-	},
-	"graphics" : {
-		"title-sintoma" : "Symptoms for city",
-		"title-download" : "Download archive",
-		"salvarMapa" : "Save Map",
-		"title-search-service" : "Searched health service",
-		"title-contact-symptoms" : "I had contact with any symptoms in the last 7 days."
-	},
-	"changePass": {
-		"title-change-pass" : "Change your password",
-		"title-hello" : "Hi",
-		"sub-description" : "Complete the fields below to enter a new password.",
-		"novaSenha" : "New Password",
-		"confirmarSenha" : "Confirm New Password",
-		"mudarSenha" : "Change Password"
-	},
-	"sobre" : {
-		"paragrafo01" : " 'HEALTHY CUP 2014' is a free web application, designed for use on mobile devices and web browsers and is part of an innovative project to improve health surveillance in the National Health System (SUS), called participatory surveillance. ",
-		"paragrafo02" : "It's a simple process that relies on voluntary participation by visitors or residents in Brazil, reporting on their health condition during the 2014 FIFA World Cup Brazil™. 'HEALTHY CUP 2014' was developed in Portuguese, English and Spanish to be a complementary channel for health information and services to users, enabling the participation of all. To participate you simply need to be 13 years of age or older and accept the terms of use, regularly reporting your health status by following the instructions available in the application.",
-		"paragrafo03" : "This project is an initiative of the Health Surveillance Secretariat of the Ministry of Health in partnership with the Departments of Health in the host cities of the games along with other national and international institutions.",
-		"paragrafo04" : "For the first time in Brazil, the implementation of the participatory surveillance strategy will take place without public investment in software development. The web application 'HEALTHY CUP 2014' is being developed as free software which is made possible through partnership with Skoll Global Threats Fund and through operational support of Training in Public Health Intervention Network (Tephinet). Both are non-governmental, nonprofit organizations working on improving health surveillance and also Digital Disease Detection techniques. The technological development of the application is performed by the startup, Epitrack, based in Recife, Pernambuco.",
-		"paragrafo05" : "This partnership also includes technical support and the sharing of experiences with other worldwide adopted initiatives such as Flu Near You (flunearyou.org) and Salud Boricua (saludboricua.org) created and administered by the NGO HealthMap (healthmap.org) of the Children's Hospital in Boston in collaboration with the American Public Health Association (apha.org) and the Skoll Global Threats Fund (skollglobalthreats.org). These strategies are aimed at monitoring influenza-like illness in the United States of America (USA) and Canada, and the occurrence of dengue, leptospirosis and the influenza syndrome in Puerto Rico.",
-		"paragrafo06" : "The 'HEALTHY CUP 2014' strategy is one of the important legacies that the public health preparedness for the 2014 FIFA World Cup Brazil™ is encouraging. This strategy can be applied to other initiatives of public interest in the future. Once again, the National Health System of Brazil demonstrates its ability for innovation and social inclusion. Participate and share!"
-	},
-	"listaDeTermos" : {
-		"titulo01" : "LEARN MORE ABOUT PARTICIPATORY SURVEILLANCE",
-		"paragrafo01" : "The 2014 FIFA World Cup Brazil™ is one of the biggest sporting events on the planet and it is estimated that approximately 3.7 million tourists, Brazilian and foreigners, will be travelling among the 12 host cities. For this reason, the National Health System (SUS) requires agile instruments to quickly identify the occurrence of diseases that may affect visitors and / or residents in these cities.",
-		"paragrafo02" : "If you plan to attend the 2014 FIFA World Cup Brazil™ as a fan or worker, residing or not in the host cities of the World Cup or anywhere else in Brazil, you are the ideal candidate to contribute to the SUS via 'HEALTHY CUP 2014'. From the voluntary and regular provision of your state of health, the monitoring system will be able to describe the profile of health and illness in the host cities of the World Cup throughout the duration of the event. Simply install and register to start participating in the fun challenge of caring for the health of the city, earning points daily and unlocking stages in the game.",
-		"paragrafo03" : "Your participation is a kind contribution to the improvement of health surveillance in Brazil. Registration does not require your name and email privacy is assured. Your participation will not result in any kind of contact with you from the health system and communication of your health condition does not mean you will be performing a medical consultation.",
-		"paragrafo04" : "Importantly, if you inform that you are not feeling well, it is recommended that you contact an attending physician or the health service nearest you. For this reason, the application has a shortcut to a pre-configured search for health services and nearby pharmacies, based on geolocation service from your mobile device on Google Maps. Additionally, some useful phone numbers are made available including the SAMU (ambulance service) whose call is free and operates 24 hours per day for urgent care requests in homes, workplaces and on public roads for events of traumatic, clinical, pediatric, surgical, gynecological and mental health nature.",
-		"paragrafo05" : "We hope you have fun rooting for your team along with specially selected information from the official website of FIFA and take advantage of this opportunity to learn more about basic health care that will help you celebrate victory and have a great HEALTHY CUP 2014."
-	},
-	"listaDeBeneficios" : {
-		"titulo01" : "SEE THE BENEFITS OF YOUR PARTICIPATION",
-		"item01" : "• Actively participate in health surveillance actions aimed at disease prevention in the community.",
-		"item02" : "• Access contacts of useful public services without having to change your cell phone's contacts.",
-		"item03" : "• Easily access relevant information about health care.",
-		"item04" : "• Enjoy features such as a pre-configured search for nearby (20 km / 12 miles) hospitals and pharmacies on Google Maps, with no need to open another application.",
-		"item05" : "• Monitor the health profile of participants on the website 'Healthy Cup 2014' www.healthycup2014.com",
-		"item06" : "• Track the game schedule and the locations of your favorite matches"
-	},
-	"listaDeCustos" : {
-		"titulo01" : "COST",
-		"item01" : "• Download and participation: There is no cost to obtain and participate in 'HEALTHY CUP 2014'. ",
-		"item02" : "• Access to services: free of charge: via free wi-fi access points in the city. with cost: via your data plan.",
-		"item03" : "• Telephone call: The described public services are offered through a free call, as reported by the responsible agency."
-	},
-	"politicaDePrivacidade" : {
-		"titulo01" : "PRIVACY POLICY",
-		"item01" : "The 'HEALTHY CUP 2014' is committed to ensuring the privacy of its participants through preservation of intimacy, private life, dignity and image, as well as individual liberties and safeguards.",
-		"item02" : "The privacy policy of 'HEALTHY CUP 2014' explains: What information we collect and why we collect it and How we use that information.",
-		"titulo02" : "Information We Collect",
-		"subTitulo01" : "Information supplied by you:",
-		"item03" : "• Registration: The information collected does not allow for personal identification of participants, as neither the participant's name, address nor any document is requested. The only information requested in the registration is a valid email address that is required for the recovery of the password, a username, gender and age. The privacy of your email is guaranteed and it will not be used for any messages seeking contact with the participant. None of this information will be shared with third parties, except as required under law or pursuant to a court order.",
-		"item04" : "While using the web application: information about your health status will be provided by you throughout the 2014 FIFA World Cup Brazil™.",
-		"subTitulo02" : "Information we request once you use the web application:",
-		"item05" : "We may collect information about the location of your mobile device through geolocation, aiming at providing you with the search results of nearby hospitals and pharmacies and identify the occurrence of similar symptoms within a group of individuals in a given geographical area.",
-		"titulo03" : "How we use this information",
-		"item06" : "The information provided by users on their health status at the time, is used for statistical analysis and to promptly detect the change of the local epidemiological pattern, based on signs and symptoms reported by users. This data will be analyzed and validated based on other sources of information like the Information System for Diseases Notification (SINAN) or local data from the health services network",
-		"item07" : "This aggregated data may indicate the trend of disease occurrence in the Word Cup host cities and allow greater flexibility in taking action by health authorities. This data does not represent the magnitude of cases of specific diseases in towns and is only useful as an early warning, given that the major limitation of participatory surveillance is the specificity of the information.",
-		"item08" : "If a region, state or country has a very limited number of participants, their information will not have practical application in the surveillance process and will not be considered useful for public health. For this reason the data will only be used where a cluster is observed within a specific territory (town, neighborhood or city) and time (hour, day or week)."
-	},
-	"termos" : {
-		"paragrafo01" : "Please read these terms of use before using the 'HEALTHY CUP 2014', doing any collaboration, accessing or downloading any information from this application.",
-		"paragrafo02" : "By accessing or using HEALTHY CUP 201, you accept and agree to abide by the terms and conditions set forth in these terms of use.",
-		"paragrafo03" : "This contractual term is a binding agreement between you and 'HEALTHY CUP 2014', which covers your access and use of this application including the use of any information, data, tools, products, services and other content that is made available.",
-		"paragrafo04" : "By using this application, you confirm that you understand and agree to the following:",
-		"titulo01" : "Respect the Laws",
-		"item01" : "The user should access the 'HEALTHY CUP 2014' only for lawful purposes.",
-		"item02" : "The user agrees to use the application only for appropriate purposes and in accordance with this terms, legal limitations, and any applicable policies in Brazil.",
-		"item03" : "Access is prohibited within territories where the content is illegal. Those who choose to access this site from other locations do so on their own initiative and are responsible for compliance with applicable local laws. The materials shall not be used or exported in violation of Brazilian law. Any pending cases relating to the materials shall be settled by Brazilian law.",
-		"item04" : "The unauthorized alteration of the content of this website is expressly prohibited.",
-		"titulo02" : "Limitations of Use",
-		"item05" : "Use of the application is indicated only for individuals thirteen (13) years of age or older.",
-		"titulo03" : "Responsibility for the Content",
-		"item06" : "The 'HEALTHY CUP 2014' is not responsible for the content of any information that may be exchanged by users among themselves, or with the 'HEALTHY CUP 2014', whether legal or illegal.",
-		"item07" : "The user assume sole responsibility for his/her own conduct and the accuracy of the information provided while using the service and is responsible for the consequences resulting from the intentional provision of incorrect data.",
-		"item08" : "The user agrees that when using 'HEALTHY CUP 2014' he/she will not post, upload, distribute or disseminate content or information of defamatory, obscene or illegal nature, including proprietary information belonging to other persons or companies, as well as trademarks or information protected by copyright without the express permission of the copyright holder.",
-		"item09" : "No one can act on the user's behalf in the use of 'HEALTHY CUP 2014'. The user is responsible for the content that unauthorized individuals produce upon using this application with the user's permission on the user's registered profile. This rule does not apply to cases of violation or other security problems with the application.",
-		"titulo04" : "Accessibility to Content",
-		"item10" : "The staff of the 'HEALTHY CUP 2014' does not guarantee that this application is partially or fully functional for use outside of the venues related to the FIFA World Cup 2014™, which include the host cities and nearby municipalities.",
-		"item11" : "It is not guaranteed that any content is produced or available for use outside the Brazilian national territory. If the user chooses to access the web app and the application from other locations, the user does so at his/her own initiative and risk. The user is responsible for compliance with local laws, to the extent that local laws are applicable. The user specifically agrees to comply with all applicable laws regarding the transmission of technical data exported from that location.",
-		"titulo05" : "Intellectual Property",
-		"item12" : "The staff of the 'HEALTHY CUP 2014' and its employees are copyright holders of the content generated and submitted in this application. This does not apply to information considered to be in the public domain. All other trademarks, service brands, names and logos appearing in this application are the property of their respective owners.",
-		"item13" : "The 'HEALTHY CUP 2014' application is an open source software whose use by third parties must submit to the terms of the international license GNU General Public License, version 3 ( GPL -3.0 ). The rights to use the content and reports generated by the web app and the application are ceded by the developers, especially those rights that arise from the terms of the Creative Commons License - Attribution- NonCommercial 4.0 International.",
-		"item14" : "Only reports by the health services authorities of each host city should be considered official for public disclosure regarding public health data. No information from the 'HEALTHY CUP 2014', despite the commitment of the staff to ensure the quality, timeliness and authenticity of the information, shall be  deemed official for public disclosure. The data collected through the 'HEALTHY CUP 2014', comes from a specific target audience that can be influenced by their ability to access mobile devices or computers with minimum technology specifications. Thus, the information generated from this strategy may not necessarily match the actual epidemiological patterns for that period and place. The recreational or public domain information may contain inaccuracies or update failures, thus validation is recommended by users during emergencies or any other situation where there is a threat to health or well being.",
-		"titulo06" : "Laws, Regulations, Rights and Duties",
-		"item15" : "It is the policy of the HEALTHY CUP 2014 staff to comply with all applicable laws and regulations, which may be modified from time to time. In the event that any provision of this Terms of Use conflicts with any law or regulation, the applicable law or regulation overrides that which is in conflict.",
-		"item16" : "This Terms of Use and the use of 'HEALTHY CUP 2014' are and will be governed by and interpreted in accordance with the internal laws of Brazil, without regard to its conflict of laws rules. In case of any conflict between foreign laws, rules and regulations, Brazilian laws, rules and regulations shall prevail.",
-		"item17" : "The 'HEALTHY CUP 2014' may, but is not obligated to, monitor, review and restrict access to any of its areas where users transmit information and withdraw access to any such information or communications.",
-		"item18" : "If you have any questions regarding 'HEALTHY CUP 2014', do not hesitate to contact us at: contato@saudenacopa.com.",
-		"titulo07" : "Use of Contributions",
-		"item19" : "Upon submitting a written contribution or posting any information in 'HEALTHY CUP 2014', you grant a perpetual, royalty-free, unconditional license to this application and any successor organization to publish the user's contribution on 'HEALTHY CUP 2014' and share it, in aggregate form, (never individually) to other media, and discuss or refer to it in any publications resulting from 'HEALTHY CUP 2014'.",
-		"item20" : "You also agree that the 'HEALTHY CUP 2014' has the right, but not the obligation, to edit or delete any contribution, or include it in a text together with other contributions at the sole discretion of the staff of this application.",
-		"titulo08" : "Assurance of Confidentiality and Anonymity",
-		"item21" : "Confidentiality and anonymity of all information produced by the user will be ensured in 'HEALTHY CUP 2014' except as required by law, or to address issues of non-compliance. We reserve the right to use this information internally and in that scope, its contribution will be linked to the username of your choice.",
-		"item22" : "The 'HEALTHY CUP 2014', its employees and users, including governmental and non-governmental agencies, rely on users for the accuracy of the contributions. The staff is not responsible for errors or inaccuracies in any submission. Deliberate misrepresentation by a user may be a violation of the law, and if it is deemed serious, will be communicated to the appropriate governmental authorities.",
-		"titulo09" : "Updated 'HEALTHY CUP 2014'",
-		"item23" : "Modifications of this application and its Terms of Use may occur. Unless the user specifies otherwise, each and every use of the web app and application indicates full acceptance of the Terms of Use in its current version. Be alert for updates and, in case of doubt, these Terms of Use will always be available for reference.",
-		"titulo10" : "Liability for Actions Based on the Content",
-		"item24" : "'HEALTHY CUP 2014' does not assume liability for any injury and / or damage to persons or property, in consequence of any use of the ideas, content, instructions, methods, products or procedures contained in this application.",
-		"item25" : "By no means will the professionals involved with the development or administration of this application be liable for any decision made, or action taken, by you on the basis of such content.",
-		"item26" : "When faced with threats or any other risk to your health or well being always seek validated guidance by local public health services at each host city.",
-		"titulo11" : "Liability for Technological Problems",
-		"item27" : "At any time it is possible that all of the content or any portion of the 'HEALTHY CUP 2014' will become unavailable and will not function properly. We make necessary efforts to avoid technological problems in this application but they can occur at any time and in many ways such as viruses, harmful programming routines or problems related to the user's device.",
-		"item28" : "The web app and application is provided on an 'as is' and ‘as available’ basis. Without limiting our general disclaimer, we can not guarantee the availability, integrity, timeliness, functionality, reliability, sequencing nor speed of delivery of this application or any of the content.",
-		"item29" : "'HEALTHY CUP 2014' is not responsible for any damages or injury caused by the performance or lack of performance of all or any part of the application. 'HEALTHY CUP 2014' is not liable for any defects, delays or errors resulting from the use of this application.",
-		"item30" : "The use of all the features of 'HEALTHY CUP 2014' requires the user to have  internet access, be it Wi-Fi or via a wired network. The absence of this prerequisite may limit the use of the application in all of its potential use. The staff of 'HEALTHY CUP 2014', considering this warning, does not assume liability for this limitation.",
-		"item31" : "This disclaimer of liability applies to any and all damages or injury, including those caused by any performance failure, error, omission, interruption, deletion, defect, delay in operation or transmission, computer virus, line failure communication, theft, destruction or unauthorized access, alteration or use of any property, whether by breach of contract, tort, negligence, or any other cause of action.",
-		"titulo12" : "Liability for third party information",
-		"item32" : "The provision by the web app and application of links and references to other websites, publications or information resources does not constitute endorsement of those websites or its resources by 'HEALTHY CUP 2014', its agents or representatives. The staff of 'HEALTHY CUP 2014' makes no representations or claims as to the quality, content and accuracy of the information, services or products which may be provided by such resources, and specifically disclaims any warranties, including, but not limited to the implied or expressed warranties of marketability or the adaptation for any particular usage, application or purpose.",
-		"titulo13" : "Final Considerations",
-		"item33" : "Access to this service represents the express and unrestricted acceptance of the Terms of Use above. By agreeing to these terms you grant a perpetual, royalty-free, unconditional license to 'HEALTHY CUP 2014', the Ministry of Health and all successor organizations to publish your contribution in aggregate form within the application as well as publicize them to other services related to public health surveillance. You also agree that 'HEALTHY CUP 2014' has the right but not the obligation, to edit or delete any contribution at the sole discretion of the 'HEALTHY CUP 2014' team."
-	},
-	"reportarProblema" : {
-		"textArea" : "Describe some problem faced here",
-		"captcha" : "Enter the code side",
-		"enviar" : "send"
-	},
-	"contato" : {
-		"nome" : "Name/Surname",
-		"email" : "E-mail",
-		"telefone" : "Telephone",
-		"assunto" : "Subject",
-		"mensagem" : "Write here your message",
-		"captcha" : "Enter the code side",
-		"enviarContato" : " Send "
-	},
-	"legendas" : {
-		"titulo" : "Subtitles",
-		"voce" : "You",
-		"muitoBem" : "Very Well",
-		"bem" : "Well",
-		"mal" : "ill",
-		"muitoMal" : "Very ill"
-	},
-	"tabSintomas" : {
-		"titulo" : "Choose a Symptom",
-		"febre" : "Fever",
-		"tosse" : "Cough",
-		"dorDeGarganta" : "Sore throat",
-		"faltaDeAr" : "Difficulty breathing",
-		"nauseaVomitos" : "Nausea and vomiting",
-		"diarreia" : "Diarrhoea",
-		"dorNasArticulacoes" : "Joint pain",
-		"dorDeCabeça" : "Headache",
-		"sangramento" : "Bleeding",
-		"manchasVermelhasNoCorpo" : "Red spots on body"
-	},
-	"tabCidades" : {
-		"titulo" : "City - venue / State"
-	}
+    "app": {
+        "name" : "i18next"
+    },
+    "topo" : {
+        "principal" : "Healthy Cup 2014",
+        "webapp" : "Go To WebApp"
+    },
+    "login" : {
+        "login" : "Login",
+        "senha" : "Password"
+    },
+    "nav" : {
+        "termos" : "Terms",
+        "sobre" : "About",
+        "problema" : "Report Problems",
+        "contato" : "Contact"
+    },
+    "internal" : {
+        "title-internal" : "Welcome",
+        "botaoSair" : "Exit",
+        "content-sobre": "The Healthy Cup app is a project of participatory health surveillance during the FIFA World Cup 2014™. This app is designed for all who want to voluntarily contribute to the Brazilian National Health System (SUS) to inform their health condition. Participatory Surveillance is based on updates information you provide about your health condition. With the the use of app, besides contributing to the health of all, you will receive useful information and still compete for prizes at the end of the project.",
+        "title-termos" : "Terms of use and privacy policy",
+        "content-termos" : "The Health App Cup is a project of participatory health surveillance during FIFA 2014 World Cup™. This app is designed for everyone who wants voluntarily contribute to the Unified Health System (SUS) can inform their health condition. Participatory Monitoring function based on information you provide the update from their health condition. With the use application, besides contributing to the health of all, you will receive useful information and still compete for prizes at the end of the project.",
+        "title-reportar-problema": "Describe your problem in detail.",
+        "send-success" : "",
+        "title-contato" : "contact us through this form"
+    },
+    "graphics" : {
+        "title-sintoma" : "Symptoms for city",
+        "title-download" : "Download archive",
+        "salvarMapa" : "Save Map",
+        "title-search-service" : "Searched health service",
+        "title-contact-symptoms" : "I had contact with any symptoms in the last 7 days."
+    },
+    "changePass": {
+        "title-change-pass" : "Change your password",
+        "title-hello" : "Hi",
+        "sub-description" : "Complete the fields below to enter a new password.",
+        "novaSenha" : "New Password",
+        "confirmarSenha" : "Confirm New Password",
+        "mudarSenha" : "Change Password"
+    },
+    "sobre" : {
+        "paragrafo01" : " 'HEALTHY CUP 2014' is a free web application, designed for use on mobile devices and web browsers and is part of an innovative project to improve health surveillance in the National Health System (SUS), called participatory surveillance. ",
+        "paragrafo02" : "It's a simple process that relies on voluntary participation by visitors or residents in Brazil, reporting on their health condition during the 2014 FIFA World Cup Brazil™. 'HEALTHY CUP 2014' was developed in Portuguese, English and Spanish to be a complementary channel for health information and services to users, enabling the participation of all. To participate you simply need to be 13 years of age or older and accept the terms of use, regularly reporting your health status by following the instructions available in the application.",
+        "paragrafo03" : "This project is an initiative of the Health Surveillance Secretariat of the Ministry of Health in partnership with the Departments of Health in the host cities of the games along with other national and international institutions.",
+        "paragrafo04" : "For the first time in Brazil, the implementation of the participatory surveillance strategy will take place without public investment in software development. The web application 'HEALTHY CUP 2014' is being developed as free software which is made possible through partnership with Skoll Global Threats Fund and through operational support of Training in Public Health Intervention Network (Tephinet). Both are non-governmental, nonprofit organizations working on improving health surveillance and also Digital Disease Detection techniques. The technological development of the application is performed by the startup, Epitrack, based in Recife, Pernambuco.",
+        "paragrafo05" : "This partnership also includes technical support and the sharing of experiences with other worldwide adopted initiatives such as Flu Near You (flunearyou.org) and Salud Boricua (saludboricua.org) created and administered by the NGO HealthMap (healthmap.org) of the Children's Hospital in Boston in collaboration with the American Public Health Association (apha.org) and the Skoll Global Threats Fund (skollglobalthreats.org). These strategies are aimed at monitoring influenza-like illness in the United States of America (USA) and Canada, and the occurrence of dengue, leptospirosis and the influenza syndrome in Puerto Rico.",
+        "paragrafo06" : "The 'HEALTHY CUP 2014' strategy is one of the important legacies that the public health preparedness for the 2014 FIFA World Cup Brazil™ is encouraging. This strategy can be applied to other initiatives of public interest in the future. Once again, the National Health System of Brazil demonstrates its ability for innovation and social inclusion. Participate and share!"
+    },
+    "listaDeTermos" : {
+        "titulo01" : "LEARN MORE ABOUT PARTICIPATORY SURVEILLANCE",
+        "paragrafo01" : "The 2014 FIFA World Cup Brazil™ is one of the biggest sporting events on the planet and it is estimated that approximately 3.7 million tourists, Brazilian and foreigners, will be travelling among the 12 host cities. For this reason, the National Health System (SUS) requires agile instruments to quickly identify the occurrence of diseases that may affect visitors and / or residents in these cities.",
+        "paragrafo02" : "If you plan to attend the 2014 FIFA World Cup Brazil™ as a fan or worker, residing or not in the host cities of the World Cup or anywhere else in Brazil, you are the ideal candidate to contribute to the SUS via 'HEALTHY CUP 2014'. From the voluntary and regular provision of your state of health, the monitoring system will be able to describe the profile of health and illness in the host cities of the World Cup throughout the duration of the event. Simply install and register to start participating in the fun challenge of caring for the health of the city, earning points daily and unlocking stages in the game.",
+        "paragrafo03" : "Your participation is a kind contribution to the improvement of health surveillance in Brazil. Registration does not require your name and email privacy is assured. Your participation will not result in any kind of contact with you from the health system and communication of your health condition does not mean you will be performing a medical consultation.",
+        "paragrafo04" : "Importantly, if you inform that you are not feeling well, it is recommended that you contact an attending physician or the health service nearest you. For this reason, the application has a shortcut to a pre-configured search for health services and nearby pharmacies, based on geolocation service from your mobile device on Google Maps. Additionally, some useful phone numbers are made available including the SAMU (ambulance service) whose call is free and operates 24 hours per day for urgent care requests in homes, workplaces and on public roads for events of traumatic, clinical, pediatric, surgical, gynecological and mental health nature.",
+        "paragrafo05" : "We hope you have fun rooting for your team along with specially selected information from the official website of FIFA and take advantage of this opportunity to learn more about basic health care that will help you celebrate victory and have a great HEALTHY CUP 2014."
+    },
+    "listaDeBeneficios" : {
+        "titulo01" : "SEE THE BENEFITS OF YOUR PARTICIPATION",
+        "item01" : "• Actively participate in health surveillance actions aimed at disease prevention in the community.",
+        "item02" : "• Access contacts of useful public services without having to change your cell phone's contacts.",
+        "item03" : "• Easily access relevant information about health care.",
+        "item04" : "• Enjoy features such as a pre-configured search for nearby (20 km / 12 miles) hospitals and pharmacies on Google Maps, with no need to open another application.",
+        "item05" : "• Monitor the health profile of participants on the website 'Healthy Cup 2014' www.healthycup2014.com",
+        "item06" : "• Track the game schedule and the locations of your favorite matches"
+    },
+    "listaDeCustos" : {
+        "titulo01" : "COST",
+        "item01" : "• Download and participation: There is no cost to obtain and participate in 'HEALTHY CUP 2014'. ",
+        "item02" : "• Access to services: free of charge: via free wi-fi access points in the city. with cost: via your data plan.",
+        "item03" : "• Telephone call: The described public services are offered through a free call, as reported by the responsible agency."
+    },
+    "politicaDePrivacidade" : {
+        "titulo01" : "PRIVACY POLICY",
+        "item01" : "The 'HEALTHY CUP 2014' is committed to ensuring the privacy of its participants through preservation of intimacy, private life, dignity and image, as well as individual liberties and safeguards.",
+        "item02" : "The privacy policy of 'HEALTHY CUP 2014' explains: What information we collect and why we collect it and How we use that information.",
+        "titulo02" : "Information We Collect",
+        "subTitulo01" : "Information supplied by you:",
+        "item03" : "• Registration: The information collected does not allow for personal identification of participants, as neither the participant's name, address nor any document is requested. The only information requested in the registration is a valid email address that is required for the recovery of the password, a username, gender and age. The privacy of your email is guaranteed and it will not be used for any messages seeking contact with the participant. None of this information will be shared with third parties, except as required under law or pursuant to a court order.",
+        "item04" : "While using the web application: information about your health status will be provided by you throughout the 2014 FIFA World Cup Brazil™.",
+        "subTitulo02" : "Information we request once you use the web application:",
+        "item05" : "We may collect information about the location of your mobile device through geolocation, aiming at providing you with the search results of nearby hospitals and pharmacies and identify the occurrence of similar symptoms within a group of individuals in a given geographical area.",
+        "titulo03" : "How we use this information",
+        "item06" : "The information provided by users on their health status at the time, is used for statistical analysis and to promptly detect the change of the local epidemiological pattern, based on signs and symptoms reported by users. This data will be analyzed and validated based on other sources of information like the Information System for Diseases Notification (SINAN) or local data from the health services network",
+        "item07" : "This aggregated data may indicate the trend of disease occurrence in the Word Cup host cities and allow greater flexibility in taking action by health authorities. This data does not represent the magnitude of cases of specific diseases in towns and is only useful as an early warning, given that the major limitation of participatory surveillance is the specificity of the information.",
+        "item08" : "If a region, state or country has a very limited number of participants, their information will not have practical application in the surveillance process and will not be considered useful for public health. For this reason the data will only be used where a cluster is observed within a specific territory (town, neighborhood or city) and time (hour, day or week)."
+    },
+    "termos" : {
+        "paragrafo01" : "Please read these terms of use before using the 'HEALTHY CUP 2014', doing any collaboration, accessing or downloading any information from this application.",
+        "paragrafo02" : "By accessing or using HEALTHY CUP 201, you accept and agree to abide by the terms and conditions set forth in these terms of use.",
+        "paragrafo03" : "This contractual term is a binding agreement between you and 'HEALTHY CUP 2014', which covers your access and use of this application including the use of any information, data, tools, products, services and other content that is made available.",
+        "paragrafo04" : "By using this application, you confirm that you understand and agree to the following:",
+        "titulo01" : "Respect the Laws",
+        "item01" : "The user should access the 'HEALTHY CUP 2014' only for lawful purposes.",
+        "item02" : "The user agrees to use the application only for appropriate purposes and in accordance with this terms, legal limitations, and any applicable policies in Brazil.",
+        "item03" : "Access is prohibited within territories where the content is illegal. Those who choose to access this site from other locations do so on their own initiative and are responsible for compliance with applicable local laws. The materials shall not be used or exported in violation of Brazilian law. Any pending cases relating to the materials shall be settled by Brazilian law.",
+        "item04" : "The unauthorized alteration of the content of this website is expressly prohibited.",
+        "titulo02" : "Limitations of Use",
+        "item05" : "Use of the application is indicated only for individuals thirteen (13) years of age or older.",
+        "titulo03" : "Responsibility for the Content",
+        "item06" : "The 'HEALTHY CUP 2014' is not responsible for the content of any information that may be exchanged by users among themselves, or with the 'HEALTHY CUP 2014', whether legal or illegal.",
+        "item07" : "The user assume sole responsibility for his/her own conduct and the accuracy of the information provided while using the service and is responsible for the consequences resulting from the intentional provision of incorrect data.",
+        "item08" : "The user agrees that when using 'HEALTHY CUP 2014' he/she will not post, upload, distribute or disseminate content or information of defamatory, obscene or illegal nature, including proprietary information belonging to other persons or companies, as well as trademarks or information protected by copyright without the express permission of the copyright holder.",
+        "item09" : "No one can act on the user's behalf in the use of 'HEALTHY CUP 2014'. The user is responsible for the content that unauthorized individuals produce upon using this application with the user's permission on the user's registered profile. This rule does not apply to cases of violation or other security problems with the application.",
+        "titulo04" : "Accessibility to Content",
+        "item10" : "The staff of the 'HEALTHY CUP 2014' does not guarantee that this application is partially or fully functional for use outside of the venues related to the FIFA World Cup 2014™, which include the host cities and nearby municipalities.",
+        "item11" : "It is not guaranteed that any content is produced or available for use outside the Brazilian national territory. If the user chooses to access the web app and the application from other locations, the user does so at his/her own initiative and risk. The user is responsible for compliance with local laws, to the extent that local laws are applicable. The user specifically agrees to comply with all applicable laws regarding the transmission of technical data exported from that location.",
+        "titulo05" : "Intellectual Property",
+        "item12" : "The staff of the 'HEALTHY CUP 2014' and its employees are copyright holders of the content generated and submitted in this application. This does not apply to information considered to be in the public domain. All other trademarks, service brands, names and logos appearing in this application are the property of their respective owners.",
+        "item13" : "The 'HEALTHY CUP 2014' application is an open source software whose use by third parties must submit to the terms of the international license GNU General Public License, version 3 ( GPL -3.0 ). The rights to use the content and reports generated by the web app and the application are ceded by the developers, especially those rights that arise from the terms of the Creative Commons License - Attribution- NonCommercial 4.0 International.",
+        "item14" : "Only reports by the health services authorities of each host city should be considered official for public disclosure regarding public health data. No information from the 'HEALTHY CUP 2014', despite the commitment of the staff to ensure the quality, timeliness and authenticity of the information, shall be  deemed official for public disclosure. The data collected through the 'HEALTHY CUP 2014', comes from a specific target audience that can be influenced by their ability to access mobile devices or computers with minimum technology specifications. Thus, the information generated from this strategy may not necessarily match the actual epidemiological patterns for that period and place. The recreational or public domain information may contain inaccuracies or update failures, thus validation is recommended by users during emergencies or any other situation where there is a threat to health or well being.",
+        "titulo06" : "Laws, Regulations, Rights and Duties",
+        "item15" : "It is the policy of the HEALTHY CUP 2014 staff to comply with all applicable laws and regulations, which may be modified from time to time. In the event that any provision of this Terms of Use conflicts with any law or regulation, the applicable law or regulation overrides that which is in conflict.",
+        "item16" : "This Terms of Use and the use of 'HEALTHY CUP 2014' are and will be governed by and interpreted in accordance with the internal laws of Brazil, without regard to its conflict of laws rules. In case of any conflict between foreign laws, rules and regulations, Brazilian laws, rules and regulations shall prevail.",
+        "item17" : "The 'HEALTHY CUP 2014' may, but is not obligated to, monitor, review and restrict access to any of its areas where users transmit information and withdraw access to any such information or communications.",
+        "item18" : "If you have any questions regarding 'HEALTHY CUP 2014', do not hesitate to contact us at: contato@saudenacopa.epitrack.com.br.",
+        "titulo07" : "Use of Contributions",
+        "item19" : "Upon submitting a written contribution or posting any information in 'HEALTHY CUP 2014', you grant a perpetual, royalty-free, unconditional license to this application and any successor organization to publish the user's contribution on 'HEALTHY CUP 2014' and share it, in aggregate form, (never individually) to other media, and discuss or refer to it in any publications resulting from 'HEALTHY CUP 2014'.",
+        "item20" : "You also agree that the 'HEALTHY CUP 2014' has the right, but not the obligation, to edit or delete any contribution, or include it in a text together with other contributions at the sole discretion of the staff of this application.",
+        "titulo08" : "Assurance of Confidentiality and Anonymity",
+        "item21" : "Confidentiality and anonymity of all information produced by the user will be ensured in 'HEALTHY CUP 2014' except as required by law, or to address issues of non-compliance. We reserve the right to use this information internally and in that scope, its contribution will be linked to the username of your choice.",
+        "item22" : "The 'HEALTHY CUP 2014', its employees and users, including governmental and non-governmental agencies, rely on users for the accuracy of the contributions. The staff is not responsible for errors or inaccuracies in any submission. Deliberate misrepresentation by a user may be a violation of the law, and if it is deemed serious, will be communicated to the appropriate governmental authorities.",
+        "titulo09" : "Updated 'HEALTHY CUP 2014'",
+        "item23" : "Modifications of this application and its Terms of Use may occur. Unless the user specifies otherwise, each and every use of the web app and application indicates full acceptance of the Terms of Use in its current version. Be alert for updates and, in case of doubt, these Terms of Use will always be available for reference.",
+        "titulo10" : "Liability for Actions Based on the Content",
+        "item24" : "'HEALTHY CUP 2014' does not assume liability for any injury and / or damage to persons or property, in consequence of any use of the ideas, content, instructions, methods, products or procedures contained in this application.",
+        "item25" : "By no means will the professionals involved with the development or administration of this application be liable for any decision made, or action taken, by you on the basis of such content.",
+        "item26" : "When faced with threats or any other risk to your health or well being always seek validated guidance by local public health services at each host city.",
+        "titulo11" : "Liability for Technological Problems",
+        "item27" : "At any time it is possible that all of the content or any portion of the 'HEALTHY CUP 2014' will become unavailable and will not function properly. We make necessary efforts to avoid technological problems in this application but they can occur at any time and in many ways such as viruses, harmful programming routines or problems related to the user's device.",
+        "item28" : "The web app and application is provided on an 'as is' and ‘as available’ basis. Without limiting our general disclaimer, we can not guarantee the availability, integrity, timeliness, functionality, reliability, sequencing nor speed of delivery of this application or any of the content.",
+        "item29" : "'HEALTHY CUP 2014' is not responsible for any damages or injury caused by the performance or lack of performance of all or any part of the application. 'HEALTHY CUP 2014' is not liable for any defects, delays or errors resulting from the use of this application.",
+        "item30" : "The use of all the features of 'HEALTHY CUP 2014' requires the user to have  internet access, be it Wi-Fi or via a wired network. The absence of this prerequisite may limit the use of the application in all of its potential use. The staff of 'HEALTHY CUP 2014', considering this warning, does not assume liability for this limitation.",
+        "item31" : "This disclaimer of liability applies to any and all damages or injury, including those caused by any performance failure, error, omission, interruption, deletion, defect, delay in operation or transmission, computer virus, line failure communication, theft, destruction or unauthorized access, alteration or use of any property, whether by breach of contract, tort, negligence, or any other cause of action.",
+        "titulo12" : "Liability for third party information",
+        "item32" : "The provision by the web app and application of links and references to other websites, publications or information resources does not constitute endorsement of those websites or its resources by 'HEALTHY CUP 2014', its agents or representatives. The staff of 'HEALTHY CUP 2014' makes no representations or claims as to the quality, content and accuracy of the information, services or products which may be provided by such resources, and specifically disclaims any warranties, including, but not limited to the implied or expressed warranties of marketability or the adaptation for any particular usage, application or purpose.",
+        "titulo13" : "Final Considerations",
+        "item33" : "Access to this service represents the express and unrestricted acceptance of the Terms of Use above. By agreeing to these terms you grant a perpetual, royalty-free, unconditional license to 'HEALTHY CUP 2014', the Ministry of Health and all successor organizations to publish your contribution in aggregate form within the application as well as publicize them to other services related to public health surveillance. You also agree that 'HEALTHY CUP 2014' has the right but not the obligation, to edit or delete any contribution at the sole discretion of the 'HEALTHY CUP 2014' team."
+    },
+    "reportarProblema" : {
+        "textArea" : "Describe some problem faced here",
+        "captcha" : "Enter the code side",
+        "enviar" : "send"
+    },
+    "contato" : {
+        "nome" : "Name/Surname",
+        "email" : "E-mail",
+        "telefone" : "Telephone",
+        "assunto" : "Subject",
+        "mensagem" : "Write here your message",
+        "captcha" : "Enter the code side",
+        "enviarContato" : " Send "
+    },
+    "legendas" : {
+        "titulo" : "Subtitles",
+        "voce" : "You",
+        "muitoBem" : "Very Well",
+        "bem" : "Well",
+        "mal" : "ill",
+        "muitoMal" : "Very ill"
+    },
+    "tabSintomas" : {
+        "titulo" : "Choose a Symptom",
+        "febre" : "Fever",
+        "tosse" : "Cough",
+        "dorDeGarganta" : "Sore throat",
+        "faltaDeAr" : "Difficulty breathing",
+        "nauseaVomitos" : "Nausea and vomiting",
+        "diarreia" : "Diarrhoea",
+        "dorNasArticulacoes" : "Joint pain",
+        "dorDeCabeça" : "Headache",
+        "sangramento" : "Bleeding",
+        "manchasVermelhasNoCorpo" : "Red spots on body"
+    },
+    "tabCidades" : {
+        "titulo" : "City - venue / State"
+    }
 }

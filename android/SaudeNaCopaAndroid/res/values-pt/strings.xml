@@ -6,7 +6,7 @@
     <!-- Data Atualização -->
     <string name="dt_atualizacao">Atualizada em 25/05/2014</string>
     <!-- para traduzir -->
-    
+
     <string name="linksuteis">Links Úteis</string>
     <string name="texto_browser">O webapp é melhor visualizado em navegadores Google Chrome e Mozila Firefox.</string>
     <string name="info_farmacias">As informações sobre farmácias são provenientes do google</string>
@@ -65,7 +65,7 @@
     <string name="versao">Versão</string>
     <string name="hospitais_google">Hospitais da pesquisa do Google</string>
     <string name="acesse_site">Acesse o site</string>
-    
+
     <!-- SAIMA BAIS - LINKS -->
     <string name="saude_viajente">Saúde do Viajante</string>
     <string name="svs">Secretaria de Vigilância em Saúde</string>
@@ -73,7 +73,7 @@
     <string name="min_agricultura">Ministério da Agricultura </string>
     <string name="portal_copa">Portal da Copa </string>
     <string name="app_gov">Apps do Governo Federal</string>
-    
+
      <!-- JOGOS - calendario Jogos -->
 
     <string name="fase_grupos">Fase de Grupos</string>
@@ -252,22 +252,22 @@
     <string name="desc_arena_amazonia">&#8226;  Localização: Manaus - AM
 &#60;br&#62;&#60;br&#62;&#8226; Capacidade: 42.374
 &#60;br&#62;&#60;br&#62;&#8226; Arena: A arena tem quatro rampas de acesso, 98 banheiros, 420 refletores e 85 câmeras de segurança, além de mais conforto para todos, com 118 assentos para pessoas com mobilidade reduzida, 69 para obesos e 445 para acompanhantes de pessoas com deficiência.
-&#60;br&#62;&#60;br&#62;&#8226; Curiosidade: Com 83,5mil m² de área construída, a Arena Amazônia teve sua arquitetura inspirada em um cesto de palha indígena carregado de frutas típicas do Brasil: melão, banana, abacaxi, laranja, manga, goiaba e mamão. 
-&#60;br&#62;&#60;br&#62;&#8226; Endereço: Avenida Djalma Batista, 3637 – Flores, Manaus, Amazônia. 
+&#60;br&#62;&#60;br&#62;&#8226; Curiosidade: Com 83,5mil m² de área construída, a Arena Amazônia teve sua arquitetura inspirada em um cesto de palha indígena carregado de frutas típicas do Brasil: melão, banana, abacaxi, laranja, manga, goiaba e mamão.
+&#60;br&#62;&#60;br&#62;&#8226; Endereço: Avenida Djalma Batista, 3637 – Flores, Manaus, Amazônia.
 &#60;br&#62;&#60;br&#62;&#8226; Endereço eletrônico: http://arenadaamazonia.com.br/</string>
     <string name="desc_arena_minerao">&#8226; Localização: Belo Horizonte – MG
 &#60;br&#62;&#60;br&#62;&#8226; Capacidade: 62.254
 &#60;br&#62;&#60;br&#62;&#8226; Estádio: O estádio tem estacionamento com 2.925 vagas, 62.160 assentos cobertos, 58 bares, 54 banheiros para o público e entrada controlada por 106 catracas eletrônicas. O estádio tem também boa acessibilidade para pessoas com deficiência: vagas de estacionamento exclusivas e oito elevadores.
-&#60;br&#62;&#60;br&#62;&#8226; Curiosidade: Tombada como patrimônio histórico de Belo Horizonte, a fachada do Estádio Mineirão permaneceu com as mesmas características do projeto de 1965. 
+&#60;br&#62;&#60;br&#62;&#8226; Curiosidade: Tombada como patrimônio histórico de Belo Horizonte, a fachada do Estádio Mineirão permaneceu com as mesmas características do projeto de 1965.
 &#60;br&#62;&#8226; Endereço: Avenida Antônio Abrahão Caram, 1001 - Pampulha, Belo Horizonte, Minas Gerais.
 &#60;br&#62;&#60;br&#62;&#8226; Endereço Eletrônico: http://www.minasarena.com.br/</string>
     <string name="desc_arena_nacional">&#8226; Localização: Brasília - DF
 &#60;br&#62;&#60;br&#62;&#8226; Capacidade: 68.009
-&#60;br&#62;&#60;br&#62;&#8226; Estádio: O Estádio Nacional de Brasília é um monumento em arquitetura. São 288 pilares com mais de 36m cada, construídos em volta da arena, que dão um aspecto grandioso ao local. O estádio tem todos os assentos cobertos e distância inicial de 7,5m do campo, 465 refletores, 158 catracas de acesso, 54 bares e lanchonetes e 20 elevadores. 
+&#60;br&#62;&#60;br&#62;&#8226; Estádio: O Estádio Nacional de Brasília é um monumento em arquitetura. São 288 pilares com mais de 36m cada, construídos em volta da arena, que dão um aspecto grandioso ao local. O estádio tem todos os assentos cobertos e distância inicial de 7,5m do campo, 465 refletores, 158 catracas de acesso, 54 bares e lanchonetes e 20 elevadores.
 &#60;br&#62;&#60;br&#62;&#8226; Curiosidade: O Estádio Nacional se destaca pelas ações de sustentabilidade. As bases dos pisos foram construídas com o concreto de demolição moído e a água da chuva que cai sobre a cobertura é tratada e reaproveitada para utilização nos vasos sanitários e irrigação do campo.
 &#60;br&#62;&#60;br&#62;&#8226; Endereço: Asa Norte - Brasília, Distrito Federal.
 &#60;br&#62;&#60;br&#62;&#8226; Endereço eletrônico: http://www.estadionacionaldebrasilia.com.br/</string>
-    <string name="desc_arena_pantanal" formatted="false">&#8226; Localização: Cuiabá - MT 
+    <string name="desc_arena_pantanal" formatted="false">&#8226; Localização: Cuiabá - MT
 &#60;br&#62;&#60;br&#62;&#8226; Capacidade: 42.968
 &#60;br&#62;&#60;br&#62;&#8226; Arena: A Arena Pantanal tem 18mil arquibancadas móveis e 166 lugares para pessoas obesas. O estádio tem uma boa infraestrutura, com restaurantes, hotéis, estacionamentos, lagos, bosque e pista para caminhada.
 &#60;br&#62;&#60;br&#62;&#8226; Curiosidade: A arena tem um projeto sustentável, com economia de 40% no consumo de água e redução de 20% do consumo de energia.
@@ -283,7 +283,7 @@
 &#60;br&#62;&#60;br&#62;&#8226; Capacidade: 64.846
 &#60;br&#62;&#60;br&#62;&#8226; Estádio: O Estádio de Fortaleza foi o primeiro a ficar pronto para o Mundial de 2014 e possui duas características importantes: acessibilidade e tecnologia. Dos assentos, 255 são destinados a cadeirantes, 120 a obesos e 1.200 a pessoas com mobilidade reduzida. 
 &#60;br&#62;&#60;br&#62;&#8226; Curiosidade: O estádio conta com piso tátil para deficientes visuais. São 2,5% de espaço reservado a pessoas com deficiência, 1,5% a mais que o estabelecido por lei. O revestimento da cobertura é termoacústico translúcido, para garantir uma sensação térmica agradável e as cadeiras, de cor verde-claro, são resistentes ao fogo e aos raios UV. 
-&#60;br&#62;&#60;br&#62;&#8226; Endereço: Avenida Alberto Craveiro, 2901 – Castelão, Fortaleza, Ceará. 
+&#60;br&#62;&#60;br&#62;&#8226; Endereço: Avenida Alberto Craveiro, 2901 – Castelão, Fortaleza, Ceará.
 &#60;br&#62;&#60;br&#62;&#8226; Endereço eletrônico: http://arenacastelao.com/</string>
     <string name="desc_arena_dunas">&#8226; Localização: Natal - RN
 &#60;br&#62;&#60;br&#62;&#8226; Capacidade: 42.068
@@ -294,7 +294,7 @@
     <string name="desc_arena_beira_rio">&#8226; Localização: Porto Alegre - RS
 &#60;br&#62;&#60;br&#62;&#8226; Capacidade: 48.849
 &#60;br&#62;&#60;br&#62;&#8226; Estádio: O estádio tem 5mil vagas de estacionamento, 17 acessos, 130 catracas, 81 banheiros e uma iluminação com características próximas à da luz do dia.
-&#60;br&#62;&#60;br&#62;&#8226; Curiosidade: O Estádio Beira-Rio fica às margens do rio Guaíba, em um local de fácil acesso aos torcedores. O possui uma cobertura projetada em formato de folhas, com 65 módulos. 
+&#60;br&#62;&#60;br&#62;&#8226; Curiosidade: O Estádio Beira-Rio fica às margens do rio Guaíba, em um local de fácil acesso aos torcedores. O possui uma cobertura projetada em formato de folhas, com 65 módulos.
 &#60;br&#62;&#60;br&#62;&#8226; Endereço: Avenida Padre Cacique, 891 – Praia de Belas, Porto Alegre, Rio Grande do Sul.
 &#60;br&#62;&#60;br&#62;&#8226; Endereço eletrônico: http://www.internacional.com.br/</string>
     <string name="desc_arena_pernambuco">&#8226; Localização: São Lourenço da Mata - PE
@@ -306,7 +306,7 @@
     <string name="desc_arena_maracana">&#8226; Localização: Rio de Janeiro - RJ
 &#60;br&#62;&#60;br&#62;&#8226; Capacidade: 76.804
 &#60;br&#62;&#60;br&#62;&#8226; Estádio: O estádio tem 124mil m² de área construída, 6 rampas, 17 elevadores, 292 banheiros, 60 bares e 396 refletores. Sua fachada foi tombada pelo Instituto do Patrimônio Histórico e Artístico Nacional e seus assentos são nas cores amarelo, azul e branco.
-&#60;br&#62;&#60;br&#62;&#8226; Curiosidade: O Estádio do Maracanã é um dos estádios mais famosos do Brasil. Foi inaugurado em 1950 e assistiu a grandes momentos do futebol mundial, como o milésimo gol de Pelé e vai receber o jogo da final da Copa do Mundo de 2014. 
+&#60;br&#62;&#60;br&#62;&#8226; Curiosidade: O Estádio do Maracanã é um dos estádios mais famosos do Brasil. Foi inaugurado em 1950 e assistiu a grandes momentos do futebol mundial, como o milésimo gol de Pelé e vai receber o jogo da final da Copa do Mundo de 2014.
 &#60;br&#62;&#60;br&#62;&#8226; Endereço: Rua Professor Eurico Rabelo – Maracanã, Rio de Janeiro, Rio de Janeiro.
 &#60;br&#62;&#60;br&#62;&#8226; Endereço eletrônico: http://www.maracana.com/</string>
     <string name="desc_arena_fonte_nova">&#8226; Localização: Salvador - BA
@@ -318,7 +318,7 @@
     <string name="desc_arena_saopaulo">&#8226; Localização: São Paulo - SP
 &#60;br&#62;&#60;br&#62;&#8226; Capacidade: 65.807
 &#60;br&#62;&#60;br&#62;&#8226; Arena: A arena tem 48 mil assentos convencionais e 21.160 assentos móveis e 3.500 vagas de estacionamento.
-&#60;br&#62;&#60;br&#62;&#8226; Curiosidade: A Arena de São Paulo vai receber a abertura do Mundial 2014, no jogo entre Brasil e Croácia. 
+&#60;br&#62;&#60;br&#62;&#8226; Curiosidade: A Arena de São Paulo vai receber a abertura do Mundial 2014, no jogo entre Brasil e Croácia.
 &#60;br&#62;&#60;br&#62;&#8226; Endereço: Avenida Miguel Ignácio Curi, 111 – Vila Carmosina, São Paulo, São Paulo.
 &#60;br&#62;&#60;br&#62;&#8226; Endereço eletrônico: http://www.corinthians.com.br/arena/</string>
 
@@ -337,7 +337,7 @@
 			idade ou mais e aceitar os termos de participação e uso, informando
 			regularmente sua condição de saúde, conforme instruções disponíveis
 			no aplicativo.\n\n
-			
+
 			Este projeto é uma iniciativa da Secretaria de Vigilância em
 			Saúde do Ministério da Saúde em parceria com as Secretarias de Saúde
 			das sedes dos jogos e outras instituições nacionais e internacionais.
@@ -354,7 +354,7 @@
 			mundo e em técnicas de Detecção Digital de Doenças. O desenvolvimento
 			tecnológico do aplicativo é realizado por meio da startup Epitrack,
 			sediada em Recife/Pernambuco.\n\n
-			
+
 			Esta parceria também contempla o apoio técnico e a troca de
 			experiências com outras iniciativas adotadas no mundo, como Flu Near
 			You (flunearyou.org) e Salud Boricua (saludboricua.org) criado e
@@ -364,7 +364,7 @@
 			(skollglobalthreats.org). Estas estratégias visam o monitoramento de
 			síndrome gripal nos Estados Unidos da América (EUA) e Canadá e a
 			ocorrência de dengue, leptospirose e síndrome gripal em Porto Rico.\n\n
-			
+
 			A estratégia \"SAÚDE NA COPA\" é um dos importantes legados que a
 			preparação da saúde pública para a Copa do Mundo da FIFA Brasil
 			2014&#8482; está incentivando. Esta estratégia poderá ser aplicada em
@@ -379,7 +379,7 @@
 						necessita de mecanismos ágeis para identificar rapidamente a
 						ocorrência de doenças transmissíveis que podem afetar turistas
 						e/ou residentes nessas cidades.\n\n
-						
+
 						Se você planeja participar da Copa do Mundo da FIFA Brasil
 						2014&#8482; como torcedor ou trabalhador, residindo ou não nas sedes da
 						copa ou no Brasil, você é o participante ideal para contribuir com
@@ -390,14 +390,14 @@
 						Para isso, basta instalar e se cadastrar para começar a participar
 						do divertido desafio de cuidar da saúde da cidade, ganhando pontos
 						diariamente e destravando estágios no game.\n\n
-						
+
 						Sua participação é uma gentil contribuição para o
 						aprimoramento da vigilância em saúde no Brasil. No cadastro não há
 						registro nominal e a privacidade do e-mail está garantida. Não
 						haverá nenhum contato do sistema de saúde com você em decorrência
 						da participação e a comunicação de sua condição de saúde não
 						significa que estará realizando uma consulta médica.\n\n
-						
+
 						É importante destacar que caso você informe que não está se
 						sentindo bem, é recomendável que consulte o médico de referência
 						ou serviço de saúde mais próximo de você. Para isso, está
@@ -410,7 +410,7 @@
 						atendimento de urgência para ocorrências de natureza traumática,
 						clínica, pediátrica, cirúrgica, gineco-obstétrica e de saúde
 						mental, em residências, locais de trabalho e vias públicas.\n\n
-						
+
 						Esperamos que você se divirta torcendo por sua seleção com
 						as informações especialmente selecionadas do site oficial da FIFA&#8482;
 						e aproveite para saber mais sobre cuidados simples de saúde que
@@ -421,14 +421,14 @@
 
 					 Acessar os contatos de serviços públicos úteis sem
 						precisar alterar sua agenda de telefones.\n\n
-						
+
 						 Acessar facilmente informações úteis sobre cuidados de
 						saúde.\n\n
-						
+
 						Usufruir de facilidades como a pesquisa pré-configurada
 						por hospitais e farmácias próximos (20 km) no Google Maps, sem
 						necessidade de abrir outro aplicativo.\n\n
-						
+
 						Acompanhar o perfil de saúde dos participantes por meio do
 						website \"Saúde naCopa\".
 					\n\n
@@ -471,7 +471,7 @@
 					Durante o uso da aplicação Web: as informações de sua
 					condição de saúde serão fornecidas por você durante todo o período
 					de realização da Copa do Mundo da FIFA Brasil 2014&#8482;. \n\n
-					
+
 					Informações que pedimos a partir do uso que você faz da
 						aplicação Web:\n
 					  Podemos coletar informações sobre a localização de seu
@@ -511,22 +511,22 @@
 			informação dessa aplicação. \n\n Ao acessar ou
 			utilizar o \"SAÚDE NA COPA\", você aceita e concorda em cumprir os
 			termos e condições estabelecidos nesse \"termos legais de uso\". \n\n
-			
+
 			 Este termo é um acordo vinculativo entre você e o \"SAÚDE NA COPA\", que abrange todo o seu acesso e uso dessa aplicação o que
 			inclui o uso de todas as informações, dados, ferramentas, produtos,
 			serviços e outros conteúdos disponíveis por meio desse. \n\n
-			
+
 			Ao utilizar esta aplicação, você confirma que compreende e concorda
 			com o seguinte:</string>
     <string name="termos_2_titulo">Respeito as Leis</string>
     <string name="termos_2">O utilizador deverá acessar o \"SAÚDE NA COPA\" apenas para
 							finalidades lícitas.\n\n
-							
+
 							O utilizador concorda em utilizar o aplicativo apenas para
 							os devidos fins e em conformidade com o presente termo e
 							limitações legais, bem como quaisquer políticas aplicáveis no
 							Brasil.\n\n
-							
+
 							Seu acesso é proibido em territórios onde o conteúdo seja
 							considerado ilegal. Aqueles que optarem por acessar este site a
 							partir de outras localidades o farão por iniciativa própria e
@@ -534,7 +534,7 @@
 							Os materiais não deverão ser usados ou exportados em
 							descumprimento das leis brasileiras. Qualquer pendência com
 							relação aos materiais será dirimida pelas leis brasileiras.\n\n
-							
+
 							A alteração não autorizada do conteúdo deste site é
 							expressamente proibida.</string>
     <string name="termos_3_titulo">Limites de Uso</string>
@@ -551,7 +551,7 @@
 							enquanto utilizar o serviço e que é responsável pelas
 							consequências que resultem do fornecimento intencional de dados
 							incorretos.\n\n
-							
+
 							O utilizador concorda que ao usar o \"SAÚDE NA COPA\" não irá
 							publicar, enviar, distribuir ou divulgar conteúdo ou informação
 							de caráter difamatório, obsceno ou ilícito, inclusive informações
@@ -559,7 +559,7 @@
 							empresas, bem como marcas registradas ou informações protegidas
 							por direitos autorais, sem a expressa autorização do detentor
 							desses direitos;\n\n
-							
+
 							Ninguém pode agir em seu nome no uso do \"SAÚDE NA COPA\".
 							Você é responsável pelo conteúdo que indivíduos não autorizados
 							produzirem ao usar essa aplicação utilizando, com sua permissão,
@@ -588,14 +588,14 @@
 							pública. Todas as outras marcas comerciais, marcas de serviço,
 							nomes e logotipos que aparecem nessa aplicação são de propriedade
 							de seus respectivos proprietários.\n\n
-							
+
 							O aplicativo \"SAÚDE NA COPA\" é um software open source cuja
 							utilização por terceiros se submete aos termos da licença
 							internacional GNU
 								General Public License, version 3 (GPL-3.0). Os direitos de uso
 							do conteúdo e dos relatórios gerados pelo Webapp e pela aplicação
 							são cedidos pelos desenvolvedores, em especial aqueles que
-							decorrem dos termos da licença 
+							decorrem dos termos da licença
 								Creative Commons - Atribuição-NãoComercial 4.0 Internacional.
 						\n\n
 						Apenas informações divulgadas pelos serviços de saúde de
@@ -622,21 +622,21 @@
 							Termo de Uso estar em conflito com qualquer lei ou regulamento
 							aplicável, a lei ou regulamentação aplicável substituirá a
 							disposição contrária.\n\n
-							
+
 							Este Termos de Uso e o uso do \"SAÚDE NA COPA\" são e serão
 							regidos e interpretados de acordo com as leis internas do Brasil,
 							sem levar em conta as suas regras de conflitos de leis. Em caso
 							de qualquer conflito entre as leis, regras e regulamentos
 							estrangeiros e as do Brasil, as leis, regras e regulamentos do
 							Brasil deverão prevalecer.\n\n
-							
+
 							O \"SAÚDE NA COPA\" poderá, mas não é obrigado, a monitorar,
 							revisar e restringir o acesso a qualquer de suas áreas onde os
 							utilizadores transmitem informações, podendo retirar do ar ou
 							retirar o acesso a qualquer destas informações ou comunicações.\n\n
-							
+
 							Se você tiver alguma dúvida em relação ao \"SAÚDE NA COPA\", não
-							hesite em contactar-nos contato@saudenacopa.com</string>
+							hesite em contactar-nos contato@saudenacopa.epitrack.com.br</string>
     <string name="termos_8_titulo">Uso das contribuições</string>
     <string name="termos_8">Ao enviar uma contribuição escrita ou postar informações no
 							\"SAÚDE NA COPA\", você concede uma licença perpétua, isenta de
@@ -645,7 +645,7 @@
 							COPA\", bem como divulgá-las, de forma agregada (nunca individual)
 							à outros meios de comunicação, e para discutir ou referenciá-la
 							em quaisquer publicações decorrentes do \"SAÚDE NA COPA\".\n\n
-							
+
 							Você também concorda que o \"SAÚDE NA COPA\" tem o direito,
 							mas não a obrigação, de editar ou remover qualquer contribuição,
 							ou inclui-la no texto em conjunto com outras contribuições, a
@@ -657,7 +657,7 @@
 							Reservamo-nos o direito de usar esta informação internamente e,
 							nesse âmbito, sua contribuição estará vinculada ao apelido de sua
 							escolha.\n\n
-							
+
 							O \"SAÚDE NA COPA\", seus colaboradores e usuários, incluindo
 							agências governamentais e não governamentais, dependem dos
 							utilizadores para a precisão das contribuições. A equipe não se
@@ -679,12 +679,12 @@
 							prejuízo e / ou danos a pessoas ou bens, em conseqüência de
 							qualquer utilização das idéias, conteúdos, instruções, métodos,
 							produtos ou procedimentos contidos nessa aplicação.\n\n
-							
+
 							Em hipótese alguma os profissionais envolvidos com o
 							desenvolvimento ou gestão dessa aplicação serão responsabilizados
 							por qualquer decisão ou ação tomada por você em base a tal
 							conteúdo.\n\n
-							
+
 							Diante de ameaças ou qualquer outra situação de risco a
 							vossa saúde ou integridade procure sempre orientações validadas e
 							atualizadas pelos serviços locais de saúde pública relacionados a
@@ -698,26 +698,26 @@
 							ocorrer nessa aplicação problemas tecnológicos das mais diversas
 							naturezas, tais como vírus, rotinas de programação prejudiciais
 							ou problemas relacionados ao aparelho.\n\n
-							
+
 							O Webapp e a aplicação são fornecidas \"como está\" e
 							\"conforme estiver disponível\". Sem limitar o nosso aviso geral,
 							não garantimos a disponibilidade, integridade, pontualidade,
 							funcionalidade, confiabilidade, seqüenciamento ou a velocidade de
 							entrega nessa aplicação ou de qualquer parte do conteúdo.\n\n
-							
+
 							O \"SAÚDE NA COPA\" não se responsabiliza por qualquer dano
 							ou prejuízo causado pelo desempenho ou falha de desempenho de
 							toda ou qualquer parte da aplicação. O \"SAÚDE NA COPA\" não se
 							responsabiliza por quaisquer defeitos, atrasos ou erros
 							resultantes da sua utilização dessa aplicação.\n\n
-							
+
 							A utilização de todas as funcionalidades do \"SAÚDE NA COPA\"
 							exige disponibilidade do acesso à internet pelo usuário, por wifi
 							ou cabo de rede de dados. A ausência desse pre-requisito pode
 							limitar a utilização da aplicação com todo seu potencial de uso.
 							A equipe do \"SAÚDE NA COPA\", considerando esse aviso, não assume
 							responsabilidade decorrente dessa limitação.\n\n
-							
+
 							Esta isenção de responsabilidade aplica-se a todos e
 							quaisquer danos ou prejuízos, incluindo aqueles causados por
 							qualquer falha de desempenho, erro, omissão, interrupção,

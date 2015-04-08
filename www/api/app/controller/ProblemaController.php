@@ -41,7 +41,7 @@ Class ProblemaController extends Controller {
         $userVO = $fachada->selectOneByID($userVO);
 
 
-        $enviado = $fachada->sendEmail('contato@saudenacopa.com',$userVO->getEmail() , '[PROBLEMA] Saúde na Copa',$msg);
+        $enviado = $fachada->sendEmail('contato@saudenacopa.epitrack.com.br',$userVO->getEmail() , '[PROBLEMA] Saúde na Copa',$msg);
 
         $retorno = $this->getResponse($enviado);
         echo $retorno;

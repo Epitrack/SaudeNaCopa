@@ -1,180 +1,180 @@
 {
-	"app": {
-		"name" : "i18next"
-	},
-	"topo" : {
-		"principal" : "Saúde na Copa 2014",
-		"webapp" : "Vá para o WebApp"
-	},
-	"login" : {
-		"login" : "Email",
-		"senha" : "Senha"
-	},
-	"nav" : {
-		"termos" : "Termos de Uso",
-		"sobre" : "Sobre",
-		"problema" : "Reportar Problema",
-		"contato" : "Contato"
-	},
-	"internal" : {
-		"title-internal" : "Seja Bem Vindo",
-		"botaoSair" : "Sair",
-		"content-sobre": "O Aplicativo Saúde na Copa é um projeto de vigilância participativa em saúde durante a Copa do Mundo FIFA 2014™. Este aplicativo foi desenvolvido para que todos que queiram voluntariamente contribuir com o Sistema Único de Saúde (SUS) possam informar sobre sua condição de saúde. A Vigilância Participativa funcionará com base nas informações que você fornecer a partir da atualização de sua condição de saúde. Com a utilização do aplicativo, além de contribuir com a saúde de todos, você receberá informações úteis e ainda concorrerá a prêmios ao final do projeto.",
-		"title-termos" : "Termos de uso e política de privacidade",
-		"content-termos" : "O Aplicativo Saúde na Copa é um projeto de vigilância participativa em saúde durante a Copa do Mundo FIFA 2014™. Este aplicativo foi desenvolvido para que todos que queiram voluntariamente contribuir com o Sistema Único de Saúde (SUS) possam informar sobre sua condição de saúde. A Vigilância Participativa funcionará com base nas informações que você fornecer a partir da atualização de sua condição de saúde. Com o a utilização do aplicativo, além de contribuir com a saúde de todos, você receberá informações úteis e ainda concorrerá a prêmios ao final do projeto.",
-		"title-reportar-problema": "Descreva o problema detalhadamente.",
-		"send-success" : "",
-		"title-contato" : "Entre em contato através do formulário"
-	},
-	"graphics" : {
-		"title-sintoma" : "Sintomas por cidade",
-		"title-download" : "Download .CSV",
-		"salvarMapa" : "Salvar Mapa",
-		"title-search-service" : "Procurou algum serviço de saúde",
-		"title-contact-symptoms" : "Tive contato ou conheço alguém com algum desses sintomas nos últimos 7 dias."
-	},
-	"changePass": {
-		"title-change-pass" : "Altere a sua senha",
-		"title-hello" : "Olá,",
-		"sub-description" : "Preencha os campos abaixo para inserir uma nova senha.",
-		"novaSenha" : "Nova Senha",
-		"confirmarSenha" : "Confirme a Senha",
-		"mudarSenha" : "Mudar Senha"
-	},
-	"sobre" : {
-		"paragrafo01" : "O “SAÚDE NA COPA” é uma aplicação Web gratuita, projetada para utilização em dispositivos móveis e navegadores de internet e faz parte do projeto inovador de aprimoramento da vigilância em saúde no Sistema Único de Saúde (SUS), denominado vigilância participativa.",
-		"paragrafo02" : "É um processo simples que conta com a participação voluntária de visitantes ou residentes no Brasil, informando sobre sua condição de saúde, durante a Copa do Mundo da FIFA Brasil 2014™. O “SAÚDE NA COPA” foi desenvolvido em português, inglês e espanhol para ser um canal complementar de informação de saúde e de serviços aos usuários, permitindo a participação de todos. Para isso, basta ter 13 anos de idade ou mais e aceitar os termos de participação e uso, informando regularmente sua condição de saúde, conforme instruções disponíveis no aplicativo.",
-		"paragrafo03" : "Este projeto é uma iniciativa da Secretaria de Vigilância em Saúde do Ministério da Saúde em parceria com as Secretarias de Saúde das sedes dos jogos e outras instituições nacionais e internacionais.",
-		"paragrafo04" : "Utilizada pela primeira vez no Brasil, a implementação da estratégia de vigilância participativa ocorrerá sem investimento público no desenvolvimento do software. Para isso, por meio de parceria, a aplicação Web “SAÚDE NA COPA” está sendo desenvolvida como software livre por meio de investimento da Skoll Global Threats Fund e apoio operacional da Training in Public Health Intervention Network (Tephinet), ambas são Organizações não-governamentais sem fins lucrativos que atuam no aprimoramento da vigilância em saúde no mundo e em técnicas de Detecção Digital de Doenças. O desenvolvimento tecnológico do aplicativo é realizado por meio da startup Epitrack, sediada em Recife/Pernambuco.",
-		"paragrafo05" : "Esta parceria também contempla o apoio técnico e a troca de experiências com outras iniciativas adotadas no mundo, como Flu Near You (flunearyou.org) e Salud Boricua (saludboricua.org) criado e administrado pela ONG HealthMap (healthmap.org) do Hospital da Criança de Boston em colaboração com a Associação Americana de Saúde Pública (apha.org) e pela Skoll Global Threats Fund (skollglobalthreats.org). Estas estratégias visam o monitoramento de síndrome gripal nos Estados Unidos da América (EUA) e Canadá e a ocorrência de dengue, leptospirose e síndrome gripal em Porto Rico.",
-		"paragrafo06" : "A estratégia “SAÚDE NA COPA” é um dos importantes legados que a preparação da saúde pública para a Copa do Mundo da FIFA Brasil 2014™ está incentivando. Esta estratégia poderá ser aplicada em outras iniciativas de interesse público no futuro. Mais uma vez o Sistema Único de Saúde do Brasil demostra sua capacidade para inovação e inclusão social. Participe e divulgue!"
-	},
-	"listaDeTermos" : {
-		"titulo01" : "SAIBA MAIS SOBRE A VIGILÂNCIA PARTICIPATIVA",
-		"paragrafo01" : "A Copa do Mundo da FIFA Brasil 2014™ é um dos maiores eventos esportivos do planeta e estima-se que aproximadamente 3,7 milhões de turistas, brasileiros e estrangeiros, deverão circular pelas 12 sedes. Por esse motivo, o Sistema Único de Saúde (SUS) necessita de mecanismos ágeis para identificar rapidamente a ocorrência de doenças transmissíveis que podem afetar turistas e/ou residentes nessas cidades.",
-		"paragrafo02" : "Se você planeja participar da Copa do Mundo da FIFA Brasil 2014™ como torcedor ou trabalhador, residindo ou não nas sedes da copa ou no Brasil, você é o participante ideal para contribuir com o SUS por meio do “SAUDE NA COPA”. A partir do fornecimento voluntário e regular de sua condição de saúde, a vigilância terá capacidade de descrever o perfil de saúde ou de adoecimento nas sedes da copa, durante todo o período de realização do evento. Para isso, basta instalar e se cadastrar para começar a participar do divertido desafio de cuidar da saúde da cidade, ganhando pontos diariamente e destravando estágios no game.",
-		"paragrafo03" : "Sua participação é uma gentil contribuição para o aprimoramento da vigilância em saúde no Brasil. No cadastro não há registro nominal e a privacidade do e-mail está garantida. Não haverá nenhum contato do sistema de saúde com você em decorrência da participação e a comunicação de sua condição de saúde não significa que estará realizando uma consulta médica.",
-		"paragrafo04" : "É importante destacar que caso você informe que não está se sentindo bem, é recomendável que consulte o médico de referência ou serviço de saúde mais próximo de você. Para isso, está disponível no aplicativo um atalho com pesquisa pré-configurada de serviços de saúde e farmácias mais próximos de você, com base no serviço de geolocalização do seu dispositivo móvel no Google Maps. Além disso, você dispõe dos telefones úteis incluindo o do SAMU (Serviço de Atendimento Móvel de Urgência) cuja a ligação é gratuita e funciona 24 horas por dia atendendo solicitações de atendimento de urgência para ocorrências de natureza traumática, clínica, pediátrica, cirúrgica, gineco-obstétrica e de saúde mental, em residências, locais de trabalho e vias públicas.",
-		"paragrafo05" : "Esperamos que você se divirta torcendo por sua seleção com as informações especialmente selecionadas do site oficial da FIFA e aproveite para saber mais sobre cuidados simples de saúde que vão lhe ajudar a comemorar a vitória com muita SAÚDE NA COPA."
-	},
-	"listaDeBeneficios" : {
-		"titulo01" : "VEJA OS BENEFÍCIOS DE SUA PARTICIPAÇÃO",
-		"item01" : "• Participar ativamente das ações de vigilância em saúde que visam a prevenção de doenças na comunidade.",
-		"item02" : "• Acessar os contatos de serviços públicos úteis sem precisar alterar sua agenda de telefones.",
-		"item03" : "• Acessar facilmente informações úteis sobre cuidados de saúde.",
-		"item04" : "• Usufruir de facilidades como a pesquisa pré-configurada por hospitais e farmácias próximos (20 km) no Google Maps, sem necessidade de abrir outro aplicativo.",
-		"item05" : "• Acompanhar o perfil de saúde dos participantes por meio do website www.saudenacopa.com",
-		"item06" : "• Acompanhar o calendário dos jogos e locais de suas partidas preferidas."
-	},
-	"listaDeCustos" : {
-		"titulo01" : "CUSTO",
-		"item01" : "• Download e participação: Não há nenhum custo para obter e participar do 'SAÚDE NA COPA'.",
-		"item02" : "• Acesso aos serviços: Sem custo, por meio de acesso gratuito em pontos wi-fi na cidade. Com custo, por meio de seu pacote de dados contratado",
-		"item03" : "• Chamada telefônica: Os serviços públicos de referência descritos nos telefones úteis são oferecidos por meio de chamada gratuita, conforme informação do órgão responsável."
-	},
-	"politicaDePrivacidade" : {
-		"titulo01" : "POLÍTICA DE PRIVACIDADE",
-		"item01" : "O “SAÚDE NA COPA” tem o compromisso de garantir a privacidade dos participantes, como preservação da intimidade, da vida privada, honra e imagem das pessoas que participam dessa iniciativa, bem como com as liberdades e garantias individuais.",
-		"item02" : "A política de privacidade do 'SAÚDE NA COPA' explica: Quais informações coletamos e por que as coletamos e Como usamos essas informações.",
-		"titulo02" : "Informações que coletamos",
-		"subTitulo01" : "Informações fornecidas por você:",
-		"item03" : "• Cadastro: as informações coletadas não permitem a identificação pessoal dos participantes, pois não é solicitado nome, endereço ou qualquer documento. As únicas informações solicitadas no cadastro são: endereço de e-mail válido que é necessário para recuperação da senha de acesso, apelido, sexo e idade. Está garantida a privacidade do endereço de e-mail e o mesmo não será utilizado para nenhuma mensagem visando contato com o participante. Nenhuma dessas informações será compartilhada com terceiros, exceto se exigido por força lei ou para cumprimento de ordem judicial.",
-		"item04" : "• Durante o uso da aplicação Web: as informações de sua condição de saúde serão fornecidas por você durante todo o período de realização da Copa do Mundo da FIFA Brasil 2014™.",
-		"subTitulo02" : "Informações que pedimos a partir do uso que você faz da aplicação Web:",
-		"item05" : "• Podemos coletar informações sobre a localização de seu dispositivo móvel por meio de geolocalização, visando lhe fornecer a pesquisa de hospitais e farmácias próximos e identificar a ocorrência de sintomas similares em conjunto de indivíduos de uma area geográfica determinada.",
-		"titulo03" : "Como usamos essas informações",
-		"item06" : "As informações fornecidas pelos usuários, sobre sua condição de saúde no momento, são utilizadas para análises estatísticas e para detectar oportunamente a alteração do padrão epidemiológico local, com base em sinais e sintomas referidos pelos usuários. Estes dados serão analisados e validados com base em outras fontes de informação disponíveis como o Sistema de Informação de Agravos de Notificação (SINAN) ou investigação local na rede de serviços de saúde.",
-		"item07" : "Estes dados agregados podem indicar a tendência da ocorrência de doenças nas sedes da copa e permitir maior agilidade na tomada de ação pelas autoridades de saúde. Estes dados não representam a magnitude de casos de doenças específicas em uma localidade e são úteis apenas como alerta precoce (early warning), considerando que a maior limitação da vigilância participativa é a validade da informação.",
-		"item08" : "Caso uma região, Estado ou Pais possua um número muito restrito de participantes, suas informações não terão aplicação prática no processo de vigilância e não serão consideradas úteis para a saúde pública. Por esse motivo, somente serão utilizados os dados onde for observada concentração de informações consolidadas no espaço (localidade, bairro ou cidade) e no tempo (hora, dia ou semana)."
-	},
-	"termos" : {
-		"paragrafo01" : "Por favor, leia estes termos legais de uso antes de utilizar o “SAÚDE NA COPA”, fazer qualquer colaboração ou acessar ou baixar qualquer informação dessa aplicação.",
-		"paragrafo02" : "Ao acessar ou utilizar o 'SAÚDE NA COPA', você aceita e concorda em cumprir os termos e condições estabelecidos nesse 'termos legais de uso'.",
-		"paragrafo03" : "Este termo é um acordo vinculativo entre você e o 'SAÚDE NA COPA', que  abrange todo o seu acesso e uso dessa aplicação o que inclui o uso de todas as informações, dados, ferramentas, produtos, serviços e outros conteúdos disponíveis por meio desse.",
-		"paragrafo04" : "Ao utilizar esta aplicação, você confirma que compreende e concorda com o seguinte:",
-		"titulo01" : "Respeito as Leis",
-		"item01" : "O utilizador deverá acessar o 'SAÚDE NA COPA' apenas para finalidades lícitas.",
-		"item02" : "O utilizador concorda em utilizar o aplicativo apenas para os devidos fins e em conformidade com o presente termo e limitações legais, bem como quaisquer políticas aplicáveis no Brasil.",
-		"item03" : "Seu acesso é proibido em territórios onde o conteúdo seja considerado ilegal. Aqueles que optarem por acessar este site a partir de outras localidades o farão por iniciativa própria e serão responsáveis pelo cumprimento das leis locais aplicáveis. Os materiais não deverão ser usados ou exportados em descumprimento das leis brasileiras. Qualquer pendência com relação aos materiais será dirimida pelas leis brasileiras.",
-		"item04" : "A alteração não autorizada do conteúdo deste site é expressamente proibida.",
-		"titulo02" : "Limites de Uso",
-		"item05" : "A utilização do aplicativo está indicada somente para indivíduos de 13 (treze) anos de idade ou mais.",
-		"titulo03" : "Responsabilidade pelo conteúdo",
-		"item06" : "O 'SAÚDE NA COPA' não é responsável pelo conteúdo de quaisquer informações eventualmente trocadas pelos utilizadores entre si, ou para o 'SAÚDE NA COPA' sejam elas lícitas ou ilícitas.",
-		"item07" : "O utilizador concorda que é o único responsável pela sua própria conduta e pela veracidade das informações fornecidas enquanto utilizar o serviço e que é responsável pelas consequências que resultem do fornecimento intencional de dados incorretos.",
-		"item08" : "O utilizador concorda que ao usar o 'SAÚDE NA COPA' não irá publicar, enviar, distribuir ou divulgar conteúdo ou informação de caráter difamatório, obsceno ou ilícito, inclusive informações de propriedade exclusiva pertencentes a outras pessoas ou empresas, bem como marcas registradas ou informações protegidas por direitos autorais, sem a expressa autorização do detentor desses direitos;",
-		"item09" : "Ninguém pode agir em seu nome no uso do SAÚDE NA COPA. Você é responsável pelo conteúdo que indivíduos não autorizados produzirem ao usar essa aplicação utilizando, com sua permissão, seu perfil cadastrado. Essa regra não se aplica aos casos de violação ou  outros problemas de segurança da aplicação.",
-		"titulo04" : "Acessibilidade ao conteúdo",
-		"item10" : "A equipe do 'SAÚDE NA COPA' não garante que esta aplicação esteja parcial ou completamente funcional para uso fora das áreas relacionadas a ocorrência da COPA DO MUNDO FIFA 2014™, que abrangem as cidades-sede e municípios próximos.",
-		"item11" : "Da mesma forma não garante que qualquer conteúdo esteja apropriado ou disponível para uso fora do território nacional. Se você optar por acessar o Webapp e a aplicação de outras localidades, você o fará por sua própria iniciativa e em seu próprio risco. Você é responsável pelo cumprimento das leis locais, e na medida em que leis locais sejam aplicáveis. Você concorda especificamente em cumprir todas as leis aplicáveis ​​relativas à transmissão de dados técnicos exportados a partir desse local.",
-		"titulo05" : "Propriedade intelectual",
-		"item12" : "A equipe do 'SAÚDE NA COPA' e seus colaboradores, são detentores do direito de autoria dos conteúdos produzidos e apresentados nessa aplicação.  Essa premissa não se aplica as informações consideradas como de domínio publico ou de utilidade pública. Todas as outras marcas comerciais, marcas de serviço, nomes e logotipos que aparecem nessa aplicação são de propriedade de seus respectivos proprietários.",
-		"item13" : "O aplicativo 'SAÚDE NA COPA' é um software open source cuja utilização por terceiros se submete aos termos da licença internacional GNU General Public License, version 3 (GPL-3.0). Os direitos de uso do conteúdo e dos relatórios gerados pelo Webapp e pela aplicação são cedidos pelos desenvolvedores, em especial aqueles que decorrem dos termos da licença Creative Commons - Atribuição-NãoComercial 4.0 Internacional.",
-		"item14" : "Apenas informações divulgadas pelos serviços de saúde de cada cidade-sede devem ser consideradas oficiais, para divulgação pública no que tange aos dados relacionados a esse tema. Nenhuma informação proveniente do 'SAÚDE NA COPA', apesar do empenho da equipe em garantir a qualidade, atualidade e autenticidade das informações, deverá ser considerada considerada oficial, para divulgação pública. Os dados coletados por meio do 'SAÚDE NA COPA', são provenientes de um público alvo específico que pode sofrer influência pela sua capacidade de acesso à dispositivos móveis ou computadores com especificações tecnológicas mínimas. Assim, as informações geradas a partir dessa estratégia,  podem necessariamente não corresponder a expressão real do padrão epidemiológico daquele período e local. As informações lúdicas ou de utilidade pública poderão apresentar eventuais incorreções ou falhas de atualização, sendo recomendada sua validação pelo utilizadores em casos de urgência e emergência ou de qualquer outra situação de ameaça a vossa saúde ou integridade.",
-		"titulo06" : "Leis, regulamentos, direitos e deveres",
-		"item15" : "É política da equipe do 'SAÚDE NA COPA' cumprir todas as leis e regulamentos aplicáveis, os quais podem ser modificados de tempos em tempos. No caso de qualquer disposição do presente Termo de Uso estar em conflito com qualquer lei ou regulamento aplicável, a lei ou regulamentação aplicável substituirá a disposição contrária.",
-		"item16" : "Este Termos de Uso e o uso do 'SAÚDE NA COPA' são e serão regidos e interpretados de acordo com as leis internas do Brasil, sem levar em conta as suas regras de conflitos de leis. Em caso de qualquer conflito entre as leis , regras e regulamentos estrangeiros e as do Brasil, as leis, regras e regulamentos do Brasil deverão prevalecer.",
-		"item17" : "O 'SAÚDE NA COPA' poderá, mas não é obrigado, a monitorar, revisar e restringir o acesso a qualquer de suas áreas onde os utilizadores transmitem informações, podendo retirar do ar ou retirar o acesso a qualquer destas informações ou comunicações.",
-		"item18" : "Se você tiver alguma dúvida em relação ao 'SAÚDE NA COPA', não hesite em contactar-nos contato@saudenacopa.com.",
-		"titulo07" : "Uso das contribuições",
-		"item19" : "Ao enviar uma contribuição escrita ou postar informações no 'SAÚDE NA COPA', você concede uma licença perpétua, isenta de royalties, licença incondicional para essa aplicação e qualquer organização sucessora, a publicar a sua contribuição no 'SAÚDE NA COPA', bem como divulgá-las, de forma agregada (nunca individual) à outros meios de comunicação, e para discutir ou referenciá-la em quaisquer publicações decorrentes do 'SAÚDE NA COPA'.",
-		"item20" : "Você também concorda que o 'SAÚDE NA COPA' tem o direito, mas não a obrigação, de editar ou remover qualquer contribuição, ou inclui-la no texto em conjunto com outras contribuições, a critério exclusivo da equipe relacionada a essa aplicação.",
-		"titulo08" : "Garantia de Sigilo e Anonimato",
-		"item21" : "Será garantido o sigilo e anonimato de todas as informações produzidas por você no 'SAÚDE NA COPA', exceto conforme exigido por lei, ou para tratar de questões de descumprimento. Reservamo-nos o direito de usar esta informação internamente e, nesse âmbito, sua contribuição estará vinculada ao apelido de sua escolha.",
-		"item22" : "O 'SAÚDE NA COPA', seus colaboradores e usuários, incluindo agências governamentais e não governamentais, dependem dos utilizadores para a precisão das contribuições. A equipe não se responsabiliza por erros ou imprecisões em qualquer submissão. Deturpação deliberada de informações por um usuário pode constituir uma violação da lei, e se for séria, será comunicada às autoridades governamentais apropriadas.",
-		"titulo09" : "Atualização do 'SAÚDE NA COPA'",
-		"item23" : "Modificações dessa aplicação e dos seus Termos de Uso poderão ocorrer. A menos que indique o contrário, seu uso do Webapp e da aplicação indica a aceitação integral do Termos de Uso naquela versão vigente cada vez que você usar o 'SAÚDE NA COPA'. Fique atento as atualizações e, em caso de duvida, os Termos de Uso estarão sempre disponíveis para acesso e concordância ou não.",
-		"titulo10" : "Responsabilidade por ações com base no conteúdo",
-		"item24" : "O 'SAÚDE NA COPA'  não assume responsabilidade por qualquer prejuízo e / ou danos a pessoas ou bens, em conseqüência de qualquer utilização das idéias,conteúdos, instruções, métodos, produtos ou procedimentos contidos nessa aplicação.",
-		"item25" : "Em hipótese alguma os profissionais envolvidos com o desenvolvimento ou gestão dessa aplicação serão responsabilizados por qualquer decisão ou ação tomada por você em base a tal conteúdo.",
-		"item26" : "Diante de ameaças ou  qualquer outra situação de risco a vossa  saúde ou integridade procure sempre orientações validadas e atualizadas pelos serviços locais de saúde pública relacionados a cada Cidade-Sede.",
-		"titulo11" : "Responsabilidade por problemas tecnológicos",
-		"item27" : "Eventualmente todo o conteúdo ou qualquer parte do 'SAÚDE NA COPA' pode não estar disponível e pode não funcionar corretamente em qualquer momento . Fazemos esforços razoáveis ​​para evitar problemas tecnológicos, mas em qualquer momento podem ocorrer nessa aplicação problemas tecnológicos das mais diversas naturezas, tais como vírus, rotinas de programação prejudiciais ou problemas relacionados ao aparelho.",
-		"item28" : "O Webapp e a aplicação são fornecidas 'como está' e 'conforme estiver disponível'. Sem limitar o nosso aviso geral, não garantimos a disponibilidade, integridade, pontualidade, funcionalidade, confiabilidade, seqüenciamento ou a velocidade de entrega nessa aplicação ou de qualquer parte do conteúdo.",
-		"item29" : "O 'SAÚDE NA COPA' não se responsabiliza por qualquer dano ou prejuízo causado pelo desempenho ou falha de desempenho de toda ou qualquer parte da aplicação. O 'SAÚDE NA COPA' não se responsabiliza por quaisquer defeitos, atrasos ou erros resultantes da sua utilização dessa aplicação.",
-		"item30" : "A utilização de todas as funcionalidades do 'SAÚDE NA COPA' exige disponibilidade do acesso à internet pelo usuário, por wifi ou cabo de rede de dados. A ausência desse pre-requisito pode limitar a utilização da aplicação com todo seu potencial de uso. A equipe do 'SAÚDE NA COPA', considerando esse aviso, não assume responsabilidade decorrente dessa limitação.",
-		"item31" : "Esta isenção de responsabilidade aplica-se a todos e quaisquer danos ou prejuízos, incluindo aqueles causados ​​por qualquer falha de desempenho, erro, omissão, interrupção, apagamento, defeito, atraso na operação ou transmissão, vírus de computador, falha de linha de comunicação, roubo, destruição ou acesso não autorizado, a alteração ou uso de qualquer bem, seja por violação de contrato, comportamento ilícito, negligência ou qualquer outra causa de ação.",
-		"titulo12" : "Responsabilidade por informações de terceiros",
-		"item32" : "A disposição através do Webapp e da aplicação de links e referências para outros sites, publicações ou recursos de informação não constitui o endosso desses sites ou de seus recursos por parte do 'SAÚDE NA COPA', de seus agentes ou representantes. A equipe do 'SAÚDE NA COPA' não faz representações ou asserções quanto à qualidade, conteúdo e precisão das informações, serviços ou produtos que podem ser fornecidas por esses recursos e especificamente se isenta de quaisquer garantias, incluindo, mas não limitado às garantias implícitas ou expressas de comerciabilidade ou adequação para qualquer utilização particular, aplicação ou finalidade.",
-		"titulo13" : "Considerações Finais",
-		"item33" : "O acesso ao serviço representa a aceitação expressa e irrestrita dos Termos de Uso acima descritos. Ao concordar com esses termos você concede uma licença perpétua, isenta de royalties, licença incondicional para o 'SAÚDE NA COPA', Ministério da Saúde e todas as organizações sucessoras, para publicar a sua contribuição de forma agregada, na própria aplicação bem como divulgá-las aos outros serviços de vigilância em saúde pública relacionados. Você também concorda que 'SAÚDE NA COPA' tem o direito, mas não a obrigação, de editar ou remover qualquer contribuição a critério exclusivo da equipe do 'SAÚDE NA COPA'."
-	},
-	"reportarProblema" : {
-		"textArea" : "Descreva aqui algum problema enfrentado",
-		"captcha" : "Digite o código ao lado",
-		"enviar" : "enviar"
-	},
-	"contato" : {
-		"nome" : "Nome/Apelido",
-		"email" : "Email",
-		"telefone" : "Telefone",
-		"assunto" : "Assunto",
-		"mensagem" : "Escreva aqui a sua mensagem",
-		"captcha" : "Digite o código ao lado",
-		"enviarContato" : "Enviar"
-	},
-	"legendas" : {
-		"titulo" : "Legendas",
-		"voce" : "Você",
-		"muitoBem" : "Muito Bem",
-		"bem" : "Bem",
-		"mal" : "Mal",
-		"muitoMal" : "Muito Mal"
-	},
-	"tabSintomas" : {
-		"titulo" : "Escolha um Sintoma",
-		"febre" : "Febre",
-		"tosse" : "Tosse",
-		"dorDeGarganta" : "Dor de Garganta",
-		"faltaDeAr" : "Falta de ar",
-		"nauseaVomitos" : "Náusea e vômitos",
-		"diarreia" : "Diarréia",
-		"dorNasArticulacoes" : "Dor nas articulações",
-		"dorDeCabeça" : "Dor de cabeça",
-		"sangramento" : "Sangramento",
-		"manchasVermelhasNoCorpo" : "Manchas vermelhas no corpo"
-	},
-	"tabCidades" : {
-		"titulo" : "Cidade - sede / Estado"
-	}
+    "app": {
+        "name" : "i18next"
+    },
+    "topo" : {
+        "principal" : "Saúde na Copa 2014",
+        "webapp" : "Vá para o WebApp"
+    },
+    "login" : {
+        "login" : "Email",
+        "senha" : "Senha"
+    },
+    "nav" : {
+        "termos" : "Termos de Uso",
+        "sobre" : "Sobre",
+        "problema" : "Reportar Problema",
+        "contato" : "Contato"
+    },
+    "internal" : {
+        "title-internal" : "Seja Bem Vindo",
+        "botaoSair" : "Sair",
+        "content-sobre": "O Aplicativo Saúde na Copa é um projeto de vigilância participativa em saúde durante a Copa do Mundo FIFA 2014™. Este aplicativo foi desenvolvido para que todos que queiram voluntariamente contribuir com o Sistema Único de Saúde (SUS) possam informar sobre sua condição de saúde. A Vigilância Participativa funcionará com base nas informações que você fornecer a partir da atualização de sua condição de saúde. Com a utilização do aplicativo, além de contribuir com a saúde de todos, você receberá informações úteis e ainda concorrerá a prêmios ao final do projeto.",
+        "title-termos" : "Termos de uso e política de privacidade",
+        "content-termos" : "O Aplicativo Saúde na Copa é um projeto de vigilância participativa em saúde durante a Copa do Mundo FIFA 2014™. Este aplicativo foi desenvolvido para que todos que queiram voluntariamente contribuir com o Sistema Único de Saúde (SUS) possam informar sobre sua condição de saúde. A Vigilância Participativa funcionará com base nas informações que você fornecer a partir da atualização de sua condição de saúde. Com o a utilização do aplicativo, além de contribuir com a saúde de todos, você receberá informações úteis e ainda concorrerá a prêmios ao final do projeto.",
+        "title-reportar-problema": "Descreva o problema detalhadamente.",
+        "send-success" : "",
+        "title-contato" : "Entre em contato através do formulário"
+    },
+    "graphics" : {
+        "title-sintoma" : "Sintomas por cidade",
+        "title-download" : "Download .CSV",
+        "salvarMapa" : "Salvar Mapa",
+        "title-search-service" : "Procurou algum serviço de saúde",
+        "title-contact-symptoms" : "Tive contato ou conheço alguém com algum desses sintomas nos últimos 7 dias."
+    },
+    "changePass": {
+        "title-change-pass" : "Altere a sua senha",
+        "title-hello" : "Olá,",
+        "sub-description" : "Preencha os campos abaixo para inserir uma nova senha.",
+        "novaSenha" : "Nova Senha",
+        "confirmarSenha" : "Confirme a Senha",
+        "mudarSenha" : "Mudar Senha"
+    },
+    "sobre" : {
+        "paragrafo01" : "O “SAÚDE NA COPA” é uma aplicação Web gratuita, projetada para utilização em dispositivos móveis e navegadores de internet e faz parte do projeto inovador de aprimoramento da vigilância em saúde no Sistema Único de Saúde (SUS), denominado vigilância participativa.",
+        "paragrafo02" : "É um processo simples que conta com a participação voluntária de visitantes ou residentes no Brasil, informando sobre sua condição de saúde, durante a Copa do Mundo da FIFA Brasil 2014™. O “SAÚDE NA COPA” foi desenvolvido em português, inglês e espanhol para ser um canal complementar de informação de saúde e de serviços aos usuários, permitindo a participação de todos. Para isso, basta ter 13 anos de idade ou mais e aceitar os termos de participação e uso, informando regularmente sua condição de saúde, conforme instruções disponíveis no aplicativo.",
+        "paragrafo03" : "Este projeto é uma iniciativa da Secretaria de Vigilância em Saúde do Ministério da Saúde em parceria com as Secretarias de Saúde das sedes dos jogos e outras instituições nacionais e internacionais.",
+        "paragrafo04" : "Utilizada pela primeira vez no Brasil, a implementação da estratégia de vigilância participativa ocorrerá sem investimento público no desenvolvimento do software. Para isso, por meio de parceria, a aplicação Web “SAÚDE NA COPA” está sendo desenvolvida como software livre por meio de investimento da Skoll Global Threats Fund e apoio operacional da Training in Public Health Intervention Network (Tephinet), ambas são Organizações não-governamentais sem fins lucrativos que atuam no aprimoramento da vigilância em saúde no mundo e em técnicas de Detecção Digital de Doenças. O desenvolvimento tecnológico do aplicativo é realizado por meio da startup Epitrack, sediada em Recife/Pernambuco.",
+        "paragrafo05" : "Esta parceria também contempla o apoio técnico e a troca de experiências com outras iniciativas adotadas no mundo, como Flu Near You (flunearyou.org) e Salud Boricua (saludboricua.org) criado e administrado pela ONG HealthMap (healthmap.org) do Hospital da Criança de Boston em colaboração com a Associação Americana de Saúde Pública (apha.org) e pela Skoll Global Threats Fund (skollglobalthreats.org). Estas estratégias visam o monitoramento de síndrome gripal nos Estados Unidos da América (EUA) e Canadá e a ocorrência de dengue, leptospirose e síndrome gripal em Porto Rico.",
+        "paragrafo06" : "A estratégia “SAÚDE NA COPA” é um dos importantes legados que a preparação da saúde pública para a Copa do Mundo da FIFA Brasil 2014™ está incentivando. Esta estratégia poderá ser aplicada em outras iniciativas de interesse público no futuro. Mais uma vez o Sistema Único de Saúde do Brasil demostra sua capacidade para inovação e inclusão social. Participe e divulgue!"
+    },
+    "listaDeTermos" : {
+        "titulo01" : "SAIBA MAIS SOBRE A VIGILÂNCIA PARTICIPATIVA",
+        "paragrafo01" : "A Copa do Mundo da FIFA Brasil 2014™ é um dos maiores eventos esportivos do planeta e estima-se que aproximadamente 3,7 milhões de turistas, brasileiros e estrangeiros, deverão circular pelas 12 sedes. Por esse motivo, o Sistema Único de Saúde (SUS) necessita de mecanismos ágeis para identificar rapidamente a ocorrência de doenças transmissíveis que podem afetar turistas e/ou residentes nessas cidades.",
+        "paragrafo02" : "Se você planeja participar da Copa do Mundo da FIFA Brasil 2014™ como torcedor ou trabalhador, residindo ou não nas sedes da copa ou no Brasil, você é o participante ideal para contribuir com o SUS por meio do “SAUDE NA COPA”. A partir do fornecimento voluntário e regular de sua condição de saúde, a vigilância terá capacidade de descrever o perfil de saúde ou de adoecimento nas sedes da copa, durante todo o período de realização do evento. Para isso, basta instalar e se cadastrar para começar a participar do divertido desafio de cuidar da saúde da cidade, ganhando pontos diariamente e destravando estágios no game.",
+        "paragrafo03" : "Sua participação é uma gentil contribuição para o aprimoramento da vigilância em saúde no Brasil. No cadastro não há registro nominal e a privacidade do e-mail está garantida. Não haverá nenhum contato do sistema de saúde com você em decorrência da participação e a comunicação de sua condição de saúde não significa que estará realizando uma consulta médica.",
+        "paragrafo04" : "É importante destacar que caso você informe que não está se sentindo bem, é recomendável que consulte o médico de referência ou serviço de saúde mais próximo de você. Para isso, está disponível no aplicativo um atalho com pesquisa pré-configurada de serviços de saúde e farmácias mais próximos de você, com base no serviço de geolocalização do seu dispositivo móvel no Google Maps. Além disso, você dispõe dos telefones úteis incluindo o do SAMU (Serviço de Atendimento Móvel de Urgência) cuja a ligação é gratuita e funciona 24 horas por dia atendendo solicitações de atendimento de urgência para ocorrências de natureza traumática, clínica, pediátrica, cirúrgica, gineco-obstétrica e de saúde mental, em residências, locais de trabalho e vias públicas.",
+        "paragrafo05" : "Esperamos que você se divirta torcendo por sua seleção com as informações especialmente selecionadas do site oficial da FIFA e aproveite para saber mais sobre cuidados simples de saúde que vão lhe ajudar a comemorar a vitória com muita SAÚDE NA COPA."
+    },
+    "listaDeBeneficios" : {
+        "titulo01" : "VEJA OS BENEFÍCIOS DE SUA PARTICIPAÇÃO",
+        "item01" : "• Participar ativamente das ações de vigilância em saúde que visam a prevenção de doenças na comunidade.",
+        "item02" : "• Acessar os contatos de serviços públicos úteis sem precisar alterar sua agenda de telefones.",
+        "item03" : "• Acessar facilmente informações úteis sobre cuidados de saúde.",
+        "item04" : "• Usufruir de facilidades como a pesquisa pré-configurada por hospitais e farmácias próximos (20 km) no Google Maps, sem necessidade de abrir outro aplicativo.",
+        "item05" : "• Acompanhar o perfil de saúde dos participantes por meio do website www.saudenacopa.epitrack.com.br",
+        "item06" : "• Acompanhar o calendário dos jogos e locais de suas partidas preferidas."
+    },
+    "listaDeCustos" : {
+        "titulo01" : "CUSTO",
+        "item01" : "• Download e participação: Não há nenhum custo para obter e participar do 'SAÚDE NA COPA'.",
+        "item02" : "• Acesso aos serviços: Sem custo, por meio de acesso gratuito em pontos wi-fi na cidade. Com custo, por meio de seu pacote de dados contratado",
+        "item03" : "• Chamada telefônica: Os serviços públicos de referência descritos nos telefones úteis são oferecidos por meio de chamada gratuita, conforme informação do órgão responsável."
+    },
+    "politicaDePrivacidade" : {
+        "titulo01" : "POLÍTICA DE PRIVACIDADE",
+        "item01" : "O “SAÚDE NA COPA” tem o compromisso de garantir a privacidade dos participantes, como preservação da intimidade, da vida privada, honra e imagem das pessoas que participam dessa iniciativa, bem como com as liberdades e garantias individuais.",
+        "item02" : "A política de privacidade do 'SAÚDE NA COPA' explica: Quais informações coletamos e por que as coletamos e Como usamos essas informações.",
+        "titulo02" : "Informações que coletamos",
+        "subTitulo01" : "Informações fornecidas por você:",
+        "item03" : "• Cadastro: as informações coletadas não permitem a identificação pessoal dos participantes, pois não é solicitado nome, endereço ou qualquer documento. As únicas informações solicitadas no cadastro são: endereço de e-mail válido que é necessário para recuperação da senha de acesso, apelido, sexo e idade. Está garantida a privacidade do endereço de e-mail e o mesmo não será utilizado para nenhuma mensagem visando contato com o participante. Nenhuma dessas informações será compartilhada com terceiros, exceto se exigido por força lei ou para cumprimento de ordem judicial.",
+        "item04" : "• Durante o uso da aplicação Web: as informações de sua condição de saúde serão fornecidas por você durante todo o período de realização da Copa do Mundo da FIFA Brasil 2014™.",
+        "subTitulo02" : "Informações que pedimos a partir do uso que você faz da aplicação Web:",
+        "item05" : "• Podemos coletar informações sobre a localização de seu dispositivo móvel por meio de geolocalização, visando lhe fornecer a pesquisa de hospitais e farmácias próximos e identificar a ocorrência de sintomas similares em conjunto de indivíduos de uma area geográfica determinada.",
+        "titulo03" : "Como usamos essas informações",
+        "item06" : "As informações fornecidas pelos usuários, sobre sua condição de saúde no momento, são utilizadas para análises estatísticas e para detectar oportunamente a alteração do padrão epidemiológico local, com base em sinais e sintomas referidos pelos usuários. Estes dados serão analisados e validados com base em outras fontes de informação disponíveis como o Sistema de Informação de Agravos de Notificação (SINAN) ou investigação local na rede de serviços de saúde.",
+        "item07" : "Estes dados agregados podem indicar a tendência da ocorrência de doenças nas sedes da copa e permitir maior agilidade na tomada de ação pelas autoridades de saúde. Estes dados não representam a magnitude de casos de doenças específicas em uma localidade e são úteis apenas como alerta precoce (early warning), considerando que a maior limitação da vigilância participativa é a validade da informação.",
+        "item08" : "Caso uma região, Estado ou Pais possua um número muito restrito de participantes, suas informações não terão aplicação prática no processo de vigilância e não serão consideradas úteis para a saúde pública. Por esse motivo, somente serão utilizados os dados onde for observada concentração de informações consolidadas no espaço (localidade, bairro ou cidade) e no tempo (hora, dia ou semana)."
+    },
+    "termos" : {
+        "paragrafo01" : "Por favor, leia estes termos legais de uso antes de utilizar o “SAÚDE NA COPA”, fazer qualquer colaboração ou acessar ou baixar qualquer informação dessa aplicação.",
+        "paragrafo02" : "Ao acessar ou utilizar o 'SAÚDE NA COPA', você aceita e concorda em cumprir os termos e condições estabelecidos nesse 'termos legais de uso'.",
+        "paragrafo03" : "Este termo é um acordo vinculativo entre você e o 'SAÚDE NA COPA', que  abrange todo o seu acesso e uso dessa aplicação o que inclui o uso de todas as informações, dados, ferramentas, produtos, serviços e outros conteúdos disponíveis por meio desse.",
+        "paragrafo04" : "Ao utilizar esta aplicação, você confirma que compreende e concorda com o seguinte:",
+        "titulo01" : "Respeito as Leis",
+        "item01" : "O utilizador deverá acessar o 'SAÚDE NA COPA' apenas para finalidades lícitas.",
+        "item02" : "O utilizador concorda em utilizar o aplicativo apenas para os devidos fins e em conformidade com o presente termo e limitações legais, bem como quaisquer políticas aplicáveis no Brasil.",
+        "item03" : "Seu acesso é proibido em territórios onde o conteúdo seja considerado ilegal. Aqueles que optarem por acessar este site a partir de outras localidades o farão por iniciativa própria e serão responsáveis pelo cumprimento das leis locais aplicáveis. Os materiais não deverão ser usados ou exportados em descumprimento das leis brasileiras. Qualquer pendência com relação aos materiais será dirimida pelas leis brasileiras.",
+        "item04" : "A alteração não autorizada do conteúdo deste site é expressamente proibida.",
+        "titulo02" : "Limites de Uso",
+        "item05" : "A utilização do aplicativo está indicada somente para indivíduos de 13 (treze) anos de idade ou mais.",
+        "titulo03" : "Responsabilidade pelo conteúdo",
+        "item06" : "O 'SAÚDE NA COPA' não é responsável pelo conteúdo de quaisquer informações eventualmente trocadas pelos utilizadores entre si, ou para o 'SAÚDE NA COPA' sejam elas lícitas ou ilícitas.",
+        "item07" : "O utilizador concorda que é o único responsável pela sua própria conduta e pela veracidade das informações fornecidas enquanto utilizar o serviço e que é responsável pelas consequências que resultem do fornecimento intencional de dados incorretos.",
+        "item08" : "O utilizador concorda que ao usar o 'SAÚDE NA COPA' não irá publicar, enviar, distribuir ou divulgar conteúdo ou informação de caráter difamatório, obsceno ou ilícito, inclusive informações de propriedade exclusiva pertencentes a outras pessoas ou empresas, bem como marcas registradas ou informações protegidas por direitos autorais, sem a expressa autorização do detentor desses direitos;",
+        "item09" : "Ninguém pode agir em seu nome no uso do SAÚDE NA COPA. Você é responsável pelo conteúdo que indivíduos não autorizados produzirem ao usar essa aplicação utilizando, com sua permissão, seu perfil cadastrado. Essa regra não se aplica aos casos de violação ou  outros problemas de segurança da aplicação.",
+        "titulo04" : "Acessibilidade ao conteúdo",
+        "item10" : "A equipe do 'SAÚDE NA COPA' não garante que esta aplicação esteja parcial ou completamente funcional para uso fora das áreas relacionadas a ocorrência da COPA DO MUNDO FIFA 2014™, que abrangem as cidades-sede e municípios próximos.",
+        "item11" : "Da mesma forma não garante que qualquer conteúdo esteja apropriado ou disponível para uso fora do território nacional. Se você optar por acessar o Webapp e a aplicação de outras localidades, você o fará por sua própria iniciativa e em seu próprio risco. Você é responsável pelo cumprimento das leis locais, e na medida em que leis locais sejam aplicáveis. Você concorda especificamente em cumprir todas as leis aplicáveis ​​relativas à transmissão de dados técnicos exportados a partir desse local.",
+        "titulo05" : "Propriedade intelectual",
+        "item12" : "A equipe do 'SAÚDE NA COPA' e seus colaboradores, são detentores do direito de autoria dos conteúdos produzidos e apresentados nessa aplicação.  Essa premissa não se aplica as informações consideradas como de domínio publico ou de utilidade pública. Todas as outras marcas comerciais, marcas de serviço, nomes e logotipos que aparecem nessa aplicação são de propriedade de seus respectivos proprietários.",
+        "item13" : "O aplicativo 'SAÚDE NA COPA' é um software open source cuja utilização por terceiros se submete aos termos da licença internacional GNU General Public License, version 3 (GPL-3.0). Os direitos de uso do conteúdo e dos relatórios gerados pelo Webapp e pela aplicação são cedidos pelos desenvolvedores, em especial aqueles que decorrem dos termos da licença Creative Commons - Atribuição-NãoComercial 4.0 Internacional.",
+        "item14" : "Apenas informações divulgadas pelos serviços de saúde de cada cidade-sede devem ser consideradas oficiais, para divulgação pública no que tange aos dados relacionados a esse tema. Nenhuma informação proveniente do 'SAÚDE NA COPA', apesar do empenho da equipe em garantir a qualidade, atualidade e autenticidade das informações, deverá ser considerada considerada oficial, para divulgação pública. Os dados coletados por meio do 'SAÚDE NA COPA', são provenientes de um público alvo específico que pode sofrer influência pela sua capacidade de acesso à dispositivos móveis ou computadores com especificações tecnológicas mínimas. Assim, as informações geradas a partir dessa estratégia,  podem necessariamente não corresponder a expressão real do padrão epidemiológico daquele período e local. As informações lúdicas ou de utilidade pública poderão apresentar eventuais incorreções ou falhas de atualização, sendo recomendada sua validação pelo utilizadores em casos de urgência e emergência ou de qualquer outra situação de ameaça a vossa saúde ou integridade.",
+        "titulo06" : "Leis, regulamentos, direitos e deveres",
+        "item15" : "É política da equipe do 'SAÚDE NA COPA' cumprir todas as leis e regulamentos aplicáveis, os quais podem ser modificados de tempos em tempos. No caso de qualquer disposição do presente Termo de Uso estar em conflito com qualquer lei ou regulamento aplicável, a lei ou regulamentação aplicável substituirá a disposição contrária.",
+        "item16" : "Este Termos de Uso e o uso do 'SAÚDE NA COPA' são e serão regidos e interpretados de acordo com as leis internas do Brasil, sem levar em conta as suas regras de conflitos de leis. Em caso de qualquer conflito entre as leis , regras e regulamentos estrangeiros e as do Brasil, as leis, regras e regulamentos do Brasil deverão prevalecer.",
+        "item17" : "O 'SAÚDE NA COPA' poderá, mas não é obrigado, a monitorar, revisar e restringir o acesso a qualquer de suas áreas onde os utilizadores transmitem informações, podendo retirar do ar ou retirar o acesso a qualquer destas informações ou comunicações.",
+        "item18" : "Se você tiver alguma dúvida em relação ao 'SAÚDE NA COPA', não hesite em contactar-nos contato@saudenacopa.epitrack.com.br.",
+        "titulo07" : "Uso das contribuições",
+        "item19" : "Ao enviar uma contribuição escrita ou postar informações no 'SAÚDE NA COPA', você concede uma licença perpétua, isenta de royalties, licença incondicional para essa aplicação e qualquer organização sucessora, a publicar a sua contribuição no 'SAÚDE NA COPA', bem como divulgá-las, de forma agregada (nunca individual) à outros meios de comunicação, e para discutir ou referenciá-la em quaisquer publicações decorrentes do 'SAÚDE NA COPA'.",
+        "item20" : "Você também concorda que o 'SAÚDE NA COPA' tem o direito, mas não a obrigação, de editar ou remover qualquer contribuição, ou inclui-la no texto em conjunto com outras contribuições, a critério exclusivo da equipe relacionada a essa aplicação.",
+        "titulo08" : "Garantia de Sigilo e Anonimato",
+        "item21" : "Será garantido o sigilo e anonimato de todas as informações produzidas por você no 'SAÚDE NA COPA', exceto conforme exigido por lei, ou para tratar de questões de descumprimento. Reservamo-nos o direito de usar esta informação internamente e, nesse âmbito, sua contribuição estará vinculada ao apelido de sua escolha.",
+        "item22" : "O 'SAÚDE NA COPA', seus colaboradores e usuários, incluindo agências governamentais e não governamentais, dependem dos utilizadores para a precisão das contribuições. A equipe não se responsabiliza por erros ou imprecisões em qualquer submissão. Deturpação deliberada de informações por um usuário pode constituir uma violação da lei, e se for séria, será comunicada às autoridades governamentais apropriadas.",
+        "titulo09" : "Atualização do 'SAÚDE NA COPA'",
+        "item23" : "Modificações dessa aplicação e dos seus Termos de Uso poderão ocorrer. A menos que indique o contrário, seu uso do Webapp e da aplicação indica a aceitação integral do Termos de Uso naquela versão vigente cada vez que você usar o 'SAÚDE NA COPA'. Fique atento as atualizações e, em caso de duvida, os Termos de Uso estarão sempre disponíveis para acesso e concordância ou não.",
+        "titulo10" : "Responsabilidade por ações com base no conteúdo",
+        "item24" : "O 'SAÚDE NA COPA'  não assume responsabilidade por qualquer prejuízo e / ou danos a pessoas ou bens, em conseqüência de qualquer utilização das idéias,conteúdos, instruções, métodos, produtos ou procedimentos contidos nessa aplicação.",
+        "item25" : "Em hipótese alguma os profissionais envolvidos com o desenvolvimento ou gestão dessa aplicação serão responsabilizados por qualquer decisão ou ação tomada por você em base a tal conteúdo.",
+        "item26" : "Diante de ameaças ou  qualquer outra situação de risco a vossa  saúde ou integridade procure sempre orientações validadas e atualizadas pelos serviços locais de saúde pública relacionados a cada Cidade-Sede.",
+        "titulo11" : "Responsabilidade por problemas tecnológicos",
+        "item27" : "Eventualmente todo o conteúdo ou qualquer parte do 'SAÚDE NA COPA' pode não estar disponível e pode não funcionar corretamente em qualquer momento . Fazemos esforços razoáveis ​​para evitar problemas tecnológicos, mas em qualquer momento podem ocorrer nessa aplicação problemas tecnológicos das mais diversas naturezas, tais como vírus, rotinas de programação prejudiciais ou problemas relacionados ao aparelho.",
+        "item28" : "O Webapp e a aplicação são fornecidas 'como está' e 'conforme estiver disponível'. Sem limitar o nosso aviso geral, não garantimos a disponibilidade, integridade, pontualidade, funcionalidade, confiabilidade, seqüenciamento ou a velocidade de entrega nessa aplicação ou de qualquer parte do conteúdo.",
+        "item29" : "O 'SAÚDE NA COPA' não se responsabiliza por qualquer dano ou prejuízo causado pelo desempenho ou falha de desempenho de toda ou qualquer parte da aplicação. O 'SAÚDE NA COPA' não se responsabiliza por quaisquer defeitos, atrasos ou erros resultantes da sua utilização dessa aplicação.",
+        "item30" : "A utilização de todas as funcionalidades do 'SAÚDE NA COPA' exige disponibilidade do acesso à internet pelo usuário, por wifi ou cabo de rede de dados. A ausência desse pre-requisito pode limitar a utilização da aplicação com todo seu potencial de uso. A equipe do 'SAÚDE NA COPA', considerando esse aviso, não assume responsabilidade decorrente dessa limitação.",
+        "item31" : "Esta isenção de responsabilidade aplica-se a todos e quaisquer danos ou prejuízos, incluindo aqueles causados ​​por qualquer falha de desempenho, erro, omissão, interrupção, apagamento, defeito, atraso na operação ou transmissão, vírus de computador, falha de linha de comunicação, roubo, destruição ou acesso não autorizado, a alteração ou uso de qualquer bem, seja por violação de contrato, comportamento ilícito, negligência ou qualquer outra causa de ação.",
+        "titulo12" : "Responsabilidade por informações de terceiros",
+        "item32" : "A disposição através do Webapp e da aplicação de links e referências para outros sites, publicações ou recursos de informação não constitui o endosso desses sites ou de seus recursos por parte do 'SAÚDE NA COPA', de seus agentes ou representantes. A equipe do 'SAÚDE NA COPA' não faz representações ou asserções quanto à qualidade, conteúdo e precisão das informações, serviços ou produtos que podem ser fornecidas por esses recursos e especificamente se isenta de quaisquer garantias, incluindo, mas não limitado às garantias implícitas ou expressas de comerciabilidade ou adequação para qualquer utilização particular, aplicação ou finalidade.",
+        "titulo13" : "Considerações Finais",
+        "item33" : "O acesso ao serviço representa a aceitação expressa e irrestrita dos Termos de Uso acima descritos. Ao concordar com esses termos você concede uma licença perpétua, isenta de royalties, licença incondicional para o 'SAÚDE NA COPA', Ministério da Saúde e todas as organizações sucessoras, para publicar a sua contribuição de forma agregada, na própria aplicação bem como divulgá-las aos outros serviços de vigilância em saúde pública relacionados. Você também concorda que 'SAÚDE NA COPA' tem o direito, mas não a obrigação, de editar ou remover qualquer contribuição a critério exclusivo da equipe do 'SAÚDE NA COPA'."
+    },
+    "reportarProblema" : {
+        "textArea" : "Descreva aqui algum problema enfrentado",
+        "captcha" : "Digite o código ao lado",
+        "enviar" : "enviar"
+    },
+    "contato" : {
+        "nome" : "Nome/Apelido",
+        "email" : "Email",
+        "telefone" : "Telefone",
+        "assunto" : "Assunto",
+        "mensagem" : "Escreva aqui a sua mensagem",
+        "captcha" : "Digite o código ao lado",
+        "enviarContato" : "Enviar"
+    },
+    "legendas" : {
+        "titulo" : "Legendas",
+        "voce" : "Você",
+        "muitoBem" : "Muito Bem",
+        "bem" : "Bem",
+        "mal" : "Mal",
+        "muitoMal" : "Muito Mal"
+    },
+    "tabSintomas" : {
+        "titulo" : "Escolha um Sintoma",
+        "febre" : "Febre",
+        "tosse" : "Tosse",
+        "dorDeGarganta" : "Dor de Garganta",
+        "faltaDeAr" : "Falta de ar",
+        "nauseaVomitos" : "Náusea e vômitos",
+        "diarreia" : "Diarréia",
+        "dorNasArticulacoes" : "Dor nas articulações",
+        "dorDeCabeça" : "Dor de cabeça",
+        "sangramento" : "Sangramento",
+        "manchasVermelhasNoCorpo" : "Manchas vermelhas no corpo"
+    },
+    "tabCidades" : {
+        "titulo" : "Cidade - sede / Estado"
+    }
 }

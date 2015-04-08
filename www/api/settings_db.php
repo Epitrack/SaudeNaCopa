@@ -15,8 +15,9 @@ $pass = 'appcopa2014';	// MySQL Password
 */
 
 $engine = 'mysql';
-$host = 'mysql.saudenacopa.com';	// MySQL Hostname
+$host = 'mysql.saudenacopa.epitrack.com.br';	// MySQL Hostname
 $database = 'saude_na_copa';	// MySQL Database
 $user = 'bd_saudecopa';	// MySQL Username
 $pass = 'appcopa2014';	// MySQL Password
 
+?>

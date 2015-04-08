@@ -1,180 +1,180 @@
 {
-	"app": {
-		"name" : "i18next"
-	},
-	"topo" : {
-		"principal" : "Copa Saludable 2014",
-		"webapp" : "Ir a la WebApp"
-	},
-	"login" : {
-		"login" : "Email",
-		"senha" : "Contraseña"
-	},
-	"nav" : {
-		"termos" : "condiciones",
-		"sobre" : "acerca de",
-		"problema" : "problema informe",
-		"contato" : "contacto"
-	},
-	"internal" : {
-		"title-internal" : "Bienvenido",
-		"botaoSair" : "Salida",
-		"content-sobre": "La aplicación de la Copa Saludable es un proyecto de vigilancia de la salud participativa durante la Copa Mundial de la FIFA 2014™. Esta aplicación está diseñada para todos aquellos que quieran contribuir voluntariamente al Sistema Nacional de Salud (SUS) para informar a su estado de salud. Vigilancia participativa se basa en las actualizaciones de la información que proporciona acerca de su estado de salud. Con el uso de la aplicación, además de contribuir a la salud de todos, usted recibirá información útil y aún así competir por premios al final del proyecto.",
-		"title-termos" : "TÉRMINOS DE USO",
-		"content-termos" : "La Copa App Salud es un proyecto de vigilancia de la salud participativa durante la FIFA 2014™ Copa del Mundo. Esta aplicación está diseñada para todos aquellos que deseen contribuir voluntariamente al Sistema Único de Salud (SUS) puede informar a su estado de salud. Función de vigilancia participativa basada en la información que usted proporciona la actualización de su estado de salud. Con la aplicación de uso, además de contribuir a la salud de todos, usted recibirá información útil y aún así competir por premios al final del proyecto.",
-		"title-reportar-problema": "Describa el problema en detalle.",
-		"send-success" : "",
-		"title-contato" : "Póngase en contacto con nosotros a través de este formulario"
-	},
-	"graphics" : {
-		"title-sintoma" : "Los síntomas de la ciudad",
-		"title-download" : "Descargar archivo",
-		"salvarMapa" : "Guardar Mapa",
-		"title-search-service" : "Resultados de la búsqueda de servicios de salud",
-		"title-contact-symptoms" : "Tuve contacto con ningún síntoma en los últimos 7 días."
-	},
-	"changePass": {
-		"title-change-pass" : "Cambiar su contraseña",
-		"title-hello" : "Hola,",
-		"sub-description" : "Rellene los campos de abajo para introducir una nueva contraseña.",
-		"novaSenha" : "Nueva contraseña",
-		"confirmarSenha" : "Confirmar nueva contraseña",
-		"mudarSenha" : "Cambiar contraseña"
-	},
-	"sobre" : {
-		"paragrafo01" : "La 'COPA SALUDABLE' es una aplicación web gratuita, diseñada para su uso en dispositivos móviles y navegadores web y es parte de un proyecto innovador para mejorar la vigilancia de la salud en el Sistema Único de Salud (SUS), llamada vigilancia participativa.",
-		"paragrafo02" : "Es un proceso simple que se basa en la participación voluntaria de los visitantes o residentes en Brasil, informando sobre su estado de salud durante de la Copa del Mundo FIFA Brasil 2014™. La 'COPA SALUDABLE' fue desarrollada en Portugués, Inglés y Español para ser un canal complementario de información y servicios de salud a los usuarios, lo que permite la participación de todos. Basta tener 13 años de edad o más  y aceptar los Términos de participación y utilización, informando periódicamente su estado de salud com las instrucciones disponibles en la aplicación.",
-		"paragrafo03" : "Este proyecto es una iniciativa de la Secretaría de Vigilancia en Salud, en colaboración con los Departamentos de Salud de las sedes de los partidos y otras instituciones nacionales e internacionales.",
-		"paragrafo04" : "Utilizada por primera vez en Brasil, la implementación de la estrategia de vigilancia participativa se producirá sin la inversión pública en el desarrollo de software. Para ello, a través de una asociación, la 'COPA SALUDABLE' está siendo desarrollada como software libre a través de la inversión de Skoll Global Threats Fund  y el apoyo operativo de la Training in Public Health Intervention Network (TEPHINET), ambas son organizaciones no gubernamentales  sin fines de lucro que actúan en la mejoría de la vigilancia de la salud en el mundo y las técnicas de Detección Digital de Enfermedades. El desarrollo tecnológico de la aplicación se realiza por medio de la startup Epitrack, con sede en Recife / Pernambuco.",
-		"paragrafo05" : "Esta asociación también incluye el apoyo técnico y el intercambio de experiencias con otras iniciativas adoptadas a nivel mundial como FluNearYou (flunearyou.org) eSaludBoricua (saludboricua.org ) creado y administrado por la ONG HealthMap ( healthmap.org ) del Hospital Infantil de Boston en colaboración con la Asociación Americana de Salud Pública ( apha.org ) y por la Skoll Global Threats Fund (skollglobalthreats.org) . Estas estrategias visan la vigilancia del síndrome de la gripe en los Estados Unidos de América (EE.UU.) y Canadá, el dengue, la leptospirosis y el síndrome de la gripe en Puerto Rico.",
-		"paragrafo06" : "La estrategia 'COPA SALUDABLE' es uno de los importantes legados para la salud pública que la Copa del Mundo FIFA Brasil 2014™ está incentivando. Esta estrategia se puede aplicar a otras iniciativas de interés público en el futuro. Una vez más el Sistema Único de Salud de Brasil demuestra su capacidad de innovación e inclusión social. Participa y comparte!"
-	},
-	"listaDeTermos" : {
-		"titulo01" : "SEPA MÁS SOBRE LA VIGILANCIA PARTICIPATIVA",
-		"paragrafo01" : "La Copa del Mundo FIFA Brasil 2014™ es uno de los mayores eventos deportivos del planeta y se estima que aproximadamente 3,7 millones de turistas, brasileños y extranjeros, deberán circular por las 12 sedes. Por esta razón, el Sistema Único de Salud (SUS) requiere mecanismos ágiles para identificar rápidamente la aparición de enfermedades que puedan afectar a los visitantes y / o residentes en estas ciudades.",
-		"paragrafo02" : "Si usted va a asistir a la Copa del Mundo FIFA Brasil 2014™  como un aficionado o un trabajador residente o no en las sedes de la copa o en Brasil, usted es el participante ideal para contribuir con el SUS por medio de la 'COPA SALUDABLE'. A partir del envío voluntario y  regular de información sobre su estado de salud, la vigilancia será capaz de describir el perfil de salud o de  enfermedades en las ciudades anfitrionas  de la copa durante todo el período del evento. Basta con instalar y registrarse para comenzar a participar en el reto divertido de cuidar de la salud de la ciudad, ganando puntos diariamente y desbloqueando etapas  en el juego.",
-		"paragrafo03" : "Su participación es una buena contribución para mejorar de la vigilancia de la salud en Brasil. En el registro no habrá identificación nominal y estará garantizada la privacidad del correo electrónico. No habrá contacto con usted de parte del sistema de salud; como resultado de la participación y la comunicación de su estado de salud no significa que usted tendrá una consulta médica.",
-		"paragrafo04" : "Es importante destacar que si usted dice que no se siente bien, se recomienda que consulte a su médico de cabecera o a los servicios de salud más cercanos a usted. Para ello, en la aplicación está disponible un acceso directo a la búsqueda pre-configurada de servicios de salud  y farmacias más cercanas a usted, basado en el servicio de geolocalización de su dispositivo móvil en Google Maps. Además, usted dispone de teléfonos útiles como el SAMU (Servicio de Atención Móvil de Urgencia ) cuya llamada es gratuita y funciona las 24 horas del día a las solicitudes de atención de urgencia para los casos de naturaleza traumática , clínica, pediátrica, quirúrgica , ginecológica - obstétrica y de salud mental, en los hogares, lugares de trabajo y vías públicas.",
-		"paragrafo05" : "Esperamos que se divierta al animar a su selección con las informaciones especialmente seleccionadas desde la página oficial de la FIFA y aprovechar  para saber más sobre cuidados simples de salud que le ayudarán a celebrar la victoria con la 'COPA SALUDABLE'."
-	},
-	"listaDeBeneficios" : {
-		"titulo01" : "VEA LOS BENEFICIOS DE SU PARTICIPACIÓN",
-		"item01" : "• Participar activamente de las acciones de vigilancia en salud que objetivan la prevención de enfermedades en la comunidad.",
-		"item02" : "• Acceder a los contactos de los servicios de utilidad pública, sin tener que alterar la agenda de su teléfono.",
-		"item03" : "• Acceder fácilmente a información útiles sobre el cuidado de la salud.",
-		"item04" : "• Aprovechar de las facilidades, tales como la búsqueda pre-configurada por los hospitales y farmacias más cercanas (20 km) en Google Maps, sin necesidad de abrir otra aplicación.",
-		"item05" : "• Conocer el perfil de salud de los participantes a través de la página web 'Copa Saludable' www.copasaludable2014.com",
-		"item06" : "•  Seguir el calendario de los juegos y los lugares de sus partidos favoritos."
-	},
-	"listaDeCustos" : {
-		"titulo01" : "COSTO",
-		"item01" : "• Descarga y participación: No hay ningún costo para obtener y participar en la 'COPA SALUDABLE'. ",
-		"item02" : "• Acceso a los servicios: sin costo: a través de los puntos de acceso gratuitos en locales con internet wi-fi en la ciudad, con costo: a través de su paquete de datos contratado.",
-		"item03" : "• Llamada telefónica: Los servicios públicos de referencia descritos en los teléfonos útiles se ofrecen a través de llamada gratuita, según información de la entidad responsable."
-	},
-	"politicaDePrivacidade" : {
-		"titulo01" : "POLÍTICA DE PRIVACIDAD",
-		"item01" : "La 'COPA SALUDABLE' se compromete a garantizar la privacidad de los participantes, com la preservación de la intimidad, de la vida privada, del honor y el imagen de las personas que participan en la iniciativa, así como con las libertades y garantías individuales.",
-		"item02" : "La política de privacidad de la 'COPA SALUDABLE ', explica: Qué información recogemos y por qué la recogemos, Cómo utilizar esta información.",
-		"titulo02" : "Información que recogemos",
-		"subTitulo01" : "La información proporcionada por usted:",
-		"item03" : "• Registro: las informaciones recogidas no permiten identificar personalmente a los participantes, no se pide el nombre, la dirección o cualquier documento. Las únicas informaciones que se solicitan en el registro son la dirección de correo electrónico válida que se necesita para la recuperación de contraseña, apellido, sexo y edad. Se le garantiza la privacidad del correo electrónico y el mismo no será utilizado para los mensajes que buscan el contacto con el participante. Ninguna de estas informaciones serán compartidas con terceros, excepto cuando sea requerido por la ley o en cumplimiento de una orden judicial.",
-		"item04" : "Durante el uso de la aplicación web: la información acerca de su estado de salud será proporcionada por usted durante todo el período de realización de la Copa del Mundo FIFA Brasil 2014™.",
-		"subTitulo02" : "Informaciones que solicitamos a partir el uso que usted hace de la aplicación web:",
-		"item05" : "Podemos recopilar información acerca de la ubicación de tu móvil a través de geolocalización, con el objetivo de ofrecerle búsqueda de los hospitales y farmacias cercanas e identificar la aparición de síntomas similares en grupos de personas en un área geográfica determinada.",
-		"titulo03" : "Cómo utilizamos estas informaciones",
-		"item06" : "Las informaciones proporcionadas por los usuarios sobre su estado de salud en su momento se utilizan para el análisis estadístico y para detectar, a tiempo el cambio del patrón epidemiológico local basado en los signos y síntomas notificados por los usuarios. Estos datos serán analizados y validados con base a otras fuentes de información como el Sistema de Información de Enfermedades de Notificación Obligatoria (SINAN ) o investigación local en la red de servicios de salud.",
-		"item07" : "Estos datos agregados pueden indicar la tendencia de la ocurrencia de las enfermedades en las ciudades sedes de la Copa del Mundo, permitiendo mayor agilidad en la adopción de medidas de control por las autoridades sanitarias. Estos datos no representan la magnitud real de casos de enfermedades específicas en una localidad y sólo son útiles como alerta temprana (early warning ), una vez que la mayor limitación de la vigilancia participativa es la validez de la información.",
-		"item08" : "Si una región, estado o país tiene un número muy limitado de participantes, sus informaciones no tendrán aplicación práctica en el proceso de vigilancia y no serán consideradas útiles para la salud pública. Por esta razón, se utilizarán solamente los datos donde sea observada concentración de información consolidada en el espacio (localidad, barrio o ciudad) y en el tiempo (hora, día o semana)."
-	},
-	"termos" : {
-		"paragrafo01" : "Por favor, lea estos términos  de uso antes de utilizar la 'COPA SALUDABLE', hacer cualquier colaboración o acceder o descargar cualquier información de esta aplicación.",
-		"paragrafo02" : "Al acceder o utilizar la 'COPA SALUDABLE', acepte y esté de acuerdo en cumplir los términos y condiciones establecidas en estos 'términos de uso'.",
-		"paragrafo03" : "Estos términos son un acuerdo vinculado entre usted y la 'COPA SALUDABLE', que incluye todo su acceso y uso de esta aplicación lo que incluye el uso de todas las informaciones, datos, herramientas, productos, servicios y otros contenidos disponibles por medio de este.",
-		"paragrafo04" : "Al utilizar esta aplicación, usted confirma que comprende y está de acuerdo con lo siguiente:",
-		"titulo01" : "Respeto a las Leyes",
-		"item01" : "El usuario deberá acceder a la 'COPA SALUDABLE' solamente para finalidades lícitas.",
-		"item02" : "El usuario se compromete a utilizar la aplicación solamente para los debidos fines y en conformidad con el presente término y limitaciones legales, como cualquier política aplicada en Brasil.",
-		"item03" : "Su acceso es prohíbido en territorios donde el contenido sea considerado ilegal. Aquellos que opten por acceder a este sitio web a partir de otras localidades lo harán por iniciativa propia y serán responsables por el cumplimiento de las leyes locales aplicables. Los materiales no deberán ser utilizados o exportados en incumplimiento de las leyes brasileñas. Cualquier pendencia en relación a los materiales será resuelta por las leyes brasileñas.",
-		"item04" : "La alteración no autorizada del contenido de este sitio web está expresamente prohibida.",
-		"titulo02" : "Límites de uso",
-		"item05" : "La utilización de la aplicación está indicada solamente para individuos de 13 años de edad o más.",
-		"titulo03" : "Responsabilidad por el contenido",
-		"item06" : "La 'COPA SALUDABLE' no es responsable por el contenido de cualquier información eventualmente intercambiadas entre los usuarios entre sí, o con la 'COPA SALUDABLE' sean ellas lícitas o ilícitas.",
-		"item07" : "El usuario se compromete que es el único responsable por su propia conducta y por la veracidad de las informaciones suministradas mientras utiliza el servicio y que es responsable por las consecuencias que resulten de la provisión intencional de datos incorrectos.",
-		"item08" : "El usuario se compromete que al utilizar la 'COPA SALUDABLE' no irá a publicar, enviar, distribuir o divulgar contenido o información de carácter difamatorio, obsceno o ilítico, inclusive informaciones de propiedad exclusiva pertenecientes a otras personas o empresas, bien como marcas registradas o informaciones protegidas por derechos autorales, sin la expresa autorización del titular de estos derechos.",
-		"item09" : "Nadie puede actuar a su nombre en el uso de la “COPA SALUDABLE”. Usted es responsable por el contenido que individuos no autorizados produzcan al utilizar esta aplicación utilizando con su permiso y su perfil cadastrado. Esta regla no se aplica a los casos de violación u otros problemas de seguridad de aplicación.",
-		"titulo04" : "Accesibilidad al contenido",
-		"item10" : "El equipo de la 'COPA SALUDABLE' no garantiza que esta aplicación esté parcial o completamente funcional para la utilización fuera de las areas relacionadas a la COPA DEL MUNDO FIFA 2014™, que incluye las ciudades anfitrionas y municipios próximos.",
-		"item11" : "De la misma forma no garantiza que cualquier contenido esté apropiado o disponible para uso fuera del territorio nacional. Si usted opta por acceder el Webapp y la aplicación de otras localidades, usted lo hará por su propia iniciativa y a su propio riesgo. Usted es responsable por el cumplimiento de las leyes locales, y en la medida en que leyes locales sean aplicables. Usted se compromete específicamente en cumplir todas las leyes aplicables relativas a la transmisión de datos técnicos exportados a partir de este local.",
-		"titulo05" : "Propiedad intelectual",
-		"item12" : "El equipo de la 'COPA SALUDABLE' y sus colaboradores, son titulares del derecho de autoría de los contenidos producidos y presentados en esta aplicación. Esta premisa no se aplica a las informaciones consideradas como de domino público o de utilidad pública. Todas las demás marcas comerciales, marcas de servicio, nombres y logotipos que aparecen en esta aplicación son propiedad de sus respectivos propietarios.",
-		"item13" : "La aplicación 'COPA SALUDABLE' es un software open source cuyo uso por terceros se somete a los términos de la licencia internacional GNU PublicLicense, versión 3 (GPL-3.0). Los derechos de uso del contenido y  de los informes generados por el Webapp y por la aplicación son cedidos por los desarrolladores, especialmente los que se derivan de las condiciones de la licencia CreativeCommons - Atribución-No Comercial 4.0 Internacional",
-		"item14" : "Sólo los informes de los servicios de salud de cada ciudad anfitriona deben considerarse oficiales para la divulgación pública de los datos relativos a este tema. Ninguna información derivada de la 'COPA SALUDABLE' , a pesar del compromiso del personal para garantizar la calidad , la puntualidad y la autenticidad de la información, se considerará oficial para la divulgación pública. Los datos recogidos a través de la 'COPA SALUDABLE' , provienen de un público objetivo específico que se puede ver afectado por la capacidad de acceso a dispositivos móviles o computadoras con especificaciones de tecnología mínima. Así, las informaciones generadas a partir de esta estrategia no necesariamente coincidirán con la expresión real del patrón epidemiológico de aquel periodo y lugar. Las informaciones de utilidad recreativa o pública podrán presentar cierta inexactitud o errores en la actualización, siendo recomendada su validación por parte de los usuarios en caso de urgencia y de emergencia o cualquier otra situación de riesgo para su salud o su integridad.",
-		"titulo06" : "Leyes, reglamentos, derechos y deberes",
-		"item15" : "Es política del equipo 'COPA SALUDABLE' cumplir con todas las leyes y reglamentos aplicables, que pueden ser modificados de tiempos en tiempos. En el caso de que cualquier disposición de estos Términos de Uso esté en conflicto con cualquier ley o reglamento aplicable, la ley o reglamentación aplicable anula el contrario.",
-		"item16" : "Estos Términos de uso y la utilización de la 'COPA SALUDABLE' son y serán regidos e interpretados de acuerdo con las leyes internas de Brasil , sin considerar sus reglas de conflicto de leyes. En caso de cualquier conflicto entre las leyes, normas y reglamentos extranjeros con las de Brasil, las leyes, normas y reglamentos de Brasil prevalecerán.",
-		"item17" : "La 'COPA SALUDABLE' puede, pero no está obligada, a monitorear, revisar y restringir el acceso a cualquiera de sus áreas en las que los usuarios transmitan información, pudiendo retirar del aire o retirar el acceso a estas informaciones o comunicaciones.",
-		"item18" : "Si usted tiene alguna duda con respecto a la'COPA SALUDABLE', no dude en contactarnos contato@saudenacopa.com.",
-		"titulo07" : "El uso de las contribuciones",
-		"item19" : "Al enviar una contribución escrita o postar informaciones en la 'COPA SALUDABLE' usted otorga una licencia perpetua, exenta de royalties, licencia incondicional para esta aplicación y cualquier organización sucesora, a publicar su contribución en la 'COPA SALUDABLE' , bien como divulgarlas de forma agregada (nunca individual) a otros medios de comunicación, y para discutir o hacer referencia a ella en cualquier publicación resultante de la 'COPA SALUDABLE'.",
-		"item20" : "También aceptará que la 'COPA SALUDABLE' tiene el derecho pero no la obligación, de editar o eliminar cualquier aportación, o incluirla en el texto junto con otras contribuciones a la discreción del personal de 'COPA SALUDABLE'.",
-		"titulo08" : "Garantía de Confidencialidad y Anonimato",
-		"item21" : "Se garantizará la confidencialidad y el anonimato de todas las informaciones producidas por usted en la 'COPA SALUDABLE' excepto cuando sea requerido por la ley, o para hacer frente a los problemas de incumplimiento.",
-		"item22" : "Nos reservamos el derecho a utilizar esta información internamente y, en ese ámbito, su contribución se vinculará con el username de su elección. La 'COPA SALUDABLE' , sus colaboradores y usuarios, incluidos los organismos gubernamentales y no gubernamentales, depeden de los usuarios para la exactitud de las contribuciones. El personal no es responsable por errores o inexactitudes en cualquier presentación. Tergiversación deliberada por un usuario puede ser una violación de la ley, y en el caso que sea seria, será comunicada a las autoridades gubernamentales correspondientes.",
-		"titulo09" : "Actualización de la 'COPA SALUDABLE'",
-		"item23" : "Pueden ocurrir modificaciones de esta aplicación y sus términos de uso. A menos que especifique lo contrario, el uso del Webapp y de la aplicación indica la plena aceptación de las términos de uso en la versión actual cada vez que usted utilize la 'COPA SALUDABLE' . Manténgase atento a las actualizaciones y, en caso de duda, los presentes Términos de Uso estarán siempre disponibles para el acceso y la concordancia o no.",
-		"titulo10" : "Responsabilidad por acciones con base en el contenido",
-		"item24" : "La'COPA SALUDABLE' no asume ninguna responsabilidad por cualquier lesión y/o daño a personas o bienes, como consecuencia de cualquier uso de las ideas, contenidos, instrucciones, métodos, productos o procedimientos que figuran en esta aplicación.",
-		"item25" : "En ningún caso los profesionales involucrados en el desarrollo o administración de esta aplicación serán responsabilizados por cualquier decisión o acción tomada por usted sobre la base de dicho contenido.",
-		"item26" : "Frente a las amenazas o cualquier otro riesgo para su salud o su integridad buscar siempre orientaciones validadas y actualizadas por los servicios locales de salud pública relacionados con cada ciudad anfitriona.",
-		"titulo11" : "Responsabilidad por problemas tecnológicos",
-		"item27" : "Eventualmente todo el contenido o cualquier parte de la'COPA SALUDABLE' puede no estar disponible y puede no funcionar adecuadamente en cualquier momento. Hacemos todo lo posible para evitar problemas tecnológicos, pero puede ocurrir en esta aplicación problemas  tecnológicos de diferentes naturalezas, tales como virus, rutinas de programación perjudiciales o problemas relacionados al dispositivo.",
-		"item28" : "El  Webapp y la aplicación son proporcionadas ‘tal cual’ y 'según disponibilidad'. Sin limitar nuestro aviso general, no podemos garantizar la disponibilidad, integridad, puntualidad, la funcionalidad, la fiabilidad, la secuenciación y la rapidez de la entrega en esta aplicación, o de cualquier parte de los contenidos.",
-		"item29" : "La 'COPA SALUDABLE' no se responsabiliza de ningún daño o perjuicio causado por el desempeño o fallo de desempeño de toda o cualquier parte de la aplicación. La 'COPA SALUDABLE' no se responsabiliza de los defectos, demoras o errores que resulten del uso de esta aplicación.",
-		"item30" : "El uso de todas las funcionalidades de la 'COPA SALUDABLE' requiere la disponibilidad de acceso a internet por el usuario, por wifi o cable de datos de la red. La ausencia de este requisito puede limitar la utilización de la aplicación con todo su potencial de uso . El personal de la'COPA SALUDABLE' , teniendo en cuenta esta advertencia no asume responsabilidad alguna por tal limitación.",
-		"item31" : "Esta renuncia de responsabilidad se aplica a todos y cualquier daño o lesiones, incluyendo los causados ​​por cualquier falla de rendimiento, error, omisión, interrupción, eliminación, defecto, retraso en la operación o transmisión, virus de computadora, falla en la línea de comunicación, robo, destrucción o acceso no autorizado, alteración o uso de cualquier propiedad, ya sea por incumplimiento de contrato, comportamiento ilícito, negligencia o cualquier otra causa de acción.",
-		"titulo12" : "Responsabilidad por informaciones de terceros",
-		"item32" : "La disponibilidad a través del Webapp y de la aplicación de enlaces y referencias para  otros sitios web, publicaciones o recursos de información no constituyen recomendación de esos sitios web o de sus recursos por parte de la 'COPA SALUDABLE' , de sus agentes o representantes. El personal de la 'COPA SALUDABLE' no hace representaciones o afirmaciones en cuanto a la calidad, el contenido y precisión de las informaciones, servicios o productos que puedan ser proporcionados por los recursos, y específicamente se renuncia a cualquier garantía incluyendo pero no restricto a las garantías implícitas o expresas de comerciabilidad o adecuación para cualquier utilización particular, aplicación o finalidad.",
-		"titulo13" : "Consideraciones finales",
-		"item33" : "El acceso al servicio representa la aceptación expresa y sin reservas de los Términos de uso mencionados. Al aceptar estos términos usted otorga una licencia perpetua, libre de royalties, licencia incondicional para la 'COPA SALUDABLE' , Ministerio de Salud y todas las organizaciones sucesoras para publicar su contribución en conjunto,  en la propia  aplicación bien como divulgarlas a otros servicios relacionados con la vigilancia de la salud pública. Usted también acepta que 'COPA SALUDABLE' tiene el derecho pero no la obligación de editar o eliminar cualquier aportación a criterio exclusivo del personal de la 'COPA SALUDABLE'."
-	},
-	"reportarProblema" : {
-		"textArea" : "Describir algunos problema que enfrentan aquí",
-		"captcha" : "Introduzca el código de lado",
-		"enviar" : "Enviar"
-	},
-	"contato" : {
-		"nome" : "Nombre/Apellido",
-		"email" : "Email",
-		"telefone" : "Teléfono",
-		"assunto" : "Sujeto",
-		"mensagem" : "Escriba aquí su mensaje",
-		"captcha" : "Introduzca el código de lado",
-		"enviarContato" : "Enviar"
-	},
-	"legendas" : {
-		"titulo" : "Subtítulos",
-		"voce" : "Usted",
-		"muitoBem" : "Muy Bien",
-		"bem" : "Bien",
-		"mal" : "Mal",
-		"muitoMal" : "Muy Mal"
-	},
-	"tabSintomas" : {
-		"titulo" : "Elegir un Síntoma",
-		"febre" : "Fiebre",
-		"tosse" : "Tos",
-		"dorDeGarganta" : "Dolor de garganta",
-		"faltaDeAr" : "Dificultad para respirar",
-		"nauseaVomitos" : "Náuseas y vómitos",
-		"diarreia" : "Diarrea",
-		"dorNasArticulacoes" : "Dolor en las articulaciones",
-		"dorDeCabeça" : "Dolor de cabeza",
-		"sangramento" : "Sangrado",
-		"manchasVermelhasNoCorpo" : "Manchas rojas en el cuerpo"
-	},
-	"tabCidades" : {
-		"titulo" : "Ciudad - lugar / Estado"
-	}
+    "app": {
+        "name" : "i18next"
+    },
+    "topo" : {
+        "principal" : "Copa Saludable 2014",
+        "webapp" : "Ir a la WebApp"
+    },
+    "login" : {
+        "login" : "Email",
+        "senha" : "Contraseña"
+    },
+    "nav" : {
+        "termos" : "condiciones",
+        "sobre" : "acerca de",
+        "problema" : "problema informe",
+        "contato" : "contacto"
+    },
+    "internal" : {
+        "title-internal" : "Bienvenido",
+        "botaoSair" : "Salida",
+        "content-sobre": "La aplicación de la Copa Saludable es un proyecto de vigilancia de la salud participativa durante la Copa Mundial de la FIFA 2014™. Esta aplicación está diseñada para todos aquellos que quieran contribuir voluntariamente al Sistema Nacional de Salud (SUS) para informar a su estado de salud. Vigilancia participativa se basa en las actualizaciones de la información que proporciona acerca de su estado de salud. Con el uso de la aplicación, además de contribuir a la salud de todos, usted recibirá información útil y aún así competir por premios al final del proyecto.",
+        "title-termos" : "TÉRMINOS DE USO",
+        "content-termos" : "La Copa App Salud es un proyecto de vigilancia de la salud participativa durante la FIFA 2014™ Copa del Mundo. Esta aplicación está diseñada para todos aquellos que deseen contribuir voluntariamente al Sistema Único de Salud (SUS) puede informar a su estado de salud. Función de vigilancia participativa basada en la información que usted proporciona la actualización de su estado de salud. Con la aplicación de uso, además de contribuir a la salud de todos, usted recibirá información útil y aún así competir por premios al final del proyecto.",
+        "title-reportar-problema": "Describa el problema en detalle.",
+        "send-success" : "",
+        "title-contato" : "Póngase en contacto con nosotros a través de este formulario"
+    },
+    "graphics" : {
+        "title-sintoma" : "Los síntomas de la ciudad",
+        "title-download" : "Descargar archivo",
+        "salvarMapa" : "Guardar Mapa",
+        "title-search-service" : "Resultados de la búsqueda de servicios de salud",
+        "title-contact-symptoms" : "Tuve contacto con ningún síntoma en los últimos 7 días."
+    },
+    "changePass": {
+        "title-change-pass" : "Cambiar su contraseña",
+        "title-hello" : "Hola,",
+        "sub-description" : "Rellene los campos de abajo para introducir una nueva contraseña.",
+        "novaSenha" : "Nueva contraseña",
+        "confirmarSenha" : "Confirmar nueva contraseña",
+        "mudarSenha" : "Cambiar contraseña"
+    },
+    "sobre" : {
+        "paragrafo01" : "La 'COPA SALUDABLE' es una aplicación web gratuita, diseñada para su uso en dispositivos móviles y navegadores web y es parte de un proyecto innovador para mejorar la vigilancia de la salud en el Sistema Único de Salud (SUS), llamada vigilancia participativa.",
+        "paragrafo02" : "Es un proceso simple que se basa en la participación voluntaria de los visitantes o residentes en Brasil, informando sobre su estado de salud durante de la Copa del Mundo FIFA Brasil 2014™. La 'COPA SALUDABLE' fue desarrollada en Portugués, Inglés y Español para ser un canal complementario de información y servicios de salud a los usuarios, lo que permite la participación de todos. Basta tener 13 años de edad o más  y aceptar los Términos de participación y utilización, informando periódicamente su estado de salud com las instrucciones disponibles en la aplicación.",
+        "paragrafo03" : "Este proyecto es una iniciativa de la Secretaría de Vigilancia en Salud, en colaboración con los Departamentos de Salud de las sedes de los partidos y otras instituciones nacionales e internacionales.",
+        "paragrafo04" : "Utilizada por primera vez en Brasil, la implementación de la estrategia de vigilancia participativa se producirá sin la inversión pública en el desarrollo de software. Para ello, a través de una asociación, la 'COPA SALUDABLE' está siendo desarrollada como software libre a través de la inversión de Skoll Global Threats Fund  y el apoyo operativo de la Training in Public Health Intervention Network (TEPHINET), ambas son organizaciones no gubernamentales  sin fines de lucro que actúan en la mejoría de la vigilancia de la salud en el mundo y las técnicas de Detección Digital de Enfermedades. El desarrollo tecnológico de la aplicación se realiza por medio de la startup Epitrack, con sede en Recife / Pernambuco.",
+        "paragrafo05" : "Esta asociación también incluye el apoyo técnico y el intercambio de experiencias con otras iniciativas adoptadas a nivel mundial como FluNearYou (flunearyou.org) eSaludBoricua (saludboricua.org ) creado y administrado por la ONG HealthMap ( healthmap.org ) del Hospital Infantil de Boston en colaboración con la Asociación Americana de Salud Pública ( apha.org ) y por la Skoll Global Threats Fund (skollglobalthreats.org) . Estas estrategias visan la vigilancia del síndrome de la gripe en los Estados Unidos de América (EE.UU.) y Canadá, el dengue, la leptospirosis y el síndrome de la gripe en Puerto Rico.",
+        "paragrafo06" : "La estrategia 'COPA SALUDABLE' es uno de los importantes legados para la salud pública que la Copa del Mundo FIFA Brasil 2014™ está incentivando. Esta estrategia se puede aplicar a otras iniciativas de interés público en el futuro. Una vez más el Sistema Único de Salud de Brasil demuestra su capacidad de innovación e inclusión social. Participa y comparte!"
+    },
+    "listaDeTermos" : {
+        "titulo01" : "SEPA MÁS SOBRE LA VIGILANCIA PARTICIPATIVA",
+        "paragrafo01" : "La Copa del Mundo FIFA Brasil 2014™ es uno de los mayores eventos deportivos del planeta y se estima que aproximadamente 3,7 millones de turistas, brasileños y extranjeros, deberán circular por las 12 sedes. Por esta razón, el Sistema Único de Salud (SUS) requiere mecanismos ágiles para identificar rápidamente la aparición de enfermedades que puedan afectar a los visitantes y / o residentes en estas ciudades.",
+        "paragrafo02" : "Si usted va a asistir a la Copa del Mundo FIFA Brasil 2014™  como un aficionado o un trabajador residente o no en las sedes de la copa o en Brasil, usted es el participante ideal para contribuir con el SUS por medio de la 'COPA SALUDABLE'. A partir del envío voluntario y  regular de información sobre su estado de salud, la vigilancia será capaz de describir el perfil de salud o de  enfermedades en las ciudades anfitrionas  de la copa durante todo el período del evento. Basta con instalar y registrarse para comenzar a participar en el reto divertido de cuidar de la salud de la ciudad, ganando puntos diariamente y desbloqueando etapas  en el juego.",
+        "paragrafo03" : "Su participación es una buena contribución para mejorar de la vigilancia de la salud en Brasil. En el registro no habrá identificación nominal y estará garantizada la privacidad del correo electrónico. No habrá contacto con usted de parte del sistema de salud; como resultado de la participación y la comunicación de su estado de salud no significa que usted tendrá una consulta médica.",
+        "paragrafo04" : "Es importante destacar que si usted dice que no se siente bien, se recomienda que consulte a su médico de cabecera o a los servicios de salud más cercanos a usted. Para ello, en la aplicación está disponible un acceso directo a la búsqueda pre-configurada de servicios de salud  y farmacias más cercanas a usted, basado en el servicio de geolocalización de su dispositivo móvil en Google Maps. Además, usted dispone de teléfonos útiles como el SAMU (Servicio de Atención Móvil de Urgencia ) cuya llamada es gratuita y funciona las 24 horas del día a las solicitudes de atención de urgencia para los casos de naturaleza traumática , clínica, pediátrica, quirúrgica , ginecológica - obstétrica y de salud mental, en los hogares, lugares de trabajo y vías públicas.",
+        "paragrafo05" : "Esperamos que se divierta al animar a su selección con las informaciones especialmente seleccionadas desde la página oficial de la FIFA y aprovechar  para saber más sobre cuidados simples de salud que le ayudarán a celebrar la victoria con la 'COPA SALUDABLE'."
+    },
+    "listaDeBeneficios" : {
+        "titulo01" : "VEA LOS BENEFICIOS DE SU PARTICIPACIÓN",
+        "item01" : "• Participar activamente de las acciones de vigilancia en salud que objetivan la prevención de enfermedades en la comunidad.",
+        "item02" : "• Acceder a los contactos de los servicios de utilidad pública, sin tener que alterar la agenda de su teléfono.",
+        "item03" : "• Acceder fácilmente a información útiles sobre el cuidado de la salud.",
+        "item04" : "• Aprovechar de las facilidades, tales como la búsqueda pre-configurada por los hospitales y farmacias más cercanas (20 km) en Google Maps, sin necesidad de abrir otra aplicación.",
+        "item05" : "• Conocer el perfil de salud de los participantes a través de la página web 'Copa Saludable' www.copasaludable2014.com",
+        "item06" : "•  Seguir el calendario de los juegos y los lugares de sus partidos favoritos."
+    },
+    "listaDeCustos" : {
+        "titulo01" : "COSTO",
+        "item01" : "• Descarga y participación: No hay ningún costo para obtener y participar en la 'COPA SALUDABLE'. ",
+        "item02" : "• Acceso a los servicios: sin costo: a través de los puntos de acceso gratuitos en locales con internet wi-fi en la ciudad, con costo: a través de su paquete de datos contratado.",
+        "item03" : "• Llamada telefónica: Los servicios públicos de referencia descritos en los teléfonos útiles se ofrecen a través de llamada gratuita, según información de la entidad responsable."
+    },
+    "politicaDePrivacidade" : {
+        "titulo01" : "POLÍTICA DE PRIVACIDAD",
+        "item01" : "La 'COPA SALUDABLE' se compromete a garantizar la privacidad de los participantes, com la preservación de la intimidad, de la vida privada, del honor y el imagen de las personas que participan en la iniciativa, así como con las libertades y garantías individuales.",
+        "item02" : "La política de privacidad de la 'COPA SALUDABLE ', explica: Qué información recogemos y por qué la recogemos, Cómo utilizar esta información.",
+        "titulo02" : "Información que recogemos",
+        "subTitulo01" : "La información proporcionada por usted:",
+        "item03" : "• Registro: las informaciones recogidas no permiten identificar personalmente a los participantes, no se pide el nombre, la dirección o cualquier documento. Las únicas informaciones que se solicitan en el registro son la dirección de correo electrónico válida que se necesita para la recuperación de contraseña, apellido, sexo y edad. Se le garantiza la privacidad del correo electrónico y el mismo no será utilizado para los mensajes que buscan el contacto con el participante. Ninguna de estas informaciones serán compartidas con terceros, excepto cuando sea requerido por la ley o en cumplimiento de una orden judicial.",
+        "item04" : "Durante el uso de la aplicación web: la información acerca de su estado de salud será proporcionada por usted durante todo el período de realización de la Copa del Mundo FIFA Brasil 2014™.",
+        "subTitulo02" : "Informaciones que solicitamos a partir el uso que usted hace de la aplicación web:",
+        "item05" : "Podemos recopilar información acerca de la ubicación de tu móvil a través de geolocalización, con el objetivo de ofrecerle búsqueda de los hospitales y farmacias cercanas e identificar la aparición de síntomas similares en grupos de personas en un área geográfica determinada.",
+        "titulo03" : "Cómo utilizamos estas informaciones",
+        "item06" : "Las informaciones proporcionadas por los usuarios sobre su estado de salud en su momento se utilizan para el análisis estadístico y para detectar, a tiempo el cambio del patrón epidemiológico local basado en los signos y síntomas notificados por los usuarios. Estos datos serán analizados y validados con base a otras fuentes de información como el Sistema de Información de Enfermedades de Notificación Obligatoria (SINAN ) o investigación local en la red de servicios de salud.",
+        "item07" : "Estos datos agregados pueden indicar la tendencia de la ocurrencia de las enfermedades en las ciudades sedes de la Copa del Mundo, permitiendo mayor agilidad en la adopción de medidas de control por las autoridades sanitarias. Estos datos no representan la magnitud real de casos de enfermedades específicas en una localidad y sólo son útiles como alerta temprana (early warning ), una vez que la mayor limitación de la vigilancia participativa es la validez de la información.",
+        "item08" : "Si una región, estado o país tiene un número muy limitado de participantes, sus informaciones no tendrán aplicación práctica en el proceso de vigilancia y no serán consideradas útiles para la salud pública. Por esta razón, se utilizarán solamente los datos donde sea observada concentración de información consolidada en el espacio (localidad, barrio o ciudad) y en el tiempo (hora, día o semana)."
+    },
+    "termos" : {
+        "paragrafo01" : "Por favor, lea estos términos  de uso antes de utilizar la 'COPA SALUDABLE', hacer cualquier colaboración o acceder o descargar cualquier información de esta aplicación.",
+        "paragrafo02" : "Al acceder o utilizar la 'COPA SALUDABLE', acepte y esté de acuerdo en cumplir los términos y condiciones establecidas en estos 'términos de uso'.",
+        "paragrafo03" : "Estos términos son un acuerdo vinculado entre usted y la 'COPA SALUDABLE', que incluye todo su acceso y uso de esta aplicación lo que incluye el uso de todas las informaciones, datos, herramientas, productos, servicios y otros contenidos disponibles por medio de este.",
+        "paragrafo04" : "Al utilizar esta aplicación, usted confirma que comprende y está de acuerdo con lo siguiente:",
+        "titulo01" : "Respeto a las Leyes",
+        "item01" : "El usuario deberá acceder a la 'COPA SALUDABLE' solamente para finalidades lícitas.",
+        "item02" : "El usuario se compromete a utilizar la aplicación solamente para los debidos fines y en conformidad con el presente término y limitaciones legales, como cualquier política aplicada en Brasil.",
+        "item03" : "Su acceso es prohíbido en territorios donde el contenido sea considerado ilegal. Aquellos que opten por acceder a este sitio web a partir de otras localidades lo harán por iniciativa propia y serán responsables por el cumplimiento de las leyes locales aplicables. Los materiales no deberán ser utilizados o exportados en incumplimiento de las leyes brasileñas. Cualquier pendencia en relación a los materiales será resuelta por las leyes brasileñas.",
+        "item04" : "La alteración no autorizada del contenido de este sitio web está expresamente prohibida.",
+        "titulo02" : "Límites de uso",
+        "item05" : "La utilización de la aplicación está indicada solamente para individuos de 13 años de edad o más.",
+        "titulo03" : "Responsabilidad por el contenido",
+        "item06" : "La 'COPA SALUDABLE' no es responsable por el contenido de cualquier información eventualmente intercambiadas entre los usuarios entre sí, o con la 'COPA SALUDABLE' sean ellas lícitas o ilícitas.",
+        "item07" : "El usuario se compromete que es el único responsable por su propia conducta y por la veracidad de las informaciones suministradas mientras utiliza el servicio y que es responsable por las consecuencias que resulten de la provisión intencional de datos incorrectos.",
+        "item08" : "El usuario se compromete que al utilizar la 'COPA SALUDABLE' no irá a publicar, enviar, distribuir o divulgar contenido o información de carácter difamatorio, obsceno o ilítico, inclusive informaciones de propiedad exclusiva pertenecientes a otras personas o empresas, bien como marcas registradas o informaciones protegidas por derechos autorales, sin la expresa autorización del titular de estos derechos.",
+        "item09" : "Nadie puede actuar a su nombre en el uso de la “COPA SALUDABLE”. Usted es responsable por el contenido que individuos no autorizados produzcan al utilizar esta aplicación utilizando con su permiso y su perfil cadastrado. Esta regla no se aplica a los casos de violación u otros problemas de seguridad de aplicación.",
+        "titulo04" : "Accesibilidad al contenido",
+        "item10" : "El equipo de la 'COPA SALUDABLE' no garantiza que esta aplicación esté parcial o completamente funcional para la utilización fuera de las areas relacionadas a la COPA DEL MUNDO FIFA 2014™, que incluye las ciudades anfitrionas y municipios próximos.",
+        "item11" : "De la misma forma no garantiza que cualquier contenido esté apropiado o disponible para uso fuera del territorio nacional. Si usted opta por acceder el Webapp y la aplicación de otras localidades, usted lo hará por su propia iniciativa y a su propio riesgo. Usted es responsable por el cumplimiento de las leyes locales, y en la medida en que leyes locales sean aplicables. Usted se compromete específicamente en cumplir todas las leyes aplicables relativas a la transmisión de datos técnicos exportados a partir de este local.",
+        "titulo05" : "Propiedad intelectual",
+        "item12" : "El equipo de la 'COPA SALUDABLE' y sus colaboradores, son titulares del derecho de autoría de los contenidos producidos y presentados en esta aplicación. Esta premisa no se aplica a las informaciones consideradas como de domino público o de utilidad pública. Todas las demás marcas comerciales, marcas de servicio, nombres y logotipos que aparecen en esta aplicación son propiedad de sus respectivos propietarios.",
+        "item13" : "La aplicación 'COPA SALUDABLE' es un software open source cuyo uso por terceros se somete a los términos de la licencia internacional GNU PublicLicense, versión 3 (GPL-3.0). Los derechos de uso del contenido y  de los informes generados por el Webapp y por la aplicación son cedidos por los desarrolladores, especialmente los que se derivan de las condiciones de la licencia CreativeCommons - Atribución-No Comercial 4.0 Internacional",
+        "item14" : "Sólo los informes de los servicios de salud de cada ciudad anfitriona deben considerarse oficiales para la divulgación pública de los datos relativos a este tema. Ninguna información derivada de la 'COPA SALUDABLE' , a pesar del compromiso del personal para garantizar la calidad , la puntualidad y la autenticidad de la información, se considerará oficial para la divulgación pública. Los datos recogidos a través de la 'COPA SALUDABLE' , provienen de un público objetivo específico que se puede ver afectado por la capacidad de acceso a dispositivos móviles o computadoras con especificaciones de tecnología mínima. Así, las informaciones generadas a partir de esta estrategia no necesariamente coincidirán con la expresión real del patrón epidemiológico de aquel periodo y lugar. Las informaciones de utilidad recreativa o pública podrán presentar cierta inexactitud o errores en la actualización, siendo recomendada su validación por parte de los usuarios en caso de urgencia y de emergencia o cualquier otra situación de riesgo para su salud o su integridad.",
+        "titulo06" : "Leyes, reglamentos, derechos y deberes",
+        "item15" : "Es política del equipo 'COPA SALUDABLE' cumplir con todas las leyes y reglamentos aplicables, que pueden ser modificados de tiempos en tiempos. En el caso de que cualquier disposición de estos Términos de Uso esté en conflicto con cualquier ley o reglamento aplicable, la ley o reglamentación aplicable anula el contrario.",
+        "item16" : "Estos Términos de uso y la utilización de la 'COPA SALUDABLE' son y serán regidos e interpretados de acuerdo con las leyes internas de Brasil , sin considerar sus reglas de conflicto de leyes. En caso de cualquier conflicto entre las leyes, normas y reglamentos extranjeros con las de Brasil, las leyes, normas y reglamentos de Brasil prevalecerán.",
+        "item17" : "La 'COPA SALUDABLE' puede, pero no está obligada, a monitorear, revisar y restringir el acceso a cualquiera de sus áreas en las que los usuarios transmitan información, pudiendo retirar del aire o retirar el acceso a estas informaciones o comunicaciones.",
+        "item18" : "Si usted tiene alguna duda con respecto a la'COPA SALUDABLE', no dude en contactarnos contato@saudenacopa.epitrack.com.br.",
+        "titulo07" : "El uso de las contribuciones",
+        "item19" : "Al enviar una contribución escrita o postar informaciones en la 'COPA SALUDABLE' usted otorga una licencia perpetua, exenta de royalties, licencia incondicional para esta aplicación y cualquier organización sucesora, a publicar su contribución en la 'COPA SALUDABLE' , bien como divulgarlas de forma agregada (nunca individual) a otros medios de comunicación, y para discutir o hacer referencia a ella en cualquier publicación resultante de la 'COPA SALUDABLE'.",
+        "item20" : "También aceptará que la 'COPA SALUDABLE' tiene el derecho pero no la obligación, de editar o eliminar cualquier aportación, o incluirla en el texto junto con otras contribuciones a la discreción del personal de 'COPA SALUDABLE'.",
+        "titulo08" : "Garantía de Confidencialidad y Anonimato",
+        "item21" : "Se garantizará la confidencialidad y el anonimato de todas las informaciones producidas por usted en la 'COPA SALUDABLE' excepto cuando sea requerido por la ley, o para hacer frente a los problemas de incumplimiento.",
+        "item22" : "Nos reservamos el derecho a utilizar esta información internamente y, en ese ámbito, su contribución se vinculará con el username de su elección. La 'COPA SALUDABLE' , sus colaboradores y usuarios, incluidos los organismos gubernamentales y no gubernamentales, depeden de los usuarios para la exactitud de las contribuciones. El personal no es responsable por errores o inexactitudes en cualquier presentación. Tergiversación deliberada por un usuario puede ser una violación de la ley, y en el caso que sea seria, será comunicada a las autoridades gubernamentales correspondientes.",
+        "titulo09" : "Actualización de la 'COPA SALUDABLE'",
+        "item23" : "Pueden ocurrir modificaciones de esta aplicación y sus términos de uso. A menos que especifique lo contrario, el uso del Webapp y de la aplicación indica la plena aceptación de las términos de uso en la versión actual cada vez que usted utilize la 'COPA SALUDABLE' . Manténgase atento a las actualizaciones y, en caso de duda, los presentes Términos de Uso estarán siempre disponibles para el acceso y la concordancia o no.",
+        "titulo10" : "Responsabilidad por acciones con base en el contenido",
+        "item24" : "La'COPA SALUDABLE' no asume ninguna responsabilidad por cualquier lesión y/o daño a personas o bienes, como consecuencia de cualquier uso de las ideas, contenidos, instrucciones, métodos, productos o procedimientos que figuran en esta aplicación.",
+        "item25" : "En ningún caso los profesionales involucrados en el desarrollo o administración de esta aplicación serán responsabilizados por cualquier decisión o acción tomada por usted sobre la base de dicho contenido.",
+        "item26" : "Frente a las amenazas o cualquier otro riesgo para su salud o su integridad buscar siempre orientaciones validadas y actualizadas por los servicios locales de salud pública relacionados con cada ciudad anfitriona.",
+        "titulo11" : "Responsabilidad por problemas tecnológicos",
+        "item27" : "Eventualmente todo el contenido o cualquier parte de la'COPA SALUDABLE' puede no estar disponible y puede no funcionar adecuadamente en cualquier momento. Hacemos todo lo posible para evitar problemas tecnológicos, pero puede ocurrir en esta aplicación problemas  tecnológicos de diferentes naturalezas, tales como virus, rutinas de programación perjudiciales o problemas relacionados al dispositivo.",
+        "item28" : "El  Webapp y la aplicación son proporcionadas ‘tal cual’ y 'según disponibilidad'. Sin limitar nuestro aviso general, no podemos garantizar la disponibilidad, integridad, puntualidad, la funcionalidad, la fiabilidad, la secuenciación y la rapidez de la entrega en esta aplicación, o de cualquier parte de los contenidos.",
+        "item29" : "La 'COPA SALUDABLE' no se responsabiliza de ningún daño o perjuicio causado por el desempeño o fallo de desempeño de toda o cualquier parte de la aplicación. La 'COPA SALUDABLE' no se responsabiliza de los defectos, demoras o errores que resulten del uso de esta aplicación.",
+        "item30" : "El uso de todas las funcionalidades de la 'COPA SALUDABLE' requiere la disponibilidad de acceso a internet por el usuario, por wifi o cable de datos de la red. La ausencia de este requisito puede limitar la utilización de la aplicación con todo su potencial de uso . El personal de la'COPA SALUDABLE' , teniendo en cuenta esta advertencia no asume responsabilidad alguna por tal limitación.",
+        "item31" : "Esta renuncia de responsabilidad se aplica a todos y cualquier daño o lesiones, incluyendo los causados ​​por cualquier falla de rendimiento, error, omisión, interrupción, eliminación, defecto, retraso en la operación o transmisión, virus de computadora, falla en la línea de comunicación, robo, destrucción o acceso no autorizado, alteración o uso de cualquier propiedad, ya sea por incumplimiento de contrato, comportamiento ilícito, negligencia o cualquier otra causa de acción.",
+        "titulo12" : "Responsabilidad por informaciones de terceros",
+        "item32" : "La disponibilidad a través del Webapp y de la aplicación de enlaces y referencias para  otros sitios web, publicaciones o recursos de información no constituyen recomendación de esos sitios web o de sus recursos por parte de la 'COPA SALUDABLE' , de sus agentes o representantes. El personal de la 'COPA SALUDABLE' no hace representaciones o afirmaciones en cuanto a la calidad, el contenido y precisión de las informaciones, servicios o productos que puedan ser proporcionados por los recursos, y específicamente se renuncia a cualquier garantía incluyendo pero no restricto a las garantías implícitas o expresas de comerciabilidad o adecuación para cualquier utilización particular, aplicación o finalidad.",
+        "titulo13" : "Consideraciones finales",
+        "item33" : "El acceso al servicio representa la aceptación expresa y sin reservas de los Términos de uso mencionados. Al aceptar estos términos usted otorga una licencia perpetua, libre de royalties, licencia incondicional para la 'COPA SALUDABLE' , Ministerio de Salud y todas las organizaciones sucesoras para publicar su contribución en conjunto,  en la propia  aplicación bien como divulgarlas a otros servicios relacionados con la vigilancia de la salud pública. Usted también acepta que 'COPA SALUDABLE' tiene el derecho pero no la obligación de editar o eliminar cualquier aportación a criterio exclusivo del personal de la 'COPA SALUDABLE'."
+    },
+    "reportarProblema" : {
+        "textArea" : "Describir algunos problema que enfrentan aquí",
+        "captcha" : "Introduzca el código de lado",
+        "enviar" : "Enviar"
+    },
+    "contato" : {
+        "nome" : "Nombre/Apellido",
+        "email" : "Email",
+        "telefone" : "Teléfono",
+        "assunto" : "Sujeto",
+        "mensagem" : "Escriba aquí su mensaje",
+        "captcha" : "Introduzca el código de lado",
+        "enviarContato" : "Enviar"
+    },
+    "legendas" : {
+        "titulo" : "Subtítulos",
+        "voce" : "Usted",
+        "muitoBem" : "Muy Bien",
+        "bem" : "Bien",
+        "mal" : "Mal",
+        "muitoMal" : "Muy Mal"
+    },
+    "tabSintomas" : {
+        "titulo" : "Elegir un Síntoma",
+        "febre" : "Fiebre",
+        "tosse" : "Tos",
+        "dorDeGarganta" : "Dolor de garganta",
+        "faltaDeAr" : "Dificultad para respirar",
+        "nauseaVomitos" : "Náuseas y vómitos",
+        "diarreia" : "Diarrea",
+        "dorNasArticulacoes" : "Dolor en las articulaciones",
+        "dorDeCabeça" : "Dolor de cabeza",
+        "sangramento" : "Sangrado",
+        "manchasVermelhasNoCorpo" : "Manchas rojas en el cuerpo"
+    },
+    "tabCidades" : {
+        "titulo" : "Ciudad - lugar / Estado"
+    }
 }

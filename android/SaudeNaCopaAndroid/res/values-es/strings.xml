@@ -3,8 +3,8 @@
 
      <!-- Data Atualização -->
     <string name="dt_atualizacao">Actualizado 25/05/2014</string>
-    
-    
+
+
     <string name="info_farmacias">La información sobre las farmacias son de google</string>
     <string name="texto_browser">La aplicación web se ve mejor en Google Chrome y Mozilla Firefox.</string>
     <!-- para traduzir -->
@@ -79,7 +79,7 @@
     <string name="min_agricultura">Ministério da Agricultura </string>
     <string name="portal_copa">Portal de la copa </string>
     <string name="app_gov">Aplicaciones del Gobierno Federal</string>
-    
+
     <!-- para traduzir -->
     <string name="selecione_um_sentimento">Seleccione al menos un síntoma.</string>
     <string name="informacoes">Información</string>
@@ -250,7 +250,7 @@
     <string name="sem_localizacao">Por favor, active los servicios de ubicación para enviar información.</string>
     <string name="desc_arena_amazonia">&#8226; Ubicación: Manaus - AM
 &#60;br&#62;&#60;br&#62;&#8226; Capacidad: 42.374
-&#60;br&#62;&#60;br&#62;&#8226; Arena: La arena tiene cuatro rampas de acceso, 98 baños, 420 reflectores y 85 cámaras de seguridad, además de más comodidad para todos, con 118 asientos para personas con movilidad reducida, 69 para obesos y 445 para acompañantes de personas con discapacidad. 
+&#60;br&#62;&#60;br&#62;&#8226; Arena: La arena tiene cuatro rampas de acceso, 98 baños, 420 reflectores y 85 cámaras de seguridad, además de más comodidad para todos, con 118 asientos para personas con movilidad reducida, 69 para obesos y 445 para acompañantes de personas con discapacidad.
 &#60;br&#62;&#60;br&#62;&#8226; Curiosidad: Con 83,5mil m² de area construida, la Arena Amazônia tuvo su arquitectura inspirada en un cesto de paja indígena cargado con frutas típicas de Brasil: melón, plátano, piña, naranja, mango, guayaba y papaya.
 &#60;br&#62;&#60;br&#62;&#8226; Dirección: Avenida Djalma Batista, 3637 – Flores, Manaus, Amazônia.
 &#60;br&#62;&#60;br&#62;&#8226; Sítio: http://arenadaamazonia.com.br/</string>
@@ -287,7 +287,7 @@
     <string name="desc_arena_dunas">&#8226; Ubicación: Natal - RN
 &#60;br&#62;&#60;br&#62;&#8226; Capacidad: 42.068
 &#60;br&#62;&#60;br&#62;&#8226; Estadio: El estadio tiene 10,6mil asientos desmontables, 21 puntos de acceso, 25 bares, 30 baños y 200 cámaras de seguridad.
-&#60;br&#62;&#60;br&#62;&#8226; Curiosidad: Estádio das Dunas fue proyectado para dar la idea del movimiento de las dunas de arenas, comunes en Natal, con fachada y techo integrados y compuestos de “20 pétalos”, más altos de un lado del estadio. El techo tiene un diseño que permite más ventilación e iluminación. 
+&#60;br&#62;&#60;br&#62;&#8226; Curiosidad: Estádio das Dunas fue proyectado para dar la idea del movimiento de las dunas de arenas, comunes en Natal, con fachada y techo integrados y compuestos de “20 pétalos”, más altos de un lado del estadio. El techo tiene un diseño que permite más ventilación e iluminación.
 &#60;br&#62;&#60;br&#62;&#8226; Dirección: Endereço: Avenida Prudente de Morais – Tirol, Natal, Rio Grande do Norte.
 &#60;br&#62;&#60;br&#62;&#8226; Sítio: http://www.arenadunas.com.br/</string>
     <string name="desc_arena_beira_rio">&#8226; Ubicación: Porto Alegre - RS
@@ -326,7 +326,7 @@
 			para su uso en dispositivos móviles y navegadores web y es parte de
 			un proyecto innovador para mejorar la vigilancia de la salud en el
 			Sistema Único de Salud (SUS), llamada vigilancia participativa.
-		
+
 
 		\n\nEs un proceso simple que se basa en la participación voluntaria
 			de los visitantes o residentes en Brasil, informando sobre su estado
@@ -390,7 +390,7 @@
 						comenzar a participar en el reto divertido de cuidar de la salud
 						de la ciudad, ganando puntos diariamente y desbloqueando etapas en
 						el juego.
-						
+
 						\n\nSu participación es una buena contribución para mejorar de
 						la vigilancia de la salud en Brasil. En el registro no habrá
 						identificación nominal y estará garantizada la privacidad del
@@ -398,7 +398,7 @@
 						sistema de salud; como resultado de la participación y la
 						comunicación de su estado de salud no significa que usted tendrá
 						una consulta médica.
-						
+
 						\n\nEs importante destacar que si usted dice que no se siente
 						bien, se recomienda que consulte a su médico de cabecera o a los
 						servicios de salud más cercanos a usted. Para ello, en la
@@ -423,13 +423,13 @@
 					\n\n
 					Acceder a los contactos de los servicios de utilidad
 						pública, sin tener que alterar la agenda de su teléfono\n\n
-						
+
 						Acceder fácilmente a información útiles sobre el cuidado de
 						la salud\n\n
 						Aprovechar de las facilidades, tales como la búsqueda
 						pre-configurada por los hospitales y farmacias más cercanas (20
 						km) en Google Maps, sin necesidad de abrir otra aplicación\n\n
-						
+
 						Conocer el perfil de salud de los participantes a través de la
 						página web \"Copa Saludable\".
 					\n\n
@@ -454,7 +454,7 @@
 						en la iniciativa, así como con las libertades y garantías
 						individuales.\n\n
 						La política de privacidad de la " COPA SALUDABLE ", explica: \n\n
-						
+
 						Qué información recogemos y por qué la recogemos. \n
 						Cómo utilizar esta información.
 					\n\n
@@ -526,11 +526,11 @@
     <string name="termos_2_titulo">Respeto a las Leyes</string>
     <string name="termos_2">        El usuario deberá acceder a la “COPA SALUDABLE” solamente
 							para finalidades lícitas.\n\n
-							
+
 							El usuario se compromete a utilizar la aplicación solamente
 							para los debidos fines y en conformidad con el presente término y
 							limitaciones legales, como cualquier política aplicada en Brasil.\n\n
-							
+
 							Su acceso es prohíbido en territorios donde el contenido
 							sea considerado ilegal. Aquellos que opten por acceder a este
 							sitio web a partir de otras localidades lo harán por iniciativa
@@ -539,7 +539,7 @@
 							exportados en incumplimiento de las leyes brasileñas. Cualquier
 							pendencia en relación a los materiales será resuelta por las
 							leyes brasileñas.\n\n
-							
+
 							La alteración no autorizada del contenido de este sitio web
 							está expresamente prohibida.</string>
     <string name="termos_3_titulo">Límites de uso</string>
@@ -555,7 +555,7 @@
 							suministradas mientras utiliza el servicio y que es responsable
 							por las consecuencias que resulten de la provisión intencional de
 							datos incorrectos.\n\n
-							
+
 							El usuario se compromete que al utilizar la “COPA
 							SALUDABLE” no irá a publicar, enviar, distribuir o divulgar
 							contenido o información de carácter difamatorio, obsceno o
@@ -563,7 +563,7 @@
 							pertenecientes a otras personas o empresas, bien como marcas
 							registradas o informaciones protegidas por derechos autorales,
 							sin la expresa autorización del titular de estos derechos;\n\n
-							
+
 							Nadie puede actuar a su nombre en el uso de la “COPA
 							SALUDABLE”. Usted es responsable por el contenido que individuos
 							no autorizados produzcan al utilizar esta aplicación utilizando
@@ -576,7 +576,7 @@
 							utilización fuera de las areas relacionadas a la COPA DEL MUNDO
 							FIFA 2014&#8482;, que incluye las ciudades anfitrionas y municipios
 							próximos.\n\n
-							
+
 							De la misma forma no garantiza que cualquier contenido esté
 							apropiado o disponible para uso fuera del territorio nacional. Si
 							usted opta por acceder el Webapp y la aplicación de otras
@@ -594,16 +594,16 @@
 							pública. Todas las demás marcas comerciales, marcas de servicio,
 							nombres y logotipos que aparecen en esta aplicación son propiedad
 							de sus respectivos propietarios.\n\n
-							
-							
+
+
 							La aplicación \"COPA SALUDABLE\" es un software open source cuyo
 							uso por terceros se somete a los términos de la licencia
 							internacional  GNU
 								General Public License, version 3 (GPL-3.0). Los derechos de uso
 							del contenido y de los informes generados por el Webapp y por la
 							aplicación son cedidos por los desarrolladores, especialmente los
-							que se derivan de las condiciones de la licencia 
-								CreativeCommons - Atribución-No Comercial 4.0 Internacional 
+							que se derivan de las condiciones de la licencia
+								CreativeCommons - Atribución-No Comercial 4.0 Internacional
 								\n\n
 
 						Sólo los informes de los servicios de salud de cada ciudad
@@ -630,22 +630,22 @@
 							estos Términos de Uso esté en conflicto con cualquier ley o
 							reglamento aplicable, la ley o reglamentación aplicable anula el
 							contrario .\n\n
-							
+
 							Estos Términos de uso y la utilización de la "COPA
 							SALUDABLE" son y serán regidos e interpretados de acuerdo con las
 							leyes internas de Brasil, sin considerar sus reglas de conflicto
 							de leyes. En caso de cualquier conflicto entre las leyes, normas
 							y reglamentos extranjeros con las de Brasil, las leyes, normas y
 							reglamentos de Brasil prevalecerán.\n\n
-							
+
 							La \"COPA SALUDABLE\" puede, pero no está obligada, a
 							monitorear, revisar y restringir el acceso a cualquiera de sus
 							áreas en las que los usuarios transmitan información, pudiendo
 							retirar del aire o retirar el acceso a estas informaciones o
 							comunicaciones.\n\n
-							
+
 							Si usted tiene alguna duda con respecto a la\"COPA SALUDABLE\", no
-							dude en contactarnos contato@saudenacopa.com</string>
+							dude en contactarnos contato@saudenacopa.epitrack.com.br</string>
     <string name="termos_8_titulo">El uso de las contribuciones</string>
     <string name="termos_8">        Al enviar una contribución escrita o postar informaciones
 							en la \"COPA SALUDABLE\" usted otorga una licencia perpetua, exenta
@@ -655,7 +655,7 @@
 							individual) a otros medios de comunicación, y para discutir o
 							hacer referencia a ella en cualquier publicación resultante de la
 							\"COPA SALUDABLE\".\n\n
-							
+
 							También aceptará que la \"COPA SALUDABLE\" tiene el derecho
 							pero no la obligación, de editar o eliminar cualquier aportación,
 							o incluirla en el texto junto con otras contribuciones a la
@@ -667,7 +667,7 @@
 							los problemas de incumplimiento. Nos reservamos el derecho a
 							utilizar esta información internamente y, en ese ámbito, su
 							contribución se vinculará con el username de su elección.\n\n
-							
+
 							La \"COPA SALUDABLE\", sus colaboradores y usuarios,
 							incluidos los organismos gubernamentales y no gubernamentales,
 							depeden de los usuarios para la exactitud de las contribuciones.
@@ -691,12 +691,12 @@
 							de cualquier uso de las ideas, contenidos, instrucciones,
 							métodos, productos o procedimientos que figuran en esta
 							aplicación.\n\n
-							
+
 							En ningún caso los profesionales involucrados en el
 							desarrollo o administración de esta aplicación serán
 							responsabilizados por cualquier decisión o acción tomada por
 							usted sobre la base de dicho contenido.\n\n
-							
+
 							Frente a las amenazas o cualquier otro riesgo para su salud
 							o su integridad buscar siempre orientaciones validadas y
 							actualizadas por los servicios locales de salud pública
@@ -710,20 +710,20 @@
 							aplicación problemas tecnológicos de diferentes naturalezas,
 							tales como virus, rutinas de programación perjudiciales o
 							problemas relacionados al dispositivo .\n\n
-							
+
 							El Webapp y la aplicación son proporcionadas “tal cual" y
 							"según disponibilidad". Sin limitar nuestro aviso general, no
 							podemos garantizar la disponibilidad, integridad, puntualidad, la
 							funcionalidad, la fiabilidad, la secuenciación y la rapidez de la
 							entrega en esta aplicación, o de cualquier parte de los
 							contenidos.\n\n
-							
+
 							La “COPA SALUDABLE" no se responsabiliza de ningún daño o
 							perjuicio causado por el desempeño o fallo de desempeño de toda o
 							cualquier parte de la aplicación. La “COPA SALUDABLE" no se
 							responsabiliza de los defectos, demoras o errores que resulten
 							del uso de esta aplicación.\n\n
-							
+
 							El uso de todas las funcionalidades de la "COPA SALUDABLE "
 							requiere la disponibilidad de acceso a internet por el usuario,
 							por wifi o cable de datos de la red. La ausencia de este
@@ -731,7 +731,7 @@
 							su potencial de uso . El personal de la\"COPA SALUDABLE\", teniendo
 							en cuenta esta advertencia no asume responsabilidad alguna por
 							tal limitación.\n\n
-							
+
 							Esta renuncia de responsabilidad se aplica a todos y
 							cualquier daño o lesiones, incluyendo los causados por cualquier
 							falla de rendimiento, error, omisión, interrupción, eliminación,

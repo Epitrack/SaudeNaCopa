@@ -667,7 +667,7 @@ Main = {
                         $('#respostaLogin').fadeIn();
                         // $("#respostaLogin").fadeIn();
                         respostaLogin.innerHTML = 'Aguarde...';
-                        $.post('http://www.saudenacopa.com/dashboard/api/login.json.php', {email:email,senha:senha}, function(data) {
+                        $.post('http://www.saudenacopa.epitrack.com.br/dashboard/api/login.json.php', {email:email,senha:senha}, function(data) {
                             // console.log(data);
                             // console.log(data.status);
 
@@ -1000,7 +1000,7 @@ Main = {
     WebApp: {
         openWebApp: function() {
             var btn = document.getElementById('btn-webapp'),
-                link = 'http://www.saudenacopa.com/webapp/',
+                link = 'http://www.saudenacopa.epitrack.com.br/webapp/',
                 config = "height=568,width=320";
 
             function btnEventHandler(url) {

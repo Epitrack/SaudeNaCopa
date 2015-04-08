@@ -59,9 +59,9 @@ if( isset($_POST['mensagem'])) {
 
 
     if ($_SERVER[HTTP_HOST]) {
-        $emailsender= 'contato@saudenacopa.com'; // Substitua essa linha pelo seu e-mail@seudominio
+        $emailsender= 'contato@saudenacopa.epitrack.com.br'; // Substitua essa linha pelo seu e-mail@seudominio
     } else {
-        $emailsender= 'contato@saudenacopa.com';
+        $emailsender= 'contato@saudenacopa.epitrack.com.br';
         // $emailsender = $email;
 
     }
@@ -76,8 +76,8 @@ if( isset($_POST['mensagem'])) {
     $cabecalho .= "MIME-Version: 1.0$quebra_linha";
     $cabecalho .= "Content-type: text/html; charset=uft-8$quebra_linha";
 
-    $envia = mail("contato@saudenacopa.com","Vigilância Participativa - PROBLEMA",utf8_decode($mens),$cabecalho,"-r".$emailsender);
-    // $envia .= mail("contato@saudenacopa.com","Vigilância Participativa - PROBLEMA",utf8_decode($mens),$cabecalho,"-r".$emailsender);
+    $envia = mail("contato@saudenacopa.epitrack.com.br","Vigilância Participativa - PROBLEMA",utf8_decode($mens),$cabecalho,"-r".$emailsender);
+    // $envia .= mail("contato@saudenacopa.epitrack.com.br","Vigilância Participativa - PROBLEMA",utf8_decode($mens),$cabecalho,"-r".$emailsender);
 
     if($envia){
         echo "Problema enviado com sucesso!";

@@ -531,7 +531,8 @@
 					in the surveillance process and will not be considered useful for
 					public health. For this reason the data will only be used where a
 					cluster is observed within a specific territory (town, neighborhood
-					or city) and time (hour, day or week).</string>
+					or city) and time (hour, day or week).
+</string>
 
     <!-- TERMOS -->
     <string name="termos1_titulo">Terms of Use</string>
@@ -545,7 +546,8 @@
 			the use of any information, data, tools, products, services and other
 			content that is made available. \n\n By using this
 			application, you confirm that you understand and agree to the
-			following:</string>
+			following:
+</string>
     <string name="termos_2_titulo">Respect the Laws</string>
     <string name="termos_2">        The user should access the \"HEALTHY CUP 2014\" only for
 							lawful purposes.\n\nThe user agrees to use the application only for appropriate
@@ -556,7 +558,8 @@
 							compliance with applicable local laws. The materials shall not be
 							used or exported in violation of Brazilian law. Any pending cases
 							relating to the materials shall be settled by Brazilian law.\n\nThe unauthorized alteration of the content of this website
-							is expressly prohibited.<p></p></string>
+							is expressly prohibited.
+<p></p></string>
     <string name="termos_3_titulo">Limitations of Use</string>
     <string name="termos_3">Use of the application is indicated only for individuals
 							thirteen (13) years of age or older.</string>
@@ -577,7 +580,8 @@
 							unauthorized individuals produce upon using this application with
 							the user\'s permission on the user\'s registered profile. This rule
 							does not apply to cases of violation or other security problems
-							with the application.</string>
+							with the application.
+</string>
     <string name="termos_5_titulo">Accessibility to Content</string>
     <string name="termos_5">        The staff of the \"HEALTHY CUP 2014\" does not guarantee that
 							this application is partially or fully functional for use outside
@@ -589,7 +593,8 @@
 							risk. The user is responsible for compliance with local laws, to
 							the extent that local laws are applicable. The user specifically
 							agrees to comply with all applicable laws regarding the
-							transmission of technical data exported from that location.</string>
+							transmission of technical data exported from that location.
+</string>
     <string name="termos_6_titulo">Intellectual Property</string>
     <string name="termos_6">The staff of the \"HEALTHY CUP 2014\" and its employees are
 							copyright holders of the content generated and submitted in this
@@ -617,7 +622,8 @@
 							place. The recreational or public domain information may contain
 							inaccuracies or update failures, thus validation is recommended
 							by users during emergencies or any other situation where there is
-							a threat to health or well being.</string>
+							a threat to health or well being.
+</string>
     <string name="termos_7_titulo">Laws, Regulations, Rights and Duties</string>
     <string name="termos_7">        It is the policy of the \"HEALTHY CUP 2014\" staff to comply
 							with all applicable laws and regulations, which may be modified
@@ -627,11 +633,12 @@
 							will be governed by and interpreted in accordance with the
 							internal laws of Brazil, without regard to its conflict of laws
 							rules. In case of any conflict between foreign laws, rules and
-							regulations, Brazilian laws, rules and regulations shall prevail.\n\nThe \"HEALTHY CUP 2014\" may, but is not obligated to,
+							regulations, Brazilian laws, rules and regulations shall prevail.
+\n\nThe \"HEALTHY CUP 2014\" may, but is not obligated to,
 							monitor, review and restrict access to any of its areas where
 							users transmit information and withdraw access to any such
 							information or communications.\n\n							If you have any questions regarding \"HEALTHY CUP 2014\", do not
-							hesitate to contact us at: contato@saudenacopa.com</string>
+							hesitate to contact us at: contato@saudenacopa.epitrack.com.br</string>
     <string name="termos_8_titulo">Use of Contributions</string>
     <string name="termos_8">        Upon submitting a written contribution or posting any
 							information in \"HEALTHY CUP 2014\", you grant a perpetual,
@@ -642,7 +649,8 @@
 							publications resulting from \"HEALTHY CUP 2014\".\n\nYou also agree that the \"HEALTHY CUP 2014\" has the right,
 							but not the obligation, to edit or delete any contribution, or
 							include it in a text together with other contributions at the
-							sole discretion of the staff of this application.</string>
+							sole discretion of the staff of this application.
+</string>
     <string name="termos_9_titulo">Assurance of Confidentiality and
 						Anonymity</string>
     <string name="termos_9">        Confidentiality and anonymity of all information produced
@@ -656,14 +664,16 @@
 							errors or inaccuracies in any submission. Deliberate
 							misrepresentation by a user may be a violation of the law, and if
 							it is deemed serious, will be communicated to the appropriate
-							governmental authorities.</string>
+							governmental authorities.
+</string>
     <string name="termos_10_titulo">Updated \"HEALTHY CUP 2014\"</string>
     <string name="termos_10">        Modifications of this application and its Terms of Use may
 							occur. Unless the user specifies otherwise, each and every use of
 							the web app and application indicates full acceptance of the
 							Terms of Use in its current version. Be alert for updates and, in
 							case of doubt, these Terms of Use will always be available for
-							reference.</string>
+							reference.
+</string>
     <string name="termos_11_titulo">Liability for Actions Based on the
 						Content</string>
     <string name="termos_11">        \"HEALTHY CUP 2014\" does not assume liability for any injury
@@ -674,7 +684,8 @@
 							any decision made, or action taken, by you on the basis of such
 							content.\n\nWhen faced with threats or any other risk to your health or
 							well being always seek validated guidance by local public health
-							services at each host city.</string>
+							services at each host city.
+</string>
     <string name="termos_12_titulo">Liability for Technological Problems</string>
     <string name="termos_12">        At any time it is possible that all of the content or any
 							portion of the \"HEALTHY CUP 2014\" will become unavailable and
@@ -700,7 +711,8 @@
 							operation or transmission, computer virus, line failure
 							communication, theft, destruction or unauthorized access,
 							alteration or use of any property, whether by breach of contract,
-							tort, negligence, or any other cause of action.</string>
+							tort, negligence, or any other cause of action.
+</string>
     <string name="termos_13_titulo">Liability for third party information</string>
     <string name="termos_13">        The provision by the web app and application of links and
 							references to other websites, publications or information
@@ -712,7 +724,8 @@
 							such resources, and specifically disclaims any warranties,
 							including, but not limited to the implied or expressed warranties
 							of marketability or the adaptation for any particular usage,
-							application or purpose.</string>
+							application or purpose.
+</string>
     <string name="termos_14_titulo">Final Considerations</string>
     <string name="termos_14">        Access to this service represents the express and
 							unrestricted acceptance of the Terms of Use above. By agreeing to
@@ -723,7 +736,8 @@
 							services related to public health surveillance. You also agree
 							that \"HEALTHY CUP 2014\" has the right but not the obligation, to
 							edit or delete any contribution at the sole discretion of the
-							\"HEALTHY CUP 2014\" team.</string>
+							\"HEALTHY CUP 2014\" team.
+</string>
     <!-- vacinas -->
     <string name="texto_browser">The webapp is best viewed in Google Chrome and Mozilla Firefox browsers.</string>
 

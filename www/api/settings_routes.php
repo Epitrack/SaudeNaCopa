@@ -42,6 +42,6 @@ $routes = array(
 $baseClass = "MainController";  // Método index da classe MainController será invocado quando o route "/" for chamado
 
 $erroHandler = "MainController:notFound";
-$basePath = "http://www.saudenacopa.com/api/rest";
+$basePath = "http://www.saudenacopa.epitrack.com.br/api/rest";
 
 $debug = true;
