@@ -26,14 +26,14 @@ APP.Area.Sentimento.Torcedor.Calendario = {
 
     anterior: function() {
         var calendarios = $("#calendarios .mes");
-        if(calendarios.length > 1){ 
+        if(calendarios.length > 1){
             var anterior = $("#calendarios .mes.ativo").prev();
 
             if(anterior.length > 0) {
                 calendarios.removeClass("ativo");
                 anterior.addClass('ativo');
                 $("#tela_calendario h1 .nome").text(anterior.attr('data-nome'));
-            } 
+            }
         }
         this.atualizaNavegacao();
     },
@@ -47,7 +47,7 @@ APP.Area.Sentimento.Torcedor.Calendario = {
                 calendarios.removeClass("ativo");
                 proximo.addClass('ativo');
                 $("#tela_calendario h1 .nome").text(proximo.attr('data-nome'));
-            } 
+            }
         }
         this.atualizaNavegacao();
     },
@@ -103,7 +103,7 @@ APP.Area.Sentimento.Torcedor.Calendario = {
 
             //$("<h2>").text(nomeDoMes).appendTo(eMes);
             //
-        
+
 
 
         var linha0 = $("<tr>").addClass('linha').appendTo(eMes);
@@ -133,7 +133,7 @@ APP.Area.Sentimento.Torcedor.Calendario = {
             var linha = Math.floor((dia+(diaNaSemanaDoPrimeiroDiaDoMes-1))/7)
             var sentimento = objDia && objDia.sentimento ? parseFloat(objDia.sentimento) : -1;
             var floor, ceil, corInicial, corFinal, corCalculada, porcentagem;
-            
+
             var eDia = $("<td>")
                             .addClass('dia')
                             .attr('data-dia', dia)
@@ -168,7 +168,7 @@ APP.Area.Sentimento.Torcedor.Calendario = {
         var anos = this.calcularMeses(datas);
         var fragmento = document.createDocumentFragment();
 
-        
+
 
         for(ano in anos) {
             if(!anos.hasOwnProperty(ano)) continue;
@@ -224,17 +224,17 @@ APP.Area.Sentimento.Torcedor.Calendario = {
 
         setUp: function() {
 
-    
+
         },
 
-        
+
 
         enviar: function(form) {
             var that = this;
-            
+
 
             $.ajax({
-                url: "http://www.saudenacopa.epitrack.com.br/api/rest/calendario",
+                url: "http://saudenacopa.epitrack.com.br/api/rest/calendario",
                 dataType: "JSON",
                 type: "post",
                 data: {
@@ -243,10 +243,10 @@ APP.Area.Sentimento.Torcedor.Calendario = {
 
                 beforeSend: function() {
                     that.enviando.apply(that, arguments);
-                }, 
+                },
                 success: function() {
                     that.enviou.apply(that, arguments);
-                }, 
+                },
                 error: function() {
                     that.naoEnviou.apply(that, arguments);
                 }
@@ -277,8 +277,8 @@ APP.Area.Sentimento.Torcedor.Calendario = {
                 if(data.mensagem) {
                     this.naoEnviou(data.mensagem);
                 } else {
-                    this.naoEnviou()    
-                }   
+                    this.naoEnviou()
+                }
             }
             this.removerCarregando();
         },

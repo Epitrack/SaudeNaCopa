@@ -13,7 +13,7 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 
 public class SaudeDAO {
-	private static String PATH_SERVIDOR = "http://www.saudenacopa.com/proxyTwitter/";
+	private static String PATH_SERVIDOR = "http://saudenacopa.epitrack.com.br/proxyTwitter/";
 
 	public String buscaTwitter(String idTwitter) {
 
@@ -22,7 +22,7 @@ public class SaudeDAO {
 		HttpGet httpget = new HttpGet(PATH_SERVIDOR + "?id=" + idTwitter);
 		HttpResponse response;
 		try {
-			response = httpclient.execute(httpget);			
+			response = httpclient.execute(httpget);
 			HttpEntity entity = response.getEntity();
 			if (entity != null) {
 				InputStream instream = entity.getContent();

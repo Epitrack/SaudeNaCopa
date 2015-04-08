@@ -26,8 +26,8 @@
     <!-- OPEN GRAPH -->
     <meta property='og:title' content='Saúde Na Copa 2014 | Dashboard' />
     <meta property='og:description' content='O Aplicativo Saúde na Copa é um projeto de vigilância participativa em saúde durante a Copa do Mundo FIFA 2014' />
-    <meta property='og:url' content='http://www.saudenacopa.epitrack.com.br' />
-    <meta property='og:image' content='http://www.saudenacopa.epitrack.com.br/dashboard/site/dist/images/facebook.png'/>
+    <meta property='og:url' content='http://saudenacopa.epitrack.com.br' />
+    <meta property='og:image' content='http://saudenacopa.epitrack.com.br/dashboard/site/dist/images/facebook.png'/>
     <meta property='og:type' content='website' />
     <meta property='og:site_name' content='Saúde Na Copa 2014' />
 
@@ -59,7 +59,7 @@
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-50378086-3', 'http://www.saudenacopa.epitrack.com.br/dashboard/site/');
+        ga('create', 'UA-50378086-3', 'http://saudenacopa.epitrack.com.br/dashboard/site/');
         ga('send', 'pageview');
     </script>
 </head>

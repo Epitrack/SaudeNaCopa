@@ -29,7 +29,7 @@ Class EsqueciSenhaController extends Controller {
 
 
 
-        $URL = "http://www.saudenacopa.epitrack.com.br/api/rest/mudarSenha/". base64_encode( $userVO->getIdUsuario() ."#". $validade ."#". md5( $userVO->getEmail()) );
+        $URL = "http://saudenacopa.epitrack.com.br/api/rest/mudarSenha/". base64_encode( $userVO->getIdUsuario() ."#". $validade ."#". md5( $userVO->getEmail()) );
 
 
         $msg = "Alguém pediu recentemente que a senha seja redefinido para ".$userVO->getApelido()."

@@ -31,7 +31,7 @@ APP.Area.Saude.Hospitais = {
             }
 
             $.geolocation.get(opcoes);
-        
+
         },
 
         capturou: function(position) {
@@ -40,7 +40,7 @@ APP.Area.Saude.Hospitais = {
             var sexo = APP.Area.Acesso.Usuario._dados.sexo;
             $('#tela_mapaSaude')
                 .gmap("clear","markers")
-                .gmap('addMarker', { 
+                .gmap('addMarker', {
                     'position': meuLatLng,
                     'animation': google.maps.Animation.BOUNCE,
                     'icon': 'imagens/saude/mapa/icone_'+sexo+'.png'
@@ -90,7 +90,7 @@ APP.Area.Saude.Hospitais = {
 
         naoCarregou: function() {
 
-        },  
+        },
 
         montarConteudo: function(local, userLocation) {
             var hospital = $("<div>").addClass('infoHospital');
@@ -115,8 +115,8 @@ APP.Area.Saude.Hospitais = {
             var montarConteudo = this.montarConteudo;
             $(resultados).each(function(iLocal, local){
                 var conteudo = montarConteudo(local, coords);
-                $('#tela_mapaSaude').gmap('addMarker', { 
-                    'position': new google.maps.LatLng(local.geometry.location.lat, local.geometry.location.lng), 
+                $('#tela_mapaSaude').gmap('addMarker', {
+                    'position': new google.maps.LatLng(local.geometry.location.lat, local.geometry.location.lng),
                     'bounds': true
                     ,'icon': 'imagens/saude/mapa/icone_hospitalGoogle.png'
                 }).click(function() {
@@ -131,7 +131,7 @@ APP.Area.Saude.Hospitais = {
         capturar: function(coords) {
             var that = this;
             $.ajax({
-                url: "http://www.saudenacopa.epitrack.com.br/proxyUF/",
+                url: "http://saudenacopa.epitrack.com.br/proxyUF/",
                 data: {
                     latLng: [coords.latitude, coords.longitude].join(",")
                 },
@@ -151,7 +151,7 @@ APP.Area.Saude.Hospitais = {
             }
         },
 
-        naoCapturou: function() { 
+        naoCapturou: function() {
             //alert()
         }
     },
@@ -193,8 +193,8 @@ APP.Area.Saude.Hospitais = {
 
                 var conteudo = montarConteudo(local, coords);
                 var position = local[5].split(",");
-                tela.gmap('addMarker', { 
-                    'position': new google.maps.LatLng(position[0], position[1]), 
+                tela.gmap('addMarker', {
+                    'position': new google.maps.LatLng(position[0], position[1]),
                     'bounds': true,
                     'icon': 'imagens/saude/mapa/icone_hospitalReferencia.png'
                 }).click(function() {

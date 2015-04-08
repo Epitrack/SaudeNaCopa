@@ -48,7 +48,7 @@
                     window.location.reload();
                 }
             }, false)
-            
+
         }, false);
 
         window.gaWebApp = false;
@@ -57,7 +57,7 @@
             window.isphone = true;
         }
 
-        
+
         if (window.isphone === true) {
             var head = document.getElementsByTagName('head')[0];
             var scriptCordova = document.createElement("script");
@@ -93,7 +93,7 @@
         }
     </script>
     <script src="bibliotecas/js/head.min.js" data-headjs-load="js/init.js"></script>
-    <!-- 
+    <!--
     <script src="http://192.168.0.15:8080/target/target-script-min.js#anonymous"></script> -->
 </head>
 
@@ -161,12 +161,12 @@
                 </div>
 
                 <!-- TELA -->
-                <!-- 
+                <!--
             <div class="tela" id="tela_abertura" data-titulo="Abertura" data-posCarregamento="APP.Area.Apresentacao.Abertura.posCarregamento">
 
 
                 <h1 class="marca grande semTexto" data-i18n="apresentacao.abertura.titulo">Saúde na copa</h1>
-                
+
                 <footer>
                     <ul>
                         <li class="semTexto sus">SUS</li>
@@ -220,7 +220,7 @@
                                         <span class="icone acesso cadastreSe"></span>
                                         <a class="texto" data-i18n="acesso.acesso.cadastre-se" href="#tela_cadastre-se">Cadastre-se</a>
                                     </li>
-                                    
+
                                 </ul>
                             </div>
                         </div>
@@ -232,7 +232,7 @@
 
                 <!-- TELA -->
                 <div class="tela" id="tela_cadastre-se" data-titulo="Cadastre-se">
-                    <form id="formularioCadastro" class="baseDaTela" action="http://www.saudenacopa.epitrack.com.br/api/rest/cadastraUsuario" method="post">
+                    <form id="formularioCadastro" class="baseDaTela" action="http://saudenacopa.epitrack.com.br/api/rest/cadastraUsuario" method="post">
                         <div class="row">
                             <div class="col-xs-10 col-xs-offset-1">
                                 <ol>
@@ -307,26 +307,26 @@
                         </div>
                         <!-- <div class="row extra">
                         <div class="col-xs-10 col-xs-offset-1">
-                            <input type="checkbox" name="termo" placeholder="Termos" id="campoCadastro_termos"> 
+                            <input type="checkbox" name="termo" placeholder="Termos" id="campoCadastro_termos">
                             <label for="campoCadastro_termos" data-i18n="acesso.cadastre-se.termos" >Li e concordo com os termos de uso</label>
                         </div>
                     </div> -->
                     </form>
                 </div>
 
-                <!-- 
+                <!--
             <div class="tela" id="tela_entreComFacebook" data-titulo="Entre com o Facebook">
-                <header class="voltar"> 
+                <header class="voltar">
                     <h1><a class="voltar btn btn-primary btn-xs" href="#voltar">Voltar</a> Saúde na copa</h1>
                 </header>
                 <p data-i18n="acesso.entreComFacebook.texto">Entrar com cadastro do Facebook</p>
-                
+
             <fb:login-button data-auto-logout-link="true" show-faces="true" width="200" max-rows="1"></fb:login-button>
             </div> -->
 
                 <!-- TELA -->
                 <div class="tela" id="tela_entrarComLoginESenha" data-titulo="Entre com login e senha">
-                    <form id="formularioLogin" class="baseDaTela" action="http://www.saudenacopa.epitrack.com.br/api/rest/login">
+                    <form id="formularioLogin" class="baseDaTela" action="http://saudenacopa.epitrack.com.br/api/rest/login">
                         <div class="row">
                             <div class="col-xs-10 col-xs-offset-1">
                                 <ol>
@@ -355,7 +355,7 @@
                 <!-- TELA -->
                 <div class="tela" id="tela_esqueciASenha" data-titulo="Esqueci a senha">
 
-                    <form id="formularioEsqueciASenha" class="baseDaTela" action="http://www.saudenacopa.epitrack.com.br/api/rest/esqueciSenha">
+                    <form id="formularioEsqueciASenha" class="baseDaTela" action="http://saudenacopa.epitrack.com.br/api/rest/esqueciSenha">
                         <div class="row">
                             <div class="col-xs-10 col-xs-offset-1">
                                 <p data-i18n="acesso.esqueciASenha.texto">Insira o endereço de e-mail cadastrado para envio de sua senha</p>
@@ -379,7 +379,7 @@
                 <!-- TELA -->
                 <div class="tela" id="tela_alterarSenha" data-titulo="Alterar a senha">
 
-                    <form id="formularioAlterarSenha" class="baseDaTela" action="http://www.saudenacopa.epitrack.com.br/api/rest/alterarSenha">
+                    <form id="formularioAlterarSenha" class="baseDaTela" action="http://saudenacopa.epitrack.com.br/api/rest/alterarSenha">
                         <div class="row">
                             <div class="col-xs-10 col-xs-offset-1">
                                 <ol>
@@ -541,7 +541,7 @@
                 <!-- TELA -->
                 <div class="tela" id="tela_denunciarUmProblema" data-titulo="Denunciar um problema">
 
-                    <form id="formularioDenunciarUmProblema" class="baseDaTela" action="http://www.saudenacopa.epitrack.com.br/api/rest/problema">
+                    <form id="formularioDenunciarUmProblema" class="baseDaTela" action="http://saudenacopa.epitrack.com.br/api/rest/problema">
                         <div class="row mensagem">
                             <div class="col-xs-10 col-xs-offset-1">
                                 <ol>
@@ -773,7 +773,7 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-xs-12">
-                                    <form id="formularioSintomas" method="post" action="http://www.saudenacopa.epitrack.com.br/api/rest/sentimento">
+                                    <form id="formularioSintomas" method="post" action="http://saudenacopa.epitrack.com.br/api/rest/sentimento">
                                         <input type="hidden" name="sentimento" id="campoSentimentoHidden">
                                         <ol>
                                             <li>
@@ -826,7 +826,7 @@
                             <div class="col-xs-10 col-xs-offset-1">
                                 <h1><span class="semTexto icone anterior">Voltar</span><span class="nome">Mês</span><span class="semTexto icone proximo">Voltar</span></h1>
                                 <div id="calendarios">
-                        
+
                                 </div>
 
                                 <div class="legendas">
@@ -835,7 +835,7 @@
                                     <div class="sentimento bem"><span class="cor semTexto"></span><span data-i18n="sentimento.sentimento.bem" class="nome">Bem</span></div>
                                     <div class="sentimento mal"><span class="cor semTexto"></span><span data-i18n="sentimento.sentimento.mal" class="nome">Mal</span></div>
                                     <div class="sentimento muitoMal"><span class="cor semTexto"></span><span data-i18n="sentimento.sentimento.muitoMal" class="nome">Muito mal</span></div>
-                                </div> 
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1165,8 +1165,8 @@
                     <div id="googleMap"></div>
                     <div class="legendas">
                         <div class="legenda hospitais referencia"><span data-i18n="saude.mapa.referencia">Referência</span></div>
-                        <div class="legenda hospitais google"><span class="encontrados" data-i18n="saude.mapa.encontrados">Encontrados pelo google</span><span class="encontradas" data-i18n="saude.mapa.encontradas">Encontradas pelo google</span></div>  
-                        
+                        <div class="legenda hospitais google"><span class="encontrados" data-i18n="saude.mapa.encontrados">Encontrados pelo google</span><span class="encontradas" data-i18n="saude.mapa.encontradas">Encontradas pelo google</span></div>
+
                     </div>
                      
                 </div>
@@ -1288,7 +1288,7 @@
                                         </a>
                                     </li>
 
-<!-- 
+<!--
                                     <li>
                                         <a class="celula" href="tel:444">
                                             <span data-i18n="saude.telefonesUteis.ouvidoriaDeSaude">Ouvidoria da saúde</span>
@@ -1368,7 +1368,7 @@
                     </div>
                 </div>
 
-    
+
 
                 <div class="tela comRolagem" id="tela_calendarioDosJogos" data-titulo="Calendário dos Jogos">
                     <div class="conteudoDeRolagem">
@@ -1615,7 +1615,7 @@
                     </div>
                 </div>
                 <!-- TELA -->
-        
+
             </section>
 
             <!-- AREA -->
@@ -1643,7 +1643,7 @@
                             <a class="categorias" href="#tela_categorias">
                                 <span data-i18n="tela.categorias">Categorias</span>
                             </a>
-                            <a class="acesseOSite" href="http://www.saudenacopa.epitrack.com.br">
+                            <a class="acesseOSite" href="http://saudenacopa.epitrack.com.br">
                                 <span data-i18n="mais.mais.acesseOSite">Acesse o site</span>
                             </a>
                             <a class="linksUteis" href="#tela_linksUteis">
@@ -1699,7 +1699,7 @@
                 <!-- TELA -->
 
 
-                
+
 
 
                 <!-- TELA -->
@@ -1983,13 +1983,13 @@
                     </article>
                     <article class="parceria">
                         <h1 data-i18n="menu.versao.parceria.titulo">Parceria</h1>
-                        
+
                         <div class="row">
                             <div class="col-xs-5 col-xs-offset-1"><div class="icone skoll semTexto">Skoll</div></div>
                             <div class="col-xs-5"><div class="icone tephinet semTexto">Tephinet</div></div>
                         </div>
-                        
-                        
+
+
 
                     </article>
                     <article class="dev">
@@ -2081,7 +2081,7 @@
                 if(window.isphone && window.analytics) {
                     analytics.startTrackerWithId('UA-50378086-1');
                 }
-    
+
             }
 
             $(document).ready(function() {

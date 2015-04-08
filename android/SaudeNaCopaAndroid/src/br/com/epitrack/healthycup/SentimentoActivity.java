@@ -152,18 +152,18 @@ public class SentimentoActivity extends ActionBarActivity implements LocationLis
 			}
 		}
 	}
-	
+
 
 	 @Override
 	  public void onStart() {
-	    super.onStart();	    
-	    EasyTracker.getInstance(this).activityStart(this);  
+	    super.onStart();
+	    EasyTracker.getInstance(this).activityStart(this);
 	  }
 
 	  @Override
 	  public void onStop() {
-	    super.onStop();	    
-	    EasyTracker.getInstance(this).activityStop(this);  
+	    super.onStop();
+	    EasyTracker.getInstance(this).activityStop(this);
 	  }
 
 
@@ -242,7 +242,7 @@ public class SentimentoActivity extends ActionBarActivity implements LocationLis
 	}
 
 	public void abreCalendario(View v) {
-		
+
 		// calendario
 		// Setup caldroid fragment
 		// **** If you want normal CaldroidFragment, use below line ****
@@ -526,7 +526,7 @@ public class SentimentoActivity extends ActionBarActivity implements LocationLis
 							Log.i(TAG, "fragmentAtivo");
 						}
 
-						// se for a tela de opção de saude mudar o titulo
+						// se for a tela de opÃ§Ã£o de saude mudar o titulo
 						if (fragment.getClass().getName().equals("br.com.epitrack.healthycup.SentimentoActivity$SaudeFragment")) {
 							fragmentAtivo = 1;
 							atualizaTitulo(R.string.saude, R.drawable.topo_saude);
@@ -569,7 +569,7 @@ public class SentimentoActivity extends ActionBarActivity implements LocationLis
 	@Override
 	protected void onResume() {
 		super.onResume();
-		// verificar se houve mudança na localizacao
+		// verificar se houve mudanÃ§a na localizacao
 		// new UserDAO().atualizaLocalizacao(this);
 
 		// - Check NETWORK_PROVIDER for an existing location reading.
@@ -867,7 +867,7 @@ public class SentimentoActivity extends ActionBarActivity implements LocationLis
 	}
 
 	public void abreDashBoard(View v) {
-		Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://saudenacopa.com"));
+		Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://saudenacopa.epitrack.com.br"));
 		startActivity(browserIntent);
 	}
 
@@ -1070,7 +1070,7 @@ public class SentimentoActivity extends ActionBarActivity implements LocationLis
 	}
 
 	/**
-	 * Fragment para dizer como está se sentindo
+	 * Fragment para dizer como estÃ¡ se sentindo
 	 */
 	public static class SentimentoFragment extends Fragment {
 
@@ -1181,12 +1181,12 @@ public class SentimentoActivity extends ActionBarActivity implements LocationLis
 					// zerar sintomas
 					zerarSintomas();
 
-					// verificar se o sintoma é mal ou muitoMal
+					// verificar se o sintoma Ã© mal ou muitoMal
 					int position = mViewFlipper.getDisplayedChild();
 					sentimento = new Sentimento();
 					sentimento.setId(position);
 					if (position > 2) {
-						// está mal ou muito mal
+						// estÃ¡ mal ou muito mal
 						abreJanelaSintomas();
 
 					} else {
@@ -1340,7 +1340,7 @@ public class SentimentoActivity extends ActionBarActivity implements LocationLis
 
 		protected void abreConfirmacao() {
 
-			// monta array de textos de confirmação de como está se sentindo
+			// monta array de textos de confirmaÃ§Ã£o de como estÃ¡ se sentindo
 			String[] txtConfirmacao = getResources().getStringArray(R.array.txt_sentimentos);
 
 			// pega o primeiro item visivel
@@ -1422,7 +1422,7 @@ public class SentimentoActivity extends ActionBarActivity implements LocationLis
 			// busca latitude e longitude
 			Location l = user.getLocalizacao(rootView.getContext());
 			if (l == null) {
-				// não foi possivel pegar uma localidade
+				// nÃ£o foi possivel pegar uma localidade
 				new AlertDialog.Builder(rootView.getContext()).setTitle(getString(R.string.atencao)).setMessage(getString(R.string.sem_localizacao))
 						.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
 							public void onClick(DialogInterface dialog, int which) {
@@ -1444,7 +1444,7 @@ public class SentimentoActivity extends ActionBarActivity implements LocationLis
 				// envia
 				new EnviarSentimento(sentimento, rootView, getActivity(), mViewFlipper).execute();
 
-				// mostra os botoes de hospitais e farmácias caso esteja mal ou
+				// mostra os botoes de hospitais e farmÃ¡cias caso esteja mal ou
 				// muito mal
 				//Button btnFarmacia = (Button) rootView.findViewById(R.id.btnFarmacia);
 				Button btnHospital = (Button) rootView.findViewById(R.id.btnHospital);
@@ -1531,9 +1531,9 @@ public class SentimentoActivity extends ActionBarActivity implements LocationLis
 
 		/**
 		 * BuscarTweets
-		 * 
+		 *
 		 * @author Guto
-		 * 
+		 *
 		 */
 
 		public class BuscarTweets extends AsyncTask<Void, Void, String> {
@@ -1623,7 +1623,7 @@ public class SentimentoActivity extends ActionBarActivity implements LocationLis
 	}
 
 	/**
-	 * Fragment informações de saúde
+	 * Fragment informaÃ§Ãµes de saÃºde
 	 */
 	public static class JogosFragment extends Fragment {
 
@@ -1653,7 +1653,7 @@ public class SentimentoActivity extends ActionBarActivity implements LocationLis
 	}
 
 	/**
-	 * Fragment informações de saúde
+	 * Fragment informaÃ§Ãµes de saÃºde
 	 */
 	public static class SaudeFragment extends Fragment {
 
@@ -1704,9 +1704,9 @@ public class SentimentoActivity extends ActionBarActivity implements LocationLis
 
 	/**
 	 * SalvarArena
-	 * 
+	 *
 	 * @author Guto
-	 * 
+	 *
 	 */
 
 	public class SalvarArena extends AsyncTask<Void, Void, EventoCadastro> {
@@ -1732,9 +1732,9 @@ public class SentimentoActivity extends ActionBarActivity implements LocationLis
 
 	/**
 	 * SalvarArena
-	 * 
+	 *
 	 * @author Guto
-	 * 
+	 *
 	 */
 
 	public class BuscarCalendario extends AsyncTask<Void, Void, List<ItemCalendario>> {

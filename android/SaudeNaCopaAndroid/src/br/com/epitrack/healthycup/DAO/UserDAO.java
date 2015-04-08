@@ -37,7 +37,7 @@ import com.google.gson.Gson;
 public class UserDAO implements LocationListener {
 	// private static String PATH_SERVIDOR =
 	// "http://saudenacopa.epitrack.com.br/api/rest/";
-	private static String PATH_SERVIDOR = "http://www.saudenacopa.com/api/rest/";
+	private static String PATH_SERVIDOR = "http://saudenacopa.epitrack.com.br/api/rest/";
 	private static final String TAG = "SaudeNaCopa";
 	public static final long MIN_DISTANCE_CHANGE_FOR_UPDATES = 10; // 10 meters
 	public static final long MIN_TIME_BW_UPDATES = 1000 * 60 * 1; // 1 minute
@@ -71,7 +71,7 @@ public class UserDAO implements LocationListener {
 
 	/**
 	 * Realiza login
-	 * 
+	 *
 	 * @param login
 	 * @param senha
 	 * @return
@@ -545,7 +545,7 @@ public class UserDAO implements LocationListener {
 			if (entity != null) {
 				InputStream instream =  entity.getContent();
 				String result = convertStreamToString(instream);
-				result = URLDecoder.decode(result, "UTF-8"); 
+				result = URLDecoder.decode(result, "UTF-8");
 				//Log.i(TAG, result);
 				instream.close();
 
@@ -568,7 +568,7 @@ public class UserDAO implements LocationListener {
 
 		// Request parameters and other properties.
 		List<NameValuePair> params = new ArrayList<NameValuePair>(0);
-		
+
 		HttpResponse response;
 		try {
 			httppost.setEntity(new UrlEncodedFormEntity(params, "UTF-8"));
@@ -579,7 +579,7 @@ public class UserDAO implements LocationListener {
 				InputStream instream = entity.getContent();
 				String result = convertStreamToString(instream);
 				new URLDecoder();
-				result = URLDecoder.decode(result, "UTF-8"); 
+				result = URLDecoder.decode(result, "UTF-8");
 				//Log.i(TAG, result);
 				instream.close();
 
@@ -630,12 +630,12 @@ public class UserDAO implements LocationListener {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
-				
-				
+
+
 				try {
-					
+
 				} catch (Exception e) {
-					
+
 				}
 
 				return itensCalendario;
@@ -648,6 +648,6 @@ public class UserDAO implements LocationListener {
 		return null;
 	}
 
-	
+
 
 }

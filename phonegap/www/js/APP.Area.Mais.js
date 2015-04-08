@@ -21,7 +21,7 @@ APP.Area.Mais = {
             if (APP.Offline._onLine) this.pai().Twitter.enviar();
         }
     },
-    
+
     Categorias: {
         setUp: function () {
 
@@ -49,7 +49,7 @@ APP.Area.Mais = {
         enviar: function (form) {
             var that = this;
             $.ajax({
-                url: "http://www.saudenacopa.epitrack.com.br/proxyTwitter/index.php",
+                url: "http://saudenacopa.epitrack.com.br/proxyTwitter/index.php",
                 dataType: "JSON",
 
                 beforeSend: function () {

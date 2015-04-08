@@ -21,7 +21,7 @@ APP.Area.Saude.Mapa = {
             });
         }
     },
-    mostrar: function(lista){ 
+    mostrar: function(lista){
         this._lista = lista;
         $("#tela_mapaSaude").removeClass('farmacias').removeClass('hospitaisDeReferencia').addClass(lista);
         APP.GerenciadorDeTelas.exibir("#tela_mapaSaude");
@@ -30,7 +30,7 @@ APP.Area.Saude.Mapa = {
 
     mostrarFarmacias: function() {
         this.mostrar("farmacias");
-    }, 
+    },
 
     mostrarHospitais: function() {
         this.mostrar("hospitais");
@@ -56,7 +56,7 @@ APP.Area.Saude.Mapa = {
 
             var googleMapsScript = "http://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&sensor=true&callback=APP.Area.Saude.Mapa.carregarMapa";
                 googleMapsScript = googleMapsScript.replace("YOUR_API_KEY", this._googleMapsApiKey);
-            
+
             head.load(googleMapsScript);
             //$("#tela_mapaSaude .legendas").hide();
         }
@@ -110,7 +110,7 @@ APP.Area.Saude.Mapa = {
             }
 
             $.geolocation.get(opcoes);
-        
+
         },
 
         capturou: function(position) {
@@ -119,7 +119,7 @@ APP.Area.Saude.Mapa = {
             var sexo = APP.Area.Acesso.Usuario._dados.sexo;
             $('#googleMap')
                 .gmap("clear","markers")
-                .gmap('addMarker', { 
+                .gmap('addMarker', {
                     'position': meuLatLng,
                     'animation': google.maps.Animation.BOUNCE,
                     'icon': 'imagens/saude/mapa/icone_'+sexo+'.png'
@@ -172,7 +172,7 @@ APP.Area.Saude.Mapa = {
 
         naoCarregou: function() {
 
-        },  
+        },
 
         montarConteudo: function(local, userLocation) {
             var tipo = APP.Area.Saude.Mapa._lista == "farmacias" ? "farmacia" : "hospital";
@@ -188,7 +188,7 @@ APP.Area.Saude.Mapa = {
             $("<h2>").text(i18n.t("saude.mapa.tracarRota")).appendTo(hospital);
             $("<a>").attr("href",rotaApple).text(i18n.t("saude.mapa.rotaApple")).appendTo(hospital);
             $("<a>").attr("href",rotaGoogle).text(i18n.t("saude.mapa.rotaGoogle")).appendTo(hospital);
-            
+
             APP.analytics.trackEvent('mapa', 'balão', tipo);
             APP.analytics.trackEvent('mapa', tipo, local[2]);
 
@@ -202,8 +202,8 @@ APP.Area.Saude.Mapa = {
             var tipo = this.pai()._lista == "farmacias" ? "farmacia" : "hospital";
             $(resultados).each(function(iLocal, local){
                 var conteudo = montarConteudo(local, coords);
-                $('#googleMap').gmap('addMarker', { 
-                    'position': new google.maps.LatLng(local.geometry.location.lat, local.geometry.location.lng), 
+                $('#googleMap').gmap('addMarker', {
+                    'position': new google.maps.LatLng(local.geometry.location.lat, local.geometry.location.lng),
                     'bounds': true
                     ,'icon': 'imagens/saude/mapa/icone_'+tipo+'Google.png'
                 }).click(function() {
@@ -218,7 +218,7 @@ APP.Area.Saude.Mapa = {
         capturar: function(coords) {
             var that = this;
             $.ajax({
-                url: "http://www.saudenacopa.epitrack.com.br/proxyUF/",
+                url: "http://saudenacopa.epitrack.com.br/proxyUF/",
                 data: {
                     latLng: [coords.latitude, coords.longitude].join(",")
                 },
@@ -238,7 +238,7 @@ APP.Area.Saude.Mapa = {
             }
         },
 
-        naoCapturou: function() { 
+        naoCapturou: function() {
             //alert()
         }
     },
@@ -284,8 +284,8 @@ APP.Area.Saude.Mapa = {
 
                 var conteudo = montarConteudo(local, coords);
                 var position = local[5].split(",");
-                tela.gmap('addMarker', { 
-                    'position': new google.maps.LatLng(position[0], position[1]), 
+                tela.gmap('addMarker', {
+                    'position': new google.maps.LatLng(position[0], position[1]),
                     'bounds': true,
                     'icon': 'imagens/saude/mapa/icone_hospitalReferencia.png'
                 }).click(function() {
